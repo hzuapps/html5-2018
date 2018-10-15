@@ -12,4 +12,4 @@
 4、将自己要编写的网页复制到 phpstudy/www/ 目录下即可。  
 
 ## 实验结果
-https://raw.githubusercontent.com/GeekLee1998/html5-2018/master/Soft1612070501311/Labpictures/Lab1.png
+![实验结果](https://raw.githubusercontent.com/GeekLee1998/html5-2018/master/Soft1612070501311/Labpictures/Lab1.png)
