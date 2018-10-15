@@ -1,29 +1,8 @@
-# HTML5应用开发（微信小程序开发讲解）
+# 实验1 Web服务器与调试工具
 
-## 实验要求
+## 实验内容   
+1、在本机上安装 Apache服务器（或同类工具），根目录创建 index.html，显示自己的信息；   
+2、在本机上打开Chrome浏览器（未安装要安装），打开Web开发工具，查看自己的网页。    
 
-https://github.com/hzuapps/html5-2018/issues?q=is%3Aissue+is%3Aopen+label%3ALab
+## 实验步骤   
 
-## 微信小程序开发文档
-
-https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017830
-
-## WeUI-wxss库
-
-https://github.com/Tencent/weui-wxss
-
-## 微信小程序注册网站
-
-https://mp.weixin.qq.com
-
-## 课程网站 
-
-http://zeng.shaoning.net/web/
-
-## 通过审核并发布的小程序列表
-
-https://github.com/hzuapps/web-wechat-2017/list.md
-
-## 联系老师
-
-![Scholarly](https://raw.githubusercontent.com/zengsn/research/master/Scholarly.jpg "Scholarly on WeChat")
