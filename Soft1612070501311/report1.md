@@ -13,3 +13,7 @@
 
 ## 实验结果
 ![实验结果](https://raw.githubusercontent.com/GeekLee1998/html5-2018/master/Soft1612070501311/Labpictures/Lab1.png)
+
+## 心得体会
+1、phpstudy是真的好用...  
+2、实验室安装Apache时各种错误层出不穷，这是由于实验室电脑预装了Apache，即使重新安装也会有残留。而Apache的完全卸载又比较麻烦，所以容易失败。
