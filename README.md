@@ -6,7 +6,7 @@ https://github.com/hzuapps/html5-2018/issues?q=is%3Aissue+is%3Aopen+label%3ALab
 
 ## 在线查看实验结果
 
-http://infoaas.com/html5-2018/  
+https://infoaas.com/html5-2018/  
 
 ## 微信小程序开发文档
 
