@@ -27,4 +27,4 @@
 ## 心得体会
 1、html的标签类似于Android Studio里面的xml；   
 2、<img>标签中，src最好不使用绝对路径；   
-3、<td>标签中的width属性除了用px还可以用百分比；     
+3、<td>标签中的width属性除了用px还可以用百分比。   
