@@ -189,9 +189,9 @@ a {
 
 ## 3.实验结果
 * 实验截图1
-![实验截图]()
+![实验截图](https://github.com/OrangeHap/html5-2018/blob/master/1614080902329/Report/img/lab2_1.jpg)
 * 实验截图2
-![实验截图]()
+![实验截图](https://github.com/OrangeHap/html5-2018/blob/master/1614080902329/Report/img/lab2_2.jpg)
 
 ## 4.实验体会 
 
