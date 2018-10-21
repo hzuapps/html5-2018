@@ -10,8 +10,7 @@
 注意：可以隐去自己的真实姓名与联系信息。
 
 ## 实验步骤
-1、使用<table>标签中的<tr>定义行，<td>定义表格数据项；
-2、
+使用<table>标签中的<tr>定义行，<td>定义表格数据项；
 
 ## 实验结果
 ![实验结果](https://raw.githubusercontent.com/GeekLee1998/html5-2018/master/Soft1612070501311/Labpictures/Lab1.png)
