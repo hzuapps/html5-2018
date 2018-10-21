@@ -1,15 +1,17 @@
-# 实验1 Web服务器与调试工具
+# 实验2 HTML5语义标签
 
 ## 实验内容   
-1、在本机上安装 Apache服务器（或同类工具），根目录创建 index.html，显示自己的信息；   
-2、在本机上打开Chrome浏览器（未安装要安装），打开Web开发工具，查看自己的网页。    
+制作一个HTML5个人简历网页，具体要求如下：
+1. 使用HTML5语法
+2. 使用<table>设计布局
+3. 使用<img>添加个人照片
+4. 使用<form>制作一个留言表单
+5. 使用<a>指向自己的GitHub主页  
+注意：可以隐去自己的真实姓名与联系信息。  
 
-## 实验步骤   
-由于之前有编写简单网页的经验，故这次的服务器工具我没用Apache，用的是phpstudy。   
-1、在phpstudy官网 http://phpstudy.php.cn/ 下载工具；   
-2、下载完成后解压到任一硬盘；  
-3、打开工具，点击启动，在浏览器输入localhost测试；  
-4、将自己要编写的网页复制到 phpstudy/www/ 目录下即可。  
+## 实验步骤      
+1、使用<table>标签中的<tr>定义行，<td>定义表格数据项；   
+2、
 
 ## 实验结果
 ![实验结果](https://raw.githubusercontent.com/GeekLee1998/html5-2018/master/Soft1612070501311/Labpictures/Lab1.png)
