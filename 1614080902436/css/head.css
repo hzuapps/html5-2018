@@ -1,0 +1,15 @@
+div.content div.side div.head
+{
+	position: relative;
+	width: min-content;
+
+	margin: auto;
+	margin-top: 3em;
+}
+div.content div.side div.head img
+{
+	width: 8em;
+	height: 8em;
+	border-radius: 100%;
+	border:.5em hsla(0,0%,100%,.8) solid;
+}
