@@ -1,57 +1,90 @@
-@charset "UTF-8";
-/* Body */
+@charset "utf-8";
+/* CSS Document */
 body {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	background-color: #FFFFFF;
-	margin: 0;
 }
-/* Container */
-.container {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+.container{
+	margin-left:20%;
+	margin-right:25%;
 	background-color: #FFFFFFF;
 }
-/* Header */
-.header {
-	width: 100%;
-	height: 8%;
-	background-color: #5D5E5D;
-	border-bottom: 1px solid #353635;
+.cloumn1{
+    display:inline-block;
+	float:left;
+    width:257px;
+    height:1241px;
+    background:url(../img/cloumn.png)
 }
-.logo {
-	color: #fff;
-	font-weight: bold;
-	margin-left: auto;
-	letter-spacing: 4px;
-	margin-right: auto;
+.photo{
+    padding-top:150px;
+    text-align: center;
+}
+.name{
+	font-weight: bolder;
 	text-align: center;
-	padding-top: 15px;
-	line-height: 2em;
-	font-size: 22px;
+	font-size: 40px;
 }
-.intro {
+.boject{
+    font-weght:bolder;
+}
+.information{
+    padding-top: 100px;
+}
+.insert{
+    text-align: center;
+}
+.tbl{
+    align-align:center;
+	height:80px;
+	font-size: 15px;
+	font-weight:bolder;
+}
+.information{
+    padding-left:15px;
+}
+.education{
+    padding-top:50px;
+    padding-left:320px;
+	padding-right:30px;
+}
+.experience{
+    padding-top:20px;
+	padding-left:320px;
+	padding-right:30px;
+}
+.skill{
+    padding-top:20px;
+	padding-left:320px;
+	padding-right:30px;
+}
+.evaluation{
+    padding-top:20px;
+	padding-left:320px;
+	padding-right:30px;
+}
+.cloumn2{
+    width:900px;
+	height:1241px;
+}
+.insert{
+    width:232px;
+	height:48px;
+    text-align: center;
+	background: url(../img/information.png);
+}
+.raw{
+    width:171px;
+	height:44px;
+	text-align: center;
+    background: url(../img/row.png);
+}
+section{
 	display: inline-block;
-	background-color: #6DC7D0;
+	background-color:#E1DFC6;
 }
-.column {
-	width: 50%;
-	text-align: center;
-	padding-top: 30px;
-	float: left;
+.meaasge{
+   padding-top:40px;
 }
-.profile {
-	width: 75%;
-}
-.copyright {
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: #717070;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	font-weight: lighter;
-	letter-spacing: 2px;
-	border-top-width: 2px;
-}
+
 
