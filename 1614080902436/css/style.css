@@ -38,7 +38,7 @@ div.content
 }
 div.box-sha
 {
-	height:52em;
+	height:54em;
 	box-shadow: 0 0 2em gray;
 }
 div.content div.side
@@ -50,6 +50,7 @@ div.content div.side
 	background:#254665;
 
 	color: white;
+
 }
 
 div.content div.main

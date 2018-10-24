@@ -1,0 +1,104 @@
+div#mybox
+{
+	transition: filter 1s;
+}
+div.mask
+{
+	filter:blur(15px) brightness(.8) contrast(.8);
+}
+#login
+{
+	display: none;
+    position: fixed;
+    z-index: 6;
+    top: calc(50% - 13em);
+    left:calc(50% - 11em);
+	margin-left:0em;
+    width: 22em;
+    height: min-content;
+	padding-bottom: 3em;
+
+    background: linear-gradient(135deg,transparent 2em,white 0);
+
+	opacity:0;
+}
+#close
+{
+    position: absolute;
+    top: 0em;
+    right: 0em;
+
+    padding: .8em 1em;
+
+    color: #666;
+    border: none;
+    background: white;
+}
+/*seconndary
+--------------------*/
+#login p.title
+{
+    font-size: 250%;
+
+    width: 80%;
+    margin: auto;
+    margin-top: .8em;
+    padding-bottom: .5em;
+	text-align:center;
+
+    border-bottom: 1px dashed #666;
+}
+#login div.login-con
+{
+	margin: auto;
+	width:80%;
+	margin-top:2em;
+}
+#login div.login-con label
+{
+	display: block;
+	text-align: left;
+
+	opacity: .8;
+	margin-bottom: .2em;
+}
+#login div.login-con label + input
+{
+	font-size: 110%;
+	color: gray;
+	text-align: center;
+
+	width: 16em;
+	margin:auto;
+
+	padding: .2em;
+	border-radius: .1em;
+	margin-bottom: 1em;
+
+	border:1px solid silver;
+}
+#login div.login-con input + button
+{
+	margin-top:.8em;
+	font-size: 110%;
+
+	color: white;
+	width: 16em;
+	padding: .6em 1em;
+
+	background: #5af linear-gradient(hsla(0,0%,100%,.2),transparent);
+	font-weight: bold;
+	border:none;
+	border-radius: .1em;
+}
+#login div.login-con input + button:active
+{
+	background: #5af linear-gradient(transparent,hsla(0,0%,100%,.2));
+}
+#login a
+{
+	font-size: 80%;
+	display: block;
+	text-align: center;
+	margin-top: .5em;
+}

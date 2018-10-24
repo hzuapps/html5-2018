@@ -7,12 +7,44 @@
 		<link rel="stylesheet" href="css/head.css">
 		<link rel="stylesheet" href="css/sidenav.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/mask.css">
+		<script src="script.js"></script>
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				var body = $('mybox'),//用于遮罩
+					butt = $('button'),//sumit
+					close = $('close'),
+					login = $('login');
+
+				butt.onclick=function()
+				{
+					body.className='mask';
+					login.style.display='block';
+					startChange(login,'opacity',100,function(){
+						startChange(login,'marginLeft',300);
+					});
+				}
+				close.onclick=function()
+				{
+					body.className='none';
+					startChange(login,'opacity',0,function(){
+						login.style.display='none';
+						login.style.marginLeft='0';
+					});
+
+				}
+			}
+		</script>
 	</head>
 	<body>
-		<div class="content">
+		<div id="mybox">
+<div class="content">
 			<div class="box-sha">
 				<div class="side">
-				<div class="head"><img src="img/head.png" alt="MyPhoto"></div>
+				<div class="head">
+					<img src="img/head.png" alt="MyPhoto">
+				</div>
 				<div class="sidenav">
 					<ul class="tag">
 						<li>年龄:</li>
@@ -67,15 +99,14 @@
 						</div>
 						<form >
 							<textarea name="comment" id="comment" cols="30" rows="10" value="我来撰写"></textarea>
-							<input type="submit" for="comment" onClick="alert('提交成功')">
+							<a href="#" id="button">提交</a>
 						</form>
 						
 					</div>
 					
 				</main>
 			</div>
-			</div>
-			
+			</div>			
 		</div>
 		<footer>
 			<table>
@@ -93,5 +124,19 @@
 				</tr>
 			</table>
 		</footer>
+		</div>
+		<div id="login">
+			<button id="close">X</button>
+			<p class="title">登陆<br><a href="#" style="font-size:35%">register now</a></p>
+			<div class="login-con">
+				<label for="uid">账号</label>
+				<input type="text" autocomplete="off" id="uid">
+				<label for="pw">密码</label>
+				<input type="password" id="pw">
+				<button>log in</button>
+				<a href="#"><p>forget id or password?</p></a>
+			</div>
+		</div>
+		
 	</body>
 </html>
