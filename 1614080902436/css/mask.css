@@ -1,10 +1,26 @@
+/*mask for IE
+---------------------*/
+#mask
+{
+	display:none;
+	background:rgba(0,0,0,.75);
+
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	z-index: 0;
+}
+/*chrome
+---------------------*/
 div#mybox
 {
 	transition: filter 1s;
 }
 div.mask
 {
-	filter:blur(15px) brightness(.8) contrast(.8);
+	filter:blur(15px);
 }
 #login
 {

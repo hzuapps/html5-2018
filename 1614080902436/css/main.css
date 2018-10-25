@@ -1,6 +1,7 @@
 .main
 {
 	color:#474141;
+	width: 34em;
 }
 .main .name
 {
@@ -14,10 +15,9 @@
 {
 	color:#666;
 }
-.main main 
+.main #introduce 
 {	
-	width: 28em;
-	
+	width: 80%;
 	margin: auto;
 	margin-top: -1em;
 }
@@ -48,6 +48,8 @@
 
 	border-radius: 1em;
 	border:1px solid silver;
+
+	clear:both;
 	
 	resize:none;
 }
@@ -59,7 +61,7 @@
 	border:none;
 	border-radius: .2em;
 	margin-top: 1em;
-	margin-right:1.2em;
+	margin-right:.5em;
 	padding: .5em 1em;
 
 	float: right;

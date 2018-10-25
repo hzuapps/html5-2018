@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -12,15 +12,17 @@
 		<script type="text/javascript">
 			window.onload=function()
 			{
-				var body = $('mybox'),//用于遮罩
+				var body = $('mybox'),//用于简历的遮罩和模糊
 					butt = $('button'),//sumit
-					close = $('close'),
-					login = $('login');
+					close = $('close'),//关闭按钮响应事件
+					login = $('login'),//登陆按钮响应事件
+					mask = $('mask');
 
 				butt.onclick=function()
 				{
 					body.className='mask';
 					login.style.display='block';
+					mask.style.display='block';
 					startChange(login,'opacity',100,function(){
 						startChange(login,'marginLeft',300);
 					});
@@ -30,6 +32,7 @@
 					body.className='none';
 					startChange(login,'opacity',0,function(){
 						login.style.display='none';
+						mask.style.display='none';
 						login.style.marginLeft='0';
 					});
 
@@ -39,7 +42,7 @@
 	</head>
 	<body>
 		<div id="mybox">
-<div class="content">
+			<div class="content">
 			<div class="box-sha">
 				<div class="side">
 				<div class="head">
@@ -73,7 +76,8 @@
 			</div>
 			<div class="main">
 				<header class="name"><p>许伟杰(男)</p><p>Soft1614080902436</p></header>
-				<main>
+				<div id="introduce">
+					<main>
 					<div>
 						<p style="background:url(img/wanna.png) no-repeat 0em/1.4em">求职意向</p>
 						<div>
@@ -101,10 +105,10 @@
 							<textarea name="comment" id="comment" cols="30" rows="10" value="我来撰写"></textarea>
 							<a href="#" id="button">提交</a>
 						</form>
-						
-					</div>
-					
+					</div>		
 				</main>
+				</div>
+				
 			</div>
 			</div>			
 		</div>
@@ -137,6 +141,6 @@
 				<a href="#"><p>forget id or password?</p></a>
 			</div>
 		</div>
-		
+		<div id="mask"></div>
 	</body>
 </html>
