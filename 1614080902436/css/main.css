@@ -1,6 +1,7 @@
 .main
 {
 	color:#474141;
+	width: 34em;
 }
 .main .name
 {
@@ -14,15 +15,15 @@
 {
 	color:#666;
 }
-.main main 
-{
-	width: min-content;
+.main #introduce 
+{	
+	width: 80%;
 	margin: auto;
 	margin-top: -1em;
 }
 .main main div p[style]
 {
-	width: 23em;
+	width: 21em;
 	color:#254665;
 	font-weight: bold;
 	font-size: 115%;
@@ -30,7 +31,6 @@
 	padding-left: 2em;
 	
 	border-bottom: 1px solid silver;
-
 }
 .main main div div
 {
@@ -40,17 +40,20 @@
 /*textarea最好不用要百分比数设置*/
 #comment
 {
-	width: 435px;
+	width: 400px;
 	height: 120px;
 
 	margin-top: 1em;
 	padding: 1em;
 
 	border-radius: 1em;
+	border:1px solid silver;
+
+	clear:both;
 	
 	resize:none;
 }
-.main main input[type='submit']
+.main main #button
 {
 
 	background:linear-gradient(hsla(0,0%,100%,.1) 30%,transparent),#254665;
@@ -58,11 +61,12 @@
 	border:none;
 	border-radius: .2em;
 	margin-top: 1em;
+	margin-right:.5em;
 	padding: .5em 1em;
 
 	float: right;
 }
-.main main input[type='submit']:active
+.main main #button:active
 {
 	background:linear-gradient(transparent 30%,hsla(0,0%,100%,.1)),#254665;
 }

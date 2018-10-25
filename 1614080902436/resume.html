@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -7,12 +7,47 @@
 		<link rel="stylesheet" href="css/head.css">
 		<link rel="stylesheet" href="css/sidenav.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/mask.css">
+		<script src="script.js"></script>
+		<script type="text/javascript">
+			window.onload=function()
+			{
+				var body = $('mybox'),//用于简历的遮罩和模糊
+					butt = $('button'),//sumit
+					close = $('close'),//关闭按钮响应事件
+					login = $('login'),//登陆按钮响应事件
+					mask = $('mask');
+
+				butt.onclick=function()
+				{
+					body.className='mask';
+					login.style.display='block';
+					mask.style.display='block';
+					startChange(login,'opacity',100,function(){
+						startChange(login,'marginLeft',300);
+					});
+				}
+				close.onclick=function()
+				{
+					body.className='none';
+					startChange(login,'opacity',0,function(){
+						login.style.display='none';
+						mask.style.display='none';
+						login.style.marginLeft='0';
+					});
+
+				}
+			}
+		</script>
 	</head>
 	<body>
-		<div class="content">
+		<div id="mybox">
+			<div class="content">
 			<div class="box-sha">
 				<div class="side">
-				<div class="head"><img src="img/head.png" alt="MyPhoto"></div>
+				<div class="head">
+					<img src="img/head.png" alt="MyPhoto">
+				</div>
 				<div class="sidenav">
 					<ul class="tag">
 						<li>年龄:</li>
@@ -41,7 +76,8 @@
 			</div>
 			<div class="main">
 				<header class="name"><p>许伟杰(男)</p><p>Soft1614080902436</p></header>
-				<main>
+				<div id="introduce">
+					<main>
 					<div>
 						<p style="background:url(img/wanna.png) no-repeat 0em/1.4em">求职意向</p>
 						<div>
@@ -67,15 +103,14 @@
 						</div>
 						<form >
 							<textarea name="comment" id="comment" cols="30" rows="10" value="我来撰写"></textarea>
-							<input type="submit" for="comment" onClick="alert('提交成功')">
+							<a href="#" id="button">提交</a>
 						</form>
-						
-					</div>
-					
+					</div>		
 				</main>
+				</div>
+				
 			</div>
-			</div>
-			
+			</div>			
 		</div>
 		<footer>
 			<table>
@@ -93,5 +128,19 @@
 				</tr>
 			</table>
 		</footer>
+		</div>
+		<div id="login">
+			<button id="close">X</button>
+			<p class="title">登陆<br><a href="#" style="font-size:35%">register now</a></p>
+			<div class="login-con">
+				<label for="uid">账号</label>
+				<input type="text" autocomplete="off" id="uid">
+				<label for="pw">密码</label>
+				<input type="password" id="pw">
+				<button>log in</button>
+				<a href="#"><p>forget id or password?</p></a>
+			</div>
+		</div>
+		<div id="mask"></div>
 	</body>
 </html>
