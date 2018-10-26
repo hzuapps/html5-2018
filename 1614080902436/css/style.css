@@ -1,0 +1,75 @@
+/* color-sheet
+	body  background:#00c091;
+	left  background:#254665;
+	right background:white;
+		  color:#474141;
+		  litter color:#666666;
+ */
+*{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background:#00c091;
+	
+
+	display:flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+a
+{
+	text-decoration: none;
+
+}
+a:link,
+a:visited
+{
+	color:gray;
+}
+
+div.content
+{
+	flex:1;
+	position: relative;
+	padding: 8em calc(50% - 25em);
+
+}
+div.box-sha
+{
+	height:54em;
+	box-shadow: 0 0 2em gray;
+}
+div.content div.side
+{
+	width: 16em;
+	float: left;
+	height: inherit;
+
+	background:#254665;
+
+	color: white;
+
+}
+
+div.content div.main
+{
+	float: right;
+	width: 34em;
+	height: inherit;
+
+	background:white;
+}
+footer
+{
+	background:#254665;
+	color: white;
+	padding: 1em;
+}
+footer table
+{
+	margin: auto;
+	border-spacing: .8em;
+	text-align: center;
+}

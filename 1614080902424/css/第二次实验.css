@@ -1,0 +1,134 @@
+@chareset "UTF-8";
+/* float 工具类公共样式 */
+.fl,
+.flChild > *
+{float:left;}
+
+.fr,
+.frChild > *
+{float:right;}
+
+.clearFix::after,.flChild::after{content:'';display: block;clear: both;}
+.clearFix,.flChild{*zoom:1;}
+
+/*position*/
+.p-r{position: relative;}
+.p-a{position: absolute;}
+
+p,table{
+	color:#528B8B;
+}
+#cover{
+	width:657px;
+
+	border:2px solid #4682B4;
+}
+#cover .head{
+	margin:10px;
+
+}
+#cover .head-left{
+	width:170px;
+	height:100px;
+	margin:40px 0px 0 0px;;
+}
+#cover .head-left .name{
+	margin:10px;
+	padding:0;
+	font-size:37px;
+	text-align: center;
+}
+#cover .head-left .aim{
+	margin:5px;
+	padding:0;
+	text-align: center;
+}
+#cover .head-middle{
+	width:250px;
+	height:150px;
+	margin:10px 30px 0 30px;
+}
+#cover .head-middle table{
+	padding:20px 0 0 0;
+}
+#cover .head-middle img{
+	width:22px;
+	height:22px;
+	margin-right:5px;
+}
+#cover .head-middle td{
+	text-align:left;
+}
+#cover .head-right{
+	
+	border:2px solid #53868B;
+}
+#cover .head-right .photo{
+	width:150px;
+	height:130px;
+	margin:30px 0 0 0 ;
+}
+#cover .head-right .photo img{
+	width:100%;
+	height:100%;
+}
+
+/*middle*/
+#cover .middle{
+	width:637px;
+	margin:10px;
+}
+#cover .middle .school{
+	border-bottom:2px dashed #458B74;
+}
+#cover .middle .school img{
+	width:20px;
+	height:20px;
+	margin:17px 7px 0 5px;
+
+}
+#cover .middle .wrap .wrap-top p{
+	
+	margin:10px 50px 10px 0;
+}
+#cover .middle .wrap .time{
+	margin-left:20px;
+}
+#cover .middle .wrap .wrap-bottom p{
+	margin:5px 0 0 5px;
+	color:#698B69;
+}
+
+#cover .study{
+	width:300px;
+
+	margin:10px;
+}
+#cover .study .school{
+	border-bottom:2px dashed #458B74;
+}
+#cover .study .school img{
+	width:20px;
+	height:20px;
+	margin:17px 7px 0 5px;
+
+}
+#cover .study .wrap .wrap-top p{
+	
+	margin:10px 50px 10px 0;
+}
+#cover .study .wrap .time{
+	margin-left:5px;
+}
+#cover .study .wrap .wrap-bottom p{
+	margin:5px 0 0 5px;
+	color:#698B69;
+}
+
+/*welcome*/
+#cover .welcome{
+	margin:10px auto 10px 20px ;
+}
+#cover .welcome a{
+	color:#3CB371;
+}
