@@ -1,33 +1,33 @@
-# HTML5Ó¦ÓÃ¿ª·¢£¨Î¢ĞÅĞ¡³ÌĞò¿ª·¢½²½â£©
+## HTML5åº”ç”¨å¼€å‘ï¼ˆå¾®ä¿¡å°ç¨‹åºå¼€å‘è®²è§£ï¼‰
 
-## ÊµÑéÒªÇó
+## å®éªŒè¦æ±‚
 
 https://github.com/hzuapps/html5-2018/issues?q=is%3Aissue+is%3Aopen+label%3ALab
 
-## ÔÚÏß²é¿´ÊµÑé½á¹û
+## åœ¨çº¿æŸ¥çœ‹å®éªŒç»“æœ
 
 https://infoaas.com/html5-2018/  
 
-## Î¢ĞÅĞ¡³ÌĞò¿ª·¢ÎÄµµ
+## å¾®ä¿¡å°ç¨‹åºå¼€å‘æ–‡æ¡£
 
 https://mp.weixin.qq.com/debug/wxadoc/dev/index.html?t=2017830
 
-## WeUI-wxss¿â
+## WeUI-wxssåº“
 
 https://github.com/Tencent/weui-wxss
 
-## Î¢ĞÅĞ¡³ÌĞò×¢²áÍøÕ¾
+## å¾®ä¿¡å°ç¨‹åºæ³¨å†Œç½‘ç«™
 
 https://mp.weixin.qq.com
 
-## ¿Î³ÌÍøÕ¾ 
+## è¯¾ç¨‹ç½‘ç«™ 
 
 http://zeng.shaoning.net/web/
 
-## Í¨¹ıÉóºË²¢·¢²¼µÄĞ¡³ÌĞòÁĞ±í
+## é€šè¿‡å®¡æ ¸å¹¶å‘å¸ƒçš„å°ç¨‹åºåˆ—è¡¨
 
 https://github.com/hzuapps/web-wechat-2017/list.md
 
-## ÁªÏµÀÏÊ¦
+## è”ç³»è€å¸ˆ
 
 ![Scholarly](https://raw.githubusercontent.com/zengsn/research/master/Scholarly.jpg "Scholarly on WeChat")
