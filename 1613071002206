@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <title>个人简历表</title>
+    </head>
+    <body>
+        <table border="1"cellpadding="3"cellspacing="3"align="center"bgcolor="#3333"style="background-color:white">
+           <tr align="center">
+               <td align="center"colspan="5">
+                   <font size="13"><b>个人基本简历</b></font>
+               </td>
+           </tr>
+            <tr align="center">
+                <th width="200"style="background-color:#ededed">姓名</th>
+                <td width="100">ZZZZmin</td>
+                <th width="100"style="background-color:#ededed">国籍</th>
+                <td width="100">中国</td>
+                <td rowspan="5"><img src="C:\Users\Administrator\Desktop\照片\ZZZZmin.jpg"width="200"height="200"></td>
+                </tr>
+               <tr align="center">
+                   <th style="background-color:#ededed">性别</th>
+                   <td>女</td>
+                   <th style="background-color:#ededed">年龄</th>
+                   <td>20</td>
+               </tr>
+               <tr align="center">
+              <th style="background-color:#ededed">目前所在地</th>
+              <td>广东省惠州市</td>
+              <th style="background-color:#ededed">民族</th>
+              <td>汉</td>
+               </tr>
+               <tr align="center">
+                   <th style="background-color:#ededed">户口所在地</th>
+                   <td>广东省汕头市</td>
+                   <th style="background-color:#ededed">身高</th>
+                   <td>166cm</td>
+               </tr>
+               <tr align="center">
+                   <th style="background-color:#ededed">学历</th>
+                   <td>本科</td>
+                   <th style="background-color:#ededed">专业</th>
+                   <td>软件工程</td>
+               </tr>
+               <tr align="center">
+                   <th rowspan="10"align="middle" style="background-color:#ededed">个人经历以及技能</th>
+                  
+               </tr>
+               <tr>
+                    <td rowspan="9" colspan="4" align="middle" >
+                            获得英语四级证书</br>
+                            获得普通话二级乙等证书</br>
+                            获得计算机一级证书</br>
+                        在校期间曾担任副班长，部长，举办过生存大挑战，福利院活动等大型校园活动
+                    </td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <th style="background-color:#ededed">自我评价</td>
+                        <td colspan="4" align="middle">本人性格活泼开朗，与人相处和谐，负责任乐观，能承受一定的工作压力</td>
+                    </tr>
+                </tbody>
+      <tr align="center">
+          <th style="background-color:#ededed">求职意向</td>
+          <td colspan="4" align="middle" >运营人员，活动策划</td>
+      </tr>
+           <tr align="center">
+               <th style="background-color:#ededed" > <form align="center" >
+                留言板
+            </form>
+            </td>
+            <td colspan="4" align="middle"> <input type="text" size="80"></td>
+            </tr>
+        </table>
+        </body>
+</html>
