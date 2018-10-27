@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>实验2 - 个人简历</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/layer/layer.js"></script>
+</head>
+<body>
+    <!--要求用Table布局-->
+    <!--
+    参照的设计图为http://www.nipic.com/show/15359307.html
+    -->
+    <div class="bg-tree"></div>
+    <table class="cv">
+        <tr>
+            <td class="g-left">
+                <table>
+                    <tr><td><img class="head" src="./img/h.png" alt=""/></td></tr>
+                    <tr class="name"><td><p>笃&nbsp;&nbsp;定</p></td></tr>
+                    <tr class="t1"><td>基础信息</td></tr>
+                    <tr><td>
+                        <ul>
+                        <li>民族：汉</li>
+                        <li>政治面貌：中共党员</li>
+                        <li>电话：13888888822</li>
+                        <li>邮箱0000000@qq.com</li>
+                    </ul>
+                    </td></tr>
+                    <tr class="t1"><td>技能证书</td></tr>
+                    <tr><td>
+                        <ul>
+                            <li>语言技能：英语CET6、汉语</li>
+                            <li>专业技能：IOS及安卓开发</li>
+                            <li>办公技能：熟练使用Word</li>
+                        </ul>
+                    </td></tr>
+                    <tr class="t1"><td>荣誉奖励</td></tr>
+                    <tr><td>
+                        <ul>
+                            <li>某某一等奖</li>
+                            <li>某某荣获二等奖</li>
+                            <li><a style="color: red" href="https://github.com/w123rq" target="_blank">我的GitHub</a></li>
+                            <li><a id="liuyan" style="color: red" href="javascript:0">给我留言</a></li>
+                        </ul>
+                    </td></tr>
+                </table>
+            </td>
+            <td class="g-right">
+                <table width="100%" style="height: 100%">
+                    <tr class="t2">
+                        <td><i class="i1"><img src="./img/i1.png" alt=""></i></td>
+                        <td><p>教育背景</p></td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <school>
+                                <p>2012.06-2015.5</p>
+                                <p>四川大学</p>
+                                <p>新闻传播学</p>
+                                <p>硕士研究生</p>
+                            </school>
+                            <ul>
+                                <li>2012年获得研究生第一年度奖学金二等奖</li>
+                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
+                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
+                                <li>2015年发表川大中心期刊2篇</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="t2">
+                        <td><i class="i2"><img src="./img/i2.png" alt=""></i></td>
+                        <td><p>工作经验</p></td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <school>
+                                <p>2012.06-2015.5</p>
+                                <p>传媒艺术研究会内刊《艺术设计》</p>
+                                <p>编辑员</p>
+                            </school>
+                            <ul>
+                                <li>2012年获得研究生第一年度奖学金二等奖</li>
+                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
+                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
+                                <li>2015年发表川大中心期刊2篇</li>
+                            </ul>
+                            <br/>
+                            <br/>
+                            <school>
+                                <p>2012.06-2015.5</p>
+                                <p>邱峰县传媒高考</p>
+                                <p>冲刺班班主任</p>
+                            </school>
+                            <ul>
+                                <li>2012年获得研究生第一年度奖学金二等奖</li>
+                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
+                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
+                                <li>2015年发表川大中心期刊2篇</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="t2">
+                        <td><i class="i3"><img src="./img/i3.png" alt=""></i></td>
+                        <td><p>专业技能</p></td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <ul>
+                                <li>2012年获得研究生第一年度奖学金二等奖</li>
+                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
+                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
+                                <li>2015年发表川大中心期刊2篇</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="t2">
+                        <td><i class="i4"><img src="./img/i4.png" alt=""></i></td>
+                        <td><p>自我评价</p></td>
+                        <td> </td>
+                    </tr>
+                    <tr><td colspan="3">
+                        <span>
+                            收录了鲁迅先生一生创作的杂文、短篇小说、评论、散文等作品，比较全面的反应了鲁迅先生的文艺创作生涯和思想。鲁迅的思想和艺术的创造力是惊人的，他在短篇小说、散文、散文诗、历史小说、杂文各种类型的创作中，都有自己全新的创造
+                        </span>
+                    </td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+var submitliuyan = function(){
+            layer.alert('留言成功', {icon: 1});
+			layer.close(boxindex);
+        };
+    $(document).ready(function(){
+        console.log($(".head").offset().left);
+        $(".bg-tree").css("left",$(".head").offset().left).show();
+        var boxindex = $("#liuyan").click(function(){
+            layer.open({
+                title:null,
+                btn:null,
+				shadeClose:true,
+                content:'<div><form action="#"><textarea  name="" id="" cols="30" rows="10" placeholder="请输入留言内容" style="padding: 4px;width: 100%"></textarea><button onclick="submitliuyan()" type="button" class="mybtn">确认提交</button></form></div>',
+            });
+        });
+        
+    });
+</script>
+</html>

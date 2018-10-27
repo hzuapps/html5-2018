@@ -1,155 +1,451 @@
-<!doctype html>
-<html lang="zh">
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>实验2 - 个人简历</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/layer/layer.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="./style/weui.min.css"/>
+    <link rel="stylesheet" href="./style/fontawesome/css/font-awesome.min.css">
 </head>
-<body>
-    <!--要求用Table布局-->
-    <!--
-    参照的设计图为http://www.nipic.com/show/15359307.html
-    -->
-    <div class="bg-tree"></div>
-    <table class="cv">
-        <tr>
-            <td class="g-left">
-                <table>
-                    <tr><td><img class="head" src="./img/h.png" alt=""/></td></tr>
-                    <tr class="name"><td><p>笃&nbsp;&nbsp;定</p></td></tr>
-                    <tr class="t1"><td>基础信息</td></tr>
-                    <tr><td>
-                        <ul>
-                        <li>民族：汉</li>
-                        <li>政治面貌：中共党员</li>
-                        <li>电话：13888888822</li>
-                        <li>邮箱0000000@qq.com</li>
-                    </ul>
-                    </td></tr>
-                    <tr class="t1"><td>技能证书</td></tr>
-                    <tr><td>
-                        <ul>
-                            <li>语言技能：英语CET6、汉语</li>
-                            <li>专业技能：IOS及安卓开发</li>
-                            <li>办公技能：熟练使用Word</li>
-                        </ul>
-                    </td></tr>
-                    <tr class="t1"><td>荣誉奖励</td></tr>
-                    <tr><td>
-                        <ul>
-                            <li>某某一等奖</li>
-                            <li>某某荣获二等奖</li>
-                            <li><a style="color: red" href="https://github.com/w123rq" target="_blank">我的GitHub</a></li>
-                            <li><a id="liuyan" style="color: red" href="javascript:0">给我留言</a></li>
-                        </ul>
-                    </td></tr>
-                </table>
-            </td>
-            <td class="g-right">
-                <table width="100%" style="height: 100%">
-                    <tr class="t2">
-                        <td><i class="i1"><img src="./img/i1.png" alt=""></i></td>
-                        <td><p>教育背景</p></td>
-                        <td> </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <school>
-                                <p>2012.06-2015.5</p>
-                                <p>四川大学</p>
-                                <p>新闻传播学</p>
-                                <p>硕士研究生</p>
-                            </school>
-                            <ul>
-                                <li>2012年获得研究生第一年度奖学金二等奖</li>
-                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
-                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
-                                <li>2015年发表川大中心期刊2篇</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="t2">
-                        <td><i class="i2"><img src="./img/i2.png" alt=""></i></td>
-                        <td><p>工作经验</p></td>
-                        <td> </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <school>
-                                <p>2012.06-2015.5</p>
-                                <p>传媒艺术研究会内刊《艺术设计》</p>
-                                <p>编辑员</p>
-                            </school>
-                            <ul>
-                                <li>2012年获得研究生第一年度奖学金二等奖</li>
-                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
-                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
-                                <li>2015年发表川大中心期刊2篇</li>
-                            </ul>
-                            <br/>
-                            <br/>
-                            <school>
-                                <p>2012.06-2015.5</p>
-                                <p>邱峰县传媒高考</p>
-                                <p>冲刺班班主任</p>
-                            </school>
-                            <ul>
-                                <li>2012年获得研究生第一年度奖学金二等奖</li>
-                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
-                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
-                                <li>2015年发表川大中心期刊2篇</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="t2">
-                        <td><i class="i3"><img src="./img/i3.png" alt=""></i></td>
-                        <td><p>专业技能</p></td>
-                        <td> </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <ul>
-                                <li>2012年获得研究生第一年度奖学金二等奖</li>
-                                <li>2012年12月代表四川大学参加首届研究生论坛</li>
-                                <li>2013年10月获评研究生毕业论文优秀报告人</li>
-                                <li>2015年发表川大中心期刊2篇</li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="t2">
-                        <td><i class="i4"><img src="./img/i4.png" alt=""></i></td>
-                        <td><p>自我评价</p></td>
-                        <td> </td>
-                    </tr>
-                    <tr><td colspan="3">
-                        <span>
-                            收录了鲁迅先生一生创作的杂文、短篇小说、评论、散文等作品，比较全面的反应了鲁迅先生的文艺创作生涯和思想。鲁迅的思想和艺术的创造力是惊人的，他在短篇小说、散文、散文诗、历史小说、杂文各种类型的创作中，都有自己全新的创造
-                        </span>
-                    </td></tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+<style>
+    body,html{
+        height: 100%;
+        background-color: #f8f8f8;
+    }
+    .page__title {
+        text-align: left;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .page__desc {
+        margin-top: 5px;
+        color: #888;
+        text-align: left;
+        font-size: 14px;
+    }
+    .main-top{
+        padding: 40px 40px 0px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .head{
+        border-radius: 50%;
+        width: 4.5rem;
+    }
+
+    .line{
+        width: auto;
+        margin: 2.4em 40px 1.2em 40px;
+    }
+
+    .title {
+        padding: 40px 40px 0px 40px;
+    }
+    .timeline{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px 0px 20px;
+        position: relative;
+    }
+    .timeline .time{
+        color: #999;
+        font-size: 0.9rem;
+    }
+    .timeline .content{
+        background: #09bb07;
+        border-radius: 10px;
+        color: white;
+        width: 74%;
+        padding: 0.4rem 1rem;
+        margin-bottom: 30px;
+    }
+    .timeline .content h1{
+        font-size: 1.1rem;
+        font-weight: normal;
+    }
+    .timeline .content p{
+        color: #dcdcdc;
+        font-size: 0.9rem;
+    }
+    .timeline .point{
+        width: 10px;
+        height: 10px;
+        background: #09bb07;
+        border-radius: 50%;
+        position: relative;
+        left: -3px;
+        top: 1.2rem;
+    }
+    .timeline .xline{
+        border-right: 1px #09bb07 solid;    width: 1px;
+    }
+    .weui-grid__label.small{
+        font-size:12px;
+        color:#999;
+    }
+</style>
+<body ontouchstart>
+<div style="height: 100%">
+    <div class="weui-msg" style="display: none">
+        <div class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title">留言成功</h2>
+            <p class="weui-msg__desc">恭喜您，您已成功留言，请等待我的回复。</p>
+        </div>
+        <div class="weui-msg__opr-area">
+            <p class="weui-btn-area">
+                <a href="javascript:jump(0)" class="weui-btn weui-btn_primary">返回首页</a>
+                <a href="javascript:wxclose();window.opener=null;window.open('','_self');window.close();" class="weui-btn weui-btn_default">关闭页面</a>
+            </p>
+        </div>
+        <div class="weui-msg__extra-area">
+            <div class="weui-footer">
+                <p class="weui-footer__links">
+                    <a href="javascript:void(0);" class="weui-footer__link">个人简历Demo</a>
+                </p>
+                <p class="weui-footer__text">Powered by 1614080902403</p>
+            </div>
+        </div>
+    </div>
+    <div class="weui-tab" style="overflow: hidden;">
+        <div class="weui-tab__panel panel0">
+            <div class="main-top">
+                <div class="">
+                    <h1 class="page__title">笃定</h1>
+                    <p class="page__desc">软件工程·毕业于 惠州学院</p>
+                </div>
+                <div>
+                    <img class="head" src="./images/h.png" alt="">
+                </div>
+            </div>
+            <div class="weui-loadmore weui-loadmore_line line">
+                <span class="weui-loadmore__tips" style="background-color:#f8f8f8">个人概况</span>
+            </div>
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>性别</p>
+                    </div>
+                    <div class="weui-cell__ft">男性</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>民族</p>
+                    </div>
+                    <div class="weui-cell__ft">汉族</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>学历</p>
+                    </div>
+                    <div class="weui-cell__ft">本科</div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p>政治面貌</p>
+                    </div>
+                    <div class="weui-cell__ft">党员</div>
+                </div>
+            </div>
+            <div class="weui-loadmore weui-loadmore_line line">
+                <span class="weui-loadmore__tips" style="background-color:#f8f8f8">求职意向</span>
+            </div>
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-panel__hd">离职-随时到岗 <span style="float: right">刚刚活跃</span></div>
+                <div class="weui-panel__bd">
+                    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="./images/sq1.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <h4 class="weui-media-box__title">软件测试工程师</h4>
+                            <p class="weui-media-box__desc">求职期望 <span style="float: right">5k - 10k</span> </p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="./images/sq2.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <h4 class="weui-media-box__title">Java开发工程师</h4>
+                            <p class="weui-media-box__desc">求职期望 <span style="float: right">6k - 11k</span> </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-panel__ft">
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+                        <div class="weui-cell__bd">查看更多</div>
+                        <span class="weui-cell__ft"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="weui-tab__panel panel1" style="display: none">
+            <div class="title">
+                <div class="page__hd">
+                    <h1 class="page__title">教育</h1>
+                    <p class="page__desc">笃定的教育经历</p>
+                </div>
+            </div>
+            <div class="weui-loadmore weui-loadmore_line line">
+                <span class="weui-loadmore__tips" style="background-color:#f8f8f8">教育经历</span>
+            </div>
+            <div class="timeline">
+
+                <div class="time"><p>2013</p><p>2014</p></div>
+                <div class="xline"><div class="point"></div></div>
+                <div class="content">
+                    <h1>惠州经济职业技术学院</h1>
+                    <p>大专 · 计算机应用技术</p>
+                    <span>在班里担任过班干部，对团务工作负责并较好的完成；很好的与其他同学小伙伴合作完成组织班级活动以及策划；同时还在校团委新媒体中心任职，自我感觉良好的完成活动前后的宣传工作并运营好“惠州经济学院团委”这个微信公众平台。</span>
+                </div>
+            </div>
+            <div class="timeline">
+
+                <div class="time"><p>2015</p><p>2016</p></div>
+                <div class="xline"><div class="point" style="background:#FFA500"></div></div>
+                <div class="content">
+                    <h1>四川大学</h1>
+                    <p>硕士研究生 · 新闻传播学</p>
+                    <span>2012年获得研究生第一年度奖学金二等奖、2012年12月代表四川大学参加首届研究生论坛、2013年10月获评研究生毕业论文优秀报告人、2015年发表川大中心期刊2篇</span>
+                </div>
+            </div>
+        </div>
+        <div class="weui-tab__panel panel2" style="display: none">
+            <div class="title" style="margin-bottom: 40px">
+                <div class="page__hd">
+                    <h1 class="page__title">经验</h1>
+                    <p class="page__desc">笃定的工作经历</p>
+                </div>
+            </div>
+            <div class="weui-cells__title">曾任职位</div>
+            <div class="weui-cells">
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd"><img src="./images/c1.png"  style="width:20px;margin-right:5px;display:block"></div>
+                    <div class="weui-cell__bd">
+                        <p>思搏互联</p>
+                    </div>
+                    <div class="weui-cell__ft">测试工程师</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd"><img src="./images/c2.jpg" style="width:20px;margin-right:5px;display:block"></div>
+                    <div class="weui-cell__bd">
+                        <p>二匠科技</p>
+                    </div>
+                    <div class="weui-cell__ft">PHP高级工程师</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd"><img src="./images/c3.jpg"  style="width:20px;margin-right:5px;display:block"></div>
+                    <div class="weui-cell__bd">
+                        <p>酷友网络</p>
+                    </div>
+                    <div class="weui-cell__ft">WEB前端中级工程师</div>
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__hd"><img src="./images/c4.jpg"  style="width:20px;margin-right:5px;display:block"></div>
+                    <div class="weui-cell__bd">
+                        <p>索显科技</p>
+                    </div>
+                    <div class="weui-cell__ft">ReactNative开发工程师</div>
+                </a>
+
+            </div>
+            <div class="weui-cells__title">我的作品案例</div>
+            <div class="weui-grids">
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a1.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">火星人俱乐部</p>
+                    <p class="weui-grid__label small">娱乐</p>
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a2.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">opler 智能采暖</p>
+                    <p class="weui-grid__label small">生活</p>
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a3.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">鳗鱼</p>
+                    <p class="weui-grid__label small">生活</p>
+
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a4.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">英特尔·硬享公社</p>
+                    <p class="weui-grid__label small">科技</p>
+
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a5.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">慢慢买</p>
+                    <p class="weui-grid__label small">购物</p>
+
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a6.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">华夏博雅</p>
+                    <p class="weui-grid__label small">教育</p>
+
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a7.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">春秋航空</p>
+                    <p class="weui-grid__label small">交通</p>
+
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a8.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">萌煮辅食</p>
+                    <p class="weui-grid__label small">生活</p>
+
+                </a>
+                <a href="javascript:;" class="weui-grid">
+                    <div class="weui-grid__icon">
+                        <img src="./images/a9.png" alt="">
+                    </div>
+                    <p class="weui-grid__label">中兴付 (移动支付)</p>
+                    <p class="weui-grid__label small">金融</p>
+
+                </a>
+            </div>
+        </div>
+        <div class="weui-tab__panel panel3" style="display: none">
+            <div class="title">
+                <div class="page__hd">
+                    <h1 class="page__title">联系</h1>
+                    <p class="page__desc">联系笃定</p>
+                </div>
+            </div>
+            <div>
+                <div class="weui-cells">
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">手机号码</div>
+                        <div class="weui-cell__ft" style="font-size: 0">
+                            <span style="vertical-align:middle; font-size: 17px;">13712312312</span>
+                        </div>
+                    </div>
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">邮箱</div>
+                        <div class="weui-cell__ft" style="font-size: 0">
+                            <span style="vertical-align:middle; font-size: 17px;">xxxx@qq.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weui-cells__title">友情链接</div>
+                <div class="weui-cells">
+                    <div class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">个人博客</div>
+                        <div class="weui-cell__ft" style="font-size: 0">
+                            <span style="vertical-align:middle; font-size: 17px;">立即进入</span>
+                        </div>
+                    </div>
+                    <div onclick="document.location.href='https://github.com/w123rq'" class="weui-cell weui-cell_access">
+                            <div class="weui-cell__bd">我的Github</div>
+                            <div class="weui-cell__ft" style="font-size: 0">
+                                <span style="vertical-align:middle; font-size: 17px;">立即进入</span>
+                            </div>
+                    </div>
+
+
+                </div>
+                <div class="weui-cells__title">给我留言</div>
+                <div class="weui-cells">
+                    <div id="showlyb" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span style="vertical-align: middle">留言板</span>
+                            <span class="weui-badge" style="margin-left: 5px;">New</span>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+        <div class="weui-tab__panel panel4" style="display: none">
+            <div class="title">
+                <div class="page__hd" style="margin-bottom: 40px">
+                    <h1 class="page__title">留言板</h1>
+                </div>
+
+            </div>
+            <div class="weui-cells__title">输入留言内容</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea id="lycontent" class="weui-textarea seted" placeholder="请输入留言" rows="3" maxlength="200"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/200</div>
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 0px 15px;margin-top: 15px">
+                <a id="submitly" class="weui-btn weui-btn_primary">确定提交</a>
+            </div>
+        </div>
+        <div class="weui-tabbar">
+            <a href="javascript:jump(0);" class="weui-tabbar__item weui-bar__item_on">
+                <i class="weui-tabbar__icon fa fa-user" aria-hidden="true"></i>
+                <p class="weui-tabbar__label">我</p>
+            </a>
+            <a href="javascript:jump(1);" class="weui-tabbar__item">
+                <i class="weui-tabbar__icon fa fa-graduation-cap" aria-hidden="true"></i>
+                <p class="weui-tabbar__label">教育</p>
+            </a>
+            <a href="javascript:jump(2);" class="weui-tabbar__item">
+                <i class="weui-tabbar__icon fa fa-tasks" aria-hidden="true"></i>
+                <p class="weui-tabbar__label">经验</p>
+            </a>
+            <a href="javascript:jump(3);" class="weui-tabbar__item">
+                <i class="weui-tabbar__icon fa fa-phone-square" aria-hidden="true"></i>
+                <p class="weui-tabbar__label">联系</p>
+            </a>
+        </div>
+    </div>
+</div>
 </body>
+<!--赶时间直接使用jquery了-->
+<script src="./js/jquery.min.js"></script>
 <script>
-var submitliuyan = function(){
-            layer.alert('留言成功', {icon: 1});
-			layer.close(boxindex);
-        };
+    var jump = function(index){
+        $(".weui-msg").hide();
+        $(".weui-tab").show();
+        $(".weui-tab__panel").hide();
+        $(".panel"+index).show();
+        $(".weui-bar__item_on").removeClass("weui-bar__item_on");
+        $(".weui-tabbar__item").eq(index).addClass("weui-bar__item_on");
+        if(index == 4){
+            $(".weui-tabbar__item").eq(3).addClass("weui-bar__item_on");
+        }
+    };
     $(document).ready(function(){
-        console.log($(".head").offset().left);
-        $(".bg-tree").css("left",$(".head").offset().left).show();
-        var boxindex = $("#liuyan").click(function(){
-            layer.open({
-                title:null,
-                btn:null,
-				shadeClose:true,
-                content:'<div><form action="#"><textarea  name="" id="" cols="30" rows="10" placeholder="请输入留言内容" style="padding: 4px;width: 100%"></textarea><button onclick="submitliuyan()" type="button" class="mybtn">确认提交</button></form></div>',
-            });
+        $("#showlyb").click(function(){
+            jump(4);
         });
-        
+
+        $("#lycontent").keyup(function(){
+            $(".weui-textarea-counter span").text($("#lycontent").val().length);
+        });
+
+        $("#submitly").click(function(){
+            $(".weui-msg").show();
+            $(".weui-tab").hide();
+        });
     });
 </script>
 </html>
