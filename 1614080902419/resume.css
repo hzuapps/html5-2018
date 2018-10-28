@@ -1,0 +1,92 @@
+body {
+    background-color: #c8cac4;
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    color: #005dff;
+}
+
+#container {
+    background-color: #fffefd;
+    width: 65%;
+    margin-left: 17.5%;
+}
+
+#PersonalIcon {
+    width: 43px;
+    height: 32.5px;
+}
+
+#Education {
+    width: 43px;
+    height: 32.5px;
+}
+
+#Practial {
+    width: 35px;
+    height: 28.5px;
+}
+
+#skills {
+    width: 35px;
+    height: 26.5px;
+}
+
+#self {
+    width: 38px;
+    height: 30.5px;
+}
+
+#div1 {
+    display: flex;
+    align-items: center;
+}
+
+#div2 {
+    display: flex;
+    align-items: center;
+}
+
+#div3 {
+    display: flex;
+    align-items: center;
+}
+
+#div4 {
+    display: flex;
+    align-items: center;
+}
+
+#div5 {
+    display: flex;
+    align-items: center;
+}
+
+
+#text {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    color: deeppink;
+    border: 2px solid #05d729;
+    font-size: 20px;
+}
+
+#leaveWorld {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    background: #05d729;
+    border: 2px solid #05d729;
+    font-size: 20px;
+}
