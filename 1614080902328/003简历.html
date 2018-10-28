@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .cell{
+            border-bottom: 1px solid #ccc;
+        }
+        .all{
+            width: 100%;
+        }
+        .top{
+            width: 150px;
+            height: 150px;
+        }
+        .top img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<link rel="stylesheet" href="css/example.css">
+<link rel="stylesheet" href="css/weui.css">
+<script src="js/example.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/weui.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<body>
+<div class="all">
+    <div class="top">
+        <img src="五月天.jpg" alt="">
+    </div>
+
+    <a href="https://github.com/liangzhuoh" class="weui-cell weui-cell_access" style="border-bottom: 1px solid #ccc; ">
+            <div class="weui-cell__bd">
+                <p>我的github</p>
+            </div>
+            <div class="weui-cell__ft">
+                https://github.com/liangzhuoh
+            </div>
+    </a>
+
+    <a href="#" class="weui-cell weui-cell_access" style="border-bottom: 1px solid #ccc; ">
+        <div class="weui-cell__bd">
+            <p>个人网站</p>
+        </div>
+        <div class="weui-cell__ft">
+            https://********.com
+        </div>
+    </a>
+
+    <form action="post" style="position: absolute; bottom: 150px; width: 100%; height: 150px;">
+        <h1>留言板：</h1>
+        <textarea type="text" class="inp weui-textarea" placeholder="请输入留言..." style="height: 150px; font-size: 25px"></textarea>
+        <input type="submit" class="sub weui-btn weui-btn_primary" value="留言" >
+    </form>
+</div>
+
+<div class="weui-tabbar">
+    <a href="001简历.html" class="weui-tabbar__item weui-bar__item_on">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="image/man.ico" alt="" class="weui-tabbar__icon">
+                        <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;"></span>
+                    </span>
+        <p class="weui-tabbar__label">我的信息</p>
+    </a>
+    <a href="002简历.html" class="weui-tabbar__item">
+        <img src="image/man2.ico" alt="" class="weui-tabbar__icon">
+        <p class="weui-tabbar__label">我的简历</p>
+    </a>
+    <a href="003简历.html" class="weui-tabbar__item">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="image/phone.ico" alt="" class="weui-tabbar__icon">
+                        <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+                    </span>
+        <p class="weui-tabbar__label">发现</p>
+    </a>
+
+</div>
+
+</div>
+</body>
+</html>
