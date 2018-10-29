@@ -1,0 +1,46 @@
+#div-1 {
+    padding: 20px;
+    background-color: #10aeff;
+    color:white;
+}
+#div-2{
+    padding: 15px;
+
+}
+
+#information,#telephone,#e-mail{
+    font-size: 10px;
+    margin-top: 10px;
+}
+#div-2-2{
+    text-align: right;
+}
+
+
+#div-3,#div-6,#div-8,#div-10{
+    padding: 5px 15px;
+    background-color: #cccccc;
+}
+
+.skill{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: #ce3c39 1px solid;
+}
+
+#job_place{
+    margin: 20px;
+}
+#salary{
+    text-align: right;
+    margin: 20px;
+}
+
+#div-9{
+    padding: 5px 15px;
+}
+
+#div-11{
+    margin: 20px;
+}
