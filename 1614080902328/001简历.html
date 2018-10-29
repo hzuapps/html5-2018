@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+
         .cell{
             border-bottom: 1px solid #ccc;
         }
@@ -14,20 +15,20 @@
             width: 100%;
         }
         .top{
-            width: 500px;
+            width: 50%;
             margin: 0 auto;
             text-align: center;
             color: #212121;
         }
         .radius{
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             text-align: center;
             margin: 0 auto;
         }
         .radius img{
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border-radius:50%;
             overflow:hidden;
         }
@@ -41,10 +42,12 @@
 <script src="js/zepto.min.js"></script>
 <body>
 <div class="all">
+
 <div class="top">
     <div class="radius"><img src="image/hzxy2.jpg" alt=""   ></div>
-    <span>after17.惠州学院毕业</span>
+    <span style="font:500 10px/10px simsum; color: #586C94 " >惠州学院毕业生</span>
 </div>
+
     <div class="center">
 <div class="weui-cell cell">
     <div class="weui-cell__bd">
@@ -84,7 +87,7 @@
 </div>
     </div>
 
-    <div class="weui-tabbar">
+    <div class="weui-tabbar" style="position: fixed">
         <a href="001简历.html" class="weui-tabbar__item weui-bar__item_on" id="aaa">
                     <span style="display: inline-block;position: relative;">
                         <img src="image/man.ico" alt="" class="weui-tabbar__icon" id="bbb">
@@ -105,8 +108,8 @@
         </a>
 
     </div>
-
 </div>
+
 
 </body>
 </html>
