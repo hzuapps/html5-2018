@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .cell{
+            border-bottom: 1px solid #ccc;
+        }
+        .all{
+            width: 100%;
+        }
+        .top{
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            color: #212121;
+        }
+        .radius{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .radius img{
+            width: 200px;
+            height: 200px;
+            border-radius:50%;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="css/example.css">
+<link rel="stylesheet" href="css/weui.css">
+<script src="js/example.js"></script>
+<script src="js/jweixin-1.0.0.js"></script>
+<script src="js/weui.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<body>
+<div class="all">
+<div class="top">
+    <div class="radius"><img src="image/hzxy2.jpg" alt=""   ></div>
+    <span>after17.惠州学院毕业</span>
+</div>
+    <div class="center">
+<div class="weui-cell cell">
+    <div class="weui-cell__bd">
+        <p>姓名</p>
+    </div>
+    <div class="weui-cell__ft">梁焯豪</div>
+</div>
+<div class="weui-cell cell">
+    <div class="weui-cell__bd">
+        <p>性别</p>
+    </div>
+    <div class="weui-cell__ft">男</div>
+</div>
+<div class="weui-cell cell">
+    <div class="weui-cell__bd">
+        <p>年龄</p>
+    </div>
+    <div class="weui-cell__ft">18</div>
+</div>
+<div class="weui-cell cell">
+    <div class="weui-cell__bd">
+        <p>居住地</p>
+    </div>
+    <div class="weui-cell__ft">惠州</div>
+</div>
+<div class="weui-cell cell">
+    <div class="weui-cell__bd">
+        <p>电话</p>
+    </div>
+    <div class="weui-cell__ft">152*****505</div>
+</div>
+<div class="weui-cell cell">
+    <div class="weui-cell__bd">
+        <p>Email</p>
+    </div>
+    <div class="weui-cell__ft">59*****67</div>
+</div>
+    </div>
+
+    <div class="weui-tabbar">
+        <a href="001简历.html" class="weui-tabbar__item weui-bar__item_on" id="aaa">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="image/man.ico" alt="" class="weui-tabbar__icon" id="bbb">
+                        <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;"></span>
+                    </span>
+            <p class="weui-tabbar__label">我的信息</p>
+        </a>
+        <a href="002简历.html" class="weui-tabbar__item">
+            <img src="image/man2.ico" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">我的简历</p>
+        </a>
+        <a href="003简历.html" class="weui-tabbar__item">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="image/phone.ico" alt="" class="weui-tabbar__icon">
+                        <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+                    </span>
+            <p class="weui-tabbar__label">发现</p>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
