@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+
         *{
             padding: 0;
             margin: 0;
@@ -22,19 +24,20 @@
             width: 100%;
         }
         .left{
-            float: left;
-            width: 25%;
-            height: 138px;
+            /*float: left;*/
+            width: 35%;
+            height: 30px;
             text-align: center;
-            line-height: 150px;
-            font: 800 20px/150px "simsum";
+            font: 800 15px/30px "simsum";
             border-radius: 10px;
             border: 1px solid #000;
+            box-sizing: border-box;
+            margin: 0 auto;
         }
         .right{
-            float: left;
-            width: 70%;
+            /*float: left;*/
             border-left: 5px solid #9ED99D;
+            font-size: 10px;
         }
 
     </style>
@@ -49,16 +52,17 @@
 <div class="all">
 
         <div class="top-min">
+            <div class="set">
             <div class="left">
-                <p>最高学历：</p>
+                最高学历：
             </div>
             <div class="right">
                 <div class="weui-cell cell">
-                <div class="weui-cell__bd">
+                <div class="weui-cell__bd" >
                     <p>学校</p>
                 </div>
                 <div class="weui-cell__ft">惠州学院</div>
-            </div>
+              </div>
                 <div class="weui-cell cell">
                     <div class="weui-cell__bd">
                         <p>学历</p>
@@ -71,6 +75,7 @@
                     </div>
                     <div class="weui-cell__ft">计算机软件工程</div>
                 </div>
+            </div>
             </div>
 
             <div class="left">
@@ -125,12 +130,11 @@
                 <p>自我介绍：</p>
             </div>
             <div class="right">
-                <div class="weui-cell cell" style="height: 118px; border-bottom: 2px solid #586C94;">
+                <div class="weui-cell cell" style="height: 160px; border-bottom: 2px solid #586C94;">
                     <div class="weui-cell__bd">
-                        <p>本人有良好的计算机知识和应用能力，能熟悉的使用当前流行的网页开发语言。思维活跃，具有开创精神，有组织能力以及良好的心理素质。希望在实习中能学习更多的知识和如何为人处世，以及希望可以通过实习找到中间的位置。能吃苦，善于思考，可以加班！</p>
+                        <span>本人有良好的计算机知识和应用能力，能熟悉的使用当前流行的网页开发语言。思维活跃，具有开创精神，有组织能力以及良好的心理素质。希望在实习中能学习更多的知识和如何为人处世，以及希望可以通过实习找到中间的位置。能吃苦，善于思考，可以加班！</span>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -139,7 +143,7 @@
 
     </div>
 
-    <div class="weui-tabbar">
+    <div class="weui-tabbar" style="position: fixed">
         <a href="001简历.html" class="weui-tabbar__item weui-bar__item_on">
                     <span style="display: inline-block;position: relative;">
                         <img src="image/man.ico" alt="" class="weui-tabbar__icon">
