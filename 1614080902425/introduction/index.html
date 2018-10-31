@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <link rel="stylesheet" href="./weui.css">
+    <link rel="stylesheet" href="./example.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <meta charset="utf-8">
+    <title>个人简历</title>
+</head>
+<body ontouchstart>
+    <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
+    <div class="container" id="container"></div>
+    <script type="text/html" id="tpl_home">
+        <div class="page">
+            <div class="weui-tab" id="weui-tab" style="height: 100%;">
+                <div class="weui-tab__panel">
+                    <div id="simple">
+                        <div class="page__hd">
+                            <p style="font-size: 20px ">个人资料:</p>
+                        </div>
+
+                        <div class="weui-cell">
+                            <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                                <img src="images/xiangxiangxiang.png" style="width: 50px;display: block" />
+                            </div>
+                            <div class="weui-cell__bd">
+                                <p>404</p>
+                                <p style="font-size: 13px;color: #888888;">我唔知讲咩好,打工是不可能打工的.</p>
+                            </div>
+                        </div>
+                        <div class="page__bd">
+                            <div class="weui-cells__title">个人信息</div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>年龄</p>
+                                </div>
+                                <div class="weui-cell__ft">21</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>性别</p>
+                                </div>
+                                <div class="weui-cell__ft">男</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>爱好</p>
+                                </div>
+                                <div class="weui-cell__ft">游戏</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>教育情况</p>
+                                </div>
+                                <div class="weui-cell__ft">本科</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>专业</p>
+                                </div>
+                                <div class="weui-cell__ft">软件工程</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>学校</p>
+                                </div>
+                                <div class="weui-cell__ft">惠州学院</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>毕业时间</p>
+                                </div>
+                                <div class="weui-cell__ft">2020年</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>期望方向</p>
+                                </div>
+                                <div class="weui-cell__ft">C/C++开发</div>
+                            </div>
+                            <div class="weui-loadmore weui-loadmore_line">
+                                <span class="weui-loadmore__tips" style="background-color:#f8f8f8">期望岗位</span>
+                            </div>
+                            <div class="weui-panel weui-panel_access">
+                                <div class="weui-panel__hd">工作类型：实习</div>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__hd">
+                                        <img class="weui-media-box__thumb" src="./images/server.png" alt="">
+                                    </div>
+                                    <div class="weui-media-box__bd">
+                                        <h4 class="weui-media-box__title">应用服务器开发</h4>
+                                        <p class="weui-media-box__desc">期望薪资:2000-3000</p>
+                                        <p class="weui-media-box__desc">待遇要求:能吃饱饭</p>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                                    <div class="weui-media-box__hd">
+                                        <img class="weui-media-box__thumb" src="./images/server2.png" alt="">
+                                    </div>
+                                    <div class="weui-media-box__bd">
+                                        <h4 class="weui-media-box__title">游戏服务器开发</h4>
+                                        <p class="weui-media-box__desc">期望薪资:3000-5000</p>
+                                        <p class="weui-media-box__desc">待遇要求:能睡个觉</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="edu" style="display: none;">
+                        <div class="page__hd">
+                            <p style="font-size: 20px ">教育经历:</p>
+                        </div>
+                        <div class="page__bd">
+                            <div class="weui-cells__title">个人积累</div>
+                            <article class="weui-article">
+                                <div class="weui-loadmore weui-loadmore_line">
+                                    <span class="weui-loadmore__tips" style="background-color:#f8f8f8">课程学习</span>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <h2 class="title">主修课程</h2>
+                                    </div>
+                                </div>
+                                <section>
+                                    <div class="weui-cell">
+                                        <div class="weui-cell__bd">
+                                            <section>
+                                                <h3>学校课程</h3>
+                                                <p>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;软件工程、数据库、c++、java、企业信息化、大学英语、操作系统、计算机组成原理、计算机网络、Android应用开发。
+                                                </p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div class="weui-cell">
+                                        <div class="weui-cell__bd">
+                                            <section>
+                                                <h3>自修课程</h3>
+                                                <p>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;unix网络编程、lighttpd源码解析、Linux鸟哥的私房菜、Linux高性能服务器编程。
+                                                </p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="weui-loadmore weui-loadmore_line">
+                                    <span class="weui-loadmore__tips" style="background-color:#f8f8f8">获得荣誉</span>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <p>金迈思程序设计大赛</p>
+                                    </div>
+                                    <div class="weui-cell__ft">三等奖</div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <p>ACM</p>
+                                    </div>
+                                    <div class="weui-cell__ft">打铁奖</div>
+                                </div>
+                                <div class="weui-cell">
+                                    <div class="weui-cell__bd">
+                                        <p>蓝桥杯C/C++B组</p>
+                                    </div>
+                                    <div class="weui-cell__ft">广东省二等奖</div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div id="contact" style="display: none;">
+                        <div class="page__bd">
+                            <div class="weui-cells__title">联系方式</div>
+                        </div>
+                        <div class="weui-cells">
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>电话</p>
+                                </div>
+                                <div class="weui-cell__ft">13143001858</div>
+                            </div>
+                            <div class="weui-cell">
+                                <div class="weui-cell__bd">
+                                    <p>邮箱</p>
+                                </div>
+                                <div class="weui-cell__ft">953336739@qq.com</div>
+                            </div>
+                            <a class="weui-cell weui-cell_access" href="https://github.com/heweisheng">
+                                <div class="weui-cell__bd">
+                                    <p>github</p>
+                                </div>
+                                <div class="weui-cell__ft">github.com/heweisheng</div>
+                            </a>
+                            <a class="weui-cell weui-cell_access js_item" href="javascript:;" data-id="sendmes">
+                                <div class="weui-cell__bd">
+                                    <p>给我留言</p>
+                                </div>
+                                <div class="weui-cell__ft"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__bd">
+                    <div class="weui-tabbar" style="position:absolute; margin-top: 100px;">
+                        <a href="#simple" class="weui-tabbar__item weui-bar__item_on">
+                            <img src="./images/icon_nav_article.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">个人信息</p>
+                        </a>
+                        <a href="#edu" class="weui-tabbar__item">
+                            <img src="./images/edu.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">教育经历</p>
+                        </a>
+                        <a href="#contact" class="weui-tabbar__item">
+                            <img src="./images/contact.png" alt="" class="weui-tabbar__icon">
+                            <p class="weui-tabbar__label">联系本人</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('.js_item').on('click', function () {
+                    var id = $(this).data('id');
+                    window.pageManager.go(id);
+                });
+            $('.weui-tabbar__item').on('click', function ()
+                { $(this).addClass('weui-bar__item_on').siblings().removeClass('weui-bar__item_on');
+                 var tabId = $(this).attr('href');
+                 $('.weui-tab__panel').find(tabId).show().siblings().hide();
+
+            });
+            });
+        </script>
+    </script>
+    <script type="text/html" id="tpl_sendmes">
+        <div class="page">
+            <div class="page__hd">
+                <p style="font-size: 20px ">留言板:</p>
+            </div>
+            <div class="page__bd">
+                <div class="weui-cells">
+                    <div class="weui-cell weui-cell_select weui-cell_select-before">
+                        <div class="weui-cell__hd">
+                            <select class="weui-select" name="select2">
+                                <option value="1">email</option>
+                                <option value="2">QQ</option>
+                                <option value="3">Weixin</option>
+                                <option value="4">phone</option>
+                            </select>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <input class="weui-input" placeholder="请选择您的联系方式" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells__title">输入留言内容</div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                            <div class="weui-textarea-counter"><span>0</span>/200</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__bd page__bd_spacing">
+                    <div class="button-sp-area">
+                        <a href="javascript:;" class="weui-btn weui-btn_plain-primary">确认</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="./zepto.min.js"></script>
+    <script src="./example.js"></script>
+</body>
+</html>
