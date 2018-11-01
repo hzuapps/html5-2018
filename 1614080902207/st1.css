@@ -1,0 +1,47 @@
+		/*整体布局*/
+		#wrap{width: 700px;
+			height: 850px;
+			margin: 0 auto;
+			border: 2px solid black;
+		}
+		/*left*/
+		.lef{
+			float: left;
+			position: relative;
+			background-color:#5151A2;
+			width: 220px;
+			height: 850px;
+			border-right: 1px solid black;
+		}
+		
+		
+		
+		/*picture*/
+		.lef .pic{
+			margin: 20px 20px 20px 20px;
+			border-radius: 50%;
+			width: 170px;
+			height: 170px;
+			border:1px solid white;
+		}
+		/*right*/
+		.rig {
+			float: right;
+			width: 479px;
+			height: 850px;
+			
+		}
+		.bt {
+			width: 120px;
+			height: 40px;
+			margin-left: 30px;
+			color: #5151A2;
+			font-weight: bold;
+			font-size: 25px;
+
+		}
+		
+		/*link*/
+		a:link { color:#E66133; }
+		a:visited { color:#E66133; }
+		a:hover{ color:#637DBC; text-decoration:underline; }style="border-radius: 50%;width: 180px;height: 180px;"
