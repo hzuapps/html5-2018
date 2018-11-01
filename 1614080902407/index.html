@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<link rel="stylesheet" href="css/weui.css" />
+		<link rel="stylesheet" href="css/example.css" />
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+		<title>个人简历</title>
+		<style>
+			.round_icon{
+			  width: 120px;
+			  height: 120px;
+			  display: flex;
+			  border-radius: 50%;
+			  align-items: center;
+			  justify-content: center;
+			  overflow: hidden;
+			}
+			.main{
+			width:0 auto;
+			height:0 auto;
+			position:relative;	 
+			}
+			.float_div{
+			position:absolute;
+			width:10px;
+			height:10px;
+			right:150px;
+			top:15px;
+			z-index:100;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="page__bd" style="height: 100%;">
+			<div class="weui-tab">
+				<div class="weui-tab__panel" style="overflow :auto	">
+					<div id="tab1" class="weui-tab__panel0 main" style="display: block;">
+						<div class="page__hd">
+							<h1 class="page__title">秋天</h1>
+							<p class="page__desc">软件工程</p>
+						</div>
+						<div class="page__bd float_div">
+							<img src="img/MyHead.jpg" alt="" class="round_icon" />
+						</div>
+						<div class="weui-loadmore weui-loadmore_line">
+            				<span class="weui-loadmore__tips" style="background-color: #F8F8F8;">个人简介</span>
+        				</div>
+						<div class="page__bd">
+							<div class="weui-cells__title">基本资料</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><img src="img/63100.png" alt="" style="width:20px;margin-right:5px;display:block"></div>
+									<div class="weui-cell__bd">
+										<p>性别</p>
+									</div>
+									<div class="weui-cell__ft">男</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><i class="fas fa-graduation-cap" style="width:20px;margin-right:5px;display:block"></i></div>
+									<div class="weui-cell__bd">
+										<p>学历</p>
+									</div>
+									<div class="weui-cell__ft">本科</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><i class="fas fa-map-marker-alt" style="width:20px;margin-right:1px;margin-left:2px;display:block"></i></div>
+									<div class="weui-cell__bd">
+										<p>居住地</p>
+									</div>
+									<div class="weui-cell__ft">深圳</div>
+								</div>
+				
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><i class="far fa-user" style="width:20px;margin-right:1px;margin-left:2px;display:block"></i></div>
+									<div class="weui-cell__bd">
+										<p>年龄</p>
+									</div>
+									<div class="weui-cell__ft">20岁</div>
+								</div>
+							</div>
+							<div class="weui-panel weui-panel_access">
+								<div class="weui-panel__hd">求职意向</div>
+								<div class="weui-panel__bd">
+									<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+										<div class="weui-media-box__hd">
+											<img class="weui-media-box__thumb" src="img/252901.png" alt="">
+											<!--<i class="fab fa-java fa-3x"></i>-->
+										</div>
+										<div class="weui-media-box__bd">
+											<h4 class="weui-media-box__title">Java开发工程师</h4>
+											<p class="weui-media-box__desc">具有三年以上Java开发经验，熟悉JAVA、J2EE体系结构</p>
+										</div>
+									</a>
+									<a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+										<div class="weui-media-box__hd">
+											<img class="weui-media-box__thumb" src="img/887423.png" alt="">
+										</div>
+										<div class="weui-media-box__bd">
+											<h4 class="weui-media-box__title">前端开发工程师</h4>
+											<p class="weui-media-box__desc">有两年及以上的工作经验，计算机软件相关专业，有完整前端开发项目经验</p>
+										</div>
+									</a>
+								</div>
+								<div class="weui-panel__ft">
+									<a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link">
+										<div class="weui-cell__bd">查看更多</div>
+										<span class="weui-cell__ft"></span>
+									</a>
+								</div>
+							</div>
+							<div class="weui-panel weui-panel_access">
+					            <div class="weui-panel__hd">专业技能</div>
+					            <div class="weui-panel__bd">
+					                <div class="weui-media-box weui-media-box_text">
+					                    <p class="weui-media-box__desc">
+					                    	精通B/S架构、JAVA编程语言，熟悉软件工程；
+					                    </p>
+					                    <p class="weui-media-box__desc">
+					                    	精通HTML/CSS/JavaScript 等前端开发技术；
+					                    </p>
+					                    <p class="weui-media-box__desc">
+					                    	熟悉Spring、Spring MVC、MyBatis等技术框架；
+					                    </p>
+					                    <p class="weui-media-box__desc">
+					                    	熟悉Tomcat等常用应用服务器；
+					                    </p>
+					                    <p class="weui-media-box__desc">
+					                    	熟悉linux环境，熟练使用linux相关基础命令；
+					                    </p>
+					                    <p class="weui-media-box__desc">
+					                    	熟练掌握SQL语句，熟练使用常用大型数据库。
+					                    </p>
+					                </div>
+					            </div>
+					        </div>
+							<div class="weui-panel">
+					            <div class="weui-panel__hd">个人评价</div>
+					            <div class="weui-panel__bd">
+					                <div class="weui-media-box weui-media-box_text">
+					                    <h4 class="weui-media-box__title"></h4>
+					                    <p class="weui-media-box__desc">本人性格随和,待人友好,具有较强的团队意识与良好的沟通能力，高度的责任感，对工作积极严谨，勇于承担压</p>
+					                	<p class="weui-media-box__desc">力，较强的学习能力以及快速解决问题的能力</p>
+					                </div>
+					            </div>
+					        </div>
+						</div>
+					</div>
+					<div id="tab2" class="weui-tab__panel1" style="display:none ;">
+							<div class="page__hd">
+						        <h1 class="page__title">联系方式</h1>
+						    </div>
+							<div class="weui-cells__title">联系我</div>
+							<div class="weui-cells">
+								<div class="weui-cell">
+									<div class="weui-cell__hd">
+										<i class="fas fa-mobile"></i>
+									</div>
+									&nbsp;
+									&nbsp;
+									<div class="weui-cell__bd">
+										<p>手机号码</p>
+									</div>
+									<div class="weui-cell__ft">
+										12345678901
+									</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd">
+										<i class="fas fa-phone-square"></i>
+									</div>
+									&nbsp;
+									&nbsp;
+									<div class="weui-cell__bd">
+										<p>电话</p>
+									</div>
+									<div class="weui-cell__ft">
+										123456
+									</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd">
+										<i class="fab fa-weixin"></i>
+									</div>
+									&nbsp;
+									&nbsp;
+									<div class="weui-cell__bd">
+										<p>微信</p>
+									</div>
+									<div class="weui-cell__ft">
+										qiutiian123
+									</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd">
+										<i class="fab fa-qq"></i>
+									</div>
+									&nbsp;
+									&nbsp;
+									<div class="weui-cell__bd">
+										<p>QQ</p>
+									</div>
+									<div class="weui-cell__ft">
+										123456
+									</div>
+								</div>
+								<a class="weui-cell weui-cell_access" href="https://github.com/Qiujialin">
+					                <div class="weui-cell__hd"><i class="fab fa-github-alt"></i></div>
+					                &nbsp;
+									&nbsp;
+					                <div class="weui-cell__bd">
+					                    <p>My GitHub</p>
+					                </div>
+					                <div class="weui-cell__ft">点击访问</div>
+					            </a>
+							</div>
+							<div class="weui-cells__title">给我留言</div>
+							<div class="weui-cells weui-cells_form">
+					            <div class="weui-cell">
+					                <div class="weui-cell__bd">
+					                    <textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
+					                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+					                </div>
+					            </div>
+					        </div>
+				            <div class="weui-cells__title">联系电话</div>
+				            <div class="weui-cells">
+					            <div class="weui-cell weui-cell_select weui-cell_select-before">
+					                <div class="weui-cell__hd">
+					                    <select class="weui-select" name="select2">
+					                        <option value="1">+86</option>
+					                        <option value="2">+80</option>
+					                        <option value="3">+84</option>
+					                        <option value="4">+87</option>
+					                    </select>
+					                </div>
+					                <div class="weui-cell__bd">
+					                    <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入号码">
+					                </div>
+					            </div>
+					        </div>
+				            <div class="weui-btn-area">
+					            <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips" style="width: 200px;">提交</a>
+					        </div>
+					</div>
+					
+				</div>
+				<div class="weui-tabbar">
+					<a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+						<span style="display: inline-block;position: relative;">
+                        <i class="weui-tabbar__icon fas fa-user-graduate"></i>
+                        <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+						</span>
+						<p class="weui-tabbar__label">基本资料</p>
+					</a>
+					
+					<a href="javascript:;" class="weui-tabbar__item">
+						<!--<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">-->
+						<i class="weui-tabbar__icon fas fa-mobile-alt"></i>
+						<p class="weui-tabbar__label">联系方式</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$('.weui-tabbar__item').on('click', function() {
+					$(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+					var index = $(this).index();
+					$('.weui-tab__panel>div').eq(index).css("display", "block").siblings().css("display", "none");
+				});
+			});
+		</script>
+	</body>
+
+</html>
