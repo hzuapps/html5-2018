@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>WeUI</title>
+        <!-- 引入 WeUI -->
+        
+        <style type="text/css">
+			.upper{
+			  background-color:whitesmoke;
+			  height:200px;
+			}
+			.center{
+			  background-color:whitesmoke;
+			  height: 600px;
+			}
+			.weui-cell{
+			  padding:10px 15px;
+			  position:relative;
+			  display:-webkit-box;
+			  display:-webkit-flex;
+			  display:flex;
+			  -webkit-box-align:center;
+			  -webkit-align-items:center;
+			          align-items:center;
+			}
+			.weui-cell__bd{
+			  -webkit-box-flex:1;
+			  -webkit-flex:1;
+			          flex:1;
+			}
+			.weui-cell__ft{
+			  text-align:right;
+			  color:#999999;
+			}
+			.weui-label{
+			  display:block;
+			  width:105px;
+			  word-wrap:break-word;
+			  word-break:break-all;
+			}
+			.weui-panel{
+			  background-color:#FFFFFF;
+			  margin-top:10px;
+			  position:relative;
+			  overflow:hidden;
+			}
+			.weui-panel:first-child{
+			  margin-top:0;
+			}
+			.weui-panel:before{
+			  content:" ";
+			  position:absolute;
+			  left:0;
+			  top:0;
+			  right:0;
+			  height:1px;
+			  border-top:1px solid #E5E5E5;
+			  color:#E5E5E5;
+			  -webkit-transform-origin:0 0;
+			          transform-origin:0 0;
+			  -webkit-transform:scaleY(0.5);
+			          transform:scaleY(0.5);
+			}
+			.weui-panel:after{
+			  content:" ";
+			  position:absolute;
+			  left:0;
+			  bottom:0;
+			  right:0;
+			  height:1px;
+			  border-bottom:1px solid #E5E5E5;
+			  color:#E5E5E5;
+			  -webkit-transform-origin:0 100%;
+			          transform-origin:0 100%;
+			  -webkit-transform:scaleY(0.5);
+			          transform:scaleY(0.5);
+			}
+			.weui-panel__hd{
+			  padding:14px 15px 10px;
+			  color:#999999;
+			  font-size:13px;
+			  position:relative;
+			}
+			.weui-panel__hd:after{
+			  content:" ";
+			  position:absolute;
+			  left:0;
+			  bottom:0;
+			  right:0;
+			  height:1px;
+			  border-bottom:1px solid #E5E5E5;
+			  color:#E5E5E5;
+			  -webkit-transform-origin:0 100%;
+			          transform-origin:0 100%;
+			  -webkit-transform:scaleY(0.5);
+			          transform:scaleY(0.5);
+			  left:15px;
+			}
+			.weui-media-box{
+			  padding:15px;
+			  position:relative;
+			}
+			.weui-media-box:before{
+			  content:" ";
+			  position:absolute;
+			  left:0;
+			  top:0;
+			  right:0;
+			  height:1px;
+			  border-top:1px solid #E5E5E5;
+			  color:#E5E5E5;
+			  -webkit-transform-origin:0 0;
+			          transform-origin:0 0;
+			  -webkit-transform:scaleY(0.5);
+			          transform:scaleY(0.5);
+			  left:15px;
+			}
+			.weui-media-box:first-child:before{
+			  display:none;
+			}
+			a.weui-media-box{
+			  color:#000000;
+			  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+			}
+			a.weui-media-box:active{
+			  background-color:#ECECEC;
+			}
+			.weui-media-box__title{
+			  font-weight:400;
+			  font-size:17px;
+			  width:auto;
+			  overflow:hidden;
+			  text-overflow:ellipsis;
+			  white-space:nowrap;
+			  word-wrap:normal;
+			  word-wrap:break-word;
+			  word-break:break-all;
+			}
+			.weui-media-box__desc{
+			  color:#999999;
+			  font-size:13px;
+			  line-height:1.2;
+			  overflow:hidden;
+			  text-overflow:ellipsis;
+			  display:-webkit-box;
+			  -webkit-box-orient:vertical;
+			  -webkit-line-clamp:2;
+			}
+        </style>
+    </head>
+    <body>
+    	<div class="upper">
+    		<div class="figure" style="float: left;margin-top: 15px;margin-bottom: 15px;margin-left: 60px">
+    			<img src="https://raw.githubusercontent.com/zhaokangye/html5-2018/master/1613071002201/dog.jpg" width="160">
+    		</div>
+    		<div class="cells_contain" style="float: left;margin-left: 30px;margin-top: 20px">
+    			<div class="weui-cell">
+    				<div class="weui-cell_bd" style="font-size: 30px;">
+    					<label class="weui-label">叶同学</label>
+    				</div>
+    			</div>
+    			<div class="weui-cell">
+    				<label class="weui-label">软件工程在读</label>
+    			</div>
+    		</div>
+    		<div class="mail" style="float: right;font-size: 20px;margin-top: 50px;margin-right: 30px">
+    			<p>mail:1260502253@qq.com</p>
+    			<p>tell:18028846784</p>
+    		</div>
+    	</div>
+
+    	<hr color="orange"> <!--分割线-->
+
+	    <div class="center">
+
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-panel__bd">
+                    <div class="weui-media-box weui-media-box_text" style="height:180px">
+                        <h4 class="weui-media-box__title" style="color: orange;font-size: 20px;margin-top: 10px">学习经历</h4>
+                        <p class="weui-media-box__desc">
+
+                                <div class="weui-cell__bd weui-cell_primary" style="margin-left: 600px;margin-bottom: : 60px">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                JAVA多线程、TCP SOCKET通信实践;
+                                            </li>
+                                            <li>
+                                                链表的数据结构;
+                                            </li>
+                                            <li>
+                                                MySQL数据库的建立及操作;
+                                            </li>
+                                            <li>
+                                                使用AndroidStudio编写APP.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+
+                        </p>
+                    </div>
+                    <div class="weui-media-box weui-media-box_text" style="height:180px">
+                        <h4 class="weui-media-box__title" style="color: orange;font-size: 20px;margin-top: 10px">自我评价</h4>
+                        <p class="weui-media-box__desc">
+
+                                <div class="weui-cell__bd weui-cell_primary" style="margin-left: 600px;">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                能用英语进行较流畅的交流，能简单阅读英语文章及翻译;
+                                            </li>
+                                            <li>
+                                                较强自学能力，对不熟悉的概念能快速通过查找资料理解;
+                                            </li>
+                                            <li>
+                                                工作态度诚恳，能时刻检查自己是否有错误。
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                        </p>
+                    </div>
+
+                    <div class="weui-media-box weui-media-box_text" style="height:160px">
+                        <h4 class="weui-media-box__title" style="color: orange;font-size: 20px;margin-top: 10px">所获证书</h4>
+                        <p class="weui-media-box__desc">
+
+                                <div class="weui-cell__bd weui-cell_primary" style="margin-left: 600px;margin-bottom: : 30px">
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                大学英语四级(CET-4)
+                                            </li>
+                                            <li>
+                                                大学英语六级(CET-6)
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>  
+
+	    </div> <!--center尾部-->
+
+    </body>
+</html>
