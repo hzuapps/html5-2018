@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>个人简历</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/weui.css" rel="stylesheet" type="text/css">
+<!--    引入微信UI的CSS-->
 </head>
 <body>
 <div class="wrap">
     <h1 class="resume_title">个人简历</h1>
-    <table border="1">
+    <table border="0">
         <tr><td class="type_1" colspan="7" height="40px">基本信息</td></tr>
         <tr class="table_basic">
             <td class="type_2">姓名</td>
@@ -43,29 +45,108 @@
 
         <tr><td class="type_1" colspan="7" height="40px">教育背景</td></tr>
         <tr><td colspan="7" height="100px" class="type_3">
-            一、本科就读于北京大学计算机科学系</br>
-            二、研究生就读于哈佛大学</br>
-            三、现在哈佛继续读博，钻研智能机器人方向</td>
+            <div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/beijingdaxue.jpg" alt="北京大学">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">本科阶段</h4>
+                        <p class="weui-media-box__desc">一、本科就读于北京大学计算机科学系</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/hafodaxue.jpg" alt="哈佛大学">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">硕士阶段</h4>
+                        <p class="weui-media-box__desc">二、研究生就读于哈佛大学</p>
+                    </div>
+                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/robot.jpg" alt="智能机器人">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">博士阶段</h4>
+                        <p class="weui-media-box__desc">三、现在哈佛继续读博，钻研智能机器人方向</p>
+                    </div>
+                </a>
+            </div>
+            </td>
         </tr>
         <tr><td class="type_1" colspan="7" height="40px">获奖经厉</td></tr>
         <tr><td colspan="7" height="100px" class="type_3">
-            图灵奖
+                            <div class="weui-panel__hd">图文组合列表</div>
+            <div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/acm.jpg" alt="ACM奖">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">获奖一</h4>
+                        <p class="weui-media-box__desc">在大学期间，成功获得ACM比赛一等奖。</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/tuling.jpg" alt="图灵奖">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">获奖二二</h4>
+                        <p class="weui-media-box__desc">在国外攻读博士学位时，多次发表论文，获得图灵奖</p>
+                    </div>
+                </a>
+            </div>
         </td></tr>
         <tr><td class="type_1" colspan="7" height="40px">实习经厉</td></tr>
         <tr><td colspan="7" height="100px" class="type_3">
-            1、曾在国内腾讯公司进行实习，负责大数据处理</br>
-            2、曾在MicroSoft公司实习，完成了项目</br>
-            3、目前在Google公司进行智能机器人开发项目
+                        <div class="weui-panel__bd">
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/tengxun.jpg" alt="腾讯实习">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">实习一</h4>
+                        <p class="weui-media-box__desc">1、曾在国内腾讯公司进行实习，负责大数据处理</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/weiruan.jpg" alt="微软">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">实习二</h4>
+                        <p class="weui-media-box__desc">2、曾在MicroSoft公司实习，完成了项目</p>
+                    </div>
+                </a>
+                                <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/yanjiu.jpg" alt="智能机器人开发">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">实习三</h4>
+                        <p class="weui-media-box__desc">3、目前在Google公司进行智能机器人开发项目</p>
+                    </div>
+                </a>
+            </div>
         </td></tr>
-        <tr><td class="type_1" colspan="7" height="40px">给我留言</td></tr>
+        <tr><td class="weui-cells__title" colspan="7" height="40px">给我留言</td></tr>
         <tr><td colspan="7" height="100px">
-            <form method="get">
-                <textarea></textarea>
-                <input type="submit" value="提交">
-                <input type="reset" value="重置">
-            </form>
+<!--        引用微信UI的表单和里面的按钮-->
+         <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+                </div>
+            </div>
+                <input class="weui-btn weui-btn_mini weui-btn_primary" type="submit" value="提交">
+                <input class="weui-btn weui-btn_mini weui-btn_default" type="reset" value="重置">
+        </div>
         </td></tr>
     </table>
-</div>
+</div> <!--wrap主体结束-->
 </body>
 </html>
