@@ -61,12 +61,5 @@ table
     font-size: 20px;
     font-family: 宋体;
 }
-textarea
-{
-    background-color: #d8faff;
-    height: 100px;
-    width: 800px;
-    resize: none;
-    font-size: 20px;
-}
+
 
