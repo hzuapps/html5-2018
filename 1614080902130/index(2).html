@@ -1,0 +1,137 @@
+<!--网页开头模板-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="gb2312">
+<title>个人简历</title>
+<link rel="stylesheet" type="text/css" href="weui.css">
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    img{width: 180px;height: 180px;}
+    .DIV{padding: 50px 0;}
+	a{text-decoration:none;}
+	table{text-align:center; line-height:1.5em;}
+</style>
+<script>   
+$(function(){
+
+     $('#showDialog_2').click(function(){
+        dialog('提示信息','发送成功');
+     });
+
+     function dialog(title, msg, callback){
+        var dialog2;
+        dialog2 ='\
+        	<div class="weui_dialog_alert" id="dialog2">\
+			    <div class="weui_mask"></div>\
+			    <div class="weui_dialog">\
+			        <div class="weui_dialog_hd"><strong class="weui_dialog_title">'+title+'</strong></div>\
+			        <div class="weui_dialog_bd">'+msg+'</div>\
+			        <div class="weui_dialog_ft">\
+			            <a href="javascript:;" class="weui_btn_dialog primary">确定</a>\
+			        </div>\
+			    </div>\
+			</div>\
+        ';
+         if(!$('#dialog2').length){
+             $('body').append(dialog2);
+         }else{
+             $('#dialog2.weui_dialog_title').html(title);
+             $('#dialog2.weui_dialog_bd').html(msg);
+         }
+         $('#dialog2').fadeIn('fast');
+         $('#dialog2 .primary').on('click',function(){
+             $('#dialog2').fadeOut('fast');
+         });
+     }
+
+})
+</script>
+</head>
+
+<body>
+<div>
+	<center>
+	<div class="weui-panel weui-panel_access">
+		<div class="weui-panel__hd">
+			个人简历
+		</div>
+		<div class="weui-media-box__hd DIV" >   
+		    <img class=" img-circle" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540648035868&di=f81f865e789d6ef8198a753a84030f67&imgtype=0&src=http%3A%2F%2Fmainland.gdvd.com.tw%2Fupload%2Fproduct%2F0026454001516874927.jpg" alt="">
+		</div>
+	</div>
+  </center>
+	<div class="weui_cells">
+	  <div class="weui_cell">
+	    <div class="weui_cell_bd">
+	      <p>姓名：</p>
+	    </div>
+	    <div class="weui_cell_ft">继锐</div>
+	  </div>
+	</div>
+	<div class="weui_cells">
+	  <div class="weui_cell">
+	    <div class="weui_cell_bd">
+	      <p>性别：</p>
+	    </div>
+	    <div class="weui_cell_ft">男</div>
+	  </div>
+	</div>
+	<div class="weui_cells">
+	  <div class="weui_cell">
+	    <div class="weui_cell_bd">
+	      <p>学历：</p>
+	    </div>
+	    <div class="weui_cell_ft">本科</div>
+	  </div>
+	</div>
+	<div class="weui_cells">
+	  <div class="weui_cell">
+	    <div class="weui_cell_bd">
+	      <p>学号：</p>
+	    </div>
+	    <div class="weui_cell_ft">1614080902130</div>
+	  </div>
+	</div>
+	<div class="weui_cells">
+	  <div class="weui_cell">
+	    <div class="weui_cell_bd">
+	      <p>毕业学校：</p>
+	    </div>
+	    <div class="weui_cell_ft">惠州学院</div>
+	  </div>
+	</div>
+	<div class="weui_cells">
+	  <div class="weui_cell">
+	    <div class="weui_cell_bd">
+	      <p>联系方式：</p>
+	    </div>
+	    <div class="weui_cell_ft">************</div>
+	  </div>
+	</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+			<div class="weui_cell_hd">
+				<label class="weui_label">留言</label>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<input type="type" class="weui_input" placeholder="输入留言...">
+			</div>
+			<div class="weui_cell_bd">
+				<a href="javascript:;" id="showDialog_2" class="weui_btn weui_btn_mini weui_btn_primary">发送</a>
+			</div>
+		</div>
+	</div>
+	</td>
+	</tr>
+
+	<a href="https://github.com/WUJINH/html5-2018" title="提示文本" target="_blank">
+	github主页</a>
+	
+</div>
+</body>
+
+<html>
