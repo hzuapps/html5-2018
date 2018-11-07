@@ -75,13 +75,14 @@ ul{
 	float: left;
 	list-style: none;
 	display: inline-block;
-	margin-right: 30px;
+	margin-right: 20px;
 	color: #D9D5D5;
 }
 .spanFloat li div{
 	width: 70px;
 	display: block;
 	float: left;
+	margin-right: 20px;
 }
 .spanFloat li{
 	clear: both;
@@ -112,6 +113,7 @@ ul{
 }
 .content2{
 	padding-left: 10px;
+	padding-right: 10px;
 	background-color: #25252f;
 	padding-top: 50px;
 }
@@ -165,7 +167,12 @@ ul{
 }
 /*界面三*/
 .content3{
+	background-image: url(../img/bg0.jpg);
+	background-repeat: repeat-y;
+	background-size: 100%;
 	padding-top: 50px;
+	height: -webkit-fill-available;
+	background-attachment: fixed;
 }
 .before{
 	padding-left: 15px;
@@ -194,6 +201,7 @@ ul{
 	width: 20%;
 }
 .content3 #liuyanfrom{
+	display: none;
 	background-color: white;
 	width: 100%;
     position: absolute;
@@ -201,8 +209,24 @@ ul{
     bottom: 53px;
 }
 .content3 #lyfooter{
-	background-color: white;
 	width: 100%;
 	float: left;
 	height: 340px;
+}
+.btndiv{
+	position: relative;
+	padding: 0px 15px;
+}
+.content3 #lybtndiv{
+	padding: 0px 15px;
+	width: 90%;
+    position: absolute;
+    z-index: 500;
+    bottom: 53px;
+}
+#confirmBtn{
+	float: left;
+}
+.midbtn{
+	width: 40%;
 }

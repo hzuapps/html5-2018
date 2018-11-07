@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
     <title>个人简历</title>
     <link rel="stylesheet" href="./weui.min.css"/>
     <script type="text/javascript" src="zepto.min.js"></script>
     <script type="text/javascript" src="weui.js"></script>
     <link rel="stylesheet" type="text/css" href="jianliui.css">
+    <script type="text/javascript" src="jianliui.js"></script>
 </head>
 
 </head>
@@ -225,6 +226,10 @@
                     </div>
                 </div>
                 <div id="lyfooter"></div>
+                <div id="lybtndiv">
+                    <a href="javascript:;" id="lybtn" class="weui-btn weui-btn_mini weui-btn_primary midbtn">留言</a>
+                    <a href="javascript:;" id="bgbtn" class="weui-btn weui-btn_mini weui-btn_primary midbtn">改变背景</a>
+                </div>
                 <div id="liuyanfrom">
                     <div class="weui-cells__title">标题</div>
                     <div class="weui-cells">
@@ -243,79 +248,29 @@
                       </div>
                   </div>
               </div>
-              <div style="width: 50%;margin-right: 0px;">
-                <a href="javascript:;" id="confirmBtn" class="weui-btn weui-btn_primary">提交留言</a>
+              <div class="btndiv">
+                <a href="javascript:;" id="TJBtn" class="weui-btn weui-btn_mini weui-btn_primary">提交留言</a>
+                <a href="javascript:;" id="QXBtn" class="weui-btn weui-btn_mini weui-btn_primary">取消留言</a>
                 <div id="rsp"></div>
               </div>
-          </div>
-      </div>
-  </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="weui-tabbar">
     <a href="#tab1" class="weui-tabbar__item weui-bar__item_on">
-        <div class="weui-tabbar__icon"> <img src="../img/icon_nav_profle.png" alt=""> </div>
+        <div class="weui-tabbar__icon"> <img src="../img/icon_nav_profle.png"> </div>
         <p class="weui-tabbar__label">我</p>
     </a>
     <a href="#tab2" class="weui-tabbar__item">
-        <div class="weui-tabbar__icon"> <img src="../img/icon_nav_trophy.png" alt=""> </div>
+        <div class="weui-tabbar__icon"> <img src="../img/icon_nav_trophy.png"> </div>
         <p class="weui-tabbar__label">经历</p>
     </a>
     <a href="#tab3" class="weui-tabbar__item">
-        <div class="weui-tabbar__icon"> <img src="../img/icon_nav_chat.png" alt=""> </div>
+        <div class="weui-tabbar__icon"> <img src="../img/icon_nav_chat.png"> </div>
         <p class="weui-tabbar__label">留言</p>
     </a>
 </div>
 </div>
-<script type="text/javascript">
-    function creatXHR() {
-        var xhr = null;
-        if (window.XMLHttpRequest) {
-            xhr = new XMLHttpRequest();
-        }else if (window.ActiveXObject) {
-            xhr = new ActiveXObject('Microsoft.XMLHTTP');
-        }
-        return xhr;
-    }
-    $(function(){
-        $('#confirmBtn').on('click',function(){
-            var tit = $('#tit');
-            if (tit.val() == "") {
-                weui.alert('请输入标题');
-                return;
-            }
-            var con = $('#con');
-            if (con.val() == "") {
-                weui.alert('请输入内容');
-                return;
-            }
-                weui.confirm('是否提交', function(){
-                        // ajax提交
-                       var a = $.param({'tit': tit.val(), 'con': con.val()});
-                       var xhr = creatXHR();
-                       // console.log(xhr);
-                       xhr.open('POST','#',true);
-                       xhr.onreadystatechange = function () {
-                           if (xhr.readyState == 4 && xhr.status == 200) {
-                               document.getElementById('con').value = '';
-                                document.getElementById('tit').value = '';
-                                var rsp = document.getElementById('rsp');
-                                rsp.innerHTML = "提交成功";
-                                rsp.setAttribute('style', 'font-size: 15px;color: green;float: left; !important');
-                           }
-                       }
-                       xhr.send(a);
-                }, function(){
-                        rsp.innerHTML = "提交取消";
-                                rsp.setAttribute('style', 'font-size: 20px;color: red;float: left; !important');
-                });
-        });
-        //实现tabbar的页面转换
-        $('.weui-tabbar__item').on('click', function () {
-            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
-            var hrefstr = $(this).attr('href');
-            $(hrefstr).addClass('weui-tab__bd-item_active').siblings('.weui-tab__bd-item_active').removeClass('weui-tab__bd-item_active');
-        });
-    });
-</script>
 </body>
 </html>
