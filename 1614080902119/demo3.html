@@ -5,6 +5,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+	<script type="text/javascript" language="javascript">
+	window.onload=function(){
+		var sub=document.getElementById("sub");
+		sub.onclick=function(){
+			var lett=document.getElementById("lette");
+			var letter=lett.value;
+				if(!letter.length){
+					alert('留言板为空！');
+					return false;
+				}
+				else{
+					alert('提交成功');
+					return true;
+				}
+				 lett.value = "";
+		}
+	}
+	</script>
 	<style type="text/css">
 		.xleft{flaot:left;padding:15px;}
 		.imgc{width:160px; height:100px;padding:5px;}
@@ -103,15 +121,13 @@
         <div class="weui-panel weui-panel_access">
             <div class="weui-panel__hd" style="background-color:#F0F8FF"><p style="color:#1E90FF;">留言板 &middot	MESSAGE &nbsp BOARD</p></div>
 				<div class="weui-panel__bd" style="background-color: #FAFAFA;">
-						<div class="weui-cells weui-cells_form">
+						<div class="weui-cells weui-cells_form" >
 							<div class="weui-cell">
-								<div class="weui-cell__bd" style="background-color: #FAFAFA;">
-									<textarea class="weui-textarea" placeholder="请输入信息" rows="3"></textarea>
+								<form class="weui-cell__bd" style="background-color: #FAFAFA;" action="https://github.com/MaZongXin" method="get">
+									<textarea  class="weui-textarea" id="lette" placeholder="请输入信息" rows="3"></textarea>
 									<div class="weui-textarea-counter"><span>0</span>/200</div>
-								</div>
-							</div>
-							<div class="weui-btn-area">
-								<a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+									<input  type="submit" class="weui-btn weui-btn_primary" value="提交" id="sub">
+								</form>
 							</div>
 						</div>
 				</div>
