@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+
+		body{
+			
+			background:url(images/messageImg.jpg);
+		}
+		p{
+			margin-left: -200px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			font-size: 17px;
+			font-weight:bold;
+		}
+		 .bodybox{
+			width:100%;
+			height:100%;
+			/*background-color: pink;*/
+		}
+		.bodybox .bigbox {
+			position:absolute;
+			margin-left: 380px;
+			margin-top: 260px;
+			width:400px;
+			height: 200px;
+			/*border:4px solid rgba(66,66,66,0.3);*/	
+			/*background-color: */
+			text-align: center;
+
+		}
+		.bodybox .bigbox .smallbox{
+			/*position:relative;
+			margin-left: -50px;
+			margin-top:20px;*/
+			width:100%;
+			height: 180px;
+
+			/*background-color:red;*/
+		}
+		.bodybox .bigbox .smallbox .small_sub{
+			padding-top: 10px;
+			margin-left: 352px;
+		}
+		
+		.bodybox .bigbox .smallbox .setWH1{
+			width: 380px;
+			height: 120px;
+			margin-left: 30px;
+			border:1px solid lightyellow;
+
+
+		}
+
+		.bodybox .bigbox .smallbox .setWH2{
+			width: 60px;
+
+
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var submits = document.getElementById("mysubmit");
+			submits.onclick = function() {
+				if (document.getElementById("mytext").value == "" || document.getElementById("mytext").value == null ) 
+					alert("没有输入信息！");
+				else
+					alert("留言成功，感谢您的留言！");
+				
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="bodyboxid" class="bodybox">
+		<div id="totally" class="bigbox">
+			<div class="smallbox">
+				<p >请输入您的留言：</p>
+				<form id="small_box" class="smallbox" name="myform" method="post">
+					<input type="text" id="mytext" class="setWH1" />
+					<div class="small_sub">
+				  		<input type="submit" id="mysubmit" class="setWH2" name="提交"/>
+					</div>
+				</form>	
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

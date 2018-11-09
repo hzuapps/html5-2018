@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>占城岚的个人简介</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #2A80BF;
+			color: #2A80BF;
+		}
+		.totally .right span{
+			/*font-family:"微软雅黑","宋体";*/
+			font-weight: bold;
+			display:block;
+			height: 22px;
+			margin-bottom: 8px;
+		}
+		.totally{
+			width: 100%;
+			height: 100%;
+		}
+		.totally .left{
+			float: left; 
+			color: black;
+			position:absolute;
+			/*z-index: 999;*/
+		}
+		.totally .right{
+			float: right;
+			background-color:white;
+			width: 88%; 
+			padding-left: 10px;
+		}
+		.totally .right .message1{
+			padding-top: 70px;
+			padding-left: 3px;
+			padding-bottom: 6px;
+			font-size: 20px;
+
+		}
+
+		#brake_line{
+			background-color: #2A80BF;
+			padding-left: 10px;
+			margin-bottom: 2px;
+			height: 2px;
+			margin-right: 80px;
+		}
+
+		.totally .right .contain1{
+			height:176px;
+			/*margin-bottom: 6px;*/
+			padding-left: 3px;
+			font-size: 17px;
+
+		}
+		.totally .right .message2{
+			padding-left: 3px;
+			padding-bottom: 6px;
+			font-size: 20px;
+
+		}
+		.brake_line1 {
+			background-color: #2A80BF;
+			padding-left: 10px;
+			margin-bottom: 2px;
+			height: 2px;
+			margin-right: 80px;
+		}
+		.totally .right .contain2{
+			height:110px;
+			padding-left: 3px;
+			font-size: 17px;
+
+		}
+
+		ul{
+			list-style: none;
+		}
+		.willcenter{
+			text-align: center;
+		}
+		.xingxingImages{
+			 background:url(images/xingxing.png) no-repeat -3px -1px;
+			 position:relative;
+			 margin-left:170px;
+		}
+		.xingxingImages1{
+			 background:url(images/xingxing.png) no-repeat -3px -1px;
+			 position:relative;
+			 margin-left:190px;
+		}
+		.picture{
+			position:relative;
+			margin-left: 935px;
+			margin-top:-155px;
+			z-index: 999;
+		}
+		.doclear{
+			clear:both;
+		}
+		.totally .left .savePicture {
+			position: relative;
+			width: 30px;
+			/*height: 30px;*/
+			/*background-color: pink;*/
+			margin-top: 70px;
+			margin-left: 106px;
+			
+		}
+
+		.totally .right .triangle{
+			
+			width: 2px;
+			height:2px;
+			margin-top: 4px;
+			margin-left: 526px;
+			border:15px solid #2A80BF;
+			border-left:15px solid white;
+			border-right:15px solid white;
+			border-bottom: 15px solid white;
+			cursor:pointer;
+			
+		}
+
+		.totally .right #functionbox{
+			display:none;
+			position:fixed;
+			/*display:hidden;*/
+			width: 1165px;
+			height:100px;
+			background-color: rgba(42,128,191,0.5);
+		}
+
+		.hiddenbox .contains {
+		
+			position:fixed;
+			text-align: center;
+			margin:50px 365px;
+			/*margin: 0 auto;*/
+		}
+		.hiddenbox .contains .btnborder{
+			border:3px solid white;
+			margin-left: 10px;
+			width: 100px;
+		}
+	</style>	
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var triangle = document.getElementById("toFunction");
+			var books = document.getElementById("functionbox");
+
+			var addPictrue =document.getElementById("add_imgs");
+			var leftmessage =document.getElementById("left_message");
+			var togithub =document.getElementById("toGithub");
+			
+			var adds = document.getElementById("change_img"); 
+			
+
+			var alink = document.createElement("a");
+			alink.href = "https://github.com/1614080902411";
+			alink.innerHTML = "占城岚";
+
+			var alinkToMessage = document.createElement("a");
+			alinkToMessage.href = "message.html";
+			alinkToMessage.innerHTML = "去留言"
+
+			triangle.onclick = function() {
+				books.style.display = "block";
+			}
+			// triangle.onmouseout = function() {
+			// 	books.style.display = "none";
+			// }
+
+			addPictrue.onclick = function(){
+				adds.src = "images/addimg.png";
+			}
+
+			leftmessage.onclick = function(){
+				leftmessage.appendChild(alinkToMessage);
+				
+			}
+
+			togithub.onclick = function(){
+				togithub.appendChild(alink);
+			}
+
+		}
+
+	</script>
+</head>
+<body>
+	<div id="all_body" class="totally">
+		<div id="left_part" class="left">
+
+
+			<div class="savePicture">
+				<a href="#based_meassge4" class="picture_tags"> <img src="images/tags.jpg"> </a>
+			</div>
+			<div class="doclear"></div>
+
+			<div class="savePicture" style="margin-top: 186px">
+				<a href="#based_meassge4" class="picture_tags"> <img src="images/tags.jpg"> </a>
+			</div>
+			<div class="doclear"></div>
+
+			<div class="savePicture" style="margin-top: 118px">
+				<a href="#based_meassge4" class="picture_tags"> <img src="images/tags.jpg"> </a>
+			</div>
+			<div class="doclear"></div>
+
+			<div class="savePicture" style="margin-top: 116px">
+				<a href="#based_meassge4" class="picture_tags"> <img src="images/tags.jpg"> </a>
+			</div>
+			<div class="doclear"></div>
+
+			<div class="savePicture" style="margin-top: 178px">
+				<a href="#based_meassge4" class="picture_tags"> <img src="images/tags.jpg"> </a>
+			</div>
+			<div class="doclear"></div>	
+		</div>
+
+		<div class="doclear"></div>
+
+		<div id="right_part" class="right">
+
+			<div id="functionbox" class="hiddenbox">
+				<div id="use_contains" class="contains">
+					<button id="add_imgs" class="btnborder">添加个人照片</button>
+					<button id="left_message" class="btnborder">留言</button>
+					<button id="toGithub" class="btnborder">GitHub</button>
+				
+				</div>
+	
+			</div>
+
+			<div id="toFunction" class="triangle" >
+				<!-- <a href="#functionbox" id="btnSHidden" title="点击出现一个功能菜单"></a> -->
+			</div>
+
+			
+			<p id="based_meassge" class="message1">基本信息</p>
+			<p id="brake_line"></p>
+			<div id="message_contain" class="contain1">
+				<table  style="position:relative;border-collapse:separate; border-spacing:0px 8px; color:#8C8C8C; margin-top:6px;margin-left:7px">
+
+
+					<tr>
+						<th>姓名 ： &nbsp&nbsp</th>
+						<td>占城岚</td>
+					</tr>
+
+					<tr>
+						<th>手机 ： &nbsp&nbsp</th>
+						<td>17727219218</td>
+					</tr>
+
+					<tr>
+						<th>邮箱 ： &nbsp&nbsp</th>
+						<td>1960232509@qq.com</td>
+					</tr>
+
+					<tr>
+						<th>经验 ： &nbsp&nbsp</th>
+						<td>应届生</td>
+					</tr>
+
+					<tr>
+						<th>意向 ： &nbsp&nbsp</th>
+						<td>web前端开发</td>
+					</tr>
+				</table>
+				<div id="self_picture" class="picture">
+					<img src="images/selfPicture.jpg" id="change_img" alt="can't open">
+				</div>
+			</div>
+			<p id="based_meassge1" class="message2">教育背景</p>
+			<p class="brake_line1"></p>
+			<div id="message_contain1" class="contain2">
+				<table  style="border-collapse:separate; border-spacing:0px 8px; color:#8C8C8C;margin-top:6px; margin-left:7px">
+
+
+
+					<tr>
+						<th>2016.09 - 2018.10 ： &nbsp&nbsp</th>
+						<td>惠州学院-本科</td>
+					</tr>
+
+					<tr>
+						<th>2016.09 - 2013.09： &nbsp&nbsp</th>
+						<td>棉城中学-高中</td>
+					</tr>
+
+					<tr>
+						<th>2013.09 - 2004.09： &nbsp&nbsp</th>
+						<td>九年义务教育</td>
+					</tr>
+				</table>
+			</div>
+
+			<p id="based_meassge2" class="message2">项目经验</p>
+			<p class="brake_line1"></p>
+			<div id="message_contain2" class="contain2">
+				<table style="border-collapse:separate; border-spacing:0px 8px; color:#8C8C8C;margin:6px 76px 4px 7px">
+
+
+
+
+
+					<tr>
+						<th>2017.09 - 2018.1 ： &nbsp&nbsp</th>
+						<th>2018 - 2018.10 ： &nbsp&nbsp</th>
+						
+					</tr>
+
+					<tr>
+						<td style="text-align: center">嵌入式实验室：智能鞋柜：
+							<p style="color: #A2A2A2">负责服务器端，期间负责总体需求的设想</p>
+						</td>
+						<td style="width:50%;text-align: center">web前端：京东、天猫页面：
+							<p style="color: #A2A2A2 ">响应式设计web页面，服务端采用php，并建立站点设置web页面的环境</p>
+						</td>
+					</tr>
+
+				</table>
+			</div>
+
+			<div class="doclear"></div>
+
+			<p id="based_meassge3" class="message2">个人技能</p>
+			<p class="brake_line1"></p>
+			<div id="message_contain3" class="contain2" style="height:170px">
+				<table style="border-collapse:separate; border-spacing:0px 8px; color:#8C8C8C;margin:6px 76px 4px 7px">
+
+
+					<tr>
+						<th>计算机专业语言</th>
+						<th>其他语言</th>
+												
+					</tr>
+
+					<tr>
+						<td style="width:500px; height: 130px;">
+							<ul>
+								<li  class="willcenter">C语:普通</li>
+								<li  class="willcenter">C++:普通</li>
+								<li class="xingxingImages">
+									<p style="margin-left: 24px">HTML+CSS:精通</p>
+								</li>
+								<li class="xingxingImages">
+									<p style="margin-left: 24px">JavaScript:精通</p>
+								</li>
+								<li  class="willcenter">PHP:普通</li>
+							</ul>
+						</td>
+						<td style="width:500px; text-align: center">
+							<ul>
+								<li class="willcenter">粤语:普通</li>
+								<li class="xingxingImages1">
+									<p style="margin-left: -190px">日语:精通</p>
+								</li>
+								<li class="xingxingImages1">
+									<p style="margin-left: -190px">英语:精通</p>
+								</li>
+							</ul>
+						</td>
+						
+					</tr>
+
+				</table>
+			</div>
+
+			<p id="based_meassge4" class="message2">个人评价</p>
+			<p class="brake_line1"></p>
+			<div style="color:#8C8C8C;margin:16px 28px ">
+				<ol>
+					<li>
+						<span>自学web前端、日语和粤语，所以个人认为我的学习能力还是很强的</span>
+					</li>
+
+					<li>
+						<span>对学习的求知态度认真且强烈</span>
+					</li>
+
+					<li>
+						<span style="margin-bottom: 92px">对生活无所畏惧、对未来越战越勇!</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
