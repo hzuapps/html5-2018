@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+		<title>个人简历</title>	
+		<script type="text/javascript" src="mao.js"></script>
+		<script type="text/javascript" language="JavaScript">
+			function changeColor() {
+				for (i=0;i<4;i++){
+					if(coloch.color[i].checked){
+						document.body.style.background=coloch.color[i].value;
+						}
+					}
+				}
+		</script>
+		<link rel="stylesheet" type="text/css" href="weui.min.css">
+		<style type="text/css">
+			.bgk{
+				background-color:#77cfa7;
+				background-size:100% 100%;
+				font-size:20px;
+				width:120px;
+				height:30px;
+				text-align:center;
+				margin-left:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page">
+			<div class="page__hd" style="text-align:center">
+				<h1 class="page__title" style="background-color:#77cfa7">个人简历</h1>
+			</div>
+			<div class="page__bd page__bd_spacing" style="margin-top:15px">
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder bgk" >基本信息</div>
+					</div>
+				</div>
+				<hr>
+				
+				
+				<div>
+					<img src="mao.jpg" style="float:right;margin-right:20px">
+				</div>
+				<div style="margin-left:20px">
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">姓名:XXX</div></div>
+					<div class="weui-flex__item"><div class="placeholder">出生年月:1997.05</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">民族：汉</div></div>
+					<div class="weui-flex__item"><div class="placeholder">身高:170cm</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">联系电话：15217790887</div></div>
+					<div class="weui-flex__item"><div class="placeholder">政治面貌:共青团员</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">毕业院校：惠州学院</div></div>
+					<div class="weui-flex__item"><div class="placeholder">学历:本科</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">专业：软件工程</div></div>
+					<div class="weui-flex__item"><div class="placeholder">邮箱:2323@163.com</div></div>
+				</div>
+				</div>
+				
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder bgk">专业能力</div>
+					</div>
+				</div>
+				<hr>
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder" style="list-style-type:disc; margin-left:15px" >	
+							<li>精通JAVA/JavaScript,熟悉java多线程</li>
+							<li>熟悉常见的设计模式，精通Spring流行开源框架</li>
+							<li>CET-4,有一定的口语能力</li>
+							<li>熟悉mysql的使用</li>	
+						</div>
+					</div>	
+				</div>
+				
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder bgk">自我评价</div>
+					</div>
+				</div>
+				<hr>
+				
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder" style="margin-left:20px">工作积极认真，细心负责，熟练运用办公自动化软件，
+						善于在工作中发现问题，提出问题，解决问题，有较强的分析能力；
+						勤奋好学，踏实能干，认真负责，有很强的社会责任感；
+						坚毅不拔，吃苦耐劳，喜欢和善于迎接新挑战。</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div>
+			<div class="weui-flex__item">
+				<div class="placeholder bgk">留言</div>
+			</div>
+			<hr>
+			<form action="pass.html" method="post" id="send1">
+				<textarea id="send2" row="5" cols="100"></textarea>
+				<button type="submit" id="send3" >发送留言</button>
+			</form>
+		</div>
+		<form name="coloch" class="c_Change">
+			<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+			<input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+			<input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+			<input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+		</form>
+		
+		
+	</body>
+</html>
