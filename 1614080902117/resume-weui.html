@@ -5,13 +5,29 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
-	<style type="text/css">
-            	
-            	#hc{ 
-            		color: black;      
-            		background-color: Beige;           		
-            	}
-            </style>
+	<style type="text/css">           	
+    #hc{ 
+        color: black;      
+        background-color: Beige;           		
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function(){
+            var sub=document.getElementById("send");
+            sub.onclick=function(){
+                var subleave=document.getElementById("leave");
+                if(subleave.value==""){
+                    alert('留言板为空！');
+                    return false;
+                }
+                else{
+                    alert('提交成功');
+                    return true;
+                }
+                 subleave.value = "";
+            }
+        }
+    </script>
 </head>
 <body  bgcolor="Honeydew">
 <div class="page">
@@ -96,17 +112,15 @@
             <div class="weui-cells__title">留言区域</div>
             <div class="weui-cells weui-cells_form">
             	<div class="weui-cell" >
-                	<div class="weui-cell__bd">
-                    	<textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
+                	<form class="weui-cell__bd" action="https://github.com/1614080902117" method="get">
+                    	<textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="leave"></textarea>
                     	<div class="weui-textarea-counter"><span>0</span>/200</div>
-                	</div>
+                        <input  type="submit" class="weui-btn weui-btn_primary" value="发送" id="send">
+                	</form>
            	 	</div>
-        	</div>          	             
-            <div class="weui-btn-area">     
-            	<a class="weui-btn weui-btn_primary" id="showTooltips">发送</a>
-            </div>   	
+        	</div>          	                         	
 		</div>
-    </div>	 	
-</div>	
+    </div>	
+</div>
 </body>
 </html>
