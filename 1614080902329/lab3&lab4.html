@@ -6,9 +6,13 @@
     <title>lab3</title>
     <link rel="stylesheet" href="./css/weui.css"/>
     <link rel="stylesheet" href="./css/lab3-css.css"/>
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/lab4-js.js"></script>
 </head>
 <body>
-<div class="page list js_show">
+<div id="page" class="page list js_show">
+    <div id="is-not-ok" class="weui-toptips weui-toptips_warn js_tooltips" style="display: none;">不能为空</div>
+    <div id="is-ok" class="weui-toptips weui-toptips_warn js_tooltips" style="display: none;background-color: #0eb206">发送成功</div>
     <div class="page__hd text-center">
         <h1 class="page__title">个人简历</h1>
     </div>
@@ -173,16 +177,22 @@
         </div>
     </div>
     <div class="weui-cells__title">留言</div>
-    <div class="weui-cells weui-cells_form">
-        <div class="weui-cell">
-            <div class="weui-cell__bd">
-                <textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
-                <div class="weui-textarea-counter"><span>0</span>/200</div>
+    <!--使用Ajax发送get请求,以防止跳转从而影响用户体验-->
+    <form action="" method="get" onsubmit="return false;">
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea id="cont" class="weui-textarea" placeholder="请输入留言" rows="3" name="comment"></textarea>
+                    <div class="weui-textarea-counter"><span id="sum">0</span>/200</div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="weui-btn-area">
+            <button id="submit" type="submit" class="weui-btn weui-btn_primary" href="javascript:">提交</button>
+        </div>
+    </form>
     <div class="weui-btn-area">
-        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">提交</a>
+        <a id="bg-change" class="weui-btn weui-btn_primary" href="javascript:">换背景</a>
     </div>
     <div class="weui-footer">
         <p class="weui-footer__links">
