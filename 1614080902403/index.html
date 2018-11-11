@@ -85,8 +85,22 @@
         font-size:12px;
         color:#999;
     }
+	#toast{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.4);
+		position: fixed;
+		z-index: 99999999;
+	}
 </style>
 <body ontouchstart>
+<div id="toast" style="display:none">
+      
+        <div class="weui-toast">
+         <i style="font-size:50px" class="fa fa-times weui-icon_toast"></i>
+            <p class="weui-toast__content">请先输入内容</p>
+        </div>
+</div>
 <div style="height: 100%">
     <div class="weui-msg" style="display: none">
         <div class="weui-msg__icon-area"><i class="weui-icon-success weui-icon_msg"></i></div>
@@ -385,6 +399,14 @@
                 </div>
 
             </div>
+			 <div class="weui-cells__title">选择颜色</div>
+			 <div class="weui-cells weui-cells_form" style="padding:10px 15px">
+				<label><input name="setcolor" value="#f8f8f8" type="radio" checked>默认</label>
+				<label><input name="setcolor" value="red" type="radio">红色</label>
+				<label><input name="setcolor" value="yellow" type="radio">黄色</label>
+				<label><input name="setcolor" value="blue" type="radio">蓝色</label>
+				<label><input name="setcolor" value="green" type="radio">绿色</label>
+			  </div>
             <div class="weui-cells__title">输入留言内容</div>
             <div class="weui-cells weui-cells_form">
                 <div class="weui-cell">
@@ -443,9 +465,20 @@
         });
 
         $("#submitly").click(function(){
+			if(!document.getElementById("lycontent").value.length){
+				document.getElementById("toast").style.display = 'block';
+				setTimeout(function(){
+					document.getElementById("toast").style.display = 'none';
+				},1000);
+				return;
+			}
+			
             $(".weui-msg").show();
             $(".weui-tab").hide();
         });
+		$("input[name=setcolor]").click(function(){
+			$("body").css("background",$("input[name=setcolor]:checked").val());
+		});
     });
 </script>
 </html>
