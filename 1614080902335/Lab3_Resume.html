@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 	<title>个人简历</title>
 	<link rel="stylesheet" type="text/css" href="weui.css">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="showTips.js"></script>
 	<style type="text/css">
 		.weui-cells{
 			margin-top: 0px;
@@ -135,13 +137,13 @@
       <div class="weui-cells weui-cells_form">
             <div class="weui-cell">
                 <div class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3" id="textNumber"></textarea>
                     <div class="weui-textarea-counter"><span>0</span>/200</div>
                 </div>
             </div>
         </div>
         <div class="weui-btn-area">
-            <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+            <a class="weui-btn weui-btn_primary" href="javascript:;" id="showTooltips">确定</a>
         </div>
         <div class="weui-footer" style="margin-top: 10px;">
             <p class="weui-footer__links">
@@ -149,6 +151,29 @@
             </p>
             <p class="weui-footer__text">Copyright &copy; 2008-2018 ChenchenJT</p>
         </div>
+        
+        <!--错误提示框-->
+        <div id="dialogs">
+        <div class="js_dialog" id="weDialog" style="display: none;">
+            <div class="weui-mask"></div>
+            <div class="weui-dialog">
+              <div class="weui-dialog__hd"><strong class="weui-dialog__title">错误提醒</strong></div>
+                <div class="weui-dialog__bd">你输入的留言为空！</div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">知道了</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!--成功提示-->
+       <div id="successTip" style="display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">已留言</p>
+        </div>
+    </div>
 </div>
 </body>
 </html>
