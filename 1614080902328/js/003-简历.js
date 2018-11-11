@@ -35,6 +35,7 @@ window.onload = function () {
                         $toast.fadeOut(100);
                     }, 2000);
                 });
+                document.getElementById("text").value="";
             }
         });
 
