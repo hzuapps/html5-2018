@@ -1,9 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link href="https://weui.io/weui.css" type="text/css" rel="stylesheet" />
+<link href="css/weui.css" type="text/css" rel="stylesheet" />
+
+<script type="text/javascript" src="form.js"></script>
+<title>个人简历</title>
 <style>
 	body{
 		background-color: beige;
@@ -24,7 +26,7 @@
 	<body>
    <div class="all">
     <div class="top">
-        <img src="img/3.jpg" height="20%" width="20%">
+        <img src="img/link.jpg" height="20%" width="20%">
     </div>
 
     <a href="https://github.com/Caixz" class="weui-cell weui-cell_access" style="border-bottom: 1px solid #ccc; ">
@@ -44,11 +46,13 @@
             https://********.com
         </div>
     </a>
-
-    <form action="post" style="position: absolute; bottom: 20%; width: 100%; height: 100px">
-        <textarea type="text" class="inp weui-textarea" placeholder="请输入留言..." style="height: 100px; font-size: 20px"></textarea>
-        <input type="submit" class="sub weui-btn weui-btn_primary" value="留言">
+    
+    <form action="form.html" method="post" id="loginForm" style="position: absolute; bottom: 20%; width: 100%; height: 100px">
+        <textarea type="text" name="message" id="message" class="inp weui-textarea" style="height: 100px; font-size: 20px"></textarea>
+        <input type="submit" class="sub weui-btn weui-btn_primary" value="留言" id="subBtn">
+        
     </form>
+    
 </div>
 
 
