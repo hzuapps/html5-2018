@@ -1,3 +1,7 @@
+body{
+    font-size: 40px;
+}
+
 #div-1 {
     padding: 20px;
     background-color: #10aeff;
@@ -8,8 +12,9 @@
 
 }
 
+
 #information,#telephone,#e-mail{
-    font-size: 10px;
+    font-size: 30px;
     margin-top: 10px;
 }
 #div-2-2{
@@ -17,7 +22,7 @@
 }
 
 
-#div-3,#div-6,#div-8,#div-10{
+#div-3,#div-6,#div-8,#div-10,#div-12{
     padding: 5px 15px;
     background-color: #cccccc;
 }
