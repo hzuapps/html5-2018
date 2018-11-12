@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="weui.css"/>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="showTips.js"></script>
+</head>
+<body ontouchstart>
+    <!--错误提示框-->
+    <div id="dialogs">
+        <div class="js_dialog" id="weDialog" style="display: none;">
+            <div class="weui-mask"></div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__hd"><strong class="weui-dialog__title">错误提醒</strong></div>
+                <div class="weui-dialog__bd">留言内容为空，请填写后重新提交！</div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--成功提示-->
+    <div id="successTip" style="display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">提交成功！</p>
+        </div>
+    </div>
+    <h1 style="text-align:center;background-color:slateblue">个人简历</h1>
+    <div class="weui-media-box weui-media-box_appmsg">
+        <div class="weui-media-box__hd">
+            <img class="weui-media-box__thumb" alt="" src="black.jpg">
+        </div>
+        <div class="weui-media-box__bd">
+            <h4 class="weui-media-box__title">邱**</h4>
+            <p class="weui-media-box__desc">惠州学院16软件工程3班某学生</p>
+        </div>
+    </div>
+    <div class="weui-cells__title" style="background-color:lightgray">基本资料</div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>姓名：</p>
+        </div>
+        <div class="weui-cell__ft">邱**</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>性别：</p>
+        </div>
+        <div class="weui-cell__ft">男</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>民族：</p>
+        </div>
+        <div class="weui-cell__ft">汉</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>出生年月：</p>
+        </div>
+        <div class="weui-cell__ft">1997年2月</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>籍贯：</p>
+        </div>
+        <div class="weui-cell__ft">广东省汕尾市</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>政治面貌：</p>
+        </div>
+        <div class="weui-cell__ft">群众</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>学历：</p>
+        </div>
+        <div class="weui-cell__ft">本科</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>学院：</p>
+        </div>
+        <div class="weui-cell__ft">惠州学院</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>专业：</p>
+        </div>
+        <div class="weui-cell__ft">软件工程</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>联系方式：</p>
+        </div>
+        <div class="weui-cell__ft">152****7325</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>家庭住址：</p>
+        </div>
+        <div class="weui-cell__ft">广东省汕尾市城区……</div>
+    </div>
+    <div class="weui-cells__title" style="background-color:lightgray">社会实践</div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>大一下学期，周末一半的时间用来做兼职，做过饮料促销。</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>大二上学期，周末做啤酒促销。</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>大二寒假期间，在服装店做推销员，之后做了一段时间的家教。</p>
+        </div>
+    </div>
+    <div class="weui-cells__title" style="background-color:lightgray">教育经历</div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2004年9月-2010年6月就读于**小学</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2010年9月-2013年6月就读于**中学</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2013年9月-2016年6月就读于***中学</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2016年9月至今就读于惠州学院</p>
+        </div>
+    </div>
+    <div class="weui-cells__title" style="background-color:lightgray">荣誉奖项</div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2017年广东省数学竞赛二等奖</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2017年全国数学建模竞赛三等奖</p>
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>2018年信息科学技术学院三好学生</p>
+        </div>
+    </div>
+    <div class="weui-cells__title" style="background-color:lightgray">留言</div>
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="textNumber"></textarea>
+                <div class="weui-textarea-counter"><span>0</span>/200</div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" id="showTooltips" href="javascript:">提交</a>
+    </div>
+    <div class="weui-footer">
+        <p class="weui-footer__links">
+            <a class="weui-footer__link" href="https://github.com/QFJay">我的GitHub主页</a>
+        </p>
+        <p class="weui-footer__text">Copyright © 2018-2019 QFJay</p>
+    </div>
+</body>
+</html>
