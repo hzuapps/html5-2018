@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+
+
+		<title>个人简历</title>
+		<script type="text/javascript" language="javascript">
+		function changeC(){
+			for(i=0;i<4;i++)
+				if(form1.color[i].checked){
+					document.body.style.background = form1.color[i].value;
+				}
+		}
+		function rec(){
+			var c = document.getElementById("txt1");
+			{
+				if(c.value=="")
+					alert("请输入内容!");
+				else
+					alert("提交成功");
+					c.value = "";
+			}
+		} 
+			</script>
+				<link rel="stylesheet" type="text/css" href="weui1.min.css">
+				<script type="text/javascript" language="javascript">
+		function changeC(){
+			for(i=0;i<4;i++)
+				if(form1.color[i].checked){
+					document.body.style.background = form1.color[i].value;
+				}
+		}
+		</script>
+</head>
+<body>
+<form name="form1">
+	<input type="radio" name="color" value ="#FFFFFF" onclick="changeC()">白色
+	<input type="radio" name="color" value ="#0000FF" onclick="changeC()">蓝色
+	<input type="radio" name="color" value ="#00FF00" onclick="changeC()">绿色
+	<input type="radio" name="color" value ="#FFFF00" onclick="changeC()">黄色
+   </form> 
+<div class="weui-flex" >
+    <div class="weui-flex__item"><div class="placeholder"><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3368272765,3178176601&fm=23&gp=0.jpg"></div></div>
+    <div class="weui-flex__item"><div class="placeholder"> <div class="weui-panel__bd">
+        <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__bd">
+                <h4  style="font-size: 35px;font-weight: bolder;" >姓名：陈文康</h4>
+                <span  >
+                        				<div class="weui-flex">
+    	<div class="weui-flex__item"><div style="font-size: 30px" class="placeholder">年龄：20</div></div>
+
+	</div>
+	<div class="weui-flex">
+    <div class="weui-flex__item"><div style="font-size: 30px" class="placeholder">手机：xxxxx</div></div>
+</div>
+<div class="weui-flex">
+    <div class="weui-flex__item"><div style="font-size: 30px" class="placeholder">性别：男</div></div>
+
+</div>
+<div class="weui-flex">
+    <div class="weui-flex__item"><div style="font-size: 30px" class="placeholder">邮箱：xxxxxxx</div></div>
+</div>
+
+
+                        			</span>
+            </div>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 style="font-weight: bolder;font-size: 20px">身份信息</h4>
+            <div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">籍贯 ： 广东</div></div>
+    <div class="weui-flex__item"><div class="placeholder">出生年月 ： xxxx.xx.xx</div></div>
+</div>
+
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 style="font-weight: bolder;font-size: 20px">教育背景</h4>
+            <div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">毕业学校 ： 惠州学院</div></div>
+    <div class="weui-flex__item"><div class="placeholder">专业 ： 软件工程 ， 本科</div></div>
+</div>
+<div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">入学年月 ： xxxxxxx</div></div>
+    <div class="weui-flex__item"><div class="placeholder">证书 ： cet-4</div></div>
+</div>
+
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 style="font-weight: bolder;font-size: 20px">技能、爱好或特长</h4>
+            <div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">1 . xxxxxxxxx</div></div>
+    <div class="weui-flex__item"><div class="placeholder">2 . xxxxxxxxxx</div></div>
+</div>
+        </div>
+         <div class="weui-media-box weui-media-box_text">
+            <h4 style="font-weight: bolder;font-size: 20px">个人标签</h4>
+            <div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">1 . xxxxxxxxx</div></div>
+    <div class="weui-flex__item"><div class="placeholder">2 . xxxxxxxxxx</div></div>
+</div>
+        </div>
+         <div class="weui-media-box weui-media-box_text">
+            <h4 style="font-weight: bolder;font-size: 20px">求职意向</h4>
+            <div class="weui-flex">
+    <div class="weui-flex__item"><div class="placeholder">职位 ： xxxxxxxxx</div></div>
+    <div class="weui-flex__item"><div class="placeholder">工资 ： xxxxxxxxxx</div></div>
+</div>
+        </div>
+
+         <div class="weui-media-box weui-media-box_text">
+            <h4 style="font-weight: bolder;font-size: 20px">留言</h4>
+            <form action="" method="post">
+			<input type="text" id="txt1" size="22">
+			<div class="button-sp-area" ">
+				<a  class="weui-btn weui-btn_mini weui-btn_primary" onclick="javascript:rec()";>提交</a>
+				</div>
+		</form>
+            </div>
+            <div class="weui-media-box weui-media-box_text">
+           <a style="text-decoration: underline" href="https://github.com/ChaseChennn">我的GITHUB</a>
+            
+			
+
+            </div>
+    </div>
+
+ 
+ 
+</body>
+</html>
