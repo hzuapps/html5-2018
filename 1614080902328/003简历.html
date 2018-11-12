@@ -5,6 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/weui.css">
+    <link rel="stylesheet" href="css/example.css">
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/003-简历.js"></script>
     <title>Document</title>
     <style>
         *{
@@ -30,12 +35,7 @@
 
     </style>
 </head>
-<link rel="stylesheet" href="css/example.css">
-<link rel="stylesheet" href="css/weui.css">
-<script src="js/example.js"></script>
-<script src="js/jweixin-1.0.0.js"></script>
-<script src="js/weui.min.js"></script>
-<script src="js/zepto.min.js"></script>
+
 <body>
 <div class="all">
     <div class="top">
@@ -60,11 +60,14 @@
         </div>
     </a>
 
-    <form action="post" style="position: absolute; bottom: 20%; width: 100%; height: 100px">
-        <textarea type="text" class="inp weui-textarea" placeholder="请输入留言..." style="height: 100px; font-size: 20px"></textarea>
-        <input type="submit" class="sub weui-btn weui-btn_primary" value="留言" >
+    <form action="004-pass.html" method="post"  id="loginForm"  style="position: absolute; bottom: 25%; width: 100%; height: 100px">
+        <textarea type="text" id="text" class="inp weui-textarea" placeholder="请输入留言..." style="height: 100px; font-size: 20px"></textarea>
+        <!--<input type="submit" class="sub weui-btn weui-btn_primary weui-btn_default" value="留言"  id="showToast1" style="cursor: pointer;">-->
+        <a href="javascript:;" class="weui-btn weui-btn_default" id="showToast" style="background-color: #32c754;">留言</a>
+
     </form>
 </div>
+
 
 <div class="weui-tabbar" style="position: fixed;">
     <a href="001简历.html" class="weui-tabbar__item weui-bar__item_on">
@@ -88,6 +91,28 @@
 
 </div>
 
+<!--BEGIN toast-->
+<div id="toast" style="display: none;">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+        <p class="weui-toast__content">已完成</p>
+    </div>
 </div>
+<!--end toast-->
+
+<!--BEGIN dialog2-->
+<div class="js_dialog" id="iosDialog2" style="display: none;">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <div class="weui-dialog__bd">当前输入的内容为空，请继续输入！</div>
+        <div class="weui-dialog__ft">
+            <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+        </div>
+    </div>
+</div>
+<!--END dialog2-->
+<!-- loading toast -->
+
 </body>
 </html>
