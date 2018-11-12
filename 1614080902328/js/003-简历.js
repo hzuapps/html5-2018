@@ -21,21 +21,18 @@ window.onload = function () {
         });
 
         $('#showToast').on('click', function(){
-            if(document.getElementById("text").value=="")
-            {$iosDialog2.fadeIn(200);
+            var num = $('#text').val();
+            if(num=="")
+            {$iosDialog2.fadeIn(100);
             }
             else
             {
                 var $toast = $('#toast');
-                $('#showToast').on('click', function(){
-                    if ($toast.css('display') != 'none') return;
-
+                if ($toast.css('display') != 'none') return;
                     $toast.fadeIn(100);
                     setTimeout(function () {
                         $toast.fadeOut(100);
                     }, 2000);
-                });
-                document.getElementById("text").value="";
             }
         });
 
