@@ -146,7 +146,35 @@
     </div>
     <div class="weui-flex__item">&nbsp</div>
   </div>
+<div class="weui-flex" style="background-color:springgreen;">
+  <div class="weui-flex__item" >
+    <h1 class="weui-msg__title">留言板</h1>
+  </div>
 </div>
-
+<div class="weui-cells weui-cells_form">
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <textarea class="weui-textarea" rows="3" id="textarea"></textarea>
+      <div class="weui-textarea-counter"><span>0</span>/200</div>
+      <div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="button-sp-area">
+  <button class="weui-btn weui-btn_primary weui-btn_mini" onclick="message()">提交</button>
+</div>
 </body>
+<script  src = "http://code.jquery.com/jquery-1.8.3.min.js" ></script >
+<script type="text/javascript">
+  function message() {
+    var $s1 = $('#textarea');
+    var textarea=$s1.val();
+    if(textarea=="")
+      alert("内容不能为空,请输入内容");
+    else
+      alert("成功提交");
+
+  }
+</script>
 </html>
