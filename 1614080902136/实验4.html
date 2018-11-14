@@ -1,0 +1,144 @@
+
+实验4<!DOCTYPE html>
+<html>
+<head>
+	<title>1614080902136</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<meta charset=utf-8>
+	<style type="text/css">
+		 p{
+		 		font-size: 15px;
+		 		color: #808080;
+		 		font-family: "楷体";
+		 }
+	 	.font_title{
+	 		font-size: 21px;
+	 		color: #3333CC;
+	 		font-family: "华文楷体";
+	 	}
+	</style>
+	<script>
+		function okclick()
+		{
+			var str = document.getElementById('t1').value;
+			if (str==""||str==null){
+				alert("暂未填写留言")
+			}
+			else{
+				alert("已收到留言，稍后将会回复")
+			}
+		}
+	</script> 
+</head>
+<body>
+	<div class="page home js_show" style="background:#FFBBFF;">
+		<div class="page__hd">
+       	 	<h1 class="page__title" style="text-align:center;">个人简历</h1>
+        	<p class="page__desc"></p>
+	    </div>
+	    <div class="page__bd">
+	    	<div class="weui-cells">
+	    		<div class="weui-cell" style="background:#FFCCFF;">
+	                <div class="weui-cell__bd">
+	                    <p class="font_title">基本信息</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell" style="background:#FFDDFF;">
+	                <div class="weui-cell__bd">
+	                	<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4099040181,411818440&fm=26&gp=0.jpg" style="float:right;"/>
+	                    <p>姓名：张三</p>
+	                    <p>性别：男</p>
+	                    <p>学历：本科</p>
+	                    <p>籍贯：广东惠州</p>
+	                    <p>婚姻状况:未婚</p>
+	                    <p>民族:汉</p>
+	                    <p>身高:180cm</p>
+	                    <p>体重:65kg</p>
+	                    <p>专业:软件工程</p>
+	                    <p>身份证:82808208820NA</p>
+	                    <p>政治面貌：团员</td></p>
+	                    <p>家庭住址:广东省惠州市</p>
+	                </div>
+	            </div>
+	    	</div>
+	    	<div class="weui-cells">
+	    		<div class="weui-cell" style="background:#FFCCFF;">
+	                <div class="weui-cell__bd">
+	                    <p class="font_title">入学经历</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell" style="background:#FFDDFF;">
+	                <div class="weui-cell__bd">
+	                    <p>小学...................</p>
+	                    <p>初中...................</p>
+	                    <p>高中...................</p>
+	                    <p>大学...................</p>
+	                </div>
+	            </div>
+	    	</div>
+	    	<div class="weui-cells">
+	    		<div class="weui-cell" style="background:#FFCCFF;">
+	                <div class="weui-cell__bd">
+	                    <p class="font_title">自我评价</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell" style="background:#FFDDFF;">
+	                <div class="weui-cell__bd">
+	                	<p>能吃苦耐劳，对待工作，学习，人生积极乐观</p>
+	                    <p>有坚毅的性格和强烈的责任心，集体荣誉感强</p>
+	                    <p>诚实守信，具有团队协作能力，创新意识</p>
+	                    
+	                </div>
+	            </div>
+	    	</div>
+	    	<div class="weui-cells">
+	    		<div class="weui-cell" style="background:#FFCCFF;">
+	                <div class="weui-cell__bd">
+	                    <p class="font_title">面试意向</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell" style="background:#FFDDFF;">
+	                <div class="weui-cell__bd">
+	                    <p>意向行业:计算机/互联网</p>
+	                    <p>意向岗位:本专业相关或相近的工作职位</p>
+	                    <p>工作要求:面议</p>
+	                </div>
+	            </div>
+	    	</div>
+	    	<div class="weui-cells">
+	    		<div class="weui-cell" style="background:#FFCCFF;">
+	                <div class="weui-cell__bd">
+	                    <p class="font_title">工作经验</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell">
+	                <div class="weui-cell__bd" style="background:#FFDDFF;">
+	                    <p colspan="7">
+	        			<a href="https://github.com/shaoqiangli/html5-2018">点击此处访问GiHub</a></p>
+	                </div>
+	            </div>
+	    	</div>
+	    	<div class="weui-cells">
+	    		<div class="weui-cell" style="background:#FFCCFF;">
+	                <div class="weui-cell__bd">
+	                    <p class="font_title">给我留言</p>
+	                </div>
+	            </div>
+	            <div class="weui-cell" style="background:#FFDDFF;">
+	                <div class="weui-cell__bd">
+	                    <textarea class="weui-textarea" rows="3" type ="text" id="t1" value="" /></textarea>
+						<div class="weui-btn-area">
+						<input class="weui-btn weui-btn_primary" type ="button" value="发送" onclick="okclick()">
+                        </div>
+                        
+	                </div>
+	                
+	            </div>
+	    	</div>
+	    	
+	    </div>
+	</div>
+	
+</body>
+</html>
