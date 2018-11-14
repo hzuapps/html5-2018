@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+    <title>个人简历</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+    <script type="text/javascript" language="JavaScript">
+
+    window.onload = function(){  //在页面加载之后动态事件绑定
+        //找到表单元素对象并增加一个提交表单事件
+        document.getElementById('f').addEventListener("submit",function(e){ //e是提交事件
+            console.log(e); //控制台可以打印出当前执行的事件
+            //找到邮件元素对象
+            var emailObj = document.getElementById("t");
+            //取出它的值
+            // alert(emailObj.value);
+            if (emailObj.value == "") {
+                alert("您没有输入留言内容！");
+                if (e && e.preventDefault) { //现在是在W3C标准下执行
+                    e.preventDefault(); //阻止浏览器的动作
+                }else{  //专门针对于IE浏览器的处理
+                    window.event.returnValue= false;
+                }
+            }else{  //输入正确，理论上应该可以进行提交
+      if(confirm("你要提交的内容是 "+messObj.value)) {
+        this.submit(); //当前元素提交表单
+      }
+      else{
+        if (e && e.preventDefault) { //现在是在W3C标准下执行
+          e.preventDefault(); //阻止浏览器的动作
+        }else{  //专门针对于IE浏览器的处理
+          window.event.returnValue= false;
+        }
+      }
+    }
+  },false);
+  }
+    function submit () {
+        return false;
+    }
+    function changecolor() {
+        for (i=0;i<4;i++){
+            if (f1.color[i].checked){
+                document.body.style.background=f1.color[i].value;
+            }
+        }
+    }
+</script>
+</head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title" align="center" style="font-family:楷体;">个人简历</h1>
+	</div>
+ 	<div class="page__bd">
+ 		<div class="weui-cells__title" style="background-color: #383838; color: white;">基本信息</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>&bull;&nbsp;姓名：浅浅</p>
+                    <p>&bull;&nbsp;性别：男</p>
+                    <p>&bull;&nbsp;年龄：21岁</p>
+					<p>&bull;&nbsp;学历：本科</p>
+					<p>&bull;&nbsp;考级：CET6</p>
+					<p>&bull;&nbsp;主修专业：软件工程</p>
+                    <p>&bull;&nbsp;毕业院校：Huizhou University</p>
+                </div>
+                <div class="weui-cell__hd"><img src="https://raw.githubusercontent.com/huangzip/html5-2018/master/1614080902128/html.jpg" style="width:150px;display:block;float: right;">
+                </div>
+            </div>
+        </div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+        
+        <div class="weui-cells__title" style="background-color: #383838;color: white;">求职意向</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&bull;&nbsp;Web前端开发工程师</p>
+                </div>
+            </div>
+        </div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+        <div class="weui-cells__title" style="background-color: #383838;color: white;">教育背景</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>&bull;&nbsp;2016.09-2020.06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Huizhou University</p>
+                    <p>&bull;&nbsp;主修课程：</p>
+                    <p>&nbsp;&nbsp;&nbsp;程序设计基础、面向对象程序设计、数据结构、数字逻辑、Java高级编程技术、数据库系统概论、计算机组成原理、汇编语言、操作系统、软件工程导论</p>
+                </div>
+            </div>
+        </div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+         <div class="weui-cells__title" style="background-color: #383838;color: white;">专业技能</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>&bull;&nbsp;熟悉Java语言及面向对象编程;</p>
+					<p>&bull;&nbsp;熟悉C、C++等语言;</p>
+					<p>&bull;&nbsp;对HTML5应用开发有一定了解;</p>
+					<p>&bull;&nbsp;熟悉SQL语句，熟练操作MySQL和SqlSever数据库;</p>
+					<p>&bull;&nbsp;对python、matlab等语言有一定了解。</p>
+                </div>
+            </div>
+        </div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+         <div class="weui-cells__title" style="background-color: #383838;color: white;">工作经验</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>&bull;&nbsp;应届毕业生。</p>
+                </div>
+            </div>
+        </div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+         <div class="weui-cells__title" style="background-color: #383838;color: white;">自我评价</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>&bull;&nbsp;本人性格开朗， 能吃苦耐劳，有坚毅的性格和强烈的责任心，集体荣誉感强，具有团队协作能力、创新意识，具有系统的软件开发知识体系。</p>
+                </div>
+            </div>
+        </div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+        <div class="weui-cells__title" style="background-color: #383838;color: white;">联系方式</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&bull;&nbsp;电话：131******69</p>
+                    <p>&bull;&nbsp;邮箱：101*****@qq.com</p>
+                </div>
+            </div>
+        </div>
+		<div class="weui-cells" style="background-color: gray;color: white;">
+            <a class="weui-cell weui-cell_access" href="https://github.com/huangzip">
+                <div class="weui-cell__bd">
+                    <p>浅浅的Github主页</p>
+                </div>
+                <div class="weui-cell__ft">
+                    点击查看
+                </div>
+            </a>
+		</div>
+<!----------------------------------------------------------->
+<!----------------------------------------------------------->
+        <form id="f" action="pass.html" method="get">
+            <div class="weui-cells__title" style="background-color: papayawhip;color: black;font-family: 华文楷体;font-weight:bold;font-size: 25px">留 言 板
+            </div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" id="t"placeholder="请输入留言" rows="3"style="font-family: 华文行楷;font-size: 18px"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/200</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-sp-area">
+                <button class="weui-btn weui-btn_mini weui-btn_primary"type="submit"id="b">发 送 留 言</button>
+            </div>
+
+        </form>
+        <form name="f1">
+            <input name="color"type="radio"value="#FFFFFF"onclick="changecolor()">白色
+            <input name="color"type="radio"value="#0000FF"onclick="changecolor()">蓝色
+            <input name="color"type="radio"value="#00FF00"onclick="changecolor()">绿色
+            <input name="color"type="radio"value="#FFFF00"onclick="changecolor()">黄色
+        </form>
+    </div>
+</div>
+</body>
+</html>
