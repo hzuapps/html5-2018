@@ -7,15 +7,25 @@
 		*{margin: 0px;
 		  padding: 0px;}
 		  
-		  
+		  #all_all{width: 100%;
+		  	height: 100%;
+		  	background-color:#FFF;
+		  }
+		  /*小红花*/
+		  #ssimg{width: 30px;height: 30; top:0px;left: 0px;position: absolute; }
+
+		  #form1{padding-left: 40px;padding-top: 20px;}
+
 		  #all{width: 1000px;
-		  	height: 1230px;
+		  	height: 1300px;
 		  	/*background-image: url(http://img.hb.aicdn.com/251282cbeffba241a87697f645fe4b5bf621ac5e1352f-mcWg2e_fw658);
 		  	background-size: cover;*/
 		  	margin: 20px auto;
 		  	border-style: groove;
 		  	border: 1px groove black;
+
 		  	border-bottom: none;
+		  	background-color: #FFF;
 		  	
 		  }
 		  /* 简历框架 */
@@ -107,11 +117,45 @@
 
 
 	</style>
+	<script type="text/javascript" language="javascript">
+		function changeColor(){
+			for(i=0;i<4;i++)
+				if (form1.color[i].checked) {
+					document.getElementById("all_all").style.background=document.form1.color[i].value;
+				}
+		}
+
+		function mouseMove() {
+			document.getElementById("ssimg").style.left=event.clientX+10+"px";
+			document.getElementById("ssimg").style.top=event.clientY+10+"px";
+
+		}
+	
+
+		function send(){
+			var message=document.getElementById("send_message").value;
+			if (message==""||message==null) {alert("不能为空");}
+			else{alert("发送成功");
+
+			}
+			document.getElementById("send_message").value="";
+
+		}
+
+		
+	</script>
 	<link rel="stylesheet" type="text/css" href="weui-flex.css">
 	 <link href="http://cdn.bootcss.com/weui/1.1.1/style/weui.css" rel="stylesheet">
 </head>
-
+<body >
+<div id="all_all" >
 	
+	<form name="form1" id="form1">
+			<input type="radio" name="color" value="grey" onclick="changeColor()">灰色
+			<input type="radio" name="color" value="lightblue" onclick="changeColor()">蓝色
+			<input type="radio" name="color" value="pink" onclick="changeColor()">粉色
+			<input type="radio" name="color" value="#FFFF" onclick="changeColor()">白色
+		</form>
 		<div id="all">
 			<div id="Jianli">个人简历|Personal resume</div>
 			
@@ -151,11 +195,11 @@
 			</div>
 			<div id="School"> 
 
-        <div class="weui-panel weui-panel_access">
-            <div class="weui-panel__hd"><font color="black" size="5" face="隶书">获奖经历</font></div>
+        <div class="weui-panel weui-panel_access"  >
+            <div class="weui-panel__hd" ><font color="black" size="5" face="隶书">获奖经历</font></div>
             <div class="weui-panel__bd">
                 <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
-                    <div class="weui-media-box__hd">
+                    <div class="weui-media-box__hd" >
                         <img class="weui-media-box__thumb" src="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=b7307314b1de9c82b268f1dd0de8eb6f/738b4710b912c8fce6a661e0fe039245d6882141.jpg">
                     </div>
                     <div class="weui-media-box__bd">
@@ -205,28 +249,32 @@
       				</div>     				
       				<div id="Liuyan2"><font face="隶书" size="6" align="center">留言板</font></div>
       				<div id="Liuyan">
+      					<form id="fm1">
       				<div class="weui-cell">
+      				
                		<div class="weui-cell__bd" style="margin-left: 0px;">
-                    	<textarea class="weui-textarea" placeholder="请留下您的建议" rows="5"></textarea>
+                    	<textarea class="weui-textarea" placeholder="请留下您的建议" rows="5" id="send_message"></textarea>
                     <div class="weui-textarea-counter"><span>0</span>/400</div>
                 	</div>
+                </form>
       				</div>
        				</div>
        				<!--发送留言-->
        			<div style="height: 50px;width: 150px;float: right;border:0px solid black;margin-right: 60px;">
        				<div class="weui-btn-area">
-            			<a class="weui-btn weui-btn_primary blue-white" href="javascript:" id="showTooltips">发送</a>
+            			<a class="weui-btn weui-btn_primary blue-white" href="javascript:" id="showTooltips" onclick="send()">发送</a>
             		</div>
        			</div>	
 
-       	<div style="height: 20px;width: 200px;border:0px solid blue;float: left;margin-left: 350px;margin-bottom: 30px;padding: 80px;">      <div class="weui-footer" >
+       	<div style="height: 20px;width: 200px;border:0px solid blue;float: left;margin-left: 350px;margin-bottom: 30px;padding: 80px;">     
+       	 <div class="weui-footer" >
             <p class="weui-footer__links">
                 <a href="https://github.com/Hunter243" cl" class="weui-footer__link">访问我的GitHub</a>
             </p>
-            <p class="weui-footer__text">Copyright &copy; 2008-2016 16 weui.io</p></p>
+            <p class="weui-footer__text">Copyright &copy; 2008-2016 16 weui.io</p>
         </div>
     </div>
 	</div>	
-			
-	</body>
+</div>
+</body>
 </html>
