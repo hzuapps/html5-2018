@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实验4</title>
+	<meta charset="utf-8">
+	<link rel=stylesheet type="text/css" href="weui.css">
+	<style type="text/css">
+	.a{float:left;
+	   width:80%; }
+	#b{float:right;
+	   width:20%;
+	   height:280px;}
+    </style>
+    <script type="text/javascript">
+    	window.onload = function(){
+    document.getElementById('loginForm').addEventListener("submit",function(){
+        var emailObj = document.getElementById("words");
+        if (emailObj.value == "") {
+            alert("留言为空");
+        }else{
+            this.submit();
+        }
+    },false);
+}
+function f () {
+    return false;
+}
+    </script>
+</head>
+<body>
+<h1 align="center">个人简历</h1>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd"><h3>基本信息：<h3></div>
+    	<div class="a">
+    <div class="weui-panel__bd" >
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">姓名：***</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">性别：男</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">专业：软件工程</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">联系电话：15*****</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">毕业学校：惠州学院</h4>
+        </div>
+</div>
+</div>
+<div id="b">
+	<img src="https://img04.sogoucdn.com/app/a/100520093/a619da016897973b-f6b6fd11a6007fca-41e29f6f4dc2baa8110700ac0dee4946.jpg" width="100%" height="100%">
+	</div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd"><h3>求职意向：<h3></div>
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">目标单位：***</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">目标行业：Java后端开发</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">期望薪资：5000</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">期望地区：广州，深圳</h4>
+        </div>
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box__title">到岗时间：</h4>
+        </div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd"><h3>自我评价:</h3></div>
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box_/_title">
+            	<ul type="disc">
+            		<h4>&middot;熟悉Java语言，jsp，select，熟悉spring框架</h4>
+            		<h4>&middot;通过英语四六级考试</h4>
+            		<h4>&middot;项目qq登录注册模块</h4>
+            	</ul>
+            </h4>
+       </div>
+    </div>
+</div>
+<div class="weui-panel weui-panel_access">
+    <div class="weui-panel__hd"><h3>留言:</h3></div>
+    <div class="weui-panel__bd">
+        <div class="weui-media-box weui-media-box_text">
+            <h4 class="weui-media-box_/_title">
+            	<div class="weui-cells weui-cells_form">
+            		<div class="weui-cell">
+                       <div class="weui-cell__bd">
+                       	<form action="program.asp" method="post" id="loginForm" onsubmit="return f()">
+                         <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="words"></textarea>
+                       <div class="weui-textarea-counter"><span>0</span>/200</div>
+                       <div class="weui-btn-area">
+                     <button class="weui-btn weui-btn_primary" type="submit" id="subBtn">确定</button>
+                </div>
+            </form>
+                      </div>
+                    </div>
+				</div>
+            </h4>
+       </div>
+    </div>
+</div>
+<div class="weui-footer">
+    <h4 class="weui-footer__links">
+        <a href="https://github.com/gaorunua" class="weui-footer__link">我的github</a>
+    </h4>
+</div>
+</body>
+</html>
