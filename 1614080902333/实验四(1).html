@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>黄凯信个人简历</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<!--引入css样式文件-->
+	 <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+<link rel="stylesheet" type="text/css" href="weui.min.css">
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	 <script type="text/javascript">
+       function wordStatic(input) {
+        var content = document.getElementById('num');
+        if (content && input) {
+            var value = input.value;
+            value = value.replace(/\n|\r/gi,"");
+            content .innerText = value.length;
+        }
+    }
+	
+	window.onload = function(){  //在页面加载之后动态事件绑定
+  
+   var Btn = document.getElementById("showToast");
+   var message = document.getElementById("minus");
+   Btn.onclick = function(){
+   var text=message.value;
+   	if(text==''){
+		alert("留言为空，请继续输入!");
+		clean();
+   		return f();
+   	}
+   	else
+   		{
+		toast();
+		clean();
+		return f();
+		}
+   }
+  
+    function toast(){
+        var msg;
+        arguments[0] ? msg = arguments[0] : msg = '已完成';
+        if(!$('#toast').length){
+            $('body').append(toast);
+        }else{
+            $('#toast.weui_toast_content').html(msg);
+        }
+        $('#toast').fadeIn('fast',function(){
+            setTimeout(function(){
+                $('#toast').fadeOut('fast');
+            },800);
+        });
+     }
+function clean(){
+     $("#minus").val("");
+}
+   function f () {
+    return false;
+}
+}
+	</script>
+	
+	
+ </head>
+ <body background="BG.jpg">
+ 		<p style="font-size: 23px;color: #888888;">INFORMATION</p>
+ <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>姓名:&nbsp;&nbsp;黄凯X</p>
+					<p>性别:&nbsp;&nbsp;男</p>
+					<p>电话:&nbsp;&nbsp152xxx14651</p>
+					<p>出生:&nbsp;&nbsp1998.02.19</p>
+					<p>E-mail:&nbsp;69456155x@qq.com</p>
+                </div>
+				
+				
+				
+                <div class="weui-cell__ft">
+                    <img class="weui-vcode-img" src="实验二.png">
+                </div>
+   
+			
+			
+            </div>
+			<div>
+			<p></p>
+			</div>
+			
+			<div class="page__bd page__bd_spacing">
+        <div class="weui-flex">
+            <div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;学历:&nbsp;&nbsp;本科</div></div>
+			<div class="weui-flex__item"><div class="placeholder">技能:&nbsp;&nbsp;CET-6</div></div>
+        </div>
+    <div class="weui-flex">
+            <div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;毕业院校:&nbsp;&nbsp;惠州学院</div></div>
+			<div class="weui-flex__item"><div class="placeholder">期望岗位:&nbsp;&nbsp;全栈工程师</div></div>
+        </div>
+    </div>
+			
+               <p style="font-size: 23px;color: #888888;">EXPERIENCE</p>
+			<div class="weui-panel__bd">
+                <div class="weui-media-box weui-media-box_text">
+                    <h5 class="weui-media-box__title">&nbsp;2018.9~2019.10</h5>
+                		<div class="placeholder">在XXX公司实习工作一年,完成XXXX项目</div>
+                </div>
+                 <div class="weui-media-box weui-media-box_text">
+                    <h5 class="weui-media-box__title">&nbsp;2020.9~2023.10</h5>
+                		<div class="placeholder">在XXX公司工作当认XXX职位.</div>
+                </div>
+            </div>
+			
+		  <p style="font-size: 23px;color: #888888;">AWARD</p>
+			<div class="page__bd page__bd_spacing">
+        <div class="weui-flex">
+            <div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;2018.10&nbsp;&nbsp</div></div>
+			<div class="weui-flex__item"><div class="placeholder">获得XXXX奖&nbsp;&nbsp;</div></div>
+            <div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;</div></div>
+			<div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;</div></div>
+        </div>
+		 <div class="weui-flex">
+            <div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;2019.9&nbsp;&nbsp</div></div>
+			<div class="weui-flex__item"><div class="placeholder">获得XXXX奖&nbsp;&nbsp;</div></div>
+            <div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;</div></div>
+			<div class="weui-flex__item"><div class="placeholder">&nbsp;&nbsp;&nbsp;</div></div>
+        </div>
+		</div>
+		
+		
+		
+		  <p style="font-size: 23px;color: #888888;">SELF EVALUATION</p>
+		<section>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本人性格乐观,做事有毅力,积极向上,勇于拼搏.
+                    </p>
+                </section>
+			 
+		  
+		       <p style="font-size: 23px;color: #888888;">OTHERS</p>
+			   
+			  <div class="weui-cells__title" >请留言</div>
+			  
+			  
+			  
+        	<div class="weui-cells weui-cells_form">
+            	<div class="weui-cell">
+               		<div class="weui-cell__bd">
+					    <form  action="实验四(2).html" method="post" id="loginForm">
+                    	<textarea class="weui-textarea" onkeyup="wordStatic(this);" id="minus" placeholder="请输入留言" rows="3" ></textarea>
+                       <div class="weui-textarea-counter"><span id="num">0</span>/200</div>
+                    </div>
+                	</div>
+            	</div>
+			</div>
+	
+	
+	
+
+	 
+	
+   
+	<div id="toast" style=" display: none;">
+        <div class="weui-mask_transparent"></div>
+		
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">留言成功</p>
+        </div>
+        </div>
+	
+	
+
+  <input type="submit"  class="weui-btn weui-btn_default" id="showToast"></input>
+  
+  
+                <div class="page__category js_categoryInner" data-height="45" style="">
+                        <a class="weui-cell weui-cell_access js_item" href="https://github.com/carson6945/">
+                            <div class="weui-cell__bd">
+                                <p>About github</p><p style="font-size: 15px;color: #888888;">点击查看</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                        </a>
+                </div>
+      
+ </body>
+</html>  
