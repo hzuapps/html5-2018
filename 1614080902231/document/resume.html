@@ -6,11 +6,31 @@
 	<title>个人简历</title>
 	<link rel="stylesheet" type="text/css" href="./weui.css">
 	<link rel="stylesheet" type="text/css" href="./example.css">
+	<script type="text/javascript">
+	window.onload = function(){   
+    var message1 = document.getElementById("message");
+    var form1 = document.getElementById("messageFrom");
+    form1.onsubmit =function(){
+            if (message1.value=="") {
+            alert("您还有输入留言，无法提交！");
+            return false;
+        }else{
+          alert("提交成功");
+           return true;
+        }
+    }
+	}
+	</script>
 </head>
 <body ontouchstart>
 		<div class="page__hd" >
 			<h1 class="page__title" style="text-align: center;">个人简历</h1>
-			<img src="https://github.com/zglx/html5-2018/blob/master/1614080902231/1.jpg?raw=true" style="height: 120px;width: 100px;display:block; margin:0 auto;">
+			<img src="https://github.com/zglx/html5-2018/blob/master/1614080902231/1.jpg?raw=true" style="width: 100px;
+		height: 150px;
+		border: 1px solid #000;
+		background: #ebebeb; 
+		display: block;
+		margin: 0 auto;">
 		</div>
 		<div class="page__bd">
 			<div class="weui-cells__title">个人信息</div>
@@ -66,19 +86,19 @@
 					<div class="weui-cell__ft">惠州市惠城区演达大道46号</div>
 				</div>
 			</div>
-			<div class="weui-cells weui-cells_form">
+			<form class="weui-cells weui-cells_form" id ="messageFrom" method="get" action="https://github.com/zglx">
 				<div class="weui-cell">
 					<div class="weui-cell__bd">
-						<textarea class="weui-textarea" placeholder="请输入留言" rows="5"></textarea>
+						<textarea class="weui-textarea" id="message" placeholder="请输入留言" rows="5"></textarea>
 						<div class="weui-textarea-counter">
 						<span>0/200</span>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="weui-btn-area">
-				<a class="weui-btn weui-btn_primary" id="sure">确定</a>
-			</div>
+				<div class="weui-btn-area">
+				<input type="submit"  class="weui-btn weui-btn_primary">
+				</div>
+			</form>
 		</div>
 </body>
 </html>
