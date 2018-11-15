@@ -11,12 +11,21 @@
     <div class="weui-toptips weui-toptips_warn js_tooltips">错误提示</div>
     <div class="container" id="container"></div>
     <script type="text/html" id="tpl_home">
-        <div class="page">
+        <div class="page" id="pagess">
             <div class="weui-tab" id="weui-tab" style="height: 100%;">
                 <div class="weui-tab__panel">
                     <div id="simple">
                         <div class="page__hd">
                             <p style="font-size: 20px ">个人资料:</p>
+                            <label class="weui-cell weui-check__label" for="s11">
+                                <div class="weui-cell__hd">
+                                    <input type="checkbox" class="weui-check" name="checkbox1" id="s11" onclick="changecolor()" checked="checked">
+                                    <i class="weui-icon-checked"></i>
+                                </div>
+                                <div class="weui-cell__bd">
+                                    <p>test</p>
+                                </div>
+                            </label>                    
                         </div>
 
                         <div class="weui-cell">
@@ -219,6 +228,10 @@
             </div>
         </div>
         <script type="text/javascript">
+            function changecolor()
+            {
+                    document.getElementById('pagess').style.backgroundColor="#ff0000";
+            }
             $(function () {
                 $('.js_item').on('click', function () {
                     var id = $(this).data('id');
@@ -239,18 +252,18 @@
                 <p style="font-size: 20px ">留言板:</p>
             </div>
             <div class="page__bd">
-                <div class="weui-cells">
+                <form action="pass.html" method="post" id="postForm" onsubmit="return f()">
+                <div class="weui-cells">                   
                     <div class="weui-cell weui-cell_select weui-cell_select-before">
                         <div class="weui-cell__hd">
-                            <select class="weui-select" name="select2">
-                                <option value="1">email</option>
-                                <option value="2">QQ</option>
-                                <option value="3">Weixin</option>
-                                <option value="4">phone</option>
+                            <select class="weui-select" name="select2" id="select2">
+                                <option value="1" id="email">email</option>
+                                <option value="2" id="QQ">QQ</option>
+                                <option value="3" id="phone">phone</option>
                             </select>
                         </div>
                         <div class="weui-cell__bd">
-                            <input class="weui-input" placeholder="请选择您的联系方式" />
+                            <input class="weui-input" name="selectopt" id="selectopt"></input>
                         </div>
                     </div>
                 </div>
@@ -258,18 +271,62 @@
                 <div class="weui-cells weui-cells_form">
                     <div class="weui-cell">
                         <div class="weui-cell__bd">
-                            <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                            <textarea class="weui-textarea" placeholder="请输入文本" rows="3" id="mess"></textarea>
                             <div class="weui-textarea-counter"><span>0</span>/200</div>
                         </div>
                     </div>
                 </div>
                 <div class="page__bd page__bd_spacing">
                     <div class="button-sp-area">
-                        <a href="javascript:;" class="weui-btn weui-btn_plain-primary">确认</a>
+                        <input id="subin" name="subin" type="submit" class="weui-btn weui-btn_plain-primary" value="确认" />
                     </div>
                 </div>
+            </form>
             </div>
         </div>
+        <script type="text/javascript">
+        window.onload = function(){  //在页面加载之后动态事件绑定
+                document.getElementById('postForm').addEventListener("submit",function(){
+                var selectObj = document.getElementById("selectopt");
+                var mess=document.getElementById("mess");
+                var select=document.getElementById("select2");
+                var index=select.selectedIndex;
+                if (selectObj.value == "") {    
+                    alert("您还未输入联系方式");
+                }else{
+                    switch(index)
+                    {
+                        case 0:
+                            if (/^\w+@\w+\.\w+$/.test(selectObj.value)) {
+                                if(mess.value!="")
+                                    this.submit();
+                                else
+                                    alert("您未输入内容");         
+                            }
+                            else
+                                alert("请输入合法的联系方式");
+                            break;
+                        case 1:           
+                        case 2:
+
+                            if(/^\d+$/.test(selectObj.value))
+                            {
+                                if(mess.value!="")
+                                    this.submit();
+                                else
+                                    alert("您未输入内容");
+                            }
+                            else
+                                alert("请输入合法的联系方式");
+                            break;
+                    }
+                }
+            },false);
+        }
+        function f () {
+            return false;
+        }
+    </script>
     </script>
     <script src="./zepto.min.js"></script>
     <script src="./example.js"></script>
