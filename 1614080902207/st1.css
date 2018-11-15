@@ -1,4 +1,8 @@
 		/*整体布局*/
+		body{
+			background-color: #C0C0C0;
+		}
+
 		#wrap{width: 700px;
 			height: 850px;
 			margin: 0 auto;
@@ -29,7 +33,7 @@
 			float: right;
 			width: 479px;
 			height: 850px;
-			
+			background-color: white;
 		}
 		.bt {
 			width: 120px;
