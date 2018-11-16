@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover" />
+<title>简历</title>
+<link rel="stylesheet" type="text/css" href="weui.min.css"/>
+<script type="text/javascript" language="javascript">
+		function changeColor() {
+			for (i=0 ; i<4; i++) {
+				if(form1.color[i].checked){
+					document.body.style.background=form1.color[i].value; 
+				}
+			}
+		}
+</script>
+<script type="text/javascript" language="javascript">
+	window.onload=function(){
+		var sub=document.getElementById("sub");
+		sub.onclick=function(){
+			var let=document.getElementById("let");
+			var letter=let.value;
+				if(!letter.length){
+					alert('留言不能为空，请输入留言！');
+					return false;
+				}
+				else{
+					alert('留言提交成功！');
+					return true;
+				}
+				 let.value = "";
+		}
+	}
+</script>
+</head>
+
+<body>
+<div class="page">
+    <div class="page__hd">
+    	<h1 class="page__title" align="center">个人简历</h1>
+    </div>
+    <div class="page__bd">
+    	<div class="weui-flex">
+        	<div class="weui-flex__item">
+        		<h3 align="center" style="background-color:#CCC";>基本信息</h3>	
+            </div>
+        </div>
+        <div><img src="1.jpg" style="width:80px; height:120px; float:right;"/></div>
+        <div class="weui-flex">
+            <div class="weui-flex__item">
+            	<div>姓名：大黄</div> 
+             </div>
+            <div class="weui-flex__item">
+            	<div>性别：男</div> 
+            </div>                          
+        </div>
+        
+        <div class="weui-flex">
+   			<div class="weui-flex__item">
+            	<div>年龄：18</div> 
+             </div>
+            <div class="weui-flex__item">
+            	<div>籍贯：太阳系</div> 
+            </div>  
+        </div>
+        
+        <div class="weui-flex">
+  			<div class="weui-flex__item">
+            	<div>家庭住址：地球</div> 
+             </div>
+            <div class="weui-flex__item">
+            	<div>民族：潮族</div> 
+            </div>
+        </div>
+        
+        <div class="weui-flex">
+         	<div class="weui-flex__item">
+            	<div>毕业学校：宇宙</div> 
+             </div>
+            <div class="weui-flex__item">
+            	<div>学历：本科</div> 
+            </div>
+        </div>
+        
+        <div class="weui-flex">
+			<div class="weui-flex__item">
+            	<div>求助意向：工程师</div> 
+             </div>
+            <div class="weui-flex__item">
+            	<div>专业：软件工程</div> 
+            </div>
+        </div>
+        
+         <div class="weui-flex">
+        	<div class="weui-flex__item">
+        		<h3 align="center" style="background-color:#CCC";>联系方式</h3>	</div>
+        </div>
+        
+          <div class="weui-flex">
+			<div class="weui-flex__item">
+            	<div>联系电话：15213467985</div> 
+             </div>
+        </div>
+        
+         <div class="weui-flex">
+			<div class="weui-flex__item">
+            	<div>联系邮箱：15213467985@edu.com</div> 
+             </div>
+        </div>
+        
+        <div class="weui-flex">
+        	<div class="weui-flex__item">
+        		<h3 align="center" style="background-color:#CCC";>获奖经历</h3>	</div>
+        </div>
+        
+        <div class="weui-flex">
+			<div class="weui-flex__item">
+            	<div><p>&nbsp;&nbsp;曾获得三好学生、学习优秀生、优秀干部、三好标兵、少康楼奖、国家奖学金、国家励志奖学金等</p></div> 
+             </div>
+        </div>
+        
+           <div class="weui-flex">
+        	<div class="weui-flex__item">
+        		<h3 align="center" style="background-color:#CCC";>自我评价</h3>	</div>
+        </div>
+        
+        <div class="weui-flex">
+			<div class="weui-flex__item">
+            	<div><p>&nbsp;&nbsp;本人性格开朗，为人心细，做事一丝不苟，能吃苦耐劳，工作脚踏实地，有较强的责任心，具有团队合作精神，又具有较强的独立工作能力，思维活跃。</p></div> 
+             </div>
+        </div>
+        
+        <div class="weui-flex">
+        	<div class="weui-flex__item">
+        		<h3 align="center" style="background-color:#CCC";>留言板</h3>	</div>
+        </div>
+        
+        <div class="weui-flex">
+			<div class="weui-flex__item">
+				<div class="weui-cells weui-cells_form" >
+							<div class="weui-cell">
+								<form class="weui-cell__bd" action="#" method="post">
+									<textarea  class="weui-textarea" id="let" placeholder="请输入信息..." rows="3"></textarea>
+									<div class="weui-textarea-counter"><span>0</span>/200</div>
+									<input  type="submit" class="weui-btn weui-btn_primary" value="提交" id="sub">
+								</form>
+							</div>
+				</div>
+             </div>
+       </div>
+        
+    </div>
+    <div class="page__ft" align="center">
+        <a href="https://github.com/HHuangF">我的Github主页</a>
+        <form name="form1">
+	<input type="radio" name="color" value="#FFFFFF" onclick="changeColor()">白色
+	<input type="radio" name="color" value="#0000FF" onclick="changeColor()">蓝色
+	<input type="radio" name="color" value="#00FF00" onclick="changeColor()">绿色
+	<input type="radio" name="color" value="#FFFF00" onclick="changeColor()">黄色
+</form>
+    </div>
+</div>
+</body>
+</html>
