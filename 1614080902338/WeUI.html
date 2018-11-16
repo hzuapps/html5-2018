@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
 	<title>个人简历</title>
 	<link rel="stylesheet" type="text/css" href="./weui.css">
+	<script type="text/javascript" src="yanzheng.js"></script>
 	<style>
         .justify{
             justify-content: left;
@@ -142,13 +144,20 @@
     </section>
 </article>
 	<hr size="2">
-    <article class="weui_article">
-    	<div class="button_sp_area">
-    		<form method="post" name="kebo">
-               <h2><font color="orange">留言表</font></h2> <input type="text" name="留言" style="width:500px;height:140px"/>
-                <input type="submit" name="Submit" value="提交" style="width: 70px;height: 40px;color: purple">
-            </form>
-    	</div>
-</article>
+   <form id="liuyanqu" action="biaodanyanzheng.html" method="post" onsubmit="return validateForm()">
+            <div class="weui-cells__title" style="color: blue;font-size: 24px">留 言 区
+            </div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" id="liuyankuan"placeholder="请输入留言" rows="3"style="font-size: 18px"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/140</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-sp-area" align="right">
+                <button class="weui-btn weui-btn_mini weui-btn_primary"type="submit"id="bt">按钮</button>
+            </div>
+        </form>
 </body>
-</html>
+</html> 
