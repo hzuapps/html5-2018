@@ -6,6 +6,18 @@
         <title>个人简历</title>
         <!-- 引入 WeUI -->
         <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+        <script type="text/javascript">
+            function check(){
+                var m=document.getElementById("msg").value;
+                if(m==""){
+                    alert("请先留言");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
     </head>
     <body>
     	<div class="upper" style="background-color:whitesmoke;
@@ -105,7 +117,13 @@
                 </div>
 
             </div>  
-
+            <div>
+                <form name="form" align="center" onsubmit="return check()">
+                        留言栏
+                        <input type="text" id="msg">
+                        <input type="submit" value="提交">
+                </form>
+            </div>
 	    </div> <!--center尾部-->
 
     </body>
