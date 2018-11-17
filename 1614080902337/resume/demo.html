@@ -6,10 +6,31 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/weui.css" rel="stylesheet" type="text/css">
 <!--    引入微信UI的CSS-->
+    <script type="text/javascript" language="JavaScript">
+        function changeColor() {
+           for(i=0;i<4;i++)
+               if(form1.color[i].checked)
+               {
+                   document.body.style.backgroundColor=form1.color[i].value;
+               }
+        }
+    </script>
+    <!--改变页面颜色的脚本-->
+    <script type="text/javascript" src="./js/form.js"></script>
+    <!--引入“留言”按钮控制js-->
 </head>
 <body>
 <div class="wrap">
     <h1 class="resume_title">个人简历</h1>
+    <!--颜色按钮开始-->
+    <form name="form1" style="width: 400px;margin: 0 auto;">
+            背景颜色选择：
+            <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+            <input name="color" type="radio" value="#0000FF" onclick="changeColor()">蓝色
+            <input name="color" type="radio" value="#00FF00" onclick="changeColor()">绿色
+            <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">黄色
+    </form>
+    <!--颜色按钮结束-->
     <table border="0">
         <tr><td class="type_1" colspan="7" height="40px">基本信息</td></tr>
         <tr class="table_basic">
@@ -94,7 +115,7 @@
                         <img class="weui-media-box__thumb" src="images/tuling.jpg" alt="图灵奖">
                     </div>
                     <div class="weui-media-box__bd">
-                        <h4 class="weui-media-box__title">获奖二二</h4>
+                        <h4 class="weui-media-box__title">获奖二</h4>
                         <p class="weui-media-box__desc">在国外攻读博士学位时，多次发表论文，获得图灵奖</p>
                     </div>
                 </a>
@@ -135,18 +156,18 @@
         <tr><td class="weui-cells__title" colspan="7" height="40px">给我留言</td></tr>
         <tr><td colspan="7" height="100px">
 <!--        引用微信UI的表单和里面的按钮-->
-         <div class="weui-cells weui-cells_form">
-            <div class="weui-cell">
-                <div class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
-                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+            <form method="post" id="loginForm">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请输入文本" rows="3" name="liuyan" id="liuyan"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/200</div>
+                    </div>
                 </div>
-            </div>
-                <input class="weui-btn weui-btn_mini weui-btn_primary" type="submit" value="提交">
-                <input class="weui-btn weui-btn_mini weui-btn_default" type="reset" value="重置">
-        </div>
+                <button type="submit" id="subBtn" class="weui-btn weui-btn_mini weui-btn_primary">留言</button>
+            </form>
         </td></tr>
     </table>
+
 </div> <!--wrap主体结束-->
 </body>
 </html>
