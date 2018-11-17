@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jianli</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+ </head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title" align="center">个人简历</h1>
+	</div>
+
+ 	<div class="page__bd">
+ 		<div class="weui-cells__title" style="background-color: blue; color: white;"><big><big>基本信息</big></big></div>
+        <div class="weui-cells" style="background-color: pink;">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd" style="width:300px;">	
+                    <p>姓名：多啦A梦</p>
+                    <p>性别：男</p>
+                    <p>年龄：50岁</p>
+                    <p>出生年份：1969年</p>
+                <div class="weui-cell__hd"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541256375000&di=c62f22accd53f208b4469426b71acb60&imgtype=0&src=http%3A%2F%2Fimg14.360buyimg.com%2Fn0%2Fjfs%2Ft367%2F340%2F551518170%2F129266%2Ff906ae68%2F5422e33cN7562bedc.jpg" style="width:50px;display:block;float:right">
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells" style="background-color: green;color: white;">
+            <a class="weui-cell weui-cell_access" href="https://github.com/ycl0916">
+                <div class="weui-cell__bd">
+                    <p>我的Github主页</p>
+                </div>
+                <div class="weui-cell__ft">
+                    点击查看
+                </div>
+            </a>
+		</div>
+
+        <div class="weui-cells__title" style="background-color: blue;color: white;"><big><big>曾获奖项</big></big></div>
+        <div class="weui-cells" style="background-color: pink;">
+            <div class="weui-cell">
+                <div class="weui-cell__bd" style="background-color: pink;">
+                    <p>1、第2回（1973年）日本漫画家协会优秀赏。</p>
+                    <p>2、第27回（1981年，昭和56年度）小学馆漫画赏。</p>
+                    <p>3、第1回（1997年）手冢治虫文化赏漫画大赏。</p>
+                    <p>4、第23回（1994年）日本漫画家协会文部大臣赏。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="weui-cells__title" style="background-color: blue;color: white;"><big><big>性格、爱好</big></big></div>
+        <div class="weui-cells" style="background-color: pink;">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>性格开朗，活泼可爱</p>
+                    <p>富有创新精神</p>
+                    <p>乐于助人</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="weui-cells__title" style="background-color: blue;color: white;"><big><big>技能</big></big></div>
+        <div class="weui-cells" style="background-color: pink;">
+            <div class="weui-cell">
+            	<div class="weui-cell__bd">
+                    <p>拥有百宝袋;</p>
+					<p>掌控时光机;</p>
+                </div>
+            </div>
+        </div>
+
+      
+
+        <div class="weui-cells__title" style="background-color: blue;color: white;"><big><big>联系方式</big></big></div>
+        <div class="weui-cells" style="background-color: pink;">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&bull;&nbsp;电话：10086</p>
+                    <p>&bull;&nbsp;邮箱：666666@qq.com</p>
+                </div>
+            </div>
+        </div>
+		
+		 <div class="weui-cells__title"  style="background-color: blue;color: white;"><big><big>留言</big></big></div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="text-message"></textarea>
+                        <div class="weui-textarea-counter">200</div>
+                    </div>
+                </div>
+            </div>
+		
+		 <div class="weui-flex" style="border-top: 5px solid #f8f8f8">
+         <div class="weui-flex__item">
+            <div class="weui-cells__title" style="background-color: blue;color: white;"><big><big>更换背景颜色</big></big></div>
+            <form name="form1">
+                <div class="weui-cells weui-cells_radio" style="margin-top :0;">
+                    <label class="weui-cell weui-check__label" for="x11" checked="checked" onclick="changeColor('#FFFFFF')">
+                        <div class="weui-cell__bd">
+                            <p>白色</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" class="weui-check" name="radio1" id="x11" checked="checked">
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui-cell weui-check__label" for="x12" onclick="changeColor('#0000FF')">
+
+                        <div class="weui-cell__bd">
+                            <p>蓝色</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" name="radio1" class="weui-check" id="x12">
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui-cell weui-check__label" for="x13" onclick="changeColor('#00FF00')">
+
+                        <div class="weui-cell__bd">
+                            <p>绿色</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" name="radio1" class="weui-check" id="x13">
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui-cell weui-check__label" for="x14" onclick="changeColor('#FFFF00')">
+
+                        <div class="weui-cell__bd">
+                            <p>黄色</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" name="radio1" class="weui-check" id="x14">
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:check()" id="showTooltips">提交</a>
+    </div> 
+	
+    <script>
+        function changeColor(_corlor) {
+            document.body.style.background = _corlor;
+        }
+        function check() {
+            var msgObj = document.getElementById("text-message");
+            if (msgObj.value == "") {
+                alert("留言框为空，请填写留言");
+                return false;
+            } else {
+                _submit();
+                return true;
+            }
+        }
+        function _submit() {
+            // 执行相关提交表单或者Ajax的操作
+            alert("恭喜你，留言成功");
+        }
+    </script>
+
+	</div>
+</div>
+ </body>
+</html> 
