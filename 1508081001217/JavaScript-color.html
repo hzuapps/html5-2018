@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv= "Content-Tyepe" content= "text/html; charset=gb2312"> 
+<title>JavaScript改变网页背景颜色</title> 
+<script type="text/javascript"language="javascript" >
+	function changeColor(){
+		for (i = 0;i < 4; i++) 
+        if (forml.color[i].checked) {
+		document.body.style.background=forml.color[i].value;
+		}
+	}
+
+	function validateForm() {
+    var x = document.forms["myForm"]["message"].value;
+    if (x == null || x == "") {
+        alert("留言不能为空。");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+	<form name="forml" align="center" >
+		<input type="radio" name="color" value="#FFFFFF" onclick="changeColor()"> 白色
+	    <input type="radio" name="color" value="#0000FF" onclick="changeColor()"> 蓝色
+	    <input type="radio" name="color" value="#00FF00" onclick="changeColor()"> 绿色
+	    <input type="radio" name="color" value="#FFFF00" onclick="changeColor()"> 黄色
+	</form>
+
+	<form name="myForm" action="demo_form.php" align="center" 
+    onsubmit="return validateForm()" method="post">
+    留言: <input type="text" name="message">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
