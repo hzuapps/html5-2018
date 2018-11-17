@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人简介</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+    <script type="text/javascript">
+        window.onload = function(){
+             // 信息下拉
+            var oNav = document.getElementsByClassName("content");
+            var oBtn = document.getElementsByClassName("weui-media-box label");
+            for(var i = 0; i < oBtn.length; i++) {
+                oBtn[i].index = i;
+                if(i != oBtn.length-1) {
+                    oNav[i].style.display = "none";
+                }
+                oBtn[i].onclick = function() {
+                    if(oNav[this.index].style.display == "none") {
+                        oNav[this.index].style.display = "block";
+                    }
+                    else {
+                        oNav[this.index].style.display = "none";
+                    }
+                }
+            }
+            // 改背景色
+            var aNav = document.getElementsByClassName("weui-navbar__item");
+            for(var i = 0; i < aNav.length; i++) {
+                aNav[i].index = i;
+                aNav[i].onclick = function() {
+                    for(var j = 0; j < aNav.length; j++) {
+                    aNav[j].className = "weui-navbar__item";
+                }
+                    this.className += " " + "weui-bar__item_on";
+                    var changeColor = document.getElementsByClassName("weui-media-box__hd");
+                    if(this.index == 0)
+                        document.body.style.backgroundColor = "#BFF";
+                    if(this.index == 1)
+                        document.body.style.backgroundColor = "#7e9";
+                    if(this.index == 2)
+                        document.body.style.backgroundColor = "#f56";
+                }
+            }
+            // 表单提交检测
+            var oForm = document.getElementById("form");
+            var oSubmit = document.getElementById("submit");
+            var oMessage = document.getElementById("message");
+            var oDialog = document.getElementById("iosDialog2");
+            var oA = oDialog.getElementsByTagName("a")[0];
+            oSubmit.onclick = function() {
+                if(!oMessage.value) {
+                    oDialog.style.display = "block";
+                    oForm.onsubmit = function() {
+                    return false;
+                    }
+                }else {
+                    oForm.onsubmit = function() {
+                    return true;
+                    }
+                }
+            }
+            oA.onclick = function() {
+                oDialog.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body style="background: #BFF">
+    <div class="page" >
+        <div class="page__hd">
+            <h1 class="page__title" align="center">个人简历</h1>
+        </div>
+        <div class="page__bd">
+            <div class="weui-tab">
+                <div class="weui-navbar">
+                    <div class="weui-navbar__item weui-bar__item_on" >
+                        大概是蓝色
+                    </div>
+                    <div class="weui-navbar__item">
+                        绿色
+                    </div>
+                    <div class="weui-navbar__item">
+                        红色
+                    </div>
+                </div>
+                <div class="weui-tab__panel">
+                </div>
+            </div>
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>姓名</p>
+                        </div>
+                        <div class="weui-cell__ft">列克星顿</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>性别</p>
+                        </div>
+                        <div class="weui-cell__ft">男</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>年龄</p>
+                        </div>
+                        <div class="weui-cell__ft">19</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>tel</p>
+                        </div>
+                        <div class="weui-cell__ft">(+86)1234-5678-912</div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>邮箱</p>
+                        </div>
+                        <div class="weui-cell__ft">********@qq.com</div>
+                    </div>
+                </div>
+                <div class="weui-flex__item">
+                    <img style="width: 160px; height: 230px; float: right; margin: 5px" src="https://infoaas.com/html5-2018/1614080902125/img_avatar.jpg">
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="weui-media-box label">
+                <div class="weui-media-box__bd">
+                    <div  class="weui-cells__title" style="background: #BBF">教育背景</div>
+                </div>
+            </a>
+            <div class="weui-cell__bd content" style="display: none">
+                <div class="weui-cell"  >
+                    <div class="weui-cell__bd">
+                        <p>毕业院校</p>
+                    </div>
+                    <div class="weui-cell__ft">惠州学院</div>
+                </div>
+                <div class="weui-cell"  >
+                    <div class="weui-cell__bd">
+                        <p>学历</p>
+                    </div>
+                    <div class="weui-cell__ft">本科</div>
+                </div>
+                <div class="weui-cell"  >
+                    <div class="weui-cell__bd">
+                        <p>专业</p>
+                    </div>
+                    <div class="weui-cell__ft">软件工程</div>
+                </div>
+                <div class="weui-cell"  >
+                    <div class="weui-cell__bd">
+                        <p>毕业时间</p>
+                    </div>
+                    <div class="weui-cell__ft">2020.06</div>
+                </div>
+                <div class="weui-cell"  >
+                    <div class="weui-cell__bd">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;主修课程：JAVA程序设计、C++语言程序设计、计算机组成原理、汇编语言、Android应用开发、数据结构、编译原理、操作系统</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" class="weui-media-box label">
+                <div class="weui-media-box__bd">
+                    <div  class="weui-cells__title" style="background: #BBF">获奖经历</div>
+                </div>
+            </a>
+            <div class="weui-cell__bd content" style="display: none">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;广东省第八届蓝桥杯二等奖</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;广东省第九届蓝桥杯一等奖</p>
+            </div>
+            <a href="javascript:void(0);" class="weui-media-box label">
+                <div class="weui-media-box__bd">
+                    <div  class="weui-cells__title" style="background: #BBF">能力体现</div>
+                </div>
+            </a>
+            <div class="weui-cell__bd content" style="display: none">
+                <div class="weui-cell">
+                    <span >&nbsp;&nbsp;&nbsp;&nbsp;沟通水平:</span>
+                    <span style="width: 300px; height: 20px; display: inline-block; background: #c2c2c2"><span style="width: 190px; height: 20px; display: inline-block; background: #1E90FF"></span></span>
+                </div>
+                <div class="weui-cell">
+                    <span >&nbsp;&nbsp;&nbsp;&nbsp;专业能力:</span>
+                    <span style="width: 300px; height: 20px; display: inline-block; background: #c2c2c2"><span style="width: 220px; height: 20px; display: inline-block; background: #1E90FF"></span></span>
+                </div>
+                <div class="weui-cell">
+                    <span >&nbsp;&nbsp;&nbsp;&nbsp;英语水平:</span>
+                    <span style="width: 300px; height: 20px; display: inline-block; background: #c2c2c2"><span style="width: 160px; height: 20px; display: inline-block; background: #1E90FF"></span></span>
+                </div>
+                <div class="weui-cell">
+                    <span >&nbsp;&nbsp;&nbsp;&nbsp;管理能力:</span>
+                    <span style="width: 300px; height: 20px; display: inline-block; background: #c2c2c2"><span style="width: 170px; height: 20px; display: inline-block; background: #1E90FF"></span></span>
+                </div>
+                <div class="weui-cell">
+                    <a href="https://github.com/linkzw">&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;个人github主页</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="weui-media-box label">
+                <div class="weui-media-box__bd">
+                    <div  class="weui-cells__title" style="background: #BBF">留言</div>
+                </div>
+            </a>
+            <div class="weui-cells__title" style="background: #BBF"></div>
+            <div class="weui-cell__bd content" >
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <form id="form" action="https://github.com/linkzw" method="get" >
+                            <textarea id="message" name="name" rows="8" cols="100" style="width: 100%; border-color: #ddd;"></textarea>
+                            <input id="submit" class="weui-btn weui-btn_primary" style="background: #BBF" type="submit" name="" value="提交">
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="js_dialog" id="iosDialog2" style="display: none;">
+            <div class="weui-mask"></div>
+            <div class="weui-dialog">
+                <div class="weui-dialog__bd">请输入内容！！！</div>
+                <div class="weui-dialog__ft">
+                    <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">确认</a>
+                </div>
+            </div>
+        </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>
