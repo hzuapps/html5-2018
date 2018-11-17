@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>实验三</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+    <style type="text/css">
+            	
+            	#hc{ 
+            		color: black;      
+            		background-color: Beige;           		
+            	}
+            		#h{ 
+            		color: black;      
+            		background-color:burlywood          		
+            	}
+
+            </style>
+            <script language="JavaScript">
+            	function ifnull(){
+            		var messageObj = document.getElementById("message");
+            		if(messageObj.value==""){
+            		alert('留言不能为空');	
+            		}
+            	}
+                function changeColor(){
+                	for(i=0;i<4;i++){
+                	if(form1.color[i].checked){
+                		document.body.style.background=form1.color[i].value;
+                	}
+                	}
+                }
+            	
+            </script>
+	</head>
+	<body>
+		<div class="page">
+			 <div class="page__hd" id="hc" align="center" style="font-family: '微软雅黑';">
+             <h1 class="page__title"" >个人简历</h1>
+		</div>
+		
+        <div class="weui-cells__title" id="h" style="font-family:'微软雅黑';">基本信息</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><img src="http://img1.3lian.com/2015/w5/28/d/3.jpg" alt="" style="width:20px;margin-right:5px;display:block"></div>
+                <div class="weui-cell__bd">
+                    <p>姓名</p>
+                </div>
+                <div class="weui-cell__ft">熊二</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>性别</p>
+                </div>
+                <div class="weui-cell__ft">男</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>学历</p>
+                </div>
+                <div class="weui-cell__ft">本科</div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>毕业学校</p>
+                </div>
+                <div class="weui-cell__ft">惠州学院</div>
+            </div>
+                 <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>专业</p>
+                </div>
+                <div class="weui-cell__ft">软件工程</div>
+            </div>
+        </div>
+		
+		 <div class="weui-cells__title" id="h" style="font-family:'微软雅黑';">求职意向</div>
+                <div class="weui-cell__bd">
+                    <p>Java开发工程师</p>
+                </div>
+                
+                 <div class="weui-cells__title" id="h" style="font-family:'微软雅黑';">教育与工作经验</div>
+                <div class="weui-cell__bd">
+                    <p>序设计基础，计算机导论，面向对象程序设计，数据结构，数字逻辑，JAVA高级编程，计算机组成原理，Android移动应用开发，汇编语言，数据库系统概论，操作系统，软件工程导论</p>
+                </div>
+                
+                	 <div class="weui-cells__title" id="h" style="font-family:'微软雅黑';">自我评价</div>
+                <div class="weui-cell__bd">
+                    <p>工作认真负责，责任感强。积极乐观，善于交流。学习能力较强，做事细心。</p>
+                </div>
+                
+                
+                <div class="weui-cells__title" id="h" style="font-family:'微软雅黑';">联系方式</div>
+                <div class="weui-cell__bd">
+                    <p>手机：123456 </p>
+                    <p>邮箱：916784706@qq.com </p>
+                </div>
+                
+            <div class="weui-cells__title">给我留言</div>
+            <input class="weui-input" type="text" id="message" placeholder="请输入留言"/>    
+            <a class="weui-btn weui-btn_primary" id="showTooltips" onclick="ifnull()">发送</a>
+		      <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p><a href="https://github.com/PanHaoRui/html5-2018">Github </a></p>
+                </div>
+                <div class="weui-cell__ft">点击访问吧</div>
+           </div>           
+           
+           <form name="form1">
+           	<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+           	<input name="color" type="radio" value="#0000FF" onclick="changeColor()">蓝色
+           	<input name="color" type="radio" value="#00FF00" onclick="changeColor()">绿色
+            <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">黄色
+           </form>
+	</body>
+</html>
