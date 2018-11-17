@@ -40,6 +40,17 @@
 	   		margin: 0 auto;
 	   }
 	   </style>
+	   <script>
+			function sure(){
+				var textarea=document.getElementById("textarea");
+//			    alert(textarea.value);
+			    if(textarea.value.trim()==""){
+			    	alert("请输入内容");
+			    	return false;
+			    }
+			    return true;
+			}
+		</script>
 	</head>
 	<body>
 		<div id="all">
@@ -116,14 +127,15 @@
            	    </table>
 			</div>	
 			<div id="forth">
-				<form action="">
+				<form action="#" method="get">
 					<p><b>留言板</b></p>
-					<textarea cols="60" rows="5"></textarea>&nbsp;
-					<input type="submit" value="提交" />
+					<textarea id="textarea" cols="60" rows="5"></textarea>&nbsp;
+					<input type="submit" value="提交" id="submit" onclick="return sure()"/>
 				</form>
 				<br />
 				<a href="https://github.com/hzulwy" target="_blank">点击跳转到我的主页</a>
 			</div> 
 		</div>
+		
 	</body>
 </html>
