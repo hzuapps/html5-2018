@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人简历</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+    <script type="text/javascript">
+        window.onload = function(){  
+        document.getElementById('loginForm').addEventListener("submit",function(){
+        var emailObj = document.getElementById("liuyan");
+        if (emailObj.value == "") {
+            alert("您还未输入留言！");
+        }else{ 
+            alert("留言提交成功！");
+            this.submit(); 
+        }
+    },false);
+}
+function f () {
+    return false;
+}
+    </script>
+ </head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title" align="center" style="background-color: #08082b; color: #ffffff">个人简历</h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells__title" style="background-color: #9997db; color: #000000;">基本信息</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;姓&nbsp;&nbsp;名：严鑫</p>
+                    <p>&nbsp;性&nbsp;&nbsp;别：男</p>
+                    <p>&nbsp;年&nbsp;&nbsp;龄：20</p>
+                    <p>&nbsp;学&nbsp;&nbsp;历：大学本科</p>
+                    <p>&nbsp;专&nbsp;&nbsp;业：软件工程</p>
+                    <p>&nbsp;外语水平：英语四级</p>
+                    <p>&nbsp;毕业时间：2020年</p>
+                    <p>&nbsp;邮&nbsp;&nbsp;箱：1991322660@qq.com</p>
+                </div>
+                <div class="weui-cell__hd"><img src="https://images.alphacoders.com/823/82331.jpg" style="width:160px;display:block;float: right;">
+                </div>
+            </div>
+        </div>
+ <div class="weui-cells__title" style="background-color: #9997db;color: #000000;">求职岗位</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;Java工程师</p>
+                    
+                </div>
+            </div>
+        </div>
+       
+ <div class="weui-cells__title" style="background-color: #9997db; color: #000000;">技能体现</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;专攻Java语言，具有一定的个人编程能力</p>
+                    <p>&nbsp;熟悉SQL数据库以及PhotoShop等基本软件的操作</p>
+                    <p>&nbsp;熟悉office一系列办公软件的运用</p>
+                    <p>&nbsp;对于HTML5有一定了解</p>
+                </div>
+            </div>
+        </div>
+ 
+         
+          <div class="weui-cells__title" style="background-color: #9997db;color: #000000;">自我评价</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;对待生活积极乐观，工作起来有耐心</p>
+                    <p>&nbsp;对待工作认真负责，细心仔细</p>
+                    <p>&nbsp;对IT行业充满热情和信心</p>
+                    
+                </div>
+            </div>
+        </div>
+         <div class="weui-cells__title" style="background-color: #9997db;color: #000000;">我的Github主页</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p><a href="https://github.com/Nicklaus-Y">点击进入我的Github主页</a></p>
+                    </div>
+            </div>
+        </div>
+     <div class="weui-cells__title" style="background-color: #9997db;color: #000000;">留言板</div>
+          <div class="weui-cells weui-cells_form">
+              <div class="weui-cell">
+                  <form action="https://github.com/71SEN" method="get" id="loginForm"  onsubmit="return f()">
+                    <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="liuyan"></textarea> 
+                    <button class="weui-btn weui-btn_primary" type="submit" id="showTooltips">确认提交</button>
+                  
+              </div>
+      </div>
+  </div>
+</div>
+ </body>
+</html>
