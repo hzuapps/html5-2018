@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript中改变网背景颜色表单事件</title>
+	<script type="text/javascript" language="javascript">
+	function changecolor()
+	{
+		for (i=0; i<4; i++)
+			if(form1.color[i].checked)
+			{
+				document.body.style.background = form1.color[i].value;
+			}
+	}
+	</script>
+</head>
+<body>
+	<form name = "form1">
+	<input name = "color" type = "radio" value = "#FFFFFF" onclick="changecolor()">白色
+	<input name = "color" type = "radio" value = "#0000FF" onclick="changecolor()">蓝色
+	<input name = "color" type = "radio" value = "#00FF00" onclick="changecolor()">绿色
+	<input name = "color" type = "radio" value = "#FFFF00" onclick="changecolor()">黄色
+	</form>
+</body>
+</html>
