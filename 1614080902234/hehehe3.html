@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实验3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+    <style type="text/css"></style>
+    <script type="text/javascript">
+        function sure()
+        {
+            var value=document.getElementById("mytext").innerHTML;
+            if (value==""){
+                alert("输入内容为空，请重新输入！");
+            }
+        }
+    </script>
+</head>
+<body style="background: #F5F5CC">
+    <div>
+        <div>
+            <h1 align="center" style="font-family:宋体">
+                个人简历
+            </h1><br>
+        </div>
+        <div class="weui-media-box weui-media-box_appmsg" style="background:#F5F5DC">
+                    <h3>个人信息</h4>
+        </div>
+        <div style="background: #F5F5CC">
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <img src="D:\Pictures\12_20181103155606.jpg">
+                    <h4 class="page__desc">&emsp;&emsp;&emsp;我是</h4>
+                    <p class="weui-cell__ft">Eddie</p>
+                    <h4 class="page__desc">啦！</h4>
+                    &emsp;
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">性&emsp;别</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">男</p>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <h4 class="page__desc">政治面貌</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">党员</p>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">学&emsp;历</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">本科</p>
+                    &emsp;&emsp;&emsp;&emsp;
+                    <h4 class="page__desc">毕业院校</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">惠州学院</p>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">手&emsp;机</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">12345678910</p>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">邮&emsp;箱</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">1002777829qq.com</p>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">毕业学校</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">惠州学院</p>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">求职意向</h4>
+                    &emsp;
+                    <p class="weui-cell__ft">web开发工程师</p>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <h4 class="page__desc">个人主页</h4>
+                    &emsp;
+                    <p class="weui-cell__ft"><a href="https://github.com/hehehe1002">我的github主页</a></p>
+                </div>
+            </div>
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-media-box weui-media-box_appmsg" style="background:#F5F5DC">
+                    <h3>教育背景</h4>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <p>
+                        &middot;熟悉java、c、c++<br>
+                        &middot;汇编语言、数据库、操作系统、移动应用开发<br>
+                    </p>
+                </div>
+            </div>
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-media-box weui-media-box_appmsg" style="background:#F5F5DC">
+                    <h3>技能证书</h4>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <p>
+                        &middot;CET-4级<br>
+                        &middot;****************<br>
+                        &middot;****************<br>
+                    </p>
+                </div>
+            </div>
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-media-box weui-media-box_appmsg" style="background:#F5F5DC">
+                    <h3>自我评价</h4>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <p>
+                        &middot;热情乐观、积极向上<br>
+                        &middot;工作上认真负责，能够提出问题，解决问题<br>
+                        &middot;不断学习新知识，永不止步<br>
+                    </p>
+                </div>
+            </div>
+            <div class="weui-cells">
+            <div class="weui-panel weui-panel_access">
+                <div class="weui-media-box weui-media-box_appmsg" style="background:#F5F5DC">
+                    <h3>留言区</h4>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__bd" style="background-color: #FAFAFA;padding-left:5px;">
+                    <textarea id="mytext" class="weui-textarea"  rows="5"></textarea>
+                    <div class="weui-textarea-counter"><span>0</span>/300</div>
+                    <div class="weui-btn-area">
+                        <a class="weui-btn weui-btn_primary" onclick="sure()">提交</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html> 
