@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function changeBgcolor(){
+				for(var i=0; i<4; i++){
+					if(form1.color[i].checked){
+						document.body.style.backgroundColor=form1.color[i].value;
+						alert(document.body.backgroundColor);
+						alert(document.body.style.backgroundColor);
+					}
+				}
+			};
+			
+			
+		</script>
+	</head>
+	<body bgcolor="#FFFF66" style="background-color: chocolate;">
+		<form name="form1">
+			<input name="color" type="radio" value="white" onclick="changeBgcolor()" />白色
+			<input name="color" type="radio" value="green" onclick="changeBgcolor()" />绿色
+			<input name="color" type="radio" value="red" onclick="changeBgcolor()" />红色
+			<input name="color" type="radio" value="blue" onclick="changeBgcolor()" />蓝色
+		</form>
+	</body>
+</html>
