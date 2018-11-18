@@ -3,21 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<title>个人简历</title>
+	<script type="text/javascript" src="myimg.js"></script>
+	<script type="text/javascript" language="JavaScript">
+			function changeColor() {
+				for (i=0;i<4;i++){
+					if(coloch.color[i].checked){
+						document.body.style.background=coloch.color[i].value;
+						}
+					}
+				}
+	</script>
 	<link rel="stylesheet" type="text/css" href="assets\css\weui.min.css">
     <style type="text/css">
-        .top1{
-            background:#87CEFA;
-            color: white;
-            text-align: center;
-            border-radius: 25px;
-        }
-        .bk{
-            background-image:url('image/bk.jpg'); 
-            -moz-background-size:100% 100%; 
-            background-size:100% 100%;
-            margin:10px 5px; 
-            padding:5px; 
-        }
+
     </style>
 </head>
 <body>
@@ -128,7 +126,7 @@
 		
                             <div class="weui-cell__bd">
                                 <p>懂得灵活使用C++，JAVA语言</p>
-								<p>/p>
+								<p></p>
 								<p></p>
 								<p></p>
                             </div>
@@ -158,7 +156,7 @@
 			
 			<div class="weui-flex__item"><div class="placeholder" style="padding-left: 10px;">
 		
-                            <form action="#" method="post">
+                            <form action="pass.html"  method="post">
                                         <textarea id="liuyan" name="liuyan" class="weui-textarea" placeholder="." rows="3"></textarea>
                                         <input type="submit" name="subBtn" class="weui-btn weui-btn_primary top1" value="提交留言" />
                              </form>
@@ -168,7 +166,12 @@
 			
 			</div>
 			
-                
+                	<form name="coloch" class="c_Change">
+			<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+			<input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+			<input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+			<input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+		</form>
             </div>
            
         </div>
