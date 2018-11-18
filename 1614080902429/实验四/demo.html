@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./demo01.css">
 	<link rel="stylesheet" type="text/css" href="./weui.css">
+   <script type="text/javascript" language="javascript" src="fo.js"></script>
+
 
 </head>
 <body>
@@ -139,14 +141,14 @@
 
 
 <tr>
-	 <td> <div class="weui-cell__hd"><label class="weui-label" color:red>对我的印象:</label>
-	    </div>  </td>
-	 <td >    <input class="weui-input" type="text" placeholder="不能超过十个字" /></td>
-	   <td >  <input type="submit" value="提交" /></td>
+	 <td> <div class="weui-cell__hd">
+	 <label class="weui-label" color:red>对我的印象:</label></div> </td>
 
-	    
-	
+	 <td >  <input id="hhh" class="weui-input" placeholder="请输入留言内容" value=""/></td>
+	   <td > <button id="hh">提交</button></td>
+	 
 </tr>
+
 </table>
 
 
@@ -161,12 +163,56 @@
 
  </tr>
 
-
-
 		</table>
-
-
 	  
 	</div>
+
+
+
+
+
+
+<form name="forml" align="center" >
+		<input type="radio" name="color" value="#FFFFFF" onclick="changeColor()">白色
+	    <input type="radio" name="color" value="#0000FF" onclick="changeColor()">蓝色
+	    <input type="radio" name="color" value="#00FF00" onclick="changeColor()">绿色
+	    <input type="radio" name="color" value="#FFFF00" onclick="changeColor()">黄色
+</form>
+
+
+
+
+<script type="text/javascript">
+
+function changeColor(){
+		for (i = 0;i < 4; i++) 
+        if (forml.color[i].checked) {
+		document.body.style.background=forml.color[i].value;
+		}
+	}
+
+
+
+var a1=document.getElementById("hhh");
+		var a2=document.getElementById("hh");
+		a2.onclick=function fn(){
+			if(a1.value===""){
+				alert("请您形容我的帅，蟹蟹");
+			}
+			else{
+				alert("蟹蟹亲，留言成功");
+			}
+			a1.value=" ";
+		
+		}
+
+
+
+
+
+</script>
+
+
+
 </body>
 </html>
