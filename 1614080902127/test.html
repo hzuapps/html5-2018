@@ -18,8 +18,23 @@
 		<script type="text/javascript" language="javascript">			
 		function changebackground(index){
 			document.body.style.backgroundImage='url(background'+index+'.jpg)'
-		}		
-	 </script>
+		}
+		window.onload=function(){
+		document.getElementById("sub").onclick=function(){
+			var let=document.getElementById("let");
+			var letter=let.value;
+				if(!letter.length){
+					alert('留言不能为空，请输入留言！');
+					return false;
+				}
+				else{
+					alert('留言提交成功！');
+					return true;
+				}
+				 let.value = "";
+		}
+	}
+	</script>
 	</head>
 	<body>
 		<div class="page">
@@ -100,10 +115,11 @@
 			<hr>
             <div class="weui-cell">
                 <div class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
+                    <textarea class="weui-textarea"  id="let" placeholder="请输入留言" rows="3"></textarea>
                     <div class="weui-textarea-counter"><span>0</span>/200</div>
                 </div>
             </div>
+			<input  type="submit" class="weui-btn weui-btn_primary" value="提交" id="sub">
         </div>
 		<a href="javascript:;" class="weui-btn weui-btn_primary">留言</a>
 		
