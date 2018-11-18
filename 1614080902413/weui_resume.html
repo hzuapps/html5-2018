@@ -106,7 +106,11 @@
             <div class="weui-cells weui-cells_form">
             	<div class="weui-cell" >
                 	<div class="weui-cell__bd">
-                    	<textarea class="weui-textarea" placeholder="请在此输入您的留言信息！" rows="3"></textarea>
+                    	
+
+		<input id="input1" value="" placeholder="请输入留言内容" >
+			<button id="button1">提交</button>
+
                     	<div class="weui-textarea-counter">
 							<span>0</span>
 							/200
@@ -114,11 +118,25 @@
                 	</div>
            	 	</div>
         	</div>          	             
-            <div class="weui-btn-area">     
-            	<a class="weui-btn weui-btn_primary" id="showTooltips">发送</a>
-            </div>   	
+             	
 		</div>
     </div>	 	
 </div>	
+
+<script type="text/javascript">
+		var a1=document.getElementById("input1");
+		var a2=document.getElementById("button1");
+		a2.onclick=function fn(){
+			if(a1.value===""){
+				alert("留言内容不能为空！");
+			}
+			else{
+				alert("您的留言“"+a1.value+"”已经成功留言");
+			}
+			a1.value="";
+		}
+		
+	</script>
+
 </body>
 </html>
