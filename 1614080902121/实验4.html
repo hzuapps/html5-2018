@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人简历</title>
+    <meta name="description" content=event.html"">
+        <meta name="keywords" content="event,html,js">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+    <meta charset=utf-8>
+
+    <style type="text/css" media="screen">
+        
+        .title-font{
+            font-size:21px;
+            color:white ;
+        }
+        .content-font{
+            font-size:15px;
+            color:#3c3c3c;
+            letter-spacing: 0.10em;
+            line-height:25pt
+        }
+    </style>
+     <script type="text/javascript" src="form.js"></script>
+     <script type="text/javascript" src="me.js"></script>
+<script type="text/javascript" language="JavaScript">
+function changeColor() {
+for (i=0;i<4;i++){
+if(coloch.color[i].checked){
+document.body.style.background=coloch.color[i].value;
+}
+}
+}
+</script>
+</head>
+<body>
+    <form name="coloch" class="c_Change">
+<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+<input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+<input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+<input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+</form>
+    <div class="weui-toptips weui-toptips_warn js_tooltips">页面出错</div>
+    <div class="page" >
+        <div class="page__hd">
+            <h1 class="page__title" align="center" style="font-family:楷体;color: #696969">我的简历</h1>
+        </div>
+        <div class="page__bd">
+            <div class="weui-cells">
+                <div class="weui-cell" style="background-color: #696969">
+                    <div class="weui-cell__bd">
+                        <p class="title-font">基本信息</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" style="padding-left:5px;">
+                        <img style="float:right;:5px;" src="1.jpeg" alt="图片加载失败" width=150 height=210/>
+                        <p><span class="content-font">姓&nbsp &nbsp &nbsp 名：周铭城</span></p>
+                        <p><span class="content-font">年&nbsp &nbsp &nbsp 龄：20</span></p>
+                        <p><span class="content-font">性&nbsp &nbsp &nbsp 别：男</span></p>
+                        <p><span class="content-font">学&nbsp &nbsp &nbsp 号：1614080902121</span></p>
+                        <p><span class="content-font">班&nbsp &nbsp &nbsp 级：16软件1班</span></p>
+                        <p><span class="content-font">政治面貌：预备党员</span></p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" >
+                        <a  href="https://github.com/Zmingcheng"><p class="title-font" style="color: #3c3c3c">Github</p></a>
+                    </div>
+                    <div class="weui-cell__ft">
+                        点击访问
+                    </div>
+                </div>
+            </div>
+
+            <div class="weui-cells">
+                <div class="weui-cell" style="background-color: #696969">
+                    <div class="weui-cell__bd">
+                        <p class="title-font">自我评价</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" style="padding-left:5px;">
+                        <span class="content-font" style="display:block;text-indent:2em;">本人性格开朗、为人诚恳、乐观向上、兴趣广泛；拥有较强的适应能力、并具有较强的管理策划与组织管理协调能力；成绩优秀，取得班级成绩第一名的成绩；说到做到，决不推卸责任；有自制力，做事情始终坚持有始有终，从不半途而废；肯学习,有问题不逃避,愿意虚心向他人学习；工作积极进取,态度认真；勇于尝试，挑战自我。</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="weui-cells">
+                <div class="weui-cell" style="background-color: #696969">
+                    <div class="weui-cell__bd">
+                        <p class="title-font">获奖情况</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" style="padding-left:5px;">
+                        <span class="content-font">国家励志奖学金<br>三好学生标兵<br>优秀志愿者<br>优秀共青团干部<br>菁英训练营优秀学员<br></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="weui-cells">
+                <div class="weui-cell" style="background-color: #696969">
+                    <div class="weui-cell__bd">
+                        <p class="title-font">学习现状</p>
+                    </div>
+                </div>
+                <div class="weui-cell" >
+                    <div class="weui-cell__bd" style="padding-left:5px;">
+                        <span class="content-font"">能够熟练使用C/C++编写程序；<br>已掌握Python基础语法；<br>已掌握JAVA基础语法；<br>对算法也进行深入学习和了解；<br>能编写基本的爬虫程序，会使用Scrapy框架</span>
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells" style="background-color: #696969">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <p class="title-font">此处留言</p>
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd" style="background-color: #FAFAFA;padding-left:5px;">
+                       <form action="pass.html" method="post" id="loginForm">
+            <!--在以后的开发过程之中，必须要保证id与name属性内容完全一致，否则会出现怪异问题-->
+            <input type="text" name="email" id="email"></input>
+            <button type="submit" id="subBtn">提交</button>
+        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
