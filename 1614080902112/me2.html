@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
 	<title>jianli</title>
+	<script type="text/javascript" src="me.js"></script>
+		<script type="text/javascript" language="JavaScript">
+			function changeColor() {
+				for (i=0;i<4;i++){
+					if(coloch.color[i].checked){
+						document.body.style.background=coloch.color[i].value;
+						}
+					}
+				}
+		</script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
  </head>
 <body>
+<form name="coloch" class="c_Change">
+			<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+			<input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+			<input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+			<input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+		</form>
 <div class="page">
     <div class="page__hd">
         <h1 class="page__title" align="center">个人简历</h1>
@@ -86,17 +102,16 @@
             </div>
         </div>
 
-		
+		<div>
         	<div class="weui-cells weui-cells_form">
-            	<div class="weui-cell">
-               		<div class="weui-cell__bd">
-                    	<textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
-                    <div class="weui-textarea-counter"><span>0</span>/200
-                    </div>
-                	</div>
-            	</div>
-			</div>
-
+            	<div class="placeholder bgk">留言</div>
+                </div>
+                <hr>
+                <form action="pass.html" method="post" id="send1">
+                <input type="text" name="mess" id="send2"></input>
+                <button type="submit" id="send3">发送留言</button>
+                </form>
+        </div>
 		<div class="weui-btn-area">
             <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">发送留言</a>
 		</div>
