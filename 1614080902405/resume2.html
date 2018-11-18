@@ -4,6 +4,37 @@
     <meta charset="utf-8">
     <title>实验三</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+
+
+    <script type="text/javascript">
+        function changeColor() {
+            for(i = 0;i < form1.length; i++) {
+                if(form1.color[i].checked) {
+                    document.body.style.background = form1.color[i].value;                  
+                }
+            }
+        }
+    
+    window.onload=function()
+        {
+            var button=document.getElementById("button1");
+            button.onclick=function()
+            {
+                var txt=document.getElementById("txt1");
+               if(txt.value===""){
+                alert("请输入留言内容");
+            }
+            else{
+                alert("留言成功");
+            }
+            txt.value="";
+        }
+            }
+        
+
+        
+    </script>
+
 </head>
 <style type="text/css">
     body{ margin:auto;
@@ -27,6 +58,7 @@
         float: right;
         margin-top: 5px;
     }
+
 </style>
 <body>
 <div class="page">
@@ -139,7 +171,7 @@
             <div class="weui-cells weui-cells_form">
                 <div class="weui-cell">
                     <div class="weui-cell__bd">
-                        <textarea class="weui-textarea" placeholder="请输入留言" rows="5"></textarea>
+                        <textarea class="weui-textarea"  id="txt1" value="" placeholder="请输入留言" rows="5"></textarea>
                     <div class="weui-textarea-counter"><span>0</span>/200
                     </div>
                     </div>
@@ -150,13 +182,18 @@
 
 
         <div class="weui-btn-area">
-            <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips" style="vertical-align: middle; text-align: center;" >发送</a>
+        
+            <a class="weui-btn weui-btn_primary" href="javascript:" id="button1" style="vertical-align: middle; text-align: center;" >提交</a>
         </div>
 
 
-
+<form action="#" method="post" name="form1" id="form1">
+        <input type="radio" name="color" id="white" value="#F8F8FF" onclick="changeColor()" />白色
+        <input type="radio" name="color" id="yellow" value="#FFFF00" onclick="changeColor()" />黄色
+        <input type="radio" name="color" id="red" value="#FF0000" onclick="changeColor()" />红色
+    </form>
 
     </div>
 </div>
  </body>
-</html
+</html>
