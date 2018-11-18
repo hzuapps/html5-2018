@@ -6,7 +6,15 @@
 	<!--引入css样式文件(可以自己从网上下载，也可引用bootcdn里网络资源的样式)-->
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
 	<script type="text/javascript" src="form.js" charset="gbk"></script>
-	
+	<script type="text/javascript" language="JavaScript">
+            function changeColor() {
+                for (i=0;i<4;i++){
+                    if(coloch.color[i].checked){
+                        document.body.style.background=coloch.color[i].value;
+                        }
+                    }
+                }
+    </script>
 
 </head>
 <body>
@@ -133,6 +141,12 @@
 
 
 <!----------------------------------------------------------->
+        <form name="coloch" class="c_Change">
+            选择背景颜色：<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+            <input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+            <input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+            <input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+        </form>
 <!--
 		<div class="weui-btn-area">
             <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">发送留言</a>
