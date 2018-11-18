@@ -213,5 +213,13 @@
 			</li>
 		</ul>
 	</div>
+	<script>
+		document.querySelectorAll('#leaveBox input')[1].onclick = function(){
+			if(!document.querySelectorAll('#leaveBox input')[0].value)
+				alert('请输入留言！');
+			else
+				alert('留言成功！');
+		}
+	</script>
 </body>
 </html>
