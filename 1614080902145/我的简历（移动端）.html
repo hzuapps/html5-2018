@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>jianli</title>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
 	<!--引入css样式文件(可以自己从网上下载，也可引用bootcdn里网络资源的样式)-->
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+	<script type="text/javascript" src="form.js" charset="gbk"></script>
+	
 
 </head>
 <body>
@@ -115,21 +116,28 @@
 <!----------------------------------------------------------->
 <!----------------------------------------------------------->
 		<div class="weui-cells__title" style="background-color: #383838;color: white;">留言板</div>
-        	<div class="weui-cells weui-cells_form">
-            	<div class="weui-cell">
-               		<div class="weui-cell__bd">
-                    	<textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
+		<form action="pass.html" method="post" id="loginForm">
+            	<!--在以后的开发过程之中，必须要保证id与name属性内容完全一致，否则会出现怪异问题-->
+            	<div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea id="liuyan" class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
                     <div class="weui-textarea-counter"><span>0</span>/200
                     </div>
-                	</div>
-            	</div>
-			</div>
+                    </div>
+                </div>
+            </div>
+            	<button type="submit" class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">发送留言</button>
+        	</form>
+
+
+
 <!----------------------------------------------------------->
-<!----------------------------------------------------------->
+<!--
 		<div class="weui-btn-area">
             <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">发送留言</a>
 		</div>
-<!----------------------------------------------------------->
+-->
 	</div>
 </div>
 
