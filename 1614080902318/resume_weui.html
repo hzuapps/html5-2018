@@ -10,8 +10,23 @@
 			background-color: #D6EAF8;           		
 		}
     </style>
+	<script type="text/javascript" language="JavaScript">
+		function changeColor() {
+		  for (i=0;i<4;i++){
+			if(coloch.color[i].checked){
+			  document.body.style.background=coloch.color[i].value;
+			}
+		  }
+		}
+	</script>
 </head>
 <body>
+<form name="coloch" class="c_Change">
+  <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+  <input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+  <input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+  <input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+</form>
 <div class="page">
 	<div class="page__hd">
         <h1 class="page__title" align="center">个人简历</h1>    
@@ -79,7 +94,7 @@
             <div class="weui-cells weui-cells_form">
             	<div class="weui-cell" >
                 	<div class="weui-cell__bd">
-                    	<textarea class="weui-textarea" placeholder="欢迎留言~" rows="3"></textarea>
+                    	<textarea class="weui-textarea" placeholder="欢迎留言~" rows="3" id="message"></textarea>
                     	<div class="weui-textarea-counter">
 							<span>0</span>
 							/200
@@ -88,10 +103,23 @@
            	 	</div>
         	</div>          	             
             <div class="weui-btn-area">     
-            	<a class="weui-btn weui-btn_primary" id="showTooltips">发送</a>
+            	<a class="weui-btn weui-btn_primary" id="send">发送</a>
             </div>   	
 		</div>
     </div>	 	
 </div>	
+<script type="text/javascript">
+	var a1=document.getElementById("message");
+	var a2=document.getElementById("send");
+	a2.onclick=function fn(){
+		if(a1.value===""){
+			alert("请输入留言内容");
+		}
+		else{
+			alert("留言成功");
+		}
+		a1.value="";
+	}
+</script>
 </body>
 </html>
