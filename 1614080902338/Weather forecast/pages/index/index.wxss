@@ -1,0 +1,60 @@
+/**index.wxss**/
+page{
+  height: 100%;
+  width:100%;
+}
+.content{
+  height: 100%;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  padding:30rpx 40rpx;
+  color:chartreuse;
+  font-size:17px;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543218016&di=cea0e5cd0dde3e05b063a8fa2b205109&imgtype=jpg&er=1&src=http%3A%2F%2Fimg18.3lian.com%2Fd%2Ffile%2F201710%2F06%2F3d03eeee8a0aa5f6093ccd2ccf7edffb.jpg');
+  background-size: cover;
+}
+.info{
+  margin-top:70rpx;
+  width:100%;
+  height:160px;
+  background-color:lightslategray;
+  opacity: 0.5;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.temp{
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  padding-top:10px;
+}
+.weather{
+  line-height: 22px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.prompt{
+  padding:0 10px;
+}
+.city{
+  text-align: right;
+  margin: 10px;
+}
+.forecast{
+  width: 100%;
+  display:flex;
+  margin-top:100px;
+  align-self:flex-end;
+}
+.next-day{
+  width:20%;
+  height:400rpx;
+  background-color:lightslategray;
+  opacity:.4;
+  box-shadow: 15px 10px 30px rgba(0 ,0 ,0, 0.5);
+  text-align:center;
+  line-height:34px;
+  font-size:19px;
+  margin: 0 9rpx;
+}
