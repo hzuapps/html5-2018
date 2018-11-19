@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "skyblue",
+    "navigationBarTitleText": "记事本",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "selectedIconPath": "pages/img/main2.jpg",
+      "iconPath":"pages/img/main1.jpg",
+      "text": "主页"
+    },{
+      "selectedIconPath": "pages/img/edit2.jpg",
+      "iconPath": "pages/img/edit1.jpg",
+      "pagePath": "pages/add/add",
+      "text": "编辑"
+    },
+    {
+      "selectedIconPath": "pages/img/per2.jpg",
+      "iconPath": "pages/img/per1.jpg",
+      "pagePath": "pages/logs/logs",
+      "text": "个人"
+    }
+    ]
+    
+  }
+}
