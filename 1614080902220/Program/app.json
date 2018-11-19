@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "计算器",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "首页",
+        "iconPath": "/images/1.png",
+        "selectedIconPath": "/images/1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "计算",
+        "iconPath": "/images/2.png",
+        "selectedIconPath": "/images/2.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "/images/3.png",
+        "selectedIconPath": "/images/3.png"
+      }
+    ]
+  }
+}
