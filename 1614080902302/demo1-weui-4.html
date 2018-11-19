@@ -117,5 +117,23 @@
 			</script>
 		</div>
 	</div>
+	<div style="margin-left:200px">
+        <br>
+        <p>更换背景颜色:</p >
+        <form name="form1" >
+            <input type="radio" name="color" value="#000000" onclick="changecolor()">黑色
+            <input type="radio" name="color" value="#0000FF" onclick="changecolor()">蓝色
+            <input type="radio" name="color" value="#00FF00" onclick="changecolor()">绿色
+            <input type="radio" name="color" value="#FFFF00" onclick="changecolor()">黄色
+        </form>
+    </div>
+	<script type="text/javascript">
+	function changecolor(){
+            for(i=0;i<4;i++)
+                if(form1.color[i].checked){
+                    document.body.style.background=form1.color[i].value;
+                 }
+        }
+        </script>
 </body>
 </html>
