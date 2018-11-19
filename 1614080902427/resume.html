@@ -74,11 +74,11 @@
             </ul>
         </li>
     </ul>
-    <form>
+    <form action="resume.html" method="GET">
         <fieldset>
             <legend>留言</legend>
             <div>
-                <textarea></textarea>
+                <textarea name="comment"></textarea>
             </div>
             <div>
                 <input type="submit">
@@ -86,6 +86,20 @@
             </div>
         </fieldset>
     </form>
+    <script>
+        const cmtForm = document.querySelector('form');
+        const textArea = cmtForm.querySelector('textarea')
+        const btn = cmtForm.querySelector(`[type='submit']`);
+        btn.addEventListener("click", (event) => {
+            event.preventDefault();
+            if (textArea.value.length === 0) {
+                alert('留言不能为空');
+            }
+            else {
+                cmtForm.submit();
+            }
+        })
+    </script>
 </body>
 
 </html>
