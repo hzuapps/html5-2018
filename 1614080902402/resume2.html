@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>山鸡</title>
-	<link rel="stylesheet" href="../iconfont/iconfont.css">
+	<link rel="stylesheet" href="./iconfont/iconfont.css">
 	<style>
 		body{
-			background: -webkit-linear-gradient(green,greenyellow);
+			background: -webkit-linear-gradient(purple,pink);
 			padding:0;
 			margin:0;
 			width: 100%;
@@ -24,17 +24,38 @@
 		li{
 			display: block;
 			width: inherit;
-			font-size: 1.6em;
 		}
 		ol{
-			padding-left: 3em;
+			padding-left: 1.4rem;
 		}
 		i{
 			font-style: normal;
-			margin-right: 0.3em;
+			margin-right: 0.3rem;
+		}
+		a{
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			font-size:1.5rem;
+		}
+		a:visited{
+			color:purple;
+		}
+		input{
+			margin-left: 1rem;
+			outline: none;
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+		}
+		input:first-child{
+			padding-left:0.4rem;
+			width:70%;
+		}
+		input:last-child{
+			width:10%;
 		}
 		#photoFrame{
-			padding:3em 0;
+			padding:2rem 0;
 		}
 		#photoFrame img{
 			display: block;
@@ -43,34 +64,33 @@
 			margin:auto;
 		}
 		h2{
-			padding-left:1em;
+			padding-left:0.8rem;
 			background: -webkit-linear-gradient(left,#fff,transparent);
-			font-size: 2.8em;
-			margin:0.5em auto;
+			font-size: 1.7rem;
+			margin:0.5rem auto;
 		}
 		#infoFrame ol li,#professional ol li,#awardStatus ol li{
-			font-size: 2em;
+			font-size: 1.1rem;
 		}
 		#infoFrame ol li span,#professional ol li span{
 			display: inline-block;
-			width:30%;
+			width:38%;
 			text-align: right;
 		}
 		#workExperience ol li p{
-			font-size: 1.4em;
+			font-size: 1rem;
 		}
 		ol li .dot{
 			vertical-align: middle;
 			display: inline-block;
-			border: 0.3em solid green;
+			border: 0.3rem solid green;
 			background: #fff;
 			border-radius:50%;
-			width:0.3em;
-			height:0.3em; 
-
+			width:0.3rem;
+			height:0.3rem; 
 		}
 		ol li p{
-			margin:0.2em 0.5em;
+			margin:0.2rem 0.5rem;
 			vertical-align: middle;
 			width:80%;
 			display: inline-block;
@@ -79,10 +99,10 @@
 		#abilitity ol li span{
 			display: inline-block;
 			vertical-align: baseline;
-			width:30%;
+			width:35%;
 			text-align: right;
-			margin:0.2em 1em;
-			font-size: 1.2em;
+			margin:0.2rem 0.5rem;
+			font-size: 1rem;
 		}
 		#abilitity ol li meter{
 			width:42%;
@@ -91,7 +111,7 @@
 </head>
 <body>
 	<div>
-		<div id="photoFrame"><img src="../img/2.jpg" /></div>
+		<div id="photoFrame"><img src="./img/2.jpg" /></div>
 		<ul id="resume">
 			<li id="infoFrame">
 				<h2 class="iconfont"><i class="icon-information"></i>个人信息</h2>
@@ -180,7 +200,26 @@
 					</li>
 				</ol>
 			</li>
+			<li id="leaveBox">
+				<h2 class="iconfont"><i class="icon-huojiangdengji"></i>留言箱</h2>
+				<form action="">
+					<input type="text" placeholder="是兄弟，就來砍我！！！">
+					<input type="submit">
+				</form>
+			</li>
+			<li id="github">
+				<h2 class="iconfont"><i class="icon-huojiangdengji"></i>我的github</h2>
+				<a href="https://github.com/Ghlyh">贪玩蓝月</a>
+			</li>
 		</ul>
 	</div>
+	<script>
+		document.querySelectorAll('#leaveBox input')[1].onclick = function(){
+			if(!document.querySelectorAll('#leaveBox input')[0].value)
+				alert('请输入留言！');
+			else
+				alert('留言成功！');
+		}
+	</script>
 </body>
 </html>
