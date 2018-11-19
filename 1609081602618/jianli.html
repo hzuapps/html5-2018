@@ -3,6 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>我的简历</title>
+    <script type="text/javascript" language="JavaScript">
+        function changeColor() {
+            for(i=0;i<4;i++){
+                if(div1.color[i].checked){
+                    document.body.style.background=div1.color[i].value;
+                }
+
+            }
+        }
+        function fn() {
+            var obj=document.getElementById("text");
+            if(obj.value == ""){
+                alert("不为空时正常发送留言。");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
     <style>
 
         #nav {
@@ -87,8 +106,8 @@
 
         <table style="margin-left: 80px;margin-top: 15px">
                 <tr>
-                   <td> <form action="#" method="post" >
-                       留言：<input type="text" style="font-size: 20px"/> <input type="submit" style="font-size: 20px"/>
+                   <td> <form action="#" method="post" onsubmit="return fn()">
+                       留言：<input type="text" id="text" style="font-size: 20px"/> <input type="submit"  id="subBtn" style="font-size: 20px"/>
                    </form></td>
                 </tr>
                 <tr>
@@ -96,6 +115,15 @@
                         github地址<a href="https://github.com/hzuapps/html5-2018/issues/2">github</a>
                     </div></td>
                 </tr>
+            <tr>
+                <td><form name="div1">
+                    <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+                    <input name="color" type="radio" value="#0000FF" onclick="changeColor()">蓝色
+                    <input name="color" type="radio" value="#00FF00" onclick="changeColor()">绿色
+                    <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">黄色
+                </form>
+                </td>
+            </tr>
         </table>
     </div>
 
