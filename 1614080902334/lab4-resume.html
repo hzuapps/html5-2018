@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的简历</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="./css/weui.css"/>
+    <link rel="stylesheet" href="./css/icon.css"/>
+    <script type="text/javascript" src="./js/zepto.min.js"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
+</style>
+</head>
+<body>
+<div id="errorMsg">
+    <div class="js_dialog" id="weDialog" style="display: none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__hd"><strong class="weui-dialog__title">错误提示</strong></div>
+            <div class="weui-dialog__bd">留言内容不能为空</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:" class="weui-dialog__btn weui-dialog__btn_primary">关闭</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="successMsg" style="display: none;">
+    <div class="weui-mask_transparent"></div>
+    <div class="weui-toast">
+        <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+        <p class="weui-toast__content">提交成功</p>
+    </div>
+</div>
+
+<div class="page home js_show">
+	<div class="page__hd text-center">
+        <h3 class="page__title">我的简历</h3>
+    </div>
+	<div class="weui-cells__title">基本信息</div>
+	<div class="weui-panel__bd">
+        <a class="weui-media-box weui-media-box_appmsg">
+        	<i class="icon icon-78" style="width:20px;margin-right:5px;display:block"></i>
+            <div class="weui-media-box__bd">
+            	
+                <h4 class="weui-media-box__title">本人照片</h4>
+            </div>
+            <div class="weui-media-box__hd">
+                <img class="weui-media-box__hd" src="./image/portrait.jpg">
+            </div>
+        </a>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-84" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>名字</p>
+        </div>
+        <div class="weui-cell__ft">王尔德</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-58" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>性别</p>
+        </div>
+        <div class="weui-cell__ft">男</div>
+    </div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-106" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>生日</p>
+        </div>
+        <div class="weui-cell__ft">1997.9.7</div>
+    </div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-90" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>电话</p>
+        </div>
+        <div class="weui-cell__ft">138-58585518</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-110" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>邮箱</p>
+        </div>
+        <div class="weui-cell__ft">itsrealme97@gmail.com</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-69" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>居住地</p>
+        </div>
+        <div class="weui-cell__ft">广东 深圳</div>
+    </div>
+	
+	<div class="weui-cells__title">教育经历</div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-27" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>毕业院校</p>
+        </div>
+        <div class="weui-cell__ft">惠州学院</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-91" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>英语水平</p>
+        </div>
+        <div class="weui-cell__ft">英语掌握程度良好  口语能力一般  考级六级</div>
+    </div>
+	
+	<div class="weui-cells__title">个人描述</div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-49" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>专业技能</p>
+        </div>
+        <div class="weui-cell__ft" align="margin-right">
+            <p> 熟悉 SSM 框架 (Spring、Spring MVC、MyBatis).<br>
+            	基本了解 Spring Boot 和 Spring Cloud 微服务架构.<br>
+				基本掌握 JQuery 框架,并能实现 Ajax 开发,异步请求后端数据.<br>
+				熟悉 MySQL & Oracle 数据库，常用的数据结构和算法.<br>
+				熟悉 Internet 基本协议（如 TCP/IP、HTTP 等）内容及相关应用.<br>
+				有良好的软件工程意识，熟悉常用的软件工程工具（如 Git、Maven）.<br>
+				熟悉 Linux 环境以及操作，多年Linux用户，自己的云服务器都是Linux系统.<br>
+				能根据业务需要，制作代码生成器，提高工作效率.<br>
+				能坚持阅读英语技术文档，找资料优先看英语资料.<br>
+				有前后端分离开发经验.<br>
+			</p>
+        </div>	
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-115" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>自我评价</p>
+        </div>
+        <div class="weui-cell__ft" align="margin-right">
+			热爱编程，有较强的学习能力.
+			工作认真负责，有责任心.<br>
+			有良好的沟通能力，良好的团队协作能力.<br>
+			为人诚恳，做事踏实.<br>
+        </div>	
+    </div>
+	
+	<div class="weui-cells__title">项目经验</div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-98" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>● 珍宝拍卖行<br></p>
+        </div>
+        <div class="weui-cell__ft" align="margin-right">
+            整体结构采用三层架构，MVC 开发模式，采用ssm框架+maven+redis技术和 ajax分离式开发.<br>包含用户管理，拍卖行管理，拍卖管理，以及徽章管理四大模块.<br>
+①用户管理：登录，注册，修改信息，添加好友，与好友聊天，根据条件搜索用户等.<br>
+②拍卖行管理：新建拍卖行，修改拍卖行信息，拍卖行转让，上传商品信息，根据条件搜索拍卖行和拍卖商品.<br>
+③拍卖管理：用户对商品的拍卖，显示用户对商品的出价，以及拍卖结束后根据出价更改商品和用户信息.<br>
+④徽章管理：徽章的上传及获得条件（只有拍卖行所有者才能上传），徽章的显示，徽章的更换.<br>
+        </div>
+    </div>
+
+    <div class="weui-cells__title">就职经历</div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-81" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>工作时间</p>
+        </div>
+        <div class="weui-cell__ft">2016.9 - 2017.12</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-81" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>工作单位</p>
+        </div>
+        <div class="weui-cell__ft">保利房地产（集团）股份有限公司</div>
+    </div>
+   <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-81" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>工作职位</p>
+        </div>
+        <div class="weui-cell__ft">初级Java工程师</div>
+    </div>
+	
+	    <div class="weui-cells__title">求职意向</div>
+	<div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-97" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>工作地点</p>
+        </div>
+        <div class="weui-cell__ft">深圳/广州/惠州</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-97" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>意向行业</p>
+        </div>
+        <div class="weui-cell__ft">计算机/互联网</div>
+    </div>
+   <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-97" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>意向岗位</p>
+        </div>
+        <div class="weui-cell__ft">初/中级Java工程师</div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd">
+        	<i class="icon icon-97" style="width:20px;margin-right:5px;display:block"></i>
+        </div>
+        <div class="weui-cell__bd">
+            <p>薪资要求</p>
+        </div>
+        <div class="weui-cell__ft">面议</div>
+    </div>
+
+	<div class="weui-cells__title">留言板</div>
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <textarea class="weui-textarea" placeholder="欢迎给我留言.." rows="3" id="bbs"></textarea>
+                <div class="weui-textarea-counter"><span>0</span>/200</div>
+            </div>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="submit">提交</a>
+    </div>
+    <br>
+    <br>
+    <div class="weui-footer">
+        <p class="weui-footer__links">
+            <a href="https://github.com/neptuneman/html5-2018" class="weui-footer__link" title="这是我的github地址">
+				<img class="weui-media-box__hd" src="./image/github.png" height="20px" width="20px">
+            <span style="font-size: 13px;">我的 Github</span>
+        	</a>
+        </p>
+        <p class="weui-footer__text">©2018 neptune.io</p>
+    </div>
+
+</div>  
+</body>
+</html>
