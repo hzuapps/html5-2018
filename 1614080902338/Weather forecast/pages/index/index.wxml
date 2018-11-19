@@ -7,7 +7,7 @@
   <view class="forecast" >
     <view class="next-day"  wx:key="{{index}}" wx:for="{{weather.forecast}}" >
       <view class="detail">{{item.type}}</view>
-      <view class="detail">{{item.hight}}</view>
+      <view class="detail">{{item.high}}</view>
       <view class="detail">{{item.low}}</view>
       <view class="detail">{{item.fengxiang}}</view>
     </view>

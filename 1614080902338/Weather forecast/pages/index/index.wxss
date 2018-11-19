@@ -49,10 +49,10 @@ page{
 }
 .next-day{
   width:20%;
-  height:400rpx;
+  height:500rpx;
   background-color:lightslategray;
   opacity:.4;
-  box-shadow: 15px 10px 30px rgba(0 ,0 ,0, 0.5);
+  box-shadow: 15px 20px 30px rgba(0 ,0 ,0, 0.5);
   text-align:center;
   line-height:34px;
   font-size:19px;
