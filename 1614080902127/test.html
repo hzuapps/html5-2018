@@ -1,68 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>
-	</title>
-</head>
+	<head>
+		<title>个人简历</title>	
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="weui.min.css">
+		<style type="text/css">
+			.bgk{
+				background-size:100% 100%;
+				font-size:20px;
+				width:120px;
+				height:30px;
+				text-align:center;
+				margin-left:20px;
+			}
+			body {background-image:url(background.jpg);background-size: 100%;}
+		</style>
+		<script type="text/javascript" language="javascript">			
+		function changebackground(index){
+			document.body.style.backgroundImage='url(background'+index+'.jpg)'
+		}
+		window.onload=function(){
+		document.getElementById("sub").onclick=function(){
+			var let=document.getElementById("let");
+			var letter=let.value;
+				if(!letter.length){
+					alert('留言不能为空，请输入留言！');
+					return false;
+				}
+				else{
+					alert('留言提交成功！');
+					return true;
+				}
+				 let.value = "";
+		}
+	}
+	</script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="page__hd" style="text-align:center">
+				<h1 class="page__title">简历</h1>
+			</div>
+			<div class="page__bd page__bd_spacing" style="margin-top:15px">
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder bgk" >基本信息</div>
+					</div>
+				</div>
+				<hr>
+				</div>
+				<div>
+					<img src="person.jpg" style="float:right; height: 150px;width: 150px;" >
+				</div>
+				<div style="margin-left:20px">
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">姓名:PANJJ</div></div>
+					<div class="weui-flex__item"><div class="placeholder">出生年月:1996</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">民族：汉</div></div>
+					<div class="weui-flex__item"><div class="placeholder">身高:199cm</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">联系电话：11145588462</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">毕业院校：惠州学院</div></div>
+					<div class="weui-flex__item"><div class="placeholder">学历:本科</div></div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item"><div class="placeholder">专业：软件工程</div></div>
+					<div class="weui-flex__item"><div class="placeholder">邮箱:12333@qq.com</div></div>
+				</div>
+				</div>
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder bgk">专业能力</div>
+					</div>
+				</div>
+				<hr>
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder" style="list-style-type:disc; margin-left:15px" >	
+							<li>熟悉多种语言C C++ Python Java JS ...</li>
+							<li>主要使用python用于机器学习以及深度学习</li>
+							<li>玩过强化学习，RNN，熟悉CNN,使用CNN实现过classification,deep dream,Style transfer,detection....</li>
+						</div>
+					</div>	
+				</div>
+				<hr>
+				<div class="weui-flex">
+					<div class="weui-flex__item">
+						<div class="placeholder" style="margin-left:20px">
+						喜欢钻研东西，喜欢面对有证明的东西，喜欢研究学术论文内容
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<h2>这里修改背景</h2>
+		<form name="form1">
+		 <input name="background" type="radio" onclick="changebackground(1)">
+		背景1
+		<input name="background" type="radio" onclick="changebackground(2)">
+		背景2
+		<input name="background" type="radio" onclick="changebackground(3)">
+		 背景3
+		</form>
+        <div class="weui-cells weui-cells_form">
+			<div class="weui-flex__item">
+				<div class="placeholder bgk">留言</div>
+			</div>
+			<hr>
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea"  id="let" placeholder="请输入留言" rows="3"></textarea>
+                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+                </div>
+            </div>
+			<input  type="submit" class="weui-btn weui-btn_primary" value="提交" id="sub">
+        </div>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">留言</a>
+		
+	</body>
 
-<style type="text/css">
-body {background-image:url(background.jpg);background-size: 100%;}
-</style>
-<body >
-<h3 align="center">���˼���</h3>
-<form name="form1"  method="post" align="center" >
-	<table border="1" align="center">
-	<tbody>
-		<tr>
-			<td align="left"> ����:</td>
-			<td align="center" >�˽���</td>
-			<td align="left" >�Ա�:</td>
-			<td align="center" >��</td>
-			<td rowspan="4" >
-			<img src="person.jpg"
-			 width="120px" height='120px'></td>
-		</tr>
-		<tr>
-		<td align="left">���䣺</td>
-		<td align="center">22</td>
-		<td align="left" >���壺</td>
-		<td align="center" >��</td>
-		</tr>
-		<tr>
-			<td align="left">ѧУ:</td>
-			<td align="center" >����ѧԺ</td>
-			<td align="left">���᣺</td>
-			<td align="center">�㶫����</td>
-		</tr>
-		<tr>
-			<td align="left">רҵ��</td>
-			<td align="center">��������</td>
-			<td align="left">�绰:</td>
-			<td align="center">184xxxxxxx</td>
-		</tr>
-		<tr>
-			<td align="left">��ַ:</td>
-			<td colspan="4">������xxxxxxxx</td>
-		</tr>
-		<tr>
-			<td colspan="5" align="left"><a href="https://github.com/Yapths">����github��ҳ </a></td>
-		</tr>
-		<tr>
-
-		</tr>
-		<tr >
-			<td  colspan="5">��ӭ��������,������Ҳ����
-			<br>
-			<br>
-			<textarea id="ID"  style="width:500px;height:200px;overflow:scroll;resize:none;" ></textarea></td> 
-		</tr>
-	</tbody>
-	</table>                     
-</form>
-		<center>
-		<br>
-		<br>
-		<input type="submit" name="Submit" value="�ύ">
-		</center>  
-</body>
 </html>
