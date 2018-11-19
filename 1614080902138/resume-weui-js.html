@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zaitao的简历</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+	<script type="text/javascript">
+         window.onload=function(){
+
+             var sub=document.getElementById("send");
+             sub.onclick=function(){
+                 var subleave=document.getElementById("leave");
+                 if(subleave.value==""){
+                     alert('留言板为空！');
+                     return false;
+                 }
+                 else{
+                     alert('提交成功');
+                     return true;
+                 }
+                  subleave.value = "";
+             }
+         }
+     </script>
+</head>
+
+<body>
+
+<div class="weui-cells__title" style="background-color:	#708090">个人介绍</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <p>
+		&bull;&nbsp;姓名：陈XX
+		</p>
+		<p>
+		&bull;&nbsp;出生日期：1997/10/1
+		</p>
+		<p>
+		&bull;&nbsp;星座：天秤
+		</p>
+		<p>
+		&bull;&nbsp;出生地：广东河源
+		</p>
+		<p>
+		&bull;&nbsp;专业：软件工程
+		</p>
+		
+		<p>
+		&bull;&nbsp;爱好：看nba，听歌，游戏
+		</p>
+        </div>
+        <div class="weui-cell__ft"><img src="http://image.yy.com/yywebalbumbs2bucket/e0df6e5c270440ca9696294bf5fa6b52_1514659221515.jpg" alt="some_text" width="180" height="190"></div>
+    </div>
+</div>
+
+<div class="weui-cells__title" style="background-color:	#708090">教育经历</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <p>
+		&bull;&nbsp;惠州学院-信息科学技术学院-软件工程专业（本科）2016-2020
+		</p>
+		<br>
+		</br>
+		<p>
+		&bull;&nbsp;主修课程：
+		</p>
+		<p>
+		程序设计基础、计算机科学与技术导论、面向对象程序设计、数据结构、数字逻辑、Java高级编程技术、数据库系统概论、计算机组成原理、汇编语言、操作系统、软件工程导论
+		</p>
+        </div>   
+    </div>
+</div>
+
+<div class="weui-cells__title" style="background-color:	#708090">技能点</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <p>
+		&bull;&nbsp;c语言，c++，java，安卓开发
+		</p>
+        </div>   
+    </div>
+</div>
+
+
+<div class="weui-cells__title" style="background-color:	#708090">自我评价</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <p>
+		&bull;&nbsp;本人性格热情开朗，待人友好，为人诚实谦虚。工作勤奋，认真负责，能吃苦耐劳，尽职尽责，有耐心。具有亲和力，平易近人，善于与人沟通。
+		</p>
+        </div>   
+    </div>
+</div>
+
+<div class="weui-cells__title" style="background-color:	#708090">联系方式</div>
+<div class="weui-cells">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <p>
+		&bull;&nbsp;邮箱：782427829@qq.com
+		</p>
+		<p>
+		&bull;&nbsp;手机：132xxxxxxxx
+		</p>
+        </div>   
+    </div>
+</div>
+
+<div class="weui-cells weui-cells_form">
+ 				<div class="weui-cell">
+ 					<div class="weui-cell__bd">
+ 						<form class="weui-btn_bd">
+ 							<textarea class="weui-textarea" placeholder="这里向我留言" rows="3" id="leave"></textarea>
+ 							<div class="weui-textarea-counter"><span>0</span>/200</div>				
+ 							<input type="submit" class="weui-btn weui-btn_primary" value="发送留言" id="send">
+ 						</form>
+					</div>
+				</div>
+</div>
+
+
+<div class="weui-footer">
+    <p class="weui-footer__links">
+        <a href="https://github.com/zaitao" class="weui-footer__link">我的github</a>
+    </p>
+    <p class="weui-footer__text">Copyright &copy; Zaitao</p>
+</div>
+</body>
+</html>
