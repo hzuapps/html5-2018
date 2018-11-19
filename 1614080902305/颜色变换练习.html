@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" language="JavaScript">
+     function changeColor() {
+       for(i=0;i<4;i++)
+         if(form1.color[i].checked){
+           document.body.style.background=form1.color[i].value;
+         }
+     }
+   </script>
+</head>
+<body>
+  <form name="form1">
+     <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+     <input name="color" type="radio" value="#0000FF" onclick="changeColor()">蓝色
+     <input name="color" type="radio" value="#00FF00" onclick="changeColor()">绿色
+     <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">黄色
+   </form>
+</body>
+</html>
