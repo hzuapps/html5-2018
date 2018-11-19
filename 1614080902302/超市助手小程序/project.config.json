@@ -1,0 +1,19 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"projectname": "%E8%B6%85%E5%B8%82%E5%8A%A9%E6%89%8B",
+	"scripts": {
+		"beforeCompile": "npm run compile",
+		"beforePreview": "npm run compile",
+		"beforeUpload": "npm run compile"
+	},
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx75c751ec1f78e494",
+	"condition": {}
+}
