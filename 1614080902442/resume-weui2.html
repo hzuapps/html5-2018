@@ -1,0 +1,90 @@
+﻿<html> 
+
+ <head> 
+
+ <title>个人简历</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" > 
+   <meta name="content-type" content="text/html; charset=UTF-8">
+ <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"> 
+  
+
+   <script type="text/javascript">
+  function validate_form(){
+   var gid = document.getElementById("gid").value;
+   if(gid==null || gid==""){
+     alert("留言不能为空");
+     return false;
+   }
+ return true;
+  
+   }
+   </script>
+
+ </head> 
+
+ <body> 
+ 
+ <div class="page"> 
+ <div class="page__hd"> 
+ <h1 class="page__title" align="center">个人简历</h1>  
+ </div>  
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >个人主页</font></h4> 
+ <p><font size="2"><a href="https://github.com/cruiji">进入</a></font></p > 
+ </div>
+ <div class="page__bd">  
+<div class="weui-media-box weui-media-box_text"> 
+  <h2 class="weui-media-box__title"><font size="4" color="blue" >基本信息</font></h4> 
+ </div> 
+ <div class="weui-panel__bd"> 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >照片</font> <p><img width="70" height="70" alt="图片" src="j.png"/ ></p > </h4> 
+ 
+ </div> 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >姓名</font></h4> 
+ <p class="weui-media-box__desc">陈锐基</p > 
+ </div> 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >出生年月</font></h4> 
+ <p class="weui-media-box__desc">1997xxxx</p > 
+ </div> 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >性别</font></h4> 
+ <p class="weui-media-box__desc">男</p > 
+ </div> 
+ 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >毕业学校</font></h4> 
+ <p class="weui-media-box__desc">惠州学院</p > 
+ </div> 
+ 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >专业</font></h4> 
+ <p class="weui-media-box__desc">软件工程</p > 
+ </div> 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >联系电话</font></h4> 
+ <p class="weui-media-box__desc">152xxx</p > 
+ </div> 
+ <div class="weui-media-box weui-media-box_text"> 
+ <h4 class="weui-media-box__title"><font size="4" color="blue" >地址</font></h4> 
+ <p class="weui-media-box__desc">xxx</p > 
+ </div> 
+
+  <div class="weui-panel weui-panel_access">
+  <div class="weui-panel__hd" style="background-color:#F0F8FF"><p style="color:#1E90FF;">留言板</p></div>
+ <div class="weui-panel__bd" style="background-color: #FAFAFA;">
+ <div class="weui-cells weui-cells_form" >
+ <div class="weui-cell">
+ <form class="weui-cell__bd" style="background-color: #FAFAFA;"  onsubmit="return validate_form()" method="post">
+ <textarea  class="weui-textarea" id="gid" placeholder="请输入留言" rows="3"></textarea>
+ <div class="weui-textarea-counter"><span>0</span>/200</div>
+ <input  type="submit" class="weui-btn weui-btn_primary" value="发送" >
+ </form>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+    	
