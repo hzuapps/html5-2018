@@ -41,67 +41,7 @@ font-size:80px;
 <script src="js/f2.min.js"></script>
 <script src="js/jquery.fullPage.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
-<script>
-$(function(){
-	$('#sucaihuo').fullpage({
-	<!-- 设置颜色 -->
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
-		afterLoad: function(anchorLink, index){
-			if(index == 1){
-				$('.section1').find('div').delay(0).animate({
-					top: '22%'
-				}, 1500, 'easeOutExpo','forwards');
-				}
-			if(index == 2){
-				$('.section2').find('#head').delay(500).animate({
-					opacity:'0'
-				}, 1500, 'easeOutExpo');
-				
-				$('.section2').find('#m1').delay(1000).animate({
-					left:'10%'
-				}, 1500, 'easeOutExpo');
-				$('.section2').find('#m2').delay(2500).animate({
-					left:'10%'
-				}, 1500, 'easeOutExpo');
-				$('.section2').find('#m3').delay(3500).animate({
-					left:'10%'
-				}, 1500, 'easeOutExpo');
-				$('.section2').find('#m4').delay(4500).animate({
-					left:'10%'
-				}, 1500, 'easeOutExpo');
-			}
-			if(index == 3){
-				$('.section3').find('#myChart').delay(500).animate({
-					top:'5%'
-				}, 1500, 'easeOutExpo');
-				$('.section3').find('div').delay(500).animate({
-					top:'65%'
-				}, 1500, 'easeOutExpo');
-			}
-			if(index == 4){
-				$('.section4').find('p').fadeIn(2000);
-			}
-		},
-		onLeave: function(index, direction){
-				if(index == 1){
-				$('.section1').find('div').delay(0).animate({
-					top: '80%'
-				}, 1500, 'easeOutExpo');
-				}
-			
-			 if(index == '3'){ 
-				$('.section3').find('p').delay(500).animate({ 
-					bottom: '-120%' 
-				 }, 1500, 'easeOutExpo');
-				 
-			}
-			if(index == '4'){
-				 $('.section4').find('p').fadeOut(2000); 
-			 } 
-		}
-	});
-});
-</script>
+
 </head>
 
 <body>
@@ -110,10 +50,13 @@ $(function(){
 		<div class="section section1">
 		
 		<h2 style="position:absolute;top:5%;left:40%">个人简历</h2>
-		<div id="moon" style="">
+		<form method="GET" style="position:absolute;top:5%;right:10%;font-size:16px;">
+			<label><input type="radio" name="color" value="0" checked="checked" id="nuan" onclick="changewarm(0)"/>暖色
+			<input type="radio" name="color" value="1" onclick="changewarm(1)" />冷色</label>
+			</form>
+		<div id="moon" >
 			</div>
 			<h4 style="position:absolute;top:67%;left:38%">姓名：    jackma</h4>
-			
 			<h4 style="position:absolute;top:75%;left:30%"> 现任：    alibaba 董事局主席</h4>
 			<h4 style="position:absolute;top:83%;left:32%"> 求职意向：中学电脑老师</h4>
 			<p style="position:absolute;top:93%;left:32%;font-size:40px">联系电话：123456789</p>
@@ -177,11 +120,105 @@ $(function(){
 			<br>
 			<img src="ma.png">
 			<br>
-			<textarea class="weui-form-area" name="f6" rows="10" cols="60" placeholder='给我留言'></textarea>
+			<textarea class="weui-form-area" name="f6" rows="10" cols="60" placeholder='给我留言' id="liu"></textarea>
 			<br>
-			<a href="javascript:;" class="weui-btn weui-btn_primary" style="width:10%">提交</a>
+			<a href="javascript:;" class="weui-btn weui-btn_primary" style="width:10%" onclick="check()">提交</a>
 			
 		</div>
 	</div>
+<script>
+
+
+function changewarm(i)
+{
+var list=document.getElementsByClassName("section");
+
+var  c=['#ff7500', '#ffb61e', '#ffa400', '#f90'];
+if(i==1)
+{
+c=['#33ccff', '#3399ff', '#99ccff', '#ccffff']
+}
+
+ for ( var i=0;i<list.length;i++)
+ {
+ 
+ list[i].style.backgroundColor=c[i];
+ }
+}
+function check()
+{
+var txt=document.getElementById('liu');
+if(txt.value=="")
+{
+alert("输入为空，请重新输入");
+}
+else
+{
+alert("已发送");
+}
+}
+var  a=['#ff7500', '#ffb61e', '#ffa400', '#f90'];
+$(function(){
+	$('#sucaihuo').fullpage({
+	<!-- 设置颜色 -->
+	
+		sectionsColor: a ,
+		
+		afterLoad: function(anchorLink, index){
+			if(index == 1){
+				$('.section1').find('div').delay(0).animate({
+					top: '22%'
+				}, 1500, 'easeOutExpo','forwards');
+				}
+			if(index == 2){
+				$('.section2').find('#head').delay(500).animate({
+					opacity:'0'
+				}, 1500, 'easeOutExpo');
+				
+				$('.section2').find('#m1').delay(1000).animate({
+					left:'10%'
+				}, 1500, 'easeOutExpo');
+				$('.section2').find('#m2').delay(2500).animate({
+					left:'10%'
+				}, 1500, 'easeOutExpo');
+				$('.section2').find('#m3').delay(3500).animate({
+					left:'10%'
+				}, 1500, 'easeOutExpo');
+				$('.section2').find('#m4').delay(4500).animate({
+					left:'10%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 3){
+				$('.section3').find('#myChart').delay(500).animate({
+					top:'5%'
+				}, 1500, 'easeOutExpo');
+				$('.section3').find('div').delay(500).animate({
+					top:'65%'
+				}, 1500, 'easeOutExpo');
+			}
+			if(index == 4){
+				$('.section4').find('p').fadeIn(2000);
+			}
+		},
+		onLeave: function(index, direction){
+				if(index == 1){
+				$('.section1').find('div').delay(0).animate({
+					top: '80%'
+				}, 1500, 'easeOutExpo');
+				}
+			
+			 if(index == '3'){ 
+				$('.section3').find('p').delay(500).animate({ 
+					bottom: '-120%' 
+				 }, 1500, 'easeOutExpo');
+				 
+			}
+			if(index == '4'){
+				 $('.section4').find('p').fadeOut(2000); 
+			 } 
+		}
+	});
+});
+</script>
 </body>
 </html>
