@@ -1,0 +1,37 @@
+/**index.wxss**/
+.picker-view{
+  /* border:2px solid red; */
+  padding-top:10px;
+}
+.first-view{
+  height:20px;
+  text-align: center;
+  color: green;
+  padding-top: 10px;
+}
+picker{
+  color:green;
+  width: 33%;
+}
+.button-view{
+  dispaly:float;
+  text-align: center;
+}
+input{
+  border: 2px solid green;
+  margin: 20px;
+  autocomplete:"on";
+}
+button{
+  width:25%;
+  color:green;
+}
+scroll-view{
+  width: 100%;
+  background-color: pink;
+  margin-top: 20px;
+  font-size: 13px;
+  font-family: "微软雅黑";
+  line-height:1.5em;
+
+}
