@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charest="utf-8">
+<title>个人简历</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+<mate name="description" content="个人简历" width=device-width, initial-scale=1, user-scalable=0"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+    <script type="text/javascript" language="javascript">
+         // 改变颜色
+        function changeColor() {
+            for (i = 0; i < 4; i++) {
+                if (form1.color[i].checked) {
+                    document.body.style.background = form1.color[i].value;
+                }
+            }
+        }
+// 页面加载后的动态事件绑定
+        window.onload = function(){
+            var mes = document.getElementById('showTooltips');
+            mes.onclick=function(){
+                var mescon = document.getElementById("content");
+                if (mescon == "") {
+                    alert("留言不能为空！");
+                    return false;
+                } else {
+                    alert(mescon);
+                    alert("留言成功！");
+                    return true;
+                }
+            }
+        }
+</script>
+
+</head>
+<body>
+
+<div class="page__bd">
+    <div class="weui-cells__title" style="color: green">背景颜色</div>
+     <form name="form1">
+        <input type="radio" name="color" value="#FFFFFF" onclick="changeColor()">白色
+        <input type="radio" name="color" value="#0000FF" onclick="changeColor()">蓝色
+        <input type="radio" name="color" value="#00FF00" onclick="changeColor()">绿色
+        <input type="radio" name="color" value="#FFFF00" onclick="changeColor()">黄色
+    </form>
+</div>
+
+
+<div class="web-title0" align="center">
+<h1 style="background-color:#778899">
+MY RESUME
+</h1></div>
+
+<div class="web-title1" style="background-color:#fff">
+
+    <div class="weui-cell">
+        <div class="weui-cell__bd" >
+ 	<b>Name:Jeremy Liu</b>   
+	</div>
+	<b>Selfie:</b>
+	<div class="weui-cell_hd">
+            		<img src="https://raw.githubusercontent.com/jeremyjun/html5-2018/master/1613071002205/timg.jpg" width="150px" height="90px">
+        	</div>   
+    </div>
+
+<div class="weui-cell">
+        <div class="weui-cell__bd">
+         <b>birthday：</b>
+        </div>
+        <div class="weui-cell_ft">
+            1998.7
+        </div>
+    </div>
+
+ <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <b>政治面貌：</b>
+        </div>
+        <div class="weui-cell_ft">
+        共青团员 
+        </div>
+    </div>
+
+  <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <b>本科院校：</b>
+        </div>
+        <div class="weui-cell_ft">
+          惠州学院  
+        </div>
+    </div>
+
+<div class="weui-cell">
+        <div class="weui-cell__bd">
+        <b>掌握语言：</b>
+        </div>
+        <div class="weui-cell_ft">
+         编程语言 C/C++/JAVA；外语：英语  
+        </div>
+    </div>
+
+   <div class="weui-cell">
+        <div class="weui-cell__bd">
+        <b>邮箱：</b>
+        </div>
+        <div class="weui-cell_ft">
+        99*****265@qq.com 
+        </div>
+    </div>
+
+    <div class="weui-cell" >
+        <div class="weui-cell__bd">
+            <b>个人主页:</b>
+        </div>
+        <div class="weui-cell_ft">
+            <a href = "https://github.com/jeremyjun">
+                    <b style="text-align: center;">github主页</b>
+            </a>
+        </div>
+    </div>
+
+<div class="container" id="container" >
+        <div class="page list js_show">
+            <div class="page_bd">
+                <div class="weui-cells" style="background-color:#778899">
+                    <a class="weui-cell weui-cell_access" href="javascript:">
+                        <div class="weui-cell__bd" align="center">
+                            <h2><b>experience</b></h2>
+                        </div>
+                        <div class="weui-cell_ft">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="weui-cell">
+        <div class="weui-cell__bd">
+            <h3><b>in school</b></h3>
+            <div class="weui-cell_ft">
+                <ul>
+                 <li>曾任职学生干部从事商业赞助方面涉及金额约数万元
+	<li>曾任职学生助理从事数据处理方面
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="weui-cell">
+        <div class="weui-cell__bd">
+            <h3><b>Honors</b></h3>
+            <div class="weui-cell_ft">
+                <ul>
+	<li>获得创新创业大赛优秀奖
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<div class="weui-cell">
+        <div class="weui-cell__bd">
+            <h3><b>Work</b></h3>
+            <div class="weui-cell_ft">
+                <ul>
+	<li>曾任职出国教育机构外教助理
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ <div class="web-title1" align="center" style="background-color:#778899">
+        <h2><b>Self-evaluation</h2></b>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>
+                &nbsp;&nbsp;性格外向，对于商业市场发展具有敏锐度，对于页面布局排版具有独特见解，英语口语能和外国人交流，目前正在学习微信小程序开发，
+虽然技术不是很好，也并没有实验室的经验，属于零基础人士。
+            </p>
+            <p>
+                &nbsp;&nbsp;但对于前端开发颇具兴趣，对于现在所学知识也兴趣颇佳。
+            </p>
+        </div>    
+    </div>
+
+<div class="container" id="container1" >
+        <div class="page list js_show">
+            <div class="page_bd">
+                <div class="weui-cells" style="background-color:#778899">
+                    <a class="weui-cell weui-cell_access" href="javascript:">
+                        <div class="weui-cell__bd" align="center">
+                            <h2><b>apply position</b></h2>
+                        </div>
+                        <div class="weui-cell_ft">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="weui-cell">
+        <div class="weui-cell__bd">
+            <h3><b></b></h3>
+            <div class="weui-cell_ft">
+                <ul>
+	<li>微信小程序开发
+	<li>Python爬虫
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ <div class="web-title2" align="center" style="background-color:#778899">
+        <h2><b>访问者留言</h2></b>
+    </div>
+<div class="weui-cells_form">
+        <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请输入留言..." rows="3" id="content"></textarea>
+            <div class="weui-textarea-counter">
+                <span>0</span>
+                /100
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="weui-btn-area" align="center">
+        <a href="javascript:" id="showTooltips" class="weui-btn weui-btn_primary"  style="background-color: #6495ED">
+            提交</a>
+    </div>
+</body>
+</html>
