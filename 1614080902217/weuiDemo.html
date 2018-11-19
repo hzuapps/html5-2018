@@ -19,16 +19,43 @@
             padding:5px; 
         }
     </style>
+	
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	
+	<script type="text/javascript" language="javascript">
+	
+
+    var checkComments = function()
+	{
+	if($("#liuyan").val()=="") 
+	{
+	alert("留言不能为空")
+	return false;
+	}
+	return true;
+	}
+	
+	function changeColor(color)
+	{ 
+	document.body.style.background = color
+	}
+
+	</script>
+	
 </head>
 <body>
-    <div class="container" id="container"><div class="page home js_show">
 	
-   <div class="page panel js_show">
+	
+	<div class="page">
+
+	
+
     <div class="page__hd">
-        <h1 class="page__title top1">个人简历</h1>
+        <div class="top1" style="margin-top: 10px;"><h1 class="page__title" style="color: white">个人简历</h1></div>
     </div>
-    <div class="page__bd">
-        
+    <div class="page__bd page__bd_spacing">
+    
+		
         <div class="weui-panel weui-panel_access">
             <div class="weui-media-box weui-media-box_text">
             <div class="weui-panel__bd">
@@ -38,7 +65,6 @@
 			<div class="weui-flex">
 			
                                             <div class="weui-flex__item"><div class="placeholder" style="padding-left: 10px;">
-                                                
 											<div class="weui-cell">
                                             <div class="weui-cell__hd"><label class="weui-label">姓名：</label></div>
                                             <div class="weui-cell__bd">
@@ -158,8 +184,8 @@
 			
 			<div class="weui-flex__item"><div class="placeholder" style="padding-left: 10px;">
 		
-                            <form action="#" method="post">
-                                        <textarea id="liuyan" name="liuyan" class="weui-textarea" placeholder="......" rows="3"></textarea>
+                            <form action="#" method="post" onsubmit="return checkComments()">
+                                        <textarea id="liuyan" name="liuyan" class="weui-textarea" placeholder="" rows="3"></textarea>
                                         <input type="submit" name="subBtn" class="weui-btn weui-btn_primary top1" value="提交留言" />
                              </form>
                             
@@ -168,14 +194,26 @@
 			
 			</div>
 			
+			<div class="weui-cell"></div>
+			
+			<form id="form1" name="form1">
+			<input name="color" type="radio" value="#FFFFFF" onclick="changeColor(this.value)">白色
+			<input name="color" type="radio" value="#0000FF" onclick="changeColor(this.value)">蓝色
+			<input name="color" type="radio" value="#00FF00" onclick="changeColor(this.value)">绿色
+			<input name="color" type="radio" value="#FFFF00" onclick="changeColor(this.value)">黄色
+			</form>
                 
             </div>
            
         </div>
-     
-		</div>
+     </div>
+		
     </div>
-  
-</div></div></div>
+	
+	
+
+
+</div>
+
 </body>
 </html>
