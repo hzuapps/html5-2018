@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>猜数游戏</title>
+<script  type="text/javascript">
+	n=Math.floor(Math.random()*100);
+	function numberGame(){
+		num=form1.num.value;
+		str="";
+		if（num<0||num>99）{
+			str="你输入的数字超出范围!";
+		}
+		else{
+			if(num>n)
+				str="偏大了";
+			if(num<n)
+				str="偏小了";
+			if(num==n){
+				str="恭喜你答对了";
+			   alert(str);
+			   document.writeln(str);
+			}
+		}
+		form1.info.value=str;	
+	}
+
+</script>
+</head>
+<body>
+	<form name="form1">
+		请输入0~999之间的整数：
+		<input type="text" name="num" size="4">
+		<input onclick="numberGame()" type="button" value="我猜" >
+		<br>
+		信息：<input type="text" name="info" size="40">
+	</form>	
+</body>
+</html>
