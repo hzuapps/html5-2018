@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/note/note",
+    "pages/mine/mine"
+  ],
+  "tabBar": {
+    "color": "#464a56",
+    "selectedColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "探索",
+        "iconPath": "images/browse.png",
+        "selectedIconPath": "images/browse2.png"
+      },
+      {
+        "pagePath": "pages/note/note",
+        "text": "记录",
+        "iconPath": "images/brush.png",
+        "selectedIconPath": "images/brush2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/people.png",
+        "selectedIconPath": "images/people2.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "探索",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff"
+  }
+}

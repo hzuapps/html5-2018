@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="content">
+  <view style="flex:1;width:100%;background-color:#fff">
+    <text space='emsp'>
+ 不够真诚是危险的，
+ 太真诚则绝对是致命的。
+     —— 王尔德
+</text>
+  </view>
+  <view style="flex:1;width:100%;background-color:#fff">
+    <text space='emsp'>
+ 你行还是不行，
+ 是要由女孩子来告诉你的。
+  ——《四月是你的谎言》
+  </text>
+  </view>
+  <view style="flex:1;width:100%;background-color:#fff">
+    <text space='emsp'>
+  情令我疯狂，
+  未可掩饰那份狂，
+  现实尽变幻象,
+  如堕进一张光的网，
+  令我心闪亮这忧郁的眼光。
+  —— 郑国江《陈百强-凝望》
+</text>
+  </view>
+</view>
+
