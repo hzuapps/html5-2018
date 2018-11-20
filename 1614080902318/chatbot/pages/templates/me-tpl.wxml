@@ -1,0 +1,9 @@
+<template name="me-tpl">
+    <view class="me">
+        <open-data type='userAvatarUrl'></open-data>
+        <view>
+            <text class="date">{{item.date}}</text>
+            <text>{{item.text}}</text>
+        </view>
+    </view>
+</template>
