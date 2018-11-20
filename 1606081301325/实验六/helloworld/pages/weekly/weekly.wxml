@@ -1,0 +1,7 @@
+<view class='container'>
+  <text>本周推荐</text>
+  <image src='{{thisWeeklMovie.imagePath}}'></image>
+  <text>{{thisWeeklMovie.name}}</text>
+  <text>点评：{{thisWeeklMovie.comment}}</text>
+  <text wx:if='{{thisWeeklMovie.isHighlyRecommended}}' style='font-size:16px; color:red;'>强烈推荐</text>
+</view>
