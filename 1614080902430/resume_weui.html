@@ -6,7 +6,13 @@
 		<meta charset="UTF-8">
 		<title>简历</title>
 		<link rel="stylesheet" href="css/weui.css" />
-
+		<script type="text/javascript">
+			function check() {
+				var text = document.getElementById("text").value;
+				if(text == "") 
+					alert("内容为空，请输入内容");
+			}
+		</script>
 	</head>
 
 	<body>
@@ -168,20 +174,20 @@
 			</div>
 		</div>
 
-
-		<div class="weui-cells__title" style="margin-top: 20px;">留言板</div>
-        <div class="weui-cells weui-cells_form">
-            <div class="weui-cell">
-                <div class="weui-cell__bd">
-                    <textarea class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
-                    <div class="weui-textarea-counter"><span>0</span>/200</div>
-                </div>
-            </div>
-        </div>
-        <div class="weui-btn-area">
-            <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">提交</a>
-        </div>
-        
+		<form action="resume_weui.html" method="get">
+			<div class="weui-cells__title" style="margin-top: 20px;">留言板</div>
+        	<div class="weui-cells weui-cells_form">
+            	<div class="weui-cell">
+                	<div class="weui-cell__bd">
+                    	<textarea class="weui-textarea" id="text" placeholder="请输入文本" rows="3"></textarea>
+                    	<div class="weui-textarea-counter"><span>0</span>/200</div>
+                	</div>
+            	</div>
+        	</div>
+        	<div class="weui-btn-area">
+            	<input type="submit" class="weui-btn weui-btn_primary" id="submit" value="提交" onclick="check()" />
+        	</div>
+        </form>
         <div class="weui-footer" style="margin-top: 20px;">
             <p class="weui-footer__links">
                 <a href="https://github.com/Zhuangyupeng" class="weui-footer__link"><font style="font-size: 17px;">MyGithub</font></a>
