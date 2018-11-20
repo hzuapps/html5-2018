@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人简历</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+ </head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title" align="center" style="background-color: #08082b; color: #ffffff">个人简历</h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-cells__title" style="background-color: #9997db; color: #000000;">基本信息</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;姓&nbsp;&nbsp;名：严明</p>
+                    <p>&nbsp;性&nbsp;&nbsp;别：男</p>
+                    <p>&nbsp;年&nbsp;&nbsp;龄：21</p>
+                    <p>&nbsp;学&nbsp;&nbsp;历：大学本科</p>
+                    <p>&nbsp;专&nbsp;&nbsp;业：软件工程</p>
+                    <p>&nbsp;外语水平：英语六级</p>
+                    <p>&nbsp;毕业时间：2020年</p>
+                    <p>&nbsp;邮&nbsp;&nbsp;箱：11534@qq.com</p>
+                </div>
+                <div class="weui-cell__hd"><img src="http://p2.ifengimg.com/937637d0d37b9a40/2017/5/3b114ef877aa2a1.jpg" style="width:160px;display:block;float: right;">
+                </div>
+            </div>
+        </div>
+<div class="weui-cells__title" style="background-color: #9997db;color: #000000;">求职岗位</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;软件测试师</p>
+                    
+                </div>
+            </div>
+        </div>
+       
+ <div class="weui-cells__title" style="background-color: #9997db; color: #000000;">技能体现</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;能熟练的进行LINUX操作，并能使用VB，DELPHI等语言</p>
+                    <p>&nbsp;精通visual basic、sql server、asp</p>
+                    <p>&nbsp;熟练使用linux、windows 9x/me/nt/20xx/xp等操作系统</p>
+                    <p>&nbsp;自学html 、frontpage 、dreamweaver 、fireworks 、flash等网页制作相关软件</p>
+                </div>
+            </div>
+        </div>
+
+                 <div class="weui-cells__title" style="background-color: #9997db;color: #000000;">自我评价</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p>&nbsp;格沉稳，能坐得住，对IT行业的工作，具有非常好的适应能力</p>
+                    <p>&nbsp;为人谦和，具有很强的组织和协调能力</p>
+                    <p>&nbsp;具有一定的实践经验和动手能力</p>
+                    
+                </div>
+            </div>
+        </div>
+         <div class="weui-cells__title" style="background-color: #9997db;color: #000000;">我的Github主页</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <p><a href="https://github.com/getcharyanch">点击进入我的Github主页</a></p>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="weui-cells__title" id="a1">留言板</div>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="input1"></textarea>
+                    <div class="weui-textarea-counter">
+                    </div>
+                    <input type="submit" name="tijiao" class="a2" id="button1">
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div style="margin-left:200px">
+        <br>
+        <p>更换背景颜色:</p>
+        <form name="form1" >
+            <input type="radio" name="color" value="#000000" onclick="changecolor()">黑色
+            <input type="radio" name="color" value="#0000FF" onclick="changecolor()">蓝色
+            <input type="radio" name="color" value="#00FF00" onclick="changecolor()">绿色
+            <input type="radio" name="color" value="#FFFF00" onclick="changecolor()">黄色
+        </form>
+    </div>
+    <script type="text/javascript">
+    function changecolor(){
+            for(i=0;i<4;i++)
+                if(form1.color[i].checked){
+                    document.body.style.background=form1.color[i].value;
+                 }
+        }
+        var a1=document.getElementById("input1");
+        var a2=document.getElementById("button1");
+        a2.onclick=function fn(){
+            if(a1.value===""){
+                alert("请输入您的留言");
+            }
+            else{
+                alert("留言成功");
+            }
+            a1.value="";
+        }
+        
+    </script>
+</div>
+</body>
+</html>
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
