@@ -1,0 +1,59 @@
+<!-- index.wxml -->
+<view class='container'>
+  <view class="weui-cells__title formtitle">快递查询表</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">运单号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input type="number" placeholder='请输入运单号' bindinput='setID' class="weui-input"/>
+                </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">快递公司</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input placeholder='请输入快递公司' bindinput='setName' class="weui-input"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="check">查询</button>
+        </view>
+        <view class="weui-panel">
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">查询结果:</view>
+                </view>
+            </view>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <!-- 输出查询结果 -->
+                    <view wx:if="{{erorr==0}}">
+                    <view wx:for="{{items}}" wx:key="{{index}}">
+                      <view class="weui-media-box__title weui-media-box__title_in-text itemtext"  wx:if="{{items[index].Remark}}">{{items[index].Remark}}</view>
+                      <view class="weui-media-box__title weui-media-box__title_in-text itemtext" wx:else>\t</view>
+                      <view class='tiemdesc'>
+                        <view class="weui-media-box__desc">{{items[index].AcceptStation}}</view>
+                        <view class="weui-media-box__info">
+                        <view class="weui-media-box__info__meta">时间：</view>
+                        <view class="weui-media-box__info__meta">{{items[index].AcceptTime}}</view>
+                      </view>
+                      </view>
+                    </view>
+                    </view>
+
+                    <view class='item' wx:if="{{erorr==1}}">
+                       <view class="weui-media-box__title weui-media-box__title_in-text">查询错误</view>
+                      <view class="weui-media-box__desc">{{erorrInfo}}</view>
+                    </view>
+
+                    <view class='item' wx:if="{{erorr==2}}">
+
+                    </view>
+                </view>
+            </view>
+        </view>
+</view>
