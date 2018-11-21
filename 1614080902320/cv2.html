@@ -11,6 +11,38 @@
     font-size:20px;
     }
     </style>
+    <script>
+        window.onload = function(){  //在页面加载之后动态事件绑定
+
+            //找到表单元素对象并增加一个提交表单事件
+            document.getElementById('liuyan2').addEventListener("submit",function(e){ //e是提交事件
+                console.log(e); //控制台可以打印出当前执行的事件
+
+                //找到邮件元素对象
+                var emailObj = document.getElementById("liuyan1");
+
+                //取出它的值
+                // alert(emailObj.value);
+                if (emailObj.value == "") {
+                    alert("写个留言再提交吧！");
+                    if (e && e.preventDefault) { //现在是在W3C标准下执行
+                        e.preventDefault(); //阻止浏览器的动作
+                    }else{  //专门针对于IE浏览器的处理
+                        window.event.returnValue= false;
+                    }
+                }else{  //输入正确，理论上应该可以进行提交
+                    alert(emailObj.value);
+
+                    if (/^\w+@\w+\.\w+$/.test(emailObj.value)) {
+                        this.submit(); //当前元素提交表单
+                    }
+                }
+            },false);
+        }
+        function submit () {
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -63,7 +95,11 @@
             竭尽全力做好本职工作，在工作中取得好的成绩。</p>
 
 </div>
-
+<form method="post"action="http://baidu.com"id="liuyan2">
+    留言：
+    <input id="liuyan1"type="text">
+    <button type="submit" id="liuyan">提交</button>
+</form>
 
 </body>
 </html>
