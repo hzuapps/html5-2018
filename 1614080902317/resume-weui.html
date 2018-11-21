@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
     <title>个人简历</title>
     <link rel="stylesheet" href="./weui.css"/>
-	<style>
-		.weui-cells__title{
-			font-size:20px;
-			text-align:center;
-		}
-	</style>
+    <style type ="text/javascript">
+        .weui-cells__title{
+            font-size:20px;
+            text-align:center;
+        }
+       
+    </style>
+    <script type="text/javascript"  language="javascript">
+         function changeColor(){
+             for(i=0;i<4;i++){
+                if(form1.color[i].checked){
+                    document.body.style.background=form1.color[i].value;
+                }
+             }     
+         }  
+    </script>
 </head>
 <body>
+<form name="form1" style="text-align:center;">
+    <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+    <input name="color" type="radio" value="#0000FF" onclick="changeColor()">蓝色
+    <input name="color" type="radio" value="#00FF00" onclick="changeColor()">绿色
+    <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">黄色
+</form>
 <div class="page list js_show">
     <div class="page__hd text-center">
         <h1 class="page__title" style="text-align:center;">个人简历</h1>
     </div>
     <div class="weui-panel__bd">
             <div class="weui-media-box__hd" align="center">
-                <img class="weui-media-box__thumb"  src="https://github.com/zhengjinbin/html5-2018/blob/master/1614080902317/LBJ1.jpg" />
+                <img class="weui-media-box__thumb"  src="LBJ1.jpg" />
             </div>
-			 <div class="weui-media-box__hd" align="center">
+             <div class="weui-media-box__hd" align="center">
                 <p>小明</p>
             </div>
     </div>
-	<HR width="100%" color=#987cb9 SIZE=10/>
+    <HR width="100%" color=#987cb9 SIZE=10/>
     <div class="weui-cells__title">基本资料</div>
     <div class="weui-cells">
         <div class="weui-cell">
@@ -99,7 +115,7 @@
             <div class="weui-cell__ft">本科毕业</div>
         </div>
     </div>
-	<HR width="100%" color=#987cb9 SIZE=10/>
+    <HR width="100%" color=#987cb9 SIZE=10/>
     <div class="weui-cells__title">学习经历</div>
     <div class="weui-cells">
         <div class="weui-cell">
@@ -117,7 +133,7 @@
             <div class="weui-cell__ft">计算机专业硕士</div>
         </div>
     </div>
-	 <div class="weui-cells">
+     <div class="weui-cells">
         <div class="weui-cell">
             <div class="weui-cell__bd">
                 <p>北京理工大学</p>
@@ -125,14 +141,14 @@
             <div class="weui-cell__ft">计算机专业博士</div>
         </div>
     </div>
-	<HR width="100%" color=#987cb9 SIZE=10/>
+    <HR width="100%" color=#987cb9 SIZE=10/>
     <div class="weui-cells__title">工作经历</div>
     <div class="weui-cells">
         <div class="weui-cell">
             <div class="weui-cell__bd">
                 <p>惠州软件公司</p>
             </div>
-			<div class="weui-cell__ft">网页前端开发</div>
+            <div class="weui-cell__ft">网页前端开发</div>
         </div>
     </div>
     <div class="weui-cells">
@@ -140,18 +156,18 @@
             <div class="weui-cell__bd">
                 <p>东莞软件公司</p>
             </div>
-			<div class="weui-cell__ft">网页后端开发</div>
+            <div class="weui-cell__ft">网页后端开发</div>
         </div>
     </div>
-	 <div class="weui-cells">
+     <div class="weui-cells">
         <div class="weui-cell">
             <div class="weui-cell__bd">
                 <p>北京软件公司</p>
             </div>
-			<div class="weui-cell__ft">网页全站开发</div>
+            <div class="weui-cell__ft">网页全站开发</div>
         </div>
     </div>
-	<HR width="100%" color=#987cb9 SIZE=10/>
+    <HR width="100%" color=#987cb9 SIZE=10/>
     <div class="weui-cells__title">联系方式</div>
     <div class="weui-cells">
         <div class="weui-cell">
@@ -169,29 +185,41 @@
             <div class="weui-cell__ft">10101010@qq.com</div>
         </div>
     </div>
-	<HR width="100%" color=#987cb9 SIZE=10/>
+    <HR width="100%" color=#987cb9 SIZE=10/>
     <div class="weui-cells__title">留言</div>
     <div class="weui-cells weui-cells_form">
         <div class="weui-cell">
             <div class="weui-cell__bd">
-                <textarea class="weui-textarea" placeholder="请输入留言" rows="3"></textarea>
+                <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="message"></textarea>
             </div>
         </div>
     </div>
     <div class="weui-btn-area">
-        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">提交</a>
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="send">提交</a>
     </div>
-	<br/>
-	<br/>
-	<div class="weui-footer">
+    <br/>
+    <br/>
+    <div class="weui-footer">
         <p class="weui-footer__links" >
             <a href="https://github.com/zhengjinbin/html5-2018/" style="font-size:20px;text-decoration:underline;"  class="weui-footer__link">
-				GitHub
-			</a>
+                GitHub
+            </a>
         </p>
     </div>
-	<br/>
-	<br/>
+    <br/>
+    <br/>
 </div>
 </body>
+<script type="text/javascript">
+    var a1=document.getElementById("message");
+    var a2=document.getElementById("send");
+    a2.onclick=function fn(){
+        if(a1.value===""){
+            alert("请输入留言内容");
+        }
+        else{
+            alert("留言成功");
+        }
+    }
+</script> 
 </html>
