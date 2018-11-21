@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "回合制模拟装备打造",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/sy1.jpg",
+        "selectedIconPath": "images/sy1.jpg"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "打造",
+        "iconPath": "images/dz1.jpg",
+        "selectedIconPath": "images/dz1.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my1.jpg",
+        "selectedIconPath": "images/my1.jpg"
+      }
+    ]
+  }
+}
