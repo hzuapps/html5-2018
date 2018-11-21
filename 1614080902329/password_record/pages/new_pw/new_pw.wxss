@@ -1,0 +1,48 @@
+/* pages/new_pw/new_pw.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  height: 100%;
+}
+
+.in {
+  width: 88%;
+  margin: 50rpx 2.5%;
+  padding: 3%;
+  height: 1em;
+  line-height: 1em;
+  font-size: 1em;
+  border: 1rpx solid #217360;
+  border-radius: 0.8em;
+}
+
+.firstIn {
+  margin-top: 7%;
+}
+
+.textIn {
+  width: 88%;
+  margin: 50rpx 2.5%;
+  padding: 3%;
+  height: 5em;
+  font-size: 34rpx;
+  border: 1rpx solid #217360;
+  border-radius: 0.8em;
+}
+
+.tip {
+  height: 1em;
+  text-align: center;
+  font-size: 34rpx;
+  color: #217360;
+}
+
+.fButt{
+  margin-top: 3%
+}
+
+.butt {
+  width: 95%;
+}

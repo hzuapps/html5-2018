@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/new_pw/new_pw",
+    "pages/save_pw/save_pw",
+    "pages/me/me",
+    "pages/modify_pw/modify_pw"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#E1846E",
+    "navigationBarTitleText": "密码备忘录",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#E1846E",
+    "list": [
+      {
+        "pagePath": "pages/new_pw/new_pw",
+        "text": "新密码",
+        "iconPath": "images/new.png",
+        "selectedIconPath": "images/newi.png"
+      },
+      {
+        "pagePath": "pages/save_pw/save_pw",
+        "text": "备忘密码",
+        "iconPath": "images/save.png",
+        "selectedIconPath": "images/savei.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/mei.png"
+      }
+    ]
+  }
+}

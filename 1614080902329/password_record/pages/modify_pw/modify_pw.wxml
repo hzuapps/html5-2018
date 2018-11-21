@@ -1,0 +1,12 @@
+<!--pages/new_pw/new_pw.wxml-->
+<form bindsubmit="formSubmit">
+  <view class='tip' style='color: {{tipStatus?"#217360":"#ff0800"}}'>{{tip}}</view>
+  <input value='{{tit}}' class='in firstIn' name="title" maxlength="20" placeholder="请输入标题" />
+  <input value='{{currentInfo.username}}' class='in' name="username" maxlength="20" placeholder="请输入用户名" />
+  <input value='{{currentInfo.password}}' class='in' name="password" maxlength="20" placeholder="请输入密码" />
+  <!-- <textarea class='in firstIn' name="title" maxlength="20" placeholder="请输入标题" value='{{tit}}'></textarea>
+  <textarea class='in' name="username" maxlength="20" placeholder="请输入用户名" value='{{currentInfo.username}}'></textarea>
+  <textarea class='in' name="password" maxlength="20" placeholder="请输入密码" value='{{currentInfo.password}}'></textarea> -->
+  <textarea name="tip" class='textIn' placeholder="这里可输入备注信息(100字以内)" maxlength="100" value='{{currentInfo.tip}}'></textarea>
+  <button class='submitBut' formType="submit">修改</button>
+</form>
