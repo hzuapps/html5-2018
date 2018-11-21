@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Main/Main",
+    "pages/mmc/mmc" 
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar":{
+"list":[{
+"pagePath":"pages/index/index",
+"text":"领养界面"
+},
+{
+  "pagePath":"pages/Main/Main",
+  "text":"查看小鸡仔的状况"
+},
+{
+  "pagePath": "pages/mmc/mmc",
+  "text": "宠物照片"
+}
+
+]
+
+
+
+
+}
+
+
+}
