@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tabOne/tabOne",
+    "pages/tabTwo/tabTwo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "简历",
+      "iconPath": "pages/img/resume.png",
+      "selectedIconPath": "pages/img/resume_selected.png"
+    },
+      {
+        "pagePath": "pages/tabOne/tabOne",
+        "text": "demo",
+        "iconPath": "pages/img/text.png",
+        "selectedIconPath": "pages/img/text_selected.png"
+      },
+      {
+        "pagePath": "pages/tabTwo/tabTwo",
+        "text": "我",
+        "iconPath": "pages/img/mine.png",
+        "selectedIconPath": "pages/img/mine_selected.png"
+      }
+    ]
+  }
+}
