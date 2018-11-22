@@ -1,25 +1,48 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0079)http://localhost:63342/untitled1/interview.html?_ijt=su0uj0io51iekhfggcispbmlam -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
     <title>简历</title>
-    
-    <link rel="stylesheet" type="text/css" href="./interview_files/interview.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../untitled1/interview.css">
+    <meta name="description" content=event.html"">
+    <meta name="keywords" content="event,html,js">
+    <meta http-equiv="Content-Type" content="text/html;charest=gd2312">
+    <script type="text/javascript" src="form.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        function changeColor() {
+            for (i=0;i<4;i++){
+                if (forml.color[i].checked){
+                    document.body.style.background=forml.color[i].value;
+                }
+            }
+
+        }
+    </script>
+
 </head>
 <body>
+<form name="forml">
+    <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+    <input name="color" type="radio" value="#0000FF" onclick="changeColor()">蓝色
+    <input name="color" type="radio" value="#00FF00" onclick="changeColor()">绿色
+    <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">黄色
+</form>
 <div>
 
-    <table width="800" align="center">
-        <tbody><tr>
+    <table  width="800" align="center">
+        <tr>
             <td align="center"><p>个人简历</p>
             </td>
-            <td>
-                <img src="./interview_files/u=1500020935,3438210065&amp;fm=26&amp;gp=0.jpg" width="130" height="130" alt="图片" align="right">
+            <td >
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1500020935,3438210065&fm=26&gp=0.jpg" width="130" height="130" alt="图片" align="right">
             </td>
         </tr>
-    </tbody></table>
-    <hr width="800" align="center"><table align="center" width="800">
-        
-        <tbody><tr>
+    </table>
+    <table  align="center" width="800">
+        <hr width="800" align="center">
+        <tr>
             <td>姓名：胡小歌</td>
             <td width="100" height="50"></td>
             <td>性别：男</td>
@@ -61,10 +84,10 @@
             <td height="50"></td>
         </tr>
 
-    </tbody></table>
+    </table>
     <hr width="800" align="center">
     <table align="center" width="800">
-        <tbody><tr>
+        <tr>
             <td>目标职位：前端架构师</td>
             <td height="50"></td>
         </tr>
@@ -89,23 +112,23 @@
             <td height="50"></td>
         </tr>
 
-    </tbody></table>
+    </table>
 
     <hr width="800" align="center">
 
     <h4 align="left"> 自我评价</h4>
     <table align="center" width="800">
-        <tbody><tr>
+        <tr>
             <td>曾参与腾讯公司云游戏项目，熟悉设计思想、技术实现、任务安排、进度控制、版本控制、需求控制、后期规划。基础技能扎实，仍在学习改进中，对该行业有着很大的热情。</td>
             <td height="50"></td>
         </tr>
-    </tbody></table>
+    </table>
 
     <hr width="800" align="center">
 
     <h4 align="left"> 技能清单：</h4>
     <table align="center" width="800">
-        <tbody><tr>
+        <tr>
             <td>Web开发：PHP/Hack/Node</td>
             <td height="50"></td>
         </tr>
@@ -130,34 +153,37 @@
             <td height="50"></td>
         </tr>
 
-    </tbody></table>
+    </table>
 
     <hr width="800" align="center">
 
     <h4 align="left"> GITHUB：</h4>
-    <h4 align="left"><a href="https://github.com/lhyyhl">lhyyhl</a></h4><h4>
+    <h4 align="left"/><a href="https://github.com/lhyyhl">lhyyhl</a><h4/>
     <hr width="800" align="center">
 
     <table align="center" width="800">
-        </table><h4 align="left"><label>留言：</label><br>
-            </h4><h4 align="center"><textarea cols="120" rows="10">在这里输入内容...</textarea><br></h4><h4>
-            </h4><h4 align="right"> <input type="submit" value="发送" name="submit">
-            <input type="reset" value="清除" name="reset"></h4><h4>
-        
-        </h4><table align="center" width="800">
-        <form action="http://localhost:63342/untitled1/save.php" method="post"></form>
-            </table>
-
-    
-
-
-
-    
-
-</h4></div>
+        <table align="center" width="800">
+        <form action="pass.html" method="post" id="loginForm">
+            <h4 align="left"/><label>留言：</label><br>
+            <h4 align="center"/><input type="text" name="email" id="email" size="120" ></input><br><h4/>
+            <h4 align="right"/>
+            <button type="submit" id="subBtn">查看留言</button>
+            <input type="submit" value="发送"  name="submit" />
+            <input type="reset" value="清除"  name="reset" /><h4/>
+        </form>
+        </table>
 
 
 
+    </table>
 
 
-</body></html>
+
+    </table>
+
+</div>
+
+
+</body>
+
+</html>
