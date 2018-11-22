@@ -1,0 +1,95 @@
+
+.mcontainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.item{
+    flex-grow:1;
+    height: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 96%;
+    padding: 0 2%;
+}
+
+.image{
+    width: 500rpx;
+    height: 120rpx;  
+}
+
+.login-item{
+    width: 90%;
+    margin-top: 30rpx;
+    border-bottom: 1px solid #eee;
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20rpx;
+}
+
+ .bottom{
+     border-bottom: 0px;
+}
+
+.login-item-info{
+    font-size: 8px;
+    color: #888;
+     padding-bottom: 20rpx;
+}
+
+.login-pwd{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+  
+}
+
+.login-pwd text{
+    height: 100%;
+    font-size: 14px;
+    color: #888;
+    display: flex;
+     
+}
+.login-btn{
+    width: 80%;
+    color: white;
+    background-color: green;
+    border-radius: 0;
+    font-size: 14px;
+
+}
+
+.login-btn:hover{
+    width: 80%;
+    color: white;
+    border-radius: 0;
+
+}
+
+.bottom-info{
+
+}
+
+.wechat-icon{
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid seagreen;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.wechat-icon image{
+    width: 30px;
+    height: 30px;
+}
