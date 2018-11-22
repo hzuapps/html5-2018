@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/black/black",
+    "pages/red/red",
+    "pages/white/white"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "心情日记本",
+    "navigationBarTextStyle": "black"
+  }
+}
