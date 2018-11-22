@@ -1,0 +1,10 @@
+/* pages/me/me.wxss */
+page {
+  background-color: #F8F8F8;
+  padding-top: 5%;
+}
+
+.distance {
+  margin: 5% 0rpx;
+}
+
