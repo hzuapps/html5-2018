@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/cheat/cheat",
+    "pages/plan/plan",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "安排一下",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+  
+      {
+        "pagePath": "pages/cheat/cheat",
+        "text": "备忘",
+        "iconPath": "备忘录.png",
+        "selectedIconPath": "备忘录1.png"
+      },
+      {
+        "pagePath": "pages/cheat/cheat",
+        "text": "计划",
+         "iconPath": "计划.png",
+        "selectedIconPath": "计划1.png"
+      },
+        {
+          "pagePath": "pages/index/index",
+          "text": "我",
+          "iconPath": "小人.png",
+          "selectedIconPath": "小人1.png"
+        }
+          ]
+  }
+
+}
