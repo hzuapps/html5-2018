@@ -1,0 +1,4 @@
+<!-- rich-text.wxml -->
+ <view class="body-view">
+    <text>{{text}}</text>
+    </view>

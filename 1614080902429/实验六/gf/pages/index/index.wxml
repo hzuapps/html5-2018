@@ -1,0 +1,7 @@
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">开始领养</button>
+    <button bindtap="remove">取消领养</button>
+  </view>
+</view>
