@@ -1,0 +1,8 @@
+/* pages/me/me.wxss */
+.usermotto {
+  margin-top: 10px;
+}
+page{
+   height: 100%;
+   width: 100%;
+}

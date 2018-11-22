@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/vote/vote",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#dcd",
+    "navigationBarTitleText": "懒猫首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home2.png"
+      },
+      {
+        "pagePath": "pages/vote/vote",
+        "text": "发起投票",
+        "iconPath": "pages/images/vote.png",
+        "selectedIconPath": "pages/images/vote2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "pages/images/me.png",
+        "selectedIconPath": "pages/images/me2.png"
+      }
+    ]
+  }
+}

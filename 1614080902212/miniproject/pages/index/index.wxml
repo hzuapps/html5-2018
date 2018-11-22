@@ -1,0 +1,10 @@
+<!--pages/me/me.wxml-->
+<text></text>
+<view class="container" style="background:#abcdef">
+  <view class="usermotto" >
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="user-src">
+    <image style="width: 300px; height: 300px; " src="{{src}}"></image>
+  </view>
+</view>
