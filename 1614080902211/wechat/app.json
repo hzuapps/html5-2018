@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小程序哈",
+    "navigationBarTextStyle": "black"
+  },
+ "tabBar": {
+  "selectedColor": "#1296db",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/首页.png",
+      "selectedIconPath": "images/首页.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "设置",
+      "iconPath": "images/用户.png",
+      "selectedIconPath": "images/用户.png"
+    }
+    ]
+  }
+}
