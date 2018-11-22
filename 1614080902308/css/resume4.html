@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+
+
+<title>个人简历</title>
+
+
+
+<style type="text/css">
+ .z0{
+ font-size:0.5in;
+ font-family:"宋体";
+ font-weight:bolder;
+
+ }
+
+
+ .z1{
+ font-size:0.3in;
+ font-family:"宋体";
+ font-weight:bold;
+
+ }
+ 
+ .z2{
+ font-size:0.3in;
+ font-family:"楷体";
+ font-weight:bold;
+ 
+ }
+ 
+ .p{
+ width:180px;
+ height:240px;
+ }
+ 
+ .b1{
+ background-color:#000000;
+ text-align:center;
+ }
+ 
+ .b2{
+ background-color:#7FEEEE;
+ height:60px;
+ text-align:center;
+ }
+ 
+ .b3{
+ background-color:#7FEEEE;
+ height:300px;
+ text-align:center;
+ }
+</style>
+
+<link href="weui.css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript" language="javascript">
+
+function changeColor()
+    {
+
+       for(i=0;i<4;i++)
+          if(forml.color[i].checked){
+            document.body.style.background = forml.color[i].value;
+    }
+}
+
+ function fn() {
+            var obj=document.getElementById("text");
+            if(obj.value == ""){
+                alert("内容不能为空");
+                return false;
+            }else{
+                return true;
+            }
+        }
+   
+</script>
+
+
+</head>
+
+<body>
+<table align=center class=b1>
+
+<tr height=120 bgcolor=#7FEEEE >
+<td width=1200 colspan=10  class=z0>个人简历</td>
+</tr>
+
+<tr align=center class=b2>
+<td width=120 colspan=2  class=z1>姓名</td>
+<td width=120 colspan=2  class=z2>黄帅</td>
+<td width=120 colspan=2  class=z1>性别</td>
+<td width=120 colspan=2  class=z2>男</td>
+<td width=180 rowspan=4><img class=p src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540536049947&di=05e1254b4185a4dd58ad6c4f18ec134b&imgtype=0&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201607%2F28%2F20160728111657_dZLix.jpeg"></td>
+</tr>
+
+<tr align=center class=b2>
+<td width=120 colspan=2  class=z1>出生年月</td>
+<td width=120 colspan=2  class=z2>2000.1.1</td>
+<td width=120 colspan=2  class=z1>民族</td>
+<td width=120 colspan=2  class=z2>汉</td>
+</tr>
+
+<tr align=center class=b2>
+<td width=120 colspan=2  class=z1>学历</td>
+<td width=120 colspan=2  class=z2>本科</td>
+<td width=120 colspan=2  class=z1>专业</td>
+<td width=120 colspan=2  class=z2>软件工程</td>
+</tr>
+
+<tr align=center class=b2>
+<td width=120 colspan=2  class=z1>籍贯</td>
+<td width=120 colspan=2  class=z2>广东</td>
+<td width=120 colspan=2  class=z1>联系电话</td>
+<td width=120 colspan=2  class=z2>123120</td>
+</tr>
+
+<tr align=center class=b2>
+<td width=120 colspan=2  class=z1>毕业学校</td>
+<td width=120 colspan=8  class=z2>惠州学院</td>
+</tr>
+
+<tr align=center class=b2>
+<td width=120 colspan=2  class=z1>个人github</td>
+<td width=120 colspan=8  class=z2><a href = "https://github.com/lin1085271231">https://github.com/lin1085271231</a></td>
+</tr>
+
+
+<tr align=center class=b3>
+<td width=120 colspan=2  class=z1>社会实践</td>
+<td width=120 colspan=8  class=z2>无</td>
+</tr>
+
+
+<tr height=120  >
+<td width=120 colspan=10 bgcolor=white>
+       
+      <form action="#" method="post" onsubmit="return fn()">
+	   
+       留言：<input type="text" id="text" style="font-size: 20px"/> 
+	  
+	   <input type="submit" value="提交"  class="weui-btn weui-btn_mini weui-btn_default">
+	   <input type="reset"  value="重置"  class="weui-btn weui-btn_mini weui-btn_warn">
+	   
+	  </form>
+</td>
+</tr>
+</table>
+      
+<form name ="forml" >
+<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()"> 白色
+<input name="color" type="radio" value="#0000FF" onclick="changeColor()"> 蓝色	
+<input name="color" type="radio" value="#00FF00" onclick="changeColor()"> 绿色	
+<input name="color" type="radio" value="#FFFF00" onclick="changeColor()"> 黄色	
+</form>  
+ 
+
+
+</body>
+</html>
