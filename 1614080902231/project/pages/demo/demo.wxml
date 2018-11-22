@@ -1,0 +1,32 @@
+<!--demo.wxml-->
+<view class="index-hd">
+  <image class="index-logo" src="./gongnengdingyi.png"></image>
+  <view class="index-desc">独乐乐不如众乐乐，如果您发现有惠州有什么好玩的，欢迎告诉我们，我们会把您提供的信息让更多的人知道</view>
+</view>
+<view class="container">
+  <view class="login-from">
+    <!--手机号-->
+    <view class="inputView">
+      <label class="loginLab">手机号</label>
+      <input class="inputText" placeholder="请输入手机号" bindinput="phoneInput" value="{{phoneInput}}"/>
+    </view>
+    <view class="line"></view>
+    <!--地址-->
+    <view class="inputView">
+      <label class="loginLab" >地址</label>
+      <input class="inputText"  bindinput="indressInput" value="{{indress}}"/>
+    </view>
+    <view class="line"></view>
+    <!--多本文本框-->
+    <label class="loginLab" >留言</label>
+    <view class="textarea-wrp">
+        <textarea auto-focus="true" style="height: 8em" />
+      </view>
+    <!--按钮-->
+    <view class="loginBtnView">
+      <button class="loginBtn" type="primary" bindtap="login">提交</button>
+    </view>
+  </view>
+</view>
+
+
