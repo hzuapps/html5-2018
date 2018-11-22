@@ -1,0 +1,24 @@
+<view class='portraitshow'>
+  <image class='portrait' src='../../images/portrait.jpg'></image>
+</view>
+<form bindsubmit='formBindSubmit' bindreset='formBindReset'>
+  <!-- 用户名和密码 -->
+  <view class='inputView'>
+    <input class='input' name='userName' type='number' placeholder='请输入账号' placeholder-style='color:gray'></input>
+  </view>
+  <view class='inputView'>
+    <input class='input' name='password' password='true' placeholder='请输入密码' placeholder-style='color:gray'></input>
+  </view>
+
+  <!-- 忘记密码 -->
+  <view class='forgetPsw'>
+  <label>
+    <switch name='switch' type='checkBox' bindchange='switchChange'></switch>
+    <text class='switchText'>忘记密码？</text>
+  </label>
+</view>
+
+<button form-type='submit' type='primary'>登录</button>
+<button form-type='reset' type='warn'>重置</button>
+
+</form>
