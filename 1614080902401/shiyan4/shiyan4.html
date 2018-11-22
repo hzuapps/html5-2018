@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人简介</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+    <style type="text/css">
+        #sub{
+            color: red;
+            background-color: #D6EAF8;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="page__hd">
+        <h1 class="page__title" align="center">个人简历</h1>
+    </div>
+    <div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="sub">基本信息</div>
+            <div class="weui-panel__bd">
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">照片</h4>
+                    <p ">
+                        <img src="http://www.hb.chinanews.com/photo/2013/1105/U4P1T52D145F1033DT20131105102009.jpg" style="height: 60px;">
+                         </p>
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">姓名</h4>
+                    <p class="weui-media-box__desc">阿艺</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">出生年月</h4>
+                    <p class="weui-media-box__desc">1999-9-9</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">性别</h4>
+                    <p class="weui-media-box__desc">男</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">学校</h4>
+                    <p class="weui-media-box__desc">惠州学院</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">二级学院</h4>
+                    <p class="weui-media-box__desc">信息科学技术学院</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">专业</h4>
+                    <p class="weui-media-box__desc">软件工程</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">班级</h4>
+                    <p class="weui-media-box__desc">16软4班</p >
+                </div>
+                <div class="weui-media-box weui-media-box_text">
+                    <h4 class="weui-media-box__title">个人主页</h4>
+                    <p><a href="https://github.com/uzi-up">我的GitHub</a></p>
+                </div>
+                <div class="weui-cells__title" style="border-top: 5px solid #f8f8f8">留言给我</div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <textarea class="weui-textarea" placeholder="请输入留言" rows="3" id="text-message"></textarea>
+                            <div class="weui-textarea-counter">200</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-flex" style="border-top: 5px solid #f8f8f8">
+            <div class="weui-flex__item">
+                <div class="weui-cells__title">更换背景色</div>
+                <form name="form1">
+                    <div class="weui-cells weui-cells_radio" style="margin-top :0;">
+                        <label class="weui-cell weui-check__label" for="x11" checked="checked" onclick="changeColor('#FFFFFF')">
+                            <div class="weui-cell__bd">
+                                <p>白色</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" class="weui-check" name="radio1" id="x11" checked="checked">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="x12" onclick="changeColor('#0000FF')">
+   
+                            <div class="weui-cell__bd">
+                                <p>蓝色</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio1" class="weui-check" id="x12">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="x13" onclick="changeColor('#00FF00')">
+   
+                            <div class="weui-cell__bd">
+                                <p>绿色</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio1" class="weui-check" id="x13">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                        <label class="weui-cell weui-check__label" for="x14" onclick="changeColor('#FFFF00')">
+   
+                            <div class="weui-cell__bd">
+                                <p>黄色</p>
+                            </div>
+                            <div class="weui-cell__ft">
+                                <input type="radio" name="radio1" class="weui-check" id="x14">
+                                <span class="weui-icon-checked"></span>
+                            </div>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+            <a class="weui-btn weui-btn_primary" href="javascript:check()" id="showTooltips">提交</a>
+        </div>
+        <script>
+            function changeColor(_corlor) {
+                document.body.style.background = _corlor;
+            }
+   
+            function check() {
+                var msgObj = document.getElementById("text-message");
+                if (msgObj.value == "") {
+                    alert("留言框为空，请填写留言");
+                    return false;
+                } else {
+                    _submit();
+                    return true;
+                }
+            }
+   
+            function _submit() {
+                // 执行相关提交表单或者Ajax的操作
+                alert("恭喜你，留言成功");
+            }
+        </script>
+    </body>
+    </html>
