@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="section">
+  
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542815948168&di=37b2daf53e4ff5ce2d7d8e52b529d71a&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F14ce36d3d539b6003247729ee250352ac65cb709.jpg'></image>
+    <text>项目一</text>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542815948168&di=cbcf74df054fb7d8f0d0a9f1a52c210b&imgtype=0&src=http%3A%2F%2Fpic150.nipic.com%2Ffile%2F20171215%2F6355359_160133035030_2.jpg' alt="哈哈"></image>
+    <text>项目二</text>
+ 
+  
+</view> 
