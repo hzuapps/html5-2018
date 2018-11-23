@@ -1,0 +1,11 @@
+<view class="page">
+  <view class="page__bd">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:{{Height}}' circular="{{circular}}">
+      <block wx:for="{{imgUrls}}" wx:key="">
+        <swiper-item>
+            <image src="{{item.url}}" class="imagesize" mode="widthFix" bindload='imgHeight' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
