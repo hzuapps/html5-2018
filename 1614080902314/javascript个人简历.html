@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+  <title>个人简历</title>
+</head>
+<body>
+ <button style="float:right;" class = "bt" onclick="b1()">改背景图片</button>
+ <button style="float:left" class = "bt" onclick="b2()">改背景颜色</button>
+<p align=center><b><font face="黑体"size="+5">个人简历</font></b></p>
+<table width="450" height="200" border="3" align="center">
+<tr>
+   <td width="114" height="100">
+      <img src="http://pic161.nipic.com/file/20180417/23220563_151415279411_2.jpg" width="160" height="200">
+   </td>
+   <td width="316">
+   <table width="300" height="200" border="0" align="center" >
+   <tr><td>Name:<b>MJ.Zheng</b></td><td></td></tr>
+   <tr><td>Age:<b>18</b></td></tr>
+   <tr><td>School:<b>惠州学院</b></td></tr>
+   <tr><td>Speciality:<b>软件工程</b></td></tr>
+   <tr><td>PhoneNumber:<b>0752-2529142</b></td></tr>
+   </table>
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+   <p align="center"><b>时间及经历</b></p>
+   <ul>
+      <li>宿舍小弟</li>
+      <li>足球院队铁板凳</li>
+   </ul>
+   </td>
+</tr>
+</table>
+<p align="center"><b>留言板</b></p>
+<form>
+<textarea cols="80" rows="5"  class="ta"></textarea>
+<br>
+<button class="tj" onclick="b3()">提交</button>
+<br><br>
+<a href="https://github.com/Zhengmianjie">
+	查看Github个人主页
+</a>
+</form>
+<script>
+    var c1 = 1,c2=0;
+    function b1(){
+            document.body.background="https://github.com/Zhengmianjie/html5-2018/blob/master/1614080902314/"+c1+".jpg?raw=true";
+            c1++;
+			if(c1==4)
+			c1=0;
+    }
+	function b2(){
+		if(c2==0){
+            document.body.style.backgroundColor = "RED";
+            c2=1;
+        }
+        else if(c2==1){
+            document.body.style.backgroundColor = "Green";
+            c2=2;
+        }
+		else if(c2==2)
+		{
+			document.body.style.backgroundColor = "Blue";
+            c2=3;
+		}
+		else if(c2==3)
+		{
+			document.body.style.backgroundColor = "White";
+            c2=0;
+		}
+    }
+	function b3(){
+        var ta = document.getElementsByClassName("ta")[0];
+        if(ta.textLength==0){
+            alert("留言为空");
+        }
+    }
+</script>
+</body>
+
+</html>
