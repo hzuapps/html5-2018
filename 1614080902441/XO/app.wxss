@@ -1,0 +1,30 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/**客服样式**/
+.img-plus-style {
+height: 105rpx;
+width: 105rpx;
+position: fixed;
+bottom: 200rpx;
+right: 13rpx;
+opacity: 0.8;
+border-radius:20px
+}
+.zindex100{z-index: 100}
+.yc{opacity: 0}
+/**版权信息**/
+.company {
+  font-family: STXingkai;
+  font-size:20rpx;
+  text-align:center;
+  margin-top:50px;
+}

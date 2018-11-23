@@ -1,0 +1,68 @@
+<!--pages/detail/detail.wxml-->
+<view class='root' bindtouchstart='touchStart' bindtouchend='touchEnd'>
+  <view>
+
+      <view class='cebian' style='width:{{cebianwidth}};height:{{cebianheight}};'>
+        <view class='photokuang' style='width:{{cebianwidth}}; pointer-events:;'>
+          <image class='photo' src='{{pro.img}}'></image>
+        </view>
+        <view class='line' style='height:500px;'></view>
+        <view class='cyclebox' style='width:{{cebianwidth}};'>
+          <view class='cycle1box' style='margin-top:-490px;'>
+            <image class='cycle'></image>
+          </view>
+          <view class='cycle1box' style='margin-top:100px;'>
+            <image class='cycle'></image>
+          </view>
+          <view class='cycle1box' style='margin-top:300px;'>
+            <image class='cycle'></image>
+          </view>
+        </view>
+      </view>
+  </view>
+
+  <view class='infolan'>
+        <view style='width:{{infowidth}};height:{{nameheight}}'>
+          <text class='name'>专辑:{{pro.title}}\n</text>
+        </view>
+        <view style='width:{{infowidth}};height:{{tittleheight}}'>
+          <text class='title'>基本信息</text>
+        </view>
+        <view style='width:{{infowidth}};height:{{infoheight}}px;line-height:100%'>
+          <text class='info' decode='{{true}}'>
+          发行时间：{{pro.createTime}}
+          出版者&emsp;：{{pro.Publisher}}
+          曲&emsp;目&emsp;：{{pro.num}}
+          </text>
+        </view>
+        <view style='width:{{infowidth}};height:{{tittleheight}}'>
+          <text class='title'>介绍</text>
+        </view>
+        <view style='width:{{infowidth}};height:300px'>
+          <view class='info'>{{pro.introduce}}</view>
+          <!--
+          <view style='width:25px;height:{{infoheight/4}}px;float:left'>
+            <image src='/images/heat.png' style='width:20px;height:20px;margin-top:3px;'></image>
+          </view>
+          <view style='line-height:110%'>
+            <text class='info'>14-18年：菏泽学院(本科)\n化学工程与工艺专业</text>
+          </view>
+          <view style='width:25px;height:{{infoheight/4}}px;float:left'>
+            <image src='/images/heat.png' style='width:20px;height:20px;margin-top:3px;'></image>
+          </view>
+          <view>
+            <text class='info'>软件设计师(软考)</text>
+          </view>
+          -->
+        </view>
+
+        <view style='width:{{infowidth}};height:{{tittleheight}};float:left'>
+           
+        </view>
+
+     </view>
+
+      
+
+
+</view>

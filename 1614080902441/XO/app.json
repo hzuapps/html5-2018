@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/mine/index/index",
+    "pages/detail/detail",
+    "pages/join/join",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#cccccc",
+    "navigationBarTitleText": "XO",
+    "navigationBarTextStyle":"black"
+  },
+  
+
+  "tabBar":{
+    "selectedColor": "#2e5e86",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ic_home_normal.png",
+        "selectedIconPath": "images/ic_home_pressed.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "详情",
+        "iconPath": "images/ic_join_normal.png",
+        "selectedIconPath": "images/ic_join_pressed.png"
+      },
+      {
+        "pagePath": "pages/mine/index/index",
+        "text": "我的",
+        "iconPath": "images/ic_mine_normal.png",
+        "selectedIconPath": "images/ic_mine_pressed.png"
+      }
+    ]
+  },
+
+  "plugins": {
+    "tencentVideo": {
+      "version": "1.2.2",
+      "provider": "wxa75efa648b60994b"
+    }
+    }
+
+
+  
+}
