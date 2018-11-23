@@ -1,0 +1,18 @@
+<!--pages/edit/edit.wxml-->
+<view class="page">
+  <view style='margin-bottom: 3px;'>
+    <view class="top">
+      <button style='border: 0' size="mini" ></button>
+      <text style='align-items: center;'>编辑备忘录</text>
+      <button style='border: 0' size="mini" type="primary" plain="true" class="submit" bindtap="submit">保存</button>
+      </view>
+  </view>
+  <view class="page-t">
+    <textarea class="content" placeholder="请输入文字，不能为空" bindinput="change" value="{{content}}" maxlength="-1"></textarea>
+  </view>
+  <modal hidden="{{hiddenmodalput}}" title="请输入记录名称" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text' placeholder="请输入内容" value='{{annal_name}}' bindinput ="annal_NameInput" auto-focus/>  
+  </modal>  
+
+
+</view> 
