@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class='bg'>
+<scroll-view  class="scroll-view_H" scroll-x>
+  <image class="item item_H" src='../../image/心理学.png'>高数</image>
+  <image class="item item_H" src='../../image/Python.jpg'></image>
+  <image class="item item_H" src='../../image/心理学2.jpg'></image>
+  <image class="item item_H" src='../../image/舞蹈.jpg'></image>
+  <image class="item item_H" src='../../image/高数.jpg'></image>
+</scroll-view>
+</view>
+
+<view class='course_bg'>
+<view class='course_all'>
+    <view class='course_box' >
+        <image class='image1' src='../../image/初级会计学.png'></image>
+        <view class='text'>初级会计学</view>
+    </view>
+
+    <view class='course_box'>
+         <image class='image1' src='../../image/机器人.jpg'></image>
+         <view class='text'>机器人操作系统</view>
+    </view>   
+    
+</view>
+<view class='course_all'>
+    <view class='course_box' >
+        <image class='image1' src='../../image/大学日语.jpg'></image>
+        <view class='text' >大学日语</view>
+    </view>
+     <view class='course_box'>
+         <image class='image1' src='../../image/美国文学.jpg'></image>
+         <view class='text'>美国文学</view>
+    </view>   
+</view>
+<view class='course_all'>
+    <view class='course_box' >
+        <image class='image1' src='../../image/互联网.jpg'></image>
+        <view class='text'>互联网</view>
+    </view>
+     <view class='course_box'>
+         <image class='image1' src='../../image/心理学2.jpg'></image>
+         <view class='text'>心理学</view>
+    </view>   
+</view>
+</view>  
