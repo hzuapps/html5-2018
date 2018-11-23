@@ -1,0 +1,30 @@
+{
+  "pages":[
+     "pages/index/index",
+     "pages/login/login",  
+     "pages/user/user",
+     "pages/pingce/pingce"
+  ],
+
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "用户登录",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/pingce/pingce",
+      "text": "评测"
+    },
+  {
+      "pagePath": "pages/user/user",
+      "text": "用户中心"
+    }]
+  }
+}

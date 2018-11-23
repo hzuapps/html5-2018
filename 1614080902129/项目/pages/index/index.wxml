@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="index-container">
+   <image  src="/image/index.jpg" ></image>
+</view>
