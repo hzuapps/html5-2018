@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/Create/Create",
+    "pages/PB/PB",
+    "pages/Me/Me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/Create1.png",
+        "iconPath": "images/Create.png",
+        "pagePath": "pages/Create/Create",
+        "text": "今日所感"
+      },
+      {
+        "selectedIconPath": "images/Gs1.png",
+        "iconPath": "images/Gs.png",
+        "pagePath": "pages/PB/PB",
+        "text": "往日所得"
+      },
+      {
+        "selectedIconPath": "images/Me1.png",
+        "iconPath": "images/Me.png",
+        "pagePath": "pages/Me/Me",
+        "text": "个人信息"
+      }
+    ]
+  }
+}
