@@ -1,0 +1,15 @@
+    
+<view class="container">
+
+<view class="header"></view>
+
+<view class="title">{{weather.results[0].currentCity}}</view>
+<view class="desc">{{weather.date}}</view>
+ 
+ 
+<view class="menu-list"></view>
+<view class="menu-item" wx:for="{{weather.results[0].weather_data}}" wx:key="*this">
+<view class="menu-item-main"></view>
+<view class="menu-item-name">{{item.date}} {{item.weather}} {{item.wind}} {{item.temperature}}</view></view>
+<view class="menu-item-arrow" src="{{item.dayPictureUrl}}"></view>
+</view>
