@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实验3</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+	<script type="text/javascript">
+			
+		function cheak(form) { 
+                if(form.liuyan.value=='') {
+                //form留言区内容的id：liuyan为空，则出现提示窗口，无法提交
+                alert("请输入留言!"); 
+                form.liuyan.focus(); 
+                return false; } 
+            return true; }
+		</script>
+	<style type="text/css">
+            	
+            	#hc{ 
+            		color: black;      
+            		background-color: Beige;           		
+            	}
+            </style>
+</head>
+<body  bgcolor="Honeydew">
+<div class="page">
+	<div class="page__hd">
+        <h1 class="page__title" align="center" style="font-family:楷体;"  >个人简历</h1>    
+    </div>			
+    <div class="page__bd">      
+    <div class="weui-panel weui-panel_access">	
+            <div class="weui-panel__hd" id="hc">基本信息：</div>           	
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="http://img1.3lian.com/img013/v1/72/d/1.jpg" style="width: 120px;display: block"/>                    
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p >姓名：<b>猫神</b> </p>                   
+                    </div>
+                </div>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg" >
+                <h4 class="weui-media-box__title" >性别：</h4>
+                <p ><b>男</b> </p>
+            </div>
+			<div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title" >民族：</h4>
+                <p ><b>汉族</b> </p>
+            </div>
+			<div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title" >年龄：</h4>
+                <p ><b>21岁</b> </p>
+            </div>
+			<div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title" >籍贯：</h4>
+                <p ><b>广东</b> </p>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg" >
+                <h4 class="weui-media-box__title">毕业院校：</h4>
+                <p ><b>惠州学院</b> </p>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title">主修专业：</h4>
+                <p ><b>软件工程</b> </p>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title" >学历：</h4>
+                <p ><b>本科</b> </p>
+            </div>
+            
+        </div>	
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">求职意向：</div> 
+           	<div class="weui-media-box weui-media-box_appmsg">           
+                <p ><b>&middot;算法工程师<br>
+					&middot;JAVA工程师
+					</b></p>
+            </div>
+        </div>
+		<div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">获奖情况：</div> 
+           	<div class="weui-media-box weui-media-box_appmsg">           
+                <p ><b>&middot;蓝桥杯C/C++B组省二等奖<br>
+					&middot;天梯赛算法竞赛团队赛省二等奖
+				</b></p>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">个人能力：</div>
+            <div class="weui-media-box weui-media-box_appmsg" >           
+                <p><b>
+					&middot;精通英语，使用英语普通交流没有问题<br>
+                	&middot;熟悉C,C++,PHP,Python语言，十分熟悉java语言<br>
+					&middot;掌握Html、CSS、JS等web语言<br>
+					&middot;了解SQL语句，熟练操作MySQL和SqlSever数据库。
+				</b></p>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">自我评价：</div>
+            <div class="weui-media-box weui-media-box_appmsg">           
+                <p><b>
+                	&middot;工作认真负责，责任感强。<br>
+					&middot;积极乐观，善于交流。<br>
+					&middot;学习能力较强，做事细心。<br>
+					&middot;爱好软件事业，对从事IT行业的工作有浓厚的兴趣。
+				</b></p>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">联系方式：</div>
+            <div class="weui-media-box weui-media-box_appmsg">           
+                <p><b>
+                	&middot;手机：1388888888<br>
+					&middot;邮箱：1388888888@qq.com<br>
+                    <a href="https://github.com/BoyJDG">我的个人主页</a>
+				</b></p>
+                
+
+            </div>
+        </div>
+        <div class="web-title1">
+				留言区
+			</div>
+			<div class="weui-cells_form">
+				<div class="weui-cell">
+					<form class="weui-cell__bd" action="yang.html" id="tijiao-form" method="post" onsubmit="return cheak(this)">
+						<textarea class="weui-textarea" type="text" placeholder="请输入留言..." rows="5" id="liuyan" name="liuyan"></textarea>
+						<div class="weui-textarea-counter">
+							<span>0</span>
+											/200
+						</div>
+						<div class="weui-btn-area">
+							<input type="submit" class="weui-btn weui-btn_primary" id="tijiao" value="提交">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
