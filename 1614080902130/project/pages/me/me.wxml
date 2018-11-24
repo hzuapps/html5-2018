@@ -1,0 +1,21 @@
+<!--pages/me/me.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+  大数据信息首页
+</view>
+ 
+<!--搜索-->
+<view hidden="{{currentTab!==1}}">
+  搜索栏
+</view>
+ 
+<!--我-->
+<view hidden="{{currentTab!==2}}">
+  我的收藏
+</view>
+
