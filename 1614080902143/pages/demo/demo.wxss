@@ -1,0 +1,11 @@
+/* pages/demo/demo.wxss */
+.button-sp-area{
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    width: 60%;
+}
+.mini-btn{
+    margin-right: 5px;
+}
