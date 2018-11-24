@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/me/me",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundColor": "#0079FE",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0079FE",
+    "navigationBarTitleText": "快递易查",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#3F3F3F",
+    "selectedColor": "#0079FE",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "查询",
+        "iconPath": "images/icon_search.png",
+        "selectedIconPath": "images/icon_search_selected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "images/icon_tabbar.png",
+        "selectedIconPath": "images/icon_tabbar.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/icon_me.png",
+        "selectedIconPath": "images/icon_me_selected.png"
+      }
+    ]
+  }
+}
