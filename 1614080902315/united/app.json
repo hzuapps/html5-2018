@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/newsworld/newsworld",
+    "pages/index/index",
+    "pages/rad123/rad123",
+        
+    "pages/logs/logs"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#32CD32",
+    "navigationBarTitleText": "United-News",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#f4645f",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/新闻.png",
+        "iconPath": "image/新闻.png",
+        "pagePath": "pages/newsworld/newsworld",
+        "text": "新闻"
+      },
+      {
+        "selectedIconPath": "image/行业排名.png",
+        "iconPath": "image/行业排名.png",
+        "pagePath": "pages/rad123/rad123",
+        "text": "积分榜"
+      },
+      {
+        "selectedIconPath": "image/关于我们.png",
+        "iconPath": "image/关于我们.png",
+        "pagePath": "pages/index/index",
+        "text": "关于"
+      }
+    ]
+  }
+  
+}

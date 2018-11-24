@@ -1,0 +1,10 @@
+
+                            .page__hd{
+                                background-image:url(https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1540886846&di=e91d3f99202c81a7ab20fcc7786573d8&src=http://5b0988e595225.cdn.sohucs.com/images/20180916/87faedf6a2fa4fdb95c366a7e22d5fbe.jpeg)
+
+                            }
+                            .page__title{
+                                color:indianred;
+                                font-size: xx-large;
+                            }
+                       
