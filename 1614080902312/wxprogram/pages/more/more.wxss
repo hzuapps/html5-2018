@@ -1,0 +1,6 @@
+/* pages/page3/page3.wxss */
+.demo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
