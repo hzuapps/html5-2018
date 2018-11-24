@@ -1,0 +1,45 @@
+{
+
+  "pages": [
+    "pages/course/course",
+    "pages/Community/Community",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarTitleText": "课程"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#ddd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/course/course",
+        "iconPath":"image/自由安排.png",
+        "selectedIconPath": "image/自由安排.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/Community/Community",
+        "iconPath": "image/娱乐.png",
+        "selectedIconPath": "image/娱乐.png",
+        "text": "社区"
+      },
+      {
+        "pagePath":"pages/about/about",
+        "iconPath": "image/about1.png",        
+        "selectedIconPath": "image/about1.png",
+        "text":"关于我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

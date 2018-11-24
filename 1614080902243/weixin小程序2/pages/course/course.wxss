@@ -1,0 +1,62 @@
+/**course.wxss**/
+/*宣传栏*/
+.bg{background: lightcoral;
+  width:100%;
+  height:120px;
+  background-size: cover;
+}
+.course_bg{background: #bbd;
+width: 100%;
+height: 100%;
+background-size: cover;
+}
+.scroll-view_V {
+    height: 300rpx;
+}
+
+.scroll-view_H {
+    white-space: nowrap;
+}
+
+.item {
+    width: 500rpx;
+    height: 250rpx;
+    margin: 10rpx;
+    background: grey;
+}
+
+.item_H {
+    display: inline-block;
+}
+
+.text{color: red;}
+.image1{width: 100%;height: 90px;}
+
+
+
+/*课程*/
+.course_box{
+  display: block;
+  text-align: center;
+  border: solid 1px;
+  height: 120px;
+  width: 47%;
+  margin: 10px;
+}
+
+.course_all{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:warp-reverse;
+}
+
+/**轮转图片**/
+.tab{height: 70rpx;position: absolute;bottom: 0;display: flex;
+      width: 100%;text-align: center;justify-content: center;
+      align-items: center;}
+.tab.tab-item{background-color: #ccc;height: 50rpx;width: 50rpx;
+              line-height: 50rpx;font-size: 12rpx;color: #fff;border-radius: 4px;
+              margin-right: 10px;}
+tab.tab-item.selected{background-color: red;
+
+}
