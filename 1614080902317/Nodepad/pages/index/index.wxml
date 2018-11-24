@@ -1,0 +1,43 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{bg}}" style='height:{{Height}}'indicator-dots="true">
+   <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="widthFix" bindload='imgHeight'/>  
+    </swiper-item>
+   </block>
+</swiper>
+<view class="items-list">
+  <view class='pro-item'>
+    <image class='pro-logo' src='/image/food1.jpg'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>月饼</view>
+        <text class='pro-desc'>　　是久负盛名的中国传统糕点之一，中秋节节日食俗。象征着团圆和睦。</text>
+    </view>
+  </view>
+</view>
+<view class="items-list">
+  <view class='pro-item'>
+    <image class='pro-logo' src='/image/food2.jpg'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>粽子</view>
+        <text class='pro-desc'>　　粽子，即粽籺，由粽叶包裹糯米蒸制而成，是中华民族传统节庆食物之一。</text>
+    </view>
+  </view>
+</view>
+<view class="items-list">
+  <view class='pro-item'>
+    <image class='pro-logo' src='/image/food3.jpg'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>饺子</view>
+        <text class='pro-desc'>　　饺子距今已有一千八百多年的历史了，是中国北方民间的主食和地方小吃。</text>
+    </view>
+  </view>
+</view>
+<view class="items-list">
+  <view class='pro-item'>
+    <image class='pro-logo' src='/image/food4.jpg'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>月饼</view>
+        <text class='pro-desc'>　　汤圆是中国传统小吃的代表之一，同时也是元宵节最具特色的食物，历史十分悠久。</text>
+    </view>
+  </view>
+</view>
