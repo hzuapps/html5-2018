@@ -1,0 +1,10 @@
+.share-flex{
+  height: 250.7rpx;
+  display: flex
+}
+.btntype{
+  height: 250.7rpx;
+  width: 250.7rpx;
+  background-color: white;
+  border: 1px;
+}

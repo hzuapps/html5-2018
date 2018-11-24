@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='share-flex'>
+    <button class='btntype'>
+      1
+    </button>
+    <button class='btntype'>
+      2
+    </button>
+    <button class='btntype'>
+      3
+    </button>
+  </view>
+  <view class='share-flex'>
+    <button class='btntype'>
+      4
+    </button>
+    <button class='btntype'>
+      5
+    </button>
+    <button class='btntype'>
+      6
+    </button>
+  </view>
+</view>
