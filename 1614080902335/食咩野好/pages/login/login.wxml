@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+<!-- 欢迎 -->
+<view class='welcome'>欢迎</view>
+<!-- 头像和名称显示 -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权信息</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view wx:if="{{hasUserInfo && canIUse}}">
+    <view class="button-sp-area">
+        <button class="weui-btn" type="primary" plain="true" bindtap='jumpIndex'>进入</button>
+    </view>
+</view>
+<view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2017-2018 ChenchenJT</view>
+</view>

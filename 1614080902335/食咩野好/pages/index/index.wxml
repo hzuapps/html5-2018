@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 头像和名称显示 -->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权信息</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </block>
+  </view>
+  <view>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <!-- 时间确定 -->
+  <view class="usermotto">
+    <text class="user-motto">Hello,{{motto}}吃什么呢？</text>
+  </view>
+
+  <!-- 菜单的选择 -->
+  <view class='choose'>
+    <image style="width: 300px; height: 200px; background-color: #eeeeee; margin-top: 10px;" src='../../Image/img/content.png' mode='aspectFit'>
+    <view class='imageText1'>{{text1}}</view>
+    <view class='imageText2'>{{text2}}</view>
+    <view class='imageText3'>{{text3}}</view>
+    </image>
+    
+     <!-- 启动和停止选择菜单按钮 -->
+    <view class='controls'>
+    <view class='add'>
+      <image style='width:70px; height:70px;' src='../../Image/icon/poweroff-circle-fill.png'  bindtap='add'></image>
+      <text>添加菜单</text>
+    </view>
+    <view class='play'>
+      <image style='width:70px; height:70px;'src='../../Image/icon/check-circle-fill.png'  bindtap='play'></image>
+      <text>开始选择</text>
+    </view>
+  </view>
+  </view>
+</view>
