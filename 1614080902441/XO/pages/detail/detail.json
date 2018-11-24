@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "专辑信息",
+
+  "usingComponents": {
+    "txv-video": "plugin://tencentVideo/video"
+  }
+}
