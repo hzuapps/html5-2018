@@ -1,0 +1,17 @@
+<!--pages/me/me.wxml-->
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+  这是主页
+</view>
+ 
+<!--图表-->
+<view hidden="{{currentTab!==1}}">
+  这里是查看数据的曲线
+</view>
+
+
