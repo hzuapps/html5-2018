@@ -1,0 +1,20 @@
+/**index.wxss**/
+/* page {
+  background-color:#b3d4db;
+} */
+button {
+  background-color: #8ab2b9;
+}
+label {
+  color: #155577;
+}
+.login{
+  border-bottom: 1px solid #155577;
+  margin-bottom: 10px; 
+  color: #666;
+}
+.header{
+  margin-bottom: 20px;
+  color: #155577; 
+  font-size: 20px;
+}
