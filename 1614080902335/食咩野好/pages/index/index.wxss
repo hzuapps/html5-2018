@@ -1,0 +1,104 @@
+/**index.wxss**/
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  display: flex;
+  margin-top: 10px;
+  color: #aaa;
+  align-items: center;
+  justify-content: center;
+}
+
+.usermotto {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:  #000;
+}
+
+.imageText1{
+  width: 200px;
+  height: 0px;  
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 100px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.imageText2{
+  width: 200px;
+  height: 0px;  
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 25px;
+  margin: auto;
+  text-align: center;
+  font-size: 27px;
+  color: #1AAD19;
+}
+.imageText3{
+  width: 200px;
+  height: 0px;  
+  position: absolute;
+  left: 0;
+  top: 75px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.choose{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+}
+
+.controls{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.add{
+  padding-left: 13%;
+  display: flex;
+  flex-direction: column;
+}
+
+.play{
+  padding-left: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.play text{
+  size: 1px;
+  color: #aaa;
+}
+
+.add text{
+  size: 1px;
+  color:#aaa;
+}
