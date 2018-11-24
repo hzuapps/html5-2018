@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/bookshelf/bookshelf"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "The sea of books",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "首页",
+        "iconPath": "pages/search/search.png",
+        "selectedIconPath": "pages/search/search.png"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "text": "书单",
+        "iconPath": "pages/bookshelf/bookshelf.png",
+        "selectedIconPath": "pages/bookshelf/bookshelf.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "pages/index/index.png",
+        "selectedIconPath": "pages/index/index.png"
+      }]
+  }
+}
