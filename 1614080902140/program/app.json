@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/show/show",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "随机抽奖助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#a7b7b7",
+    "selectedColor": "#66b3ff",
+    "borderStyle": "white",  
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"pages/image/首页.png"
+      },
+      {
+        "pagePath": "pages/show/show",
+        "text": "发起抽奖",
+        "iconPath":"pages/image/加号.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath":"pages/image/我的.png"
+      }
+    ]
+  }
+}
