@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/second/second",
+    "pages/third/third"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "查询助手",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_HL.png"      
+      },
+      {
+        "pagePath": "pages/second/second",
+        "text": "查询天气",
+        "iconPath": "image/second.png",
+        "selectedIconPath": "image/second_HL.png"
+      
+      },
+        {
+          "pagePath": "pages/third/third",
+          "text": "导航",
+          "iconPath": "image/third.png",
+          "selectedIconPath": "image/thirda.png"
+        }
+    ]
+  }
+}
