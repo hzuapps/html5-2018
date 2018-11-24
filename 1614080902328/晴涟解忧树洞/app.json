@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/index2/index2",
+    "pages/index3/index3",
+    "pages/box/box",
+    "pages/message/message",
+    "pages/getmes/getmes"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#886633",
+    "navigationBarTitleText": "解忧杂货铺",
+    "navigationBarTextStyle":"black"
+  }
+}
