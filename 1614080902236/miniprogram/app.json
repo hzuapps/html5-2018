@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/psecond/psecond",
+    "pages/pfirst/pfirst",
+    "pages/pthird/pthird"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生日管家",
+    "navigationBarTextStyle": "black"
+  }
+}
