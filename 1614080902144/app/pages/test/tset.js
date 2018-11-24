@@ -1,0 +1,20 @@
+page({
+  data:{
+    //test:"这是一个页面"
+  },
+  onLoad:function(options){
+    //页面初始化，options为参数
+  },
+  onReady:function(){
+    //页面渲染完成
+  },
+  onShow:function(){
+    //页面提示
+  },
+  onHide:function(){
+    //页面隐藏
+  },
+  omUnload:function(){
+    //页面关闭
+  }
+})
