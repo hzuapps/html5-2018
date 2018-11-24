@@ -1,0 +1,28 @@
+/* pages/index3/index3.wxss */
+page{
+  height: 100%;
+}
+.root{
+  background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543568582&di=64b3858d4bf7ac5074b6e7a13b1506e3&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F48%2F20%2F84j58PIC83T_1024.jpg);
+  background-size: 100% 100%;
+  -moz-background-size:100% 100%;
+  height: 100%;
+}
+#img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: rgb(87, 76, 76);
+}
+#img1{
+  padding-top: 5rpx;
+  width: 80%;
+  height: 30%;
+}
+
+#img2{
+   padding-top: 5rpx;
+   width: 80%;
+   height: 30%;
+}

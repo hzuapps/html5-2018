@@ -1,0 +1,7 @@
+<!--pages/box/box.wxml-->
+<view class='root'>
+<view class='img'>
+<image src='../../images/grandf.png'></image>
+<text>你的信箱还是空的，尝试着去写一封吧。</text>
+</view>
+</view>

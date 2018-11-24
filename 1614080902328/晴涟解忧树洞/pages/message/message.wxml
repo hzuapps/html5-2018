@@ -1,0 +1,12 @@
+<!--pages/message/message.wxml-->
+<view class='root'>
+
+<view class='content'>
+<input id='inp' placeholder='取个标题吧！'></input>
+</view>
+
+<textarea id='txt-big' placeholder='亲爱的陌生人，你有什么想要分享的吗？尽管说出来吧。'></textarea>
+
+<input id='inp2' placeholder='笔名：'></input>
+<image src='../../images/post.png' id='img'></image>
+</view>

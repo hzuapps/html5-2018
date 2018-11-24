@@ -1,0 +1,19 @@
+/* pages/box/box.wxss */
+page{
+  height: 100%;
+}
+.root{
+  height: 100%;
+  background-color: #886633;
+  text-align: center
+}
+.root .img image{
+  margin-top: 48%;
+  width: 360rpx;
+  height: 300rpx;
+}
+.root .img text{
+  display: block;
+  color: #fff;
+  font: 500 13px/13px "simsum";
+}
