@@ -1,0 +1,79 @@
+
+<view page__hd>
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='true' 
+>
+  <block wx:for="{{imgUrls}}">
+  <swiper-item  >
+    <navigator url="{{item.link}}" hover-class="navigator-hover">
+    <image src="{{item.url}}" model="aspectFit" class="slide-image" style="width:100%;" bindload="imageLoad"/>
+    </navigator>
+  </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view page__pd>
+ 
+<view data-v-3d544010="" data-v-4b42aeac="" class="list-container">
+<ul data-v-3d544010="" class="news-list">
+
+<li data-v-3d544010="" class="news-list-item">
+<a data-v-3d544010="" href="javascript:;">
+<view data-v-3d544010="" class="news-list-img-side">
+<image class='newpic' data-v-3d544010="" src="https://img1.dongqiudi.com/fastdfs3/M00/86/26/180x135/crop/-/ChOxM1vqSd6AIOk9AAFF1BAHlO4787.jpg" lazy="loaded"/><!---->
+</view>
+<view data-v-3d544010="" class="news-list-info"><h3 data-v-3d544010="">穆帅：西班牙国内为何批评德赫亚？有权势很大的人想回国家队</h3><!---->
+</view>
+</a>
+</li>
+
+<li data-v-3d544010="" class="news-list-item">
+<a data-v-3d544010="" href="javascript:;">
+<view data-v-3d544010="" class="news-list-img-side">
+<image class='newpic' data-v-3d544010="" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1629985554,512753511&fm=26&gp=0.jpg" lazy="loaded"/><!---->
+</view>
+<view data-v-3d544010="" class="news-list-info"><h3 data-v-3d544010="">官宣：博格巴离队曼联</h3><!---->
+</view>
+</a>
+</li>
+
+<li data-v-3d544010="" class="news-list-item">
+<a data-v-3d544010="" href="javascript:;">
+<view data-v-3d544010="" class="news-list-img-side">
+<image class='newpic' data-v-3d544010="" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=965964021,346084018&fm=26&gp=0.jpg" lazy="loaded"/><!---->
+</view>
+<view data-v-3d544010="" class="news-list-info"><h3 data-v-3d544010="">曼联首发出炉:马夏尔替补</h3><!---->
+</view>
+</a>
+</li>
+
+<li data-v-3d544010="" class="news-list-item">
+<a data-v-3d544010="" href="javascript:;">
+<view data-v-3d544010="" class="news-list-img-side">
+<image class='newpic' data-v-3d544010="" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=965964021,346084018&fm=26&gp=0.jpg" lazy="loaded"/><!---->
+</view>
+<view data-v-3d544010="" class="news-list-info"><h3 data-v-3d544010="">曼联首发出炉:马夏尔替补</h3><!---->
+</view>
+</a>
+</li>
+
+<li data-v-3d544010="" class="news-list-item">
+<a data-v-3d544010="" href="javascript:;">
+<view data-v-3d544010="" class="news-list-img-side">
+<image class='newpic' data-v-3d544010="" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=965964021,346084018&fm=26&gp=0.jpg" lazy="loaded"/><!---->
+</view>
+<view data-v-3d544010="" class="news-list-info"><h3 data-v-3d544010="">曼联首发出炉:马夏尔替补</h3><!---->
+</view>
+</a>
+</li>
+
+</ul>
+
+</view>
+
+
+
+</view>
+
+<view></view><!--未设置页脚-->
+
