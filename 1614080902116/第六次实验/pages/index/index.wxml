@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+<cover-image class="img" src="/images/niu2.jpg" />
+  <view class="usermotto">
+    <text class="user-motto">
+    姓名：曾荣浩
+    性别：男
+    出生日期：1997.1.1
+    联系方式：13433318174   
+    邮箱：2849229053@qq.com
+    学习经历与专业：
+    16计算机软件工程专业的本科生，主修操作系统，web前端开发与设计，企业信息化
+    掌握技能：
+    熟悉html5、css3新标签，熟练html css，深入学习 javascript
+    求职意向：
+    web前端应用设计与开发的工作
+
+    </text>
+     </view>
+
+     <view>{{ msg }}</view>
+<button bindtap="clickMe" type="primary">点击进行保存</button>
+
+</view>
