@@ -1,0 +1,51 @@
+page{
+  background-color:#F8F8F8;
+}
+#lowModel{
+  width: 88vw;
+  height: 45vh;
+  background-color: white;
+  /* border: 1px solid black; */
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 3vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.normalButton{
+  width: 90%;
+  background-color: #2999FF;
+  color: white;
+  font-weight: bold;
+}
+.levelPrize{
+  width: 30vmax;
+  height: 30vmax;
+}
+#highterModel{
+  width: 88vw;
+  height: 45vh;
+  background-color:white;
+  /* border: 1px solid black; */
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 52vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personalButton{
+  width: 90%;
+  background-color:#2999FF;
+  color: white;
+  font-weight: bold;
+}
+.higherPrize{
+  width: 30vmax;
+  height: 30vmax;
+}

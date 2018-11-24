@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/my/my"
+  ],
+  "window": {
+    "navigationBarTitleText": "抽号小助手",
+    "navigationBarBackgroundColor":"white",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发起",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "images/addActivate.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/account.png",
+        "selectedIconPath": "images/accountActivate.png"
+      }
+    ]
+  }
+}
