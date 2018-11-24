@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view>
+  <image src='./../../img/img01.png'></image>
+</view>
+<view>
+  Statring place :
+  <input type='text' nane="stare" id="stare" placeholder='起始地点' placeholder-style='color:#e2e2e2;'></input>
+  Destination :
+   <input type='text' naem="end" id='end' placeholder='终点' placeholder-style='color:#e2e2e2;'></input>
+</view>
