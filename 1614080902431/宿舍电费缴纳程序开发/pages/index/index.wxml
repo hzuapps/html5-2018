@@ -1,0 +1,17 @@
+
+<view class='under_line'></view>
+<view style='float: left' class='left'>
+  <scroll-view scroll-y scroll-with-animation scroll-left="{{scrollLength}}" class='scrollY' style='height: {{winHeight}}px'>
+    <view class='all clear'>
+      <block wx:key="lists" wx:for="{{lists}}">
+        <view bindtap='jumpIndex' data-menuindex='{{index}}'>
+          <view class='text-style'>
+            <text class="{{indexId==index?'active1':''}}">{{item}}</text>
+            <text class="{{indexId==index?'active':''}}"></text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+

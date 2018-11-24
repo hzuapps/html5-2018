@@ -1,0 +1,40 @@
+.under_line{
+  width: 100%;
+  border-top: 1rpx solid #efefef;
+}
+.scrollY {
+  width: 200rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1rpx solid #efefef;
+}
+ 
+.left {
+  border-top: 1rpx solid #efefef;
+  border-right: 1rpx solid #efefef;
+}
+ 
+.text-style {
+  width: 200rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+  font-size: 34rpx;
+  font-family: PingFangSC-Semibold;
+  color: rgba(51, 51, 51, 1);
+}
+ 
+.active1 {
+  color: #85d1fd;
+}
+ 
+.active {
+  display: block;
+  width: 50rpx;
+  height: 6rpx;
+  background: #85d1fd;
+  position: relative;
+  left: 75rpx;
+  bottom: 30rpx;
+}
