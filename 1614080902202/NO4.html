@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人简历</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css"/>
+	<script type="text/javascript" language="javascript">
+ 		function c()
+ 		{
+ 			for (i=0;i<3;i++)
+ 				if (f1.color[i].checked) {
+ 					document.body.style.background=f1.color[i].value;
+ 				}
+ 			
+ 		}
+ 	</script>
+ </head>
+ 
+ 	
+
+	<style type="text/css">
+		.a{flaot:left;padding:15px;}
+		.imgc{width:150px; height:100px;padding:10px;}
+		
+	</style>
+</head>
+<body>
+	
+
+<div class="page">
+    <div class="page__hd" >
+        <h2 class="page__title"><center>个人简历</center></h2>
+    </div>
+    <div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" style="background-color:#FFE97F">个人信息 &middot PERSONAL-INFORMATION</div>
+            <div class="weui-panel__bd">
+                    <div>
+						<div class="imgc"style="float:right;" >
+							<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1832039972,3772716853&fm=26&gp=0.jpg" width="140" height="120" border="2px soild">
+						</div >
+						<div class="a">
+							<p style="color:#1158ED;">&middot 姓&nbsp &nbsp &nbsp &nbsp名：亚索</p>
+							<p style="color:#1158ED;">&middot 学&nbsp &nbsp &nbsp &nbsp历：本科</p>
+							<p style="color:#1158ED;">&middot 性&nbsp &nbsp &nbsp &nbsp别：男</p>
+							<p style="color:#1158ED;">&middot 出生日期：2015.1.1</p>
+							<p style="color:#1158ED;">&middot 民&nbsp &nbsp &nbsp &nbsp族：汉</p>
+							<p style="color:#1158ED;">&middot 地&nbsp &nbsp &nbsp &nbsp址：惠州学院</p>
+							<p style="color:#1158ED;">&middot 联系电话：123321</p>
+							<p style="color:#1158ED;">&middot 电子邮件：4733121@qq.com</p>
+						</div>
+					</div>
+            </div>
+        </div><br><br>
+		<div class="page__bd">
+			<div class="weui-panel weui-panel_access">
+				<div class="weui-panel__hd" style="background-color:#FFE97F"><p style="color:#1E90FF;">求职意向 &middot  JOB-INTENSION</div>
+
+				<div class="weui-panel__bd"style="background-color: #FAFAFA;">
+						<div>
+							<div class="a">
+								<p style="color:#1158ED;"> &middot 程序员</p>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div><br><br>
+		<div class="page__bd">
+			<div class="weui-panel weui-panel_access">
+				<div class="weui-panel__hd" style="background-color:#FFE97F"><p style="color:#1E90FF;">个人技能 &middot PERSONAL-SKILL</p></div>
+				
+				<div class="weui-panel__bd"style="background-color: #FAFAFA;">
+						<div>
+							<p style="color:#1158ED;">&middot 熟悉java语言，会面向对象编程</p>
+							<p style="color:#1158ED;">&middot 掌握数据库，熟悉SOL语句</p>
+							<p style="color:#1158ED;">&middot 了解汇编语言</p>
+						</div>
+				</div>
+			</div>
+		</div>	<br><br>
+		<div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" style="background-color:#FFE97F"><p style="color:#1E90FF;">自我评价 &middot SELF-ASSESSMENT</p></div>
+            <div class="weui-panel__bd" style="padding:15px;background-color: #FAFAFF;" >
+                    <p style="color:#1158ED;">&middot 善于交流，积极向上</p>
+							<p style="color:#1158ED;">&middot 工作负责，责任感较强</p>
+							<p style="color:#1158ED;">&middot 接受新事物能力较强，学习能力强</p>
+            </div>
+        </div>
+		</div><br><br>
+		
+		<div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" style="background-color:#FFE97F"><p style="color:#1E90FF;">留言板 &middot	MESSAGE-BOARD</p></div>
+				
+		</div>
+		</div>
+				
+</div><br><br>
+
+ 
+<script type="text/javascript">
+     
+    
+     function tijiao(form){
+         var message=form.liuyan.value;
+         if (message=="") {
+             alert("留言不能为空！");
+             return false;
+         }
+     }
+
+ </script>
+ <div class="weui-flex__item">
+ 	<div class="placeholder" style="padding-left: 10px;">
+         <form action="#" method="get" >
+             <textarea id="liuyan" name="liuyan" class="weui-textarea" rows="3" style="font-size: 20px;" placeholder="请输入留言！"></textarea>
+             <input type="submit" name="subBtn" onclick="return tijiao(this.form)" class="weui-btn weui-btn_primary top1" value="提交留言" />
+         </form>
+     </div>		
+ </div>
+ <div class="page__bd">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" style="background-color:#FFFFFF"><a href="https://github.com/hzuljj"style="color:#1E90FF;">个人主页 &middot	PERSONAL-PAGE</a></div>
+        </div>
+		</div>
+		
+<form name="f1">
+ 		<input type="radio" name="color" value="#2DC5D1" onclick="c()">天蓝色
+ 		<input type="radio" name="color" value="#CA4B34" onclick="c()">酒红色
+ 		<input type="radio" name="color" value="#C97235" onclick="c()">棕黄色
+
+ 	</form>
+
+</body>
+</html>
