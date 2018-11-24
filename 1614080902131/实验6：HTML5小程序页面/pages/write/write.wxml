@@ -1,0 +1,11 @@
+<!--pages/write/write.wxml-->
+<view class="inputView" style="margin-top: 20% ">
+<input class="input" type="number" placeholder="标题" placeholder-style="color: #59CA97" bindinput="listenerPhoneInput" />
+</view>
+
+<view class="inputView">
+<input class="input2" password="true" placeholder="内容" placeholder-style="color: #59CA97" bindinput="listenerPhoneInput"/>
+</view>
+
+
+<button style="margin-left: 150rpx; margin-right: 150rpx; margin-top: 50rpx; border-radius: 40rpx" type="primary" bindtap="listenerLogin">确定</button>
