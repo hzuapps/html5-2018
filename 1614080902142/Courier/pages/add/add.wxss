@@ -1,0 +1,10 @@
+/* pages/add/add.wxss */
+
+.imagesize{
+ display:flex;                    
+ justify-content: center;         
+}
+.imagesize image { 
+  width:400rpx;
+  height:400rpx;
+  }

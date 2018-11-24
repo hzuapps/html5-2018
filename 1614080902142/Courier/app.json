@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/add/add",
+    "pages/task/task",
+    "pages/center/center",
+    "image"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#666666",
+    "navigationBarTitleText": "快送服务",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "image/add.png",
+        "selectedIconPath": "image/adds.png",
+        "pagePath": "pages/add/add",
+        "text": "增加"
+      },
+      {
+        "iconPath": "image/task.png",
+        "selectedIconPath": "image/tasks.png",
+        "pagePath": "pages/task/task",
+        "text": "订单"
+      },
+      {
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/users.png",
+        "pagePath": "pages/center/center",
+        "text": "我的"
+      }
+    ],
+    "backgroundColor": "#FFFFFF",
+    "color": "#666666"
+  }
+}
