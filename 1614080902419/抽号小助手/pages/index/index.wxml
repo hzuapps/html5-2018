@@ -1,0 +1,8 @@
+<view id='lowModel'>
+  <image class='levelPrize' src='/images/levelPrize.png'></image>
+  <button class='normalButton'>普通抽奖</button>
+</view>
+<view id='highterModel'>
+  <image class='higherPrize' src='/images/higherPrize.png'></image>
+  <button class='personalButton'>普通抽奖</button>
+</view>
