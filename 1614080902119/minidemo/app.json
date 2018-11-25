@@ -16,11 +16,6 @@
       "selectedIconPath": "pages/img/main2.jpg",
       "iconPath":"pages/img/main1.jpg",
       "text": "主页"
-    },{
-      "selectedIconPath": "pages/img/edit2.jpg",
-      "iconPath": "pages/img/edit1.jpg",
-      "pagePath": "pages/add/add",
-      "text": "编辑"
     },
     {
       "selectedIconPath": "pages/img/per2.jpg",

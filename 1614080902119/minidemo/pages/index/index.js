@@ -30,8 +30,26 @@ Page({
   edit(e) {
     var id = e.currentTarget.dataset.id;
     // 跳转 navigateTo
-    wx.navigateTo({
+   wx.navigateTo({
       url: '../add/add?id=' + id
+    })
+  },
+   dele(e){
+    var that = this;
+    var id = e.currentTarget.dataset.id;
+    var lists = that.data.lists;
+    wx.showModal({
+      title: '提示',
+      content: '确认撤回吗？',
+      success: function (res) {
+        if (res.confirm) {
+          console.log(id)
+          that.data.lists.splice(id, 1)
+          that.setData({
+            lists: that.data.lists
+          })
+        }
+      }
     })
   },
   /**
