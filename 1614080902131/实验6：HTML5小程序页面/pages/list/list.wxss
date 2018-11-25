@@ -1,0 +1,23 @@
+/* pages/list/list.wxss */
+.table{
+  border: 1px solid #59CA97
+}
+
+.tr{
+  width: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.th{
+  font-weight: 900;
+  background: #59CA97;
+  font-size: 14px;
+  color: rgb(0, 0, 0)
+}
+
+.th,.td{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
