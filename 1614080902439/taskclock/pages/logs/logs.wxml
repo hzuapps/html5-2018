@@ -1,0 +1,8 @@
+<block wx:if="{{logs.length}}">
+
+</block>
+<block wx:else>
+		<image class="nodata_img" src="../../image/nodata.png"></image>
+		<text class="nodata_text">暂无记录</text>	
+</block>
+
