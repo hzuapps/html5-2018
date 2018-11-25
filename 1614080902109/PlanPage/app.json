@@ -1,0 +1,42 @@
+{
+  "colors": [
+    "#000000",
+    "#5080A0"
+  ],
+  "pages": [
+    "pages/find/find",
+    "pages/local/local",
+    "pages/person/person",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#50BB88",
+    "list": [
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现计划",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/local/local",
+        "text": "本地计划",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "个人中心",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
+  }
+}
