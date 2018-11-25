@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "树洞",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "image/首页.png",
+        "iconPath": "image/首页.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "image/树洞.png",
+        "iconPath": "image/树洞.png",
+        "pagePath": "pages/logs/logs",
+        "text": "树洞"
+      },
+      {
+        "selectedIconPath": "image/我的.png",
+        "iconPath": "image/我的.png",
+        "pagePath": "pages/login/login",
+        "text": "我的"
+      }
+    ]
+  }
+}
