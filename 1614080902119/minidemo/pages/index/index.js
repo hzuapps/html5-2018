@@ -35,22 +35,36 @@ Page({
     })
   },
    dele(e){
-    var that = this;
-    var id = e.currentTarget.dataset.id;
-    var lists = that.data.lists;
-    wx.showModal({
-      title: '提示',
-      content: '确认撤回吗？',
-      success: function (res) {
-        if (res.confirm) {
-          console.log(id)
-          that.data.lists.splice(id, 1)
-          that.setData({
-            lists: that.data.lists
-          })
-        }
-      }
-    })
+     var id = e.currentTarget.dataset.id;
+     var arr=wx.getStorageSync('txt');
+     var arrs;
+     var that=this;
+     var f=1;
+     wx.showModal({
+       title: '提示',
+       content: '确认撤回吗？',
+       success: function (res) {
+         if (res.confirm) {
+           console.log(id)
+           arr.forEach((item, i) => {
+             if ((item.id) == id && f == 1) {
+               console.log(i);
+               arr.splice(i, 1);
+               wx.setStorageSync('txt', arr);
+               f = 0;
+             }
+           })
+           arrs = wx.getStorageSync('txt');
+           arrs.forEach((item, i) => {
+             var t = new Date(Number(item.time));
+             item.time = util.dateFormate(t);
+           })
+           that.setData({
+             lists: arrs
+           })
+         }
+       }
+     })
   },
   /**
    * 添加事件
