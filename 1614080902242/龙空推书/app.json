@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/rangings1/rangings1"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "LK",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selecctedColor": "#ffffff",
+    "backgroundColor": "#eeeeee",
+    "position": "bottom",
+    "list": [
+      
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/menuicon/home.png",
+        "selectedIconPath": "pages/img/menuicon/home2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "书籍",
+        "iconPath": "pages/img/menuicon/book.png",
+        "selectedIconPath": "pages/img/menuicon/book2.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "pages/img/menuicon/my.png",
+        "selectedIconPath": "pages/img/menuicon/my2.png"
+      }
+      
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+
+}
