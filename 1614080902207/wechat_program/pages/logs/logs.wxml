@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">日期</view>
+  </view>
+  <view class="weui-cell__bd">
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01"      bindchange="bindDateChange">
+    <view class="weui-input">{{date}}</view>
+   </picker>
+   </view>
+   <view class="countDownTimeView countDownAllView" >
+      <view class="voteText countDownTimeText">{{countDownDay}}天</view>
+   </view>
+</view>
