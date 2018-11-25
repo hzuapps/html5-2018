@@ -1,0 +1,20 @@
+<view>
+<swiper indicator-dots='true' autoplay='true' indicator-active-color='red' circular='true' previous-margin='10px' next-margin='10px' class='swiper1'>
+<swiper-item>
+<image class='picture1' src="{{imageUrl}}"></image>
+</swiper-item>
+<swiper-item>
+<image class='picture1' src="{{imageUrl1}}"></image>
+</swiper-item>
+</swiper>
+</view>
+<view>
+<view><text class='text1'>为你推荐</text></view>
+</view>
+<view>
+<view><image src='{{imageUrl2}}' class='picture2'></image><image src='{{imageUrl3}}' class='picture3'></image></view>
+</view>
+<view>
+<text class='text2'>Cocoon Crush</text>
+<text class='text3'>The Drought</text>
+</view>
