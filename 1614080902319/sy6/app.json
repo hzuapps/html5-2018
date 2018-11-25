@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/add/add",
+    "pages/add_lists/add_lists"
+  ],
+  "window": {
+    "navigationBarTitleText": "想看の作品"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/add/add",
+        "text": "Add新作品",
+        "iconPath": "pages/images/add1.png",
+        "selectedIconPath": "pages/images/add2.png"
+      },
+      {
+        "pagePath": "pages/add_lists/add_lists",
+        "text": "备忘列表",
+        "iconPath": "pages/images/add_lists3.png",
+        "selectedIconPath": "pages/images/add_lists1.png"
+
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

@@ -1,0 +1,17 @@
+<!--pages/add/add.wxml-->
+
+<view><text >该作品属于：</text></view>
+<view>
+<form bindsubmit="formSubmit">
+ <view class="layout_horizontal">
+    <view style="flex:1"><button class='shu' >书</button></view>
+    <view style="flex:1"><button class='shu' >电影</button> </view>
+    <view style="flex:1"><button class='shu' >TV，动画</button></view>
+ </view>
+
+  <input class='in ' name="zpname" maxlength="20" placeholder="请输入作品名" />
+  <textarea name="result" class='textIn' placeholder="这里可输入这部作品吸引你的理由" maxlength="100"></textarea>
+  <button class='butt' formType="submit">添加入备忘列表</button>
+  <button class='butt fButt' formType="reset">重置</button>
+</form>
+</view>
