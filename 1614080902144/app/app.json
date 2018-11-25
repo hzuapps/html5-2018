@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "小纸条",
+    "navigationBarTextStyle": "black"
+  }
+}
