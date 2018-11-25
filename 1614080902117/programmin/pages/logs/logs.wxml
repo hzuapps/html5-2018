@@ -1,2 +1,65 @@
 <!--logs.wxml-->
+	
+
+<view class="page">	
+    <view class="page__bd">      
+      <view>	
+            <view class="weui-panel__hd" id="hc">基本信息：</view>           	
+            <view class="weui-media-box_appmsg" >
+                <view class="weui-media-box__title" >性别：</view>
+                <view class="weui-media-box__desc" >男</view>
+            </view>
+            <view class="weui-media-box_appmsg" >
+                <view class="weui-media-box__title">毕业院校：</view>
+                <view class="weui-media-box__desc">惠州学院</view>
+            </view>
+            <view class="weui-media-box_appmsg">
+                <view class="weui-media-box__title">主修专业：</view>
+                <view class="weui-media-box__desc">软件工程</view>
+            </view>
+            <view class="weui-media-box_appmsg">
+                <view class="weui-media-box__title">学历：</view>
+                <view class="weui-media-box__desc">本科应届</view>
+            </view>
+            <view class="weui-media-box_appmsg">
+                <view class="weui-media-box__title" >学位：</view>
+                <view class="weui-media-box__desc" >学士</view>
+            </view>
+        </view>	
+        <view>
+            <view class="weui-panel__hd" id="hc">求职意向：</view> 
+           	<view class="weui-media-box__title" class="intext">JAVA开发工程师</view>
+        </view>
+        <view >
+            <view class="weui-panel__hd" id="hc">教育背景与工作经历：</view>
+            <view class="weui-media-box__title" class="intext">           
+                <view>熟悉Java语言，会面向对象编程。</view>
+					      <view>熟悉Html、CSS、JS，对html5有一定的了解。</view>
+					      <view>熟悉SQL语句，熟练操作MySQL和SqlSever数据库。</view>
+				        <view>了解C、C++等语言。</view>
+            </view>
+        </view>
+        <view>
+            <view class="weui-panel__hd" id="hc">自我评价、兴趣爱好：</view>
+            <view class="weui-media-box__title" class="intext">           
+                
+                	<view>工作认真负责，责任感强。</view>
+					        <view>积极乐观，善于交流。</view>
+					        <view>学习能力较强，做事细心。</view>
+					        <view>爱好软件事业，对从事IT行业的工作有浓厚的兴趣。</view>
+            </view>
+        </view>
+        <view>
+            <view class="weui-panel__hd" id="hc">联系方式：</view>
+            <view class="weui-media-box__title" class="intext">          
+                <view>手机号码：12345678</view>
+					      <view>邮箱：12345678@163.com</view>
+                
+				</view>
+    </view>
+    </view>
+         	                         	
+</view>
+	
+
 
