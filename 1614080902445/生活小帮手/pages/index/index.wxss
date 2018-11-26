@@ -1,0 +1,35 @@
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.board {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50rpx;
+    padding: 40rpx;
+}
+.board-item {
+    flex: 1;
+    cursor: pointer;
+    border: 1rpx solid #eee;
+    margin-top: 30rpx;
+    padding: 30rpx;
+    color:	#696969
+}
+.board-item image {
+    flex: 1;
+} 
+.board-item image {
+    height: 20rpx;
+    width: 20rpx;
+} 
+.images {
+    position: absolute;
+    right: 100rpx;
+    height: 50rpx;
+    width: 50rpx;
+}
