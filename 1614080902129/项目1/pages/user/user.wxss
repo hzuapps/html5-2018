@@ -1,0 +1,17 @@
+.index-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.index-container image{
+  width: 100%;
+  height: 550px;
+}
+
+.nickname{
+  position: absolute;
+  top: 170px;
+  left: 120px;
+  font-size: 25px;
+}
