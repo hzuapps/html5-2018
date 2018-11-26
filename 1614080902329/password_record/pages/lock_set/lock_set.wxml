@@ -1,0 +1,13 @@
+<!--pages/locker/locker.wxml-->
+<view class='page'>
+  <view class='hd'>
+    <!-- <text>{{lockType==1?'图案设置' : '图案解锁'}}</text> -->
+    <text class='c-link' wx:if="{{lockType==1}}" bindtap='reset'>重新设置</text>
+    <!-- <text class='c-link' wx:if="{{lockType==2}}" bindtap='forget'>忘记密码</text> -->
+  </view>
+  <view class='bd'>
+    <view class='title'>{{lockMsg}}</view>
+    <canvas canvas-id="canvas" class="canvas" bindtouchend="onTouchEnd"
+      bindtouchstart="onTouchStart" bindtouchmove="onTouchMove"></canvas>
+  </view>
+</view>

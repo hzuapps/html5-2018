@@ -7,11 +7,11 @@ Page({
   data: {
     closeTime: null,
     tipStatus: false,
-    tip: ""
+    tip: "",
+    impTip: ""
   },
   //处理表单发送的数据
   formSubmit: function (res) {
-    console.log("执行表单")
     let val = res.detail.value
     clearTimeout(this.closeTime)
     //判断数据的合法性
@@ -65,7 +65,7 @@ Page({
         if (rJson[val.title]) {
           wx.showModal({
             title: '覆盖信息',
-            content: val.title + '已经备忘，是否覆盖',
+            content: '<' + val.title + '>已经备忘，是否覆盖',
             confirmText: "是",
             cancelText: "否",
             success: function(res) {
@@ -105,25 +105,41 @@ Page({
       })
     }, 2000)
   },
+  tipShow(){
+    //用有无tip文件判断配置信息
+    const fileSys = wx.getFileSystemManager()
+    try {
+      fileSys.readFileSync(`${wx.env.USER_DATA_PATH}/tip`, "utf8")
+      //有，执行这里
+      this.setData({
+        impTip: ""
+      })
+    } catch (e) {
+      //无，提示
+      this.setData({
+        impTip: '*强烈建议先看下方导航“我”>“帮助文档”中的重要声明'
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.tipShow()
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-
+   
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    this.tipShow()
   },
 
   /**

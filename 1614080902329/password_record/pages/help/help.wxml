@@ -1,0 +1,48 @@
+<!--pages/help/help.wxml-->
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">重要声明</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">安全性</view>
+      <view class="weui-media-box__desc">世界上没有破解不了的信息，所以在这之上的所有信息都不完全安全，请尽量使用备注助记方式使用本小程序</view>
+    </view>
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">持久化</view>
+      <view class="weui-media-box__desc">本小程序使用本地化存储，所以请勿删除本小程序的本地文件，如果删除将导致备忘遗失</view>
+    </view>
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">删除</view>
+      <view class="weui-media-box__desc">请勿删除本小程序，删除操作将导致本地化文件一同删除</view>
+    </view>
+        <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">进入密码</view>
+      <view class="weui-media-box__desc">开启进入密码开关后，必须设置进入密码，否则操作无效</view>
+    </view>
+        <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">保密问题</view>
+      <view class="weui-media-box__desc">如果不设置保密问题，默认为空，这样不但不安全，而且不利于以后找回密码</view>
+    </view>
+  </view>
+</view>
+
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">隐秘功能解释</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">新密码页下方提示</view>
+      <view class="weui-media-box__desc">用户可以在“我”>“设置”中选择是否提示</view>
+    </view>
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">备忘密码页删除功能</view>
+      <view class="weui-media-box__desc">需要长按有图标的长方形框，即可执行删除操作</view>
+    </view>
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">覆盖功能</view>
+      <view class="weui-media-box__desc">本小程序的覆盖功能是根据是否同一标题进行判断的，如果本地有此标题，则提示覆盖信息</view>
+    </view>
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__title weui-media-box__title_in-text">密码必要性</view>
+      <view class="weui-media-box__desc">本小程序的密码必须要有标题、用户名和密码三要素，备注可以不写</view>
+    </view>
+  </view>
+</view>

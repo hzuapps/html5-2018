@@ -1,0 +1,27 @@
+<!--pages/momee_set/mome_set.wxml-->
+<form bindsubmit="formSubmit">
+<view class="weui-cells__title">请输入保密信息</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">保密问题</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker name="pro" bindchange="bindProChange" value="{{proIndex}}" range="{{proes}}">
+        <view class="weui-select weui-select_in-select-after">{{proes[proIndex]}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">输入答案</view>
+  </view>
+  <view class="weui-cell__bd">
+    <input class="weui-input" name="ans" value='{{lans}}'/>
+  </view>
+</view>
+</view>
+<view class="weui-btn-area">
+  <button class="weui-btn" formType="submit" >确定</button>
+</view>
+</form>

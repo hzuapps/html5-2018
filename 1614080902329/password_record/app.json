@@ -4,16 +4,23 @@
     "pages/new_pw/new_pw",
     "pages/save_pw/save_pw",
     "pages/me/me",
-    "pages/modify_pw/modify_pw"
+    "pages/modify_pw/modify_pw",
+    "pages/author/author",
+    "pages/help/help",
+    "pages/setting/setting",
+    "pages/lock/lock",
+    "pages/mome_set/mome_set",
+    "pages/lock_set/lock_set",
+    "pages/mome/mome"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#E1846E",
-    "navigationBarTitleText": "密码备忘录",
+    "navigationBarBackgroundColor": "#A1ADFF",
+    "navigationBarTitleText": "密码不再忘",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor": "#E1846E",
+    "selectedColor": "#7284f8",
     "list": [
       {
         "pagePath": "pages/new_pw/new_pw",

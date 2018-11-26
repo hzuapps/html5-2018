@@ -1,4 +1,4 @@
-// pages/new_pw/new_pw.js
+// pages/modify_pw/modify_pw.js
 Page({
 
   /**
@@ -71,7 +71,7 @@ Page({
         if (rJson[val.title] && !(val.title == this.data.tit)) {
           wx.showModal({
             title: '覆盖信息',
-            content: val.title + '已经备忘，是否覆盖',
+            content: '<' + val.title + '>已经备忘，是否覆盖',
             confirmText: "是",
             cancelText: "否",
             success: function (res) {
@@ -84,11 +84,11 @@ Page({
             }
           });
         } else {
+          delete rJson[this.data.tit]//删除
           rJson[val.title] = json
           saveJson(rJson)
           successTip("修改成功")
         }
-        //捕获readFileSync异常，说明没有创建importance.importance
       } catch (e) {
         let tJson = {}
         tJson[val.title] = json
@@ -142,7 +142,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.initMsg()
+    
   },
 
   /**
@@ -156,7 +156,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.initMsg()
   },
 
   /**

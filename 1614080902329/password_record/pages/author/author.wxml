@@ -1,0 +1,28 @@
+<!--pages/author/author.wxml-->
+<view class="weui-cells__title">个人</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">Orange</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__ft">惠州学院信息科学技术学院大三老腊肉</view>
+  </view>
+</view>
+<view class="weui-cells__title">联系</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">QQ邮箱</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__ft">1943199735@qq.com</view>
+  </view>
+</view>
+<view class="weui-cells__title">指导老师</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">ZSN</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__ft">公众号：WeScholar</view>
+  </view>
+</view>

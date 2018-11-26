@@ -26,6 +26,25 @@ Page({
           this.setData({
             isAuthorize: true
           })
+          
+          // 获取用户数据
+          wx.getUserInfo({
+            success: (res) => {
+              let info = res.userInfo
+              //将用户数据缓存一份供其它页面使用
+              wx.setStorage({
+                key: "userInfo",
+                data: info
+              })
+              if (info) {
+                this.setData({
+                  isAuthorize: true,
+                  userInfo: info
+                })
+              }
+            }
+          })
+
           // 未授权
         } else {
           this.setData({
@@ -34,29 +53,20 @@ Page({
         }
       }
     })
-    // 获取用户数据
-    wx.getUserInfo({
-      success: (res) => {
-        let info = res.userInfo
-        //将用户数据缓存一份供其它页面使用
-        wx.setStorage({
-          key: "userInfo",
-          data: info
-        })
-        if (info) {
-          this.setData({
-            isAuthorize: true,
-            userInfo: info
-          })
-        }
-      }
-    })
+    
   },
   // 导航进入tab页
   toNewPw() {
-    wx.switchTab({
-      url: '/pages/new_pw/new_pw',
-    })
+    let pwd = wx.getStorageSync('locker_password') || '';
+    if (pwd == ''){
+      wx.switchTab({
+        url: '/pages/new_pw/new_pw',
+      })
+    }else{
+      wx.redirectTo({
+        url: '/pages/lock/lock'
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

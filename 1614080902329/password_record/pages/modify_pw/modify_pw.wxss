@@ -1,4 +1,4 @@
-/* pages/new_pw/new_pw.wxss */
+/* pages/modify_pw/modify_pw.wxss */
 page {
   display: flex;
   flex-direction: column;
@@ -8,13 +8,14 @@ page {
 }
 
 .in {
+  color: #7284f8;
   width: 88%;
   margin: 50rpx 2.5%;
   padding: 3%;
   height: 1.7em;
   line-height: 1.7em;
   font-size: 1em;
-  border: 1rpx solid #217360;
+  border: 1rpx solid #A1ADFF;
   border-radius: 0.8em;
 }
 
@@ -23,12 +24,13 @@ page {
 }
 
 .textIn {
+  color: #7284f8;
   width: 88%;
   margin: 50rpx 2.5%;
   padding: 3%;
   height: 5em;
   font-size: 34rpx;
-  border: 1rpx solid #217360;
+  border: 1rpx solid #A1ADFF;
   border-radius: 0.8em;
 }
 
@@ -36,9 +38,13 @@ page {
   height: 1em;
   text-align: center;
   font-size: 34rpx;
-  color: #217360;
 }
 
 .submitBut {
   width: 95%;
+  color: #ffffff;
+  background-color: #b0bafd;
+}
+.submitBut:active {
+   background-color: #919de7;
 }
