@@ -14,7 +14,6 @@ Page({
     let that = this;
     this.setData({ lockType: 1 , ftHeight: ftHeight });
 
-    //
     this.lock = new Locker(this, {
       id: 'canvas',
       lockType: this.data.lockType,
@@ -29,10 +28,10 @@ Page({
             url: '/pages/mome_set/mome_set'
           })
         } else {
-          console.log("密码解锁成功!");
-          wx.switchTab({
-            url: '/pages/new_pw/new_pw',
-          })
+          // console.log("密码解锁成功!");
+          // wx.switchTab({
+          //   url: '/pages/new_pw/new_pw',
+          // })
         }
       }
     });
@@ -40,16 +39,16 @@ Page({
   reset(e) {
     this.lock.reset();
   },
-  forget(e) {
-    let that = this;
-    wx.showModal({
-      content: '确定要重置密码吗?',
-      success: (res) => {
-        if (res.confirm) {
-          that.setData({ lockType: 1 });
-          that.lock.changeLockType(1);
-        }
-      }
-    })
-  }
+  // forget(e) {
+  //   let that = this;
+  //   wx.showModal({
+  //     content: '确定要重置密码吗?',
+  //     success: (res) => {
+  //       if (res.confirm) {
+  //         that.setData({ lockType: 1 });
+  //         that.lock.changeLockType(1);
+  //       }
+  //     }
+  //   })
+  // }
 })

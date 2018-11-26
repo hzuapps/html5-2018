@@ -9,7 +9,7 @@ Page({
     proIndex: 0,
   },
   bindProChange: function (e) {
-    console.log('picker country 发生选择改变，携带值为', e.detail.value);
+    console.log('picker 发生选择改变，携带值为', e.detail.value);
 
     this.setData({
       proIndex: e.detail.value
@@ -24,6 +24,7 @@ Page({
       ans = wx.getStorageSync('ans')
       console.log("get",info.pro)
       console.log("get",info.ans)
+      //判断忘记密码信息
       if(info.pro == pro && info.ans == ans){
         wx.showModal({
           content: '信息正确，请到设置中重新设置图形密码',

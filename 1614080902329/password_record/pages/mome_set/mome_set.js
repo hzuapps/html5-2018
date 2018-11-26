@@ -10,7 +10,7 @@ Page({
     lans: ''
   },
   bindProChange: function (e) {
-    console.log('picker country 发生选择改变，携带值为', e.detail.value);
+    console.log('picker 发生选择改变，携带值为', e.detail.value);
 
     this.setData({
       proIndex: e.detail.value
@@ -28,6 +28,7 @@ Page({
       success: function (res) {
         if (res.confirm) {
           console.log('用户点击确定')
+          //向前退两级
           wx.navigateBack({
             delta: 2
           })
@@ -35,6 +36,7 @@ Page({
       }
     });
   },
+  //初始化状态
   initInfo(){
     let pro = 0
     let ans = ''

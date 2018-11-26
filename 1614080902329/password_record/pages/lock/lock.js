@@ -14,7 +14,6 @@ Page({
     let that = this;
     this.setData({ lockType: 2 , ftHeight: ftHeight });
 
-    //
     this.lock = new Locker(this, {
       id: 'canvas',
       lockType: this.data.lockType,
@@ -24,10 +23,11 @@ Page({
       onSuccess: (e) => {
         // console.log("onSuccess: ", e);
         if (e.lockType == "1") {
-          console.log("密码设置成功，密码为：", e.lockPwd);
-          that.setData({ lockType: 2 });
-          that.lock.changeLockType(2);
+          // console.log("密码设置成功，密码为：", e.lockPwd);
+          // that.setData({ lockType: 2 });
+          // that.lock.changeLockType(2);
         } else {
+          //解锁成功跳转页面
           console.log("密码解锁成功!");
           wx.switchTab({
             url: '/pages/new_pw/new_pw',
@@ -39,6 +39,7 @@ Page({
   reset(e) {
     this.lock.reset();
   },
+  //忘记密码执行
   forget(e) {
     let that = this;
     wx.navigateTo({
