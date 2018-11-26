@@ -5,32 +5,26 @@ input{
   border-left:0px; 
   border-right:0px;
   padding-left: 5px;
-}
-.date{
-  font-size: 20px;
-  font-weight: bold;
-  padding-bottom: 7px;
-  padding-top: 20px;
-  padding-left: 5px;
+  margin-bottom: 6px;
 }
 .feel{
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 7px;
+  padding-bottom: 9px;
   padding-top: 20px;
   padding-left: 5px;
 }
 .do{
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 7px;
+  padding-bottom: 9px;
   padding-top: 20px;
   padding-left: 5px;
 }
 .think{
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 7px;
+  padding-bottom: 9px;
   padding-top: 20px;
   padding-left: 5px;
 }
