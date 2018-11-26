@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/gift/gift",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "生日礼物买什么",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#8dda4c",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "挑选礼物",
+        "iconPath": "pages/img/智能优化.png",
+        "selectedIconPath": "pages/img/智能优化 (1).png"
+      },
+      {
+        "pagePath": "pages/gift/gift",
+        "text": "礼物",
+        "iconPath": "pages/img/怎么玩.png",
+        "selectedIconPath": "pages/img/怎么玩 (1).png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "pages/img/亲子.png",
+        "selectedIconPath": "pages/img/亲子 (1).png"
+      }
+    ]
+  }
+}
