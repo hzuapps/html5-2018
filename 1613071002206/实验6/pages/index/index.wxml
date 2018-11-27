@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="pages">
+<view class="weui-cells_title" style="color:#d4237a">请开始您的吐槽</view>
+<view class="weui-cells weui-cells_form">
+
+<view class="weui-cell">
+<view class="weui-cell_bd">
+<textarea class="weui-textarea"placeholder="请输入文本" rows="3"></textarea>
+<view class="weui-textarea-counter">_</view>
+</view>
+</view>
+</view>
+<view class="button-sp-area">
+      <button class="weui-btn" type="primary" plain="true" style="color:purple;border-color:#d4237a;" bindtap="openToast">确定</button>
+    </view>
+</view>
