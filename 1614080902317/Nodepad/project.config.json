@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.0",
-	"appid": "wxe1e858a2f7ed6376",
+	"appid": "wx8ea725e6fe75ea04",
 	"projectname": "Nodepad",
 	"debugOptions": {
 		"hidedInDevtools": []

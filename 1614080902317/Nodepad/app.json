@@ -6,12 +6,12 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#F0FFFF",
+    "navigationBarBackgroundColor": "#46A3FF",
     "navigationBarTitleText": "美食家",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "selectedColor": "#2e5e86",
+    "selectedColor": "#46A3FF",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -21,9 +21,9 @@
       },
       {
         "pagePath": "pages/home/home",
-        "text": "个人中心",
-        "iconPath": "image/person.png",
-        "selectedIconPath": "image/person.png"
+        "text": "查找",
+        "iconPath": "image/select.png",
+        "selectedIconPath": "image/select.png"
       }
     ]
   }

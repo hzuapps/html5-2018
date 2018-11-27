@@ -62,6 +62,6 @@ swiper image{
   line-height: 1.5;
 }
 
-.pro-footer{
+/* .pro-footer{
   overflow:
-}
+} */
