@@ -1,0 +1,10 @@
+<view class='container'>
+  <image class='detail-image' src='{{movie.images.small}}'></image>
+
+  <text style='font-weight:bold; font-size:50rpx'>{{movie.title}}</text>
+  <text>想看：{{movie.wish_count}}</text>
+  <text>看过：{{movie.collect_count}}</text>
+  <text>评分：{{movie.rating.average}}</text>
+  <text>简介：{{movie.summary}}</text>
+
+</view>
