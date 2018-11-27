@@ -1,0 +1,5 @@
+<form bindsubmit="formSubmit" bindreset="formReset">    
+ <input type="text" class="input-text" name="q" placeholder="请输入问题" />    
+
+         <button formType="submit">提交</button>    
+  </form>   
