@@ -1,5 +1,4 @@
-
-.welcome{
+.welcome {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +23,9 @@
   margin-top: 10px;
 }
 
-.button-sp-area{
-    margin: 0 auto;
-    padding-top: 15px;
-    width: 60%;
-    margin-top: 10px;
+.button-sp-area {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 60%;
+  margin-top: 10px;
 }
