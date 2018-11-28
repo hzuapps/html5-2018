@@ -1,0 +1,8 @@
+<image src="/images/hh.jpg" >
+</image>
+<view>
+<label style="color:{{color}};">欢迎来到‘计算器财富’小程序</label>
+<button bindtap="clickRed">变红</button>
+<button bindtap="clickgreen">变蓝</button>
+<button bindtap="bindViewTap">进入计算页面</button>
+</view>

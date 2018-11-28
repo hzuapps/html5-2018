@@ -56,7 +56,7 @@
 
 <view class='item blue' bindtap='clickButton' id="{{dot}}">.</view>
 
-<view class='item blue' bindtap='clickButton' id="{{history}}">History</view>
+<view class='item blue' bindtap='clickButton' id="{{history}}">...</view>
 
 <view class='item orange' bindtap='clickButton' id="{{equ}}">=</view>
 
