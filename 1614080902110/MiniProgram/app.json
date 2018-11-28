@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/ccc/ccc",
+    "pages/xxx/xxx",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "潮牌小掌柜",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页" 
+    },
+    {
+    "pagePath": "pages/ccc/ccc",
+    "text": "分类"
+  },
+  {
+    "pagePath": "pages/xxx/xxx",
+    "text": "我的"
+  }
+    ]
+  }
+}
