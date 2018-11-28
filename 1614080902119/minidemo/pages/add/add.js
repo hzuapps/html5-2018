@@ -75,6 +75,7 @@ function getData(id, page) {
  */
 function setValue(page) {
   var arr = wx.getStorageSync('txt');
+  console.log(arr);
   var data = [], flag = true;
   if (arr.length) {
     arr.forEach(item => {
