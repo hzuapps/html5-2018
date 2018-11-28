@@ -1,2 +1,20 @@
 <!--pages/menu/menu.wxml-->
-<text>菜单功能后续将开发</text>
+<view class="menu">
+  <scroll-view scroll-y class="item-wrapper" style="height:{{scroll_height}}rpx;">
+    <view class="item-list" wx:for="{{itemData}}" wx:for-item="item" wx:for-index="index" wx:key="that">
+      <view class="item-info" data-index="{{index}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style="left:{{item.left + 'rpx'}}">
+        <view class="info-wrapper">
+          <view class="info-desc">
+            <view class="name">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="item-oper">
+        <view class="oper-delete" bindtap="itemDelete" data-index="{{index}}">删除</view>
+      </view>
+    </view>
+  </scroll-view>
+  <cover-view class="page__bd page__bd_spacing" style="position:fixed; bottom:0; margin-top:10rpx; width:100%">
+    <button class="weui-btn" type="primary" bindtap='addMenu'>添加菜单</button>
+  </cover-view>
+</view>

@@ -1,1 +1,41 @@
-<text>更多界面及功能后续将开发</text>
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权信息</button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+<view class="weui-cells__title" style='margin-top:10px;'>个人</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator url="../index/index" class="weui-cell weui-cell_access" hover-class="weui-cell_active" open-type='switchTab'>
+    <view class="weui-cell__hd">
+      <image src="../../Image/icon/icon_homeL.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">我的首页</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+  <navigator url="../menu/menu" class="weui-cell weui-cell_access" hover-class="weui-cell_active" open-type='switchTab'>
+    <view class="weui-cell__hd">
+      <image src="../../Image/icon/icon_menuL.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">我的菜单</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+  <navigator url="../add/add" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../Image/icon/icon_add.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">添加菜单</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+</view>
+<view class="weui-cells__title" style='margin-top:10px;'>关于</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator url="../aboutMe/aboutMe" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../Image/icon/icon_user.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">关于作者</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+</view>

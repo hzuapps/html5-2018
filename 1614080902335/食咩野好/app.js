@@ -1,8 +1,8 @@
 //app.js
+import Touches from './utils/Touches.js'
 
 App({
-  topText: ["黄焖鸡米饭", "荷叶饭", "隆江猪脚饭"],
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -34,8 +34,22 @@ App({
         }
       }
     })
+    if(wx.getStorageSync('menu')==""){
+    wx.setStorageSync('menu', this.globalData.topText)}
+    else{
+      this.globalData.topText = wx.getStorageSync('menu')
+    }
   },
+
   globalData: {
-    userInfo: null
-  }
+    userInfo: null,
+    topText: [{
+        name: '菜单左滑可以删除哦'
+      },
+      {
+        name: '添加好菜单就去首页吧'
+      }
+    ],
+  },
+  Touches: new Touches()
 })

@@ -22,12 +22,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color:  #000;
+  color: #000;
 }
 
-.imageText1{
+.imageText1 {
   width: 200px;
-  height: 0px;  
+  height: 0px;
   position: absolute;
   left: 0;
   top: 0;
@@ -39,9 +39,9 @@
   color: #aaa;
 }
 
-.imageText2{
+.imageText2 {
   width: 200px;
-  height: 0px;  
+  height: 0px;
   position: absolute;
   left: 0;
   top: 0;
@@ -50,11 +50,12 @@
   margin: auto;
   text-align: center;
   font-size: 27px;
-  color: #1AAD19;
+  color: #1aad19;
 }
-.imageText3{
+
+.imageText3 {
   width: 200px;
-  height: 0px;  
+  height: 0px;
   position: absolute;
   left: 0;
   top: 75px;
@@ -66,14 +67,14 @@
   color: #aaa;
 }
 
-.choose{
+.choose {
   position: relative;
   width: 300px;
   height: 200px;
   margin-top: 5px;
 }
 
-.controls{
+.controls {
   width: 100%;
   height: 100px;
   display: flex;
@@ -81,24 +82,24 @@
   margin-top: 10px;
 }
 
-.add{
+.add {
   padding-left: 13%;
   display: flex;
   flex-direction: column;
 }
 
-.play{
+.play {
   padding-left: 25%;
   display: flex;
   flex-direction: column;
 }
 
-.play text{
+.play text {
   size: 1px;
   color: #aaa;
 }
 
-.add text{
+.add text {
   size: 1px;
-  color:#aaa;
+  color: #aaa;
 }
