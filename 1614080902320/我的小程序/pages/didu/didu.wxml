@@ -1,0 +1,6 @@
+<view class='container'>
+  <image class='didu-banner' src="/images/1.jpg"></image>
+  <text class='didu-font'>这是蔡雯的狗子</text>
+  <navigator url='/pages/write/write' hover-class='nav-hover'>记录今天</navigator>
+</view>
+

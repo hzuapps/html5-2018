@@ -1,0 +1,9 @@
+Page({
+  data:{
+    today:{
+      date:"出生第一天",
+      diary:"啊，终于出生了呢",
+      imagePath:"/images/1.jpg"
+    }
+  }
+})
