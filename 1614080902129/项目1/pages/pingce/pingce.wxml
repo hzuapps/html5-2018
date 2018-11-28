@@ -1,0 +1,5 @@
+
+<button type="primary" bindtap="getNetWorkType">获取网络类型</button>
+<button type="primary" bindtap="getSystemInfo">获取设备信息</button>
+<button type="primary" bindtap="onAccelerometerChange">监听重力感应数据</button>
+<button type="primary" bindtap="onCompassChange">监听罗盘数据</button>
