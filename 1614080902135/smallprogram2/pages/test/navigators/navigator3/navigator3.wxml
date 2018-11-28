@@ -1,7 +1,0 @@
-<view class="container" class="zn-uploadimg">  
-    <button type="primary"bindtap="modalinput">留言板</button>   
-   </view>    
-  <modal id="modal" hidden="{{hiddenmodalput}}" title="留言信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
-      <input type='text' placeholder="请留言" auto-focus/>
-   
-  </modal>
