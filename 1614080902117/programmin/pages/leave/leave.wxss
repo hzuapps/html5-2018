@@ -1,1 +1,24 @@
 /* pages/leave/leave.wxss */
+
+
+.list-view{
+  margin: 10px 10px 0 10px;
+}
+.item{
+  overflow: hidden;
+  border-bottom: 1px dashed #ccc;
+  height: 50px;
+  line-height: 20px;
+}
+.text1{
+  float: left;
+  font-size: 15px;
+  color: rgb(104, 103, 103);
+  text-indent: 2em;
+}
+.close-btn{
+  float: right;
+  margin:5px 5px 0 0;
+}
+
+
