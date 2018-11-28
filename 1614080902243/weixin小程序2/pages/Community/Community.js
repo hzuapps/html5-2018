@@ -1,66 +1,77 @@
 // pages/Community/Community.js
+var app = getApp();
+var n = null;
+var list = null;
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    inputVal: '',
+    msgData: [],
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-  
+    console.log('onLoad')
+    console.log('读取缓存成功')
+    var that = this;
+    wx.getStorage({
+      //获取数据的key
+      key: 'msgData',
+      success: function (res) {
+        that.setData({
+          msgData: res.data
+        })
+      }
+    });
+    
+
+  },
+  onShow() { 
+    this.onLoad()
+  },
+  /**
+   * 新增笔记事件
+   */
+  onNewItem: function (event) {
+    wx.navigateTo({
+      url: "../create/create"
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
 
   /**
-   * 生命周期函数--监听页面显示
+   * 编辑笔记事件
    */
-  onShow: function () {
-  
-  },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
+  delMsg(ev) {
+    n = ev.target.dataset.index;
+    list = this.data.msgData;
+    var that = this;
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
+    wx.showModal({
+      title: '提示!',
+      content: '是否删除笔记',
+      success(res) {
+        if (res.confirm) {
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
+          list.splice(n, 1);
+          that.setData({
+            msgData: list
+          });
+          wx.setStorage({
+            key: "msgData",
+            data: list,
+            success: function (res) {
+              console.log('删除缓存成功')
+            }
+          });
+        }
+      },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+    });
+  },
   
-  }
+  
 })
+
+   
+  

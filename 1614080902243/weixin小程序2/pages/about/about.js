@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-   message:""
+   message:"",
+    open: false
 
   },
 
@@ -80,6 +81,7 @@ getValue: function (e) {
         duration: 2000,
 
       })
+      return;
       
     }else{
     wx.showToast({
@@ -87,6 +89,21 @@ getValue: function (e) {
       icon: 'success',
       duration: 2000
     })
+    return ;
+    }
+  },
+
+
+
+   tap_ch: function (e) {
+    if (this.data.open) {
+      this.setData({
+        open: false
+      });
+    } else {
+      this.setData({
+        open: true
+      });
     }
   }
 })
