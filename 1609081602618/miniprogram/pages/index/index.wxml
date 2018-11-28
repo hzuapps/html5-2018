@@ -1,0 +1,36 @@
+<view class='top'>
+  <view class='title'>附近插座</view>
+  <view class='refresh'>刷新</view>
+</view>
+<view class='detail' bindtap='pay1'>
+  <view class='imgDiv'>
+    <image class='img' src='/images/chazuo2.png' wx:if="{{!use1}}"></image>
+    <image class='img active' src='/images/chazuo3.png' wx:else></image>
+  </view>
+  <view class='desc'>
+    <view>1号插座</view>
+    <view>插座编号：00000000001</view>
+    <view>收费模式：<text style='color:red'>按电量收费</text></view>
+    <view wx:if="{{!use1}}">插座状态：<text style='color:#1afa29'>空闲中</text></view>
+    <view wx:if="{{use1}}">插座状态：<text style='color:red'>使用中</text></view>
+    <view></view>
+    <view></view>    
+  </view>
+  <view class='use' wx:if="{{!use1}}" catchtap="use1">使用</view>
+</view>
+<view class='detail' bindtap='pay2'>
+  <view class='imgDiv'>
+    <image class='img' src='/images/chazuo2.png' wx:if="{{!use2}}"></image>
+    <image class='img active' src='/images/chazuo3.png' wx:else></image>
+  </view>
+  <view class='desc'>
+    <view>2号插座</view>
+    <view>插座编号：00000000002</view>
+    <view>收费模式：<text style='color:red'>按电量收费</text></view>
+    <view wx:if="{{!use2}}">插座状态：<text style='color:#1afa29'>空闲中</text></view>
+    <view wx:if="{{use2}}">插座状态：<text style='color:red'>使用中</text></view>
+    <view></view>
+    <view></view>    
+  </view>
+  <view class='use' wx:if="{{!use2}}" catchtap="use2">使用</view>
+</view>

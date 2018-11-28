@@ -1,0 +1,60 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20rpx 0;
+  align-items: center;
+}
+
+.title {
+  padding: 10rpx;
+  margin-left: 20rpx;
+  border-right: 4px solid #ccc;
+  font-weight: bold;
+}
+
+.refresh {
+  margin-right: 30rpx;
+  background-color: #00e3e3;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10rpx 20rpx;
+  box-shadow: 0 2px 7px rgba(0,0,0,.25);
+}
+.detail{
+  width: 600rpx;
+  padding: 20rpx;
+  margin: 20rpx auto;
+  box-shadow:0 2px 7px rgba(0,0,0,.25);
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.desc{
+  font-size: 30rpx;
+  color:#666;
+  line-height: 50rpx;
+  margin: 0 20rpx;
+}
+
+.active{
+  animation: mymove 3s linear infinite;
+}
+
+@keyframes mymove
+{
+from {transform:rotate(0deg)}
+to {transform:rotate(360deg)}
+}
+
+.use{
+  color:#666;
+  font-size: 30rpx;
+  padding: 20rpx;
+  border-radius: 20%;
+  border: 1px solid #ccc;
+}
