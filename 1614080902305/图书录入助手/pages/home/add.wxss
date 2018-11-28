@@ -1,0 +1,12 @@
+/* pages/help/help.wxss */
+.addImg image {
+  width: 128rpx;
+  height: 128rpx;
+}
+.line{
+width:100%;
+
+height:2rpx;
+
+background:#aaa
+}

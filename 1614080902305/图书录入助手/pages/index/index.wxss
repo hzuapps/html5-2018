@@ -1,21 +1,17 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.page{background: #f4f4f4; font-size: 14px;}
+.hd{
+  padding: 20px; height:20px; line-height: 20px; 
+  position: relative; text-align: center;
+  margin-bottom: 20px;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.c-link{color:#576b95; height: 20px; position:absolute; right:20px; top:20px;}
+.title{font-size: 17px; height: 30px; line-height: 30px; text-align: center}
+.canvas {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
 }
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
+.ft{background:#fff; height:30px;}
+.box{padding: 15px; display: flex; flex-direction: column}

@@ -215,6 +215,7 @@ var Locker = class {
             self.lockMsg = "图案解锁成功";
             self.drawStatusPoint(self.successColor);
             success = true;
+            
           } else {
             self.drawStatusPoint(self.errorColor);
             self.lockMsg = "图案错误, 请重新绘制";
