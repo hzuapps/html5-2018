@@ -1,0 +1,20 @@
+{
+  "navigationBarTitleText": "图书录入助手",
+"tabBar": {
+  "selectedColor": "#1296db",
+  "list": [
+    {
+      "pagePath": "pages/home/home",
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/setting/setting",
+      "text": "设置"
+    },
+    {
+      "pagePath": "pages/help/help",
+      "text": "帮助"
+    }
+  ]
+}
+}
