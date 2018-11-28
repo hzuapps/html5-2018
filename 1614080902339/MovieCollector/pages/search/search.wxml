@@ -1,2 +1,26 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<input placeholder="请输入电影名称" bindinput='input'/>  
+<button class='btnSearch' type="primary" bindtap="btnClick"> 查询 </button>
+
+<view class='items-list'>
+  <view class='mov-item' wx:for="{{movieInfo.subjects}}">
+    <image class='mov-poster' src='{{item.images.medium}}'></image>
+    <view class='mov-body'>
+      <view class='mov-title'>名称：{{item.title}}</view>
+      <view>
+        <text class="mov-desc">主演：</text>
+        <text class="mov-desc" wx:for="{{item.casts}}">{{item.name}} </text>
+      </view>
+      <view>
+        <text class="mov-desc">导演：</text>
+        <text class="mov-desc" wx:for="{{item.directors}}">{{item.name}} </text>
+      </view>
+      <view>
+        <text class="mov-desc">类型：</text>
+        <text class="mov-desc" wx:for="{{item.genres}}">{{item}} </text>
+      </view>
+      <view class='mov-desc'>年份：{{item.year}}年</view>
+      <view class='mov-desc'>评分：{{item.rating.average}}</view>
+      
+    </view>
+  </view>
+</view>
