@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="title">
+  <text class="usermotto">猜猜歇后语</text>
+</view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+      <view class="instrument">
+      <button class='bt1'>玩法</button>
+    </view>
+    
+    <view>
+      <button class='bt' bindtap='bd1' >开始答题</button>
+    </view>
+  
+
+  </view>
+
+
