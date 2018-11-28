@@ -1,0 +1,51 @@
+<form bindsubmit="formSubmit">
+    <view class="txt">
+      <view class="ima"></view>
+      <view class="txt2">书名</view>
+      <input placeholder="请输入书名" maxlength="10" class="txt3" value="{{mem_name}}" bindchange="name" name="name2"/>
+    </view>
+    
+    <view class="txt">
+      <view class="ima"></view>
+      <view class="txt2">作者</view>
+      <input placeholder="请输入作者" maxlength="10" class="txt3" value="{{mem_name}}" bindchange="name" name="name2"/>
+    </view>
+
+    <view class="txt">
+      <view class="ima"></view>
+      <view class="txt2">价格</view>
+      <input placeholder="请输入价格" maxlength="10" class="txt3" value="{{mem_name}}" bindchange="name" name="name2"/>
+    </view>
+
+    <view class="txt">
+      <view class="ima"></view>
+      <view class="txt2">出版信息</view>
+      <input placeholder="请输入出版信息" maxlength="10" class="txt3" value="{{mem_name}}" bindchange="name" name="name2"/>
+    </view>  
+  </form>
+
+
+  <view class="txt">
+     <view class="ima"></view>
+      <view class="txt2">图书照片</view>
+  </view>
+ 
+
+ 
+    <view class='uploadimg'>
+      <view class='uploadimgBox'>
+        <block wx:for="{{imgs}}" wx:if="{{imgs.length>0}}">
+          <image class='addpic' data-index='{{index}}' src="{{item}}"></image>
+        </block>
+        <view class='addImg' wx:if="{{canChoose}}" bindtap='chooseImageTap'>
+        <image src='../../images/添加.png'></image>
+        </view>
+        <view class='addImg'wx:else bindtap='noChoose'>
+        <image src='../../images/添加.png'></image>
+        </view>
+        <view class='addImgMsg'wx:if="{{imgs.length<=0}}">
+        <text>上传图片</text>     
+        </view>
+ 
+      </view>
+    </view>
