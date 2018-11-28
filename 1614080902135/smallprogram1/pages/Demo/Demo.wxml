@@ -1,0 +1,61 @@
+<view class="page">
+<view class="page__hd">
+    <text>\n</text>
+    <text></text>
+</view>
+    
+ <view class="page__hd" style="display:flex; flex-direction:row;justify-content:space-between;">
+    <view class='flex_item green'>姓名</view>
+    <view class='flex_item red'>吴佳坤</view>
+    <view class='flex_item blue'></view>
+     
+</view>
+<text>\n</text>
+ <view class="page__hd" style="display:flex; flex-direction:row;justify-content:space-between;">
+    <view class='flex_item green'>年龄</view>
+    <view class='flex_item red'>18</view>
+    <view class='flex_item blue'></view>
+     
+</view>
+<text>\n</text>
+ <view class="page__hd" style="display:flex; flex-direction:row;justify-content:space-between;">
+    <view class='flex_item green'>性别</view>
+    <view class='flex_item red'>男</view>
+    <view class='flex_item blue'></view>
+     
+</view>
+<text>\n</text>
+ <view class="page__hd" style="display:flex; flex-direction:row;justify-content:space-between;">
+    <view class='flex_item green'>专业</view>
+    <view class='flex_item red'>软件工程</view>
+    <view class='flex_item blue'></view>
+     
+</view>
+<text>\n</text>
+ <view class="page__hd" style="display:flex; flex-direction:row;justify-content:space-between;">
+    <view class='flex_item green'>联系方式</view>
+    <view class='flex_item red'>15217812433</view>
+    <view class='flex_item blue'></view>
+   
+</view>
+<text>\n</text>
+ <view class="page__hd" style="display:flex; flex-direction:row;justify-content:space-between;">
+    <view class='flex_item green'>求职方向</view>
+    <view class='flex_item red'>Java后端开发</view>
+    <view class='flex_item blue'></view>
+    
+</view>
+<text>\n</text>
+ 
+   <view class="page">
+   
+    
+          <view class="weui-panel weui-panel_access">
+            <view class="weui-media-box__title weui-media-box__title_in-text">大学主修课程</view>
+            <view class="weui-panel__hd">•Java</view>
+            <view class="weui-panel__hd">•操作系统</view>
+            <view class="weui-panel__hd">•汇编语言</view>
+            <view class="weui-panel__hd">•计算机组成原理</view> 
+          </view>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Demo/Demo",
+    "pages/Search/Search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "个人简历",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Demo/Demo",
+        "text": "个人简介"
+      },
+      
+      {
+        "pagePath": "pages/Search/Search",
+        "text": "学习经历"
+
+      }
+     
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

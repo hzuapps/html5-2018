@@ -1,0 +1,18 @@
+.page_bd{
+  padding: 10px;
+  background-color: snow;
+}
+.body_head{
+  border: 1px solid;
+  border-color: beige;
+  padding: 10px;
+}
+.display_show{
+  display: block;
+  border: 1px solid;
+  border-color: beige;
+  padding: 10px;
+}
+.display_none{
+  display: none;
+}

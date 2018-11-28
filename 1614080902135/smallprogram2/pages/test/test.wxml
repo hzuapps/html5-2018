@@ -1,0 +1,10 @@
+<view class="page">
+  <view class="page_bd">
+    <view class="body_head" bindtap="showitem">点击查看照片与学习经历</view>
+    <navigator url="../test/navigators/navigator1/navigator1"><view class="{{open?'display_show':'display_none'}}">个人照片</view></navigator>
+    <navigator url="../test/navigators/navigator2/navigator2"><view class="{{open?'display_show':'display_none'}}">学习经历</view></navigator>
+    <navigator url="../test/navigators/navigator3/navigator3"><view class="{{open?'display_show':'display_none'}}">留言</view></navigator>  
+   
+  </view>
+  
+</view>
