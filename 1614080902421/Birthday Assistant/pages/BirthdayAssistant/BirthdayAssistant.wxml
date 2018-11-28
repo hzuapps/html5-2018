@@ -1,0 +1,14 @@
+<!--pages/BirthdayAssistant/BirthdayAssistant.wxml-->
+<view class="container">
+<image class="background"src="/images/background.jpg"mode="scalToFill"/>
+<text class="motto">生日助手</text>
+<view class="journey-container">
+<text class="journey">添加生日</text>
+</view>
+<view class="journey-container">
+<text class="journey">查找生日</text>
+</view>
+<view class="journey-container">
+<text class="journey">退出</text>
+</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/BirthdayAssistant/BirthdayAssistant"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor":"#ECC0A8"
+  }
+}
