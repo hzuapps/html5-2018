@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/text/text",
+    "pages/text2/text2",
+    "pages/logs/logs",
+    "pages/cal/cal"
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#A3D1D1",
+    "navigationBarTitleText": "歇后语",
+    "navigationBarTextStyle":"black"
+   
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/首页.png",
+      "selectedIconPath": "img/点击.png"
+    },
+    {
+            "pagePath": "pages/cal/cal",
+            "text": "设置",
+            "iconPath": "img/设置.png",
+            "selectedIconPath": "img/点击.png"
+    }
+    ]
+  }
+
+
+
+}

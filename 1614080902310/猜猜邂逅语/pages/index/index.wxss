@@ -1,0 +1,58 @@
+/**index.wxss**/
+page{
+background:url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543162099275&di=236d5f1ddea7e73c7eac26b8d1a43011&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201611%2F03%2F20161103150616_ELwtn.jpeg');
+
+/*下面的是关键的设置100%显示*/ 
+background-size: 100% 100%; 
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+
+  font-size: 30px;
+  font-family: fantasy;
+  color :tomato ;
+ 
+  
+}
+.title{
+  margin-top:100rpx;
+
+  margin-bottom: 100rpx;
+ text-align: center;
+}
+
+.bt{
+
+  margin-top: 40px;
+  background:rgb(236, 240, 5);
+  color:black;
+  font-size: 20px;
+
+}
+.bt1{
+  width:150rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  border: none;
+  margin-top: 50rpx;
+  font-size: 10px;
+ color:#000000;
+
+  
+}
