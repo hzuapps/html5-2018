@@ -1,0 +1,6 @@
+/* pages/MyCollection/MyCollection.wxss */
+.zhongxin{
+  height: 200rpx;
+  line-height: 200rpx;
+  font-size: 65rpx;
+}
