@@ -1,0 +1,37 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/logs/index"
+    
+   
+  ],
+  "window": {
+    "navigationBarTitleText": "位置和天气"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "2.png",
+        "selectedIconPath": "1.png",
+        "text": "位置与天气"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "3.png",
+        "selectedIconPath": "4.png",
+        "text": "足迹"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}
