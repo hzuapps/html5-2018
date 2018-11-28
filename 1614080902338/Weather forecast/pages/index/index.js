@@ -38,7 +38,7 @@ Page({
   loadCity: function (latitude, longitude) {
     var page = this;
     wx.request({
-      url: 'http://api.map.baidu.com/geocoder/v2/?ak=LIkYxythH2yrgUE42GfgtkY56cLtTb51&location=' + latitude + ',' + longitude + '&output=json&pois=0',
+      url: 'https://api.map.baidu.com/geocoder/v2/?ak=ZHjGfTdXZ8DVC02d8t0PcBxfA22CBjC5&location=' + latitude + ',' + longitude + '&output=json&pois=0',
       data: {},
       header: {
         'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ Page({
   loadWeather: function (city) {
     let _this = this;
     wx.request({
-      url: 'http://wthrcdn.etouch.cn/weather_mini?city=' + city,
+      url: "https://www.sojson.com/open/api/weather/json.shtml?city=" + city,
       data: {},
       header: {
         'Content-Type': 'application/json'
