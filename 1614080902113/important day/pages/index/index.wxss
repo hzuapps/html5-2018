@@ -1,0 +1,5 @@
+
+.title{text-align: center;}
+.text1{font-size:80rpx;}
+.view1{margin-left:30rpx;}
+p{font-size: 35rpx;}
