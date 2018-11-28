@@ -1,0 +1,12 @@
+<view class='container'>
+  <image class='about-banner' src="/images/_ipe.jpg"> </image>
+  <text style='font-weight:bold; font-size:60rpx;'>电影周周看</text>
+
+  <view>
+    <text>我</text><navigator style='display:inline' open-type='switchTab'
+    hover-class='nav-hover' class='nav-default'
+    url='/pages/weekly/weekly'>每周推荐</navigator><text>一部好片</text>
+  </view>
+  
+  <text>我的邮箱：2507815021@qq.com</text>
+</view>
