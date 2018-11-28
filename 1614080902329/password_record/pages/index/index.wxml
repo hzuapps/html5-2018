@@ -3,5 +3,5 @@
   <image class='avatar' src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../images/default_pic.jpg'}}"></image>
   <text class='userName'>你好：{{userInfo.nickName?userInfo.nickName:userName}}</text>
   <button class='entry' style="display: {{isAuthorize?'none':'block'}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">允许授权用户信息</button>
-  <button class='entry' bindtap='toNewPw' style="display: {{isAuthorize?'block':'none'}}">进入密码备忘录</button>
+  <button class='entry' bindtap='toNewPw' style="display: {{isAuthorize?'block':'none'}}">进入密码不再忘</button>
 </view>

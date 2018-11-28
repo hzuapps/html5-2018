@@ -1,10 +1,13 @@
 <!--pages/save_pw/save_pw.wxml-->
-<view class="weui-cells weui-cells_after-title">
+<view class="weui-loadmore weui-loadmore_line" style='display:{{isNul?"block":"none"}}'>
+  <view class="weui-loadmore__tips weui-loadmore__tips_in-line bg">暂无数据</view>
+</view>
+<view class="weui-cells weui-cells_after-title" style='display:{{isNul?"none":"block"}}'>
   <!-- 使用template进行动态添加元素 -->
   <block wx:key="unique" wx:for="{{joinSumArr}}">
-    <view class="weui-panel weui-panel_access">
+    <view class="weui-panel weui-panel_access" id='{{jsonKeyArr[item]}}' bindtap='getMsg'>
       <view class="weui-panel__bd">
-        <view id='{{jsonKeyArr[item]}}' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindlongpress='del'>
+        <view id='{{jsonKeyArr[item]}}' class="weui-media-box weui-media-box_appmsg" bindlongpress='del'>
           <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
             <image class="weui-media-box__thumb" src="{{item % 2 == 0 ? '../../images/item_0.png' : '../../images/item_1.png'}}" />
           </view>
@@ -14,7 +17,7 @@
           </view>
         </view>
       </view>
-      <view id='{{jsonKeyArr[item]}}' bindtap='getMsg' class="weui-panel__ft">
+      <view class="weui-panel__ft">
         <view class="weui-cell weui-cell_access weui-cell_link">
           <view class="weui-cell__bd">查看密码</view>
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>

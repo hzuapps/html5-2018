@@ -1,0 +1,4 @@
+/* pages/setting/setting.wxss */
+page{
+  background-color: #fdfdfd;
+}

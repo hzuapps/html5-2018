@@ -1,7 +1,7 @@
 /* pages/index/index.wxss */
 page {
   height: 100%;
-  background-color: #E1846E;
+  background-color: #A1ADFF;
 }
 .indexContainer {
   display: flex;
@@ -13,22 +13,24 @@ page {
   width: 200rpx;
   height: 200rpx;
   border-radius: 100rpx;
-  margin: 130rpx;
+  margin: 40% auto 0rpx;
 }
 
 .userName {
-  font-size: 42rpx;
+  font-size: 120%;
   font-weight: bold;
   color: #ffffff;
-  margin: 100rpx;
+  margin: 10%;
 }
 
 .entry {
+  width: 70%;
+  border-radius: 2.5em;
   color: #ffffff;
-  background-color: #e2735a;
+  background-color: #b0bafd;
 }
 
 .entry:active {
   color: #ffffff;
-  background-color: #d87f6b;
+  background-color: #919de7;
 }

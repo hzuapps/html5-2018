@@ -7,7 +7,8 @@ Page({
   data: {
     json: null,
     jsonKeyArr: null,
-    joinSumArr: null
+    joinSumArr: null,
+    isNul: true
   },
   del: function(event){
     console.log(event)
@@ -15,7 +16,7 @@ Page({
     //删除提示
     wx.showModal({
       title: '删除',
-      content: '是否要删除' + tit,
+      content: '是否要删除<' + tit + '>',
       confirmText: "删除",
       cancelText: "取消",
       success: (res) => {
@@ -53,32 +54,33 @@ Page({
     let current = this.data.json[tit]
     let tip = null
     if (current.tip){
-      tip = '备   注：' + current.tip
+      tip = '备    注：' + current.tip
     }else{
       tip = ''
     }
     //弹窗提示
     wx.showModal({
       title: tit,
-      content: '用户名：' + current.username + '\r\n' + '密   码：' + current.password + '\r\n' + tip,
+      content: '用户名：' + current.username + '\r\n' + '密    码：' + current.password + '\r\n' + tip,
       confirmText: "确定",
       cancelText: "修改",
       success: function (res) {
         if (res.confirm) {
 
         } else {//点击修改，跳转
+          //设置信息缓存供修改页使用
+          wx.setStorage({
+            key: "currentInfo",
+            data: current
+          })
+          wx.setStorage({
+            key: "tit",
+            data: tit
+          })
           wx.navigateTo({
             url: "/pages/modify_pw/modify_pw",
             success(res){
-              //设置信息缓存供修改页使用
-              wx.setStorage({
-                key: "currentInfo",
-                data: current
-              })
-              wx.setStorage({
-                key: "tit",
-                data: tit
-              })
+              
               // try {
               //   wx.setStorageSync('currentInfo', current)
               //   wx.setStorageSync('tit', tit)
@@ -102,14 +104,25 @@ Page({
       for (let x = 0; x < keyArr.length; x++) {
         tArr[x] = x
       }
+      console.log(keyArr.length)
+      if (!keyArr.length){
+        this.setData({
+          isNul: true
+        })
+      }else{
+        this.setData({
+          isNul: false
+        })
+      }
       this.setData({
         json: rJson,
         jsonKeyArr: keyArr,
         joinSumArr: tArr
       })
-      console.log(this.data.json)
     } catch (e) {//说明没有文件
-      console.log(e)
+      this.setData({
+        isNul: true
+      })
     }
   },
   /**

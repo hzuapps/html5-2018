@@ -1,0 +1,7 @@
+/* pages/mome/mome.wxss */
+page{
+  background-color: #fdfdfd;
+}
+.weui-btn-area,.weui-cells__title{
+  margin-top: 10%;
+}

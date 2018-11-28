@@ -1,0 +1,23 @@
+<!--pages/setting/setting.wxml-->
+<view class="weui-cells__title">新密码页</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_switch">
+    <view class="weui-cell__bd">下方提示</view>
+    <view class="weui-cell__ft">
+      <switch color="#A1ADFF" checked='{{sta?"1":""}}' bindchange="switchChange" />
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title">安全</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_switch">
+    <view class="weui-cell__bd">进入密码</view>
+    <view class="weui-cell__ft">
+      <switch color="#A1ADFF" checked='{{lock?"1":""}}' bindchange="switchChangeLock" />
+    </view>
+  </view>
+  <!-- style="display:{{lock?'block':'none'}}"  -->
+  <navigator url="/pages/lock_set/lock_set" style="display:{{lock?'block':'none'}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">设置进入密码</view>
+  </navigator>
+</view>
