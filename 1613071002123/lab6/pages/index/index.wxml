@@ -1,0 +1,12 @@
+<view class="index">
+  <text class='text'>赠送对象性别:</text>
+
+  <radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{sex}}">
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+  </radio-group>
+
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="change" class='btn'> 获得礼物 </button>
+</view>
