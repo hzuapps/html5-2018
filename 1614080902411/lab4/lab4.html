@@ -5,12 +5,27 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
 	<link rel="stylesheet" type="text/css" href="weui.min.css">
 	<link rel="stylesheet" type="text/css" href="example.css">
+	<script type="text/javascript">
+		window.onload = function(){
+			var leaveMessage = document.getElementById("judgeNo");
+
+			var alinkToMessage = document.createElement("a");
+			alinkToMessage.href = "leaveMessage.html";
+			alinkToMessage.innerHTML = "touch ME"
+
+			leaveMessage.onclick = function(){
+				leaveMessage.appendChild(alinkToMessage);
+			}
+			
+		}
+		
+	</script>
 </head>
 <body>
  
 <div class="weui-tab">
     <div class="weui-navbar">
-        <div class="weui-navbar__item weui-bar__item_on">
+        <div id="changeColor" class="weui-navbar__item weui-bar__item_on">
             基本信息
             
         </div>
@@ -22,8 +37,8 @@
             个人评价
         </div>
 
-       	<div class="weui-navbar__item">
-            其他
+       	<div id="judgeNo" class="weui-navbar__item">
+            留言
         </div>
     </div> <!-- /.weui-navbar -->
 
