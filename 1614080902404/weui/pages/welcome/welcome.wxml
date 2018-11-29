@@ -1,0 +1,8 @@
+<view class="container">
+    <image class="myphoto" src="/image/MyIcon.jpg"></image>
+    <text class="motto">图音</text>
+    <view class="button">
+        <text class="button-text">第一个小程序</text>
+    </view>
+</view>
+
