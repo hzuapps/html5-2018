@@ -1,0 +1,27 @@
+<view class="weui-cells__title">作者</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">Boy ln</view>
+  </view>
+</view>
+
+<view class="weui-cells__title">学校</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">惠州学院</view>
+  </view>
+</view>
+
+<view class="weui-cells__title">Github</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">linwt</view>
+  </view>
+</view>
+
+<view class="weui-cells__title">小程序简介</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">聊天机器人TT支持问答百科、聊天对话、脑筋急转弯、讲故事、绕口令、天气查询、数学计算、中英互译等功能</view>
+</view>
+</view>

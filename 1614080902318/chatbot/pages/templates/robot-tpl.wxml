@@ -1,7 +1,7 @@
 <template name="robot-tpl">
     <view class="robot">
         <view>
-            <image src="../imgs/robot.png" />
+            <image src="../../image/robot.png" />
         </view>
         <view>
             <text class="date">{{item.date}}</text>
