@@ -1,0 +1,9 @@
+<!--按钮-->
+<text class="the-text">{{time}}</text>
+<button class="the-btn" bindtap="btnDown">保存</button>
+ 
+<!--输入框-->
+<view class="the-view">
+  <textarea class= "the-textarea" placeholder="请输入内容" bindinput="bindTextAreaBlur" style="  margin: 20%;width: 90%;height: 90%" auto-focus value="{{des}}"maxlength="-1" cursor-spacing="0">
+  </textarea>
+</view>

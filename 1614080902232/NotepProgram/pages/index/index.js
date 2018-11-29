@@ -4,51 +4,42 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '记录您的一点一滴',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    desArr: []//数据源数组
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+
+  onLoad: function (options) {
+    //-监听页面加载
+    //获取缓存内容
+    this.setData({
+      desArr: wx.getStorageSync('oldText')
     })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+    if (this.data.desArr == null && this.data.desArr == '') {
+      //如果没有缓存则为空
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
+        desArr: []
       })
     }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+    //获取当天日期
+    var day = this.getNowFormatDate()
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      today: day
     })
+  },
+  onShow: function () {
+    // 生命周期函数--监听页面显示   
+    //获取当前缓存
+    var arrayA = wx.getStorageSync('oldText');
+    var isChange = wx.getStorageSync('isChange');
+    if (arrayA.length != this.data.desArr.length) {
+      //如果数量改变从新赋值
+      this.setData({
+        desArr: arrayA
+      })
+    } else if (isChange == 1) {
+      wx.setStorageSync('isChange', 0);
+      this.setData({
+        desArr: arrayA
+      })
+    }
   }
 })
