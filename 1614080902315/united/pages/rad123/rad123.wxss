@@ -1,10 +1,42 @@
-
-                            .page__hd{
-                                background-image:url(https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1540886846&di=e91d3f99202c81a7ab20fcc7786573d8&src=http://5b0988e595225.cdn.sohucs.com/images/20180916/87faedf6a2fa4fdb95c366a7e22d5fbe.jpeg)
-
-                            }
-                            .page__title{
-                                color:indianred;
-                                font-size: xx-large;
-                            }
+                         .body{
+                           margin-top:0px;
+                           width:100%;
+                           height: 100%;
+                        
+                           background-image: url(https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3719119204,2091872151&fm=26&gp=0.jpg)
+                      
+                         }
+                         .wa-match-header-container{
+                            
+                           
+                          
+                            width: 100%;
+                            height: 30%;
+                         }
+                         .logo1{
+                           margin-top: 20px;
+                           margin-left: 10px;
+                           width: 60px;
+                           height: 60px;
+                         }
+                         .wordx{
+                           width: 80%;
+                           margin-top:20px; 
+                           height: inherit;
+                           float: right;
+                         }
+                        
+                        .word1{
+                         width: 100%;
+                         font-display: block;
+                         font-size:x-large;
+                         font-weight: bold;
+                        }
+                        .word2{
+                          font-display: block;
+                          float: left;
+                        }
+                        
                        
+                         
+                        

@@ -51,4 +51,5 @@ Page({
       hasUserInfo: true
     })
   }
+  
 })

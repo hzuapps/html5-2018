@@ -18,8 +18,14 @@ Page({
     autoplay: true,
     interval: 3000,
     duration: 3000,
+  },
+ onShareAppMessage: function () {
+    return {
+      title: '曼联小报',
+      desc: '最忠实的曼联新闻!',
+      path: '/page/user?id=123'
+    }
   }
- 
 
 })  
 

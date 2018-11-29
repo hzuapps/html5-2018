@@ -7,11 +7,29 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+
   <view class="usermotto">
     <text class="user-motto">Take me home,unite road</text>
   </view>
  
- <view class="weui-footer">
+ 
+
+ 
+
+ 
+</view>
+
+<view class="weui-cells__title">修改个性签名</view>
+<view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="text" placeholder="请输入文本"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-footer">
 <view class="weui-footer__links">
     <navigator url="" class="weui-footer__link">ALL CREATE BY wekun</navigator>
 </view>
@@ -19,5 +37,3 @@
 </view>
 
 
- 
-</view>

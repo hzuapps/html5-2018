@@ -1,10 +1,24 @@
-<view class="page__hd">
-        <h1 class="page__title">英超积分榜</h1>
-        
-</view>
- 
+<view class='body'>
+
+
+       <view class="page__hd">
+        <view class="wa-match-header-container" >
+       
+        <image class='logo1' src="http://static.open.baidu.com/media/ch16/png/PremierLeague.png"/>
+        <view class="wordx" >
+        <p class="word1" >英格兰足球超级联赛</p> 
+        <p >
+        <span class="word2">18-19赛季</span>
+        </p>
+        </view>
+
+        </view>
+
+       </view>
+
 
    <view class="page__bd">
+
 <view class="weui-cells">
             <view class="weui-cell">
                 <view class="weui-cell__hd"><image src="https://img.dongqiudi.com/data/pic/676.png" alt="" style="width:20px;height:20px;margin-right:5px;display:block"/></view>
@@ -50,3 +64,4 @@
             </view>
         </view>
       </view>
+ </view>
