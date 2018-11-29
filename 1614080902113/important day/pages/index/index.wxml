@@ -1,0 +1,21 @@
+<!--index.xml-->
+
+<view class='title'></view>
+<button class="btn btn-prinary">WeChat</button>
+
+<view class="view1">
+
+   <view>
+         
+   </view>
+</view>
+
+<view class="weui-footer weui-footer_fixed-bottom">
+      <view>
+        <p class="weui-footer__links">
+          <a href="javascript:home();" class="weui-footer__link">纪念日备忘录</a>
+      </p>
+      </view>      
+     <p class="weui-footer__text">Note of some important days</p>
+</view>
+
