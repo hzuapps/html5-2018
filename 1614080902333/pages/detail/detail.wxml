@@ -1,0 +1,7 @@
+<view class="container">
+<image src="{{src}}" mode="aspectFill">  
+</image> 
+		<text> {{title}} </text>		
+    <text></text>
+    <text>简介:{{summy}}</text>	
+</view>
