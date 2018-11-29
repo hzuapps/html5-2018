@@ -1,0 +1,92 @@
+<!--pages/see/see.wxml-->
+<view class="page">
+  <view class="page__hd" style='padding:20rpx;'>
+    <view class="page__title" wx:if="{{date}}">
+      <text style='font-size:40rpx;'>你的生日是：{{date}}</text>
+    </view>
+    <view class="page__title" wx:else>
+      <text style='font-size:50rpx;'>—————————————</text>
+    </view>
+  </view>
+  <!--过去统计-->
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="page__title" wx:if="{{date}}">
+        <text style='font-size:30rpx;'>你已经：</text>
+      </view>
+      <view class="weui-panel__bd" wx:if="{{date}}">
+        <view class="weui-media-box weui-media-box_appmsg   olde" hover-class="weui-cell_active" style='padding-top:0;'>
+          <view>
+            <text>活了{{year}}年，</text>
+            <text>看过了{{month}}个月圆</text>
+          </view>
+          <view>
+            <text>休息了{{zhou}}个周末，</text>
+            <text>来到世界{{day}}天</text>
+          </view>
+          <view>
+            <text>约等于{{hour}}小时</text>
+          </view>
+          <view>
+            <text>还等于{{min}}分钟</text>
+          </view>
+          <view>
+            <text>={{second}}秒</text>
+          </view>
+          <view>
+            <text>={{hsecond}}毫秒</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!--未来统计-->
+    <view class="weui-panel weui-panel_access">
+      <view class="page__title olde_2" wx:if="{{date}}">
+        <text style='font-size:18rpx;'>（按照中国人均寿命77岁计算的话）</text>
+        <text style='font-size:30rpx;'>你大概还能：</text>
+      </view>
+      <view class="weui-panel__bd" wx:if="{{date}}">
+        <view class="weui-media-box weui-media-box_appmsg   olde" hover-class="weui-cell_active" style='padding-top:0;'>
+          <view>
+            <text>再看{{seeball}}次世界杯</text>
+          </view>
+          <view>
+            <text>休息{{zhou_end}}个周末</text>
+          </view>
+          <view>
+            <text>过{{spring}}个春节</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-panel weui-panel_access">
+      <view class="page__title olde_2" wx:if="{{date}}">
+        <text style='font-size:30rpx;'>如果把你的时间比喻成电量的话：</text>
+      </view>
+      <view class="olde_3" wx:if="{{date}}">
+        <view id="graphbox">
+          <view class="graph">
+            <span class="green" id="ok" style='width:calc({{baifenbi}}%);'></span>
+          </view>
+        </view>
+        <view style='font-size:30rpx;padding-left:50rpx;'>{{baifenbi}}%</view>
+      </view>
+    </view>
+
+  </view>
+  <!--清除按钮-->
+  <view class='view_2'>
+    <!--清除数据-->
+    <view class='view_3'>
+      <button class='btn_1' bindtap='clear_1'>
+        <text style='margin-top:10rpx;'>清除数据</text>
+      </button>
+    </view>
+    <!--从新测试-->
+    <view class='view_3'>
+      <button class='btn_1' bindtap='retext_1'>
+        <text style='margin-top:10rpx;'>重新测试</text>
+      </button>
+    </view>
+  </view>
+</view>
