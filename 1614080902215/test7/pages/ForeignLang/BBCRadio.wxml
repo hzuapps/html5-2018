@@ -1,0 +1,27 @@
+<!--pages/ForeignLang/BBCRadio.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_BBCRadio}}" mode="cover"></image>
+  <text class="userinfo-black">BBC英语听力</text>
+  <text class="userinfo-gray">最新BBC英语听力、BBC新闻、BBC双语听力精选，每日更新</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">http://m.tingvoa.com/BBC/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BBC英语听力</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">平&nbsp;&nbsp;&nbsp;台：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOS，Android</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">语&nbsp;&nbsp;&nbsp;言：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简体中文，英文</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最新BBC英语听力、BBC英语新闻、BBC双语听力精选</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信BBC英语听力小程序、微信BBC英语听力公众号、BBC英语听力APP、BBC英语轻应用、BBC英语官网</text>
+  </view>
+</block>

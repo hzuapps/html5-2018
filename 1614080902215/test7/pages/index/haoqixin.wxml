@@ -1,0 +1,27 @@
+<!--pages/index/haoqixin.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_haoqixin}}" mode="cover"></image>
+  <text class="userinfo-black">好奇心日报</text>
+  <text class="userinfo-gray">满足你对世界的好奇心</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">http://m.qdaily.com/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好奇心日报</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">网站类型：&nbsp;&nbsp;&nbsp;&nbsp;商业新闻</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">语&nbsp;&nbsp;&nbsp;言：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;简体中文，英语</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好奇心日报是一个新闻媒体，就和绝大多数媒体应用一样，应用是呈现内容的载体。</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信好奇心杂志小程序、微信好奇心日报公众号、好奇心日报APP、好奇心日报轻应用、好奇心日报官网</text>
+  </view>
+</block>

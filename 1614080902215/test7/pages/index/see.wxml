@@ -1,0 +1,27 @@
+<!--pages/index/see.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_see}}" mode="cover"></image>
+  <text class="userinfo-black">看见独立志</text>
+  <text class="userinfo-gray">每天一篇独立音乐报道</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">https://www.kanjian.com/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看见独立志</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">平&nbsp;&nbsp;&nbsp;台：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOS，Android</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">类&nbsp;&nbsp;&nbsp;别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阅读</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;看见独立志是由看见音乐KANJIAN.COM出品的独立音乐杂志APP。</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;看见独立志轻应用、看见独立志官网</text>
+  </view>
+</block>

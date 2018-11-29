@@ -1,0 +1,26 @@
+<!--pages/ForeignLang/meiriRY.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_meiriRY}}" mode="cover"></image>
+  <text class="userinfo-black">每日日语</text>
+  <text class="userinfo-gray">每日推送日语学习小知识，有声朗读等</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">暂无</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日日语在线</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">类&nbsp;&nbsp;&nbsp;别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公众号</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每日推送日语学习小知识、有声朗读。定期分享日本文化，生活等最新资讯。</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信每日日语小程序、微信每日日语在线公众号、每日日语在线轻应用</text>
+  </view>
+</block>

@@ -1,0 +1,29 @@
+<!--pages/index/IT.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_IT}}" mode="cover"></image>
+  <text class="userinfo-black">IT之家</text>
+  <text class="userinfo-gray">IT人最关注的泛科技新闻</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">https://m.ithome.com/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT之家</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">外文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IThome</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">建立时间：&nbsp;&nbsp;&nbsp;&nbsp;2011年5月15日</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">板块包括：&nbsp;&nbsp;&nbsp;&nbsp;资讯、技术、系统、软件、评测</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">运营公司：&nbsp;&nbsp;&nbsp;&nbsp;青岛软媒网络科技有限公司</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IT之家是业内领先的即时IT资讯和数码产品类网站。IT之家快速精选泛科技新闻，分享即时的IT业界动态和紧跟潮流的数码产品资讯，提供给力的PC和手机技术文章、丰富的系统应用美化资源，以及享不尽的智能阅读。</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信IT之家小程序、微信IT之家公众号、IT之家APP、IT之家轻应用、IT之家官网</text>
+  </view>
+</block>

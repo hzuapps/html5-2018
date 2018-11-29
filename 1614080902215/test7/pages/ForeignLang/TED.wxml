@@ -1,0 +1,32 @@
+<!--pages/ForeignLang/TED.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_TED}}" mode="cover"></image>
+  <text class="userinfo-black">TED演讲</text>
+  <text class="userinfo-gray">全球顶尖技术、娱乐设计分享</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">https://www.ted.com/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TED演讲</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">外文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TED</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">创始人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;理查德·索·乌曼</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">诞生时间：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1984年</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">组织性质：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;非盈利组织</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">展现形式：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;约18分钟时间的谈判或者更少</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">TED演讲主旨：&nbsp;Ideas worth spreading</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">TED演讲使命：&nbsp;Spread ideas</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TED（指technology, entertainment, design在英语中的缩写，即技术、娱乐、设计）是美国的一家私有非营利机构，该机构以它组织的TED大会著称，这个会议的宗旨是“值得传播的创意”。TED诞生于1984年，其发起人是理查德·索·乌曼。2001年起，克里斯·安德森接管TED，创立了种子基金会（The Sapling Foundation），并运营TED大会。</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信TED英语演讲视频小程序、微信TED英语演讲公众号、TED演讲APP、TED演讲轻应用、TED官网</text>
+  </view>
+</block>

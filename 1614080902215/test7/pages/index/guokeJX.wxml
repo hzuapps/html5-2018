@@ -1,0 +1,34 @@
+<!--pages/index/guokeJX.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_guokeJX}}" mode="cover"></image>
+  <text class="userinfo-black">果壳精选</text>
+  <text class="userinfo-gray">来自果壳的科学主题内容精选</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">https://m.guokr.com/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;果壳</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">创建人：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姬十三</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">创建时间：&nbsp;&nbsp;&nbsp;&nbsp;2010年</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">面向人群：&nbsp;&nbsp;&nbsp;&nbsp;都市科技青年</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">定&nbsp;&nbsp;&nbsp;位：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国内领先的科技传媒机构</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">板&nbsp;&nbsp;&nbsp;块：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3个</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">主题内容：&nbsp;&nbsp;&nbsp;&nbsp;负责任、有智趣的泛科技主题内容</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">名称由来：&nbsp;&nbsp;&nbsp;&nbsp;哈姆雷特和《果壳中的宇宙》</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">愿&nbsp;&nbsp;&nbsp;景：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;试图唤起大众对科技的兴趣</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">口&nbsp;&nbsp;&nbsp;号：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科技有意思</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;果壳网，作为一个开放、多元的泛科技兴趣社区，吸引了百万名有意思、爱知识、乐于分享的年轻人聚集在这里，用知识创造价值，为生活添加智趣。在这里可以关注感兴趣的人，阅读他们的推荐，也将有意思的内容分享给关注的人；依兴趣关注不同的小组，精准阅读喜欢的内容，并与网友交流；在“果壳问答”里提出困惑你的科技问题，或提供靠谱的答案。果壳网在2010年由姬十三创立，与其之前创办的非盈利组织科学松鼠会在运营上完全独立。果壳网现有三大板块：科学人、小组和问答，由专业科技团队负责编辑，网站主编为拇姬。三大重点产品：MOOC学院、知性社区、研究生App。果壳传媒另有“果壳阅读”这一阅读品牌，负责科普类图书的编辑。
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2010年，果壳上线，曾喊出目标“成为中国的Discovery”，希望在新媒体时代让科学和技术的传播变得引人入胜。三年过去了，果壳网已从小众爱好者的科学传播品牌，升华为普通人的生活科学伙伴；不断探索获取知识、求得真相的新路径，帮助大家摆脱寻求知识的各种束缚</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信果壳公众号、果壳APP、果壳轻应用、果壳官网</text>
+  </view>
+</block>

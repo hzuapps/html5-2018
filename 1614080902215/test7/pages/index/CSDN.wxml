@@ -1,0 +1,30 @@
+<!--pages/index/CSDN.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_CSDN}}" mode="cover"></image>
+  <text class="userinfo-black">CSDN</text>
+  <text class="userinfo-gray">专属程序员的中文资讯</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">https://www.csdn.net/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">公司名称：&nbsp;&nbsp;&nbsp;&nbsp;世纪乐知</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">外文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSDN</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">经营范围：&nbsp;&nbsp;&nbsp;&nbsp;互联网</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">CEO：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒋涛</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">成立时间：&nbsp;&nbsp;&nbsp;&nbsp;1999年12月</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;知乎是网络问答社区，连接各行各业的用户。用户分享着彼此的知识、经验和见解，为中文互联网源源不断地提供多种多样的信息。CSDN (Chinese Software Developer Network) 创立于1999年，是中国的IT社区和服务平台，为中国的软件开发者和IT从业者提供知识传播、职业发展、软件开发等全生命周期服务，满足他们在职业发展中学习及共享知识和信息、建立职业发展社交圈、通过软件开发实现技术商业化等刚性需求。拥有超过3000万注册会员（其中活跃会员800万）、50万注册企业及合作伙伴。
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;旗下拥有：全球最大中文IT技术社区：csdn、权威IT专业技术期刊：《程序员》杂志、IT人力资源服务：科锐福克斯、IT技术学习平台：乐知教育、代码托管+社交编程平台：code、移动开发工具和服务聚合平台：mobilehub、IT专属求职网站：job、中文软件外包和项目交易平台：csto、程序员深度交流社区：iteye、中国最大技术管理者平台：CTO俱乐部、云计算产业人士沙龙：云计算俱乐部、面向移动开发者的技术组织：移动开发者俱乐部、面向全国大学生的技术组织：高校俱乐部。</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信CSDN小程序、微信CSDN公众号、CSDNAPP、CSDN轻应用、CSDN官网</text>
+  </view>
+</block>

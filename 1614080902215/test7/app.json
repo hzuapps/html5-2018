@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/ForeignLang/ForeignLang",
+    "pages/index/zhihu",
+    "pages/index/zhihuRB",
+    "pages/index/guokeJX",
+    "pages/index/doubanYD",
+    "pages/index/one",
+    "pages/index/moment",
+    "pages/index/CSDN",
+    "pages/index/IT",
+    "pages/index/haoqixin",
+    "pages/index/see",
+    "pages/ForeignLang/BBCEnglish",
+    "pages/ForeignLang/BBCRadio",
+    "pages/ForeignLang/TED",
+    "pages/ForeignLang/meiriRY",
+    "pages/ForeignLang/eyu",
+    "pages/ForeignLang/woniuFY",
+    "pages/ForeignLang/jikeFY"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/sift.png",
+        "selectedIconPath": "images/sift_green.png"
+      },
+      {
+        "pagePath": "pages/ForeignLang/ForeignLang",
+        "text": "精读外文",
+        "iconPath": "images/ForeignBroaden.png",
+        "selectedIconPath": "images/ForeignBroaden_green.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me_green.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Nut精选轻应用",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  }
+}
