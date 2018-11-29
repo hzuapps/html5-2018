@@ -3,7 +3,9 @@
   "pages": [
     "pages/course/course",
     "pages/Community/Community",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/video/video",
+    "pages/create/create"
   ],
   "window": {
     "navigationBarTitleText": "课程"
@@ -22,9 +24,9 @@
       },
       {
         "pagePath": "pages/Community/Community",
-        "iconPath": "image/娱乐.png",
-        "selectedIconPath": "image/娱乐.png",
-        "text": "社区"
+        "iconPath": "image/笔记.png",
+        "selectedIconPath": "image/笔记.png",
+        "text": "笔记"
       },
       {
         "pagePath":"pages/about/about",

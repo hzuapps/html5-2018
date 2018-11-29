@@ -1,0 +1,11 @@
+
+<form  bindreset="">
+<view class="container">
+    <view class='row'>
+        <textarea class='text' placeholder-class="placeholder"  name="content" focus="{{focus}}" value="{{inputVal}}" placeholder="点击添加文本" bindblur='getValue' />
+    </view>
+    <view class='bottom'>
+        <button formType="submit" class='btn success' bindtap='onSubmit'>保存</button>
+    </view>
+</view>
+</form>

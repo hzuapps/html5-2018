@@ -1,2 +1,16 @@
-<!--pages/Community/Community.wxml-->
-<text></text>
+
+         
+            
+            <!-- 留言列表 -->
+           
+              <view class='box3' wx:for="{{msgData}}" wx:key="{{index}}">
+                  <text class='text1'>{{item.msg}}</text>
+              <view>
+                  <icon type='cancel' data-index="{{index}}" class='close-btn' bindtap="delMsg"></icon>
+              </view>
+
+              </view>
+              
+ <view class='box2'>      
+                  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="onNewItem" id='send' >增加</button>                
+                   	</view>

@@ -47,6 +47,12 @@ Page({
     }
   },
   
+  longBtn :function(options)
+  {
+    wx.navigateTo({
+      url: '../video/video',
+    })
+  },
   
 
 
