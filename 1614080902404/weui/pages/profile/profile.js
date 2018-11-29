@@ -1,5 +1,39 @@
 // pages/profile/profile.js
+
+let app = getApp();
 Page({
+  data: {
+    isSubmit: false,
+    warn: "",
+    id: "",
+    js: "",
+    isPub: false,
+    sex: "男"
+  },
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+    let { id, js, isPub, sex } = e.detail.value;
+    if (!id || !js) {
+      this.setData({
+        warn: "昵称或介绍为空！",
+        isSubmit: true
+      })
+      return;
+    }
+    this.setData({
+      warn: "",
+      isSubmit: true,
+      id,
+      js,
+      isPub,
+      sex
+    })
+  },
+  formReset: function () {
+    console.log('form发生了reset事件')
+  },
+
+  
 
   /**
    * 页面的初始数据

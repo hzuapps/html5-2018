@@ -12,10 +12,12 @@
 .motto{
     margin-top: 100rpx;
     font-size: 32rpx;
+    font-family: Microsoft Yahei;   
+    color: #405f80; 
 }
 .button{
     margin-top: 200rpx;
-    border: 2rpx solid #405f80;
+    border: 0rpx solid #405f80;
     border-radius:10rpx;
     height: 60rpx;
     width:200rpx;
@@ -31,3 +33,20 @@ page{
     height: 100%;
     background-color:#b3d4db;
 }
+
+text{
+    font-family: Microsoft Yahei;     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

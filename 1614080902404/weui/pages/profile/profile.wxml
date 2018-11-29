@@ -1,10 +1,33 @@
 <!--index.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">是否公开信息</view>
+    <switch name="isPub" />
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+ 
+  <view class="section">
+    <view class="section__title">昵称</view>
+    <input name="id" placeholder="昵称" />
   </view>
+  <view class="section">
+    <view class="section__title">介绍</view>
+    <input name="js" placeholder="介绍" rows="10" />
+  </view>
+  
+  <view class="section section_gap">
+    <view class="section__title">性别</view>
+    <radio-group name="sex">
+      <label>
+        <radio value="男" checked/>男</label>
+      <label>
+        <radio value="女" />女</label>
+    </radio-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
+<view wx:if="{{isSubmit}}">
+  {{warn ? warn : "是否公开信息："+isPub+"，昵称："+id+"，介绍："+js+"，性别："+sex}}
 </view>

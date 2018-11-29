@@ -1,6 +1,8 @@
 // pages/activity_list/activity_list.js
 Page({
 
+  
+
   /**
    * 页面的初始数据
    */
