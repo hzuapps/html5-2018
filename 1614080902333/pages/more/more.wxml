@@ -1,0 +1,34 @@
+<loading hidden="{{loading}}">
+    加载中....
+</loading>
+<block wx:for="{{movies}}">
+<navigator url="../detail/detail?title={{item.title}}&summy={{item.summary}}&src={{item.images.large}}">
+<view class="movies">
+  <view class="myimage">
+    <image class="img" style="" mode="" src="{{item.images.large}}" binderror="" bindload=""></image>
+  </view>
+  <view class="moveInfo">
+    <view class="title">
+      {{item.title}}
+    </view>
+
+    <view class="content-introduce">
+      导演:{{item.directors[0].name}}
+    </view>
+    <view class="content-introduce">
+      分类:{{item.genres}}
+    </view>
+    <view class="content-introduce">
+      上映时间:{{item.year}}
+    </view>
+  </view>
+   <view class='imagesize'>                    
+</view>
+<view class='imagesize'> 
+  <image src="/image/向右.png" class='in-image'>     
+  </image>
+</view>
+
+</view>
+</navigator>
+</block>
