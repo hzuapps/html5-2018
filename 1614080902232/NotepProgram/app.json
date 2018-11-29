@@ -1,6 +1,8 @@
 {
   "pages":[
+    
     "pages/index/index",
+    "pages/edit/edit",
     "pages/logs/logs"
   ],
   "window":{
@@ -19,14 +21,14 @@
         "selectedIconPath": "images/首页.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "记事本",
-        "iconPath": "images/记事本.png",
-        "selectedIconPath": "images/记事本.png"
+        "pagePath": "pages/edit/edit",
+        "text": "编辑",
+        "iconPath": "images/编辑.png",
+        "selectedIconPath": "images/编辑.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "我的",
+        "pagePath": "pages/logs/logs",
+        "text": "我的日志",
         "iconPath": "images/我的.png",
         "selectedIconPath": "images/我的.png"
       }

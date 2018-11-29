@@ -1,13 +1,12 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!--底部滚动-->
+<scroll-view class="des-scr" scroll-y="true" bindscroll="scroll">
+  <!--循环view-->
+  <block wx:for="{{desArr}}">
+    <navigator>
+      <view class="des-view"  bindtap="toiletDetails" id="{{index}}">
+        <text class="des-text">{{item.des}}</text>
+        <text class="des-tiemText">{{item.time}}</text>
+      </view>
+    </navigator>
+  </block>
+</scroll-view>

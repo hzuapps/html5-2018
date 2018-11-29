@@ -1,21 +1,36 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page{
+  height: 100%;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+ 
+.des-image{
+  position:absolute;
+  width: 100%;
+  height: 100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+ 
+.des-scr{
+  width: 100%;
+  height: 100%;
 }
-
-.usermotto {
-  margin-top: 200px;
+ 
+.des-view{
+  margin: 5%;
+  width: 90%;
+  height: 180rpx;
+  border:5px solid rgb(8, 102, 66);
+}
+ 
+.des-text{
+    display: block;
+    margin:20rpx;
+    height: 80rpx;
+    overflow: hidden;
+}
+ 
+.des-tiemText{
+  display: block;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  height: 40rpx;
+  text-align: right;
 }
