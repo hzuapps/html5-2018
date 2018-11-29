@@ -1,11 +1,33 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/about/about",
+    "pages/chat/chat"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "聊天机器人TT",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#1AAD19",
+    "color": "#aaa",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home2.png",
+        "selectedIconPath": "image/home1.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "image/about2.png",
+        "selectedIconPath": "image/about1.png"
+      }
+    ]
   }
 }
