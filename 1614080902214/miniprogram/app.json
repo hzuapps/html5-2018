@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/category",
+    "pages/me/me"
+  
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#abc",
+    "navigationBarTitleText": "壁纸",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "000000",
+    "selectedColor": "#ff7f50",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类"
+        
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我"
+      }
+    ]
+   
+  }
+}
