@@ -1,0 +1,8 @@
+<view class="container">
+
+图片备忘录
+<button class='tj'>
+<view>添加备忘录</view>
+</button>
+
+</view>
