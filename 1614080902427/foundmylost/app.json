@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/myself/myself",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/view/view"
   ],
   "tabBar": {
     "selectedColor": "#1296db",
@@ -15,9 +16,9 @@
       },
       {
         "pagePath": "pages/list/list",
-        "text": "查看",
-        "iconPath":"imgs/list.png",
-        "selectedIconPath":"imgs/list-selected.png"
+        "text": "发布",
+        "iconPath": "imgs/add.png",
+        "selectedIconPath": "imgs/add-selected.png"
       },
       {
         "pagePath": "pages/myself/myself",

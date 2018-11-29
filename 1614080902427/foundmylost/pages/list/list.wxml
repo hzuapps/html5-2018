@@ -1,2 +1,77 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view>
+  <view class="weui-cells weui-cells_form">
+    <view class="weui-cell">
+      <view id="titleInputBox" class="weui-cell__hd">
+        <input bindinput="onTitleChange" class="weui-input" type="text" placeholder="请输入标题" value="{{title}}" />
+      </view>
+      <view class="weui-cell__ft" style="z-index:99">
+        <button id="publishBtn" type="default" size="mini" bindtap="publish">发布</button>
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea bindinput="onTextareaChange" class="weui-textarea" placeholder="请输入内容" rows="3" value="{{content}}"></textarea>
+        <view class="weui-textarea-counter">
+          <span>{{content.length}}</span>/{{MAX_COUNT}}</view>
+      </view>
+    </view>
+  </view>
+  <view id="upload">
+    <view class="uploadBtn">
+      <image src="../../imgs/paper-clip.png"></image>
+    </view>
+  </view>
+  <view class="weui-cells__title">联系方式</view>
+  <view class="weui-cells weui-cells_form">
+    <view class="weui-cell weui-cell_vcode">
+      <view class="weui-cell__hd">
+        <label class="weui-label">手机号</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindinput="onPhoneChange" value="{{phoneNumber}}" class="weui-input" type="tel" placeholder="请输入手机号" />
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <label for="" class="weui-label">日期</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindtap="bingDateTap" class="weui-input" type="text" value="{{year +'/'+ month + '/'+day}}" />
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <label for="" class="weui-label">时间</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type="datetime-local" value="" placeholder="" />
+      </view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__hd">
+        <label for="" class="weui-label">地点</label>
+      </view>
+      <view class="weui-cell__bd">
+        <input bindinput="onLocationChange" class="weui-input" type="datetime-local" value="{{location}}" placeholder="" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 日期选择 -->
+  <view id="datePicker" wx:if="{{showDatePicker}}">
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{pickerIndex}}" bindchange="bindDateChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" style="line-height: 50px">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+
+  </view>
+  <view id="maskView" bindtap="hideDatePicker" wx:if="{{showDatePicker}}"></view>
+</view>

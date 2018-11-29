@@ -6,32 +6,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    list: [{
-        profileUrl: `../../imgs/132.jpg`,
-        username: '做好事不留名',
-        publishTime: new Date().toLocaleString(),
-        text: `求助：我的钥匙掉了，时间大概是早上8点，地点是学校的旧篮球场，如果有捡到的同学希望 ...`,
-        location: 'XXX 大学饭堂2楼',
-        images: [`../../imgs/key-4.jpg`, `../../imgs/key-2.jpg`, `../../imgs/key-3.jpg`, `../../imgs/key-1.jpg`, ]
-      },
-      {
-        profileUrl: '../../imgs/leifeng.jpg',
-        username: '学雷锋',
-        publishTime: new Date().toLocaleString(),
-        text: `我在饭堂2楼捡到一把钥匙 ，请失主看到后跟我联系，我的联系方式是...`,
-        location: '饭堂2楼',
-        images: [`../../imgs/key-2.jpg`, ]
-      },
-
-      {
-        profileUrl: '../../imgs/leifeng.jpg',
-        username: '学雷锋',
-        publishTime: new Date().toLocaleString(),
-        text: `我在饭堂2楼捡到一把钥匙 ，请失主看到后跟我联系，我的联系方式是...`,
-        location: '饭堂2楼',
-        images: [`../../imgs/key-2.jpg`,]
-      }
-    ],
+    list: [],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -43,6 +18,12 @@ Page({
     })
   },
   onLoad: function() {
+    const list = wx.getStorageSync('list')
+    if (list && Array.isArray(list)) {
+      this.setData({
+        list
+      })
+    }
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -70,12 +51,26 @@ Page({
       })
     }
   },
+  onShow: function() {
+    const list = wx.getStorageSync('list')
+    if (list && Array.isArray(list)) {
+      this.setData({
+        list
+      })
+    }
+  },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+
+  viewDetail:function(e){
+    wx.navigateTo({
+      url: `../view/view?uid=${e.currentTarget.dataset['uid']}`,
     })
   }
 })
