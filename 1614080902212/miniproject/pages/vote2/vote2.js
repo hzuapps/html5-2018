@@ -1,18 +1,20 @@
+// pages/vote2/vote2.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    title1: [],
+    optiona1: [],
+    optionb1: [],
+    optionc1: [],
+    optiond1: []
+
   },
-  changetofvote:function(){
-    wx.navigateTo({
-      url: "../fvote/fvote"
-    })
-  },
-  changetosvote: function () {
-    wx.navigateTo({
-      url: "../svote/svote"
+  gotovote: function () {
+    wx.switchTab({
+      url: '../vote/vote',
     })
   },
 
@@ -34,6 +36,22 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.setData({
+      title1: wx.getStorageSync("title_key1")
+    })
+    console.log(this.data.title1)
+    this.setData({
+      optiona1: wx.getStorageSync("optiona_key1")
+    })
+    this.setData({
+      optionb1: wx.getStorageSync("optionb_key1")
+    })
+    this.setData({
+      optionc1: wx.getStorageSync("optionc_key1")
+    })
+    this.setData({
+      optiond1: wx.getStorageSync("optiond_key1")
+    })
 
   },
 

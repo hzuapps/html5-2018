@@ -1,0 +1,35 @@
+/* pages/vote2/vote2.wxss */
+.a{
+  width:80%;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.b{
+  margin-top: 10px;
+  margin-left: 5px;
+ 
+}
+.c{
+  margin-top: 10px;
+  margin-left: 5px;
+  
+}
+.d{
+  margin-top: 10px;
+  margin-left: 5px;
+ 
+}
+.t{
+  margin-top: 5px;
+  font-size: 25px;
+}
+.butt{
+  width: 90%;
+  margin-top: 30rpx;
+  background-color: rgba(31, 231, 164, 0.747);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
