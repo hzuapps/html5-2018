@@ -1,0 +1,43 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title"></view>
+    <radio-group name="flag">
+      <label>
+        <radio value="收入" />收入</label>
+      <text>\t</text>
+      <label>
+        <radio value="支出" />支出</label>
+    </radio-group>
+  </view>
+  <view class="section">
+    <view class="section__title">金额</view>
+    <input name="money" type="number" placeholder="请在这里输入金额" />
+  </view>
+  <view class="section section_gap">
+    <view class="section__title"></view>
+    <radio-group name="message">
+      <view class="section__title">类别</view>
+      <label>
+        <radio value="餐饮" />餐饮</label>
+      <text>\t</text>
+      <label>
+        <radio value="交通" />交通</label>
+      <text>\t</text>
+      <label>
+        <radio value="水果" />水果</label>
+      <text>\t</text>
+      <label>
+        <radio value="购物" />购物</label>
+      <text>\t</text>
+      <label>
+        <radio value="通讯" />通讯</label>
+      <text>\n</text>
+      <label>
+        <radio value="医疗" />医疗</label>
+    </radio-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">完成</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
