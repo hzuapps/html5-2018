@@ -1,0 +1,33 @@
+
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__bd">
+      <form bindsubmit='onSubmit'>
+        <view class="weui-toptips weui-toptips_warn" 
+        wx:if="{{hasError}}">{{errorText}}</view>
+
+        <view class="weui-cells__title">歌曲名称</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name="text" 
+                    value='{{text}}' placeholder="请输入歌名" bindinput='onTextChange'/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">内容</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="area" placeholder="请输入内容" style="height: 220px" value='{{area}}' bindinput='onChange'/>
+                    <view class="weui-textarea-counter">{{count}}/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit' bindtap='save'>确定</button>
+        </view>
+      </form>
+</view>
+</view>
