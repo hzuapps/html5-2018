@@ -1,24 +1,61 @@
-<view class='portraitshow'>
-  <image class='portrait' src='../../images/portrait.jpg'></image>
-</view>
-<form bindsubmit='formBindSubmit' bindreset='formBindReset'>
-  <!-- 用户名和密码 -->
-  <view class='inputView'>
-    <input class='input' name='userName' type='number' placeholder='请输入账号' placeholder-style='color:gray'></input>
+
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <view>
+      <view class="avatar">
+        <image style="border-radius:50%;" src="{{userInfo.avatarUrl ? userInfo.avatarUrl:'../../images/people.png'}}"></image>
+      </view>
+      <view class="text">
+        <text wx:if="{{userInfo.nickName}}">{{userInfo.nickName}}</text>
+          <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="userinfo-btn"> 点击微信授权 </button>
+      </view>
+    </view>
   </view>
-  <view class='inputView'>
-    <input class='input' name='password' password='true' placeholder='请输入密码' placeholder-style='color:gray'></input>
+  <view class="list-wrapper">
+    <view class="weui-cells weui-cells_after-title">
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/nick.png"></image>
+          </view>
+          <view class="weui-cell__bd">昵称</view>
+          <block wx:if="{{userInfo.nickName}}">
+          <view class="weui-cell__ft weui-cell__ft_in-access">{{userInfo.nickName}}</view>
+          </block>
+        </navigator>
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/gender.png"></image>
+          </view>
+          <view class="weui-cell__bd">性别</view>
+          <block wx:if="{{userInfo.gender}}">
+          <view wx:if="{{userInfo.gender==1}}" class="weui-cell__ft weui-cell__ft_in-access">男</view>
+          <view wx:else class="weui-cell__ft weui-cell__ft_in-access">女</view>
+          </block>
+        </navigator>
+         <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/country.png"></image>
+          </view>
+          <view class="weui-cell__bd">地区</view>
+          <block wx:if="{{userInfo.country || userInfo.province}} ">
+          <view class="weui-cell__ft weui-cell__ft_in-access">
+          <!-- 
+          {{userInfo.city}}
+          <block wx:if="{{userInfo.city}}"><view>, </view></block> 
+          -->
+          {{userInfo.province}} {{userInfo.country}}</view>
+          </block>
+        </navigator>  
+        <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/code.png"></image>
+          </view>
+          <view class="weui-cell__bd">个人识别码</view>
+          <block wx:if="{{userInfo.language}}">
+          <!-- <view class="weui-cell__ft weui-cell__ft_in-access"></view> -->
+          <view class="weui-cell__ft weui-cell__ft_in-access" bindtap='getcode'>{{code}}</view>
+          </block>
+        </navigator>    
+    </view>
   </view>
-
-  <!-- 忘记密码 -->
-  <view class='forgetPsw'>
-  <label>
-    <switch name='switch' type='checkBox' bindchange='switchChange'></switch>
-    <text class='switchText'>忘记密码？</text>
-  </label>
 </view>
-
-<button form-type='submit' type='primary'>登录</button>
-<button form-type='reset' type='warn'>重置</button>
-
-</form>
