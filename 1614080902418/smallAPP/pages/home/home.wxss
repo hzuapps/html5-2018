@@ -1,0 +1,38 @@
+/* pages/home/home.wxss */
+.class_view_carousel {
+  width: 100%;
+  height: 469rpx; 
+  overflow: hidden;
+}
+.class_view_carousel image {
+  width: 100%;
+  height: 469rpx; 
+}
+
+
+.class_view_panel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.class_nav {
+  width: 33.333%;
+  height: 200rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+.class_view_panel .class_nav:nth-child(3n) {
+  border-right: 0rpx none;
+}
+
+
+.class_nav image {
+  width: 80rpx;
+  height: 80rpx;
+}

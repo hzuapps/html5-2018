@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<view class='class_view_carousel'>
+    <image src='/img/Conam.jpeg'></image>
+</view>
+
+
+<view class='class_view_panel'>
+  <navigator class="class_nav">
+    <image src='/img/灯泡.png'></image>
+    <text>今日一分钟</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/light2.png'></image>
+    <text>本周大题</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/star.png'></image>
+    <text>收藏题目</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/lightb.png'></image>
+    <text>昨日一分钟</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/light3.png'></image>
+    <text>上周大题</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/waterman.png'></image>
+    <text>吃瓜区</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/book0.png'></image>
+    <text>侦探修炼手册</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/book.png'></image>
+    <text>推书区</text>
+  </navigator>
+
+  <navigator class="class_nav">
+    <image src='/img/购物车.png'></image>
+    <text>周边特卖</text>
+  </navigator>
+
+</view>
