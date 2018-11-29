@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    title: '',
+    textArea: '',
+    penName: ''
   },
 
   /**
@@ -62,5 +64,35 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /*
+  *提交表单后的存储事件
+  */
+
+  submit:function(e){
+
+    console.log(e.detail.value);
+    //表单数据
+    var objData = e.detail.value;
+    if (objData.title && objData.textArea && objData.penName) {
+      //异步方式储存表单数据
+      wx.setStorage({
+        key: 'title',
+        data: objData.title,
+      })
+      wx.setStorage({
+        key: 'textArea',
+        data: objData.textArea,
+      })
+      wx.setStorage({
+        key: 'penName',
+        data: objData.penName,
+      })
+      wx.navigateTo({
+        url: '../../pages/index2/index2',
+      })
+    }
+   
   }
 })
