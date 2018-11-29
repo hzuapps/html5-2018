@@ -4,28 +4,28 @@
   flex-direction:column;
   align-content: center;
   box-sizing: border-box;
-  background-image: url("D:/miniprogram/pages/images/1.png");
+  background-image: url("http://img17.3lian.com/d/file/201702/27/bdcbf830427e956b0e354773e09715a7.jpg");
   background-repeat:repeat;
   background-color: rgba(0, 0, 0, 0.480);
   padding-top: 30rpx;
 }
 .screen{
   background-color:#FFFFFF;
-  border-radius: 3px;
+  border-radius: 5px;
   text-align: right;
-  width: 720rpx;
+  width: 730rpx;
   height:100rpx;
   line-height: 100rpx;
   padding-right: 10rpx;
+  padding-left: 10rpx;
   margin-bottom: 30rpx;
 }
 .btnGroup{
   display: flex;
   flex-direction: row;
-
 }
 .item{
-  width: 160rpx;
+  width: 180rpx;
   min-height: 150rpx;
   margin: 10rpx;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
@@ -42,4 +42,15 @@
   color: #d9eef7;
   border: solid 1px #0076a3;
   background: #0095cd;
+}
+.button{
+  color: #fef4e9;
+  background: #f78d1d;
+  width: 730rpx;
+  min-height: 100rpx;
+  margin: 10rpx;
+  text-align: center;
+  line-height: 100rpx;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  border-radius: 5px;
 }
