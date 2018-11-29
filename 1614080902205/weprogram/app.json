@@ -1,23 +1,27 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/logs/logs",
+    "pages/index/index",
     "pages/main/main"
   ],
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "pages/image/shouye.jpg",
+        "selectedIconPath": "pages/image/shouye.jpg",
         "text": "首页"
       },
       {
         "pagePath": "pages/main/main",
         "iconPath": "pages/image/m2.jpg",
+        "selectedIconPath":"pages/image/m2.jpg",
         "text": "分享"
       },
       {
         "pagePath": "pages/logs/logs",
         "iconPath": "pages/image/me.jpg",
+        "selectedIconPath": "pages/image/me.jpg",
         "text": "我"
       }
     ]
