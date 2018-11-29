@@ -1,12 +1,16 @@
 <!--pages/message/message.wxml-->
 <view class='root'>
+<form bindsubmit='submit'>
 
 <view class='content'>
-<input id='inp' placeholder='取个标题吧！'></input>
+<input id='inp' placeholder='取个标题吧！' name='title' value='{{title}}'></input>
 </view>
 
-<textarea id='txt-big' placeholder='亲爱的陌生人，你有什么想要分享的吗？尽管说出来吧。'></textarea>
+<textarea id='txt-big' placeholder='亲爱的陌生人，你有什么想要分享的吗？尽管说出来吧。' name='textArea' value='{{textArea}}'  ></textarea>
 
-<input id='inp2' placeholder='笔名：'></input>
+<input id='inp2' placeholder='笔名：' name='penName' value='{{penName}}'></input>
 <image src='../../images/post.png' id='img'></image>
+<button form-type='submit'></button>
+</form>
+
 </view>

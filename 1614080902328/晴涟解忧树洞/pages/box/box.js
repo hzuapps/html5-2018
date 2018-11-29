@@ -5,13 +5,54 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    // 三个分别存储标题，内容，笔名
+      txt1 : [],
+      txt2 : [],
+      txt3 : [],
+      display2 : 'block',
+      num : 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 判断是否有信
+    if(this.data.txt1!='')
+    {
+      this.setData({
+        display2: 'block'
+      });} 
+    else
+    {
+      this.setData({
+        display2: 'none'
+      })
+      }
+
+    var that = this
+    wx.getStorage({
+      key: 'title',
+      success: function (res) {
+        console.log({title:res.data});
+        that.setData({ txt1: res.data });
+      },
+    }),
+      wx.getStorage({
+      key: 'textArea',
+        success: function (res) {
+          console.log({ textArea: res.data });
+          that.setData({ txt2: res.data })
+        },
+      }),
+      wx.getStorage({
+        key: 'penName',
+        success: function (res) {
+          console.log({ penName: res.data });
+          that.setData({ txt3: res.data })
+        },
+      })
+
 
   },
 
