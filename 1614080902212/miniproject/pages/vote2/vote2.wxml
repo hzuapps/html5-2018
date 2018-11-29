@@ -1,0 +1,15 @@
+<!--pages/vote2/vote2.wxml-->
+<view>
+  <view class="t">标题: {{title1[0]}}</view>
+  <checkbox-group>
+    <view class="a">选项A:{{optiona1[0]}}<checkbox value="{{optiona1[0]}}" check="{{optiona1.checked}}"/>
+    </view>
+    <view class="b">选项B:{{optionb1[0]}}<checkbox value="{{optionb1[0]}}" check="{{optionb1.checked}}"/>
+    </view>
+    <view class="c">选项C:{{optionc1[0]}}<checkbox value="{{optionc1[0]}}" check="{{optionc1.checked}}"/>
+    </view>
+    <view class="d">选项D:{{optiond1[0]}}<checkbox value="{{optiond1[0]}}" check="{{optiond1.checked}}"/>
+    </view>
+  </checkbox-group>
+  <button class="butt" bindtap='gotovote'>投票完成</button>
+</view>

@@ -1,10 +1,10 @@
-<!--pages/me/me.wxml-->
-<text></text>
-<view class="container" style="background:#abcdef">
-  <view class="usermotto" >
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <view class="user-src">
-    <image style="width: 300px; height: 300px; " src="{{src}}"></image>
-  </view>
-</view>
+<button class="vote_bf" bindtap="changetofvote">
+  <image class='voteimg' src='../images/vote3.png'></image>
+  <view>单项投票</view>
+</button>
+<button class="vote_bs" bindtap="changetosvote">
+  <image class='voteimg1' src='../images/vote4.png'></image> 
+  <view>多项投票</view>
+</button>
+
+
