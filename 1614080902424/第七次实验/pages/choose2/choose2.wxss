@@ -1,0 +1,30 @@
+/* pages/choose2/choose2.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto {
+  width:100%;
+
+  position:absolute;
+  text-align: center;
+  bottom:10rpx;
+}
+.top-user{
+  margin-top:10px
+}
+.message{
+  background-color:#FFF8DC ;
+}
