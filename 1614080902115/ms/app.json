@@ -21,9 +21,9 @@
         },
         {
           "pagePath": "pages/home/home",
-          "text": "个人中心",
-          "iconPath": "image/person.jpg",
-          "selectedIconPath": "image/person.jpg"
+          "text": "查找",
+          "iconPath": "image/select.png",
+        "selectedIconPath": "image/select.png"
         }
       ]
     }
