@@ -1,0 +1,18 @@
+<!--pages/choose1/choose1.wxml-->
+<view class="" bindtap="change">
+  
+  <view style="background-color:#E0EEE0; ">
+      <span style="background-color:#B0E0E6;">菜单</span>
+      <textarea placeholder=''bindtap=""placeholder-style="color:#F4A460; "class='menu' maxlength='400' style="text-align:center; color:#8B8682;" value="{{food3}}" bindinput='food'></textarea>
+  </view>
+  <view style="background-color:#E6E6FA ; margin-top:30rpx;">
+      <span style="background-color:#B0E0E6;">饮料</span>
+      <textarea placeholder=''bindtap="" placeholder-style="color:#F4A460; "class='drink' maxlength='400' style="text-align:center; color:#8B8682;" value="{{juice3}}" bindinput='juice' ></textarea>
+  </view>
+  <view>
+      <button style="background-color:#FFF68F; margin-top:30rpx;" bindtap="yes" >确定</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" >{{motto}}</text>
+  </view>
+</view>
