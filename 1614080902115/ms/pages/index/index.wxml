@@ -5,14 +5,14 @@
     </swiper-item>
    </block>
 </swiper>
-<view class="items-list">
-  <view class='pro-item'>
-    <image class='pro-logo' src='/image/food1.jpg'></image>
+ <view class='list-li mflex'  wx:for="{{list_data}}"  wx:key="index" >
+    <view class='pro-item'>
+    <image class='pro-logo' src='{{item.imgUrl}}'></image>
     <view class='pro-body'>
-      <view class='pro-title'>牛肉丸</view>
-        <text class='pro-desc'>　　即便你没去过潮汕，也一定知道牛肉丸。在周星驰的经典喜剧《食神》里，就有关于“潮汕牛肉丸可以当乒乓球打”的剧情。</text>
+      <view class='pro-title'>{{item.name}}</view>
+        <text class='pro-desc'>　　{{item.desc}}</text>
     </view>
-  </view>
+  </view>        
 </view>
 <view class="items-list">
   <view class='pro-item'>
