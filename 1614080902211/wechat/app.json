@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/information/information",
+    "pages/setting/setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "duck",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "快递查询助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页.png",
+        "selectedIconPath": "images/首页.png"
+      },
+      {
+        "pagePath": "pages/information/information",
+        "text": "订单查询历史",
+        "iconPath": "images/清单.png",
+        "selectedIconPath": "images/清单.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "反馈",
+        "iconPath": "images/用户.png",
+        "selectedIconPath": "images/用户.png"
+      }
+    ]
+  }
+}

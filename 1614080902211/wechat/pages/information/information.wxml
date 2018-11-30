@@ -1,0 +1,11 @@
+<view class='container'>
+  <text style='font-size:20px;margin-bottom:10px;padding:0px'>所有快递信息</text>
+  <button type="primary" bindtap='btnClick'>刷新</button>
+  <view wx:for="{{allLogisticsInfo}}">
+    <scroll-view scroll-y="true" style='height:100px;border:1px solid yellow;margin:5px'>
+      <view wx:for="{{item.result.list}}">
+        【{{item.time}}】 {{item.status}} 
+      </view>
+    </scroll-view>
+  </view>
+</view> 

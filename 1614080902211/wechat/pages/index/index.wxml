@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <text style='font-size:30px;margin-bottom:10px'>快递查询助手</text>
+  <input placeholder="请输入快递单号" bindinput='getInput'/>
+  <button type="primary" bindtap='btnClick'> 查询 </button>
+  <scroll-view scroll-y="true" style='height:300px'>
+    <view wx:for="{{logisticsInfo.result.list}}">
+      【{{item.time}}】 {{item.status}} 
+    </view>
+  </scroll-view>
+</view>
