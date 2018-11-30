@@ -1,2 +1,45 @@
-<!--pages/myself/myself.wxml-->
-<text>pages/myself/myself.wxml</text>
+<view class="distance weui-panel weui-panel_access">
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">{{userInfo.nickName}}</view>
+        <view class="weui-media-box__desc">性别：{{userInfo.gender?"男":"女"}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-cells">
+  <navigator class="weui-cell weui-cell_access" href="javascript:;">
+    <view class="weui-cell__hd">
+      <image src="../../imgs/briefcase.png" style="width:20px;height:20px;margin-right:5px;display:block" />
+    </view>
+    <view class="weui-cell__bd">
+      <text>我参与的</text>
+    </view>
+    <view class="weui-cell__ft">
+    </view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access" href="javascript:;">
+    <view class="weui-cell__hd">
+      <image src="../../imgs/wrench.png" style="width:20px;height:20px;margin-right:5px;display:block" />
+    </view>
+    <view class="weui-cell__bd">
+      <text>设置</text>
+    </view>
+    <view class="weui-cell__ft">
+    </view>
+  </navigator>
+  <navigator class="weui-cell weui-cell_access" href="javascript:;">
+    <view class="weui-cell__hd">
+      <image src="../../imgs/info-sign.png" style="width:20px;height:20px;margin-right:5px;display:block" />
+    </view>
+    <view class="weui-cell__bd">
+      <text>关于</text>
+    </view>
+    <view class="weui-cell__ft">
+    </view>
+  </navigator>
+</view>

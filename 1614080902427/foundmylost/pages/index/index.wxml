@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view id="list-container" class='weui-flex'>
-    <view wx:for="{{list}}" wx:for-item="item" class="weui-flex__item weui-panel item-container">
+    <view wx:for="{{list}}" wx:for-item="item" class="weui-flex__item weui-panel item-container" bindtap="viewDetail"  data-uid="{{item.uid?item.uid:-1}}">
       <!-- 头部 -->
       <view class="item-header">
         <!-- 用户头像 -->

@@ -1,1 +1,70 @@
 /* pages/list/list.wxss */
+
+.weui-label {
+  display: block;
+}
+
+#datePicker {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  z-index: 3;
+  background: white;
+}
+
+#datePicker picker-view {
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  z-index: 3;
+  background: white;
+}
+
+#maskView {
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+picker-view-column {
+  text-align: center;
+}
+
+#upload {
+  display: flex;
+  width: 100%;
+  height: 96px;
+}
+
+.uploadBtn {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.uploadBtn image {
+  width: 48px;
+  height: 48px;
+}
+
+#publishBtn {
+  height: 32px;
+  position:fixed;
+margin-top:-16px;
+
+}
+
+#titleInputBox {
+  width: 80%;
+}
