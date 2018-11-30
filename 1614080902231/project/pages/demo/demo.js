@@ -1,104 +1,111 @@
-// pages/demo.js
+var app = getApp()
+var bmap = require('../../utils/bmap-wx.min.js')
+let str
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
-    phoneInput: '',
-    indress: '',
-    }
-    ,
-    // 获取输入手机号
-    phoneInput: function (e) {
-      this.setData({
-        phoneInput: e.detail.value
-      })
-    },
-  // 获取输入地址
-    indressInput: function (e) {
-    this.setData({
-      indress: e.detail.value
+    detail:{},
+    userInfo: {},
+    weatherData: '' ,
+    //默认未获取地址
+    hasLocation: false,
+    addressboolean:false,
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../index/index'
     })
   },
-    // 提交
-    login: function () {
-      if (this.data.phoneInput.length == 0 || this.data.indress.length == 0) {
-        wx.showToast({
-          title: '手机号不能为空',
-          icon: 'loading',
-          duration: 2000,
-          
-        })
-        this.setData({
-          phoneInput: '',
-          indress:''
-        })
-      } else {
-        // 这里修改成跳转的页面
-        wx.showToast({
-          title: '提交成功',
-          icon: 'success',
-          duration: 2000
-        })
-        this.setData({
-          phoneInput: '',
-          indress: ''
+  onLoad: function (options) {
+    str = JSON.parse(options.testData)
+    console.log(str)
+    var that = this
+    var BMap = new bmap.BMapWX({
+      ak: 'CNbLClgxybzaGyV0Ma8PZ1hzBZgGR2Ez'
+    });
+    var fail = function (data) {
+      console.log(data)
+    }; 
+    var success = function (data) {
+      var weatherData = data.currentWeather[0];
+      weatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n';
+      that.setData({
+        weatherData: weatherData
+      });
+    } 
+    BMap.weather({
+      fail: fail,
+      success: success
+    }); 
+    //调用应用实例的方法获取全局数据
+    wx.getUserInfo(function (userInfo) {
+      //更新数据
+      that.setData({
+        detail:str,
+        userInfo: userInfo
+      })
+    })
+  },
+  //获取经纬度
+  getLocation: function (e) {
+    console.log(e)
+    var that = this
+    wx.getLocation({
+      type:'wgs84',
+      success: function (res) {
+        console.log(res)
+        that.setData({
+          addressboolean:false,
+          hasLocation: true,
+          location: {
+            longitude: str.longitude,
+            latitude: str.latitude
+          }
         })
       }
+    })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  //根据经纬度在地图上显示
+  openLocation: function (e) {
+    console.log("openLocation" + e)
+    var value = e.detail.value
+    var that = this
+    that.setData({
+      addressboolean: false
+    })
+    wx.openLocation({
+      longitude: Number(value.longitude),
+      latitude: Number(value.latitude)
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //选择位置位置
+  chooseLocation: function (e) {
+    console.log(e)
+    var that = this
+    wx.chooseLocation({
+      success: function (e) {
+        // success
+        console.log(e)
+        that.setData({
+          hasLocation:true,
+          addressboolean:true,
+          address:{
+            name:e.name,
+            address:e.address
+          },
+          location: {
+            longitude: e.longitude,
+            latitude: e.latitude
+          }
+        })
+        console.log(that.data.addressboolean)
+      },
+      fail: function (res) {
+       
+      },
+      complete: function (res) {
+      
+      }
+    })
   }
 })

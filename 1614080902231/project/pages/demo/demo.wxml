@@ -1,30 +1,28 @@
-<!--demo.wxml-->
-<view class="index-hd">
-  <image class="index-logo" src="./gongnengdingyi.png"></image>
-  <view class="index-desc">独乐乐不如众乐乐，如果您发现有惠州有什么好玩的，欢迎告诉我们，我们会把您提供的信息让更多的人知道</view>
+<view class="weather">
+  <text>{{weatherData}}</text> 
 </view>
-<view class="container">
-  <view class="login-from">
-    <!--手机号-->
-    <view class="inputView">
-      <label class="loginLab">手机号</label>
-      <input class="inputText" placeholder="请输入手机号" bindinput="phoneInput" value="{{phoneInput}}"/>
-    </view>
-    <view class="line"></view>
-    <!--地址-->
-    <view class="inputView">
-      <label class="loginLab" >地址</label>
-      <input class="inputText"  bindinput="indressInput" value="{{indress}}"/>
-    </view>
-    <view class="line"></view>
-    <!--多本文本框-->
-    <label class="loginLab" >留言</label>
-    <view class="textarea-wrp">
-        <textarea auto-focus="true" style="height: 8em" />
-      </view>
-    <!--按钮-->
-    <view class="loginBtnView">
-      <button class="loginBtn" type="primary" bindtap="login">提交</button>
+<view class="wrapper">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <form bindsubmit="openLocation">
+        <view class="page-body-form">
+          <text class="page-body-form-key">经度</text>
+          <input class="page-body-form-value" type="text" value="{{location.longitude}}" name="longitude" />
+          <text class="page-body-form-key">纬度</text>
+          <input class="page-body-form-value" type="text" value="{{location.latitude}}" name="latitude" />
+          <view class="one {{addressboolean?'show':'hide'}}">
+          <text class="page-body-form-key">地点</text>
+          <input class="page-body-form-value" type="text" value="{{address.name}}" name="position" />
+          <text class="page-body-form-key">地址</text>
+          <input class="page-body-form-value" type="text" value="{{address.address}}" name="address" />
+          </view>
+        </view>
+        <view class="page-body-buttons">
+          <button class="page-body-button" type="primary" bindtap="getLocation" plain=' '>获取景点坐标</button>
+          <button class="page-body-button" type="primary" formType="submit" plain=' '>查看景点位置</button>
+          <button class="page-body-button" type="primary" bindtap="chooseLocation" plain=' '>查看周围位置</button>
+        </view>
+      </form>
     </view>
   </view>
 </view>

@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/demo/demo",
     "pages/logs/logs",
-    "pages/demo/demo"
+    "pages/image/image"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,7 +25,7 @@
       {
         "selectedIconPath": "images/peizhi-.png",
         "iconPath": "images/peizhi-.png",
-        "pagePath": "pages/demo/demo",
+        "pagePath": "pages/image/image",
         "text": "反馈"
       }
     ]
