@@ -1,0 +1,9 @@
+@import "../lib/weui.wxss";
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.flex-wrp {display: flex;}
+.bc_green {background: green;width:110px; height: 110px;}
+.bc_red {background: red;width:110px; height: 110px;}
+.bc_blue {background: blue;width:110px; height: 110px;}
