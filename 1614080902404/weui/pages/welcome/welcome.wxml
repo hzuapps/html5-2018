@@ -1,0 +1,10 @@
+<view class="container">
+    <image class="myphoto" src="/image/MyIcon.jpg"></image>
+    <text class="motto">图音</text>
+    <view class="button">
+        <text class="button-text">BY.ME</text>
+          <button class='button-text' type="primary" bindtap='JumpP'>点击进入</button>
+    </view>
+     
+</view>
+
