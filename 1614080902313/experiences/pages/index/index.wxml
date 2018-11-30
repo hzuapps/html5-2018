@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+
+<view >
+
+<view wx:for='{{appina2}}'  wx:for-index="index" wx:for-item="item" wx:key="unique" >
+  <!-- <view wx:for='{{tarr}}'> -->
+    <view class='topth' bindlongtap='btch'  id='{{tarr[index]}}_{{index}}' >
+    <view class='thing' style='background-color:while'>
+    <view class='sd'>
+      <view class='address'>地址：{{item.addres}}</view>
+      <view class='jw'>
+      <view class='jwd jf'>经度：{{item.long}}</view>
+      <view class='jwd jr'>纬度：{{item.lat}}</view>
+      </view>
+      <view class='time'>时间：{{item.time}}</view>
+      </view>
+      <scroll-view scroll-y style="height: 150px;" class='text'>体会：<view class='block'>{{item.text}}</view></scroll-view>
+    </view>
+    </view>
+  <!-- </view> -->
+</view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/add/add.wxml-->
+<view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+地址：<input value='{{addre}}' name='addre' bindinput='getaddres'></input>
+经度：<input value='{{long}}' name='long' bindinput='getlong'></input>
+纬度：<input value='{{lat}}' name='lat' bindinput='getlat'></input>
+时间：<input name='time' bindinput='gettime'></input>
+体会：<textarea name='text' bindinput='gettext'></textarea>
+<button type="primary" bindtap="getCenterLocation" size='mini' class='gbt'>获取位置</button>
+<button formType="submit">确定</button>
+<button formType="reset">重置</button>
+</form>
+
+</view>

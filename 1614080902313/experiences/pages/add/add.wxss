@@ -1,0 +1,6 @@
+/* pages/add/add.wxss */
+
+.gbt{
+  border-radius: 50%;
+
+}
