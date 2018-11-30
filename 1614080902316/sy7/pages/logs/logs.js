@@ -12,16 +12,7 @@ Page({
   },
   onReachBottom(){
     this.onLoad.log
-  }, 
-  onShow: function () {
-    var address = wx.getStorageSync('address')||[]
-    var logs=wx.getStorageSync('logs')||[]
-    this.setData({
-      address:address,
-      logs:logs
-    })
   },
-
   onLoad: function () {
     var that=this;
     var BMap = new bmap.BMapWX({
@@ -60,11 +51,12 @@ Page({
     
     var logs=wx.getStorageSync('logs')||[]
     var address=wx.getStorageSync('address')||[]
-    this.onLoad()
+    
     logs.unshift(Date.now())
     address.unshift(this.data.addr)
     wx.setStorageSync('logs', logs)
     wx.setStorageSync('address', address);
+    this.onLoad()
     wx.showToast({
 
       title: '记录成功',

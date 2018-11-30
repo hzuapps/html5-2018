@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<!-- map.wxml -->
+<view>  
+    
+    <view>位置：{{address}}</view>  
+    <map enable-rotate='true' show-compass='true' latitude="{{latitude}}" longitude='{{longitude}}' markers='{{markers}}'           scale='20' width="300rpx" height="200rpx" padding-left='20rpx'></map>
+   
+    <block wx:for="{{futherWeather}}">
+    <view>
+    <text class="log-item">{{'日期：    '+item.date}}\n{{'天气：   '+item.weather}}\n{{"气温：    "+item.temperature}}\n{{'风力：   '+item.wind}}\n\n</text>
+    </view>
+  </block>
+</view> 
