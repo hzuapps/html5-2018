@@ -1,0 +1,6 @@
+<!--index.wxml-->
+
+   
+      <image bindtap="bindViewTap"  src="/images/timg.jpg" mode="cover"></image>
+     
+  
