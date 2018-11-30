@@ -1,14 +1,98 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+<view style='background:#E6E6E6'>
+  <swiper  indicator-dots="{{indicatorDots}} "
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style='width :{{imageWidth}}px' height="150"/>
+      </swiper-item>
     </block>
+  </swiper>
+  <view class='type' style='background-color:white'>
+    <button class='button1' style='background-color:#00FFFF'>
+      <text class='text-more'>玄幻奇幻</text>
+    </button>
+    <button class='button1' style='background-color:#F76809'>
+    <text class='text-more'>武侠仙侠</text>
+    </button>
+    <button class='button1' style='background-color:#99AA55'>
+    <text class='text-more'>都市言情</text>
+    </button>
+    <button class='button1' style='background-color:#3C57C4'>
+    <text class='text-more'>女生频道</text>
+    </button>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class='view1'>
+      <view class='view-head'>
+        <text class='text-head'>精品推荐</text>
+        <button class='button-more'>
+          <text class='text-more' >更多</text>
+        </button>
+      </view>
+      <view class='view-content'>
+          <view class='content-item'>
+            <image class='image1' src='http://img.zcool.cn/community/017cdd58fe0278a801214550610e21.jpg'></image>
+            <text class='text-image'>楚留香新传</text>
+          </view>
+          <view class='content-item'>
+           <image class='image1' src='http://hbimg.b0.upaiyun.com/026085b791f9c5f6a0ebaad2b218c22549ab82ec6fee0-HJuMZI_fw658'></image>
+            <text class='text-image'>天煞魔君</text>
+          </view>
+          <view class='content-item'>
+           <image class='image1' src='http://image2.sina.com.cn/gm/ul/2006/1130/U563P115DT20061130151318.jpg'></image>
+            <text class='text-image'>诛仙</text>
+          </view>
+          <view class='content-item'>
+          <image class='image1' src='http://img2.cache.netease.com/game/2015/2/28/20150228110547085db.jpg'></image>
+            <text class='text-image'>大主宰</text>
+          </view>
+          <view class='content-item'>
+           <image class='image1' src='http://img0.100bt.com/dynamic/getImg/force/?width=110&height=144&src=http://img3.a0bi.com/upload/articleResource/20160226/1456478466279.jpg'></image>
+            <text class='text-image'>莽荒纪</text>
+          </view>
+          <view class='content-item'>
+          <image class='image1' src='http://img0.100bt.com/dynamic/getImg/force/?width=110&height=144&src=http://img2.a0bi.com/upload/gw/novel/20151204/4302.jpg'></image>
+            <text class='text-image'>全职法师</text>
+          </view>
+      </view>
+    </view>
+    <view class='view1'>
+      <view class='view-head'>
+        <text class='text-head'>火热新书</text>
+        <button class='button-more'>
+          <text class='text-more' >更多</text>
+        </button>
+      </view>
+      <view class='view-content'>
+         <view class='content-item'>
+            <image class='image2' src='http://img0.100bt.com/dynamic/getImg/force/?width=110&height=144&src=http://img4.a0bi.com/upload/articleResource/20180102/1514878345869.jpg'></image>
+         </view>
+         <view class='view-content-text'>
+            <text class='text-introduce' style='margin-top:12px'>玄阳天尊</text>
+            <text class='text-introduce'>玄幻奇幻 | 环城路飙车</text>
+            <text class='text-introduce2'>“天下悠悠众口何以能尽数堵住，尽是一些道貌岸然的无胆鼠辈，当吾君临天下、主宰四合八荒之时..”</text>
+         </view>
+      </view>
+      <view class='view-content'>
+         <view class='content-item'>
+            <image class='image2' src='http://img0.100bt.com/dynamic/getImg/force/?width=110&height=144&src=http://img4.a0bi.com/upload/articleResource/20180315/1521083585261.jpg'></image>
+         </view>
+         <view class='view-content-text'>
+            <text class='text-introduce' style='margin-top:12px'>鸿武战神</text>
+            <text class='text-introduce'>其它   | 千朽千沉</text>
+            <text class='text-introduce2'>“千年古墓坍塌，情势危急，齐浊皓躲入了古墓中的一口神异棺材中！当他再次醒来时，赫然发现..”</text>
+         </view>
+      </view>
+      <view class='view-content'>
+         <view class='content-item'>
+            <image class='image2' src='http://img0.100bt.com/dynamic/getImg/force/?width=110&height=144&src=http://img4.a0bi.com/upload/articleResource/20180316/1521169532481.jpg'></image>
+         </view>
+         <view class='view-content-text'>
+            <text class='text-introduce' style='margin-top:12px'>血色的青春</text>
+            <text class='text-introduce'>军事    | 寒麟灏</text>
+            <text class='text-introduce2'>“我们愿秉承先烈遗志，为了世界百姓的安宁，抛头颅，撒热血，为我们心中的理想奋斗一生。就算我们..”</text>
+         </view>
+      </view>
   </view>
-
 </view>
+

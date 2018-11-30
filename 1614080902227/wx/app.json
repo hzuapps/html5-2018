@@ -1,27 +1,35 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/setpage/setpage"
+    "pages/setpage/setpage",
+    "pages/login/login"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "电子书阅读",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor": "#1afa29",
     "list": [
       {
         "pagePath": "pages/index/index",
+        "iconPath": "image/zhuye.png",
+        "selectedIconPath": "image/zhuyes.png",
         "text": "主页"
       },
       {
         "pagePath": "pages/logs/logs",
+        "iconPath": "image/shequ.png",
+        "selectedIconPath": "image/shequs.png",
         "text": "社区"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/setpage/setpage",
+        "iconPath": "image/geren.png",
+        "selectedIconPath": "image/gerens.png",
         "text": "个人"
       }
     ]

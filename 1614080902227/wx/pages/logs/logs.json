@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "查看启动日志"
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "社区",
+  "navigationBarTextStyle": "black"
 }
