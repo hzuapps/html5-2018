@@ -1,0 +1,16 @@
+<view>
+<view class="section">
+<icon type='search' color='black' class='searchic'></icon>
+ <input type='text' confirm-type='search' class='input1' placeholder="search" auto-focus/>
+</view>
+<view class='show'>
+<button  class='add1' plain='true'><image src='add.png'></image></button>
+<view class='showce'>
+<view class='showceF'>
+<text>{{time1}}</text>
+<view><text>{{title1}}</text></view>
+<textarea>{{message1}}</textarea>
+</view>
+</view>
+</view>
+</view>
