@@ -4,10 +4,11 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '田馥甄--小幸运',
+    motto: 'null',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    song:'未获取到推荐歌曲'
   },
   //事件处理函数
   bindViewTap: function() {
@@ -42,6 +43,24 @@ Page({
         }
       })
     }
+    
+    var that = this
+    wx.request({
+      url: 'https://infoaas.com/html5-2018/1614080902221/tdSongRec.json',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        if(res.data.success){
+          that.setData({
+            song: res.data.songName,
+
+          })
+        }
+       
+      }
+    })
+   
   },
   getUserInfo: function(e) {
     console.log(e)
