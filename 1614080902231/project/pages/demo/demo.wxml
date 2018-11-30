@@ -1,0 +1,30 @@
+<view class="weather">
+  <text>{{weatherData}}</text> 
+</view>
+<view class="wrapper">
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <form bindsubmit="openLocation">
+        <view class="page-body-form">
+          <text class="page-body-form-key">经度</text>
+          <input class="page-body-form-value" type="text" value="{{location.longitude}}" name="longitude" />
+          <text class="page-body-form-key">纬度</text>
+          <input class="page-body-form-value" type="text" value="{{location.latitude}}" name="latitude" />
+          <view class="one {{addressboolean?'show':'hide'}}">
+          <text class="page-body-form-key">地点</text>
+          <input class="page-body-form-value" type="text" value="{{address.name}}" name="position" />
+          <text class="page-body-form-key">地址</text>
+          <input class="page-body-form-value" type="text" value="{{address.address}}" name="address" />
+          </view>
+        </view>
+        <view class="page-body-buttons">
+          <button class="page-body-button" type="primary" bindtap="getLocation" plain=' '>获取景点坐标</button>
+          <button class="page-body-button" type="primary" formType="submit" plain=' '>查看景点位置</button>
+          <button class="page-body-button" type="primary" bindtap="chooseLocation" plain=' '>查看周围位置</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>
+
+
