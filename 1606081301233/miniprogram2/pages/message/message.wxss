@@ -1,0 +1,109 @@
+.form{
+  font-family: "微软雅黑";
+}
+#adduser{
+    background: #f5f5f5;
+}
+.section__title{
+    float: left;
+    width: 30%;
+    font-size: 32rpx;
+}
+.form-group{
+    float: right;
+    width: 70%;
+    font-size: 32rpx;
+}
+.section{
+    clear: both;
+    width:90%;
+    margin: 2rem auto;
+    padding: 5px;
+}
+.input-text{
+    border: 1px solid #ddd;
+    font-size: 32rpx;
+}
+
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.item{
+  width: 100%;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+.item .title{
+  width: 100%;
+  height: 30rpx;
+  font-size: 32rpx;
+  line-height: 30rpx;
+  padding-left: 12rpx;
+  color: #2b2b2b;
+  box-sizing: border-box;
+}
+.item .cont{
+  font-size: 26rpx;
+  color: #2b2b2b;
+  padding: 24rpx;
+}
+.cont .photos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item .no-cont{
+  font-size: 30rpx;
+  line-height: 1.2;
+  color: #aaa;
+  text-align: center;
+}
+.img{
+  position: relative;
+}
+.del{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  top: -16rpx;
+  right: -16rpx;
+  border-radius: 50%;
+}
+.add-pic{
+  border: 1px dotted #1296db;
+  width: 640rpx;
+  margin: 20rpx auto;
+  height: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.add-pic image{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+.tip{
+  font-size: 20rpx;
+  color: #aaa;
+  text-align: center;
+}
+.save{
+  display: inline-block;
+  background: #FFCCFF;
+  color: #2b2b2b;
+  font-size: 16px;
+  width: 180rpx;
+  margin:0 30px;
+}

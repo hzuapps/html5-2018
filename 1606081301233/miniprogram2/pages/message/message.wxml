@@ -1,0 +1,66 @@
+<form bindsubmit="formSubmit" bindreset="formReset" class='form'>
+         <view class="section">
+            <view class="section__title">姓名:</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="username" placeholder="请输入姓名" />
+            </view>    
+        </view>
+        <view class="section section_gap">
+            <view class="section__title">年龄:</view>
+            <view class='form-group'>
+                <slider name="age" show-value ></slider>
+            </view>    
+        </view>
+        <view class="section section_gap">
+            <view class="section__title">性别:</view>
+            <view class='form-group'>
+                <radio-group name="gender">
+                  <label><radio value="1"/>男</label>
+                  <label><radio value="0"/>女</label>
+                </radio-group>
+            </view>    
+        </view>
+        <view class="section section_gap">
+            <view class="section__title">联系方式</view>
+            <view class='form-group'>
+                <input type="text" class="input-text" name="context" placeholder="请输入您的联系方式" />
+            </view>   
+        </view>
+<view class="photos item">
+  <view class="title">图片</view>
+   <view class="cont">
+    <view class="photos" wx:if="{{photos}}">
+     <view class="img">
+       <image class="del" bindtap="delPic" wx:if="{{editStatus}}" src="../../img/del.svg"/>
+       <image class="show-pic" mode="aspectFill" src="{{photos}}" />
+     </view>
+    </view>
+    <view class="no-cont" wx:if="{{!editStatus && !photos}}">您还没有添加图片!</view>
+    <view class="add-pic" wx:if="{{editStatus && !photos}}">
+    <image src="../../img/add.svg" bindtap="addPic" />
+    <view class="tip">注意:请确保本地图片缓存完成</view>
+  </view>
+ </view>
+</view> 
+        <view class="section btn-area">
+            <button class="save" formType="submit">提交</button>
+            <button class="save" formType="reset">清空</button>
+        </view>
+    </form>
+ 
+     <!-- 黑框提示并消失 -->
+    <toast hidden="{{toast1Hidden}}" bindchange="toast1Change">
+        {{notice_str}}
+    </toast>
+    <!-- 确认框 及 提示框 -->
+    <view class="page__bd">
+        <modal title="确认" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm_one" bindcancel="cancel_one">
+            确认提交么？
+        </modal>
+        <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2" bindcancel="modalChange2">
+            <view> 提示 </view>
+            <view> 清空成功 </view>
+        </modal>
+    </view>
+
+    

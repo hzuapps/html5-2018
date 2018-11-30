@@ -1,0 +1,8 @@
+.btn_style{
+  border-radius: 5px;
+  height: 80rpx;
+  padding: 10rpx 0;
+  font-size: 30rpx;
+  width: 319px;
+  display: block;
+}

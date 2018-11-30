@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container ">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname" bindtap='bindViewTap'>{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <text class="text">Welcome!</text>
+  <view wx:if="{{hasUserInfo && canIUse}}">
+  <view class="button-sp-area">
+    <button class="weui-btn" style="background: #FFCCFF;color: #2b2b2b;border:0;" type="mini" plain="true" bindtap='bindViewTap' >进入</button>
+  </view>
+</view>
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text">Copyright © 2018 memo</view>
+</view>
+  <!--
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  -->
+</view>
