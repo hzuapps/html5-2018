@@ -1,15 +1,11 @@
-// pages/index/index.js
+// pages/rwsk/rwsk.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      page1: 'rwsk',
-      page2: 'jjgl',
-      page3: 'xxjs',
-      page4: 'wxxs',
-      page5: 'lszj'
+
   },
 
   /**

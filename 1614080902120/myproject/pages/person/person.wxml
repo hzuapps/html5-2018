@@ -7,7 +7,23 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+</view>
+
+<view class="page__bd">
+    <view class="weui-cells__title">留言</view>
+    <form bindsubmit="bindFormSubmit">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea placeholder="在此输入信息" name="textarea"/>
+                </view>
+            </view>
+            <view class="weui-btn-area">
+                <view class="weui-textarea-counter">0/200</view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button form-type="submit" type="primary" >提交</button>
+        </view>
+    </form>
 </view>

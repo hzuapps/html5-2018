@@ -18,24 +18,29 @@
             <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
         </view>
         <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <navigator url="../{{page1}}/{{page1}}" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>人文社科</view>
                 </view>
             </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <navigator url="../{{page2}}/{{page2}}" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>经济管理</view>
                 </view>
             </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <navigator url="../{{page3}}/{{page3}}" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>信息技术</view>
                 </view>
             </navigator>
-            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <navigator url="../{{page4}}/{{page4}}" class="weui-cell" hover-class="weui-cell_active">
                 <view class="weui-cell__bd">
-                    <view>实时搜索文本</view>
+                    <view>文学小说</view>
+                </view>
+            </navigator>
+            <navigator url="../{{page5}}/{{page5}}" class="weui-cell" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">
+                    <view>历史传记</view>
                 </view>
             </navigator>
         </view>

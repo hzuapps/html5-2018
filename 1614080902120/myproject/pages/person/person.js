@@ -8,6 +8,28 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
+
+  bindFormSubmit: function (e) {
+    console.log('留言更新：',e.detail.value.textarea)
+
+    var that = this;
+    wx.connectSocket({
+      url: 'wss://ilkcnttr.ws.qcloud.la',//申请的腾讯云域名
+      data: {
+        x: e.detail.value.textarea
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      protocols: ['protocol1'],
+      method: "GET",
+      success(res) {
+        console.log("发送成功:",res.data)
+      }
+    })
+
+  },
+
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'

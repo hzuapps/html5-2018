@@ -1,7 +1,12 @@
 Page({
   data: {
     inputShowed: false,
-    inputVal: ""
+    inputVal: "",
+    page1: 'rwsk',
+    page2: 'jjgl',
+    page3: 'xxjs',
+    page4: 'wxxs',
+    page5: 'lszj'
   },
   showInput: function () {
     this.setData({

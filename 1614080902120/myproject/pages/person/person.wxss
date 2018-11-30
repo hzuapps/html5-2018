@@ -20,3 +20,6 @@
 .usermotto {
   margin-top: 200px;
 }
+.page__bd{
+  padding-bottom: 20px;
+}
