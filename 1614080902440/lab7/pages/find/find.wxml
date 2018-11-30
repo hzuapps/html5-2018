@@ -1,0 +1,17 @@
+<!--pages/find/find.wxml-->
+<view class="msg-box">
+<!--信息-->
+   <view class="send-box">
+      <input bindinput="changeInputValue" class="input" type="text" value="{{inputVal}}" placeholder="请输入家教信息……" placeholder-class="place-input"/>
+      <button size="mini" type="primary" bindtap="addMsg">发布信息</button>
+   </view>
+   <!--家教信息列表-->
+   <text class="msg-info" wx:if="{{msgData.length==0}}">暂无家教信息……</text>
+   <view class="list-view">
+      <view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+        <text class="text1">{{item.msg}}</text>
+        <icon type="cancel" bindtap="DelMsg" data-index="{{index}}" class="close-btn" />
+      </view>
+   </view>
+</view>
+
