@@ -12,13 +12,13 @@
 		"beforeUpload": "npm run compile"
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
-		"nodeModules": true
+		"nodeModules": true,
+		"autoAudits": false
 	},
 	"appid": "wx8346f25311aabbdb",
 	"condition": {}
