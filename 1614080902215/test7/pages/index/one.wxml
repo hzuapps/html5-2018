@@ -1,0 +1,27 @@
+<!--pages/index/one.wxml-->
+<view class="userinfo">
+  <block><image bindtap="bindViewTap" class="userinfo-picture" src="{{tp_one}}" mode="cover"></image>
+  <text class="userinfo-black">一个</text>
+  <text class="userinfo-gray">韩寒监制原创文艺阅读</text>
+  </block>
+  <block>
+    <text class="userinfo-gray" style="margin-top:0">源网址：<text class="userinfo-blue">http://m.wufazhuce.com/</text></text>
+  </block>
+</view>
+
+ <!-- 分割线 -->
+<view class="divLine"></view>
+
+<block>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">中文名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;one·一个</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">开发商：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上海有树文化传播有限公司</text></view>
+  <view><text class="userinfo-gray_introduce" decode="{{true}}">语&nbsp;&nbsp;&nbsp;言：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中文，英文</text></view>
+  <view><text class="userinfo-gray_introduce">简介：</text></view>
+</block>
+<block>
+  <view class="userinfo" style="line-height:25px">
+    <text class="userinfo-gray_introduce" decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;「ONE·一个」是由韩寒监制，原《独唱团》主创成员共同制作的一款文艺生活App。秉承“复杂世界里，一个就够了”的理念，「ONE·一个」每日精挑细选，为用户带来优质的图片、文章、音乐和影视内容。
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为一款流行的新媒体阅读产品，「ONE · 一个」致力于为热爱文艺生活的人群带来丰富且优质的作品，将阅读变成一种生活方式</text>
+  <text class="userinfo-gray_introduce" decode="{{true}}" style="lin-height:0">访问途径：&nbsp;&nbsp;&nbsp;&nbsp;微信公众号、微信公众号、one APP、one轻应用、one官网</text>
+  </view>
+</block>
