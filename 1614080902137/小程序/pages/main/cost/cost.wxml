@@ -1,2 +1,8 @@
 <!--pages/main/cost/cost.wxml-->
-<text>电费查询</text>
+<view wx:for="{{routers}}" wx:key="ID">
+  <view id="{{item.ID}}" class="weui-cells weui-cells_after-title" bindtap='detail'>
+      <view class="weui-cell weui-cell_access">
+          <view class="weui-cell__bd">(宿舍){{item.dormID}}：(欠费){{item.cost}}元</view>
+      </view>
+  </view>
+</view>

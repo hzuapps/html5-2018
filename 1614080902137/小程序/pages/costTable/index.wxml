@@ -1,0 +1,17 @@
+<!--pages/costTable/index.wxml-->
+<view wx:for="{{routers}}" wx:key="ID">
+  <view id="{{item.ID}}" class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_access">
+          <view class="weui-cell__bd">(宿舍){{item.dormID}}：(欠费){{item.cost}}元</view>
+          <button id="{{item.ID}}" style="display: inline-block;vertical-align:middle; float: right; font-size: 10px;" catchtap='change'>修改</button>
+      </view>
+  </view>
+</view>
+
+<view class='aBlock' style='display: {{display}}'>
+  <form bindsubmit='submit'>
+    <label for='changeCost'>请输入修改后的费用：</label>
+    <input class='change' name='changeCost' type='text' value='{{from_info}}'></input>
+    <button class='btn' form-type='submit'>确认</button>
+  </form>
+</view>

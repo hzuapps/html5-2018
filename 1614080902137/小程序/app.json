@@ -1,12 +1,16 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/logs/logs",
+    "pages/index/index",
     "pages/main/main",
     "pages/me/me",
     "pages/set/set",
     "pages/main/cost/cost",
-    "pages/main/repair/repair"
+    "pages/main/repair/repair",
+    "pages/me/changePassword/index",
+    "pages/admin/admin",
+    "pages/repairTable/index",
+    "pages/costTable/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

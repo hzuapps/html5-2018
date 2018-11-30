@@ -1,4 +1,4 @@
 <!--pages/set/set.wxml-->
 <view class='body'>
-  
+  <button class='changePassword' bindtap='out'>退出登录</button>
 </view>

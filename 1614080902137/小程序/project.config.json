@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +13,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx50f2a4d4c9848dd8",
+	"appid": "wxd8eec6b9747a52de",
 	"projectname": "Stu_Dorm",
 	"debugOptions": {
 		"hidedInDevtools": []

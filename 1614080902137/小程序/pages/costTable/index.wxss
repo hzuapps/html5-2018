@@ -1,0 +1,19 @@
+/* pages/costTable/index.wxss */
+@import "/weui.wxss";
+.aBlock {
+  padding: 20px;
+  background-color: rgb(198, 212, 216);
+  width: 200px;
+  height: 100px; 
+  position: absolute; 
+  left: 50px; 
+  top: 100px;
+}
+.change{
+  border-bottom: 1px solid #155577;
+  margin-bottom: 10px; 
+  color: #666;
+}
+.btn {
+  background-color: rgb(246, 251, 252);
+}

@@ -1,0 +1,2 @@
+/* pages/me/changePassword/index.wxss */
+@import "../../../weui.wxss";
