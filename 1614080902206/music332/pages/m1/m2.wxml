@@ -1,0 +1,7 @@
+
+ <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_text">
+                    <view class="weui-media-box__title weui-media-box__title_in-text">音乐随身听</view>
+                    <view >这是一个可以听音乐的小程序，在首页中点击播放按钮即可播放。但歌曲比较少，都是我添加进去的，这就有点尴尬。</view>
+                </view>
+                </view>

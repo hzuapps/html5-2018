@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{cover}}" ></image>
+      {{name}}
+  </view>
+  <view>
+  <image class='pp' src='/images/prev.png' bindtap='bindTapPrev'></image>
+  <image class='pp' src="{{pauseStatus===true?'/images/start.png':'/images/stop.png'}}" bindtap="{{pauseStatus===true?'start':'stop'}}"></image>
+  <image class='pp' src='/images/next.png' bindtap='bindTapNext'></image>
+  </view>
+</view>
