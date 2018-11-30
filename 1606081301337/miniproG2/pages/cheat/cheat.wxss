@@ -1,0 +1,53 @@
+.section{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 20rpx;
+}
+.section input{
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+.searchic {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.show button{
+width: 64rpx;
+height: 64rpx;
+margin-top: 10rpx;
+margin-right: 10rpx;
+border: none;
+padding:0;
+}
+
+.add1 image{
+  width: 70%;
+  height: 70%;
+  margin-bottom: 5rpx;
+}
+.show{
+  width: 95%;
+  border: 1rpx solid black;
+  margin-left: 2.5%;
+  margin-top: 20rpx;
+}
+.showce{
+  border-top:1rpx solid black;
+}
+.showceId{
+ 
+}
+
+.showceF{
+border: 1rpx solid black;
+margin-left: 15rpx; 
+}
