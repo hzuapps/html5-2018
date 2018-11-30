@@ -1,9 +1,0 @@
-/* pages/me/me.wxss */
-@import "../../weui.wxss";
-
-page {
-  background-color: #F8F8F8;
-  height: 100%;
-  font-size: 32rpx;
-  line-height: 1.6;
-}

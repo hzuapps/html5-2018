@@ -1,5 +1,0 @@
-<view id='view1'>
-  <image class='img1' src="/images/wxz.png"></image>
-  <button class='btnStart' type='primary'>开始游戏</button>
-  <button class='btnEnd' type='primary'>退出游戏</button>
-</view>

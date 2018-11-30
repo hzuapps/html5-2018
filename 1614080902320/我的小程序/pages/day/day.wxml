@@ -1,5 +1,0 @@
-<view class='container'>
-  <text class='font'>{{today.date}}</text>
-  <image class='banner' src='{{today.imagePath}}'></image>
-  <text>{{today.diary}}</text>
-</view>

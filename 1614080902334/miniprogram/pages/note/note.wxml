@@ -1,9 +1,0 @@
-<form bindsubmit="formBindsubmit" bindreset="formReset">
-  <view style='displry:flex;'>
-    <textarea name='note' placeholder="写下你要收录的句子"/>
-  </view>
-  <view style="display:flex;margin-top:30px;">
-    <button style="width:30%" formType="reset">重置</button>
-    <button style="width:30%;" formType="submit">发布</button>
-  </view>
-</form>

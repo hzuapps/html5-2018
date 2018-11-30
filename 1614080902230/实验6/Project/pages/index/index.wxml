@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<view><image src="/imges/icon/yueku.png" style="width:25px;height:25px;"></image></view>
-<view>乐库</view>
-<view><image src="/imges/icon/gedan.png" style="width:25px;height:25px;"></image></view>
-<view>歌单</view>
-<view><image src="/imges/icon/localmusic.png" style="width:25px;height:25px;"></image></view>
-<view>本地音乐</view>
-<view><image src="/imges/icon/morenshoucang.png" style="width:25px;height:25px;"></image></view>
-<view>默认收藏</view>

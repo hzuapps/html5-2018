@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<!-- map.wxml -->
-<view>  
-    <viwe>经度：{{longitude}}</viwe>  
-    <view>纬度：{{latitude}}</view>  
-    <view>地址：{{address}}</view>  
-    <map enable-rotate='true' show-compass='true' latitude="{{latitude}}" longitude='{{longitude}}' markers='{{markers}}'           scale='20' width="300rpx" height="200rpx" padding-left='20rpx'></map>
-    <text>{{weatherData}}</text>
-</view> 

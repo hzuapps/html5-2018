@@ -1,7 +1,0 @@
-<!--pages/home/home.wxml-->
-
-    <button type="default" bindtap='jumpBtn1'>发布家教信息</button>
-    <button type="default" bindtap='jumpBtn2'>发布教员信息</button>
-
-
-

@@ -1,9 +1,0 @@
-<!--pages/index3/index3.wxml-->
-<view class='root'>
-<view id='img'>
-<image src='https://graph.baidu.com/resource/1f6580bb02292da0689ed01542966234.jpg' id='img1' bindtap='msg'></image>
-<text style='position: absolute;left: 36%;top: 20%;'>致最可爱的你</text>
-<image src='https://graph.baidu.com/resource/1f6580bb02292da0689ed01542966234.jpg' id='img2'bindtap='msg'></image>
-<text style='position: absolute;left: 20%; top: 50%;'>来自：迷失的小蔡的烦恼信</text>
-</view>
-</view>

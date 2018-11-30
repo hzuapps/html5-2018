@@ -1,4 +1,0 @@
-<!--index.wxml-->
-<view class='container'><text>"欢迎来到校园跑腿代拿平台"</text></view>
- <view class='container'><image bindtap='bindViewTap' src='paotui.jpg'></image></view>
- <view class='container'><text>"  亲爱的同学！欢迎来到校园跑腿代拿平台。以后大可放心在这里下单，快件会在当天晚上送到你手中。"</text></view>

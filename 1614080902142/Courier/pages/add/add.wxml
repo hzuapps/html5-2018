@@ -1,5 +1,0 @@
-<!--pages/add/add.wxml-->
-<view class='imagesize'>
-  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543057542146&di=8620fa160cdff1ab36000826f23ac37b&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180627%2Fa522876f99ca429cbf2ca064c988bff1.jpeg" class='in-image'  style="width:100%;" >
-  </image>
-</view>

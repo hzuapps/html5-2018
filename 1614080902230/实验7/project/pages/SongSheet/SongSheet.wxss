@@ -1,8 +1,0 @@
-/* pages/SongSheet/SongSheet.wxss */
-.picture{
-  width: 365rpx;
-  height: 365rpx;
-}
-.title{
-  text-align: center;
-}

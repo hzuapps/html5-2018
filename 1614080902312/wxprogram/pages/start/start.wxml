@@ -1,6 +1,0 @@
-<!--pages/start/start.wxml-->
-<view class="container">
-  <view class="start-container">
-    <button style="width:400rpx;height:400rpx;padding:0;" bindtap="jumpBtn"><image style="width:400rpx;height:400rpx" src="{{src}}"></image></button>
-    </view>
-</view>

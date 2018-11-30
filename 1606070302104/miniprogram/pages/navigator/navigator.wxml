@@ -1,4 +1,0 @@
-<view> {{title}} </view>
-<view bindtap="add"> {{add}} </view>
-<view>{{data0}}</view>
-<view bindtap="minus">{{minus}}</view>
