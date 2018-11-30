@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<block wx:for="{{userListInfo}}">
-    <view class="weui_cell">
-      <image src="{{item.imgsrc}}" mode='widthFix'></image> 
-      <view class='weui_cell_hd'> 
-        <p> {{item.text}} </p>
-        </view> 
-    </view>
-</block>
