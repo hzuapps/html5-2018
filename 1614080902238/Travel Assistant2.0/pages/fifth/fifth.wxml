@@ -1,0 +1,45 @@
+<!--pages/fifth/fifth.wxml-->
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权信息</button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+<view class="weui-cells__title" style='margin-top:10px;'>个人</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/myplan/myplan">
+    <view class="weui-cell__hd">
+      <image src="../../image/myplan.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">我的旅行计划</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+   <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/plan/plan">
+    <view class="weui-cell__hd">
+      <image src="../../image/plan.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">添加旅行计划</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+  
+</view>
+
+<view class="weui-cells__title" style='margin-top:10px;'>更多</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator url="../me/me" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../image/me.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+    </view>
+    <view class="weui-cell__bd">关于作者</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+
+   <button open-type="share" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__hd">
+      <image src="../../image/share.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;">
+        </image>
+    </view>
+    <view class="weui-cell__bd" >分享小程序</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </button></view>

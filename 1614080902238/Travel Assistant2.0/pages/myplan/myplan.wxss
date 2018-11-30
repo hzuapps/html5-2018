@@ -1,0 +1,12 @@
+page,.bg{
+  background-color: #fcfcfc;
+}
+.weui-media-box__title{
+  color: #3447c0;
+}
+.weui-media-box__desc{
+  color: #A1ADFF;
+}
+.weui-cell__bd{
+  color: #5f6fd8;
+}

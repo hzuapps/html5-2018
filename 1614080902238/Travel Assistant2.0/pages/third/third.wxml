@@ -1,0 +1,11 @@
+<!--绑定点击事件-->
+<button bindtap="nearby_search">搜索周边美食</button>
+
+<!--地图容器-->
+
+<map id="myMap show-location"
+   markers="{{markers}}"
+   style="width:100%;height:500px;"
+   longitude="114.418373"
+   latitude="23.037331" scale='16'>
+</map>

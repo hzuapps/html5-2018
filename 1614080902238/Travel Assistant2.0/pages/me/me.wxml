@@ -1,0 +1,29 @@
+<view class="weui-cells__title">作者</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+   <view class="weui-cell__bd">那个男人</view>
+  </view>
+</view>
+<view class="weui-cells__title">联系方式</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">邮箱</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__ft">315189685@qq.com</view>
+  </view>
+   <view class="weui-cell">
+    <view class="weui-cell__bd">电话</view>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__ft">13632012468</view>
+  </view>
+</view>
+<view class="weui-cells__title">指导老师</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">曾少宁老师</view>
+  </view>
+ 
+ 
+</view>

@@ -1,0 +1,14 @@
+<!--pages/plan.wxml-->
+
+<form bindsubmit="formSubmit">
+  <view class='tip' style='color: {{tipStatus?"#217360":"#D486BD"}}'>{{tip}}</view>
+  <input class='in firstIn' name="title" maxlength="20" placeholder="请输入目的地" />
+ 
+  <input class='in' name="password" maxlength="20" placeholder="旅行时间 "/>
+ 
+  <button class='button' formType="submit">添加旅行计划</button>
+  <button class='button' formType="reset">重置</button>
+  <view class='impTip'>
+    <text>{{impTip}}</text>
+  </view>
+</form>
