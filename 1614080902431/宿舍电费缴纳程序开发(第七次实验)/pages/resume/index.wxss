@@ -1,0 +1,11 @@
+/* pages/resume/index.wxss */
+body {
+	background-color: #7B7B7B
+}
+.weui-cells {
+	background-color: #7B7B7B
+}
+.weui-cells__title {
+	background-color: #D7FFEE;
+	color: black
+}

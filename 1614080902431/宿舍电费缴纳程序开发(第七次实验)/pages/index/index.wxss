@@ -1,0 +1,46 @@
+
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #FFCC00;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #FFCC00;
+}
+.saoma{
+  height: 40px;
+  width:110px;
+  line-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+}
+.show{
+  width: 100%;
+  color: #666;
+  background-color: #fff;
+  height: auto;
+}

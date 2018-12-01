@@ -1,0 +1,6 @@
+
+<button class='item-bt' type='default' bindtap='tiao1'>个人信息</button>
+<button class='item-bt' type='default' bindtap='tiao2'>修改资料</button>
+<button class='item-bt' type='default' bindtap='tiao3'>意见反馈</button>
+<button class='item-bt' type='default' bindtap='tiao4'>检查更新</button>
+<button class='item-bt' type='default' bindtap='tiao5'>退出登录</button>

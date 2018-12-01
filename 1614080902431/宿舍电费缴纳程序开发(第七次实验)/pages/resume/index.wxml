@@ -1,0 +1,137 @@
+<!-- <html>
+<head>
+<title>个人简历</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+<link rel="stylesheet" href="D:\编译器\Sublime Text 3\html5\weui.css"> -->
+<!-- <style type="text/css" media="screen">
+body {
+	background-color: #7B7B7B
+}
+.weui-cells {
+	background-color: #7B7B7B
+}
+.weui-cells__title {
+	background-color: #D7FFEE;
+	color: black
+}
+</style>
+<body>
+<script type="text/javascript" language="javascript">			
+	function changeColor(){				
+		for(i=0;i<4;i++){
+			if(form1.color[i].checked){document.body.style.background=form1.color[i].value;
+						}
+				}		
+		  }		
+	 </script>
+	<script type="text/javascript" >
+    function c(form) { 
+                if(form.liuyan.value=='') {
+                //form留言区内容的id：liuyan为空，则出现提示窗口，无法提交
+                alert("请输入留言!"); 
+                form.liuyan.focus(); 
+                return false; } 
+            return true; }
+</script>
+</head> -->
+<!-- <body> -->
+<!-- <form name="form1">
+  <input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">
+  白色
+  <input name="color" type="radio" value="#0000FF" onclick="changeColor()">
+  蓝色
+  <input name="color" type="radio" value="#00FF00" onclick="changeColor()">
+  绿色
+  <input name="color" type="radio" value="#FFFF00" onclick="changeColor()">
+  黄色
+</form> -->
+<viem class="page" >
+  <viem class="page__hd" style="background-color: #7B7B7B">
+    <h1 class="page__title" align="center">个人简历</h1>
+  </viem>
+  <viem class="page__bd">
+    <!-- <viem class="weui-cells__title" style=" color: black;"align="center">个人信息</viem> -->
+    <viem class="weui-cells" style="background-color: #7B7B7B">
+      <viem class="weui-cell">
+        <viem class="weui-cell__bd" style="font-size: 5px;">
+          <view>姓名：林</view>
+          <view>性别：男</view>
+          <view>出生年月份：2000.1</view>
+          <view>籍贯：惠州</view>
+          <view>学历：本科</view>
+        </viem>
+        <viem class="weui-cell__bd" style="font-size: 5px">
+          <view>民族：汉</view>
+          <view>毕业学校:大学</view>
+          <view>政治面貌：共青团员</view>
+          <view>居住地：惠州</view>
+          <view>专业：软件工程</view>
+        </viem>
+        <viem class="weui-cell__hd"> 
+        <!-- <image src="D:\html5-2018\1614080902431\1.jpg" style="width:85px;display:block;float: right;></image> -->
+        </viem>
+      </viem>
+    </viem>
+    <viem class="weui-cells__title" align="center">个人学习经历</viem>
+    <viem class="weui-cells">
+      <viem class="weui-cell">
+        <viem class="gray" style="font-weight:bold">
+          <view>2016-2017：</view>
+          <view>2017-2018:</view>
+          <view>2018-2019:</view>
+        </viem>
+        <viem class="weui-cell__bd">
+          <view>曾在****</view>
+          <view>在****学习</view>
+          <view>在*****有学习的机会</view>
+        </viem>
+      </viem>
+    </viem>
+    <viem class="weui-cells__title" align="center">专业技术</viem>
+    <viem class="weui-cells">
+      <viem class="weui-cell">
+        <viem class="weui-cell__bd">
+          <view>涉猎多个语言</view>
+          <view>对c++有过深入了解</view>
+          <view>现在热衷于开发web前端</view>
+          <view>*****</view>
+          <view>********</view>
+        </viem>
+      </viem>
+    </viem>
+    <viem class="weui-cells__title" align="center">自我评价</viem>
+    <viem class="weui-cells">
+      <viem class="weui-cell">
+        <viem class="weui-cell__bd">
+          <view>平时能认真学习马列主义、毛泽东思想、邓小平理论和“三个代表”重要思想，并且努力践行“三个代表”，不断提高自身政治修养。思想健康、活跃，常常能提出一些好的意见和建议。同时满怀热情地阅读了马克思、恩格斯以及毛泽东等人的著作和十九大报告，争取用先进的理论来武装自己，使自己在思想上达到更高的境界。在班级、学校、在生活中，时刻以党员的标准严格要求自己，能够起到模范带头作用。平时关注一些信息途径，通过这些方式了解国家和党中央的一些新政策和文件，以此来时刻保持自己的“先进行”。不仅如此，·······</view>
+        </viem>
+      </viem>
+    </viem>
+    <viem class="weui-cells__title" > 个人github主页 </viem >
+    <!-- <viem class="weui-cells" style="background-color: gray;color: white;"> --> 
+    <a class="weui-cell weui-cell_access" href="https://github.com/haoy1220">
+    <viem class="weui-cell__bd" >
+      <view>我的Github主页</view>
+    </viem>
+    <viem class="weui-cell__ft"> 点击进入 </viem>
+    </a>
+<viem class="web-title1" style="background-color:#6495ED"> 留言区 </viem>
+    <viem class="weui-cells_form">
+      <viem class="weui-cell">
+        <form class="weui-cell__bd" action="pass.html" method="post" id="tijiao-form" onsubmit="return c(this)">
+          <!-- form中的 action：表示当前表单中的内容提交给哪个页面进行处理 -->
+          <textarea class="weui-textarea" type="text" placeholder="请输入留言..." rows="5" id="liuyan" name="liuyan"></textarea>
+          <viem class="weui-textarea-counter"> <span>0</span> /200</viem>
+          <viem class="weui-btn-area">
+            <input type="submit" class="weui-btn weui-btn_primary" id="tijiao" style="background-color: #6495ED" value="提交">
+            </input>
+            <!--对于input，最好给它添加一个name属性，作用是用于将用户输入的内容提交给要处理这个数据的页面--> </viem>
+        </form>
+      </viem>
+    </viem>
+  </viem>
+</viem>
+<!-- </body>
+</html>
+  -->
