@@ -11,7 +11,9 @@
  
 <!--图表-->
 <view hidden="{{currentTab!==1}}">
-  这里是查看数据的曲线
+  <block wx:for="{{zhihu.data.stories}}" wx:for-item="language" wx:key="id">
+  <image src="{{language.images}}" data-id="{{item.b}}" bindtap="bindViewTap"  class="banner-image"width="100%" height="100%"/>
+  </block>
 </view>
 
 
