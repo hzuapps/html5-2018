@@ -25,15 +25,12 @@ Page({
         //如果是修改的，循环缓存数组，找到相应id更改
         console.log(oldText)
         for (var i = 0; i < oldText.length; i++) {
-          var dic = oldText[i];
-          if (dic.id == this.data.id) {
             oldText[i] = { 'xming': this.data.ximing, 'weixinnum': this.data.weixingnum, 'qqnum': this.data.qqnnum, 'tel': this.data.teln,'id': dic.id };
             console.log(oldText)
             //存入缓存
             wx.setStorageSync('oldText', oldText);
             wx.setStorageSync('isChange', 1);
             return;
-          }
         }
       } else {
         //记录是内容的id
