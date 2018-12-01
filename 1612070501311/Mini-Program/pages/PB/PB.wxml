@@ -1,0 +1,16 @@
+<view class='Before'>
+  <view class='dairy'>
+    <view class='tip'>今天我获得了什么？</view>
+    <view class='thebody'>
+      <text>{{dairy.optimstic}}\n</text>
+      <text>{{dairy.negative}}\n</text>
+      <text>{{dairy.dairy}}\n</text>
+      <text>{{dairy.mind}}\n</text>
+      <text>{{dairy.value}}\n</text>
+      <text>{{dairy.life}}\n</text>
+      <text>{{dairy.world}}\n\n</text>
+      <text>其实学习可能不难，坚持太难\n</text>
+      <text>请找准目标并告诉自己一天天坚持</text>
+    </view>
+  </view>
+</view>

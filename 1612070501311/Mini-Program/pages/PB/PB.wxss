@@ -1,0 +1,12 @@
+.tip{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 25px;
+}
+.thebody{
+  text-align: center;
+  font-size: 20px;
+}
+

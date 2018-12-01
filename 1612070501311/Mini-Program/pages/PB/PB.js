@@ -1,16 +1,17 @@
-// pages/index/index.js
-var app = getApp()
+var util = require('../../utils/util.js');
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
+    dairy: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (res) {
+  onLoad: function (options) {
 
   },
 
@@ -25,7 +26,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var that = this;
+    wx.getStorage({
+      key: 'dairy',
+      success: function (res) {
+        that.setData({
+          dairy: res.data
+        })
+      },
+    })  
   },
 
   /**

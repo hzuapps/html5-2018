@@ -1,0 +1,19 @@
+<!--pages/index/index.wxml-->
+<view class='upload'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='feel'>最影响情绪的事</view>
+      <input name='optimstic' placeholder="正面"></input>
+      <input name='negative' placeholder="负面"></input>
+    <view class='do'>今天做了什么</view>
+      <input name='dairy' placeholder="日常行为"></input>
+      <input name='mind' placeholder="下意识行为"></input>
+    <view class='think'>今天思考了什么</view>
+      <input name='value' placeholder="价值观"></input>
+      <input name='life' placeholder="人生观"></input>
+      <input name='world' placeholder="世界观"></input>
+    <view class='btnup'>
+      <button formType='submit'>submit</button>
+      <button formType="reset">Reset</button>
+    </view>
+  </form>
+</view>

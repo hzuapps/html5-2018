@@ -1,18 +1,33 @@
-// pages/Gs/Gs.js
+// pages/index/index.js
+var app = getApp()
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-  
+    id:null,
   },
 
+  formSubmit: function (e) {
+    var dairy=e.detail.value;
+    wx.setStorage({
+      key: 'dairy',
+      data: dairy,
+      success:function(res){
+        wx.navigateTo({
+          url: '../PB/PB'
+        })
+      }
+    })
+  },
+  formReset: function () {
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function (res) {
+
   },
 
   /**
@@ -28,7 +43,7 @@ Page({
   onShow: function () {
   
   },
-
+  
   /**
    * 生命周期函数--监听页面隐藏
    */
