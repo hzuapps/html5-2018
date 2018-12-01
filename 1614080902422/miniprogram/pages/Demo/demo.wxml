@@ -3,22 +3,22 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view class="section">
-  <input placeholder="姓名" auto-focus/>
+  <input placeholder="输入后要记住" bindinput='bindKeyInput' name="name" focus/>
 </view>
 <view>
   <text id="text2">请选择出生日期</text>
 </view>
 <view class="section">
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+  <picker bindchange="bindPickerChange" value="{{month}}" range="{{array}}">
     <view class="picker">
-      月：{{array[index]}}     
+      月：{{array[month]}}     
     </view>
   </picker>
 </view>
 <view class="section">
-  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+  <picker bindchange="bindPickerChange2" value="{{day}}" range="{{array2}}">
     <view class="picker">
-      日：{{array2[index2]}}  
+      日：{{array2[day]}}  
     </view>
   </picker>
 </view>
@@ -35,5 +35,10 @@
 </view>
 <view>
 <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
-        disabled="{{disabled}}" bindtap="default" class="other-button-hover"> 是 </button>
+        disabled="{{false}}" bindtap="startbtn" class="other-button-hover"> 是 </button>
 </view>
+<view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{false}}" bindtap="homebtn" class="other-button-hover"> 否 </button>
+</view>
+

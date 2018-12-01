@@ -34,6 +34,9 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    life:null,
+    attack:null,
+    denfense:null
   }
 })

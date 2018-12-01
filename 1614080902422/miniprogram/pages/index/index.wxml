@@ -10,4 +10,12 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+  <view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{false}}" bindtap="startgamebtn" class="other-button-hover"> 开始新的游戏 </button>
+</view>
+<view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{false}}" bindtap="continuegamebtn" class="other-button-hover"> 继续我的冒险 </button>
+</view>
 </view>

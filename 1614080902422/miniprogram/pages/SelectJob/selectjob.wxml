@@ -1,0 +1,8 @@
+<!--pages/SelectJob/selectjob.wxml-->
+<view class="section">
+  <input placeholder="输入你的名字" bindinput='bindKeyInput' name="name" focus/>
+</view>
+<view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{false}}" bindtap="makesurebtn" class="other-button-hover"> 确定 </button>
+</view>
