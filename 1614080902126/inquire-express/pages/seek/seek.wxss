@@ -1,0 +1,31 @@
+/**index.wxss**/
+.picker-view{
+  /* border:2px solid red; */
+  width:100%;
+}
+.first-view{
+  height:20px;
+  text-align: center;
+  color: green;
+  padding-top: 10px;
+}
+picker{
+  color:green;
+}
+.button-view{
+  dispaly:float;
+  text-align: center;
+}
+.bt1{
+  width:49%;
+}
+
+scroll-view{
+  width: 100%;
+  background-color: pink;
+  margin-top: 20px;
+  font-size: 13px;
+  font-family: "微软雅黑";
+  line-height:1.5em;
+
+}
