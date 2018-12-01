@@ -1,12 +1,6 @@
 /* pages/index/index.wxss */
 @import "../../weui.wxss";
 
-page {
-  background-color: #F8F8F8;
-  height: 100%;
-  font-size: 32rpx;
-  line-height: 1.6;
-}
 .searchbar-result{
     margin-top: 0;
     font-size: 14px;
@@ -23,6 +17,6 @@ page {
     border: 0 solid #ffffff;
     border-radius: 40px;
     position:fixed;
-    top:920rpx;
+    bottom:30rpx;
     left:620rpx;
 }

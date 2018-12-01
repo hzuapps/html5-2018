@@ -2,7 +2,6 @@
 Page({
   data: {
     inputShowed: false,
-    inputVal: "",
     src1: '../../images/photo1.jpg',
     src2: '../../images/photo2.jpg',
     src3: '../../images/photo3.jpg',

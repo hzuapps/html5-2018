@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/me/me",
     "pages/messages/messages",
-    "pages/index/add/add"
+    "pages/index/add/add",
+    "pages/index/content/content"
   ],
   "window": {
     "backgroundTextStyle": "light",

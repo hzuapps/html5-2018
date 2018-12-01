@@ -1,2 +1,36 @@
 <!--pages/index/add/add.wxml-->
-<text>pages/index/add/add.wxml</text>
+<form bindsubmit="formSubmit">
+  <view class="page-body">
+    <view class="page-section">
+
+      <view class="weui-cells__title">标题：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="inputstyle">
+          <input name="title" class="weui-input" maxlength="-1" placeholder="推荐的物品名" />
+        </view>
+      </view>
+
+      <view class="weui-cells__title">类型或领域：</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="inputstyle">
+          <input name="type" class="weui-input" maxlength="-1" placeholder="电影、音乐、书籍、美食、APP等" />
+        </view>
+      </view>
+
+      <view class="weui-cells__title">简介与推荐理由：</view>
+      <view class="textarea-wrp">
+        <textarea name="reason" style="height: 10em" maxlength="-1" />
+      </view>
+
+      <image src="{{icon}}" bindtap="upimg" />    
+      <block wx:for="{{img_arr}}">
+        <view class='logoinfo'>
+          <image src='{{item}}'></image>
+        </view>
+      </block>
+  
+      <button formType="submit">提交</button>
+
+    </view>
+  </view>
+</form>
