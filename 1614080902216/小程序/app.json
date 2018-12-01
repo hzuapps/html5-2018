@@ -1,35 +1,34 @@
 {
-  "pages":[
-     "pages/firstPage/firstPage",
+  "pages": [
     "pages/index/index",
-    "pages/sort/sort"
+    "pages/change/change",
+    "pages/history/history"
   ],
-  "tabBar":{
-     "color": "00ff00",
-     "selectedColor":"ff00ff",
-    "list":[{
-      "pagePath":"pages/firstPage/firstPage",
-      "iconPath":"pages/image/firstPage.png",
-      "selectedIconPath":"pages/image/firstPage.png",
-        "text": "首页"
-      },
-      {
-      "pagePath": "pages/sort/sort",
-      "iconPath": "pages/image/sort.png",
-      "selectedIconPath":"pages/image/sort.png",
-      "text": "分类"},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4b3c96",
+    "navigationBarTitleText": "翻译助手",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#4b3c96"
+  },
+  "tabBar": {   
+    "borderStyle": "white",
+    "position": "bottom",
+    "color": "#bfbfbf",
+    "selectedColor": "#1c1b21",
+    "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "pages/image/myself.png",
-        "selectedIconPath":"pages/image/myself.png",
-        "text": "我的"
-    }] 
-          
-  },
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "阅读",
-    "navigationBarTextStyle":"black"
+        "text": "翻译",
+        "iconPath": "imgs/icon-1.png",
+        "selectedIconPath": "imgs/sel-icon-1.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史",
+        "iconPath": "imgs/icon-2.png",
+        "selectedIconPath": "imgs/sel-icon-2.png"
+      }
+    ]
   }
 }
