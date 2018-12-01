@@ -1,24 +1,35 @@
 <!--index.xml-->
 
-<view class="first-view">请输入运单号并选择类型</view>
-<input type="primary" bindinput='input' placeholder="请在这里输入"></input>
-<view class="button-view" style="display:flex;">
 
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker-view">
-      {{array[index]}}
-    </view>
-</picker>
-
-<button class="btn" bindtap='btnClick'>查询</button>
-<button class="bt1" bindtap="delete">清空</button>
+<view class="weui-cells__title" style='font-size:22px;'>请输入运单号并选择类型</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__bd">
+                <input class="weui-input" bindinput="input" placeholder="263659231149  {{array[index]}}" />
+              </view>
+        </view>
 </view>
-<scroll-view>
-<view wx:for="{{message.data}}">
-{{item.time}}
-<text>\n</text>
-{{item.context}}
-<text>\n\n</text>
-</view>
-</scroll-view>
 
+<view class="page__bd">
+        <view class="weui-btn-area">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <button type="default">选择快递公司</button>
+            </picker>
+           
+        </view>
+</view>
+
+<button class="weui-btn bt1" type="primary" plain='true'   bindtap='btnClick'>查询</button>
+
+<view class="page__bd"  wx:for="{{message.data}}">
+        <view class="weui-cells__title">{{item.time}}</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">{{item.location}}</view>
+                <view class="weui-cell__bd" style='font-size:13px;'>{{item.context}}</view>
+        </view>
+        </view> 
+</view>
+
+
+<button class="weui-btn bt1"  type="primary" plain="true"  bindtap="delete">清空</button>

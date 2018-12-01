@@ -1,7 +1,7 @@
 /**index.wxss**/
 .picker-view{
   /* border:2px solid red; */
-  padding-top:10px;
+  width:100%;
 }
 .first-view{
   height:20px;
@@ -11,21 +11,15 @@
 }
 picker{
   color:green;
-  width: 33%;
 }
 .button-view{
   dispaly:float;
   text-align: center;
 }
-input{
-  border: 2px solid green;
-  margin: 20px;
-  autocomplete:"on";
+.bt1{
+  width:49%;
 }
-button{
-  width:25%;
-  color:green;
-}
+
 scroll-view{
   width: 100%;
   background-color: pink;

@@ -34,14 +34,15 @@ App({
     })
   },
 
-  getExpressInfo:function(nu,expressType,cb){
+  getExpressInfo:function(expressNumber,expressCompany,cb){
    
     wx.request({
       
         url: 'https://www.kuaidi100.com/query', 
         data: { 
-          'type': expressType, 
-          'postid': nu }, 
+          'type': expressCompany, 
+          'postid': expressNumber 
+          }, 
           
           success: function (res) {       // 
           // console.log(res.data)       

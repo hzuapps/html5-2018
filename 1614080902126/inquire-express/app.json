@@ -1,33 +1,33 @@
 {
   "pages": [
+    "pages/seek/seek",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user/user",
-    "pages/seek/seek"
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffc0cb",
-    "navigationBarTitleText": "Inquire Express",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Courier assistant",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "index",
+        "text": "Index",
         "iconPath": "images/1.png",
         "selectedIconPath": "images/1.png"
       },
       {
         "pagePath": "pages/seek/seek",
-        "text": "inquire",
+        "text": "Inquire",
         "iconPath": "images/1.png",
         "selectedIconPath": "images/1.png"
       },
       {
         "pagePath": "pages/user/user",
-        "text": "userSetting",
+        "text": "User",
         "iconPath": "images/1.png",
         "selectedIconPath": "images/1.png"
       }
