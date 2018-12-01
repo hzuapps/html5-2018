@@ -1,3 +1,4 @@
+<!--index.wxml-->
 <view class='top'>
   <view class='title'>附近插座</view>
   <view class='refresh'>刷新</view>
@@ -23,6 +24,7 @@
     <image class='img' src='/images/chazuo2.png' wx:if="{{!use2}}"></image>
     <image class='img active' src='/images/chazuo3.png' wx:else></image>
   </view>
+  
   <view class='desc'>
     <view>2号插座</view>
     <view>插座编号：00000000002</view>

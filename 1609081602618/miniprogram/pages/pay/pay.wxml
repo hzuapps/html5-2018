@@ -1,2 +1,40 @@
 <!--pages/pay/pay.wxml-->
-<text>pages/pay/pay.wxml</text>
+<view class='first'>
+  <view class='title'>
+    <view>1. </view>
+    <view>消费详情</view>
+  </view>
+  <!--这段代码除了插座的名称会岁传进来的参数变化，其他都是写死的-->
+  <view class='detail'>
+    <view>插座名称： {{chazuo}}</view>
+    <view>插座编号： 00000000002</view>
+    <view>插座地址： 惠州学院11号楼101</view>
+    <view>使用时间：
+      <text style='color:red'>60分钟</text>
+    </view>
+    <view>消耗费用：
+      <text style='color:red'>￥40</text>
+    </view>
+    <view></view>
+  </view>
+</view>
+<view class='tips'>
+  <view class='tiptext'>
+    提示：实际费用以系统计算时间为准！
+  </view>
+</view>
+<view class='pay'>
+  <view class='title'>
+    <view>2. </view>
+    <view>支付方式</view>
+  </view>
+  <view class='detail'>
+    <view>余额支付
+      <text style='margin-left:40rpx'>钱包余额： <text style='color:red'>9568</text></text>
+    </view>
+  </view>
+</view>
+<view class='paygroup'>
+  <view class='btn-left'>实付款： ￥40.00</view>
+  <view class='btn-right' bindtap='pay'>支付费用</view>
+</view>

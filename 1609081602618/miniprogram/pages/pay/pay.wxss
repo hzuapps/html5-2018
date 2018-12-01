@@ -1,1 +1,68 @@
 /* pages/pay/pay.wxss */
+.title{
+  width: 600rpx;
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  font-size: 32rpx;
+}
+
+.first{
+  color:#666;
+  font-size: 30rpx;
+  background: #fff;
+}
+
+.detail{
+  width: 600rpx;
+  margin: 0 auto;
+  padding-left:60rpx; 
+  line-height: 60rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.tips{
+  margin-top: 20rpx;
+  background: #fff;
+}
+.tiptext{
+  padding: 20rpx;
+}
+page{
+  background: #eee;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.pay{
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+  font-size: 32rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.paygroup{
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+
+.btn-left{
+  width: 500rpx;
+  text-align: right;
+ line-height: 90rpx;
+  height: 90rpx;
+  padding-right: 20rpx;
+}
+
+.btn-right{
+  width: 230rpx;
+  text-align: center;
+  background: #1296db;
+  color: #fff;
+  line-height: 90rpx;
+  height: 90rpx
+}

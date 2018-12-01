@@ -1,2 +1,76 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class='user'>
+  <image src='/images/me.png' class='userimg'></image>
+  <view class='userDetail'>
+    <view>先生/小姐，您好！</view>
+    <view>手机号：13800138000</view>
+    <view>钱包余额：
+      <text style='color:red'>9856</text>
+    </view>
+  </view>
+</view>
+<view class='tab'>
+  <view>
+    <view class='tabBtn active1' bindtap='using'>正在使用</view>
+    <view class='icon' wx:if="{{state==='using'}}"></view>
+  </view>
+  <view>
+    <view class='tabBtn' bindtap='record'>使用记录</view>
+    <view class='icon' wx:if="{{state==='record'}}"></view>
+  </view>
+</view>
+<view class='tab-pannel' wx:if="{{state==='using'}}">
+  <view wx:if="{{show}}">
+    <view class='detail' wx:if="{{use1}}" bindtap='use1'>
+      <view class='imgDiv'>
+        <image class='img active' src='/images/chazuo3.png'></image>
+      </view>
+      <view class='desc'>
+        <view>1号插座</view>
+        <view>插座编号：00000000002</view>
+        <view>收费模式：
+          <text style='color:red'>按电量收费</text>
+        </view>
+        <view>插座状态：
+          <text style='color:red'>使用中</text>
+        </view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class='detail' wx:if="{{use2}}" bindtap='use2'>
+      <view class='imgDiv'>
+        <image class='img active' src='/images/chazuo3.png'></image>
+      </view>
+      <view class='desc'>
+        <view>2号插座</view>
+        <view>插座编号：00000000002</view>
+        <view>收费模式：
+          <text style='color:red'>按电量收费</text>
+        </view>
+        <view>插座状态：
+          <text style='color:red'>使用中</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else style='text-align:center;color:#666;font-size:30rpx'>无</view>
+</view>
+<view class='tab-pannel' wx:if="{{state==='record'}}">
+  <block wx:for="{{record}}">
+    <view class='detail'>
+      <view class='imgDiv'>
+        <image class='img' src='/images/chazuo2.png'></image>
+      </view>
+      <view class='desc'>
+        <view>1号插座</view>
+        <view>插座编号：{{item.num}}</view>
+        <view>开始时间：{{item.ctime}}</view>
+        <view>结束时间：{{item.etime}}</view>
+        <view>此次消费：
+          <text style='color:#E65100'>￥{{item.cost}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
