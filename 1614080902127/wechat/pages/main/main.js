@@ -5,7 +5,7 @@ Page({
     navbar: ['首页', '图表'],
     zhihu:null,
   },onLoad: function () {
-    var that = this//不要漏了这句，很重要
+    var that = this
     wx.request({
       url: 'http://news-at.zhihu.com/api/4/news/latest',
       headers: {
