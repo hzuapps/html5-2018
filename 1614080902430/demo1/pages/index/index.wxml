@@ -1,0 +1,13 @@
+<view class='section'>
+  <view class='section_title'>
+    <text class='text01'>XX的便签</text>
+  </view>
+  <view class='section_text'>
+    <text class='text01' style='font-size:10px'>便签数</text>
+  </view>
+  <view class="section_info">
+    <text class='text01' style='font-size:60px'>{{num}}</text>
+    <text class='text01' style='font-size:10px'>个\n</text>
+    <text class='text01' style='font-size:15px'>公开{{num_public}}个</text>
+  </view>
+</view>
