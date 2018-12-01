@@ -1,0 +1,4 @@
+<!--test/navigators/navigator1/navigator1.wxml-->
+<view class="section__ctn">
+        <image style="width: 300px; height: 260px;" mode="" src="wjk1.jpg"></image>
+ </view>
