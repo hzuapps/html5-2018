@@ -7,7 +7,8 @@ Page({
     markers: [],
     longitude: '',   //经度  
     latitude: '',    //纬度  
-    address: '',     //地址  
+    address: '',     //地址 
+    futherWeather:'' 
   },
   onLoad: function (options) {
     var that = this;
@@ -24,12 +25,13 @@ Page({
       console.log(data);
       //使用wxMarkerData获取数据  
       wxMarkerData = data.wxMarkerData;
+      console.log(wxMarkerData[0])
       //把所有数据放在初始化data内  
       that.setData({
         markers: wxMarkerData,
         latitude: wxMarkerData[0].latitude,
         longitude: wxMarkerData[0].longitude,
-        address: wxMarkerData[0].address,
+        address: wxMarkerData[0].desc,
         cityInfo: data.originalData.result.addressComponent,
         
       });
@@ -51,14 +53,22 @@ Page({
     var success = function (data) {
       console.log('success!!!');
       var weatherData = data.currentWeather[0];
-      weatherData = '城市：' + weatherData.currentCity + '\n' + 'PM2.5：' + weatherData.pm25 + '\n' + '日期：' + weatherData.date + '\n' + '温度：' + weatherData.temperature + '\n' + '天气：' + weatherData.weatherDesc + '\n' + '风力：' + weatherData.wind + '\n';
+      console.log(data)
+      
+       var futherWeather = data.originalData.results[0].weather_data;
+       console.log(futherWeather)
       that.setData({
-        weatherData: weatherData
+    
+        futherWeather: futherWeather
       });
     }
     BMap.weather({
       fail: fail,
       success: success
     });
+  },
+  onPullDownRefresh(){
+    this.onLoad()
+    wx.stopPullDownRefresh()
   }
 }) 
