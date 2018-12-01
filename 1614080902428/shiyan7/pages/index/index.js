@@ -7,7 +7,7 @@ Page({
     id: '',
     revise: '',
   },
-  saveData:function(){
+  formSubmit:function(){
     //保存按钮
     if (this.data.ximing.length == 0) {
       wx.showToast({
@@ -95,6 +95,7 @@ Page({
       teln: e.detail.value,
     })
   },
+  
   // onLoad: function (options) {
   //   // 生命周期函数--监听页面加载
   //   this.setData({
