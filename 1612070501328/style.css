@@ -1,9 +1,9 @@
-body{margin: 0;padding: 0;font-size:17px; font-weight:bold;background: #90EE90}
+body{margin: 0;padding: 0;font-size:17px; font-weight:bold}
 div{ line-height:30px}
 .main{width: 800px;margin: 0 auto}
-.left{width: 32%;height: 650px;float: left;background: #1874CD}
-.right{width: 68%;height: 650px;float: right;background: #FFFFFF}
-.bottom{width: 100%;height: 100px;float: left; background: #D1EEEE}
+.left{width: 32%;height: 580px;float: left;background: #1874CD}
+.right{width: 68%;height: 580px;float: right;background: #D5E6F8}
+.bottom{width: 100%;height: 240px;float: left; background: #61E5EC}
 #ed{margin: 0px;padding: 10px;text-align: center}
 .ad{float: left;padding-left: 20px}
 .cd{font-size: 15px;font-weight: normal;float: left;padding-left: 30px}
