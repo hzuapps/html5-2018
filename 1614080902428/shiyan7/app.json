@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/friend/friend",
+    "pages/friend/xinxi",
+    "pages/friend/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"#000000",
+    "navigationBarBackgroundColor": "#0000FF",
+    "navigationBarTitleText": "简单通讯录",
+    "navigationBarTextStyle":"#000000"
+  },
+  "tabBar": {
+    "selectedColor": "#0000FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新建",
+        "iconPath": "image/ico-tianjia.png",
+        "selectedIconPath": "image/ico-tianjia-d.png"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "我",
+        "iconPath": "image/ico-friend.png",
+        "selectedIconPath": "image/ico-friend-d.png"
+      }
+    ]
+  }
+}
