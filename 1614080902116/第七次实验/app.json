@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/join/join",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0f0",
+    "navigationBarTitleText": "个人微笔记",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#0cc",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/001.jpg",
+      "selectedIconPath": "images/003.jpg"
+    },
+    {"pagePath":"pages/join/join",
+    "text":"加入",
+    "iconPath":"images/002.jpg",
+    "selectedIconPath":"images/003.jpg"
+    }
+     ]
+  }
+}
+
+ 
