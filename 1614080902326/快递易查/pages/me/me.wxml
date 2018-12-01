@@ -1,43 +1,37 @@
 <!--pages/me/me.wxml-->
 <view class="container">
   <view class="userinfo info_view">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称</button>
+    <button class='userinfo-avatar login-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录</button>
     <block wx:else>
-       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+       <image bindtap="" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
   <view class="weui-cells weui-cells_after-title">
-  <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__hd">
-        <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-      </view>
+  <navigator url="../notification/notification" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__bd">通知</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </navigator>
-    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__hd">
-        <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-      </view>
+    <navigator bindtap='noFuntion' url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__bd">我的号码</view>
       <view class="weui-cell__ft weui-cell__ft_in-access">{{phone}}</view>
     </navigator>
-    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__hd">
-        <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
-      </view>
+    <!-- <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__bd">设置</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-    </navigator>
+    </navigator> -->
   </view>
   <view class="weui-cells weui-cells_after-title">
-  <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+  <navigator bindtap='noFuntion' url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__bd">支持我</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </navigator>
-    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <navigator url="../about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__bd">关于</view>
-      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          <view class="weui-cell__ft weui-cell__ft_in-access" style="font-size: 0">
+              <view style="display: inline-block;vertical-align:middle; font-size: 17px;">v{{version}}</view>
+          </view>
     </navigator>
+    
   </view>
 </view>

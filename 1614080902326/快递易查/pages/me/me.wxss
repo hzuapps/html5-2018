@@ -1,4 +1,6 @@
-/* pages/me/me.wxss */
+page{
+  background: #f3f3f3;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -13,11 +15,12 @@
   border-radius: 50%;
 }
 
+
 .userinfo-nickname {
   font-size: 50rpx;
   color: #f0f0f0;
 }
 .info_view{
   height: 300rpx;
-  background-color:#0079FE;
+  background-color:#3598EE;
 }

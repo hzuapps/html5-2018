@@ -1,0 +1,23 @@
+<view class='detail_page'>
+  <view class='title'>
+    <image bindtap="" class="comIcon" src="{{currentCompanyIcon}}" ></image>
+    <view class='orderInfo'>
+      <view class='company'>{{currentCompany}}</view>
+      <view>{{orderNo}}</view>
+    </view>
+  </view>
+  <view class='content' style=''>
+    <scroll-view class='scroll-view'>
+      <view class='item-view' wx:for="{{inputinfo.data}}">
+        <view class='item-message'>{{item.context}}</view>
+        <view class='item-time'>{{item.time}}</view>
+      </view>
+    </scroll-view>
+    
+  </view>
+  <view class="page__bd page__bd_spacing">
+        <view class="weui-footer" style='display:{{footerShow}}'>
+            <view class="weui-footer__text">——————这是底线——————</view>
+        </view>
+    </view>
+</view>

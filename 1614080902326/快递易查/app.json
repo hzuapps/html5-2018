@@ -1,20 +1,25 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/about/about",
+    "pages/appInfo/appInfo",
     "pages/me/me",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/detail/detail",
+    "pages/notification/notification",
+    "pages/support/support",
+    "pages/update-log/update-log",
+    "pages/feedback/feedback"
   ],
   "window": {
-    "backgroundColor": "#0079FE",
+    "backgroundColor": "#f3f3f3",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0079FE",
-    "navigationBarTitleText": "快递易查",
+    "navigationBarBackgroundColor": "#3598EE",
+    "navigationBarTitleText": "易小递",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#3F3F3F",
-    "selectedColor": "#0079FE",
+    "selectedColor": "#3598EE",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -23,16 +28,10 @@
         "selectedIconPath": "images/icon_search_selected.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
-        "iconPath": "images/icon_tabbar.png",
-        "selectedIconPath": "images/icon_tabbar.png"
-      },
-      {
         "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "images/icon_me.png",
-        "selectedIconPath": "images/icon_me_selected.png"
+        "selectedIconPath": "images/icon_me_selected1.png"
       }
     ]
   }

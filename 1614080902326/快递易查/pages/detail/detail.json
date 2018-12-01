@@ -1,0 +1,5 @@
+{
+  "backgroundColor": "#f3f3f3",
+  "navigationBarTitleText": "快递详情",
+  "enablePullDownRefresh": true
+}
