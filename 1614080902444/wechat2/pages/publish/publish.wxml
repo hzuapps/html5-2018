@@ -1,0 +1,35 @@
+<view>
+<view  class="row"> 
+<label class="title">我的地址</label>
+<view class="info" bindtap="handleAdressClick">{{address}} </view>
+</view>
+
+
+
+<view  class="row">
+<label class="title">类型 </label>
+<view class="info">
+<radio-group  bindchange="handleTypeChange">
+<label>
+<radio value="buy"  checked="true"/>求购
+<radio value="sell"/>转让
+</label>
+</radio-group>
+</view> 
+</view>
+
+<view  class="row">
+ <label class="title">说明 </label>
+<view class="info">
+<input   class="info-input"  bindinput="handleMessageChange"   placeholder="填写您的具体需求"/>
+ </view> 
+</view>
+
+<view  class="row">
+<label class="title">联系方式</label>
+<view class="info"> 
+<input class="info-input"   bindinput="handleContactChange" placeholder="填写您的联系方式"/></view>
+</view>
+
+<view  class="submit-button"  bindtap="handleSubmit"> 发布信息  </view>
+</view>
