@@ -1,66 +1,83 @@
 // pages/index/add/add.js
+var adds = {}; 
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    focus: false,
+    img_arr: [], 
+    icon: '../../../icons/photo.png'
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  bindKeyInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
+    })
   },
+  bindReplaceInput: function (e) {
+    var value = e.detail.value
+    var pos = e.detail.cursor
+    var left
+    if (pos !== -1) {
+      // 光标在中间
+      left = e.detail.value.slice(0, pos)
+      // 计算光标的位置
+      pos = left.replace(/11/g, '2').length
+    }
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
+    // 直接返回对象，可以对输入进行过滤处理，同时可以控制光标的位置
+    return {
+      value: value.replace(/11/g, '2'),
+      cursor: pos
+    }
 
+    // 或者直接返回字符串,光标在最后边
+    // return value.replace(/11/g,'2'),
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  bindTextAreaBlur: function(e) {
+    console.log(e.detail.value)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  formSubmit: function (e) {
+    var id = e.target.id
+    adds = e.detail.value;
+    this.upload()
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  upload: function () {
+    var that = this
+    for (var i = 0; i < this.data.img_arr.length; i++) {
+      wx.uploadFile({
+        url: '',
+        filePath: that.data.img_arr[i],
+        name: 'content',
+        formData: adds,
+        success: function (res) {
+          console.log(res)
+          if (res) {
+            wx.showToast({
+              title: '已提交发布！',
+              duration: 3000
+            });
+          }
+        }
+      })
+    }
+    this.setData({
+      formdata: ''
+    })
+  }, 
+  upimg: function () {
+    var that = this;
+    if (this.data.img_arr.length < 1) {
+      wx.chooseImage({
+        sizeType: ['original', 'compressed'],
+        success: function (res) {
+          that.setData({
+            img_arr: that.data.img_arr.concat(res.tempFilePaths)
+          })
+        }
+      })
+    } else {
+      wx.showModal({
+        title: '提示：',
+        content: '最多只能上传一张图片'
+      })
+    }
   }
 })
