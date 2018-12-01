@@ -2,26 +2,27 @@
   "pages": [
     "pages/logs/logs",
     "pages/index/index",
-    "pages/found/found"
+    "pages/found/found",
+    "pages/ted/ted"
   ],
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/logs/logs",
-        "iconPath": "image/clock3.png",
-        "selectedIconPath": "image/clock2.png",
+        "iconPath": "image/clock.png",
+        "selectedIconPath": "image/clock_c.png",
         "text": "倒计时"
       },
       {
         "pagePath": "pages/found/found",
         "text": "发现",
-        "iconPath":"image/found.png",
-        "selectedIconPath": "image/found2.png"
+        "iconPath": "image/found.png",
+        "selectedIconPath": "image/found_c.png"
       },
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/index.png",
-        "selectedIconPath": "image/index2.png",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me_c.png",
         "text": "我"
       }
     ]
@@ -29,7 +30,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "四六级助手"
   }
 }

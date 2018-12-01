@@ -1,72 +1,92 @@
 //logs.js
 const util = require('../../utils/util.js')
-
+const app = getApp()
 Page({
   data: {
-    date: "2016-09-01",
-    countDownDay: 0,
-    dataList:{}
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    now_date: util.formatDate(new Date()),
+    num: '1'
   },
-  bindDateChange: function (e) {
-    this.setData({
-      date: e.detail.value
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../index/index'
     })
   },
-  onReady: function () {
-    var totalSecond = 1505540080 - Date.parse(new Date()) / 1000;
-
-    var interval = setInterval(function () {
-      // 秒数
-      var second = totalSecond;
-
-      // 天数位
-      var day = Math.floor(second / 3600 / 24);
-      var dayStr = day.toString();
-      if (dayStr.length == 1) dayStr = '0' + dayStr;
-
-      // 小时位
-      var hr = Math.floor((second - day * 3600 * 24) / 3600);
-      var hrStr = hr.toString();
-      if (hrStr.length == 1) hrStr = '0' + hrStr;
-
-      // 分钟位
-      var min = Math.floor((second - day * 3600 * 24 - hr * 3600) / 60);
-      var minStr = min.toString();
-      if (minStr.length == 1) minStr = '0' + minStr;
-
-      // 秒位
-      var sec = second - day * 3600 * 24 - hr * 3600 - min * 60;
-      var secStr = sec.toString();
-      if (secStr.length == 1) secStr = '0' + secStr;
-
+  onLoad: function () {
+    if (app.globalData.userInfo) {
       this.setData({
-        countDownDay: dayStr,
-        countDownHour: hrStr,
-        countDownMinute: minStr,
-        countDownSecond: secStr,
-      });
-      totalSecond--;
-      if (totalSecond < 0) {
-        clearInterval(interval);
-        wx.showToast({
-          title: '活动已结束',
-        });
+        userInfo: app.globalData.userInfo,
+        hasUserInfo: true
+      })
+    } else if (this.data.canIUse) {
+      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
+      // 所以此处加入 callback 以防止这种情况
+      app.userInfoReadyCallback = res => {
         this.setData({
-          countDownDay: '00',
-          countDownHour: '00',
-          countDownMinute: '00',
-          countDownSecond: '00',
-        });
+          userInfo: res.userInfo,
+          hasUserInfo: true
+        })
       }
-    }.bind(this), 1000);
+    } else {
+      // 在没有 open-type=getUserInfo 版本的兼容处理
+      wx.getUserInfo({
+        success: res => {
+          app.globalData.userInfo = res.userInfo
+          this.setData({
+            userInfo: res.userInfo,
+            hasUserInfo: true
+          })
+        }
+      })
+    }
+
+    /*this.setData({
+      now_date:now_date.getTime()+1000
+    })*/
+    var end_date = new Date("2018/12/15");
+    var start_date = new Date();
+    var days = end_date.getTime() - start_date.getTime();
+    var day = parseInt(days / (1000 * 60 * 60 * 24));
+    if (day > 0) {
+      this.setData({
+        num: day
+      })
+    } else {
+      wx.showToast({
+        image: '/image/error.png',
+        title: '日期有误',
+      })
+      this.onShow()
+    }
   },
-
-  //cell事件处理函数
-  bindCellViewTap: function (e) {
-    var id = e.currentTarget.dataset.id;
-    wx.navigateTo({
-      url: '../babyDetail/babyDetail?id=' + id
-    });
-  }
-
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
+  },
+  /*onLoad: function () {
+    /*this.setData({
+      now_date:now_date.getTime()+1000
+    })
+    var end_date = new Date("2018/12/15");
+    var start_date = new Date();
+    var days = end_date.getTime() - start_date.getTime();
+    var day = parseInt(days / (1000 * 60 * 60 * 24));
+    if (day > 0) {
+      this.setData({
+        num: day
+      })
+    } else {
+      wx.showToast({
+        image: '/image/error.png',
+        title: '日期有误',
+      })
+      this.onShow()
+    }
+  }*/
 })

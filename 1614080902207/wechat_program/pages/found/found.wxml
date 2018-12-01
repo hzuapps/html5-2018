@@ -1,2 +1,7 @@
 <!--pages/found.wxml-->
-<text>pages/found.wxml</text>
+<view class='news-item' wx:for="{{dt}}">
+<text>{{item.english}}</text>
+<view>{{item.chinese}}</view>
+</view>
+
+
