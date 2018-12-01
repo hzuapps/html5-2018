@@ -1,0 +1,17 @@
+<!--pages/user/user.wxml-->
+<view class='user'>
+  <image  class='user1' src='../img/trim.jpg'></image>
+</view>
+<view class="btn-area">
+  <view class="body-view">
+    <button bindtap="yu-e">我的余额</button>
+    <button bindtap="shou-cang">我的收藏</button>
+    <button bindtap="ding-yue">我的订阅</button>
+  </view>
+
+  <view>
+<navigator url="/pages/tiaozhuan/tiaozhuan?title=tiaozhuan" hover-class='navigator-hover'><button>搜索我的文档</button></navigator>
+
+<button type='primary' size='{{defaultsize}}' loading='{{loading}}' plain='{{plain}}' disabled='{{disabled}}' bindtap="default" hover-class='other-button-hover'>浏览记录</button>
+</view>
+</view>

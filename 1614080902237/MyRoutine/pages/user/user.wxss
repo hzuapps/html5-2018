@@ -1,0 +1,8 @@
+/* pages/user/user.wxss */
+.body-view{
+  background-color: blue;
+}
+.user1{
+  height:200px;
+  width: 100%;
+}

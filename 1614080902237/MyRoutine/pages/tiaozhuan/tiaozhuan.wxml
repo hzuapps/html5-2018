@@ -1,0 +1,6 @@
+<!--pages/tiaozhuan/tiaozhuan.wxml-->
+<view class='container'>
+  <input placeholder="请输入文档编号" />
+<button type="chaxun"> 查询 </button>
+
+</view>
