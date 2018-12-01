@@ -5,6 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imgUrls: [
+      'http://pic.58pic.com/58pic/12/81/40/04y58PICTc3.jpg',
+      'https://p.pstatp.com/weili/bl/165753482481369148.jpg',
+      'http://img02.tooopen.com/images/20150703/tooopen_sy_132841832956.jpg',
+      'http://img3.redocn.com/tupian/20151107/luorixiadedahai_5267220.jpg'
+      
+      ]
 
   },
 

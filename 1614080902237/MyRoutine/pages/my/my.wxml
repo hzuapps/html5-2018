@@ -1,0 +1,22 @@
+<!--pages/my/my.wxml-->
+<view>
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+<view class='anniu'>
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="default" bindtap="audioPause">暂停</button>
+</view>
+<!-- <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button> -->
+<button type="primary" bindtap="audioStart">回到开头</button>
+</view>
+
+
+
+<!-- <view class='image'>
+<image class='image1' src='../img/trim.jpg'></image>
+<text>hhhhh</text>
+</view>
+
+<view class='image'>
+<image class='image1' src='../img/trim.jpg'></image>
+<text>hhhhh</text>
+</view> -->

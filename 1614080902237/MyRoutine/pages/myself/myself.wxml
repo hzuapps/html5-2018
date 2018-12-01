@@ -1,2 +1,38 @@
 <!--pages/myself/myself.wxml-->
-<text>pages/myself/myself.wxml</text>
+
+<view class="btn-area">
+<swiper indicator-dots="true"
+  autoplay="true" interval="3000" duration="1000">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='selection'>
+  <view class='header'>
+  <text>优美文档</text>
+  </view>
+
+  <view class='youmei'>
+   <view class='youmeiwendang'>
+   <image src='../img/zhaichao.jpg/'></image>
+   <view class='youmeiwenzi'>美文摘抄</view>
+  </view>
+   <view class='youmeiwendang'>
+    <image src='../img/jingxuan.jpg/'></image>
+   <view class='youmeiwenzi'>精选散文</view>
+  </view>
+   <view class='youmeiwendang'>
+  <image src='../img/lizhi.jpg/'></image>
+   <view class='youmeiwenzi'>励志美文</view>
+  </view>
+   <view class='youmeiwendang'>
+   <image src='../img/suibi.jpg/'></image>
+   <view class='youmeiwenzi'>随笔美文</view>
+  </view>
+  </view>
+  
+</view>
+
+</view>

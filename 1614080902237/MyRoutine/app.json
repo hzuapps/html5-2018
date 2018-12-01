@@ -1,8 +1,12 @@
 {
   "pages":[
+    "pages/myself/myself",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/myself/myself"
+    "pages/my/my",
+    "pages/login/login",
+    "pages/user/user",
+    
+    "pages/tiaozhuan/tiaozhuan"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,16 +17,24 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
         "pagePath": "pages/myself/myself",
-        "text": "文档搜索"
+        "text": "首页",
+        "iconPath": "pages/img/SY.png",
+        "selectedIconPath": "pages/img/SY01.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "我"
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "pages/img/MY.png",
+        "selectedIconPath": "pages/img/MY01.png"
+        
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "文档",
+        "iconPath": "pages/img/WD01.png",
+        "selectedIconPath": "pages/img/WD.png"
+        
       }
     ]
   }

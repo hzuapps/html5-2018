@@ -1,0 +1,8 @@
+/* pages/tiaozhuan/tiaozhuan.wxss */
+
+input{
+  border: 1px solid black;
+  width: 90%;
+  margin: 5%;
+  padding: 5px;
+}

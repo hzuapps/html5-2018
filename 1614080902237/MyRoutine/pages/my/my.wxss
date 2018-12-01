@@ -1,4 +1,5 @@
-.search{  
+/* pages/my/my.wxss */
+ .search{  
       width: 80%;  
     }  
     .search_arr {  
@@ -37,40 +38,11 @@
       width: 20px;  
       height: 20px;  
       text-align: center;  
-    }  
-.header{
-  border-left-width: 3px;
-  border-left-style: solid;
-  border-left-color:lawngreen;
-}
-.youmei{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.youmeiwendang{
-  height: 250rpx;
-  width: 45%;
-  background-color: yellow;
-  margin: 2px;
-  position: relative;
-}
-.youmeiwendang image{
-  height: 100%;
-  width: 100%;
-}
-.youmeiwenzi{
-  position: absolute;
-  bottom: 0px;
-  color: white;
-  font-size: 10px;
-  background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.8),rgba(0,0,0,0));
-  height:125px;
-  width: 98%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-bottom: 1%;
-}
+    }
+    .image1{
+      height: 30px;
+      width: 30px
+    }
+    .anniu{
+      display: flex;
+    }
