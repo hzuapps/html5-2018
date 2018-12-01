@@ -1,6 +1,4 @@
-// pages/found.js
-const util = require('../../utils/util.js')
-const app = getApp()
+// pages/ted/ted.js
 Page({
 
   /**
@@ -8,31 +6,13 @@ Page({
    */
   data: {
 
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var self=this;
-    wx.request({
-      url: 'http://route.showapi.com/1211-1',
-      data: {
-        showapi_appid:'81999',
-        showapi_sign:'865921d7671695b3dccfe3d5aba63b5a',
-        count:'5'
-      },
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        console.log(res.data.showapi_res_body.data);
-        self.setData({
-          dt: res.data.showapi_res_body.data
-        })
-      }
-    })
+
   },
 
   /**

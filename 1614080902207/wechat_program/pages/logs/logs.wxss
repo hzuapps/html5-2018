@@ -1,3 +1,6 @@
+.body{
+ 
+}
 .log-list {
   display: flex;
   flex-direction: column;
@@ -6,5 +9,39 @@
 .log-item {
   margin: 10rpx;
 }
+.time_out {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
 
+.userinfo-nickname {
+  color: #aaa;
+}
+.imagesize{                 
+  display:flex;
+  height: 100px;                    
+  justify-content: center;        
+  align-items:center;
+}
+.imagesize image{
+  width: 330rpx;
+  height: 330rpx;
+}
+.date{
+  font-size: 90px;
+  font-weight: 500;
+  color: red;
+}

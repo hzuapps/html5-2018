@@ -1,0 +1,2 @@
+<!--pages/ted/ted.wxml-->
+<web-view src="https://www.ted.com/"></web-view>

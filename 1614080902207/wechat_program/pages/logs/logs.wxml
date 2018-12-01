@@ -1,14 +1,20 @@
 <!--logs.wxml-->
-<view class="weui-cell weui-cell_input">
-  <view class="weui-cell__hd">
-    <view class="weui-label">日期</view>
+<view class='body'>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">Hello,{{userInfo.nickName}}</text>
+    </block>
   </view>
-  <view class="weui-cell__bd">
-    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01"      bindchange="bindDateChange">
-    <view class="weui-input">{{date}}</view>
-   </picker>
-   </view>
-   <view class="countDownTimeView countDownAllView" >
-      <view class="voteText countDownTimeText">{{countDownDay}}天</view>
-   </view>
+
+  <view class='time_out'>
+    <text>当前日期</text>
+    <view class='log-item'>{{now_date}}</view>
+    <view>距离下次四六级考试还有</view>
+    <view class='date'>{{num+1}}天</view>
+  </view>
+  <view class='imagesize'>
+  <image class='in-image' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543507740569&di=1074fc596cababb9d8484cf055834ac6&imgtype=0&src=http%3A%2F%2Fimg1.fjtv.net%2Fmaterial%2Fnews%2Fimg%2F640x%2F2018%2F11%2F20181109145813C2F9.jpg%3FGQBK'></image>
+  </view>
 </view>
