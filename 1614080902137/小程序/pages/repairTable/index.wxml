@@ -1,0 +1,33 @@
+<!--pages/repairTable/index.wxml-->
+
+
+<view wx:for="{{routers}}" wx:key="ID">
+  <view id="{{item.ID}}" class="weui-cells weui-cells_after-title" bindtap='detail'>
+      <view class="weui-cell weui-cell_access">
+          <view class="weui-cell__bd">报修ID：{{item.ID}}</view>
+          <button id="{{item.ID}}" style="display: inline-block;vertical-align:middle; float: right; font-size: 10px;" catchtap='del'>删除</button>
+      </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title" style='display: {{item.display}};'>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">报修内容：{{item.content}}</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">报修人学号：{{item.stuID}}</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">报修宿舍：{{item.dormID}}</view>
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_access">
+      <view class="weui-cell__bd">
+          <view style="display: inline-block; vertical-align: middle">报修日期：{{item.date}}</view>
+      </view>
+    </view>
+  </view>
+</view>

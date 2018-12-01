@@ -1,34 +1,50 @@
-// pages/main/repair/repair.js
+// pages/costTable/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date: "2016-09-01",
+    routers: [
+    ],
+    display: "none",
+    from_info: ""
   },
-  bindDateChange: function (e) {
-    this.setData({
-      date: e.detail.value
+  back: function(){
+    wx.switchTab({
+      url: '../main/main'
     })
   },
-  submit: function(e) {
+  submit: function(e){
+    var id = getApp().costID;
     var objData = e.detail.value;
-    objData.date = this.data.date;
-    var arr = [];
-    if (wx.getStorageSync("repair")) arr = wx.getStorageSync("repair");
-    arr[arr.length] = objData;
-    wx.setStorageSync("repair", arr);
-    console.log(wx.getStorageSync("repair"));
-    wx.navigateBack({
-      
+    var arr = wx.getStorageSync("cost");
+    arr[id - 1].cost = objData.changeCost;
+    wx.setStorageSync("cost", arr);
+    this.setData({
+      display: "none",
+      from_info: ""
+    })
+    this.onLoad();
+  },
+  change: function (e) {
+    getApp().costID = e.currentTarget.id;
+    this.setData({
+      display: "block"
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var arr = wx.getStorageSync("cost");
+    for (var i = 0; i < arr.length; i++) {
+      arr[i].ID = i + 1;
+    }
+    wx.setStorageSync("cost", arr);
+    this.setData({
+      routers: wx.getStorageSync("cost")
+    })
   },
 
   /**

@@ -1,4 +1,4 @@
-/**index.wxss**/
+/* pages/admin/admin.wxss */
 @import "../../weui.wxss";
 /* 表单提交 */
 button {

@@ -1,0 +1,6 @@
+/* pages/repairTable/index.wxss */
+@import "/weui.wxss";
+
+text {margin-right: 10px;}
+
+.detail{display: none;}

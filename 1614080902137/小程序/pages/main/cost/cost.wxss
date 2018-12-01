@@ -1,1 +1,2 @@
 /* pages/main/cost/cost.wxss */
+@import "/weui.wxss";

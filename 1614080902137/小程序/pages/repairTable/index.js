@@ -1,34 +1,49 @@
-// pages/main/repair/repair.js
+// pages/repairTable/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date: "2016-09-01",
+    routers: [
+    ]
   },
-  bindDateChange: function (e) {
-    this.setData({
-      date: e.detail.value
-    })
+  detail: function(e) {
+    var id = e.currentTarget.id;
+    var str = "routers[" + (id - 1) + "].display";
+    if(this.data.routers[id - 1].display == "none"){
+      this.setData({
+        [str]: "block"
+      })
+    }else{
+      this.setData({
+        [str]: "none"
+      })
+    }
+
   },
-  submit: function(e) {
-    var objData = e.detail.value;
-    objData.date = this.data.date;
-    var arr = [];
-    if (wx.getStorageSync("repair")) arr = wx.getStorageSync("repair");
-    arr[arr.length] = objData;
+  del: function(e){
+    var id = e.currentTarget.id;
+    var arr = wx.getStorageSync("repair");
+    console.log(arr);
+    arr.splice(id-1, 1);
+    console.log(arr);
     wx.setStorageSync("repair", arr);
-    console.log(wx.getStorageSync("repair"));
-    wx.navigateBack({
-      
-    })
+    this.onLoad();
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var arr = wx.getStorageSync("repair");
+    for (var i = 0; i < arr.length; i++) {
+      arr[i].ID = i + 1;
+      arr[i].display = "none";
+    }
+    wx.setStorageSync("repair", arr);
+    this.setData({
+      routers: wx.getStorageSync("repair")
+    })
   },
 
   /**

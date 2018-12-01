@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--pages/admin/admin.wxml-->
 
 <view class="container">
 
@@ -16,14 +16,11 @@
       </view>
       <view>
         <button class="btn" form-type='submit'>确定</button>
-        <button class='adminLogin' bindtap='adminLogin'>点击切换管理员登陆</button>
+        <button class='adminLogin' bindtap='adminLogin'>点击切换学生登陆</button>
       </view>
     </form>
   </view>
 
-
-  
-  <!-- 弹窗 -->
-
 </view>
+
 

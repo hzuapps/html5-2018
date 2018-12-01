@@ -1,4 +1,4 @@
 <!--pages/me/me.wxml-->
 <view class='body'>
-  
+  <button class='changePassword' bindtap='changePassword'>修改密码</button>
 </view>

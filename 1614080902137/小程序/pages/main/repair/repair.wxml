@@ -1,2 +1,53 @@
 <!--pages/main/repair/repair.wxml-->
-<text>报修申请</text>
+
+<form bindsubmit='submit'>
+  <view class="weui-cells__title">报修单</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+              <view class="weui-label">报修内容</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" type='text' name='content' />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">报修人学号</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" type='text' name='stuID' placeholder="请输入学号" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">报修宿舍</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" type='text' name='dormID' placeholder="请输入宿舍号" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+              <view class="weui-label">联系电话</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input class="weui-input" type='text' name='Tel' placeholder="请输入手机号" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+              <view class="weui-label">报修日期</view>
+          </view>
+          <view class="weui-cell__bd">
+              <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+                  <view class="weui-input">{{date}}</view>
+              </picker>
+          </view>
+      </view>
+      <button class='btn' form-type='submit'  type=''>提交</button>
+  </view>
+</form>
+
+
+
