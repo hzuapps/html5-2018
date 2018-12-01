@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/input/input"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "巴士信息",
+      "iconPath": "images/nav.png",
+      "selectedIconPath": "images/nav-active.png"
+    },
+    {
+      "pagePath": "pages/input/input",
+      "text": "问题反馈",
+      "iconPath": "images/time.png",
+      "selectedIconPath": "images/time-active.png"
+    }]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "远途巴士",
+    "navigationBarTextStyle":"black"
+  }
+}

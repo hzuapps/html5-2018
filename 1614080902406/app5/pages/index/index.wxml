@@ -1,0 +1,50 @@
+<view class="page">
+    <view class="page__bd">
+    <view class="page__title">巴士信息列表</view>
+        <view class="weui-panel weui-panel_access">
+            
+            <view class="weui-panel__bd">
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/bus.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">惠州→珠海</view>
+                        <view class="weui-media-box__desc">每周末9：00，17：00发车</view>
+                        <view class="weui-media-box__desc">途径惠州-樟木头-珠海</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/bus.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">惠州→佛山</view>
+                        <view class="weui-media-box__desc">每周末9：00，17：00发车</view>
+                        <view class="weui-media-box__desc">途径惠州-增城-佛山</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/bus.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">珠海→惠州</view>
+                        <view class="weui-media-box__desc">每周末9：00，17：00发车</view>
+                        <view class="weui-media-box__desc">途径珠海-樟木头-惠州</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="../../images/bus.png" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">佛山→惠州</view>
+                        <view class="weui-media-box__desc">每周末9：00，17：00发车</view>
+                        <view class="weui-media-box__desc">途径佛山-增城-惠州</view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
