@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/settings/settings",
+    "pages/navigator/navigator",
+    "pages/help/help",
+    "pages/edit/edit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "TimeLog",
+    "navigationBarTextStyle": "white"
+  },
+ "tabBar": {
+   "color":["#000000"],
+   "selectedColor":["#333399"],
+   "backgroundColor":[],
+   "borderStyle":["black"],
+   "position":["bottom"],
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "新建",
+      "iconPath": "images/list.png",
+      "selectedIconPath": "images/list2.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "查看",
+      "iconPath": "images/diagram.png",
+      "selectedIconPath": "images/diagram2.png"
+    },
+    {
+      "pagePath":"pages/settings/settings",
+      "text":"我",
+      "iconPath": "images/me.png",
+      "selectedIconPath": "images/me2.png"
+    }
+  ]
+},
+"networkTimeout": {
+  "request": 20000,
+  "connectSocket": 20000,
+  "uploadFile": 20000,
+  "downloadFile": 20000
+}
+}
