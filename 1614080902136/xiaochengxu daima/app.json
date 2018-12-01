@@ -2,7 +2,10 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/person/person"
+    "pages/person/person",
+    "pages/error/error",
+    "pages/ppp/ppp",
+    "pages/qqq/qqq"
   ],
   "tabBar": {
     "list": [
@@ -11,8 +14,12 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/qqq/qqq",
+        "text": "qqq"
+      },
+      {
+        "pagePath": "pages/error/error",
+        "text": "错题库"
       },
       {
         "pagePath": "pages/person/person",
