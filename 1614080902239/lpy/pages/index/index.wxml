@@ -1,16 +1,16 @@
 <!--index.wxml-->
- <view class="container">
-   <view class="userinfo">
-     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-     <block wx:else>
-       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-     </block>
-       <button class="btn1" bindtap="bindPfirst">添加读书笔记</button>
-       <button class="btn1" bindtap="bindPsecond">查看</button>
-       <button class="btn1" bindtap="bindPthird">设置</button>
-   </view>
-   <view class="usermotto">
-     <text class="user-motto">{{motto}}</text>
-   </view>
- </view>
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+        <button class="btn1" bindtap="bindPfirst">添加读书笔记</button>
+        <button class="btn1" bindtap="bindPsecond">查看</button>
+        <button class="btn1" bindtap="bindPthird">设置</button>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+  </view> 
