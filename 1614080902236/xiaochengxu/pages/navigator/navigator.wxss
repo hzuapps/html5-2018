@@ -1,0 +1,31 @@
+/* pages/navigator/navigator.wxss */
+.text1{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.input1{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.text2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  color: #7e7d7d;
+}
+.date{
+margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+.nnvg1{
+  background-color: #edd566;
+  margin-left: 12px;
+  width: 200px;
+  border-radius: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}

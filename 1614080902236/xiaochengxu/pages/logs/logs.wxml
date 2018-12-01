@@ -1,0 +1,7 @@
+<!--logs.wxml-->
+<view class="log-all">
+  <text class='log-nad' >{{addname}}</text>
+  <text class='log-text'> 的生日是：</text>
+  <text class='log-nad'>{{adddate}}\n</text>
+</view>
+  

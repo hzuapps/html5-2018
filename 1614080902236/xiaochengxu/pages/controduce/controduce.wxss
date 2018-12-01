@@ -1,0 +1,17 @@
+/* pages/controduce/controduce.wxss */
+.text1{
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.text2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.btn1{
+  background-color: #edd566;
+  margin-top: 30px;
+}

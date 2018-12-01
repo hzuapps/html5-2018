@@ -1,0 +1,13 @@
+<!--pages/navigator/navigator.wxml-->
+<view class="text1">
+<text>请添加好友生日信息:</text>
+</view>
+<input class="input1" name="inName" type='text' placeholder='请输入姓名'bindinput='bindNameInput' />
+<picker mode="date" value='date' start="2018-01-15" end="2038-11-15" bindchange="bindDateChange">
+<view class='date'>
+{{date}}
+</view>
+<view class='text2'>{{years}}{{months}}{{days}} 点击此处选择日期(默认格式：年-月-日)\n
+</view>
+</picker>
+<button class='nnvg1' id='nbtn' type='warn' bindtap='indexBtn'>确定添加</button>
