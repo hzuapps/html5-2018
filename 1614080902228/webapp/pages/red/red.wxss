@@ -1,1 +1,17 @@
-/* pages/red/red.wxss */
+/* pages/red/red.wxss *//* pages/white/white.wxss */
+.container{
+  margin: 0px;
+  padding: 0px;
+  align-items: center
+}
+textarea{
+  border: 1px solid black;
+}
+button{
+  background-color: red;
+  color: orange;
+  display: inline;
+}
+#viewdata{
+  width: 100%;
+}

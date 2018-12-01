@@ -1,0 +1,9 @@
+/* pages/others/others.wxss */
+.container{
+  margin: 0px;
+  padding: 0px;
+  align-items: center
+}
+textarea{
+  border: 1px solid black;
+}

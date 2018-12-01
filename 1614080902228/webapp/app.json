@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/black/black",
     "pages/red/red",
-    "pages/white/white"
+    "pages/white/white",
+    "pages/others/others"
   ],
   "window": {
     "backgroundTextStyle": "light",
