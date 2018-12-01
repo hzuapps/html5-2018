@@ -38,7 +38,7 @@ App({
    
     wx.request({
       
-        url: 'https://www.kuaidi100.com/query', 
+      url: 'http://apis.baidu.com/apistore/weatherservice/recentweathers', 
         data: { 
           'type': expressType, 
           'postid': nu }, 
@@ -53,4 +53,5 @@ App({
   globalData: {
     userInfo: null
   }
+  
 })
