@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.2",
+	"libVersion": "2.4.1",
 	"projectname": "test",
 	"scripts": {
 		"beforeCompile": "npm run compile",
@@ -12,7 +12,7 @@
 		"beforeUpload": "npm run compile"
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
