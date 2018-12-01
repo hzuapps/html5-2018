@@ -1,6 +1,15 @@
 <!--index.wxml-->
 <view class="container flex-wrap flex-direction-col">
-
+ <view class="my-swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" height="200"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
 
     <!-- 分类导航 -->
   <view class="nav-block wrap">
@@ -10,5 +19,7 @@
       </view>
     </block>
   </view>
+
+
 
 </view>

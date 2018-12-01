@@ -1,5 +1,13 @@
 /**index.wxss**/
+.my-swiper image{
+  width: 100%;
+  
+}
 
+.wrap{
+	display: inline-block;
+	margin-top: .8rem;
+}
 .wrap-item{
 	display: inline-block;
 	width: 33%;
