@@ -1,0 +1,24 @@
+#view1{
+  background: rgba(255, 255, 255, 0.041);
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 3vh;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+#view1 .img1{
+  margin: 40px auto;
+ // border-radius: 50%;
+ /* justify-content: space-between */
+}
+.btnStart{
+width: 85%;
+margin-bottom: 10px;
+
+}
+.btnEnd{
+width: 85%;
+}
