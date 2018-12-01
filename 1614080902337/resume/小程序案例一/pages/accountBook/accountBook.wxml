@@ -1,1 +1,122 @@
 <view>2018年11月</view>
+<!--pages/form/form.wxml-->
+
+<view class="viewTitle">
+
+<view class="lineView"></view>
+
+</view>
+
+<!--这里用form，name=“nameName1”可以作为form的属性进行
+
+（e.detail.value.nameName1）调用,
+
+form自带有提交和重置按钮，会自动获取表单中所有控件值的改变-->
+
+<form class="page__bd" bindsubmit="formSubmit" bindreset="formReset">
+
+<view class="section section_gap">
+
+<view class="section__title">请选择收支情况:</view>
+
+<radio-group name="radio-group">
+
+<label><radio value="收入"/>收入</label>
+
+<label><radio value="支出"/>支出</label>
+
+</radio-group>
+
+</view>
+
+<view class="section section_gap">
+
+<view class="weui-cells__title">金额输入（单位：元）：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入金额" />
+                </view>
+            </view>
+        </view>
+
+
+<view class="section__title">商品类目多选:</view>
+
+<checkbox-group name="checkbox">
+
+<label><checkbox value="checkbox1"/>饮食</label>
+<label><checkbox value="checkbox2"/>交通</label>
+<label><checkbox value="checkbox3"/>服饰</label>
+<label><checkbox value="checkbox4"/>娱乐</label>
+<label><checkbox value="checkbox5"/>学习</label>
+</checkbox-group>
+
+</view>
+        <view class="weui-cells__title">备注信息</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder="请输入文本" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+<view class="section">
+
+<view class="section__title">地区选择:</view>
+
+<picker name="areaPicker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+
+<view class="picker">
+
+当前选择：{{array[index]}}
+
+</view>
+
+</picker>
+
+</view>
+
+<view class="section">
+
+<view class="section__title">时间选择:</view>
+
+<picker name="timePicker" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+
+<view class="picker">
+
+当前选择: {{time}}
+
+</view>
+
+</picker>
+
+</view>
+
+<view class="section">
+
+<view class="section__title">日期选择:</view>
+
+<picker name="datePicker" mode="date" value="{{date}}" start="2016-12-20" end="2017-09-01" bindchange="bindDateChange">
+
+<view class="picker">
+
+当前选择: {{date}}
+
+</view>
+
+</picker>
+
+</view>
+
+<view class="btn-area">
+
+<button form-type="submit">提交该账单</button>
+
+<button form-type="reset">重置该账单</button>
+
+</view>
+
+</form>
