@@ -1,0 +1,41 @@
+<!--main.wxml-->
+<view>
+  <view class="swiper-tab">
+    <view class="bre swiper-tab-list {{tab==0 ? 'on' : ''}}" data-current="0" bindtap="tab_click">当前记事本</view>
+    <view class="swiper-tab-list {{tab==1 ? 'on' : ''}}" data-current="1" bindtap="tab_click">今日天气</view>
+     <view class="swiper-tab-list {{tab==2 ? 'on' : ''}}" data-current="2" bindtap="tab_click">我的记事本</view>
+  </view>
+  <swiper current="{{tab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="tab_slide">
+    <swiper-item class='spit'>
+    <view class='examTest' >
+    <input class='inp' placeholder="添加记事本">123</input>
+    <input class='inp' placeholder="添加时间">123</input>
+    <input class='inp' placeholder="选择地点">123</input>
+    <button class='btn'>提交</button>
+    </view>
+    </swiper-item>
+  <swiper-item  class='spit'>
+   
+   <view class="page">
+    <view class="container">
+        <view class="section">
+            <view class="section__title">你要查询的是：{{inputValue}}</view>
+            <input  bindinput="bindKeyInput" placeholder="请输入要查询的城市名称" value="{{inputValue}}"/>
+        </view>
+        <view class="btn-area">
+        <button type="primary" loading="{{loading}}"
+                disabled="{{disabled}}" bindtap="search"> 查询
+        </button>
+        </view>
+        <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+            {{modalErrorText}}
+        </modal>
+    </view>
+</view>
+    </swiper-item>
+    <swiper-item  class='spit'>
+   <view class='examTest'></view>
+    </swiper-item>
+  </swiper>
+</view>
+

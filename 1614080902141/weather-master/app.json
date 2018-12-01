@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/search/search",
+    "pages/result/result"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "个人记事本",
+    "navigationBarTextStyle":"white"
+
+  }
+}

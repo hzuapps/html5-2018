@@ -1,0 +1,35 @@
+<View class="page">
+
+    <view class="container" style="align-items: center">
+        <icon class="section" type="success" size="70"></icon>
+        <view class="text_area">
+        <text >
+            查询城市: {{city}}
+        </text>
+        <text>
+            空气质量指数: {{aqi}}
+        </text>
+        <text >
+            温度:{{wendu}}({{low}}-{{high}})
+        </text>
+    
+        <text >
+            风力: {{fengli}}
+        </text>
+        <text >
+            风向: {{fengxiang}}
+        </text>
+        <text >
+            天气情况: {{type}}
+        </text>
+       <text >
+            查询时间: {{date}}
+        </text>
+        <button bindtap="ganmao" class="gm" type="primary" size="mini">感冒情况</button>
+        </view>
+    </view>
+
+    <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange"     bindcancel="modalChange">
+            {{modalText}}
+        </modal>
+</View>
