@@ -1,0 +1,15 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">关于</view>
+        <view class="page__desc">易小递</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">易小递是一款轻量级的快递查询工具，目前支持包括顺丰，申通，圆通，中通，韵达，德邦，中国邮政等在内的大多数快递公司物流信息查询，提供快递单号查询服务。</view>
+                <view class="weui-article__section">
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

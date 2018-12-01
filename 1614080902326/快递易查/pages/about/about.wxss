@@ -1,0 +1,14 @@
+.version{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 180px;
+  margin-bottom: 30px;
+}
+.logo{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 70px;
+  height: 100px;
+  top: 60px
+}

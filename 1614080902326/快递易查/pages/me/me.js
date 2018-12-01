@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    version: "",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -16,6 +16,9 @@ Page({
     })
   },
   onLoad: function () {
+    this.setData({
+      version: app.globalData.appVersion
+    })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -44,6 +47,12 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  noFuntion(){
+    wx.showToast({
+      title: '敬请期待',
+      icon:'none'
     })
   }
 })

@@ -1,36 +1,57 @@
 <!--pages/home/home.wxml-->
 <view class='container'>
-
+  <view class='title'></view>
   <view class='orderArea'>
+    <!-- 输入框 -->
     <view class='search-text_view'>
-      <input type='number' class='orderText' bindinput='bindKeyInput' bindfocus='showButton' bindblur='hideButton' placeholder='输入快递单号查询'></input>
+      <input type='number' class='orderText' bindinput='bindKeyInput' value='{{inputValue}}' placeholder='输入快递单号查询'></input>
     </view>
     <view class='search-btn_view'>
-      <image src='../../images/icon_search_scan.png' id='scan-btn'></image>
+      <!-- 清空输入 -->
+      <image class='input-btn' bindtap='clickEmpty' src='../../images/icon_clear.png' style='display:{{searchDisplay}};margin-right:20rpx'></image>
+      <!-- 扫码按钮 -->
+      <image class='input-btn' bindtap='scanCode' src='../../images/icon_scan.png' style='display:{{scanDisplay}}'></image>
+      <!-- 搜索按钮 -->
+      <image class='input-btn' bindtap='query' src='../../images/icon_search_large.png' style='display:{{searchDisplay}}'></image>
     </view>
-  </view>
-  <view class="weui-cells__title"></view>
-  <view class="weui-cells weui-cells_after-title">
-            <view class="weui-cell weui-cell_select">
-                <view class="weui-cell__hd weui-cell__hd_in-select-after">
-                    <label for='selectKuaidi' class="weui-label">选择快递公司</label>
-                </view>
-                <view class="weui-cell__bd">
-                    <picker id='selectKuaidi' bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
-                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
-                    </picker>
-                </view>
-            </view>
-        </view>
-  <view>
-    <button id='search-btn' class='wui-button' bindtap='kuaidiquery'style='display:{{display}}'>查询</button>
-  </view>
-  <view>
-  <scroll-view scroll-x='false' class='scroll-view'>
-    <view>{{inputinfo.name}}{{inputinfo.order}}</view>
-    <view wx:for="{{inputinfo.data}}">{{item.time}}--{{item.content}}</view>
-  </scroll-view>
-</view>
-  
-</view>
 
+  </view>
+  <!-- 缓存内容 -->
+  <!-- <view class="weui-panel__hd">最近查询</view>
+  <view class='emptyTips' style='display:{{showNoRecent}}'>空空如也</view>
+    <view wx:for="{{localItems}}" class="weui-panel__bd">
+      <navigator url="../detail/detail?order={{item.no}}" class="weui-media-box weui-media-box_appmsg item-view" hover-class="weui-cell_active">
+        <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+          <image class="weui-media-box__thumb" src="{{icon60}}" />
+        </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+          <view class="weui-media-box__title item-title">{{item.comName}} {{item.no}}</view>
+          <view class="weui-media-box__desc">{{item.currentMessage}}</view>
+        </view>
+      </navigator>
+    </view>
+</view>  -->
+
+
+  <!-- --------------------------------------------------------------- -->
+
+  <!-- 缓存内容 -->
+  <view class="weui-panel__hd">最近查询</view>
+  <view class='emptyTips' style='display:{{showNoRecent}}'>空空如也</view>
+
+
+
+
+  <view wx:for="{{localItems}}" class="weui-panel__bd {{item.isTouchMove ? 'touch-move-active' : ''}}" style='display:flex;overflow: hidden;' data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove">
+    <navigator url="../detail/detail?order={{item.no}}" class="weui-media-box weui-media-box_appmsg item-view" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="{{icon60}}" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title item-title">{{item.comName}} {{item.no}}</view>
+        <view class="weui-media-box__desc">{{item.currentMessage}}</view>
+      </view>
+    </navigator>
+    <view class="del" catchtap="del" data-index="{{index}}">删除</view>
+  </view>
+</view>
