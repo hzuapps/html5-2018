@@ -58,11 +58,6 @@ Page({
       })
     }
     if (this.data.ximing.length !== 0) {
-      wx.showToast({
-        title: '保存成功',
-        icon: 'success',
-        duration: 1000
-      });
     //存入缓存
     wx.setStorageSync('oldText', oldText);
     }
@@ -95,7 +90,15 @@ Page({
       teln: e.detail.value,
     })
   },
-  
+  saveData:function(){
+     if (this.data.ximing.length !== 0) {
+      wx.showToast({
+        title: '保存成功',
+        icon: 'success',
+        duration: 1000
+      });
+     }
+  },
   // onLoad: function (options) {
   //   // 生命周期函数--监听页面加载
   //   this.setData({
