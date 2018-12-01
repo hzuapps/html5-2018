@@ -1,0 +1,16 @@
+/* pages/index/index.wxss */
+.can{
+  width: 100%;
+  height: 100%;
+}
+.canview{
+  margin:0px 0rpx 10rpx 30rpx;
+  width: 718rpx;
+  height: 300rpx;
+  border: 1px solid black;
+}
+.formtitle{
+  color: black;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+}
