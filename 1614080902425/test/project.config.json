@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.3.2",
+	"libVersion": "2.4.1",
 	"projectname": "test",
 	"scripts": {
 		"beforeCompile": "npm run compile",
@@ -17,8 +17,8 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false,
-		"nodeModules": true
+		"nodeModules": true,
+		"autoAudits": false
 	},
 	"appid": "wx8346f25311aabbdb",
 	"condition": {}
