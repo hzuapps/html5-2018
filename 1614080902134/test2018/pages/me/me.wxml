@@ -1,21 +1,38 @@
 <!--pages/me/me.wxml-->
 <!--导航条-->
-<view class="navbar">
-  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
-</view>
- 
-<!--首页-->
-<view hidden="{{currentTab!==0}}">
-  tab_01
-</view>
- 
-<!--搜索-->
-<view hidden="{{currentTab!==1}}">
-  tab_02
-</view>
- 
-<!--我-->
-<view hidden="{{currentTab!==2}}">
-  tab_03
-</view>
+<view class='pages'>
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
 
+  <!--首页-->
+  <view hidden="{{currentTab!==0}}">
+    <input class='weui-input' placeholder='在此输入ID' bindinput='iput1' name='id' value='{{id}}' type='text'></input>
+    <button class='weui-btn mini-btn' bindtap='btn1' type="primary" formType="submit">提交</button>
+    <view class='weui-cell mys2'>
+      <view class='weui-cell__bd mys1'>姓名</view>
+      <view class='weui-cell__bd mys1'>性别</view>
+      <view class='weui-cell__bd mys1'>年龄</view>
+    </view>
+    <!-- <view wx:for="{{text1}}" wx:key="index"> -->
+      <view>
+        <view class='weui-cell mys2'>
+          <view class='weui-cell__bd mys1'>{{text1.id}}</view>
+          <view class='weui-cell__bd mys1'>{{text1.age}}</view>
+          <view class='weui-cell__bd mys1'>{{text1.age}}</view>
+        </view>
+      <!-- </view> -->
+    </view>
+
+  </view>
+
+  <!--搜索-->
+  <view hidden="{{currentTab!==1}}">
+    这是搜索页面
+  </view>
+
+  <!--我-->
+  <view hidden="{{currentTab!==2}}">
+    这是我的页面
+  </view>
+</view>

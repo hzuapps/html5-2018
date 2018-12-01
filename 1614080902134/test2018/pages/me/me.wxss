@@ -28,3 +28,16 @@ page{
   height: 4rpx;
   background: #FFCC00;
 }
+.weui-view{
+  display: flex;
+}
+.mys1{
+text-align: center;
+}
+.mys2{
+border-bottom: solid rgba(17, 17, 17, 0.418) 1rpx;
+/* border: solid #111111 1rpx; */
+}
+.mys3{
+margin-top: 0px;
+}
