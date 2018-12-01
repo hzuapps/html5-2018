@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<!-- <form bindsubmit='formSubmit'> --> 
+<form bindsubmit='formSubmit'>
   <view class="page">
   <view class="weui-cells__title"style='color:#000000; font-weight:bolder;'>联系方式</view>
     <view class="weui-cells weui-cells_after-title">
@@ -54,4 +54,4 @@
       </view>
     </view>
   </view>
-<!-- </form> -->
+</form>
