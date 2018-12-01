@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="cate-nav">
+    <scroll-view scroll-x="true" class="cate-nav-body" style="width: 750rpx;height:{{nav_height}}rpx" scroll-left="{{scrollLeft}}">
+      <view wx:for="{{navList}}" class="item {{ id == item.id ? 'active' : ''}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCate">
+        <view class="name">{{item.name}}</view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <scroll-view scroll-top="{{scrollTop}}" style="width:100%;height:{{scrollHeight}}px;">
+    <view class="catalog">
+      <scroll-view class="nav" scroll-y="true">
+        <view class="item {{ listid == item.id ? 'active' : ''}}" wx:for="{{blist}}" data-id="{{item.id}}" data-index="{{index}}" bindtap="switchCate_list">{{item.name}}</view>
+      </scroll-view>
+      <view class="contentContainer">
+        <view class="filter-flex">
+          <view class="filter-tab">
+            <text bindtap="setFilterPanel" data-findex="1" class="{{showfilterindex==1?'active':''}}">{{timeTitle}}</text>
+          </view>
+          <view class="filter-content" wx:if="{{showfilter}}">
+            <view class="filter-panel" style="width:{{panel_width}}px;" wx:if="{{showfilterindex==1}}">
+              <view class="filter-panel-left">
+                <view wx:for="{{filterdata.cate}}" wx:key="{{item.id}}" bindtap="setCateIndex" data-cateindex="{{index}}" data-cateid="{{item.id}}" data-catecontent="{{item.title}}" class="{{cateindex==index?'active':''}}">{{item.title}}</view>
+              </view>
+              <view class="filter-panel-right">
+                <view wx:for="{{filterdata.cate[cateindex].cate_two}}" wx:key="{{item.id}}" bindtap="setSubcateIndex" data-subcateindex="{{index}}" data-subcateid="{{item.id}}" data-subcatecontent="{{item.title}}" class="{{subcateindex==index?'active':''}}">{{item.title}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <scroll-view class="cate" style="height:100%;margin-bottom:50rpx;" scroll-y="true">
+          <block wx:for="{{room_list}}">
+            <block wx:if="{{!!item[0]}}">
+              <view class="hd">
+                <text class="line"></text>
+                <text class="txt" wx:if="{{index == 'one'}}">一楼</text>
+                <text class="txt" wx:if="{{index == 'two'}}">二楼</text>
+                <text class="txt" wx:if="{{index == 'three'}}">三楼</text>
+                <text class="txt" wx:if="{{index == 'four'}}">四楼</text>
+                <text class="txt" wx:if="{{index == 'five'}}">五楼</text>
+                <text class="txt" wx:if="{{index == 'six'}}">六楼</text>
+                <text class="txt" wx:if="{{index == 'seven'}}">七楼</text>
+                <text class="txt" wx:if="{{index == 'eight'}}">八楼</text>
+                <text class="txt" wx:if="{{index == 'eleven'}}">十一楼</text>
+                <text class="line"></text>
+              </view>
+            </block>
+            <view class="bd">
+              <navigator url="#" class="item {{(index+1) % 3 == 0 ? 'last' : ''}}" hover-class="none" wx:for="{{item}}">
+                <text class="txt">{{item}}</text>
+              </navigator>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+
+    </view>
+  </scroll-view>
+</view>
