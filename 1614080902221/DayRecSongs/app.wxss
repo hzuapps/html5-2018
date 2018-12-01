@@ -1,10 +1,23 @@
-/**app.wxss**/
-.container {
-  height: 100%;
+.container{
+  background:#eee;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+}
+
+.tuping-banner{
+
+    width: 375rpx;
+    height: 375rpx;
+    border-radius: 50%;
+
+}
+
+.biaoti{
+  font-weight: bold;
+  font-size: 60rpx;
+
+}

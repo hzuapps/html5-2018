@@ -1,0 +1,6 @@
+<view class='container'>
+  <text>今天推荐</text>
+  <image src='{{imagePath}}' class='tuping-banner'></image>
+  <text class='biaoti'>{{songName}}</text>、
+  <text>点评:{{comment}}</text>
+</view>

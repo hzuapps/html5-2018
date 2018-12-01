@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/history/history",
+    "pages/recommend/recommend",
     "pages/me/me"
   ],
 
@@ -9,15 +9,24 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"image/home.png",
+        "selectedIconPath":"image/home-selected.png"
+        
       },
       {
-        "pagePath": "pages/history/history",
-        "text": "历史"
+        "pagePath": "pages/recommend/recommend",
+        "text": "推荐",
+        "iconPath": "image/recommend.png",
+        "selectedIconPath": "image/recommend-selected.png"
+
       },
       {
         "pagePath": "pages/me/me",
-        "text": "我"
+        "text": "我",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me-selected.png"
+
       }
     ]
   },
