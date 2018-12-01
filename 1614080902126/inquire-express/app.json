@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/seek/seek",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Courier assistant",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Index",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/1.png"
+      },
+      {
+        "pagePath": "pages/seek/seek",
+        "text": "Inquire",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "User",
+        "iconPath": "images/1.png",
+        "selectedIconPath": "images/1.png"
+      }
+    ]
+  }
+}
