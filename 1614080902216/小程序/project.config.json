@@ -1,5 +1,5 @@
 {
-	"description": "项目配置文件",
+	"description": "项目配置文件。",
 	"packOptions": {
 		"ignore": []
 	},
@@ -12,12 +12,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.0",
+	"libVersion": "2.0.4",
 	"appid": "wx573c198bbb1f6858",
-	"projectname": "%E9%98%85%E8%AF%BB",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
+	"projectname": "weixin-test",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
