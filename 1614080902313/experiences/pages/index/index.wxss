@@ -1,0 +1,45 @@
+/* pages/index/index.wxss */
+page{
+  background-color: #eee
+}
+.thing{
+  /* width: 50%; */
+  margin-bottom: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 3%;
+  margin-right: 3%;
+  background-color:white;
+  /* float: left; */
+  /* display: inline; */
+  border-radius: 13%;
+  padding: 2%
+}
+.sd{
+  font-size: 80%;
+}
+.bch{
+  background-color: red;
+}
+.address{
+  padding-bottom: 1%;
+}
+.jw{
+  padding-bottom: 2%;
+}
+.jwd{
+  font-size: 80%;
+  display: inline;
+}
+/* .jf{
+  float: left
+} */
+.jr{
+  padding-left: 25%;
+}
+.time{
+  padding-bottom: 5%;
+}
+.block{
+  display: inline;
+  font-size: 80%;
+}
