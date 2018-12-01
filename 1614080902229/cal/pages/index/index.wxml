@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+
+
+
+
+
+<view class='tittle'>Jolon-Cal简易计算器\n</view>
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    
+  </view>
+  <view class='github'>
+    <text class="userinfo-nickname">亲爱的{{userInfo.nickName}}，欢迎使用计算器!     </text>
+  
+  </view>
+
+
+  <view class="usermotto">
+   
+    <button class='botton-1' size="{{primarySize}}" plain="{{plain}}" hover-class='button-hover'
+        disabled="{{disabled}}" bindtap="toCalc" > {{motto}} </button>
+ <button class='botton-1' size="{{primarySize}}" plain="{{plain}}" hover-class='button-hover'
+        disabled="{{disabled}}" bindtap="toLianxi" >联系我们 </button>
+  </view>
+  <view>
+    <navigator url="view" class="faguang" hover-class="navigator-hover">
+     © Jolon 版权所有
+    </navigator>
+  </view>
+</view>

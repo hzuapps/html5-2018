@@ -1,0 +1,7 @@
+<view class="content">
+        <block wx:for="{{logs}}" wx:for-item="log">
+            <view class="item">{{log}}</view>
+        </block>
+   <navigator url='../calc/calc'><button class='button'>点击返回上一页</button></navigator>
+   <navigator url='../index/index'><button class='button'>点击返回首页</button></navigator>
+</view>

@@ -1,0 +1,73 @@
+/**index.wxss**/
+
+page{background-color:#dddddd;}
+.userinfo-avatar {
+  width: 128px;
+  height: 128px;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  margin-top:80px;
+}
+
+.usermotto {
+  margin-top: 35%;
+}
+
+
+
+
+.navigator-hover {
+    color:blue;
+}
+.github{
+  color:#d1d1d1;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: 楷体;
+  text-shadow: -1px -1px white,
+  1px 1px #333; 
+  font-weight: bold;
+}
+.icon{
+  vertical-align: middle;
+  margin-right: 2px;
+}
+.botton-1 {
+  color:rgb(247, 252, 251);
+  margin-top: 20rpx;
+  border-radius: 98rpx; 
+  border:solid  3px #eff5f4;
+  background-color:#5f6d62;
+
+}
+
+.button-hover{
+background-color:rgb(247, 52, 52);
+}
+.tittle{
+  font-size: 30px;
+  font-family: 楷体;
+  color: #d1d1d1;
+
+ text-shadow: -1px -1px white,
+  1px 1px #333; 
+  font-weight: bold;
+  text-align:start;
+  line-height: 5em;
+}
+.faguang{
+  text-align:end;
+  padding: 15px;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size:15px;
+   font-weight: bold;
+   color: #d1d1d1;
+   text-shadow: 0 0 0.2em rgb(143, 113, 109),
+   0 0 0.2em rgb(143, 113, 109);
+}

@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/calc/calc",
+    "pages/history/history",
+    "pages/logs/logs",
+    "pages/lianxi/lianxi"
+  
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#140e05",
+    "navigationBarTitleText": "Jolon-Cal",
+    "navigationBarTextStyle":"white"
+
+  }
+}
