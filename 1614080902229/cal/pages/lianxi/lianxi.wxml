@@ -1,0 +1,13 @@
+<!--pages/lianxi/lianxi.wxml-->
+<view class='guanyu' >  
+<view class='tittle'>关于我们：</view>
+<view  >
+<text  space='nbsp'>  Jolon工作室是HZU的一个小型自主研究的软件编程实验室,成立于2018年，工作室致力于HTML等WEB前端开发，秉持“简单”“简便”“简易”的三简原则。如果有什么建议或者是意见，以及工作方面的合作，麻烦请联系我们团队。
+</text></view>
+<view ><text space='nbsp'> 我们的联系电话是 “0752-XXXXXXXX”</text></view>
+
+<view ><text space='nbsp'> 我们的联系邮箱是 “1225267242@qq.com”</text></view>
+
+<navigator url='../index/index'><button class='button'>点击返回上一页</button></navigator>
+    <navigator url='../calc/calc'><button class='button'>点击此处开始计算</button></navigator>
+</view>
