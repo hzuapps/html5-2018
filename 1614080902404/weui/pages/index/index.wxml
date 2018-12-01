@@ -1,3 +1,61 @@
-<view class="container">
-    Content
+<view class="music-head">
+  <!--搜索框-->
+  <view class="searchBar">
+    <view class="searchBox1" style="z-index:1;" hidden="{{!inputShow}}">
+      <icon class="searchIcon" type="search" size="14"  />
+      <input class="searchInput" type="text" placeholder="搜索" value="{{inputValue}}" focus="{{inputShow}}" bindinput="keywordSearch" />
+      <view class="searchClear" wx:if="{{inputValue.length>0}}" bindtap="clearInput">
+        <icon class="searchClearIcon" type="clear" size="14" />
+      </view>
+    </view>
+    <!--focus时 搜索icon-->
+    <view class="searchBox2" style="z-index:5;" hidden="{{inputShow}}" bindtap="showItem">
+      <icon class="searchIcon" type="search" size="14"  />
+      <input class="searchInput" type="text" placeholder="搜索" value="" focus="" bindtap="" />
+    </view>
+    <!--取消按钮-->
+    <view class="searchCancel" hidden="{{!inputShow}}" bindtap="hideItem">取消</view>
+    <view class="play-item" hidden="{{inputShow}}" bindtap="bindOpenPlay">
+      <image src="../../image/play-icon.png"></image>
+    </view>
+  </view>
+</view>
+
+
+<!-- 主体内容 -->
+<view hidden="{{inputShow}}">
+  <!--Navigation-->
+  <view class="music-nav">
+    <text wx:for="{{navbar}}" data-index="{{index}}" wx-key="unique" class="nav-text {{navIndex==index?'active':''}}" bindtap="bindNavTab">{{item}}</text>
+  </view>
+
+  <!--findMusic-->
+  <view hidden="{{navIndex!==0}}">
+    <!--swiper-->
+     <view class="swiper-container">
+      <swiper autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="bindSwiperChange" class="swiper">
+        <block wx:for="{{swiperItem}}" wx:key="unique">
+          <swiper-item data-id="{{item.id}}">
+            <image src="{{item.url}}" class="img"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="swiperSpot">
+        <block wx:for="{{swiperItem}}" wx:key="unique">
+          <view class="spot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+      </view>
+    </view>  
+    
+    </view>
+    <image class="myphoto" src="/image/MyIcon.jpg"></image>
+    <text class="motto">图音</text>
+<button class="button-text" type="primary" bindtap="listenerButtonPlay">播放</button>
+<button class="button-text" type="primary" bindtap="listenerButtonPause">暂停</button>
+<button class="button-text" type="primary" bindtap="listenerButtonSeek">设置播放进度</button>
+<button class="button-text" type="primary" bindtap="listenerButtonStop">停止播放</button>
+<button class="button-text" type="primary" bindtap="listenerButtonGetPlayState">获取播放状态</button>
+
+
+
 </view>

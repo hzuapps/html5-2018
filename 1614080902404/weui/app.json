@@ -8,15 +8,15 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#e45050",
     "navigationBarTitleText": "图音",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "#fff"
   },
   "tabBar": {
-    "color": "#dddddd",
-    "selectedColor": "#3cc51f",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
+    "color": "#929292",
+    "selectedColor": "#e45050",
+    "borderStyle": "white",
+    "backgroundColor": "#cccccc",
     "list": [
       {
         "pagePath": "pages/index/index",

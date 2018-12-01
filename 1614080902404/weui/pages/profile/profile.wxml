@@ -23,11 +23,16 @@
         <radio value="女" />女</label>
     </radio-group>
   </view>
+ 
+
   <view class="btn-area">
     <button formType="submit">提交</button>
     <button formType="reset">重置</button>
   </view>
 </form>
+
 <view wx:if="{{isSubmit}}">
   {{warn ? warn : "是否公开信息："+isPub+"，昵称："+id+"，介绍："+js+"，性别："+sex}}
 </view>
+
+ 
