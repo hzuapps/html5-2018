@@ -1,0 +1,48 @@
+<!--pages/m1/m1.wxml
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+-->
+<view class="weui-cell">
+                <view class="weui-cell__hd">
+                <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">登录 </button>
+                <block wx:else>
+                    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" style="margin-right: 5px;vertical-align: middle;width:128rpx; height: 128rpx;"></image>
+                    </block>
+                </view>
+                <view class="weui-cell__bd"></view>
+                <view class="weui-cell__ft"><text class="userinfo-nickname">{{userInfo.nickName}}</text></view>
+            </view>
+            
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd"><navigator url="../m1/m2">关于程序</navigator></view>
+            </view>
+            
+            </view> <view class="weui-cells weui-cells_after-title">
+           
+             <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__hd">
+                    <image src="{{icon}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd"><text bindtap='ww'>听歌</text></view>
+            </view>
+            
+            </view>
+ <view class="qq">
+               
+                <view class="qq"><button open-type='share' class='submit-btn'>分享程序</button></view>
+            </view>
+            
+            </view>
+
