@@ -1,0 +1,11 @@
+/* pages/home/yys.wxss */
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
+}
+.video-dx{
+  width: 375px; 
+  height: 272px;  
+}

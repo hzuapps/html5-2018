@@ -1,0 +1,4 @@
+/* pages/xy/xy.wxss */
+.cent{ 
+  text-align: center;   /* 文字居中显示 */
+}

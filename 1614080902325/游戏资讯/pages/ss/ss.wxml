@@ -1,0 +1,41 @@
+<!--pages/home/ss.wxml-->
+<view class="page">
+<view class='wenzi-jies'>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" style='background-color:#ececec;' hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+      </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+        <view class="weui-media-box__desc">昆仑游戏</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="section tc">
+  <video id="myVideo" class='video-dx' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+</view>
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">【游戏介绍】</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        这一次，正版《BLEACH 境・界》手游真的来了！GameArk为ACGers倾力奉献，日本动漫巨头
+                        《BLEACH 境・界》官方手游强势来袭！《BLEACH 境・界-魂之觉醒:死神》手游完美重现动画中的
+                        形象与剧情，各位日漫迷们可以在战斗的过程中体味畅快淋漓的战斗快感，与黑崎一护一同舞动斩
+                        魄刀，体会无双的格斗精髓，迸发少年热血。百分百还原3D人物模型，真实带感的打击感及音效，
+                        强烈的代入感让你身临其境，按捺不住颤动的手臂，让我们一起期待！
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">【推荐理由】</view>
+                    <view class="weui-article__p">
+                        凑数的......
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

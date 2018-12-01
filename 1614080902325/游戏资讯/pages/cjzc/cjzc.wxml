@@ -1,0 +1,37 @@
+<view class="page">
+<view class='wenzi-jies'>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" style='background-color:#ececec;' hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../img/cjzc.jpg" />
+      </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">绝地求生：刺激战场</view>
+        <view class="weui-media-box__desc">Tencent Mobile Games</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="section tc">
+  <video id="myVideo" class='video-dx' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+</view>
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">【游戏介绍】</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        腾讯光子工作室群自研大作，正版战斗特训手游。百人空投，荒岛求生！虚拟4引擎研发，次世代                         完美画质，重现端游视听感觉；8000Mx8000M正版实景地图，打造指尖战场，全方面自由施展战                          术；百人同场竞技，真实弹道，完美的射击手感；好友一键组队，语音开黑；腾讯光子工作室群                          超过200人团队研发，给你带来一场刺激的竞技体验。
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">【推荐理由】</view>
+                    <view class="weui-article__p">
+                        作为手游吃鸡，刺激战场相比于腾讯旗下另一款全军出击还原度更高，玩家更多，并且还举办了
+                        TGA大奖赛，城市赛，校园赛等。
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

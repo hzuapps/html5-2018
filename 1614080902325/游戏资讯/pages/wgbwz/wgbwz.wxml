@@ -1,0 +1,55 @@
+<!--pages/home/wgbwz.wxml-->
+<view class="page">
+<view class='wenzi-jies'>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" style='background-color:#ececec;' hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../img/王国保卫战.jpg" />
+      </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">王国保卫战：复仇</view>
+        <view class="weui-media-box__desc">Ironhide S.A.</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="section tc">
+  <video id="myVideo" class='video-dx' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+</view>
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">【游戏介绍】</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        全世界口碑最好的塔防系列游戏荣耀回归，更有种种变化让你耳目一新！
+                        战无不胜的巫师维兹南再度登场！踏上这场史诗之旅，组建军队，去履行他那阴险的计划吧……挖哈
+                        哈。做好准备，让王国境内的臣民见识见识谁才是真正的老大！你将一路浴血奋战，征服新旧疆
+                        土，迎战各大帝国的劲敌，与强悍绝伦的头目们展开死斗——一切尽在这款充满幽默与史诗感的经典
+                        塔防游戏！
+                        <view class="weui-article__title">【游戏特性】</view>
+                        <view class="weui-article__section">
+                        <view class="weui-article__p">- 新增16种防御塔，每种都自带独一无二的特殊能力。</view>
+                        <view class="weui-article__p">- 你可以随心所欲挑选防御塔，打造出最具杀伤力的组合，阻拦敌人进军的步伐！</view>
+                        <view class="weui-article__p">- 16道挑战关卡，遍布三座大陆， 只等你来征服！</view>
+                        <view class="weui-article__p">- 9位骁勇善战的英雄任你发号施令，绝无一丝犹豫。</view>
+                        <view class="weui-article__p">- 超过35种强力敌人，让你绞尽脑汁，调动一切战术才能克敌制胜。</view>
+                        <view class="weui-article__p">- 在传奇般的头目战中打倒3位不可一世的君王，保卫你的王国！</view>
+                        <view class="weui-article__p">- 新能力、新援军，帮你力克强敌。</view>
+                        <view class="weui-article__p">- 10多种饰品和器具，让你再多几成胜算。</view>
+                        <view class="weui-article__p">- 30种升级选择，让你的军队将潜力发挥得淋漓尽致。</view>
+                        <view class="weui-article__p">- 50多种成就、隐藏秘密和好玩的东西等你来探索！</view>
+                        <view class="weui-article__p">- 黑暗塔里没 Wi-Fi？别担心，离线玩就好！</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">【推荐理由】</view>
+                    <view class="weui-article__p">
+                        毕竟是号称全世界口碑最好的塔防系列游戏，谁玩谁知道。
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

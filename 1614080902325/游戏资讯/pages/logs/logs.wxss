@@ -1,1 +1,7 @@
-
+.button-sp-area{
+    margin: 0 auto;
+    width: 60%;
+}
+.mini-btn{
+    margin-right: 5px;
+}

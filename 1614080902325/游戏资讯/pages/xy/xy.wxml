@@ -1,0 +1,96 @@
+<!--pages/xy/xy.wxml-->
+    <view class='wenzi-jies'>
+        <view class="weui-media-box__title cent">分享最新最特别的游戏</view>
+            <view class="weui-panel__bd">
+            <navigator url="../ckxt/ckxt" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+              <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                  <image class="weui-media-box__thumb" src="../img/刺客信条.jpg" />
+              </view>
+              <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                  <view class="weui-media-box__title">刺客信条：燎原</view>
+                  <view class="weui-media-box__desc">全新的策略角色扮演游戏！</view>
+              </view>
+            </navigator>
+            <navigator url="../wgbwz/wgbwz" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/王国保卫战.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">王国保卫战：复仇</view>
+                    <view class="weui-media-box__desc">征服整个王国！</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+            <navigator url="../ss/ss" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                    <image class="weui-media-box__thumb" src="../img/死神.jpg" />
+                </view>
+                <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                    <view class="weui-media-box__title">境·界-魂之觉醒:死神</view>
+                    <view class="weui-media-box__desc">KLabGames联合研发</view>
+                </view>
+            </navigator>
+         </view>
+      </view>
