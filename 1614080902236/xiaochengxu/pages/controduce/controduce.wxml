@@ -1,0 +1,8 @@
+<!--pages/controduce/controduce.wxml-->
+<text class='text1'>Qde生日管家是作者开发的第一个小程序，\n</text>
+<text class='text1'> 该小程序可以添加好友的生日信息，\n</text>
+<text class='text1'>以方便查看。\n</text>
+<text class='text2'>作者邮箱：1098017441@qq.com\n</text>
+<text class='text2'>欢迎给我提建议</text>
+<button class='btn1' bindtap='cBtn'>返回上一页</button>
+

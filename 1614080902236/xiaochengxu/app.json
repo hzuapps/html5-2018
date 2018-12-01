@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/setting/setting",
+    "pages/navigator/navigator",
+    "pages/controduce/controduce"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#edd566",
+    "navigationBarTitleText": "Qde生日管家",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectColor": "#f7c913",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/p_首页.png",
+        "selectedIconPath": "img/p_首页中.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "查看",
+        "iconPath": "img/p_查看.png",
+        "selectedIconPath": "img/p_查看中.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "我的",
+        "iconPath": "img/p_设置.png",
+        "selectedIconPath": "img/p_设置中.png"
+      }
+    ]
+  }
+}

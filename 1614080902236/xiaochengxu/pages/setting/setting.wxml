@@ -1,0 +1,15 @@
+<!--pages/setting/setting.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> 
+  </view>
+</view>
+<view class='set-all'>
+<button class='snvg1' id='sbtn1' bindtap='indexBtn1'>我的首页</button>
+<button class='snvg1' id='sbtn2' bindtap='indexBtn2'>我的添加</button>
+<navigator class='snvg2' url='../controduce/controduce'>有关小程序</navigator>
+</view>

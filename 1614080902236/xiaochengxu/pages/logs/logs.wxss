@@ -1,0 +1,19 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.log-all{
+  margin-left: 8px;
+  margin-top: 15px;
+}
+.log-text{
+  color: #a8a7a7;
+}
+.log-nad{
+  color: #edd566;
+  text-shadow: 1px 1px #635102, -1px -1px white;
+}

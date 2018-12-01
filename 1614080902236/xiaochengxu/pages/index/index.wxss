@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+
+.usermotto {
+  margin-top: 200px;
+}
+.nvg1{
+  background-color: #edd566;
+  text-align: center;
+  width: 300px;
+  border-radius: 20px;
+  border: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+
+}
+.wish{
+  color: #edd566;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+  font-family: 楷体;
+  font-weight: bold;
+  text-shadow: -1px -1px white,2px 2px #856d04;
+}
