@@ -1,0 +1,30 @@
+.userinfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 50rpx 0;
+  align-items: center;
+  background: #7acaf0;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  display: flex;
+  margin-top: 10px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}button{
+  text-align: left;
+  background-color:#FFFFFF;
+  height: 2.5em;
+  border: none;
+  line-height: 2.5em;
+}

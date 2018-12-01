@@ -1,0 +1,6 @@
+<!--pages/fourth/fourth.wxml-->
+<view >
+<!-- map.wxml -->
+<map class='kk' id="myMap" show-location/>
+<button type="primary" bindtap="moveToLocation">我的位置</button>
+</view>

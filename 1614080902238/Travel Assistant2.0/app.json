@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/second/second",
+    "pages/third/third",
+    "pages/fourth/fourth",
+    "pages/fifth/fifth",
+    "pages/plan/plan",
+    "pages/myplan/myplan",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "出行助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_HL.png"
+      },
+      {
+        "pagePath": "pages/second/second",
+        "text": "查询天气",
+        "iconPath": "image/second.png",
+        "selectedIconPath": "image/second_HL.png"
+      },
+      {
+        "pagePath": "pages/third/third",
+        "text": "发现",
+        "iconPath": "image/f.png",
+        "selectedIconPath": "image/f1.png"
+      },
+      {
+        "pagePath": "pages/fourth/fourth",
+        "text": "导航",
+        "iconPath": "image/third.png",
+        "selectedIconPath": "image/thirda.png"
+      },{
+        "pagePath": "pages/fifth/fifth",
+        "text": "我的",
+        "iconPath": "image/m.png",
+        "selectedIconPath": "image/m1.png"
+      }
+    ]
+  }
+}

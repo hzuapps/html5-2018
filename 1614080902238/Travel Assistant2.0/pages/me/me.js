@@ -1,0 +1,8 @@
+Page({
+
+  onShareAppMessage: function () {
+
+  }
+
+
+})
