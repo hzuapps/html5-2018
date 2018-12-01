@@ -3,29 +3,26 @@
   margin-top: 40px;
   margin-left: 20px;
 }
-.section{
-  
+.section{ 
   margin-top: 10px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   height: 30px;
 }
 #text2{       
   margin-top: 20px;
   margin-left: 20px;
-  
-  margin-bottom: 30px;
 }
 #text3{
   margin-left: 60px;
   height: 30px;
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-size: 20px;
+  text-align: center;
+  font-size: 25px;
   color: red;
 }
 .other-button-hover {
   height: 40px;
   background-color: blue;
-  margin-top: 50px;
+  margin-top: 30px;
+  text-align: center;
 }

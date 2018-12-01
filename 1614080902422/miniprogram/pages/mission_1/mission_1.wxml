@@ -1,0 +1,13 @@
+<!--pages/mission/mission_1.wxml-->
+<view class="section">
+  <text>{{month}}月{{day}}日那一天，风雨交加，伴随着一声雷声，一个婴儿呱呱坠地，爸爸欣慰地说，就叫{{name}}吧！</text>
+  <view>平静的十年过去了，某一天夜里，爸爸对你说：“{{name}}”，你长大了，有一些信息该告诉你了，其实我们肩负着守卫阿尔法星的责任，这里有一把宝剑和一柄法杖，你要选择哪一把？</view>
+  <view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{false}}" bindtap="dabaojianbtn" class="other-button-hover"> 宝剑 </button>
+</view>
+<view>
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{false}}" bindtap="fazhangbtn" class="other-button-hover"> 法杖 </button>
+</view>
+  </view>
