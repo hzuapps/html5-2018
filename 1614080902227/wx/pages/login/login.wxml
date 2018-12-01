@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view >
+    <view class='item1'>
+        <image class='image1' src='/image/yonghu.png'></image>
+    </view>
+    <view >
+        <view class='view1'>
+            <text class='text1'>用户名</text>
+            <input class="input1" type="text" bindinput='getusername' focus='true'></input>
+        </view>
+        <view class='view1'>
+            <text class='text1'>密码</text>
+            <input class="input1" type="text" bindinput='getpassword' password='true' focus='true'></input>
+        </view>
+        <view class='view1'>
+            <button class='button1' bindtap='onclick1'>登录</button>
+        </view>
+    </view>
+</view>

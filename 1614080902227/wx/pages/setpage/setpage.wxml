@@ -1,0 +1,36 @@
+<!--pages/setpage/setpage.wxml-->
+<view class='background'>
+  <view>
+    <image class='image1' src='/image/p2.png'></image>
+  </view>
+    <view class="weui-cells">
+      <view class="weui-cell__hd">
+        <view class='circle'>
+          <text class='text1'>头像</text>
+        </view>                     
+      </view>
+        <view class="weui-cell__bd">
+          <text class='text2'>{{username}}</text>   
+        </view>
+    </view>
+    <view class='weui-cells-ver'>
+      <view class='direction'>
+        <image class='image3' src='/image/qianbao.png'></image>
+        <text class='weui-cell__bd2'>钱包</text>
+      </view>
+      <view class='direction'>
+        <image class='image3' src='/image/shujia.png'></image>
+        <text class='weui-cell__bd2'>我的书架</text>
+      </view>
+      <view class='direction'>
+        <image class='image3' src='/image/zuji.png'></image>
+        <text class='weui-cell__bd2'>最近浏览</text>
+      </view>
+    </view>
+    <view class="weui-cells-ver">
+      <view class='direction'>
+        <image class='image3' src='/image/shezhi.png'></image>
+        <text class='weui-cell__bd2'>设置</text>
+      </view>
+    </view>
+</view>
