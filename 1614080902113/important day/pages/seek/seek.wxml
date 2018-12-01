@@ -12,6 +12,7 @@
 
 <button class="btn" bindtap='btnClick'>查询</button>
 <button class="bt1" bindtap="delete">清空</button>
+<button bindtap="down_file" class="bt4" type='primary'>从本地相册选择图片</button>
 </view>
 <scroll-view>
 <view wx:for="{{message.data}}">
