@@ -1,21 +1,29 @@
 <!--index.wxml-->
-<view class="swiper-container">
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-article">
+          <view class="swiper-container" >
 
-    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
+              <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
 
-    <swiper-item>
-      <image src='../images/O1CN011ewGz6RqUxDaPTo_!!196993935.jpg' mode='widthFix'></image>
-    </swiper-item>
+              <swiper-item>
+                <image src='../images/O1CN011ewGz6RqUxDaPTo_!!196993935.jpg' mode='widthFix'></image>
+              </swiper-item>
 
-    <swiper-item>
-      <image src='../images/O1CN011ewGzI4UQmwoSX8_!!196993935.jpg' mode='widthFix'></image>
-    </swiper-item>
+              <swiper-item>
+                <image src='../images/O1CN011ewGzI4UQmwoSX8_!!196993935.jpg' mode='widthFix'></image>
+              </swiper-item>
 
-    <swiper-item>
-      <image src='../images/TB2QithlnXYBeNkHFrdXXciuVXa-196993935.jpg' mode='widthFix'></image>
-    </swiper-item>
+              <swiper-item>
+                <image src='../images/TB2QithlnXYBeNkHFrdXXciuVXa-196993935.jpg' mode='widthFix'></image>
+              </swiper-item>
 
-  </swiper>
+            </swiper>
 
+          </view>
+        </view>
+        <button class="weui-btn" type="primary" bindtap='jump_to_cut' style='width=50%'>穿搭从这里开始</button>
+    </view>
 </view>
+
 

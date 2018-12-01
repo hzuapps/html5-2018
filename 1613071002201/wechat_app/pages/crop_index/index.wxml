@@ -1,0 +1,7 @@
+<image  bindtap='chooseIMG1' src='{{src1}}'></image>
+<!-- <view bindtap='chooseIMG1' class='choose-img'>选择图片</view> -->
+
+<image  bindtap='chooseIMG2' src='{{src2}}'></image>
+<!-- <view bindtap='chooseIMG2' class='choose-img'>选择图片</view> -->
+
+<button bindtap='save'>保存</button>

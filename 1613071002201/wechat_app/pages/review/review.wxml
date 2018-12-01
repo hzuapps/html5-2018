@@ -1,0 +1,26 @@
+<view class="page__hd">
+  <view class="page__title">{{city}}</view>
+  <view class="detail-container">
+    <view class="page__desc">气温:{{wendu}}°C</view>
+    <view class="page__desc">湿度:{{shidu}}</view>
+    <view class="page__desc">空气质量:{{quality}}</view>
+    <view class="page__desc">更新时间:{{updateTime}}</view>
+  </view>
+</view>
+
+
+<view class="weui-cells__title">意见反馈</view>
+<view class="weui-cells weui-cells_after-title">
+  <form class="formForTextarea" bindsubmit="bindFormSubmit">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请输入文本" name="textarea" />
+          <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </form>
+</view>
