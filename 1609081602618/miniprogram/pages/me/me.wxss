@@ -1,1 +1,96 @@
 /* pages/me/me.wxss */
+
+.user {
+  width: 100%;
+  padding: 20rpx 0;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+}
+
+.userimg {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.userDetail {
+  font-size: 30rpx;
+  color: #666;
+  line-height: 60rpx;
+  margin-left: 40rpx;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+}
+
+.tabBtn {
+  margin-top: 20rpx;
+  padding: 20rpx;
+  background: #1296db;
+  color: #fff;
+  margin: 40rpx 10rpx 20rpx 10rpx;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.detail {
+  width: 600rpx;
+  padding: 20rpx;
+  margin: 20rpx auto;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+
+.img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.desc {
+  font-size: 30rpx;
+  color: #666;
+  line-height: 50rpx;
+  margin: 0 20rpx;
+}
+
+.active {
+  animation: mymove 3s linear infinite;
+}
+
+@keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tab-pannel {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background: #eee;
+  padding: 20rpx;
+  margin-top: -14rpx;
+  width: 670rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  width: 0;
+  height: 0;
+  border-left: 50rpx solid transparent;
+  border-right: 50rpx solid transparent;
+  border-bottom: 50rpx solid #eee;
+  position: relative;
+  left: 40rpx;
+  top: -8rpx;
+}

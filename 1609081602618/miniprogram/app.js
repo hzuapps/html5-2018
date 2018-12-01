@@ -1,4 +1,7 @@
 //app.js
-App(
-  
-)
+App({
+    globalData: {
+      use1: false,
+      use2: true
+    }
+})
