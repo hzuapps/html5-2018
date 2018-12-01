@@ -1,0 +1,76 @@
+.input-wrap{  
+  margin: 30rpx 10rpx;
+}
+.label-style{
+  font-family: "微软雅黑";
+  font-size: 18px;
+  float: left;
+  line-height: 38px;
+  margin: 0 10px 0 0;
+}
+.ipt-main{
+  border: 1rpx solid rgb(85, 79, 79);
+  border-radius: 5px;
+  height: 80rpx;
+  padding: 10rpx 15px;
+  font-size: 30rpx;
+  width: 230px;
+  display: block;
+  float:left;
+}
+.style1{
+  width: 320px;
+  height: 30px;
+  border: 1px solid gray;
+  border-left: 0;
+  line-height: 32px;
+  font-family: "微软雅黑";
+}
+.input-text{
+  padding: 5px 0;
+  margin-left: 35px;
+  border: 1px solid rgb(231, 222, 222);
+  
+}
+
+.weui-cells_title{
+  font-size: 14px;
+  color:gray;
+  padding: 5px 0;
+}
+.text{
+  display: block;
+  margin-bottom: 0;
+}
+.userinfo {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 50rpx 0;
+  align-items: center;
+  background: #FFCCFF;
+}
+
+.userinfo-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  display: flex;
+  margin-top: 10px;
+  color: #aaa;
+  align-items: center;
+  justify-content: center;
+}
+.fankui{
+  border-top: 1rpx solid rgb(85, 79, 79);
+  padding-left: 12px;
+}
+.placeholder{
+  font-size: 14px;
+}
+

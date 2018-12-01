@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="page__bd">
+     <view class="weui-cells weui-cells_after-title">
+       <view class="weui-cell"> 
+          <view class="weui-cell__bd">姓名</view>
+          <view class="weui-cell__ft">林晓珊</view>
+       </view>
+      <view class="weui-cell"> 
+         <view class="weui-cell__bd">就读学校</view>
+         <view class="weui-cell__ft">惠州学院</view>
+     </view>
+     <view class="weui-cell"> 
+          <view class="weui-cell__bd">专业</view>
+          <view class="weui-cell__ft">软件工程</view>
+       </view>
+    </view>
+  </view>
+</view>
+<view class="btn_style">
+  <view wx:for="{{requestData}}">{{item.content}}</view>
+  <button bindtap="requestFromServer" type="primary" plain='true'>联系我</button>
+</view>

@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/message/message"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "memo",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#32cd32",
+    "list": [
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "添加",
+      "iconPath": "img/icon_添加.png",
+      "selectedIconPath": "img/icon_添加中.png"
+    },
+    {
+        "pagePath": "pages/home/home",
+        "text": "个人中心",
+        "iconPath": "img/icon_个人.png",
+        "selectedIconPath": "img/icon_个人中.png"
+    }
+    ]
+
+  }
+}
