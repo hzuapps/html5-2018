@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/calculator/calculator"
+    "pages/calculator/calculator",
+    "pages/logs/logs"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,16 +15,21 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        
+        "selectedIconPath": "pages/icon/home.jpg",
+        "iconPath": "pages/icon/home.jpg"
       },
-      {
+        {
+          "pagePath": "pages/calculator/calculator",
+          "selectedIconPath": "pages/icon/calculator.jpg",
+          "iconPath": "pages/icon/calculator.jpg"
+        },
+        {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
-      },
-      {
-        "pagePath": "pages/calculator/calculator",
-        "text": "我"
+        "selectedIconPath": "pages/icon/about_me.jpg",
+        "iconPath": "pages/icon/about_me.jpg"
       }
     ]
   }
+  
 }

@@ -1,6 +1,31 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+
+<view class='name'>
+<view class='name1'>
+<view class='head'>
+<image class='img' src='../icon/head.jpg'></image>
+<view class='write'>
+<view class='my'>郭衔粧</view>
+<view class='my'>惠州学院软件工程16级学生</view>
 </view>
+</view>
+</view>
+<view class='basic'>基本信息</view>
+<view class='line'></view>
+<view class='basic'>性　　别:男</view>
+<view class='line'></view>
+<view class='basic'>出生年份：壹玖玖捌</view>
+<view class='line'></view>
+<view class='basic'>邮　　箱：244176448@qq.com</view>
+<view class='line'></view>
+<view class='basic'>指导老师：zsn</view>
+<view class='line'></view>
+<view>小程序简介：</view>
+<view>这是我做的第一个小程序，样式方面存在着很多不足。本小程序可以完成日常生活中碰到简易算数问题。本小程序任存在着许多不足的地方，在接下来的日子中我也会慢慢改进。</view>
+<view class='end'>--by:g先生。</view>
+</view>
+
+
+
+
+
