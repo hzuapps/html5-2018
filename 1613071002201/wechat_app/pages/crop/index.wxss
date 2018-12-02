@@ -1,0 +1,45 @@
+
+page {
+  min-height: auto;
+  height: auto;
+}
+
+.cropper-wrapper {
+  background: #fff;
+}
+
+.getCropperImage {
+  text-align: center;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  width: 750rpx;
+  padding: 40 0rpx;
+  background: #000;
+  z-index: 9999;
+  color: #fff;
+  align-items: center;
+}
+
+.getCropperImage > view {
+  padding: 0 40rpx;
+  height: 60px;
+  line-height: 60px;
+}
+
+.cropper-wrapper-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  z-index: 22;
+}
+
+.rotate {
+  width: 44rpx;
+  height: 44rpx;
+}
