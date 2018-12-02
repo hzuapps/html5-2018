@@ -47,10 +47,10 @@ page {
 .butt {
   width: 95%;
   color: #ffffff;
-  background-color: #3b3c42d3;
+  background-color: #0049e6d3;
 }
 .butt:active {
-   background-color: #2b2727f5;
+   background-color: #1900fff5;
 }
 
 .impTip {

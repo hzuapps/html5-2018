@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
 	"appid": "wxcc63ce14545b8998",
-	"projectname": "FirstProgram",
+	"projectname": "timelog",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

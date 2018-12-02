@@ -10,7 +10,7 @@ Page({
     joinSumArr: null,
     isNul: true
   },
-  changetest: function () {
+  edittest: function () {
     wx.navigateTo({
       url: '../edit/edit',
     })

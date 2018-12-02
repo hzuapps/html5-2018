@@ -17,16 +17,15 @@
           </view>
         </view>
       </view>
-      <view class="weui-panel__ft">
+      
+    </view>
+  </block>
+  <view class="weui-panel__ft">
         <view class="weui-cell weui-cell_access weui-cell_link">
-          <view class="weui-cell__bd">
+       <view class="weui-cell__bd">
           <button class="build" bindtap="edittest"> 编辑Timelog</button></view>
 
           <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-        </view>
+        </view> 
      </view>
-
-    </view>
-  </block>
-  
 </view>

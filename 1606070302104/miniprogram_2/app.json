@@ -29,8 +29,8 @@
     {
       "pagePath": "pages/logs/logs",
       "text": "查看",
-      "iconPath": "images/diagram.png",
-      "selectedIconPath": "images/diagram2.png"
+      "iconPath": "images/look.png",
+      "selectedIconPath": "images/look2.png"
     },
     {
       "pagePath":"pages/settings/settings",

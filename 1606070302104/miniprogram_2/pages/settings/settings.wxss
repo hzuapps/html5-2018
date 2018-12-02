@@ -2,7 +2,7 @@
 .liuyan{
   width: 95%;
   color: #ffffff;
-  background-color: #3b3c42d3;
+  background-color: #0049e6d3;
 }
 
 .textIn {
@@ -12,6 +12,6 @@
   padding: 3%;
   height: 5em;
   font-size: 34rpx;
-  border: 1rpx solid #000000f5;
+  border: 1rpx solid #000000;
   border-radius: 0.8em;
 }

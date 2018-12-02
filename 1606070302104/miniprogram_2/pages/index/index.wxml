@@ -20,5 +20,5 @@
 <view>{{data0}}</view>
 <view bindtap="minus">{{minus}}</view>-->
 <view >
-  <button class="build" bindtap="changetest"> 新建Timelog</button>
+  <button type="primary" class="build" bindtap="changetest"> 新建Timelog</button>
 </view>
