@@ -1,0 +1,12 @@
+<view class="index">
+<text class='text'>问题输入:</text>
+
+<radio-group class="radio-group" bindchange="radioChange">
+<label class="radio" wx:for="{{sex}}">
+<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+</label>
+</radio-group>
+
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+disabled="{{disabled}}" bindtap="change" class='btn'> 决定是 </button>
+</view>

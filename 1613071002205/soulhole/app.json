@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/form/welcome",
+    "pages/comfirm",
+    "pages/comfirm/deal"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "pages/img/main1.png",
+        "iconPath": "pages/img/main1.png",
+        "text": "主页"
+      },
+      {
+        "selectedIconPath": "pages/img/main1.png",
+        "iconPath": "pages/img/main1.png",
+        "pagePath": "pages/logs/logs",
+        "text": "个人"
+      },
+      {
+        "selectedIconPath": "pages/img/main1.png",
+        "iconPath": "pages/img/main1.png",
+        "pagePath": "pages/comfirm/deal",
+        "text": "结论"
+      }
+    ]
+  }
+}
