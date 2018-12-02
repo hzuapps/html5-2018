@@ -1,15 +1,18 @@
 /**index.wxss**/
+
 .section {
-  height: 180px;
+  height: 150px;
   background-color: #6495ED;
 }
 
 .section_title {
-  margin-bottom: 15px;
+  line-height: 8px;
+  height: 25px;
 }
 
 .text01 {
   color: white;
+  font-size: 20px;
 }
 
 .section_text {
