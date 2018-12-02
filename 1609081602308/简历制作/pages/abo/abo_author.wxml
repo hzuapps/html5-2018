@@ -1,0 +1,59 @@
+<!--pages/abo/abo_author.wxml-->
+<view class="container">
+  <view class="userinfo">
+      <image class='userinfo-avatar' src="{{userimg}}"></image>
+      <text class="userinfo-nickname">{{username}}</text>
+  </view>
+</view>
+
+  <view>
+    <text class='info_text'>个人信息</text>
+  </view>
+  
+  <div class='page'>
+    <div class="weui-cells">
+
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p>性别</p>
+    </div>
+    <div class="weui-cell__ft">男</div>
+  </div>
+
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p>在读学校</p>
+    </div>
+    <div class="weui-cell__ft">惠州学院</div>
+  </div>
+
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p>所在院系</p>
+    </div>
+    <div class="weui-cell__ft">信息科学技术学院</div>
+  </div>
+
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p>班级</p>
+    </div>
+    <div class="weui-cell__ft">16软件3班</div>
+  </div>
+
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p>邮箱</p>
+    </div>
+    <div class="weui-cell__ft">694006442@qq.com</div>
+  </div>
+
+  <div class="weui-cell">
+    <div class="weui-cell__bd">
+      <p>指导老师</p>
+    </div>
+    <div class="weui-cell__ft">ZSN</div>
+  </div>
+
+</div>
+</div>
