@@ -2,28 +2,31 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/settings/settings"
+    "pages/settings/settings",
+    "pages/user/user"
   ],
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "日历",
+        "iconPath": "./image/image5.png",
+        "selectedIconPath": "./image/image5.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
-      },
-      {
-        "pagePath": "pages/settings/settings",
-        "text": "设置"
+        "pagePath": "pages/user/user",
+        "text": "用户中心",
+        "iconPath": "./image/image4.png",
+        "selectedIconPath": "./image/image4.png"
       }
     ]
   },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "用户登录",
     "navigationBarTextStyle":"black"
   }
+  
+
 }
