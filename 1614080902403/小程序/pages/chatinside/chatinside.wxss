@@ -1,0 +1,141 @@
+/*
+因为语音按钮需要悬浮效果，必须脱离文档流，此处只能都绝对定位
+*/
+
+page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.reply-bar {
+  background: #fff;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 92rpx;
+  border-top: #e5e8eb 0.5px solid;
+}
+
+.reply-bar input {
+  border: 0.5px #e5e8eb solid;
+  width: 440rpx;
+  margin-left: 20rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  padding-left: 20rpx;
+  margin-top: 16rpx;
+}
+
+.reply-bar .round {
+  background: #fff;
+  width: 116rpx;
+  height: 116rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -28rpx;
+  left: 490rpx;
+  border-top: #e5e8eb 0.5px solid;
+}
+
+.reply-bar .voice {
+  width: 64rpx;
+  height: 64rpx;
+  background-color: #0080ff;
+  border-radius: 50%;
+  padding: 16rpx;
+}
+
+.reply-bar .add {
+  border: 0.5px #e5e8eb solid;
+  border-radius: 50%;
+  padding: 16rpx;
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 16rpx;
+  right: 20rpx;
+}
+
+.reply-bar .emoji {
+  width: 62rpx;
+  height: 62rpx;
+  position: absolute;
+  top: 16rpx;
+  right: 88rpx;
+  border: 0.5px #e5e8eb solid;
+  border-radius: 50%;
+}
+
+.iphonexheight {
+  height: 160rpx;
+}
+
+.right {
+  margin-right: 20rpx;
+  justify-content: flex-end;
+}
+
+.left {
+  margin-left: 20rpx;
+  justify-content: flex-start;
+}
+
+.head {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.chatline {
+  display: flex;
+  margin-top: 40rpx;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 408rpx;
+  min-width: 42rpx;
+  min-height: 60rpx;
+  background: #fff;
+  border-radius: 5px;
+  padding: 4rpx 10rpx 8rpx 20rpx;
+  margin: 0px 40rpx;
+}
+
+.send text {
+  color: #000;
+  font-size: 30rpx;
+  word-break: break-all;
+}
+
+.right .send .arrow {
+  position: absolute;
+  top: 20rpx;
+  right: -32rpx;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 16rpx;
+  border-color: #f5f7fa #f5f7fa #f5f7fa #fff;
+}
+
+.left .send .arrow {
+  position: absolute;
+  top: 20rpx;
+  left: -32rpx;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  border: solid 16rpx;
+  border-color: #f5f7fa #fff #f5f7fa #f5f7fa;
+}
+
+scroll-view {
+  height: 100vh;
+}

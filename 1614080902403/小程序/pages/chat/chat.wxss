@@ -70,7 +70,7 @@
 .chatListBox {
   position: relative;
   border: 1px #e3e5eb solid;
-  margin: 20rpx 30rpx;
+  margin: 20rpx 20rpx;
   border-radius: 24rpx;
   padding: 12rpx 24rpx 24rpx 24rpx;
   background-color: #fff;
@@ -101,7 +101,8 @@ image.head {
   width: 26rpx;
   height: 26rpx;
   position: absolute;
-  left: 296rpx;
+  left: 276rpx;
+  padding: 20rpx;
 }
 
 .quick-chat-box {
@@ -208,8 +209,9 @@ image.head {
   width: 20rpx;
   height: 20rpx;
   position: absolute;
-  right: 68rpx;
-  top: 26rpx;
+  right: 48rpx;
+  top: 6rpx;
+  padding: 20rpx;
 }
 
 .reply-box text {
@@ -241,4 +243,8 @@ image.head {
   width: 30rpx;
   height: 30rpx;
   margin-left: 35rpx;
+}
+
+.active {
+  background-color: #f5f7fa;
 }

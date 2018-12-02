@@ -1,0 +1,47 @@
+.warp {
+  background: #fff;
+  border: #e5e8eb 0.5px solid;
+  border-radius: 24rpx;
+  width: 705rpx;
+  margin: 24rpx 20rpx;
+  box-shadow: #e5e8eb 1px 1px 4px;
+}
+
+.warp .form-line text{
+  font-size: 14px;
+  color:#555;
+}
+
+.warp .form-line input{
+    height: 80rpx;
+}
+
+.warp .form-line{
+  display: flex;
+  height:84rpx;
+border-bottom:#e5e8eb 0.5px solid;
+align-items: center;
+
+
+}
+
+.warp .form-line text{
+  width:184rpx;
+text-align:center;
+}
+
+.warp .form-line:last-child{
+  border-bottom: none;
+}
+
+button{
+  width: 700rpx;
+  background: #0080ff;
+  color:#fff;
+  border:1px #0080ff solid;
+  border-radius: 20rpx;
+}
+
+button.active{
+  background: #3367d6;
+}

@@ -2,16 +2,18 @@
   "pages": [
     "pages/chat/chat",
     "pages/myinfo/myinfo",
-    "pages/work/work"
+    "pages/work/work",
+    "pages/chatinside/chatinside",
+    "pages/myinfo/bind"
   ],
   "window": {
     "navigationBarTitleText": "瑞信云科客服系统",
     "navigationBarBackgroundColor": "#0080FF",
-    "backgroundColor":"#F5F7FA"
+    "backgroundColor": "#F5F7FA"
   },
   "tabBar": {
     "color": "#8a8a8a",
-    "backgroundColor":"#ffffff",
+    "backgroundColor": "#ffffff",
     "selectedColor": "#0080FF",
     "list": [
       {

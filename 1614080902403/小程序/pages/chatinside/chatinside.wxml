@@ -1,0 +1,30 @@
+<view style="top:{{voiceheight}}px" hidden="{{!showvoice}}" class="voicewarp">
+  <view class="voicepanel">
+    <view class="voiceresult">
+      <text>{{voicetext}}</text>
+    </view>
+    <view class="voicebar">
+      <view bindtap='cancelvoice' class="vcancel">取消</view>
+      <view bindtap='sendvoice' class="vsend">发送</view>
+    </view>
+  </view>
+</view>
+<scroll-view upper-threshold="0px" bindscrolltoupper="loadtop" scroll-top="{{scrollpos}}rpx" scroll-y="true" class="mainchat">
+  <view wx:for="{{chatdata}}" class="chatline {{item.direction == 'to_visiter'?'right':'left'}}">
+    <image wx:if="{{item.direction == 'to_service'}}" class="head" src="https://css.ruixinyunke.com/{{item.direction == 'to_visiter'?myhead:cushead}}"></image>
+    <view class="send">
+      <view class='arrow'></view>
+      <text>{{item.content}}</text>
+    </view>
+    <image wx:if="{{item.direction == 'to_visiter'}}" class="head" src="https://css.ruixinyunke.com/{{item.direction == 'to_visiter'?myhead:cushead}}"></image>
+  </view>
+  <view id="bottom" style="height:{{isiphonex==true?'200':'160'}}rpx" class="clear"></view>
+</scroll-view>
+<view class="reply-bar {{isiphonex == true?'iphonexheight':''}}">
+  <input confirm-type='发送' confirm-hold='{{true}}' bindconfirm='sendmsg' value="{{inputvalue}}" cursor-spacing='10rpx' placeholder='请输入消息'></input>
+  <view bindlongpress="taplong" bindtouchend='touchend' class="round">
+    <image class="voice" src="/img/voice.png"></image>
+  </view>
+  <image class='emoji' src="/img/emoji.png"></image>
+  <image class="add" src="/img/add.png"></image>
+</view>

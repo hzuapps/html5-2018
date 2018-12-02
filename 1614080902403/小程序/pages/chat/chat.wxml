@@ -1,4 +1,15 @@
 <view class='cointainer'>
+  <view style="top:{{voiceheight}}px" hidden="{{!showvoice}}" class="voicewarp">
+    <view class="voicepanel">
+      <view class="voiceresult">
+        <text>{{voicetext}}</text>
+      </view>
+      <view class="voicebar">
+        <view bindtap='cancelvoice' class="vcancel">取消</view>
+        <view bindtap='sendvoice' class="vsend">发送</view>
+      </view>
+    </view>
+  </view>
   <view class="search {{searchstyle}}">
     <input style="width:{{boxwidth}}rpx" class="search-box {{searchboxstyle}}" bindtap="changeshadow" focus='{{searchFoucus}}' bindinput="inputSearch" placeholder='全局搜索' value='{{searchValue}}'> </input>
     <view class="search-box-right {{searchboxstyle}}" bindtap='clearSearch'>
@@ -6,39 +17,39 @@
     </view>
     <button class="cancelsearch" wx:if="{{searchstyle == 'focusSearch'}}" bindtap='cancelsearch'>取消</button>
   </view>
-  <scroll-view bindscrolltoupper="topload" wx:if="{{isnotInputSearch == true}}" scroll-y="true" bindtap='tapmain' class="chat-main">
-    <view wx:for="{{nearData}}" class="chatListBox">
-      <view wx:if="{{item.notRead.length > 1}}" class='flag'>
+  <scroll-view enable-back-to-top="{{true}}" bindscrolltoupper="topload" wx:if="{{isnotInputSearch == true}}" scroll-y="true" bindtap='tapmain' class="chat-main">
+    <view catchtap='chatinside' hover-class='active' data-index="{{index}}" wx:for="{{nearData}}" class="chatListBox {{tapindex == index ?'active':''}}">
+      <view wx:if="{{item.notRead.length > 0}}" class='flag'>
         <text>{{item.notRead.length}}</text>
         <image src="/img/flag.png"></image>
       </view>
       <view class="cusinfo">
-        <image class="head" src="{{item.head}}"></image>
+        <image class="head" src="https://css.ruixinyunke.com/{{item.head}}"></image>
         <text class="cusname">{{item.name}}</text>
         <block wx:if="{{item.notRead.length > 1}}">
-          <image data-index="{{index}}" bindtap='downarrow' class="arrow" wx:if="{{item.showStatus == 0}}" src="/img/downarrow.png"></image>
-          <image data-index="{{index}}" bindtap='uparrow' class="arrow" wx:else src="/img/uparrow.png"></image>
+          <image data-index="{{index}}" catchtap='downarrow' class="arrow" wx:if="{{item.showStatus == 0}}" src="/img/downarrow.png"></image>
+          <image data-index="{{index}}" catchtap='uparrow' class="arrow" wx:else src="/img/uparrow.png"></image>
         </block>
 
       </view>
       <block wx:if="{{item.showStatus == 0}}">
-        <view class="quick-chat-box">
+        <view class="quick-chat-box {{curreply.index == index ?'active':''}}">
           <text class="msg">{{item.lastMsg.content}}</text>
-          <view class="right">
+          <view data-type="{{item.showStatus}}" data-index="{{index}}" catchtap='popSend' bindlongpress="taplong" data-flag="1" class="right" bindtouchend='touchend'>
             <text class="time">{{item.lastMsg.time}}</text>
-            <view data-type="{{item.showStatus}}" data-index="{{index}}" catchtap='popSend' data-flag="1" class="reply">
+            <view class="reply">
               <image class="reply" src="/img/reply.png"></image>
             </view>
           </view>
         </view>
       </block>
       <block wx:else>
-        <view wx:for="{{item.notRead}}" wx:for-item="ii" wx:for-index="jj" class="quick-chat-box openlist">
+        <view wx:for="{{item.notRead}}" wx:for-item="ii" wx:for-index="jj" class="quick-chat-box openlist  {{curreply.index == index && curreply.jj == jj  ?'active':''}}">
           <text class="msg">{{ii.content}}</text>
-          <view class="right">
+          <view data-type="{{item.showStatus}}" data-index="{{index}}" data-jj="{{jj}}" catchtap='popSend' class="right" bindlongpress="taplong" bindtouchend='touchend'>
             <text class="time">{{ii.time}}</text>
-            <view catchtap='popSend' data-type="{{item.showStatus}}" data-index="{{index}}" data-jj="{{jj}}"  class="reply">
-              <image  class="reply" src="/img/reply.png"></image>
+            <view class="reply">
+              <image class="reply" src="/img/reply.png"></image>
             </view>
           </view>
         </view>
@@ -53,11 +64,12 @@
 </view>
 <view class="reply-box" wx:if="{{replybox.show == 1}}">
   <view class="sumary">
-  <text>回复：{{replybox.name}}</text><text style='font-weight:initial;margin-left:16rpx'>{{replybox.msg}}</text>
-  <image bindtap='tapmain' src="/img/cha.png"></image>
+    <text>回复：{{replybox.name}}</text>
+    <text style='font-weight:initial;margin-left:16rpx'>{{replybox.msg}}</text>
+    <image bindtap='tapmain' src="/img/cha.png"></image>
   </view>
   <view class="reply-input-cointainer">
-    <input focus='{{replybox.show}}' cursor-spacing="10rpx" placeholder='请输入消息'></input>
+    <input type='text' confirm-type='发送' bindconfirm="sendmsg" focus='{{replybox.show}}' cursor-spacing="10rpx" placeholder='请输入消息'></input>
     <image src="/img/add.png"></image>
   </view>
 </view>
