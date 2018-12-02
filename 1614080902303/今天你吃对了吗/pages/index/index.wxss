@@ -1,0 +1,94 @@
+/**index.wxss**/
+/*.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.li{
+  background-color:#fff;
+  display:flex;
+  justify-content:space-between;
+  font-size:34rpx;
+  width:92%;
+  padding:0 4%;
+  height:100rpx;
+  line-height:100rpx;
+  border-bottom:1rpx solid #f1f1f1;
+}
+
+.bg-gray{
+  background-color:#ccc;
+  border-bottom:1rpx solid #fff;
+
+}
+
+.li.icon-xiala ,.icon-shangjiantou{
+  color:#999;
+  font-size:28rpx;
+}
+
+.gray{
+  color:#8e8e8e;
+}
+*/
+
+
+
+page{
+  background: #f3f7f7;
+}
+.list_name_box{
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+  padding: 0 25rpx;
+  font-size: 32rpx;
+}
+.list_item_name{
+  flex: 1;
+}
+.icon_down{
+  width: 35rpx;
+  height:35rpx;
+  transition:transform  0.3s;
+}
+
+.list_item_name_box{
+  background: #fff;
+  font-size: 30rpx;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 25rpx 0 50rpx;
+}
+.other{
+  display: flex;
+  height: 80rpx;
+  padding: 0 25rpx 0 50rpx;
+  align-items: center;
+  font-size: 30rpx;
+  color: #666;
+}
+.icon_down_rotate{
+  transform:rotate(180deg);
+}
+
+

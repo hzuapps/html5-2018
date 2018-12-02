@@ -1,0 +1,134 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+</view>
+
+
+<view class="li" data-index="0" bindtap='changeToggle'>
+  <view class="left">水果</view>
+  <view class="right">
+
+    <icon src="image/{{selectedFlag[0]?'shangjiantou':'xiala'}}.png"></icon>
+  </view>
+</view>
+
+<view hidden="{{!selectedFlag[0]}}">
+  <block wx:for="{{list01}}" wx:for-item="item" wx:for-index="index">
+    <view class="li bg-gray">
+      <view>苹果</view>
+      <view>香蕉</view>
+    </view>
+  </block>
+</view>
+
+
+<view class="li" data-index="1" bindtap='changeToggle'>
+  <view class="left">蔬菜</view>
+  <view class="right">
+    <icon src="image/{{selectedFlag[1]?'shangjiantou':'xiala'}}.png"></icon>
+  </view>
+</view>
+<view hidden="{{!selectedFlag[1]}}">
+  <block wx:for="{{list02}}" wx:for-item="item" wx:for-index="index">
+    <view class="li bg-gray">
+      <view>菠菜</view>
+      <view>生菜</view>
+    </view>
+  </block>
+</view>
+
+
+<view class="li" data-index="2" bindtap='changeToggle'>
+  <view class="left">肉类</view>
+  <view class="right">
+    <icon src="image/{{selectedFlag[2]?'shangjiantou':'xiala'}}.png"></icon>
+  </view>
+</view>
+<view hidden="{{!selectedFlag[2]}}">
+  <block wx:for="{{list03}}" wx:for-item="item" wx:for-index="index">
+    <view class="li bg-gray">
+      <view>牛肉</view>
+      <view>鸡肉</view>
+    </view>
+  </block>
+</view>
+
+
+<view class="li" data-index="3" bindtap='changeToggle'>
+  <view class="left">海鲜</view>
+  <view class="right">
+    <icon src="image/{{selectedFlag[3]?'shangjiantou':'xiala'}}.png"></icon>
+  </view>
+</view>
+<view hidden="{{!selectedFlag[3]}}">
+  <block wx:for="{{list04}}" wx:for-item="item" wx:for-index="index">
+    <view class="li bg-gray">
+      <view>虾</view>
+      <view>螃蟹</view>
+    </view>
+  </block>
+</view>
+
+
+<view class="li" data-index="4" bindtap='changeToggle'>
+  <view class="left">饮品</view>
+  <view class="right">
+    <icon src="image/{{selectedFlag[4]?'shangjiantou':'xiala'}}.png"></icon>
+  </view>
+</view>
+<view hidden="{{!selectedFlag[4]}}">
+  <block wx:for="{{list05}}" wx:for-item="item" wx:for-index="index">
+    <view class="li bg-gray">
+      <view>可乐</view>
+      <view>啤酒</view>
+    </view>
+  </block>
+</view>
+-->
+
+
+
+<view class='list_box' wx:for='{{list}}' wx:key='this' wx:for-item='parentItem' wx:for-index='parentIndex'>
+  <view class='list'>
+    <view class='list_name_box' catchtap='listTap' data-parentindex='{{parentIndex}}'>
+      <text class='list_item_name'>{{parentItem.listName}}</text>
+      <image src='/img/xiala.png' class='icon_down {{parentItem.show&&"icon_down_rotate"}}'></image>
+    </view>
+    <view class='list_item_box' wx:if='{{parentItem.show}}'>
+      <view class='list_item' wx:for='{{parentItem.item}}' wx:key='this' catchtap='listItemTap' data-index='{{index}}' data-parentindex='{{parentIndex}}'>
+        <view class='list_item_name_box'>
+          <text class='list_item_name'>{{item.itemName}}</text>
+          <image src='/img/xiala.png' class='icon_down {{item.show&&"icon_down_rotate"}}'></image>
+        </view>
+        <view class='other_box' wx:if='{{item.show}}'>
+          <view class='other'>
+            <text class='other_title'>1.</text>
+            <text class='other_text'>{{item.content1}}</text>
+          </view>
+         <view class='other'>
+            <text class='other_title'>2.</text>
+            <text class='other_text'>{{item.content2}}</text>
+          </view>
+          <view class='other'>
+            <text class='other_title'>3.</text>
+            <text class='other_text'>{{item.content3}}</text>
+          </view>
+          <view class='other'>
+            <text class='other_title'>4.</text>
+            <text class='other_text'>{{item.content4}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
