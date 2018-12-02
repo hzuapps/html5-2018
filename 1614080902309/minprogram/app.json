@@ -2,7 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/self/self"
+    "pages/self/self",
+    "pages/see1/see1",
+    "pages/see1/see2",
+    "pages/see1/see3",
+    "pages/see1/see4"
   
   ],
   "window": {
