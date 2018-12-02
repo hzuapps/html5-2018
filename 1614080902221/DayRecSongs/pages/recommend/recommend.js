@@ -1,8 +1,8 @@
 Page({
   data:{
-    songName:"小幸运",
-    comment:"喜欢一个人，会真的没有勇气告诉他",
-    imagePath:"/image/song.png"
+    songName:"null",
+    comment:"null",
+    imagePath:"null"
   },
 
   onLoad:function(){
@@ -14,7 +14,7 @@ Page({
         'Content-Type': 'application/json'
       },
       success: function (res) {
-        if (res.data.success) {
+        if (true) {
           that.setData({
             songName: res.data.songName,
             comment:res.data.comment,
@@ -24,6 +24,20 @@ Page({
 
       }
     })
+
+
+   
+  
+  },
+
+  play:function(){
+
+    const back = wx.getBackgroundAudioManager();
+    back.src = "http://zhangmenshiting.qianqian.com/data2/music/f1706c82457823d0b601f56fb1e79f2a/599476790/599476790.mp3?xcode=9e9136f15120b5f58e84979b09d702df";
+    back.title = "每日好歌";
+    back.coverImgUrl = "";
+    back.play();
+
   }
 
 })
