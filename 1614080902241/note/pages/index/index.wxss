@@ -1,0 +1,16 @@
+ .addicon {
+   width: 125rpx;
+   height: 125rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   left: 320rpx;
+   bottom: 50rpx;
+   background: #DAA520;
+   border-radius: 100%;
+ }
+ .addicon image {
+   width: 50rpx;
+   height: 50rpx;
+ }

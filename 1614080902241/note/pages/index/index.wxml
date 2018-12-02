@@ -1,0 +1,6 @@
+<!--index.wxml-->
+ <view class='page'>
+   <view class='addicon' bindtap='add'>
+     <image src='../icon/add.png'></image>
+   </view>
+ </view>
