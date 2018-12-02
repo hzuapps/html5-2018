@@ -1,8 +1,12 @@
 /**index.wxss**/
+.container{
+  background-color: gainsboro;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid palevioletred;
 }
 
 .userinfo-avatar {
@@ -18,4 +22,6 @@
 
 .usermotto {
   margin-top: 200px;
+  background-image: linear-gradient(to right, yellow 0%,white 100%);
+  background-blend-mode: normal;
 }

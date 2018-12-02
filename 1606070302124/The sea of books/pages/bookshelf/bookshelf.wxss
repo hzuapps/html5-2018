@@ -1,1 +1,13 @@
 /* pages/bookshelf/bookshelf.wxss */
+.weui-cells__title{
+  text-align: center;
+  color:black;
+  padding: 25rpx;
+  background-color: wheat;
+  flex-direction:row;
+  border-bottom: 1px solid palevioletred;
+  }
+  .cells__title{
+    text-align: center;
+    background-color: peru;
+  }

@@ -8,6 +8,6 @@
     </block>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <navigator class="user-motto" url="../../pages/help/help">{{motto}}</navigator>
   </view>
 </view>
