@@ -10,6 +10,37 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  addmemory:function(e)
+  {
+    var id = e.currentTarget.id;
+    console.log(id);
+    var mess;
+    wx.getStorage({
+      key: 'mes',
+      success: res => {
+        mess=res.data.message[id];
+        console.log(mess)
+      }
+    })
+    wx.showActionSheet({
+      itemList: ['添加至追更目录','取消'],
+      success: res=> {
+        if (!res.cancel) {
+          wx.saveFile({
+            tempFilePath: mess,
+            success(res) {
+              const savedFilePath = mes
+              console.log(savedFilePath)
+            },
+            fail(res)
+            {
+              console.log('fail')
+            }
+          })
+        }
+      }
+    });
+  },
   onLoad: function (options) {
     wx.getStorage({
       key: 'mes',

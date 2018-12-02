@@ -2,7 +2,8 @@
   "pages": [
     "pages/idx/idx",
     "pages/logs/logs",
-    "pages/t_table/t_table"
+    "pages/t_table/t_table",
+    "pages/connect/connect"
   ],
   "window": {
     "backgroundTextStyle": "light",

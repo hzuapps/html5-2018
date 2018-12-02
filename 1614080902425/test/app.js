@@ -4,7 +4,7 @@ App({
   
     onLaunch: function () {
       wx.request({
-        //url: 'http://120.79.37.250/cgi-bin/test.py', //暂无域名
+       // url: 'http://120.79.37.250/cgi-bin/test.py', //暂无域名
         url:'https://raw.githubusercontent.com/heweisheng/html5-2018/master/1614080902425/test.json',
         data: String,
         header: {

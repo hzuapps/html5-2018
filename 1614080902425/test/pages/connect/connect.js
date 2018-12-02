@@ -1,31 +1,13 @@
-// pages/idx/idx.js
+// pages/connect/connect.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      {url:'../../img/sao.png',text:'hello',video_url:'https://www.bilibili.com'},
-      { url: '../../img/shilaimu.png', text: 'world',video_url: 'https://www.bilibili.com'}
-    ],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 2000,
-    duration: 1000,
-    circular: true,
-  Height:""     //这是swiper要动态设置的高度属性
- },
-imgHeight:function(e){
-  var winWid = wx.getSystemInfoSync().windowWidth; //获取当前屏幕的宽度
-  var imgh=e.detail.height;//图片高度
-  var imgw=e.detail.width;//图片宽度
-  var swiperH=winWid*imgh/imgw + "px"
-  var hight = wx.getSystemInfoSync().windowHeight+"px";
-  this.setData({
-    Height:hight//设置高度
-  })
-},
+
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,5 +1,4 @@
 <view class="page">
-  <view class="page__bd">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:{{Height}}' circular="{{circular}}">
       <block wx:for="{{imgUrls}}" wx:key="">
         <swiper-item>
@@ -7,5 +6,4 @@
         </swiper-item>
       </block>
     </swiper>
-  </view>
 </view>

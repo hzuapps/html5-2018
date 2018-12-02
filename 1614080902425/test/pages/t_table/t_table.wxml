@@ -6,13 +6,14 @@
         <view class="weui-grids">
             <block wx:for="{{mes.message}}" wx:key="*this">
                 <navigator url="./t_table" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="{{item.url}}"/>
+                    <image class="weui-grid__icon" id='{{index}}'src="{{item.url}}" mode="aspectFill" bindtap="addmemory"/>
                     <view class="weui-grid__label">
                       <text>{{item.title}}\n</text>
-                      <text style='color:#B5B5B5;'>{{item.pub_time}}</text>
+                      <text style='color:#B5B5B5;'>{{item.pub_time}}\n{{item.resour}}</text>
                     </view>
                 </navigator>
             </block>
+            
         </view>
     </view>
 </view>
