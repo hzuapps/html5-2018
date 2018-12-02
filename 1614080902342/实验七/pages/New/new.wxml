@@ -1,0 +1,2 @@
+<!--pages/New/new.wxml-->
+<image src='{{message}}'></image>
