@@ -1,0 +1,26 @@
+/**index.wxss**/
+@import "../../utils/weui.wxss";
+
+.index-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.add_btn{
+  width: 100%;
+  height: 100%;
+}
+.list_recording{
+  border: 1px;
+}
+.content{
+  width:60%;
+  margin: 0 20px;
+}
+.time{
+  color: rgb(225, 0, 255);
+  margin: 5px 20px;
+  font-size:15px;
+  border-bottom: 1px solid rgb(102, 166, 250);
+}
