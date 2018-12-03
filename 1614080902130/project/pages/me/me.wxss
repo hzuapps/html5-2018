@@ -28,3 +28,24 @@ page{
   height: 4rpx;
   background: #FFCC00;
 }
+.mys1{
+  text-align: center;
+  
+}
+.mys2{
+  border-bottom: solid rgba(17, 17, 17, 0.418) 1rpx;
+  /* border: solid #111111 1rpx; */
+}
+.mys3{
+  margin-top: 0px;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
