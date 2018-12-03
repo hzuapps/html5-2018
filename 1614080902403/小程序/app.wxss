@@ -1,8 +1,64 @@
-page{
-      background-color: #F5F7FA;
+page {
+  background-color: #f5f7fa;
 }
 
-input{
-  
+input {
   font-size: 12px;
+}
+
+.voicepanel {
+  position: relative;
+  min-height: 200rpx;
+  width: 568rpx;
+  border-radius: 32rpx;
+  border: #3b61f4 0.5px solid;
+  background: #769ef7;
+}
+
+.voiceresult text {
+  color: #fff;
+  font-size: 28rpx;
+  word-break: break-all;
+  margin-bottom: 70rpx;
+}
+
+.voicewarp {
+  position: fixed;
+  z-index: 999999;
+  left: 36rpx;
+  background: #fff;
+  border: #c7cdd8 0.5px solid;
+  border-radius: 32rpx;
+  padding: 1px;
+  box-shadow: 1px 1px 12px #c7cdd8;
+}
+
+.voiceresult {
+  padding: 20rpx;
+}
+
+.voicebar {
+  height: 70rpx;
+  border-top: #5882de 0.5px solid;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+}
+
+.voicebar .vcancel {
+  border-right: #5882de 0.5px solid;
+  width: 50%;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+}
+
+.voicebar .vsend {
+  width: 50%;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 70rpx;
 }

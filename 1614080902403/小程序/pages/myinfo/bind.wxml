@@ -1,0 +1,5 @@
+<view class="warp">
+  <view class='form-line'><text>员工工号</text><input bindinput='inputusername' type='text'></input></view>
+  <view class='form-line'><text>员工密码</text><input bindinput='inputpassword' type='password'></input></view>
+</view>
+<button hover-class='active' bindtap='bind'>立即绑定</button>
