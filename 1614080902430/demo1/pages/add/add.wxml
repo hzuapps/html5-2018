@@ -1,0 +1,18 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='section'>
+
+      <view class='title'>
+        <text class='text01'>{{nickName}}的便签</text>
+      </view>
+      <button class='button0' form-type='submit' open-type='getUserInfo'>
+        <text class='text02'>确定</text>
+      </button>
+  </view>
+
+  <view class='content'>
+    <view>
+      <textarea placeholder='此时此刻你想写什么...' name="textarea0" value="{{searchinput}}"></textarea>
+    </view>
+
+  </view>
+</form>

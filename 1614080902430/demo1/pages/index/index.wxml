@@ -1,6 +1,10 @@
-<view class='section'>
+﻿<view class='section'>
   <view class='section_title'>
-    <text class='text01'>XX的便签</text>
+    
+      <text class='text01'>
+      <open-data type="userNickName" lang="zh_CN"></open-data> 
+        {{nickName}}的便签</text>
+   
   </view>
   <view class='section_text'>
     <text class='text01' style='font-size:10px'>便签数</text>
@@ -11,3 +15,7 @@
     <text class='text01' style='font-size:15px'>公开{{num_public}}个</text>
   </view>
 </view>
+<view class="weui-cell" wx:for="{{notes}}" wx:key="*this">
+<view class="weui-cell__bd">{{item}}</view>
+</view>
+
