@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff7f50",
+    "backgroundColor": "#fff000",
+    "borderStyle": "bottom",
+    "list": [
+      {
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "记账"
+      },
+     
+      {
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "猪猪记账本",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,16 @@
+/* pages/me/me.wxss */
+.liuyan{
+  width: 95%;
+  color: #ffffff;
+  background-color: #fff000;
+}
+.textIn {
+  color: #000000;
+  width: 88%;
+  margin: 50rpx 2.5%;
+  padding: 3%;
+  height: 5em;
+  font-size: 34rpx;
+  border: 1rpx solid #000000f5;
+  border-radius: 0.8em;
+}
