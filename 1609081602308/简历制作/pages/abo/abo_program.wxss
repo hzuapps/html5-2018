@@ -1,0 +1,7 @@
+/* pages/abo/abo_program.wxss */
+.abo_program_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200rpx;
+}
