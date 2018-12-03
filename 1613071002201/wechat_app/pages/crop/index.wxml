@@ -1,0 +1,13 @@
+<import src="/we-cropper/we-cropper.wxml"/>
+
+
+<view class='cut-img-page'>
+  <view class='cropper-wrapper-bg'>
+    <view class="cropper-wrapper" style='margin-top: 25px'>
+      <template is="we-cropper" data="{{...cropperOpt}}"/>
+      <view class="getCropperImage">
+        <view bindtap='cancleCropper'>取消</view><view bindtap='rotateImg'><image src='/pages/images/rotate.png' class='rotate'></image></view><view  bindtap="getCropperImage">确定</view>
+      </view>
+    </view>
+  </view>
+</view>
