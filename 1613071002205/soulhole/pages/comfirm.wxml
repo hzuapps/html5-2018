@@ -1,0 +1,7 @@
+<view class='container'>
+<image class=".avs" src='/images/avatar/4.png'></image>
+<text class='username'>你是否有选择困难症</text>
+<view class='moto-container'>
+<text class='moto'>小程序来帮你</text>
+</view>
+</view>
