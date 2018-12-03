@@ -23,6 +23,9 @@ suiper img{
   height: 200rpx;
   margin: 10rpx;
 }
+.fl{
+  float: left;
+}
 .btn-detail{
   float: left;
   width: 170rpx;

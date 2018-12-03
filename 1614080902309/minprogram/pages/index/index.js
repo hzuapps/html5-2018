@@ -19,5 +19,30 @@ Page({
   
   onLoad: function () {
    
+  },
+  //设置跳转按钮1
+  jumpBtn1:function(options){
+   wx.navigateTo({
+     url: '../see1/see1'
+   })
+  },
+  //设置跳转按钮2
+  jumpBtn2: function (options) {
+    wx.navigateTo({
+      url: '../see1/see2'
+    })
+  },
+  //设置跳转按钮3
+  jumpBtn3: function (options) {
+    wx.navigateTo({
+      url: '../see1/see3'
+    })
+  },
+  //设置跳转按钮4
+  jumpBtn4: function (options) {
+    wx.navigateTo({
+      url: '../see1/see4'
+    })
   }
+
 })

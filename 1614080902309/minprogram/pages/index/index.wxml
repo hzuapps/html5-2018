@@ -14,7 +14,7 @@
     <view class='title'>桂林山水甲天下</view>
     <text>桂林是世界著名的风景游览城市，有着举世无双的喀斯特地貌。</text>
     <view class='pro-btn'>
-      <image class='btn-detail' src='/img/btn_detail.png'></image>
+      <button class='fl' type='defaule' bindtap='jumpBtn1'><image class='btn-detail' src='/img/btn_detail.png'></image></button>
       <image class='btn-detail' src='/img/btn_ask.png'></image>
     </view>
   </view>
@@ -26,7 +26,7 @@
     <view class='title'>韶关南岭红沙漠</view>
     <text>火红的土壤在光照条件下呈现出如梦如幻的色彩，如火焰山般绚烂。</text>
     <view class='pro-btn'>
-      <image class='btn-detail' src='/img/btn_detail.png'></image>
+      <button class='fl' type='defaule' bindtap='jumpBtn2'><image class='btn-detail' src='/img/btn_detail.png'></image></button>
       <image class='btn-detail' src='/img/btn_ask.png'></image>
     </view>
   </view>
@@ -38,7 +38,7 @@
     <view class='title'>四川西岭雪山</view>
     <text> “少不入蜀，老不出川”，可见天府之国的“温柔乡”名声远扬！</text>
     <view class='pro-btn'>
-      <image class='btn-detail' src='/img/btn_detail.png'></image>
+      <button class='fl' type='defaule' bindtap='jumpBtn3'><image class='btn-detail' src='/img/btn_detail.png'></image></button>
       <image class='btn-detail' src='/img/btn_ask.png'></image>
     </view>
   </view>
@@ -50,7 +50,7 @@
     <view class='title'>威基基海滩</view>
     <text>这里有细致洁白的沙滩、摇曳多姿的椰子树以及林立的高楼大厦。</text>
     <view class='pro-btn'>
-      <image class='btn-detail' src='/img/btn_detail.png'></image>
+     <button class='fl' type='defaule' bindtap='jumpBtn4'> <image class='btn-detail' src='/img/btn_detail.png'></image></button>
       <image class='btn-detail' src='/img/btn_ask.png'></image>
     </view>
   </view>
