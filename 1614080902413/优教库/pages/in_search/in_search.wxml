@@ -1,0 +1,30 @@
+<!--pages/in_search/in_search.wxml-->
+<view class='index_seach'>
+<form bindsubmit="back_houtai">
+<view class='input_w professional'>
+<text class='left'>科目</text>
+<view class='input left'>
+<input placeholder='请输入擅长的家教科目' cursor-spacing='20' name='subject1'></input>
+</view>
+</view>
+<view class='input_w professional'>
+<text class='left'>性别</text>
+<view class='input left'>
+<input placeholder='请输入性别' cursor-spacing='20' name='sex1'></input>
+</view>
+</view>
+<view class='input_w professional'>
+<text class='left'>年纪</text>
+<view class='input left'>
+<input placeholder='请输入年级' cursor-spacing='20' name='grade1'></input>
+</view>
+</view>
+<view class='textarea_w'>
+<text class='left'>家教经验</text>
+<view class='textarea left'>
+<textarea placeholder='请输入一段话来介绍你的家教经验，便于寻找合适的家教岗位！' cursor-spacing='20' name="experience"></textarea>
+</view>
+</view>
+<button class='subClass_btn2' formType="submit">确定</button>
+</form>
+</view>
