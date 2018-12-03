@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<text class='my' style='align:center' font-size='length'>欢迎使用OG便签</text>
+ <view>
+  <input type='text' 
+    placeholder='请输入想要记录的用户名' 
+    placeholder-class='username' 
+    >
+  </input>
+</view>
+ <view>
+  <input type='text' 
+    placeholder='请输入对应的密码' 
+    placeholder-class='username' 
+    >
+  </input>
+</view>
+ <button type="primary" 
+  size="{{primarySize}}" 
+  loading="{{loading}}" 
+  plain="{{plain}}"
+  disabled="{{disabled}}" 
+  bindtap="primary">确认添加
+</button>
+ <view>
+  <text>tips：我们会为您保存所用到的账号密码，以免遗忘丢失！</text>
+</view> 
