@@ -1,17 +1,14 @@
-// pages/red/red.js
+// pages/others/others.js
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
+
   },
-  bindTextAreaBlur: function (e) {
-    this.setData({
-      concent: e.detail.value,
-    })
-  },
-  btnwhite: function (e) {
-      this.setData({
-        viewdata: this.data.concent,  
-      })
-    wx.showToast()
+  textarea:function(e){
+   
   },
   /**
    * 生命周期函数--监听页面加载

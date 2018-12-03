@@ -1,4 +1,4 @@
-// pages/black/black.js
+// pages/red/red.js
 Page({
 
   /**
@@ -7,7 +7,17 @@ Page({
   data: {
 
   },
-
+  bindTextAreaBlur: function (e) {
+    this.setData({
+      concent: e.detail.value,
+    })
+  },
+  btnblack: function () {
+    this.setData({
+      viewdata: this.data.concent,
+    })
+    wx.showToast()
+  },
   /**
    * 生命周期函数--监听页面加载
    */

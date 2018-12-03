@@ -7,7 +7,18 @@ Page({
   data: {
 
   },
-
+  bindTextAreaBlur: function (e) {
+    this.setData({
+      concent: e.detail.value,
+    })
+  },
+  btnred: function (e) {
+    this.setData({
+      viewdata: this.data.concent,
+    })
+    wx.showToast()
+    console.log(this.data.concent) 
+  },
   /**
    * 生命周期函数--监听页面加载
    */

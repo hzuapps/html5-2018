@@ -1,2 +1,5 @@
-<!--pages/red/red.wxml-->
-<text>pages/red/red.wxml</text>
+<view class="container">
+    <textarea value='{{concent}}'bindblur='bindTextAreaBlur'></textarea>
+    <button id='btn' bindtap='btnred'>保存</button>
+    <view id='viewdata'>{{viewdata}}</view>       
+</view>
