@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "skyblue",
+    "navigationBarTitleText": "便签",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "selectedIconPath": "pages/icon/main.png",
+        "iconPath": "pages/icon/main.png",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/icon/person.png",
+        "iconPath": "pages/icon/person.png",
+        "pagePath": "pages/logs/logs",
+        "text": "个人"
+      }
+    ]
+  }
+}
