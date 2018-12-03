@@ -1,0 +1,37 @@
+<!--pages/settings.wxml-->
+
+<!--<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>-->
+
+<view class="weui-cells__title">帮助</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/help/help">
+    <view class="weui-cell__hd">
+      <image src="../../images/timelog.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;">
+        </image>
+    </view>
+    <view class="weui-cell__bd">帮助文档</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+</view>
+
+<view class="weui-cells__title">关于</view>
+<view class="weui-cells weui-cells_after-title">
+  <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active" url="/pages/help/help">
+    <view class="weui-cell__hd">
+      <image src="../../images/timelog.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;">
+        </image>
+    </view>
+    <view class="weui-cell__bd">关于作者</view>
+    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+  </navigator>
+</view>
+<textarea  class='textIn' placeholder="这里可输入备注信息(100字以内)" maxlength="100"></textarea>
+<button type="primary" class="liuyan" bindtap='sendRequest'> 发送留言反馈 </button>

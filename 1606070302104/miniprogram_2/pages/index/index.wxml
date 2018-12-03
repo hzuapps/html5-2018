@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="weui-cells">你好，欢迎来到TimeLog！</view>
+<view class="content">
+  <view  class="img1">
+    <image style="width: 100px;height: 100px" mode="aspectFit" src="../../images/img.png"></image></view>
+  <view class="td">
+    <text>快来新建一个TIMELOG来看看自己每天的时间分布和工作效率吧！</text></view>
+</view>
+  <!--<text>Timelog是一个用来记录日常事件所花事件的工具，可以通过它查看自己的工作效率。</text>-->
+ <!--<view bindtap="add"> {{add}} </view>
+<view>{{data0}}</view>
+<view bindtap="minus">{{minus}}</view>-->
+<view >
+  <button type="primary" class="build" bindtap="changetest"> 新建Timelog</button>
+</view>
