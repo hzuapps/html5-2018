@@ -1,11 +1,13 @@
 // pages/settings/settings.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    username:null,
+    password:null,
   },
 
   /**
@@ -62,5 +64,31 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  loginBtnClick:function(){
+    app.appData.userinfo = {username:this.data.username,password:this.data.password}
+    if (this.data.username != null && this.data.password != null){
+      wx.redirectTo({
+        url: '../user/user'
+      });
+    }else{
+      console.log("用户名为空");
+    }
+  },
+
+  usernameInput: function(event){
+    this.setData({ username: event.detail.value })
+  },
+
+  passwordInput: function (event){
+    this.setData({ password: event.detail.value })
+  },
+
+  loginBtnClick:function(){
+    wx.switchTab({
+      url: '../user/user',
+    })
   }
+
 })

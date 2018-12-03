@@ -1,0 +1,39 @@
+<!--pages/user/user.wxml-->
+<view class='background'>
+  <view >
+    <swiper indicator-dots="{{indicatorDots}}" style='width:100%'
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width :{{imageview}}px' />
+    </swiper-item>
+  </block>
+</swiper>
+  </view>
+    <view class="weui-cells">
+      <view class="weui-cell__hd">
+        <view class='circle'>
+          <text class='text1'></text>
+        </view>                     
+      </view>
+        <view class="weui-cell__bd">
+          <text class='text2'>{{username}}</text>   
+        </view>
+    </view>
+    <view class='weui-cells-ver'>
+      <view class='direction'>
+        <image class='image3' src='/image/image1.png'></image>
+        <text class='weui-cell__bd2'>我的日程安排</text>
+      </view>
+      <view class='direction'>
+        <image class='image3' src='/image/image2.png'></image>
+        <text class='weui-cell__bd2'>设置</text>
+      </view>
+    </view>
+    <view class="weui-cells-ver">
+      <view class='direction'>
+        <image class='image3' src='/image/image3.png'></image>
+        <text class='weui-cell__bd2'>退出</text>
+      </view>
+    </view>
+</view>

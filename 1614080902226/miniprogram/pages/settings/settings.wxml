@@ -1,2 +1,34 @@
 <!--pages/settings/settings.wxml-->
-<text>pages/settings/settings.wxml</text>
+<view class="mcontainer">
+  <view class='item'>
+    <image src='/image/logo.png' class='logo-icon'></image>
+  </view>
+
+  <view class='item'>
+    <view class='login-item'>
+      <view class='login-item-info'>用户名</view>
+      <view><input placeholder="请输入用户名" bindinput='usernameInput' /></view>
+    </view>
+
+    <view class='login-item'>
+      <view class='login-item-info'>密 码</view>
+      <view class='login-pwd'>
+        <input style='flex-grow1' password='true' placeholder="请输入密码" bindinput='passwordInput' />
+        <text>忘记密码</text>
+      </view>
+    </view>
+
+    <view class='login-item bottom'>
+      <button class='login-bin' bindtap='loginBtnClick'>登陆</button>
+    </view>
+
+  </view>
+
+  <view class='item bottom-info'>
+    <view class='wechat-icon'>
+      <image class='wechat-icon' src='/image/wechat.png' />
+    </view>
+    <view>没有用户？<text>微信登陆</text></view>
+  </view>
+
+</view>
