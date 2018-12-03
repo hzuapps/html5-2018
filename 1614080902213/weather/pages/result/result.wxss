@@ -1,0 +1,74 @@
+.row-class {
+  background: #fff;
+  background: transparent;
+}
+
+.col-class {
+  height: 25px;
+  line-height: 32px;
+  color: 	#ffffff;
+  opacity: 0.8;
+  background: transparent;
+  font-size: 15px;
+  text-align: center;
+}
+
+.col-class.light {
+  background:transparent;
+}
+
+.progress-item {
+  padding: 20px;
+  size: 15px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: right;
+}
+
+.progress_box {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+
+.progress_canvas {
+  width: 220px;
+  height: 220px;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_info {
+  font-size: 150rpx;
+  padding-left: 16rpx;
+  letter-spacing: 2rpx;
+}
+.aqiBox{
+  display: flex;
+  background-color: transparent;
+  margin:20px,30px;
+  padding: 16rpx;
+  color: 	#ffffff;
+  opacity: 0.9
+}
+.cell-panel-demo{
+  margin:30px,30px;
+}

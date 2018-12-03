@@ -1,0 +1,67 @@
+<view class="page">
+  <view style="background:{{item.status.bg}}">
+    <view style="background:{{item.status.bg}}">
+      <i-row>
+        <i-col span="12" i-class="col-class">
+          <i-icon type="coordinates" size="20" color="#80848f"></i-icon>
+          <text>{{item.area}}</text>
+        </i-col>
+        <i-col span="12" i-class="col-class">
+          <text>查询时间</text>
+        </i-col>
+      </i-row>
+      <i-row>
+        <i-col span="12" i-class="col-class">
+          <text>{{district}}</text>
+        </i-col>
+        <i-col span="12" i-class="col-class">
+          <text>{{item.ct}}</text>
+        </i-col>
+      </i-row>
+    </view>
+
+    <view class='aqiBox'>
+      <view class='progress_box'>
+        <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas>
+        <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+        <view class="progress_text">
+          <text class='progress_info'>{{item.aqi}}</text>
+          <view>
+            <i-icon type="refresh" />
+            <text>{{item.quality}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='right'>
+        <text wx:if='{{item.primary_pollutant.length>0}}'>{{item.primary_pollutant}}</text>
+        <text wx:else>无</text>
+        <text>主要污染物:</text>
+        <text>排名: {{item.num}}</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="progress-item">
+    <text>PM2.5: {{item.pm2_5}}  <text class='unit'> μg/m³</text></text>
+    <i-progress percent="{{item.status.pm2_5_percent}}" status="{{item.status.pm2_5_status}}"></i-progress>
+    <text>PM10: {{item.pm10}}  <text class='unit'> μg/m³</text></text>
+    <i-progress percent="{{item.status.pm10_percent}}" status="{{item.status.pm10_status}}"></i-progress>
+    <text>CO: {{item.co}}   <text class='unit'> mg/m³</text></text>
+    <i-progress percent="{{item.status.co_percent}}" status="{{item.status.co_status}}"></i-progress>
+    <text>O3: {{item.o3}}  <text class='unit'> μg/m³</text></text>
+    <i-progress percent="{{item.status.o3_percent}}" status="{{item.status.o3_status}}"></i-progress>
+    <text>NO2: {{item.no2}}  <text class='unit'> μg/m³</text></text>
+    <i-progress percent="{{item.status.no2_percent}}" status="{{item.status.no2_status}}"></i-progress>
+    <text>SO2: {{item.so2}}  <text class='unit'> μg/m³</text></text>
+    <i-progress percent="{{item.status.so2_percent}}" status="{{item.status.so2_status}}"></i-progress>
+  </view>
+  <view bindtap="detail">
+    <i-panel class="cell-panel-demo" title="检测站点">
+      <i-cell-group>
+        <view wx:for="{{siteList}}" wx:for-index="index" wx:for-item="site" style="color:{{site.siteStatus.bg}}">
+          <i-cell title="{{site.site_name}}" label="{{site.quality}}" value="{{site.aqi}}" ></i-cell>
+        </view>
+      </i-cell-group>
+    </i-panel>
+  </view>
+</view>
