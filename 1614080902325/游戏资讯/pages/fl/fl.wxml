@@ -1,0 +1,80 @@
+<!--pages/fl/fl.wxml-->
+<!--主盒子-->
+<view class="container">
+  <!-- 左侧栏 -->
+  <view class='nav_left'>
+    <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" 
+          bindtap="switchRightTab"  data-id="1">
+      推荐
+    </view>
+    <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" 
+          bindtap="switchRightTab"  data-id="2">
+      动作
+    </view>
+    <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="3">
+      策略
+    </view>
+    <view class="nav_left_items {{curNav == 4 ? 'active' : ''}}" 
+          bindtap="switchRightTab" data-id="4">
+      角色
+    </view>
+  </view>
+  <!-- 右侧栏 -->
+  <view class="nav_right">
+    <view wx:if="{{curNav==1}}">
+      <view class="nav_right_items">
+        <image src="../img/刺客信条.jpg"></image>
+        <text>刺客信条</text>
+      </view>
+      <view class="nav_right_items">
+        <image src="../img/wzry.jpg"></image>
+        <text>王者荣耀</text>
+      </view>
+      <view class="nav_right_items">
+        <image src="../img/yys.png"></image>
+        <text>阴阳师</text>
+      </view>
+      <view class="nav_right_items">
+        <image src="../img/mlzh.jpg"></image>
+        <text>魔灵召唤</text>
+      </view>
+      <view class="nav_right_items">
+        <image src="../img/lzg.jpg"></image>
+        <text>龙之谷</text>
+      </view>
+    </view>
+    <view wx:if="{{curNav==2}}">
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+    </view>
+    <view wx:if="{{curNav==3}}">
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+      <view class="nav_right_items">
+        <image src=""></image>
+        <text>游戏</text>
+      </view>
+    </view>
+  </view>
+</view>

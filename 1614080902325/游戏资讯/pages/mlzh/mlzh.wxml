@@ -1,0 +1,36 @@
+<view class="page">
+<view class='wenzi-jies'>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" style='background-color:#ececec;' hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../img/mlzh.jpg" />
+      </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">魔灵召唤：天空之役</view>
+        <view class="weui-media-box__desc">Com2uS Corp.</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="section tc">
+  <video id="myVideo" class='video-dx' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+</view>
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">【游戏介绍】</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        水、火、风、光、暗！  5种属性、1000多种丰富而震撼的魔灵，每个魔灵都各有特色，数以百种                         的个性技能！21种千姿百态的符文套装效果策略搭配！以简单的操作，呈现无穷无尽的游戏乐趣！
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">【推荐理由】</view>
+                    <view class="weui-article__p">
+                        这个游戏的周期可谓是非常的漫长，丰富的魔灵需要漫长的时间去抽取，魔灵也需要一定的时间                          去培养升级，更关键的是符文获取的，一个半年算入门的游戏......
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

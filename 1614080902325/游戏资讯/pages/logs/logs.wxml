@@ -1,2 +1,13 @@
 <!--logs.wxml-->
-
+<view class="page">
+    <view class="page__hd">
+      <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+      <view class="page__bd page__bd_spacing">
+        <view class="button-sp-area">
+        <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="audioPlay">播放</button>
+        <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="audioPause">暂停</button>
+        <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="audioStart">重置</button>
+        </view>
+      </view>
+    </view>
+</view>

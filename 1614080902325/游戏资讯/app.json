@@ -2,7 +2,20 @@
   "pages":[
     "pages/home/home",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/mlzh/mlzh",
+    "pages/yys/yys",
+    "pages/wzry/wzry",
+    "pages/lzg/lzg",
+    "pages/cjzc/cjzc",
+    "pages/ckxt/ckxt",
+    "pages/wgbwz/wgbwz",
+    "pages/ss/ss",
+    "pages/fl/fl",
+    "pages/xy/xy",
+    "pages/rm/rm",
+    "pages/dj/dj",
+    "pages/yg/yg"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,37 @@
+<view class="page">
+<view class='wenzi-jies'>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" style='background-color:#ececec;' hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../img/lzg.jpg" />
+      </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">龙之谷</view>
+        <view class="weui-media-box__desc">Tencent Mobile Games</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="section tc">
+  <video id="myVideo" class='video-dx' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+</view>
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">【游戏介绍】</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        龙之谷是一款3D动作冒险手游，轻松畅快3D无锁定战斗，原汁原味的经典形象，刻骨铭心的感动                          剧情，地狱犬、狮蝎，海龙等独创BOSS，难以预料的全新挑战，端游100%还原，觉得畅快指尖战                         斗，更有无差别的天梯公平竞技，给用户带来全新的体验。
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">【推荐理由】</view>
+                    <view class="weui-article__p">
+                        100%还原不是吹的，是真的跟端游一模一样的移植，但是手游氪金的特色也同样完美呈现......                         天梯确实是装备无差别调整，但是各职业之间的技能和形态有待进一步平衡。
+                        最后，你不是一个人在战斗!让我们一起去屠龙!!
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

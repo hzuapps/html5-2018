@@ -1,0 +1,39 @@
+<view class="page">
+<view class='wenzi-jies'>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" style='background-color:#ececec;' hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="../img/yys.png" />
+      </view>
+        <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">阴阳师</view>
+        <view class="weui-media-box__desc">网易移动游戏</view>
+      </view>
+    </view>
+  </view>
+  </view>
+  <view class="section tc">
+  <video id="myVideo" class='video-dx' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" enable-danmu danmu-btn controls></video>
+</view>
+  <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__title">【游戏介绍】</view>
+                <view class="weui-article__section">
+                    <view class="weui-article__p">
+                        网易和风匠心巨制，和你共创绮美世界！
+                        人鬼共生的世界里，魑魅魍魉的百鬼奇谭还在继续；跨界阴阳的阴阳师画符念咒，维持阴间与阳间
+                        的秩序；春樱冬雪，花火秋枫的风物绘卷，带来华美绚烂的和风之旅；有血有肉有魂的唯美式神，
+                        羁绊着你我共同的回忆！
+                    </view>
+                </view>
+                <view class="weui-article__section">
+                    <view class="weui-article__h3">【推荐理由】</view>
+                    <view class="weui-article__p">
+                        3D和风精美画面，各种特色的玩法，百种式神收集，日本顶级声优配音，肝就完事了！
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
