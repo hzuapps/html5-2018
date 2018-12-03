@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class='index-container'>
+<view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="toSearch">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" bindtap="add">新建记录</view>
+  </view>
+  <block wx:for="{{lists}}" wx:key="*this.id">
+      <view class="list_recording" bindtouchstart="bindTouchStart" bindtouchend="bindTouchEnd" bindlongtap="delete" bindtap="edit" data-id="{{item.id}}">
+        <view class="content">{{item.annal_name}}</view>
+        <view class="time">创建时间：{{item.time}}</view>
+      </view>
+    </block>
+</view>

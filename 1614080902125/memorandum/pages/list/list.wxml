@@ -1,0 +1,7 @@
+<!--pages/list/list.wxml-->
+<block wx:for="{{lists}}" wx:key="*this.id">
+  <view class="list_recording" bindtap="edit" data-id="{{item.id}}">
+    <view class="content">{{item.content}}</view>
+    <view class="time">创建时间：{{item.time}}</view>
+  </view>
+</block>
