@@ -1,0 +1,19 @@
+<!--main.wxml-->
+<view class="page">
+  <view>
+
+    <view style="align-items: center"><image class="widget__arrow" src="https://dwglogo.com/wp-content/uploads/2017/12/Spring_Framework_logo_01.png" mode="aspectFill"></image></view>
+    <view class="section">
+      <view class="section__title">你要查询的城市：{{city}}</view>
+      <input bindinput="bindKeyInput" placeholder="请输入要查询的城市名称" value="{{city}}" />
+    </view>
+    <view class="btn-area">
+      <button type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="search"> 查询
+      </button>
+    </view>
+
+  </view>
+  <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange">
+    {{modalErrorText}}
+  </modal>
+</view>

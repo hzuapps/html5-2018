@@ -1,0 +1,103 @@
+<view>
+  <view wx:for="{{siteList}}" wx:for-index="index" wx:for-item="site">
+    <view style="background:{{site.siteStatus.bg}}">
+      <i-icon type="coordinates" size="20" color="#80848f"></i-icon>
+      <text style='color:#ffffff;'>监测站点：</text>
+      <text style='color:#ffffff;'>{{site.site_name}}</text>
+
+      <view class='aqiBox' >
+        <view class='progress_box' >
+          <view class="progress_text" >
+            <text class='progress_info' wx:if='{{site.aqi>0}}'>{{site.aqi}}</text>
+            <text wx:else>站点失联中</text>
+            <view>
+              <text>{{site.quality}}</text>
+            </view>
+
+          </view>
+        </view>
+      </view>
+      <view style='color:#ffffff;font-size:20px'>
+        <text>主要污染物:</text>
+        <text wx:if='{{item.primary_pollutant.length>0}}'>{{item.primary_pollutant}}</text>
+        <text wx:else>无</text>
+      </view>
+
+    </view>
+    <i-grid>
+      <i-grid-item>
+        <i-grid-label>{{site.pm2_5}}
+          <text class='unit'> μg/m³</text>
+        </i-grid-label>
+        <i-grid-label>
+          <view class='progress-item'>
+            <i-progress percent="{{site.siteStatus.pm2_5_percent}}" status="{{site.siteStatus.pm2_5_status}}" hide-info></i-progress>
+          </view>
+        </i-grid-label>
+        <i-grid-label>PM 2.5</i-grid-label>
+      </i-grid-item>
+      <i-grid-item>
+
+        <i-grid-label>{{site.pm10}}
+          <text class='unit'> μg/m³</text>
+        </i-grid-label>
+        <i-grid-label>
+          <view class='progress-item'>
+            <i-progress percent="{{site.siteStatus.pm10_percent}}" status="{{site.siteStatus.pm10_status}}" hide-info></i-progress>
+          </view>
+
+        </i-grid-label>
+        <i-grid-label>PM 10</i-grid-label>
+      </i-grid-item>
+      <i-grid-item>
+
+        <i-grid-label>{{site.co}}
+          <text class='unit'> mg/m³</text>
+        </i-grid-label>
+        <i-grid-label>
+          <view class='progress-item'>
+            <i-progress percent="{{site.siteStatus.co_percent}}" status="{{site.siteStatus.co_status}}" hide-info></i-progress>
+          </view>
+        </i-grid-label>
+        <i-grid-label>CO</i-grid-label>
+      </i-grid-item>
+    </i-grid>
+    <i-grid>
+      <i-grid-item>
+
+        <i-grid-label>{{site.o3}}
+          <text class='unit'> μg/m³</text>
+        </i-grid-label>
+        <i-grid-label>
+          <view class='progress-item'>
+            <i-progress percent="{{site.siteStatus.o3_percent}}" status="{{site.siteStatus.o3_status}}" hide-info></i-progress>
+          </view>
+        </i-grid-label>
+        <i-grid-label>O3</i-grid-label>
+      </i-grid-item>
+      <i-grid-item>
+
+        <i-grid-label>{{site.no2}}
+          <text class='unit'> μg/m³</text>
+        </i-grid-label>
+        <i-grid-label>
+          <view class='progress-item'>
+            <i-progress percent="{{site.siteStatus.no2_percent}}" status="{{site.siteStatus.no2_status}}" hide-info></i-progress>
+          </view>
+        </i-grid-label>
+        <i-grid-label>NO2</i-grid-label>
+      </i-grid-item>
+      <i-grid-item>
+        <i-grid-label>{{site.so2}}
+          <text class='unit'> μg/m³</text>
+        </i-grid-label>
+        <i-grid-label>
+          <view class='progress-item'>
+            <i-progress percent="{{site.siteStatus.so2_percent}}" status="{{site.siteStatus.so2_status}}" hide-info></i-progress>
+          </view>
+        </i-grid-label>
+        <i-grid-label>SO2</i-grid-label>
+      </i-grid-item>
+    </i-grid>
+  </view>
+</view>
