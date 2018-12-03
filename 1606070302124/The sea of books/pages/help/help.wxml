@@ -1,0 +1,41 @@
+<!--pages/help/help.wxml-->
+<view class="btn">
+ <text>程序简介</text>
+ <text>\n</text>
+  <text>本程序是阅读各类文学书籍的一个小平台！</text> 
+</view>
+<view class="page__bd">
+    <text>\n</text>
+    <view class="weui-cells__title">意见反馈</view>
+    <form bindsubmit="bindFormSubmit">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea placeholder="在此输入信息" name="textarea"/>
+                </view>
+            </view>
+            <view class="weui-btn-area">
+                <view class="weui-textarea-counter">0/200</view>
+            </view>
+        </view>
+        <view class="weui-btn-area">
+            <button form-type="submit" type="primary" >提交</button>
+        </view>
+    </form>
+</view>
+<view class='uploadimg'>
+    <view class='uploadimgBox'>
+        <block wx:for="{{imgs}}" wx:if="{{imgs.length>0}}">
+          <image class='addpic' data-index='{{index}}' src="{{item}}"></image>
+        </block>
+      <view class='addImg' wx:if="{{canChoose}}" bindtap='chooseImageTap'>
+        <image src='../../help/timg.jpg'></image>
+      </view>
+       <view class='addImg'wx:else bindtap='noChoose'>
+        <image src='../../help/timg.jpg'></image>
+      </view>
+      <view class='addImgMsg'wx:if="{{imgs.length<=0}}">
+        <text>欢迎上传书籍封面哦！</text>
+      </view>
+    </view>
+  </view>

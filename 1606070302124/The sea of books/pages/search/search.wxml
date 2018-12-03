@@ -8,5 +8,16 @@
   <text>热门搜索</text>
 </view>
 <view class="btn">
-<text>{{text}}</text>
+ <text>\n</text>
+  <navigator url="" >《哲学的故事》</navigator>
+  <text>\n</text>
+  <navigator url="" >《西方的智慧》</navigator>
+  <text>\n</text>
+  <navigator url="" >《黄金时代》</navigator>
+   <text>\n</text>
+  <navigator url="" >《霍乱时期的爱情》</navigator>
+   <text>\n</text>
+  <navigator url="" >《美的历史》</navigator>
+   <text>\n</text>
+  <navigator url="" >《天体运行论》</navigator>
 </view>

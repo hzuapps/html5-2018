@@ -3,7 +3,14 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/search/search",
-    "pages/bookshelf/bookshelf"
+    "pages/bookshelf/bookshelf",
+    "pages/astronomy/astronomy",
+    "pages/geography/geography",
+    "pages/art/art",
+    "pages/philosophy/philosophy",
+    "pages/humanity/humanity",
+    "pages/science/science",
+    "pages/help/help"
   ],
   "window":{
     "backgroundTextStyle":"light",
