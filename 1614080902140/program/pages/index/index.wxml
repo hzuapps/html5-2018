@@ -8,7 +8,7 @@
     <view class='num'>数量:      <view class='num1'>数量1</view></view>
     <view class="time">开奖时间:   <view class='time1'>时间1</view></view>
   </view>
-  <view class=''>
-    <view class='button'><button bindtap='点击参与抽奖' class='button1'>点击参与抽奖</button></view>
+  <view class='page_btn'>
+    <view class='button'><button bindtap='btn1' class='button1'>{{btn1}}</button></view>
   </view>
 </view>

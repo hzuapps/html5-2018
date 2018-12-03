@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    btn1:"点击参与抽奖",
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -14,6 +15,10 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  btn1:function(){
+    this.setData({
+      btn1:"已参与"})
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
