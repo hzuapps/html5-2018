@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+  <view class="warp">
+<image class="bkPhoto" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543257632795&di=e86745fc8ae1b1ada6004d61e0894c46&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F42a98226cffc1e17a3be74bc4190f603738de93e.jpg'></image>
+</view>
+<button type="default" bindtap="toastShow">开始翻译</button>
+</view>
