@@ -1,0 +1,50 @@
+.container {
+  padding: 15rpx 10rpx;
+}
+
+.section {
+  margin-bottom: 100rpx;
+}
+
+.section_title {
+  font-size: 30rpx;
+  color: #999;
+  margin-left: 40rpx;
+}
+
+.section_check {
+  margin-right: 100rpx;
+}
+
+.section_tip {
+  display: block;
+  text-align: right;
+  color: #cec9c9;
+  padding-bottom: 10rpx;
+}
+
+.section_body {
+  margin-top: 100rpx;
+}
+
+.section section_gap {
+  margin-left: 20rpx;
+}
+
+.section section_gap2 {
+  background-color: #f2f2f2;
+  height: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+
+.setting_button1 {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.button-hover {
+  background-color: red;
+}
