@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/person/person",
-    "pages/ppp/ppp"
+    "pages/ppp/ppp",
+    "pages/search/search",
+    "Data/1/1.1/1.1"
   ],
   "tabBar": {
     "list": [
@@ -12,8 +14,12 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/ppp/ppp",
+        "pagePath": "pages/search/search",
         "text": "搜索"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
       },
       {
         "pagePath": "pages/person/person",

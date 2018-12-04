@@ -1,13 +1,33 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--导航开始-->
+<view class="btn-area">
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">娱乐</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">科技</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">财经</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">博客</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">视频</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">教育</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">军事</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+
 </view>
+<!--导航结束-->

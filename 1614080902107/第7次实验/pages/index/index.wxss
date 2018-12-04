@@ -19,3 +19,8 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+  color:blue;
+}
