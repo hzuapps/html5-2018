@@ -1,0 +1,15 @@
+<!-- 留言--------------------------------- -->
+  <view class='msg_box'>
+     <view class='send_box'>
+        <input value='{{inputVal}}' bindinput='changeinputVal' class='input' type='text' placeholder='请留下喜欢的编号...' placeholder-class='pl_input'></input>
+        <button class='button' type='primary' bindtap='add'>留言</button>
+     </view>
+     <view class='tip' wx:if='{{msgData.length==0}}'>暂无留言...^_^...</view>
+     <!-- 留言列表--------------------------- -->
+     <view class='msgnav'>
+        <view class='msglist' wx:for="{{msgData}}" wx:key="{{index}}">
+           <text class='msg'>{{item.msg}}</text>
+           <icon data-index='{{index}}' bindtap='del' class='icon' type='cancel'></icon>
+        </view>
+     </view>
+  </view>

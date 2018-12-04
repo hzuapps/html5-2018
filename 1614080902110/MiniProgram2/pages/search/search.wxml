@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<view class="search page_row">
+  <input class="df_1" placeholder="请输入你要搜索的内容" value="{{searchValue}}" bindinput="searchValueInput" />
+<button bindtap="suo" data-id='1'>
+    休闲鞋
+  </button>
+
+</view>
+<view class="search_no" wx:if="{{!centent_Show}}">
+  <text>很抱歉，没有找到！</text>
+</view>
+<import src="../index/card/card.wxml" />
+<template is="nanshen_card" data="{{nanshen_card,img}}" />

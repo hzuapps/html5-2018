@@ -1,0 +1,48 @@
+.msg_box{
+  padding: 10px
+}
+.send_box{
+  display: flex;
+  width: 100%;
+  height: 50px
+}
+.input{
+  border: 1px solid #aaa;
+  margin-left:5px;
+  border-radius:5px;
+  width: 60%;
+  height: 100%
+}
+.button{
+  font-size: 16px !important;
+  width: 20%;
+  margin-right: 5px;
+  line-height: 50px
+}
+.pl_input{
+  color: #339999
+}
+.tip{
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 0 0;
+  color: #786666
+}
+.msgnav{
+  margin: 10px 0 0 0;
+}
+.msglist{
+  border-bottom: 1px dashed #aaa;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  margin: 10px 10px 0 0;
+}
+.msg{
+  float: left
+}
+.icon{
+  float: right;
+  margin: 5px 0 0 0;
+}
