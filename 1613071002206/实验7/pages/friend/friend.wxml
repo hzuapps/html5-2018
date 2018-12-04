@@ -1,0 +1,9 @@
+<scroll-view class="des-scr" scroll-y="true" bindscroll="scroll">
+  <!--循环view-->
+  <block wx:for="{{desArr}}"wx:key="{{idx}}">
+      <view class="des-view" bindtap="toiletDetails" id="{{index}}">
+        <text class="des-text">吐槽内容：{{item.neirong}}</text>
+       
+      </view>
+  </block>
+</scroll-view>

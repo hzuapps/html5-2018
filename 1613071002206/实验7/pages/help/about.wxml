@@ -1,0 +1,8 @@
+   <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" bindinput='blur1'placeholder="请输入文本" style="height: 3.3em"name="neirong"id='neirong'auto-focu value="{{neirong}}" />
+
+                </view>
+            </view>
+        </view>

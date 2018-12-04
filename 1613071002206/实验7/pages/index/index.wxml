@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="pages">
+<view class="weui-cells_title" style="color:#d4237a">请开始您的吐槽</view>
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" bindinput='blur1'placeholder="请输入文本" style="height: 3.3em"name="neirong"id='neirong'auto-focu value="{{neirong}}" />
+
+                </view>
+            </view>
+        </view>
+<view class="button-sp-area">
+      <button class="weui-btn" type="primary" plain="true" style="color:#d4237a;border-color:#d4237a;" bindtap="saveData">确定</button>
+    </view>
+   <view class='fast'style="color:#d4237a;border-color:#d4237a">吐槽例子</view> 
+
+<view>今天开心吗</view>
+<view>事情做完了吗</view>
+<view>明天的计划是？</view>
+
+
+</view>
