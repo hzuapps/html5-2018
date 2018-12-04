@@ -1,0 +1,58 @@
+.add{
+  height:25px;
+  width:25px;
+}
+
+.float{
+  float:right;
+  margin-right: 20px;
+  margin-top: 1px;
+}
+
+.round-click{
+  height: 100rpx;
+  width: 100rpx;
+  background-color: #F2F2F2;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20rpx;
+  right: 25rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  
+}
+
+.msg-info{
+ display: block;
+ margin: 10px 0 0 0;
+ color: #339900;
+}
+
+.list-vw{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.vww{
+  border: 1px solid;
+  width: 80px;
+  height: 100px;
+  margin: 20px 0px 0px 18px;
+  background-color: #EEC591;
+  position: relative;
+}
+
+.icon{
+  position:absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.text2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

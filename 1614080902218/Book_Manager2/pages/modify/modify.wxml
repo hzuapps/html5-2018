@@ -1,0 +1,13 @@
+<view>
+  <form bindsubmit='Storge'>
+  <view class='vv'>昵称：</view>
+  <input name='name' class='input' type='text'></input>
+  <view class='vv'>性别:</view>
+  <input name='sex' class='input' type='text'></input>
+  <view class='vv'>手机号码:</view>
+  <input name='photoNumber' class='input' type='text'></input>
+  <view class='vv'>地区:</view>
+  <input name='region' class='input' type='text'></input>
+  <button type='primary' form-type='submit'>保存</button>
+  </form>
+</view>

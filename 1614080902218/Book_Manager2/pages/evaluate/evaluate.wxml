@@ -1,0 +1,21 @@
+<view class="msg-box">
+ <!--留言区-->
+ <form bindsubmit='addMsg' >
+ <view class="send-box">
+  <input value='{{inputTitle}}' bindinput='changeInputTitle' class="title" type="text" placeholder='书名' placeholder-class='place-input' />
+ </view>
+ <view>
+ <input value='{{inputVal}}' bindinput='changeInputVal' class="content" type="text" placeholder='请评论...' placeholder-class='place-input' />
+  <button size='mini' type="primary" form-type='submit' >添加</button><!--bindtap相当于onclick-->
+ </view>
+ </form>
+  <text>刷新后添加的数据</text>
+ <text class="msg-info" wx:if="{{msgData.length==0}}">暂无留言...^_^</text>   <!--当留言列表为空时显示本句-->
+ <!--留言列表 -->
+  <view class="list-view">
+  <view class='item' wx:for="{{msgData}}" wx:key="{{index}}"><!--循环显示msgData中的数据，key是必须的，否则会出现警告-->
+   <text class='text1'>{{item.msg}}</text> <!--item是固定的，msg对应msgData中的名-->
+   <icon data-index="{{index}}" class="close-btn" bindtap='deleMsg' type="cancel"></icon>
+   </view>
+ </view>
+</view>
