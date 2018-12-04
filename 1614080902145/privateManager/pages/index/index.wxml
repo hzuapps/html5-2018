@@ -1,29 +1,25 @@
 <!--index.wxml-->
-<text class='my' style='align:center' font-size='length'>欢迎使用私人管家！</text>
+<text class='my' style='align:center' font-size='length'>欢迎使用私人管家</text>
 
-<view>
-  <input type='text' 
-    placeholder='请输入想要记录的用户名' 
-    placeholder-class='username' 
-    >
-  </input>
-</view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+        <input type="text" class="input-text" name="title" placeholder="请输入账号的使用方" />    
+        <input type="text" class="input-text" name="username" placeholder="请输入想要记录的用户名" />    
+        <input type="text" class="input-text" name="password" placeholder="请输入对应的密码" />
 
-<view>
-  <input type='text' 
-    placeholder='请输入对应的密码' 
-    placeholder-class='username' 
-    >
-  </input>
-</view>
+        <view class="btn-area" >
+          <button formType="submit"
+          type="primary" 
+          size="{{primarySize}}" 
+          loading="{{loading}}" 
+          plain="{{plain}}"
+          disabled="{{disabled}}" 
+          bindtap="primary">添加到账号集</button>
+        </view> 
 
-<button type="primary" 
-  size="{{primarySize}}" 
-  loading="{{loading}}" 
-  plain="{{plain}}"
-  disabled="{{disabled}}" 
-  bindtap="primary">添加到账号集
-</button>
+        <view class="btn-area">
+          <button formType="reset">重置</button>
+        </view>
+  </form>  
 
 
 <view>
