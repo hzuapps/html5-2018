@@ -1,18 +1,30 @@
 // pages/gift/gift.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    array: ['/pages/img/toothbrush.jpeg', '/pages/img/son.png', '/pages/img/gongzai.jpeg', '/pages/img/wan.png'],
+      num:0
   },
-
+  imageError: function (e) {
+    console.log('image3发生error事件，携带值为', e.detail.errMsg)
+  },
+  createNonceStr: function () {
+    
+  },
+  switch: function(){
+    this.setData({
+      num: Math.floor(Math.random() * 4)
+    })
+    console.log("onload" + this.data.num)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
+    this.setData({
+      num: Math.floor(Math.random() * 4)
+    })
+    console.log("onload"+this.data.num)
   },
 
   /**
