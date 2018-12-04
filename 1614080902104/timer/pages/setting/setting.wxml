@@ -1,0 +1,14 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section_title">专注时长</view>
+    <slider bindchange="changeWorkTime" value="{{workTime}}" name="slider" activeColor="#13227a" min="0" max="60" step="5" show-value></slider>
+  </view>
+
+  <view class="section section_gap">
+    <view class="section_title">休息时长</view>
+    <slider bindchange="changeRestTime" value="{{restTime}}" name="slider" activeColor="#13227a" min="0" max="20" show-value></slider>
+  </view>
+
+  
+
+</form>

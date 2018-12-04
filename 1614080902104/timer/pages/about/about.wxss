@@ -1,0 +1,33 @@
+.zhengwen {
+  font-size: 32rpx;
+  color: #999;
+  margin-left: 25rpx;
+}
+
+.zhengwencontainer {
+  margin-left: 38rpx;
+  margin-right: 38rpx;
+}
+
+.biaoti {
+  margin-left: 40rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+}
+
+.biaoti2 {
+  margin-left: 40rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+}
+
+.zhengwen2 {
+  margin-left: 40rpx;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  letter-spacing: 2px;
+}
