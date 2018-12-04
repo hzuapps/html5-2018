@@ -1,6 +1,23 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+<view class='moni'>模拟装备打造</view>
+
+
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+<text>\n</text>
+
+
+
+
+<view class='pro-item' wx:for="{{items}}" bindtap='toDetail' data-index='{{index}}'>
+    <image class='pro-logo' src='{{item.img}}'></image>
+    <view class='pro-body'>
+       <view>{{item.zb}}</view>
+       
+       <view >{{item.name}}</view>
+  </view>
 </view>
+
+
+
+

@@ -1,14 +1,19 @@
 {
   "pages": [
+    "pages/denglu/denglu",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/my",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/dazao/dazao",
+    "pages/mmc/mmc",
+    "pages/cw/cw",
+    "pages/sming/sming"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "回合制模拟装备打造",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "梦想世界",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

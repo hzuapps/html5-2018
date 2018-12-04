@@ -1,0 +1,109 @@
+/* pages/dazao/dazao.wxss */
+
+
+.ztable{
+ display: flex;
+background-color: rgba(10, 5, 75, 0.507);
+ width: 700rpx;
+
+ 
+
+  
+}
+.btable{
+ display: flex;
+ background-color:#473C8B;
+ width: 700rpx;
+
+ margin-top: 125rpx;
+  margin-left: 26rpx;
+  background-size:100% auto;
+  
+ 
+}
+.photo{
+  float: left;
+  width: 255rpx;
+  height: 265rpx;
+  padding: 10rpx 6rpx;
+}
+.stable{
+ 
+  font-size: 27.8rpx;
+  color: white;
+  
+}
+
+.pro-name{
+   
+  color: green;
+  padding: 8rpx
+}
+.pro-type{
+ display: flex;
+
+}
+
+.pro-level{
+
+  display: flex;
+ 
+}
+.pro-require{
+
+  display: flex;
+}
+.pro-producer{
+
+  display: flex;
+}
+.pro-last{
+  display: flex;
+
+}
+.pro-base{
+
+color: #EAEAEA
+}
+.pro-attach{
+  
+  color: #EAEAEA
+}
+.pro-specially{
+  
+  color :#EAEAEA
+  }
+  .wuqitexiao1color{
+color: green;
+  }
+    .wuqitexiao2color{
+color: green;
+  }
+  .wuqitexiao3color{
+    color:green;
+  }
+   .wuqitexiao4color{
+    color:green;
+  }
+  
+ .basecolor{
+   color: white
+ }
+  .attachcolor1{
+   color: white
+ }
+ .attachcolor2{
+   color: white
+ }
+ .pro-dazao{
+  position: fixed;
+  bottom: 220rpx;
+  margin-left: 300rpx
+ }
+.texiaopaixu{
+  display: flex;
+  
+}
+.tejipaixu{
+  display: flex
+}
