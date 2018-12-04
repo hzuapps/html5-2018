@@ -1,2 +1,18 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+
+    <button class="weui-cell__bd"bindtap="cw">
+      <text >关于作者</text>
+  </button>
+  
+    <button class="weui-cell__bd"bindtap="ss">
+      <text>软件使用说明</text>
+
+    </button>
+    
+
+ 
+   
+    <button class="weui-cell__bd" bindtap="mmc">
+      <text >意见反馈</text>
+    </button>
+
+  

@@ -1,13 +1,17 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots='ture'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+<view class='jieshao'>-游戏介绍-</view>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+<image class='Introduced' src='/images/mx1.jpg'></image>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+<view class='zhanmeng'>-多益战盟-</view>
+<text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
+
+<image class='Duoyi' src='/images/mx2.jpg'></image>

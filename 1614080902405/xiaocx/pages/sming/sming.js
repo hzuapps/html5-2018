@@ -1,4 +1,4 @@
-// pages/my.js
+// pages/sming/sming.js
 Page({
 
   /**

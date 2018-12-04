@@ -1,8 +1,20 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.moni{
+display: block;
+text-align: center;
+font-size: 60rpx;
 }
-.log-item {
-  margin: 10rpx;
+
+.pro-item{
+overflow: hidden;
+}
+
+.pro-logo{
+  float: left;
+  width: 129rpx;
+  height: 131rpx;
+  padding: 8px;
+}
+.pro-body{
+ margin-left: 285rpx;
+  padding: 8px;
 }

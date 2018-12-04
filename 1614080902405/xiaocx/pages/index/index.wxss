@@ -1,21 +1,28 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+swiper{
+  width: 100%;
+  height: 450rpx;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+swiper image{
+display: block;
+height: 100%;
+width: 100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.Introduced{
+  display: block;
+  width: 100%;
+  height: 312rpx；
 }
+.Duoyi{
+  display: block;
+  width: 100%;
+  height: 312rpx；
+}
+.jieshao{
+display: block;
+text-align: center;
+}
+.zhanmeng{
+display: block;
+text-align: center;
 
-.usermotto {
-  margin-top: 200px;
 }

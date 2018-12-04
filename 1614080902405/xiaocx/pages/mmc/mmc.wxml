@@ -1,0 +1,37 @@
+<!--pages/mmc/mmc.wxml-->
+
+
+<view class="page">	
+    <view class="page__bd"> 
+     <!-- 文本 -->
+              <view class='proGig'>
+            <view class='proMid' >
+            	<view class='section' >	
+                  <textarea bindinput="changeInputVal"  value="{{inputVal}}" placeholder="请留下您对此款软件的看法！！！" rows="6"  id='leave' class='proBody' ></textarea>
+           	 	</view>
+
+
+
+
+
+                  <button form-type='submit'  bindtap='sendto' class='button-hover'>提交意见</button>
+                  <button type="warn"  plain="{{plain}}"disabled="{{disabled}}" bindtap="tell" id='send' >拨打投诉电话</button>
+        	    </view>          	                         	
+		        </view>
+
+
+            <!-- 留言列表 -->
+            <view class='listV'>
+              <view class='item' wx:for="{{msgData}}" wx:key="{{index}}">
+              <view>
+                  <text class='text1'>{{item.msg}}</text>
+              </view>
+              <view>
+                  <icon type='cancel' data-index="{{index}}" class='close-btn' bindtap="delMsg"></icon>
+              </view>
+
+              </view>
+              
+            </view>
+      </view>
+</view>
