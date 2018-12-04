@@ -1,15 +1,37 @@
 //logs.js
-const util = require('../../utils/util.js')
-
+var app = getApp()
 Page({
   data: {
-    logs: []
+    inputValue: ''
   },
-  onLoad: function () {
+  bindKeyInput: function (e) {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+      inputValue: e.detail.value
     })
+  },
+  addbtn: function () {
+    if (this.data.inputValue) {
+      wx.redirectTo({
+        url: '../test/test'
+      })
+      wx.setStorage({
+        key: "addTel",
+        data: this.data.inputValue
+      })
+    } else {
+      wx.showModal({
+        title: '手机号为空',
+        content: '请输入手机号码',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击确定')
+          }
+        }
+      })
+    }
+  },
+  onload: function () {
+    //onload
   }
+
 })
