@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "skyblue",
+    "navigationBarTitleText": "记事本",
+    "navigationBarTextStyle": "black"
+  }
+}
