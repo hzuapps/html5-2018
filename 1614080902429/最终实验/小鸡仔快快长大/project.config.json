@@ -1,0 +1,99 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx3f7b21b7405fe53f",
+	"projectname": "%E5%B0%8F%E9%B8%A1%E4%BB%94%E5%BF%AB%E5%BF%AB%E9%95%BF%E5%A4%A7",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "dao",
+					"query": "/pages/dao/dao"
+				}
+			]
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "dao",
+					"pathName": "pages/dao/dao",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Main",
+					"pathName": "pages/Main/Main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "mai",
+					"pathName": "pages/mai/mai",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "cw",
+					"pathName": "pages/cw/cw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "myself",
+					"pathName": "pages/myself/myself",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "sming",
+					"pathName": "pages/sming/sming",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jirou",
+					"pathName": "pages/jirou/jirou"
+				}
+			]
+		}
+	}
+}

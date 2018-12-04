@@ -1,0 +1,6 @@
+<!--pages/jirou/jirou.wxml-->
+<view class="wenben">真香~~</view>
+
+<view class='pro-item' wx:for="{{imgUrls}}" bindtap='toDetail' >
+    <image class='pro-logo' src='{{item}}'></image>
+    </view>

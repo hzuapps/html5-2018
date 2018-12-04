@@ -1,0 +1,4 @@
+/* pages/myself/myself.wxss */
+page{
+  background-color: #f8f8f8;
+}

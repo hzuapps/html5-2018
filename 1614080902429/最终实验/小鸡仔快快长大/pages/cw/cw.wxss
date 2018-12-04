@@ -1,0 +1,59 @@
+/* pages/cw/cw.wxss */
+.cl{
+
+  font-size:60rpx;
+}
+.ban{
+ margin-left: 200rpx;
+  width: 350rpx;
+  height: 350rpx;
+  border: 0 solid rgb(26, 23, 23);
+  border-radius: 100rpx;
+   background-color: #f10b2e;
+}
+
+.profile{
+  margin-left: 135rpx;
+  margin-top: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border: 0 solid #ff0000;
+  border-radius: 150rpx;
+  background-color: #f10b2e;
+}
+
+.profil{
+  margin-left: 140rpx;
+  margin-top: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+  background-color: #f10b2e;
+}
+
+
+.profi{
+  margin-left: 120rpx;
+  margin-top: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+  background-color: #f10b2e;
+}
+
+.qun{
+
+height: 100%;
+width:100%;
+
+background-color: burlywood;
+
+}
+
+.wenben{
+
+  text-align: center;
+  font-size:50rpx;
+}

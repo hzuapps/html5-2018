@@ -1,0 +1,95 @@
+<!--pages/Main/Main.wxml-->
+<scroll-view scroll-y style="height: 500px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+<view class="wenben">小鸡仔简介</view>
+
+
+<image class="banner" src="/pages/image/1.jpg" bindtap="wo"></image>
+
+<view class='block'>
+  <view class='block-title'bindtap="tis">小黄鸡 --> 点我点我</view>
+  <text class='block-desc'>小黄鸡最喜欢的运动是跳远，最喜欢的食物是果冻，喜欢听着音乐四处摇摆,但是贪玩的小黄鸡总是把自己弄得脏兮兮的，希望主人能够帮小黄鸡勤勤洗澡。</text>
+</view>
+
+<view class='block'>
+  <view class='block-title'bindtap="tis">小白鸡--> 点我点我</view>
+  <text class='block-desc'> 小白鸡每天每天都把自己打扮得漂漂亮亮的，很注重外观，很注重养生，不吃辣，不吃油腻的，不喜欢运动，喜欢佛系养生，希望主人能够带小白鸡多多锻炼</text>
+</view>
+
+<view class='block'>
+  <view class='block-title'bindtap="tis">小肥鸡--> 点我点我</view>
+  <text class='block-desc'> 小肥鸡最喜欢吃各种食物，不喜欢运动，不喜欢打扮，一个很乐观的小胖子，每天无忧无虑，爱听小故事，希望主人能够带小肥鸡减减肥，做一个健健康康的小鸡仔。</text>
+</view>
+
+
+<view class='block'>
+  <view class='block-title'bindtap="gi">叫化鸡-->快点动手吧 </view>
+  <text class='block-desc'bindtap="ti">1.童子鸡宰杀后洗净，砍去脚、翅，剔去腿骨；
+
+2.童子鸡用盐、酱油、花椒、料酒、姜片、葱腌渍约1小时；
+
+3.猪肉、芽菜切末炒成馅；
+
+4.面粉加清水、盐和成面泥待用；
+
+5.生菜洗净切丝，加入白糖、醋码味；
+
+6.将猪肉馅瓤入鸡腹内，再用荷叶把鸡包紧，然后用麻绳缠好，最后敷上面泥，入烤箱烤熟取出；
+
+7.倒出馅，把鸡肉砍一字条，装条盘中，带上馅及糖醋生菜上桌即可。</text>
+</view>
+<view class='block'>
+  <view class='block-title'bindtap="gi">清蒸人参鸡-->快点动手吧</view>
+  <text class='block-desc'bindtap="ti">1、将人参用开水泡开，上笼蒸30分钟取出。
+
+2、将母鸡置入人参、火腿、玉兰片、香菇、葱、生姜、精盐、料酒、味精，添入鸡汤，上笼，在大火上蒸至烂熟。
+
+3、将蒸熟的鸡放在大碗内，将人参切碎，与火腿、玉兰片、香菇摆在鸡肉上，将蒸鸡的汤倒在勺里，烧开，撇去沫子，调好口味，浇在鸡肉上即成。</text>
+</view>
+<view class='block'>
+  <view class='block-title'bindtap="gi">麻辣鸡肉-->快点动手吧</view>
+  <text class='block-desc'bindtap="ti">1.将鸡腿肉切成块，加入料酒、酱油腌制3分钟；
+
+2.坐锅点火，放入植物油，将腌好的鸡块倒入锅内划散，炸2-3分钟捞出；
+
+3.坐锅点火，留底油烧热，将葱、姜煸炒出香味后，放入辣椒末、花椒粉、盐、白糖、鸡块翻炒均匀即可出锅。</text>
+</view>
+<view class='block'>
+  <view class='block-title'bindtap="gi">鸡肉炒时蔬-->快点动手吧</view>
+  <text class='block-desc'bindtap="ti">1、先炒鸡肉，再加入玉米，黄瓜、胡萝卜炒。
+
+2、糖、淀粉、盐做出芡汁，浇在去再炖一小会就好了。。</text>
+</view>
+
+<view class='block'>
+  <view class='block-title'bindtap="gi">红烧鸡翅-->快点动手吧</view>
+  <text class='block-desc' bindtap="ti">1、鸡翅洗干净背面横割两刀，锅里水烧开，放两片姜片，加点料酒，入鸡翅打烧滚3分钟捞出备用。
+
+2、锅里加热油，加生抽先炒一下，这里生抽只需几十秒就可以，加入鸡翅翻炒。
+
+3、鸡翅上色后加入白糖、料酒、水（水要盖过鸡翅的量），大火烧开，中火慢慢烧到快收汁的时候加入鸡精，加少许蜂蜜（加蜂蜜是为了增香提色，表面亮亮的）
+
+4、继续收汁到理想的状态即可。理想的状态就是汁水差不多收干了，但是不湖锅的状态，起盘，撒上葱花。。</text>
+</view>
+
+<view class='block'>
+  <view class='block-title'bindtap="gi">微波炉烤鸡翅-->快点动手吧！</view>
+  <text class='block-desc'bindtap="ti">1、把腌料先配好。我今天用的有孜然1汤匙，花椒1汤匙，辣椒1个，盐1茶匙，糖1茶匙，老抽1汤匙，料酒1汤匙，姜两片，葱段，山黄皮3个，香叶2片，五香粉1/2茶匙，胡椒粉1/3茶匙（就2喷）
+
+2、鸡翅洗干净后，在鸡翅上划2刀，或是拿叉子戳些窟窿，方便入味。倒入腌料中，拌匀，腌1-2小时，期间勤翻动，也可以给鸡翅按摩入味。
+
+3、盘底铺一些蔬菜碎叶，把鸡翅去腌料后，码在蔬菜上。我第一次做，怕做不好，所以用筷子搭成了架子，再把鸡翅码在架子上
+
+4、盘子放在微波炉托盘中央，盘子不宜太大，要不转动的时候就容易碰着微波炉壁。
+
+5、先使用高火打3分钟，再用80的火力继续打10分。
+
+6、准备1汤匙蜂蜜，加少许水，把蜂蜜化成粘稠的蜂蜜汁。
+
+7、用刷子把蜂蜜汁刷到鸡翅上，均匀的喷洒一些花椒粉，辣椒粉，孜然粉，还有芝麻。放回到微波炉里使用高火打4分。
+
+8、将盘子取出，把鸡翅翻面，继续刷上蜂蜜水，撒上花椒粉，辣椒粉，孜然粉，芝麻，继续放回微波炉高火打4分。</text>
+</view>
+
+
+ </scroll-view>

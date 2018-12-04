@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/dao/dao",
+    "pages/Main/Main",
+    "pages/mmc/mmc",
+    "pages/mai/mai",
+    "pages/cw/cw",
+    "pages/myself/myself",
+    "pages/sming/sming",
+    "pages/jirou/jirou"
+    
+
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0ff",
+    "navigationBarTitleText": "小鸡仔成长记",
+    "navigationBarTextStyle":"black"
+  },
+  
+  "tabBar": {
+    "color": "#272636",
+    "selectedColor": "#FFD161",
+    "backgroundColor": "#fff",
+    "borderStyle": "#a8a8a8",
+    "list": [
+      {
+        "pagePath": "pages/dao/dao",
+        "text": "导航界面"
+      },
+      {
+        "pagePath": "pages/Main/Main",
+        "text": "主页界面"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的界面"
+      }
+    ]
+  }
+}
