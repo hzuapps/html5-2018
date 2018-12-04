@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5C3317",
+    "navigationBarTitleText": "你今天吃对了吗",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#FFFFFF",
+    "selectedColor":"#00FF00",
+    "backgroundColor":"#5C3317",
+    "borderStyle":"white",
+    "position":"bottom",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"image/shouye.png",
+      "selectedIconPath":"image/shouye(1).png"
+    },{
+      "pagePath":"pages/logs/logs",
+      "text":"反馈",
+      "iconPath":"image/fankui.png",
+      "selectedIconPath":"image/fankui(1).png"
+    }]
+  }
+}

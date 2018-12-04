@@ -1,0 +1,66 @@
+/*.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+
+.log-item {
+  margin: 10rpx;
+}*/
+
+/**logs.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.button-sp-area {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.weui-label {
+  width: 70px;
+  color: rgb(101, 141, 63);
+}
+
+.weui-btn{
+  width:80%;
+  margin-top:20rpx;
+  background-color:rgb(149, 216, 123);
+  color:white;
+  border-radius:98rpx;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+
+.btnImg{
+  margin-right:8rpx;
+  width:46rpx;
+  height:46rpx;
+}
+
+.weui-btn::after{
+  border-radius:98rpx;
+  border:0;
+}
