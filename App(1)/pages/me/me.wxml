@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+<view class="avatar">
+  <text>头像</text>
+  <view class="real">
+    <image class="n" bindtap="chooseimage" ></image>
+    <image class="a" src="{{userInfoAvatar}}"/>
+
+  </view>
+</view>
+<view class="nickName">
+  <text>名字</text>
+  <view class="real">{{nickName}}</view>
+</view>
+<view class="sex">
+  <text>性别</text>
+  <view class="real">
+   <radio-group class="radio-group" bindchange="radioChange">
+     <label class="radio" wx:for="{{items}}">
+       <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+     </label>
+   </radio-group>
+  </view>
+</view>
+<view class="area">
+  <text>地址</text>
+  <view class="real">{{province}}省{{city}}市</view>
+</view>
+<view class="signature">
+  <text>个性签名</text>
+  <view class="real"></view>
+</view>
+</view>

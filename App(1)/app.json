@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/pages/one/one",
+    "pages/finding/finding",
+    "pages/creating/creating",
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/one/one",
+    "pages/images"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创业者",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/images/indexx.png",
+      "selectedIconPath": "pages/images/indexx.png"
+    },
+    {
+      "pagePath":"pages/finding/finding",
+      "text":"寻找项目",
+      "iconPath": "pages/images/findingg.png",
+      "selectedIconPath": "pages/images/findingg.png"
+    },
+    {
+      "pagePath": "pages/creating/creating",
+      "text": "创建项目",
+      "iconPath": "pages/images/creatingg.png",
+      "selectedIconPath": "pages/images/creatingg.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我",
+      "iconPath": "pages/images/mee.png",
+      "selectedIconPath": "pages/images/mee.png"
+    }]
+  }
+}
