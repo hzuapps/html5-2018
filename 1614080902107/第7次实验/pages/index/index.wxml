@@ -1,0 +1,33 @@
+<!--导航开始-->
+<view class="btn-area">
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">娱乐</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">科技</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">财经</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">博客</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">视频</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">教育</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+  <navigator url="../ppp/ppp" class="weui-cell weui-cell_access" hover-class="navigator-hover">
+<view class="weui-cell__bd">军事</view>
+<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+</navigator>
+
+</view>
+<!--导航结束-->
