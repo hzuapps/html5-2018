@@ -1,0 +1,10 @@
+.input{
+  border-bottom: 1px solid #76EE00;
+  margin: 0 10px 20px 10px;
+}
+
+.vv{
+  font-size: 15px;
+  color: #ABABAB;
+  margin: 0 10px 10px 10px;
+}

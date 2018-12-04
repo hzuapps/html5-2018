@@ -1,0 +1,14 @@
+<!--pages/directory/directory.wxml-->
+<scroll-view>
+<text class="msg-info" wx:if="{{msgName.length==0}}">还没有收录书籍...^_^</text>   
+  <view class="list-vw">
+  <view class='vww' wx:for="{{msgName}}" wx:key="{{index}}">
+   <text class='text2'>{{item.msg}}</text>
+   <icon data-index="{{index}}" class='icon' color='#000000' size='15px' bindtap='deleMsg' type="cancel"></icon>
+   </view>
+   </view>
+</scroll-view>
+<view class='round-click'>
+   <image bindtap='jump' class='add' src='/images/添加.png'/>
+</view>
+

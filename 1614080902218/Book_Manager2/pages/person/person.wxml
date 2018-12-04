@@ -1,0 +1,37 @@
+
+  <view class='containerr'>
+      <view class='photo bg'>
+         <view class='tphoto'>头像</view>
+         <view class='image'>
+         <image style='height:70%;width:60%;' src='/images/头像.jpg'></image>
+         </view>
+      </view>
+      
+      <view class='vw bg'>
+          <view class='title'>昵称</view>
+          <view class='content'>{{message.name}}</view>
+      </view>
+ 
+      <view class='vw bg'>
+          <view class='title'>性别</view>
+          <view class='content'>{{message.sex}}</view>
+      </view>
+ 
+      <view class='vw bg'>
+          <view class='title'>手机号码</view>
+          <view class='content'>{{message.photoNumber}}</view>
+      </view>
+ 
+      <view class='vw bg'>
+          <view class='title'>地区</view>
+          <view class='content'>{{message.region}}</view>
+      </view>
+
+      <view>
+         <button class='button' type='warn' bindtap='jumpReplace'>修改</button>
+      </view>
+
+      <view>
+         <button class='button' type='primary' bindtap='onProductsItemTap'>退出</button>
+      </view>
+  </view>
