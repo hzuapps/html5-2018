@@ -1,4 +1,5 @@
-// pages/error/error.js
+//index.js
+//获取应用实例
 Page({
 
   /**

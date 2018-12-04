@@ -19,3 +19,19 @@
 .usermotto {
   margin-top: 200px;
 }
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+  color:blue;
+}
+/* 搜索.wxss */
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
