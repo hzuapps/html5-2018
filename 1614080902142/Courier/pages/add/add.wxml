@@ -1,5 +1,56 @@
-<!--pages/add/add.wxml-->
-<view class='imagesize'>
-  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543057542146&di=8620fa160cdff1ab36000826f23ac37b&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180627%2Fa522876f99ca429cbf2ca064c988bff1.jpeg" class='in-image'  style="width:100%;" >
-  </image>
-</view>
+<!-- pages/add/add.wxml -->
+<view class="page">
+  <view class="top">
+    <view class="top_inside">
+      <view class="inside_left">
+        <view class="inside_left_on">
+          <view class="inside_left_on_name">
+            <text style='font-size:4.0vw;'>{{name}}</text>
+          </view>
+          <view class="inside_left_on_phone">
+            <text style='font-size:4.0vw;'>{{phone}}</text>
+          </view>
+        </view>
+        <view class="inside_left_under">
+          <text style='font-size:4.0vw;'>{{dormitory}}</text>
+        </view>
+      </view>
+      <view class="inside_right">
+        <navigator url="../address/address" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view style='font-size:4.5vw;'>修改地址</view>
+               
+            </navigator>
+        <!-- <text style='font-size:3.5vw;' bindtap="address">修改地址</text> -->
+      </view>
+    </view>  
+  </view>
+  <view class='under'>
+    <view class="input">
+      <!-- <form report-submit="true" bindsubmit="save">
+        <textarea placeholder="请输入内容" placeholder-class="placeholder" name="content" value="{{content}}" />
+      </form> -->
+
+        <!-- <view class="weui-cells weui-cells_after-title"> -->
+            <!-- <view class="weui-cell"> -->
+                <!-- <view class="weui-cell__bd"> -->
+                    <textarea class="weui-textarea" placeholder="请复制短信在这里文本" value="{{inputSMS}}" bindinput="bindKeyInput"/>
+                <!-- </view> -->
+            <!-- </view> -->
+        <!-- </view> -->
+    </view>
+  </view>
+  <view class="fa_comfirm">
+    <view class="comfirm">
+    <radio-group  class="radio-group" bindchange="radioChange">
+      <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="value">
+        <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+          <view class="weui-cell__bd">{{item.name}}</view>
+            <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+             <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+            </view>
+      </label>
+    </radio-group>
+      <button class="weui-btn" type="primary" plain="true" bindtap="add">确认</button>
+  </view>
+  </view>
+</view> 

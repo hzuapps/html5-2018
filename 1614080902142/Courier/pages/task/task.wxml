@@ -1,3 +1,80 @@
 <!--pages/task/task.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
 
-<text justify-content: center>“订单”页面正在开发...</text>
+
+
+
+
+
+<!-- <view class="page"> -->
+    
+    <view class="page__bd">
+        <view class="weui-form-preview">
+            <!-- <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">付款金额</view>
+                    <view class="weui-form-preview__value_in-hd">¥2400.00</view>
+                </view>
+            </view> -->
+            <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">地址</view>
+                    <view class="weui-form-preview__value">南苑1栋A102</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">电话号码</view>
+                    <view class="weui-form-preview__value">12345678998</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">时间</view>
+                    <view class="weui-form-preview__value">2018/11/29  0.22</view>
+                </view>
+                <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">短信</view>
+                    <view class="weui-form-preview__value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</view>
+                </view>
+            </view>
+            <view class="weui-form-preview__ft">
+                <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">取消订单</navigator>
+            </view>
+        </view>
+        
+    </view>
+<!-- </view> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+            </view>
+        </view>
+    </view>
+</view>

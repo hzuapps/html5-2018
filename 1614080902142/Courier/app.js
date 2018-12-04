@@ -35,5 +35,23 @@ App({
   },
   globalData: {
     userInfo: null
-  }
+  },
+  getWeather: function (city, cb) {
+    // city="北京";
+    wx.request({
+      url: 'http://v.juhe.cn/weather/index?format=&key=5ed3c5a7967c34555d2372c3cd1294de&cityname=' + city,
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        "Content-Type": "application/json"
+      },
+      success: function (res) {
+        // console.log(res.data)
+        console.log('success');
+        cb(res.data);
+      }
+    })
+  },
 })
