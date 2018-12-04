@@ -4,306 +4,362 @@
 <meta charset="utf-8" />
 <title>个人简介</title>
 <style type="text/css">
-#html,body,p,ul,table,tr,td{margin:0;padding:0;}
-#page{width:693px;height:800px;margin:0 auto;padding:10px;background-color:#f6f6f6;}
-
+html,body,p,ul,table,tr,td{margin:0;padding:0;}
+			a{text-decoration:none;}
+			li{list-style:none;}
+			img{border:0 none;}
+			body{font-family:'Microsoft YaHei';font-size:14px;}
+			div,span,a{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+			table{border-collapse:collapse;border-spacing:0;border:0 none;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;}
+			td{text-align:left;}
+			.resume_clearfix{display:block;overflow:hidden;clear:both;}
+			.all_wrap{width:693px;}
+			.at{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+			.top_info{padding-left:10px;}
+			.page{width:693px;margin:0 auto;padding:3px;background-color:#fff;}
+			.gray{color:#4f4f4f !important;}
+			.l_green{color:#6d8194 !important;}
+			.blue{color:#4567af !important;}
+			.yellow{color:#fae001 !important;}
+			.y_green{color:#a4b049 !important;}
+			.s_blue{color:#00a0e9 !important;}
+			.orange{color:#f39800 !important;}
+			.resume_boxt3{width:693px;background-color:#d7dfe7;border:15px solid #efefef;}
+			/*S-head_tr*/
+			.head_tr{vertical-align:top;}
+			.mes_t3{margin:126px 15px 20px 15px;}
+			.per_list3{line-height:22px;font-size:12px;color:#d8dcde;}
+			.people{width:264px;margin-top:25px;}
+			.peo_head{text-align:center;padding-bottom:10px;}
+			.email_t3{max-width:146px;word-wrap:break-word;color:#4f4f4f;}
+			.name_t3{height:40px;line-height:40px;font-size:18px;color:#000;text-align:center;}
+			/*E-head_tr*/
+			.divide{width:693px;text-align:center;background-color:#efefef;}
+			.divide img{width:662px;height:9px;border:0 none;}
+			.top_line{text-align:center;}
+			/*S-mes_box3*/
+			.mes_box3{width:693px;background-color:#efefef;border-left:15px solid #efefef; border-right:15px solid #efefef; border-bottom:15px solid #efefef;}
+			.bar_l{width:370px;vertical-align:top;padding:12px 0px 20px 0px;}
+			.bar_r{width:280px;vertical-align:top;padding-top:12px;}
+			.per_title3{margin-left:9px;}
+			.title_icon3{*width:31px;*height:*31px;padding-right:12px;border:0 none;}
+			.title_icon3 img{margin-top:5px;}
+			.info_type3{margin:-4px 0 0 23px;*margin:-1px 0 0 23px;*border-left:1px solid #448aca;}
+			.info_type4{margin-left:23px;*border-left:1px solid #448aca;}
+			.info_list3{line-height:22px;font-size:12px;color:#000;border-left:1px solid #448aca;}
+			.info_list_com{line-height:22px;font-size:12px;color:#000;margin-top:20px;border-left:1px solid #448aca;}
+			.title_txt3{height:27px;line-height:27px;font-weight:bold;color:#000;text-align:left;}
+			.exp3{width:140px;vertical-align:top;padding-right:10px;}
+			.edu3{width:64px;vertical-align:top;text-align:right;}
+			.edu4{width:64px;vertical-align:top;text-align:right;}
+			.limit3{width:268px;}
+			.reu3{width:100px;vertical-align:top;}
+			.tec{width:104px;}
+			.tec a{display:block;width:104px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+			.tec span{display:block;width:104px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+			.edu5{width:64px;vertical-align:top;text-align:right}
+			.exp3{width:102px;}
+			.exp3 span{display:block;width:102px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+			.exp3 a{display:block;width:102px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+			.time3{width:106px; vertical-align:top;}
+			.con3{text-indent:28px;}
+			.english{width:67px;text-align:right;vertical-align:top;}
+			.con_detail{width:304px;line-height:22px;font-size:12px;color:#4f4f4f;padding-left:28px;}
+			.regular_t3{max-width:160px;}
+			.pl{width:100px;padding-left:27px;}
+			.com_t3{width:150px;}
+			.introduce{width:248px;line-height:22px;font-size:12px;color:#4f4f4f;padding-left:28px;text-indent:2em;}
+			.edu_t3{width:113px;vertical-align:top;padding-left:28px;}
+			.limit_t3{width:82px;}
+			.con_t3{position:relative;width:176px;height:16px;*height:15px;top:2px;background-color:#448aca;border:1px solid #accbe7;}
+			.rank_t3{position:absolute;top:0;left:0;width:70%;height:16px;line-height:16px;text-indent:6px;background-color:#accbe7;color:#4f4f4f;}
+			.cer{width:180px;padding-left:28px;}
+			.cer span{display:block;width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+			.pofi{width:106px;text-align:right;vertical-align:top;}
+			/*E-mes_box3*/
 </style>
 </head>
 <body>
-<div id="page">
-	<div id="all">
-			<table id="table1">
+<div xmlns="" class="page">
+	<div class="all_wrap">
+			<table class="resume_boxt3">
 				<tbody>
-					<tr>
-						<td width="509px" valign="bottom" >
-							<table>
-								<tbody
-								 background="ima/bbb.jpg">
-									<tr>
-									<td valign="middle">
+					<tr class="head_tr">
+						<td width="230">
+							<table class="mes_t3">
+								<tbody>
+									<tr class="per_list3">
+									<td class="title_icon" valign="middle">
 										<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon1_type3.png" alt="工作经验" width="17" height="16">
 									</td>
-									<td>
-										<span class="gray">上路霸主</span>
+									<td class="limit1">
+										<span class="gray top_info">上路霸主</span>
 									</td>
 									</tr>
-									<tr>
-									<td valign="middle">
+									<tr class="per_list3">
+									<td class="title_icon" valign="middle">
 										<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon2_type3.png" alt="年龄" width="17" height="16">
 									</td>
-									<td>
-										<span class="gray">18岁</span>
+									<td class="limit1">
+										<span class="gray top_info">18岁</span>
 									</td>
 									</tr>
-									<tr>
-									<td valign="middle">
+									<tr class="per_list3">
+									<td class="title_icon" valign="middle">
 										<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon3_type3.png" alt="工作地点" width="17" height="16">
 									</td>
-									<td>
-										<span class="gray">RNG</span>
+									<td class="limit1">
+										<span class="gray top_info">RNG</span>
 									</td>
 									</tr>
-									<tr>
-									<td valign="middle">
+									<tr class="per_list3">
+									<td class="title_icon" valign="middle">
 										<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon4_type3.png" alt="电话号码" width="17" height="16">
 									</td>
-									<td>
-										<span class="gray">1008611</span>
+									<td class="limit1">
+										<span class="gray top_info">1008611</span>
 									</td>
 									</tr>
-									<tr>
-									<td valign="middle">
+									<tr class="per_list3">
+									<td class="title_icon" valign="middle">
 										<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon5_type3.png" alt="邮箱" width="17" height="16">
 									</td>
-									<td>
-										<span class="gray">letme@163.com</span>
+									<td class="limit1">
+										<span class="gray top_info">letme@163.com</span>
 									</td>
 									</tr>
-									<tr>
-									<td valign="middle">
+									<tr class="per_list3">
+									<td class="title_icon" valign="middle">
 										<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon7_type3.png" alt="github" width="17" height="16">
 									</td>
-									<td>
+									<td class="limit1">
 										<p>个人github网址：</p>
 									</td>
 									<td>
-										<a class="gray" href="https://github.com/chinesehope" title="个人github网址" target=“_blank”>chinesehope</span>
+										<a href="https://github.com/chinesehope" title="个人github网址" target=“_blank”>chinesehope</span>
 									</td>
 									</tr>
 								</tbody>
 							</table>
 						</td>
+						
+						
 						<td>
-							<table>
+							<table class="people">
 								<tbody>
 									<tr>
-										<td id="zhaopian">
-											<img src="ima/letme.jpg" alt="个人照片" width="105px" height="148px" align="right"/>
+										<td  class="peo_head">
+											<img src="ima/letme.jpg" alt="个人照片" width="105px" height="148px" align="center"/>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<p id=“ziti” align="right">letme</p>
+											<p  class="name_t3">letme</p>
 										</td>
 									</tr>
 									<tr>
-										<td>
-											<p id=“ziti” align="right">一个众生平等型上单选手</p>
+										<td class="posi top_line">
+											<p class="s_blue">一个众生平等型上单选手</p>
 										</td>
 									</tr>
 								</tbody>
 							</table>
 						</td>				
 					</tr>
-					<tr>
-						<td>
-							<tr>
-							
-							</tr>
-							<tr>
-							
-							</tr>
-							<tr>
-							
-							</tr>
-						</td>
-						<td>
-											
-						</td>
-					</tr>
-				</tbody>
+					<tr class="distance_b"></tr>
+				</table>
+				<table class="divide">
+					<tbody>
+						<tr>
+							<td class="top_line">
+								<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/divide_type3.png">
+							</td>
+						</tr>
+					</tbody>
+				</table>			
 			</table>
-			<center>
-			<table>
+			
+			<table class="mes_box3">
 				<tbody>
 					<tr>
-						<td class="top_line">
-							<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/divide_type3.png">
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</center>
-			<table>
-				<tbody>
-					<tr>
-						<td>
-							<table>
+						<td class="bar_l">
+						
+							<table class="per_title3">
 								<tbody>
 									<tr>
-										<td valign="top">
+										<td class="per_title3" valign="bottom">
 											<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon9_type3.png" alt="教育经历" width="31" height="31">
 										</td>
 										<td>
-											<p>教育经历</p>
+											<p class="title_txt3">教育经历</p>
 										</td>
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="info_type3">
 								<tbody>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu4">
 											<span>学校：</span>
-										</td>
+										</td class="exp3">
 										<td>
-											<a title="惠州学院" href="https://www.hzu.edu.cn/" target="_blank">惠州学院</a>
+											<a class="s_blue" title="惠州学院" href="https://www.hzu.edu.cn/" target="_blank">惠州学院</a>
 										</td>										
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="info_type4">
 								<tbody>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu4">
 											<span>专业：</span>
 										</td>										
 										<td>
-											<span>本科</span>
+											<span class="gray">本科</span>
 										</td>
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="per_title3">
 								<tbody>
 									<tr>
-										<td valign="top">
+										<td class="title_icon3" valign="bottom">
 											<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon8_type3.png" alt="比赛经历" width="31" height="31">
 										</td>
 										<td>
-											<p>比赛经历</p>
+											<p class="title_txt3">比赛经历</p>
 										</td>
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="info_type3">
 								<tbody>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu4">
 											<span>公司：</span>
 										</td>
-										<td>
-											<span title="RNG电子竞技俱乐部">RNG电子竞技俱乐部</span>
+										<td class="exp3">
+											<span class="gray" title="RNG电子竞技俱乐部">RNG电子竞技俱乐部</span>
 										</td>										
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table  class="info_type3">
 								<tbody>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu4">
 											<span>职位：</span>
 										</td>
-										<td>
-											<span>宇宙第一上单</span>
+										<td class="limit3">
+											<span class="gray">宇宙第一上单</span>
 										</td>
 									</tr>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu4">
 											<span>行业：</span>
 										</td>
-										<td>
-											<span>LOL电子竞技</span>
+										<td class="limit3">
+											<span class="gray">LOL电子竞技</span>
 										</td>
 									</tr>									
 								</tbody>
 							</table>
-							<table>
+							<table class="info_type4">
 								<tbody>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="con3">
 											<span>工作内容：</span>
 										</td>
 									</tr>
-									<tr>
-										<td>与所有上单选手水平五五开，签订平等条约。</td>
+									<tr class="info_list3">
+										<td class="con_detail">与所有上单选手水平五五开，签订平等条约。</td>
 									</tr>
-									<tr>
-										<td></td>
+									<tr class="info_list3">
+										<td height="20"></td>
 									</tr>
 								</tbody>
 							</table>																
 						</td>
-						<td>
-							<table>
+						<td class="bar_r">
+							<table class="per_title3">
 								<tbody>
 									<tr>
-										<td valign="top">
+										<td class="title_icon3" valign="bottom">
 											<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon10_type3.png" alt="自我评价" width="31" height="31">
 										</td>
 										<td>
-											<p>自我评价</p>
+											<p class="title_txt3">自我评价</p>
 										</td>
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="info_type3">
 								<tbody>
-									<tr>
-										<td>告诉我谁才是世界第一</td>
+									<tr class="info_list3">
+										<td class="introduce">告诉我谁才是世界第一</td>
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="per_title3">
 								<tbody>
 									<tr>
-										<td valign="top">
+										<td class="title_icon3" valign="bottom">
 											<img src="http://img01.51jobcdn.com/im/2017/resumetemplate/xsl/icon11_type3.png" alt="求职意向" width="31" height="31">
 										</td>
 										<td>
-											<p>求职意向</p>
+											<p class="title_txt3">求职意向</p>
 										</td>
 									</tr>
 								</tbody>
 							</table>
-							<table>
+							<table class="info_type3">
 								<tbody>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu_t3">
 											<span>到岗时间：</span>
 										</td>
-										<td>
-											<span>看我心情</span>
+										<td width="limit_t3">
+											<span class="gray">看我心情</span>
 										</td>
 									</tr>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu_t3">
 											<span>工作性质：</span>
 										</td>
-										<td>
-											<span>电竞死肥宅</span>
+										<td width="limit_t3">
+											<span class="gray">电竞死肥宅</span>
 										</td>
 									</tr>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu_t3">
 											<span>希望行业：</span>
 										</td>
-										<td>
-											<span>电子竞技</span>
+										<td width="limit_t3">
+											<span class="gray">电子竞技</span>
 										</td>
 									</tr>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu_t3">
 											<span>目标地点：</span>
 										</td>
-										<td>
-											<span>北京</span>
+										<td width="limit_t3">
+											<span class="gray">北京</span>
 										</td>
 									</tr>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu_t3">
 											<span>期望月薪：</span>
 										</td>
-										<td>
-											<span>4w~6w/月</span>
+										<td width="limit_t3">
+											<span class="gray">4w~6w/月</span>
 										</td>
 									</tr>
-									<tr>
-										<td>
+									<tr class="info_list3">
+										<td class="edu_t3">
 											<span>目标职能：</span>
 										</td>
-										<td>
-											<span>上单</span>
+										<td width="limit_t3">
+											<span class="gray">上单</span>
 										</td>
 									</tr>
 								</tbody>
@@ -316,7 +372,9 @@
 				<tr>
 					<td>
 						<form name="留言板" method="post" >
-							如果有什么意见请给我留言。虽然我一定不会看：<br> <input type="text" size="80px" />
+							<span class="edu_t3">如果有什么意见请给我留言。虽然我一定不会看：</span>
+							<br/> 
+							<input type="text" size="80px" />
 							<input type="button" value="确认" />
 						</form>
 					</td>
