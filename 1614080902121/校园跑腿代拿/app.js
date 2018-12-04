@@ -12,6 +12,8 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+    
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -36,4 +38,6 @@ App({
   globalData: {
     userInfo: null
   }
+
+  
 })

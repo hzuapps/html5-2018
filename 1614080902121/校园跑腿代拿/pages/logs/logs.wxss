@@ -1,8 +1,71 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.section{
+    border:1px solid #ddd;
+    width:96%;
+    margin:auto;
+    height:80rpx;
+    margin-top:20rpx;
 }
-.log-item {
-  margin: 10rpx;
+.section1{
+    border:1px solid #ddd;
+    width:96%;
+    margin:auto;
+    margin-top:20rpx;
+}
+
+
+.item input{
+	padding-left:5rpx;
+	font-family: "微软雅黑";
+}
+.item-title{
+	height:60rpx;
+	line-height:80rpx;
+}
+.area{
+	width:20%;
+}
+.remind{
+	color:#e64340;
+	font-size:20rpx;
+}
+.submit{
+	position: absolute;
+	background-color:#FFC800;
+	bottom: 0;
+	width:100%;
+}
+
+.addre{
+	/*color:#939393;*/
+	width:400rpx;
+}
+.area{
+	width:150rpx;
+	border:1rpx solid #939393;
+}
+.text_box{
+	padding-left:100rpx;
+}
+.map{
+	width:550rpx;
+	color:#939393;
+}
+.more{
+	color:#939393;
+	padding-left:30rpx;
+	float:right;
+}
+.sex{
+	padding-left:120rpx;
+}
+.checkbox{
+	padding-left:25rpx;
+}
+
+.sign{
+	display: none;
+	float:left;
+}
+input{
+	width:75%;
 }
