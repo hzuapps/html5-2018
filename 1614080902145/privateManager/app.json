@@ -17,19 +17,19 @@
         "pagePath":"pages/index/index",
         "text":"添加账号",
         "iconPath":"images/index/index.png",
-        "selectedIconPath":"images/now.png"
+        "selectedIconPath":"images/index/index-now.png"
       },
       {
         "pagePath":"pages/manage/manage",
         "text": "管理账号",
         "iconPath": "images/manage/manage.png",
-        "selectedIconPath": "images/now.png"
+        "selectedIconPath": "images/manage/manage-now.png"
       },
       {
         "pagePath": "pages/aboutMe/aboutMe",
         "text": "关于我",
         "iconPath": "images/aboutMe/aboutMe.png",
-        "selectedIconPath": "images/now.png"
+        "selectedIconPath": "images/aboutMe/aboutMe-now.png"
       }
     ]
   }
