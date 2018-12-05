@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/settings/settings",
+    "pages/coma/coma",
+    "pages/bleeding/bleeding",
+    "pages/settings/about/about",
+    "pages/settings/phone/phone",
+    "pages/cramp/cramp"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FF7F50",
+    "navigationBarTitleText": "急救助手",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#11f837"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#0000FF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "急救",
+        "iconPath": "image/1.png",
+        "selectedIconPath": "image/2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "定位",
+        "iconPath": "image/3.png",
+        "selectedIconPath": "image/4.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "image/7.png",
+        "selectedIconPath": "image/8.png"
+      },      
+      {
+        "pagePath": "pages/settings/settings",
+        "text": "更多",
+        "iconPath": "image/5.png",
+        "selectedIconPath": "image/6.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "navigateToMiniProgramAppIdList": [
+    "wxe5f52902cf4de896"
+  ]
+}

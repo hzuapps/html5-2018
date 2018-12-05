@@ -1,0 +1,14 @@
+<view>
+<button class='btnabout'   bindtap='jumpabout'>关于
+</button>
+</view>
+
+<view>
+<button class='btnphone'  bindtap='jumpphone'>联系方式
+</button>
+</view>
+
+<view>
+<button class='btnmoney'   bindtap='jumpmoney'>支持开发
+</button>
+</view>

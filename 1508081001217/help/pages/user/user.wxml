@@ -1,0 +1,31 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">是否公开信息</view>
+    <switch name="isPub" />
+  </view>
+ 
+  <view class="section">
+    <view class="section__title">手机号</view>
+    <input name="phone" placeholder="手机号" />
+  </view>
+  <view class="section">
+    <view class="section__title">密码</view>
+    <input name="pwd" placeholder="密码" password/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">性别</view>
+    <radio-group name="sex">
+      <label>
+        <radio value="男" checked/>男</label>
+      <label>
+        <radio value="女" />女</label>
+    </radio-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>
+<view wx:if="{{isSubmit}}">
+  {{warn ? warn : "是否公开信息："+isPub+"，手机号："+phone+"，密码："+pwd+"，性别："+sex}}
+</view>
