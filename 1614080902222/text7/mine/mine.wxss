@@ -1,0 +1,11 @@
+.line{
+  width: 100%;
+  height: 800rpx;
+}
+.line image{
+  width: 100%;
+  height: 100%;
+}
+.line text{
+  font-size: 40rpx;
+}

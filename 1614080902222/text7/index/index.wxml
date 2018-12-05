@@ -1,0 +1,42 @@
+<view class='weui-page'>
+  <view class='weui-page__bd '>
+    <swiper indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="1500" previous-margin="0px" next-margin="0px">
+      <block wx:for="{{imgUrls}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item}}" class="img" bindtap="swipclick" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+
+<view class='weui-page__bd line'>
+  <navigator url="../text1/text1">
+    <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/YiHbHCtfP0PAiTYklOIC4*fbfAMVn3Ik.fd4EA8MaTc!/r/dC4BAAAAAAAA'></image>
+    <text >鬼剑士篇</text>
+  </navigator>
+</view>
+<view class='weui-page__bd line'>
+  <navigator url='../text2/text2'>
+    <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/RD.1*5DOraj4ZGiQzw3q74E0rXihoQD16bIHIJ3LVU8!/r/dDUBAAAAAAAA'></image>
+    <text >神枪手篇</text>
+  </navigator>
+</view>
+<view class='weui-page__bd line'>
+  <navigator url='../text3/text3'>
+    <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/tNB4f0eaMyxH*k0zEFj5LFqAFWNATUZIHb0RfcigksI!/r/dDEBAAAAAAAA'></image>
+    <text >格斗家篇</text>
+  </navigator>
+</view>
+<view class='weui-page__bd line'>
+  <navigator url='../text4/text4'>
+    <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/dA9PwRV68msz0veIJAJeUqMKAyKgDVkKHy2lujR2MZw!/r/dDQBAAAAAAAA'></image>
+    <text >圣职者篇</text>
+  </navigator>
+</view>
+<view class='weui-page__bd line'>
+  <navigator url='../text5/text5'>
+    <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/y.CuZe.uVsHajSBdfiNmxKUpBZdvxL*Bnm0Gxw1RAjs!/r/dDEBAAAAAAAA'></image>
+    <text >魔法师篇</text>
+  </navigator>
+</view>

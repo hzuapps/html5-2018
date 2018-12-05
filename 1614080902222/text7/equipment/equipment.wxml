@@ -1,0 +1,716 @@
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+
+<!--武器-->
+<view hidden="{{currentTab!==0}}">
+  <view class='weui-page'>
+
+
+  <!-- 鬼剑士系列 -->
+    <view class='weui-page__bd'>
+       <view bindtap="showitem1" >
+        <view class="{{open1==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鬼剑士系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/BcCxFPeF.IUAdqVYNZJaIoohvsF*J2BSY4CVuix*q2c!/r/dDEBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../gw/gw1">
+        <view class="{{open1?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/wuhVQWb6A2f9ECE.AEOE1741ZTQ26iwvrMEcHNFlhBE!/r/dFMBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;死亡冰柱</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gw/gw2">
+        <view class="{{open1?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/aPnEHdYakDlye2bI9CtSHRrxQjswrCT16QBAxpU7ZNk!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;暗影蔽日</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gw/gw3">
+        <view class="{{open1?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/uVGoOiK8nyN3oUVG9qU4O7rB9ZTT.K.rdiZ1sz8hmro!/r/dFYBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;妖刀村正</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gw/gw4">
+        <view class="{{open1?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ywe9kw.Q7fPXGJf7FOWDt*hEKrQMB40h214g.4Jpw8w!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;圣剑：王者之剑</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gw/gw5">
+        <view class="{{open1?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/B4WFhlzKETtTZsFsDS1aNtNad4Uifdc2eZwufsl0Qkw!/r/dEcBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;世界的支点</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+<!-- 结束 -->
+
+
+<!-- 神枪手系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem2" >
+        <view class="{{open2==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;神枪手系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/Ve1jTgKZpx8sOg9DN*UoPRzi7WhqzHyZ7vDUdqRX0MM!/r/dFQBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../qw/qw1">
+        <view class="{{open2?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/.9qtXU691zRxsVxt2*ZtoIu7S4krFnp0gOiQv.PQ1Qc!/r/dDQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金色闪光</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qw/qw2">
+        <view class="{{open2?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/L1alv5YD1z*Uh3hQwI*foWCKUQ*4dsfDPhBNCpqSfRE!/r/dDYBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乌尔班攻城巨炮</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qw/qw3">
+        <view class="{{open2?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/hlFUft.ZFcHFUCd84G2GESFERl8t.yEbEgQBrsbRw.I!/r/dDYBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;离子驱逐者</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qw/qw4">
+        <view class="{{open2?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/XVW7eV44zW29a12zPiwXHZ9FI*v3IXP36KxObjqxkdo!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地狱浩劫</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qw/qw5">
+        <view class="{{open2?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/lnIl5kdlY.kTc64rs2mP1jz.JlIx.F9Y7BS7VODCYpI!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代号N-神谕</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+
+<!-- 格斗家系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem3" >
+        <view class="{{open3==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格斗家系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/qd4QozoDfrnfE3YTSkAcYSk68O6BFZ4G*3*JGxzGYwo!/r/dDYBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../dw/dw1">
+        <view class="{{open3?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/6E*9JbAyGIT7yFWSv.DnZNMUGw0qkQ0pj1SIhqyZA8o!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;永恒守护</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../dw/dw2">
+        <view class="{{open3?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/RGd24muHcj1Gycnsjbuqiu2cDeZn5HAm05ERt.SEQ5M!/r/dFMBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;贝兹女王的荣耀之拳</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../dw/dw3">
+        <view class="{{open3?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/VC8JseOoTM6EXgiZFhHOCmsZg2ASQ6ef1bhO9l1ZWrM!/r/dFIBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黑月狼牙</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../dw/dw4">
+        <view class="{{open3?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/UG*Lab.nfyby.fAiFd.NNreA2PG98s2HdlsoojSZbXU!/r/dFIBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;战神克星</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../dw/dw5">
+        <view class="{{open3?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/jRYOl59lMECw8pzRfjdYCoWTULhyAWgmmW0Ib8C.nLE!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;纵横百战</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+
+
+<!-- 圣职者系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem4" >
+        <view class="{{open4==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;圣职者系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/1pX3vg8oZU6uGNRN0O3MY3kOvZ89n2wdMPUTktZi1lI!/r/dDYBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../sw/sw1">
+        <view class="{{open4?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ipGmpLyDNO4psEIYzKL.W36jzQuLJDh.ggzpEGCc7XU!/r/dDQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;神王的雷电十字架</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../sw/sw2">
+        <view class="{{open4?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/cW4n*bI*tG5d0vrGRXwyjW1P1ET1D.5iTNlSau08T10!/r/dDIBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先祖庇护之柱</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../sw/sw3">
+        <view class="{{open4?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/VePUAyxYbF.gumM5ghC4KDlG0l0DRfNPLb2LW46Dp74!/r/dFQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星际毁灭</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../sw/sw4">
+        <view class="{{open4?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/Os3jLQ01iNt53fsT3oGrPiC2kZsQ02wHC4g1H9I7kQQ!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;灵魂剥离</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../sw/sw5">
+        <view class="{{open4?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/*QRK2xeUZnjlzjXpv60wDYPgx4R04dsHfuBYOAgZgpk!/r/dFIBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阴阳四天</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+
+<!-- 魔法师系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem5" >
+        <view class="{{open5==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;魔法师系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/0OmRP0Ud1sp7bPxg8MDW2i*xxJimTOoZVvOIlYrCmRw!/r/dDEBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../mw/mw1">
+        <view class="{{open5?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/TNArhCYY7KiqoQ80x*UGYq0sXBnvZmw5.d48gI4r0Kw!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;威利：无限破坏者</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../mw/mw2">
+        <view class="{{open5?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/AiWVb74y74ET3I3yZoKKSFk8oUGAMII.7FNbsEIFVp0!/r/dDQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宇宙真理</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../mw/mw3">
+        <view class="{{open5?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/5XL.KH.mwh6niiO8xrj4N.jAY0.lrCqiyLVhRV.iHzE!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;世事不可强求-快乐长存</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../mw/mw4">
+        <view class="{{open5?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/c7gtfr*mumwUotOmGZPSsIzCRu9W3C5sdV9oCYtIZ0c!/r/dDEBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;辉煌耀世</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../mw/mw5">
+        <view class="{{open5?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ybegkVnUuHO7v0rQ.LOxqkg6Zys2ILt.wd24AOc88f4!/r/dFQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无形魔链</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+  </view>
+
+</view>
+
+
+
+<!-- 结束武器 -->
+
+
+
+<!--防具-->
+<view hidden="{{currentTab!==1}}">
+  <view class='weui-page'>
+
+
+  <!-- 布甲系列 -->
+    <view class='weui-page__bd'>
+       <view bindtap="showitem11" >
+        <view class="{{open11==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布甲系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/3Hmy3HBlAM0EPshSAgYEyrK6nex2fjwcR2suXeTFCCM!/r/dLYAAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../bj/bj1">
+        <view class="{{open11?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/a*BxETwViabwkIdkcNCMY**goq159qWw1Ky6edxdnU0!/r/dDcBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上元节五彩上衣</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../bj/bj2">
+        <view class="{{open11?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/H8FKTyEcbPrItfOtZGHubbRkMlH.FjGzNqITduTxjcQ!/r/dDEBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上元节贴边长裙</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../bj/bj3">
+        <view class="{{open11?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/8Ctdmg6LNVj5i6LjKwCiVsySnNfXznQma*MLbaPRV*k!/r/dFMBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上元节丝绸护肩</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../bj/bj4">
+        <view class="{{open11?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/XN1XP98s6VMo3fZUn4LE*o8m9J6ZN4*NyFCuWcBJSzU!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上元节朴素腰带</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../bj/bj5">
+        <view class="{{open11?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/v4C01SZUMg6YWC3dUkKotjQJb6LgIRDTj.PaIWbsQm8!/r/dAgBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;上元节之花绣鞋</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+<!-- 结束 -->
+
+
+<!-- 皮甲系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem22" >
+        <view class="{{open22==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮甲系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ZJCznqKlrTBV9Q5IxNvx89Wqevjog7I3GtVjT*g*hp8!/r/dFIBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../pj/pj1">
+        <view class="{{open22?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/wMVrtrQ.ZsZQGM1t17YTFqxY3c5j9.VVH6i0352yiwA!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时光的轨迹夹克</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../pj/pj2">
+        <view class="{{open22?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/DPp1uxlvnb86mFtGy5K9TLRftG77XHdmDUl2SGSOCTw!/r/dFQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时光的轨迹长裤</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../pj/pj3">
+        <view class="{{open22?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ffx8IyX2fwZok0JhY7KaSfTSO.oapzm9IrHlqs7U*I4!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时光的轨迹肩甲</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../pj/pj4">
+        <view class="{{open22?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/cCPBBivhTysYYAxlG27Vf41etO3LS3*V689j.NrVavY!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时光的轨迹腰带</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../pj/pj5">
+        <view class="{{open22?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/wMMXRX3G3cRG9Yjoyp*B994ThX1qCCWN.cetDUg*.n4!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时光的轨迹长靴</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+
+<!-- 重甲系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem33" >
+        <view class="{{open33==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重甲系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/Enp84cex*LFLrArpD2C.3JVkytZahYSYi0hc.T0Byz4!/r/dLYAAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../zj/zj1">
+        <view class="{{open33?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/vx70s.OGOIIpwz6a77cb4G5xq0c7SicOtlUTHv37cyA!/r/dDcBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铁马长戈胸甲</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../zj/zj2">
+        <view class="{{open33?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/E0xTGu.0oi4lDXss6T4X*ZQlTE76h*KUblGwv*MxlD8!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铁马长戈护腿</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../zj/zj3">
+        <view class="{{open33?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/MS7maSySip4MpvUmPj0PVYdnUHFdBb4JV2gq63eIpj4!/r/dDABAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铁马长戈肩甲</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../zj/zj4">
+        <view class="{{open33?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/*8oA6tFsWst5lADVbK92PuOcxKUDCVE.9M6LB92uOZI!/r/dFIBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铁马长戈腰带</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../zj/zj5">
+        <view class="{{open33?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ZC2DtzYgmV8eFRaYE0Nzlv2OwixKYip1E10NMsZ3vlE!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铁马长戈战靴</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+
+
+<!-- 轻甲系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem44" >
+        <view class="{{open44==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;轻甲系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/cX9cxo7qqsZ0FvGQcvdPZMO64GB8ji4y9Jr7zDTO69U!/r/dC0BAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../qj/qj1">
+        <view class="{{open44?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/aFK1fjacbPkdaI3ai6*sm*mKQbeM54CSfJoIV5keXNA!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万世荣光上衣</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qj/qj2">
+        <view class="{{open44?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/7qRTPr8T5BJIHWYkg9jss4g*Z5ZInjQsgNY0R6xgf9s!/r/dEcBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万世荣光护腿</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qj/qj3">
+        <view class="{{open44?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/vxUPG1l6p8w7oOdIoksby1.w.AVy3Ss96btO.e7kvNM!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万世荣光肩甲</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qj/qj4">
+        <view class="{{open44?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/A1AbkRDvlrPgoe4xD.Ufei0Z.AjtWS0ETPw18MuAtP8!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万世荣光腰带</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../qj/qj5">
+        <view class="{{open44?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/V.c7JVFwYp2IAUvEr8IkEnLJaK51hDrA0c3CDO1OzTk!/r/dDIBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万世荣光战靴</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+
+<!-- 板甲系列 -->
+<view class='weui-page__bd'>
+       <view bindtap="showitem55" >
+        <view class="{{open55==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;板甲系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/wcuYfq3m5CCkKl4cDa013RcMzmz2iUEzx0YUkcGBK0g!/r/dEgBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../gj/gj1">
+        <view class="{{open55?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/pfFeVt5Nh*OG4xjezFAuiJySMbEwIS8h1aBq5GY2e34!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星辰之命运胸甲</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gj/gj2">
+        <view class="{{open55?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/wJNNz*UwDa3i91LlFeLq1wh28ELZCUMDoils*.BfUGA!/r/dFUAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星辰之命运护腿</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gj/gj3">
+        <view class="{{open55?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/L7t3sqfA*7NpwCAfqbpTDH9P4n2JWIWPgP61tvN6G.s!/r/dDYBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星辰之命运护肩</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gj/gj4">
+        <view class="{{open55?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/XgAubilDYgXxnR*xstXz5tybzxMBK*RA4X21jFSOSv0!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星辰之命运腰带</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../gj/gj5">
+        <view class="{{open55?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/bjyB.4bhh0vkWe6DuH.1wI5wvP8tMT5qC4FaQge3y8Q!/r/dFMBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;星辰之命运战靴</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+<!-- 结束 -->
+
+  </view>
+</view>
+
+
+
+
+
+<!-- 防具结束 -->
+
+
+
+
+
+<!--首饰-->
+
+<view hidden="{{currentTab!==2}}">
+  <view class='weui-page'>
+   <!-- 手镯系列 -->
+    <view class='weui-page__bd'>
+       <view bindtap="showitem111" >
+        <view class="{{open111==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手镯系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/KBiZEVYfhLBTQtH50qjpC2FOe5UK42yOoeqUJqV7CC0!/r/dFMBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../shoushi/sz/sz1">
+        <view class="{{open111?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/8513*Sn6LpdjWe.Pv9OeadQz*6nu1x0.o5wIZNEw*p8!/r/dLYAAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;启明星的指引</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../shoushi/sz/sz2">
+        <view class="{{open111?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/t4mgDaB8hXhXnOsyMGOVze7SpZ*IZEj3qcLx7MH8qek!/r/dEgBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天空的灯塔-王良四</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+<!-- 结束 -->
+
+
+<!-- 项链系列 -->
+    <view class='weui-page__bd'>
+       <view bindtap="showitem222" >
+        <view class="{{open222==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项链系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/FBADb3fHmemfjxAm4kX4KHdlBwatnhxfWIwfMSfUnDI!/r/dDcBAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../shoushi/xl/xl1">
+        <view class="{{open222?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/eRrp8N8.rVBuqJVs9.PcH0UBoD8jESh5066VuQydQbU!/r/dDEBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;氤氲之息</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../shoushi/xl/xl2">
+        <view class="{{open222?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/q6BsFhwtWY8U1TLwkJZadAlWQQFtX0QewvnvmVVpiWM!/r/dFQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天空的里程碑-阁道三</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+<!-- 结束 -->
+
+
+
+
+<!-- 戒指系列 -->
+    <view class='weui-page__bd'>
+       <view bindtap="showitem333" >
+        <view class="{{open333==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;戒指系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/3Mzv7i7xvjk.kjZeaMdvJHdZyT7eOM7e0pfR*w5wXuM!/r/dLYAAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../shoushi/jz/jz1">
+        <view class="{{open333?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/KFmOfADVmGFVWATqe6nDcwGbNmnHWhddoBOyrqF9SQY!/r/dDUBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清泉流响</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../shoushi/jz/jz2">
+        <view class="{{open333?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/yxLaQLTyqUafzpyBs431OHKv0glLtrjWzpK7yZ88bcc!/r/dDABAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天空的引路人-王良一</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+<!-- 结束 -->
+</view>
+</view>
+
+
+<!-- 首饰结束 -->
+
+
+
+<!-- 特殊装备 -->
+<view hidden="{{currentTab!==3}}">
+  <view class='weui-page'>
+<!-- 特殊装备系列 -->
+    <view class='weui-page__bd'>
+       <view bindtap="showitem444" >
+        <view class="{{open444==true ? 'active' : 'line'}}">
+          <text class='container ' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;特殊装备系列</text>
+          <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/60bNH6UfA9gSCcOZhM3vhlVgBrKmsb41I9E8kLVz1l8!/r/dDABAAAAAAAA'></image>
+        </view>
+      </view>
+      
+      <navigator url="../teshu/ts1">
+        <view class="{{open444?'display_show':'display_none'}}">
+          <view class='line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/ykxJ3nd*A114kyNgL70TQtsXxJk2uqwhqL.hPcYzsCA!/r/dDABAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;波利斯的黄金杯</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../teshu/ts2">
+        <view class="{{open444?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/UKksaiMEVLfDVptcsGfAIhNdXOtlRK2aUS0lf2GZtUU!/r/dEkBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英雄王的象征</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="../teshu/ts3">
+        <view class="{{open444?'display_show':'display_none'}}">
+          <view class=' line'>
+            <image src='http://r.photo.store.qq.com/psb?/V12zXVzb2RtJGK/Awsjmu3zrMtBKv*iDfgKxbkoOROqHIAXSTli1gutJcU!/r/dDQBAAAAAAAA'></image>
+            <text class='container' decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗塞塔的石碑</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+<!-- 结束 -->
+</view>
+</view>

@@ -1,0 +1,76 @@
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+}  
+.navbar .item.active{  
+  color: rgb(165, 168, 166);  
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: rgb(85, 161, 111);  
+}  
+.weui-page .weui-page__bd .active{
+  width:100%;
+  height:100%;
+  align-items:center;
+  font-weight:500;
+  line-height: 120rpx;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  color: rgb(165, 168, 166);  
+}
+.weui-page .weui-page__bd .active image{
+  width: 100rpx;
+  height: 100rpx;
+  float: right;
+  padding-top:10rpx;
+  padding-right: 16rpx;
+  color: rgb(165, 168, 166);  
+}
+
+.display_show{
+
+  display: block;
+  padding: 1px;
+
+}
+
+.display_none{
+
+  display: none;
+
+}
+.line{
+  width:100%;
+  height:100%;
+  align-items:center;
+  font-weight:500;
+  line-height: 120rpx;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+.line image{
+  width: 100rpx;
+  height: 100rpx;
+  float: right;
+  padding-top: 10rpx;
+  padding-right: 16rpx;
+}

@@ -1,0 +1,38 @@
+.line{
+  width:100%;
+  height:100%;
+  text-align: center;
+  font-weight:500;
+  line-height: 185rpx;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+.line image{
+  width: 180rpx;
+  height: 180rpx;
+  float: left;
+  
+}
+
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.weui-page .swiper .img{
+  width: 100%;
+  height: 100%;
+}
+swiper {
+    height: 421.5rpx;
+    margin-bottom: 10rpx;
+}
+swiper-item image {
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+  position: relative;
+}
+.swiper-container .swiper{
+  height: 300rpx;
+}
