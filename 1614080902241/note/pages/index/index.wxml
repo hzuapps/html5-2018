@@ -1,6 +1,16 @@
-<!--index.wxml-->
- <view class='page'>
-   <view class='addicon' bindtap='add'>
-     <image src='../icon/add.png'></image>
-   </view>
- </view>
+<view class='page'>
+  <scroll-view scroll-y='true' class='lists'>
+    <block wx:for="{{lists}}" wx:key="*this.id">
+      <view class="list-i">
+        <view class="contain">
+          <view  bindtap="edit" data-id="{{item.id}}">{{item.content}} </view>
+        </view>
+        <view class="date">{{item.time}}</view>
+      </view>
+      <view class="dele"bindtap="delete" data-id="{{item.id}}">删除</view>
+    </block>
+  </scroll-view>
+  <view class='add' bindtap='add'>
+    <image src='../icon/add.png'></image>
+  </view> 
+</view>

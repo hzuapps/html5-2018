@@ -1,16 +1,55 @@
- .addicon {
-   width: 125rpx;
-   height: 125rpx;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   position: absolute;
-   left: 320rpx;
-   bottom: 50rpx;
-   background: #DAA520;
-   border-radius: 100%;
- }
- .addicon image {
-   width: 50rpx;
-   height: 50rpx;
- }
+.page {
+  position: absolute;
+}
+.lists {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.list-i {
+  justify-content: space-between;
+  align-items: center;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150rpx;
+}
+.contain {
+  padding: 0 28rpx;
+  height: 118rpx;
+  width:100%;
+  line-height: 100rpx;
+  border-bottom: 1px solid rgba(238, 255, 88, 0);
+}
+.date {
+  padding: 0 28rpx;
+  font-size: 25rpx;
+  width:45%;
+  line-height: 50rpx;
+  color: #3B3B3B;
+}
+.add {
+  position: absolute;
+  left: 320rpx;
+  bottom: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120rpx;
+  height: 120rpx;
+  background: #DAA520;
+  border-radius: 100%;
+}
+.add image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.dele{
+  background-color: rgba(248, 191, 4, 0.555);
+  line-height: 80rpx;
+  text-align: center;
+  height:35px;
+}
