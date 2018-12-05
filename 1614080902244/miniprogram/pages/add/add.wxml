@@ -1,0 +1,37 @@
+<form bindsubmit='formSubmit' bindreset='formReset'>
+<view class="apptext">
+<view class="weui-cells__title">备注</view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+<view class="weui-cell weui-cell_input">
+<view class="weui-cell__bd">
+<input class="weui-input"  placeholder="请输入备注"  bindinput='appInput' value="{{inputValue}}" />
+</view>
+</view>
+</view>
+<view class='apptext'>
+<view class="weui-cells__title" >请选择日期</view>
+</view>
+<view class="weui-cells weui-cells_after-title">
+<view class="weui-cell weui-cell_input">
+<view class="weui-cell__hd">
+<view class="weui-label">日期</view>
+</view>
+<view class="weui-cell__bd">
+<picker mode="date" value="{{date}}" start="1900-01-01" end="2070-01-01" bindchange="bindDateChange" name="date">
+<view class="weui-input">{{date}}</view>
+</picker>
+</view>
+</view>
+</view>
+</form>
+
+
+<view class='form'>
+<button type='primary' bindtap='appfinish' formType='submit'>
+确定
+</button>
+<button type='default' bindtap='appreturn'>
+返回
+</button>
+</view>

@@ -1,0 +1,13 @@
+.apptext{
+  font-weight: bold;
+  background-color: #000000;
+}
+/*.appchoice{
+  width: 50%;
+  margin: 0px auto;
+}*/
+.form{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
