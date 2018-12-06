@@ -1,0 +1,7 @@
+contact
+<view class='footer'>
+  <view class='footer_list' data-id='{{index}}' catchtap='Navigation' wx:for="{{listInfo}}" data-index="{{index}}" wx:key="this">
+    <view class="footer-icon iconfont {{item.clas}}"></view>
+    <view class="footer-text {{item.clas2}}">{{item.text}}</view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view id="head">
+  <view class='search'>
+    <image class="" src='../../images/search.png' bindtap='query'></image>
+    <input type='text' placeholder='输入你想要的内容' confirm-type='search' bindinput='inputBind' bindconfirm='query'></input>
+  </view>
+  <view class="home-swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color='{{activeColor}}' indicator-color='{{indicatorColor}}' style="height:{{imgHeight}}px " bindchange="bindchange">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style="width:{{imgWidth}}px;height:{{imgHeight}}px " />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+</view>
+<view id="main">
+  <view class="item" wx:for="{{recommendList}}" bindtap="toDetail" data-index="{{index}}">
+    <image src="{{item.img}}"></image>
+    <view class="item-desc">
+      <view>{{item.title}}</view>
+      <text>{{item.shortDesc}}</text>
+    </view>
+  </view>
+  <view class="cls"></view>
+</view>

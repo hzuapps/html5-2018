@@ -1,0 +1,24 @@
+<view id="head">
+  <view id="set" class="iconfont icon-set"><text></text></view>
+  <view id="head-con">
+    <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+  </view>
+</view>
+<view id="main">
+  <view id="main-head">
+    <view class="main-head-li" wx:for="{{goodsList}}">{{item.title}}</view>
+  </view>
+  <view id="main-con">
+    <view id="main-con-head">我的订单<text>查看更多订单></text></view>
+    <view id="main-con-ul">
+      <view class="main-con-ul-li icon-daifukuan iconfont"><view>待付款</view></view>
+      <view class="main-con-ul-li iconfont icon-icon-test"><view>待发货</view></view>
+      <view class="main-con-ul-li iconfont icon-daishouhuo" ><view>待收货</view></view>
+      <view class="main-con-ul-li iconfont icon-daipingjia" ><view>待评价</view></view>
+    </view>
+  </view>
+  <view id="main-about" bindtap="resume">
+    <view>关于作者<text>查看简历></text></view>
+  </view>
+</view>
