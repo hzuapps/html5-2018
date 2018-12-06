@@ -1,4 +1,6 @@
 // pages/t_table/t_table.js
+var util= require('../../utils/util.js');
+
 Page({
 
   /**
@@ -10,32 +12,40 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  
   addmemory:function(e)
   {
-    var id = e.currentTarget.id;
-    console.log(id);
-    var mess;
+    var id = e.currentTarget.id
+    //console.log(id)
+    var mess={}
+    var mesall = new Object()
     wx.getStorage({
       key: 'mes',
       success: res => {
-        mess=res.data.message[id];
-        console.log(mess)
+        mess=res.data.message[id]
+        //console.log(mess)
       }
     })
     wx.showActionSheet({
       itemList: ['添加至追更目录','取消'],
       success: res=> {
+        var mesold=new Object()
         if (!res.cancel) {
-          wx.saveFile({
-            tempFilePath: mess,
-            success(res) {
-              const savedFilePath = mes
-              console.log(savedFilePath)
-            },
-            fail(res)
-            {
-              console.log('fail')
+          try {
+            var value = wx.getStorageSync('index')
+            if (value) {
+              mesold=value
             }
+          } catch (e) {
+          }
+          var time = util.formatDate(new Date())
+          let date = util.getDates(1, time)
+          mesold[mess.title] = mess
+          mesold[mess.title].time = date[0].week
+          wx.setStorage({
+            key:'index',
+            data: mesold,
+            success: res => {}
           })
         }
       }
@@ -48,7 +58,7 @@ Page({
         this.setData({
           mes: res.data
         })
-        console.log(res.data)
+        //console.log(res.data)
       }
     })
   },

@@ -31,7 +31,7 @@
       {
         "selectedIconPath": "img/view_select.png",
         "iconPath": "img/view.png",
-        "pagePath": "pages/idx/idx",
+        "pagePath": "pages/connect/connect",
         "text": "追更"
       }
     ]
