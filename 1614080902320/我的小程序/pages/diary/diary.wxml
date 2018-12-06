@@ -1,0 +1,24 @@
+<!--<view class='container'>
+  <text class='font'>{{today.date}}</text>
+  <image class='banner' src='{{today.imagePath}}'></image>
+  <text>{{today.diary}}</text>
+</view>-->
+<view class="ucontainer">
+  <view class="header flex">
+    <view class="iconBox"></view>
+    <view class="text flex_auto">{{mydiary.length}}篇记录</view>
+    <view class="refresh"></view>
+  </view>
+  <view class="diaryBox" wx:for="{{mydiary}}" wx:for-item="item" wx:key="id">
+      <view class="title">{{item.title}}</view>
+      <view class="content">{{item.content}}</view>
+      <view class="imgBox">
+        <view class="image" >
+          <image src="{{item.photo}}"></image>
+        </view>
+      </view>
+    <view wx:if="{{mydiary.length <= 0}}" class="inform">
+      <text class="info">还没有记录哦~</text>
+    </view>
+  </view>
+</view>

@@ -1,13 +1,11 @@
 
-  <view style="display:flex">
-    <textarea style="width:100%;height:700rpx;margin-right:20px" name="diary" placeholder="写个日记吧" bindinput='diaryInput'/>
+  <view style="display:flex flex-direction:column">
+  
+    <textarea style="width:100%;height:700rpx;margin-left:20px" name="diary" placeholder="写个日记吧" bindinput='diaryInput'/>
   </view>
   
   <view style="display:flex;margin-top:30px;">
-    <button bindtap="bindptap" style="width:30%">加入图片</button>
-    <button style="width:30%" >保存</button>
+  
+    <button bindtap="addPhoto" style="width:30%">加入图片</button>
+    <button bindtap="save" style="width:30%" >保存</button>
   </view>
-
-<view>{{tip}}</view>
-<view>{{userName}}</view>
-<view>{{psw}}</view>
