@@ -16,9 +16,9 @@
 
 ## 3.实验结果
 * 实验截图1,首页
-![实验截图1](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L6.png)
+![实验截图1](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L6.png)
 * 截图2,我的页面
-![实验截图2](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L6-1.png)
+![实验截图2](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L6-1.png)
 
 ## 4.实验体会 
 * 1.写tabbar的时候可以使用微信封装的tabbar,于app.json中设置,于该页面还可以添加更多page和全局的设置。

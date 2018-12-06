@@ -16,11 +16,11 @@
  
 ## 3.实验结果
 * 实验截图1,留言板为空,显示失败并遮挡背景
-![实验截图1](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L4.png)
+![实验截图1](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L4.png)
 * 截图2,留言版不为空,显示成功并遮挡背景
-![实验截图2](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L4-1.png)
+![实验截图2](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L4-1.png)
 * 截图3,显示2秒后,提示慢慢变透明,用户可继续操作
-![实验截图3](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L4-2.png)
+![实验截图3](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L4-2.png)
 
 
 ## 4.实验体会 

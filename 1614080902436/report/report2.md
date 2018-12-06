@@ -14,9 +14,9 @@
  
 ## 3.实验结果
 * 实验截图
-![实验截图1](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L2.png)
-![实验截图2](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L2-1.png)
-![实验截图3](https://github.com/310341802/html5-2018/blob/master/soft1614080902329/report/L2-2.png)
+![实验截图1](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L2.png)
+![实验截图2](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L2-1.png)
+![实验截图3](https://github.com/310341802/html5-2018/blob/master/1614080902436/report/L2-2.png)
 
 ## 4.实验体会 
 由于之前学过HTML，所以写起来还是不费劲的，上网找了个简历模板，自己画图并布局，按照百分比开发，同学还夸我的简历挺好看的~，上网查了配色，解决了IE不兼容的问题，使用了CSS3动画渐变，按提交按钮，背景虚化，弹出登录框并右移。
