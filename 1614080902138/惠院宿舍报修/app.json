@@ -7,7 +7,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "校园如厕指南",
+    "navigationBarTitleText": "惠院宿舍报修",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -22,16 +22,16 @@
         "text": "首页"
       },
       {
-        "selectedIconPath": "image/首页.png",
-        "iconPath": "image/设置.png",
+        "selectedIconPath": "image/记录.png",
+        "iconPath": "image/记录.png",
         "pagePath": "pages/logs/logs",
-        "text": "设置"
+        "text": "记录"
       },
       {
-        "selectedIconPath": "image/首页.png",
-        "iconPath": "image/记录.png",
+        "selectedIconPath": "image/我.png",
+        "iconPath": "image/我.png",
         "pagePath": "pages/login/login",
-        "text": "记录"
+        "text": "我"
       }
     ]
   }
