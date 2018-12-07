@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/statistics/statistics",
+    "pages/logs/logs",
+    "pages/income/income",
+    "pages/line/index",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/icon/1.png",
+        "selectedIconPath": "pages/icon/1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "pages/icon/3.png",
+        "selectedIconPath": "pages/icon/3.png",
+        "text": "日志"
+      }
+    ]
+  }
+}

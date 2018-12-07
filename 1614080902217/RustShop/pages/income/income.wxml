@@ -1,0 +1,61 @@
+<view class="page">
+    
+    <view class="blockStyle">
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder spanStyle">总收入</view></view>    
+    </view>
+<view class="weui-flex">
+<view class="weui-flex__item"><view class="placeholder spanStyle textStyle">￥{{totalIncome}}</view></view>
+</view>
+</view>
+
+
+<view class="blockStyle">
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder spanStyle">订单数量</view></view>    
+    </view>
+<view class="weui-flex">
+<view class="weui-flex__item"><view class="placeholder spanStyle textStyle">{{totalCount}}</view></view>
+</view>
+</view>
+
+<view class="blockStyle">
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder spanStyle">距离上一次结算日收入</view></view>    
+    </view>
+<view class="weui-flex">
+<view class="weui-flex__item"><view class="placeholder spanStyle textStyle">￥{{durationIncome}}</view></view>
+</view>
+</view>
+
+<view class="blockStyle">
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder spanStyle">距离上一次结算日订单数量</view></view>    
+    </view>
+<view class="weui-flex">
+<view class="weui-flex__item"><view class="placeholder spanStyle textStyle">{{durationCount}}</view></view>
+</view>
+</view>
+
+<view class="blockStyle">
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder spanStyle">已提款金额</view></view>    
+    </view>
+<view class="weui-flex">
+<view class="weui-flex__item"><view class="placeholder spanStyle textStyle">￥{{cleanMoney}}</view></view>
+</view>
+</view>
+
+<view class="blockStyle">
+    <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder spanStyle">可提款金额</view></view>    
+    </view>
+<view class="weui-flex">
+<view class="weui-flex__item"><view class="placeholder spanStyle textStyle">￥{{notCleanMoney}}</view></view>
+</view>
+</view>
+
+</view>
+
+
+

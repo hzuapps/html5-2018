@@ -1,0 +1,5 @@
+<view class="panel">
+  <view class="chart-without-img" wx:for="{{pageList}}" wx:for-item="page" wx:key="{{page.url}}">
+    <button bindtap="open" data-chart="{{page}}">{{page.name}}</button>
+  </view>
+</view>

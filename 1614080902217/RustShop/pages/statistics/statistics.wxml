@@ -1,0 +1,15 @@
+<!--pages/statistics/statistics.wxml-->
+
+
+<block>
+<button bindtap='goToIncomePage'>收入总览</button>
+</block>
+
+<block>
+<button bindtap='goToChartPage'>近一周统计</button>
+</block>
+
+<block>
+<button bindtap='goToDetailPage'>查看流水</button>
+</block>
+
