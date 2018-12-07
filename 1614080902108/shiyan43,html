@@ -1,0 +1,120 @@
+		 <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>实验3</title>
+ 	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+ 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+ 	<style type="text/css">
+             	
+             	#hc{ 
+             		color: black;      
+             		background-color: #cccccc;           		
+             	}
+     </style>
+ </head>
+ <body  bgcolor="#ffffcc">
+ <div class="page">
+ 	<div class="page__hd">
+
+         <a href="https://github.com/laizetong">
+         <h1 class="page__title" align="center" style="font-family:楷体;color: #ff
+         ffcc
+         "  >MyResume-WEUI</h1>
+         </a>
+
+     </div>			
+     <div class="page__bd">      
+     <div class="weui-panel weui-panel_access">	
+             <div class="weui-panel__hd" id="hc">基本信息：</div>           	
+             <div class="weui-cells">
+                 <div class="weui-cell">
+                     <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                         <img src="http://infoaas.com/html5-2018/1614080902441/theweeknd.jpg" style="width: 30px;display: block"/>                          
+                     </div>
+                     <div class="weui-cell__bd">
+                         <p >姓名：***</p>                        
+                     </div>
+                 </div>
+             </div>
+             <div class="weui-media-box weui-media-box_appmsg" >
+                 <h4 class="weui-media-box__title" >年龄：</h4>
+                 <p class="weui-media-box__desc" >20</p>
+             </div>
+             <div class="weui-media-box weui-media-box_appmsg" >
+                 <h4 class="weui-media-box__title">政治面貌：</h4>
+                 <p class="weui-media-box__desc">团员</p>
+             </div>
+             <div class="weui-media-box weui-media-box_appmsg">
+                 <h4 class="weui-media-box__title">名族：</h4>
+                 <p class="weui-media-box__desc">汉族</p>
+             </div>
+             <div class="weui-media-box weui-media-box_appmsg">
+                 <h4 class="weui-media-box__title">联系方式：</h4>
+                 <p class="weui-media-box__desc">1511111111</p>
+             </div>
+             <div class="weui-media-box weui-media-box_appmsg">
+                 <h4 class="weui-media-box__title" >电子邮箱：</h4>
+                 <p class="weui-media-box__desc" >111111111@qq.com</p>
+             </div>
+         </div>	
+         <div class="weui-panel weui-panel_access">
+             <div class="weui-panel__hd" id="hc">求职意向：</div> 
+            	<div class="weui-media-box weui-media-box_appmsg">           
+                 <p >&middot; JAVA后端开发工程师</p>
+             </div>
+         </div>
+         <div class="weui-panel weui-panel_access">
+             <div class="weui-panel__hd" id="hc">技能描述：</div>
+             <div class="weui-media-box weui-media-box_appmsg" >           
+                 <p>
+                 	&middot;学过简单的html5+css+JavaScript前端页面设计开发
+ 					
+ 				</p>
+             </div>
+         </div>
+         <div class="weui-panel weui-panel_access">
+             <div class="weui-panel__hd" id="hc">自我评价：</div>
+             <div class="weui-media-box weui-media-box_appmsg">           
+                 <p>
+                 	&middot;目前都是在自主学习阶段
+ 				</p>
+             </div>
+         </div>
+
+         
+
+         <div class="web-title1" style="background-color:#6495ED">
+         留言区
+     </div>
+     <div class="weui-cells_form">
+         <div class="weui-cell">
+             <form class="weui-cell__bd" action="pass.html" method="post" id="tijiao-form" onsubmit="return c(this)">
+                 <!-- form中的 action：表示当前表单中的内容提交给哪个页面进行处理
+                 -->
+                 <textarea class="weui-textarea" type="text" placeholder="请输入留言..." rows="5" id="liuyan" name="liuyan"></textarea>
+                 <div class="weui-textarea-counter">
+                     <span>0</span>
+                 /200</div>
+                 <div class="weui-btn-area"> 
+                     <input type="submit" class="weui-btn weui-btn_primary" id="tijiao" style="background-color: #6495ED" value="提交">
+                     </input><!--对于input，最好给它添加一个name属性，作用是用于将用户输入的内容提交给要处理这个数据的页面-->
+                 </div>        
+             </form>
+         </div>
+     </div>
+     </div>	 	
+ </div>	
+
+ <script type="text/javascript" >
+     function c(form) { 
+                 if(form.liuyan.value=='') {
+                 //form留言区内容的id：liuyan为空，则出现提示窗口，无法提交
+                 alert("请输入留言!"); 
+                 form.liuyan.focus(); 
+                 return false; } 
+             return true; }
+ </script>
+
+ </body>
+ </html> 
