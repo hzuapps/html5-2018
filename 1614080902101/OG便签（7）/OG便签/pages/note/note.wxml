@@ -1,0 +1,3 @@
+<!--pages/note/note.wxml-->
+<text></text>
+  <view class='imagesize'>  <image src="../image/4.png" class='in-image'   >  </image></view>
