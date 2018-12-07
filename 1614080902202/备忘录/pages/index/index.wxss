@@ -1,0 +1,27 @@
+/**index.wxss**/
+
+.add{
+  display: flex;
+  flex-direction: row;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+  margin-bottom: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  padding: 20rpx;
+}
+.InputAdd{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+ 
+}
+.userinfo-avatar {
+  width: 25rpx;
+  height: 25rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+

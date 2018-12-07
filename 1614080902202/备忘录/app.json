@@ -1,0 +1,36 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/abme/abme",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "备忘录",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#ddd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/h1.png",
+        "selectedIconPath": "image/h1.png",
+        "text": "备忘录"
+      },
+      {
+        "pagePath": "pages/abme/abme",
+        "iconPath": "image/j1.png",
+        "selectedIconPath": "image/j1.png",
+        "text": "关于我"
+      }
+    ],
+    "position": "bottom"
+  }
+}

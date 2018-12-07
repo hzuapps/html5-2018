@@ -1,0 +1,9 @@
+<view class='container'>
+<view class = "add">
+  
+     <image class = 'userinfo-avatar' src = '../../image/q1.png' />
+     <input value = "{{input}}" auto-focus  class = "InputAdd" placeholder='输入备忘的内容'/>
+   
+ </view>
+ 
+ </view>
