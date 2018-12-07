@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>个人简历</title>
+	<meta charset="gb2312">
+	<script type="text/javascript" src="lypd.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+	<style type="text/css"> 	
+         #hc{ 
+            	color: black;
+            	background-color: Beige;
+            }
+    </style>
+	<script type="text/javascript" language="JavaScript">
+			function changeColor() {
+				for (i=0;i<4;i++){
+					if(coloch.color[i].checked){
+						document.body.style.background=coloch.color[i].value;
+						}
+					}
+				}
+	</script>
+</head>
+<body  bgcolor="Honeydew">
+<div class="page">
+	<div class="page__hd">
+        <h1 class="page__title" align="center" style="font-family:楷体;"  >个人简历</h1>    
+    </div>			
+    <div class="page__bd">      
+    <div class="weui-panel weui-panel_access">	
+            <div class="weui-panel__hd" id="hc">基本信息：</div>           	
+            <div class="weui-cells">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                        <img src="https://raw.githubusercontent.com/luolihaoo/html5-2018/master/timg.jpg" style="width: 30px;display: block"/>                    
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p >姓名：罗罗罗</p>                        
+                    </div>
+                </div>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg" >
+                <h4 class="weui-media-box__title" >性别：</h4>
+                <p class="weui-media-box__desc" >男</p>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg" >
+                <h4 class="weui-media-box__title">毕业院校：</h4>
+                <p class="weui-media-box__desc">惠州学院</p>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title">主修专业：</h4>
+                <p class="weui-media-box__desc">软件工程</p>
+            </div>
+            <div class="weui-media-box weui-media-box_appmsg">
+                <h4 class="weui-media-box__title">学历：</h4>
+                <p class="weui-media-box__desc">本科应届</p>
+            </div>
+        </div>	
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">求职意向：</div> 
+           	<div class="weui-media-box weui-media-box_appmsg">           
+                <p >&middot; JS工程师</p>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">工作经验：</div>
+            <div class="weui-media-box weui-media-box_appmsg" >           
+                <p>
+                	&middot;2014.03-2014.07  智能循迹小车大赛。<br>
+					&middot;2013.09-2013.01  邮件检测加密软件。<br>
+					&middot;2013.07-2013.12  校园卡管理系统。
+				</p>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">技能证书：</div>
+            <div class="weui-media-box weui-media-box_appmsg">           
+                <p>
+                	&middot;计算机语言：C、C++、Java、SQL<br>
+					&middot;编程软件：Delphi、VC++<br>
+					&middot;全国计算机等级证书三级 软件测试技术<br>
+					&middot;操作系统：Windows、Linux、iOS 
+				</p>
+            </div>
+        </div>
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="hc">联系方式：</div>
+            <div class="weui-media-box weui-media-box_appmsg">           
+                <p>
+                	&middot;手机号码：12345678910<br>
+					&middot;邮箱：1234567891@qq.com<br>
+                    <a href="https://github.com/luolihaoo">&middot;个人GitHub主页</a>
+				</p>
+                
+             </div>
+        </div>
+        <div>
+			<div class="weui-flex__item">
+				<div class="weui-panel__hd" id="hc">留言：</div>
+			</div>
+			<hr>
+				<form action="pass.html" method="post" id="send1">
+					<textarea id="send2" row="500" cols="200"></textarea>
+					<button type="submit" id="send3" >发送留言</button>
+				</form>
+			</div>          	               	
+		</div>
+    </div>	 	
+</div>
+		<form name="coloch" class="c_Change">
+			<input name="color" type="radio" value="#FFFFFF" onclick="changeColor()">白色
+			<input name="color" type="radio" value="#2828FF" onclick="changeColor()">蓝色
+			<input name="color" type="radio" value="#02F78E" onclick="changeColor()">绿色
+			<input name="color" type="radio" value="#FFFF37" onclick="changeColor()">黄色
+		</form>
+</body>
+</html> 
