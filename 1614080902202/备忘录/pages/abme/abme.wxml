@@ -1,0 +1,17 @@
+<view class='all'>
+  <view class="about">
+  <text style='text-align:left'>产品名称：备忘录</text>
+  <text style='text-align:left'>开发时间：2018年12月</text>
+  </view>
+
+  <view class='about'>
+  
+    <text class='c' >作者</text>
+    <text>LJJ</text>
+    
+    <text class="c">邮箱</text>
+   <text>473350998@qq.com</text>
+    <text class="c">GitHub</text>
+    <text>github.com/hzuljj</text>
+  </view>
+</view>

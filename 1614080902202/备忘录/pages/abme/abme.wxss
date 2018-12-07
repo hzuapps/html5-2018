@@ -1,0 +1,7 @@
+.all{background:#eee; height: 1200rpx; }
+.about{ border-bottom:1.5px solid cornsilk; padding: 8% 5%;  color:rgb(20, 19, 19);}
+.about text{ display: block;line-height: 1.7rem;text-align: center}
+
+
+
+.c{color:#333; background: rgb(194, 190, 190)}

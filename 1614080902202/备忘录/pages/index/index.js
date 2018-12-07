@@ -1,54 +1,122 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
 Page({
+
+
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    TodayList: [],
+    Today: "",
+    input: ""
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+
+  save: function () {
+    wx.setStorageSync('TodayList', this.data.TodayList);
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
+  loadData: function () {
+    var todo = wx.getStorageSync('TodayList');
+    if (todo) {
       this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+        TodayList: todo
+      });
     }
+
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+  AddInput: function (e) {
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      input: e.detail.value
+    });
+  },
+
+  toggleTodoHandle: function (e) {
+    var todo = this.data.TodayList;
+
+    var index = e.currentTarget.id;
+
+    todo[index].completed = !todo[index].completed;
+
+    this.setData({
+      TodayList: todo
+    });
+    this.save();
+  },
+
+  AddConfirm: function (e) {
+    var that = this;
+    var todo = this.data.TodayList;
+    todo.push({ description: this.data.input, completed: false })
+
+    that.setData({ TodayList: todo, input: '' });
+
+    console.log(this.data.TodayList)
+
+    this.save();
+  },
+
+  removeTodoHandle: function (e) {
+    var todo = this.data.TodayList;
+    var index = e.currentTarget.id;
+
+    todo.splice(index, 1);
+    console.log(todo);
+
+    this.setData({
+      TodayList: todo
+    });
+    this.save();
+  },
+
+
+  onLoad: function (options) {
+
+    var that = this;
+    var date1 = new Date;
+
+    var Today;
+    Today = date1.getFullYear() + '-' + (date1.getMonth() + 1) + '-' + date1.getDate() + '   ' + ("星期" + date1.getDay());
+    var TodayStorage = wx.getStorageSync("Today");
+    if (TodayStorage != Today) {
+      wx.setStorageSync("Today", Today);
+    }
+    that.setData({
+      Today: Today
+    });
+
+    this.loadData();
+
+
+
+
+
+  },
+  onReady: function () {
+
+  },
+
+
+  onShow: function () {
+
+  },
+
+
+  onHide: function () {
+
+  },
+
+
+  onUnload: function () {
+
+  },
+
+
+  onPullDownRefresh: function () {
+
+  },
+
+
+  onReachBottom: function () {
+
+  },
+
+
+  onShareAppMessage: function () {
+
   }
 })
