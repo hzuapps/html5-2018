@@ -1,0 +1,32 @@
+<!--pages/deployFuncitons/deployFuncitons.wxml-->
+<view >
+  个人
+</view>
+<view >
+  <button >
+    <text class='td'>设置个人信息</text>
+  </button> 
+</view>
+<view style='padding-top: 30px'>
+  通用
+</view>
+<view >
+  <button >
+    <text class='td'>反馈</text>
+  </button> 
+</view>
+<view >
+  <button >
+    <text class='td'>帮助</text>
+  </button> 
+</view>
+
+<view style='padding-top: 30px'>
+  关于
+</view>
+<view >
+  <button >
+    <text class='td'>关于小程序</text>
+  </button> 
+</view>
+

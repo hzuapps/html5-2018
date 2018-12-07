@@ -1,11 +1,16 @@
 <!--index.wxml-->
-<swiper current="{{currentData}}" class='swiper' style="height:450px;" duration="300" bindchange="bindchange">
-  <swiper-item><view class='swiper_con'>welcome come to 首页</view></swiper-item> 
-  <swiper-item><view class='swiper_con'>welcome come to 笔记</view></swiper-item>
-  <swiper-item><view class='swiper_con'>welcome come to 设置</view></swiper-item>  
-</swiper>
-<view class='topTabSwiper'>
-    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>首页</view>
-    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>笔记</view>
-    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>我</view>
-</view>
+<view class='touch-item {{item.isTouchMove ? "swipe" : ""}}' wx:for='{{notebooks}}' wx:key='' data-index='{{index}}' bindtouchstart="touchstart" bindtouchmove="touchmove">
+ <!--> <view class='content' data-index='{{index}}' catchtap='notebook2' catchlongpress='notebookMenu'>
+    {{item.name}}
+  </view><-->
+</view> 
+
+<view class='add center' bindtap='changeTo' >+</view>
+
+<!-- 菜单页 -->
+<block wx:if='{{isRise}}'>
+  <view class='menu-item-new center' catchtap='addNotebook' >
+    添加事件
+  </view>
+</block>
+

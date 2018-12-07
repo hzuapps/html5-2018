@@ -1,0 +1,42 @@
+<!--pages/chooseLib/index.wxml-->
+<view class='touch-item {{item.isTouchMove ? "swipe" : ""}}' wx:for='{{notebooks}}' wx:key='' data-index='{{index}}' bindtouchstart="touchstart" bindtouchmove="touchmove">
+  <view class='content' data-index='{{index}}' catchtap='notebook' catchlongpress='notebookMenu'>
+    {{item.name}}
+  </view>
+</view>
+
+<view class='add center' catchtap='menu'>+</view>
+
+<!-- 菜单页 -->
+<block wx:if='{{isRise}}'>
+  <view class='menu-item-text' animation='{{rise0}}' catchtap='about'>
+    关于
+  </view>
+  <view class='menu-item-text' animation='{{rise1}}' catchtap='importNote'>
+    导入
+  </view>
+  <view class='menu-item-text' animation='{{rise2}}' catchtap='syncNote'>
+    {{isUpload ? '本地' : '上传'}}
+  </view>
+  <view class='menu-item-text' animation='{{rise3}}' catchtap='encrypt'>
+    {{encrypt ? '密文' : '明文'}}
+  </view>
+  <view class='menu-item-new center' catchtap='addNotebook'>
+    添加新的小本本
+  </view>
+
+  <view class='mask mask-dark' catchtap='menu'></view>
+</block>
+<view class='menu-item center' animation='{{rise0}}' catchtap='about'>0</view>
+<view class='menu-item center' animation='{{rise1}}' catchtap='importNote'>1</view>
+<view class='menu-item center' animation='{{rise2}}' catchtap='syncNote'>2</view>
+<view class='menu-item center' animation='{{rise3}}' catchtap='encrypt'>3</view>
+
+
+
+<!-- 添加或编辑小本本页面 -->
+<view wx:if='{{isEditNotebook}}'>
+  <view class='mask mask-gray'></view>
+  <textarea class='new-notebook' placeholder='请输入小本本名字' maxlength='9' value='{{bookname}}' auto-focus='true' focus='{{focus}}' bindblur='cancel' bindconfirm='save'></textarea>
+
+</view>

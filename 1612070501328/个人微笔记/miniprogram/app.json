@@ -1,12 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/chooseLib/index",
+    "pages/deployFuncitons/deployFuncitons",
+    "pages/event/event"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -14,5 +11,32 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "个人微笔记",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#b3b3b3",
+    "selectedColor": "#fc8e5d",
+    "backgroundColor": "#f5f5f7",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "待处理事件",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/sicon2.png"
+      },
+      {
+        "pagePath": "pages/chooseLib/index",
+        "text": "微笔记",
+        "iconPath": "images/icon1.png",
+        "selectedIconPath": "images/sicon1.png"
+      },
+      {
+        "pagePath": "pages/deployFuncitons/deployFuncitons",
+        "text": "设置",
+        "iconPath": "images/icon3.png",
+        "selectedIconPath": "images/sicon3.png"
+      }
+    ]
   }
 }

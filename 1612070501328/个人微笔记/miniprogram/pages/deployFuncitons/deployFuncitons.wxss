@@ -1,0 +1,5 @@
+/* pages/deployFuncitons/deployFuncitons.wxss */
+.td{
+  padding-left: 10px;
+  float: left;
+}

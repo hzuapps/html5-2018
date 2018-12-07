@@ -1,0 +1,33 @@
+<view class='notebook touch-item {{item.isTouchMove ? "swipe" : ""}}' wx:for='{{notebook}}' wx:key='' data-index='{{index}}' bindtouchstart="touchstart" bindtouchmove="touchmove" catchtap='detail' data-index='{{index}}'>
+  <view class='content' catchtap='detail' catchlongpress='exportNote' data-index='{{index}}'>
+    <view class='time'>{{item.time}}</view>
+    <!-- 折叠成单行文字 -->
+    <view class="theme {{notebook[index].wrap ? 'no-wrap' : ''}}">
+      <block wx:if='{{notebook[index].wrap}}'>
+        <!-- to do 待优化，判断有点多 -->
+        {{isEncrypt? item.note : item.md5}}
+      </block>
+      <!-- 展开 -->
+      <block wx:else>
+        <text>{{item.note}}</text>
+      </block>
+    </view>
+  </view>
+  <view class='edit-item'>
+    <view class='edit-left center' data-index='{{index}}' catchtap='editItem'>
+      <image src='/images/edit.png' class='img' mode='aspectFit'></image>
+    </view>
+    <view class='edit-right center' data-index='{{index}}' catchtap='delItem'>
+      <image src='/images/del.png' class='img' mode='aspectFit'></image>
+    </view>
+  </view>
+</view>
+<view class='add center' wx:if='{{swipeDown}}' catchtap='add'>+</view>
+
+<!-- 编辑页面 -->
+<view wx:if='{{isEditStatus}}'>
+  <view class='mask'></view>
+  <view class='edit-note'>
+    <textarea class='note-content' placeholder='记录一下' placeholder-style='color:#f2f2f2;' maxlength='1024' auto-focus='true' focus='{{focus}}' value='{{cacheNote}}' bindblur='cancel' bindconfirm='save' bindfocus='editNoteFocus'></textarea>
+  </view>
+</view>

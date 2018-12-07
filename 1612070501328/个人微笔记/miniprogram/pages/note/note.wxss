@@ -1,0 +1,53 @@
+@import "/template/template.wxss";
+
+.content {
+  padding: 20rpx;
+}
+
+.time {
+  margin: 15rpx;
+  padding-left: 5rpx;
+  line-height: 50rpx;
+  font-size: 20px;
+  font-family: 'Lucida Sans',
+                 'Lucida Sans Regular',
+                 'Lucida Grande',
+                 'Lucida Sans Unicode',
+                 Geneva,
+                 Verdana,
+                 sans-serif;
+  font-weight: bold;
+}
+
+.theme {
+  margin: 15rpx;
+  padding-left: 5rpx;
+  padding-bottom: 10rpx;
+  padding-top: 10rpx;
+  width: 680rpx;
+  font-size: 16px;
+  line-height: 50rpx;
+  overflow: hidden;
+}
+
+.no-wrap {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edit-note {
+  display: flex;
+  position: fixed;
+  margin: 10rpx;
+  left: 20rpx;
+  right: 20rpx;
+  top: 20rpx;
+  color: white;
+  z-index: 2;
+}
+
+.note-content {
+  padding: 20rpx;
+  width: 100%;
+  background: #242424;
+}
