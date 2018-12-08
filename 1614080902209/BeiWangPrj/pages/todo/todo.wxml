@@ -1,0 +1,13 @@
+
+<view class = "container">
+  <view class = "today">
+    <text>{{Today}}</text>
+  </view>
+  <view class = "additem">
+    <view class = "add">
+      <image class = 'plus' src = '../../images/plus.png' />
+      <input value = "{{input}}" auto-focus  class = "InputAdd" placeholder='请记录您需要备忘的事务 '/>
+    </view>  
+  </view>
+ 
+</view>
