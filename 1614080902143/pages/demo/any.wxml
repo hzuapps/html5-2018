@@ -1,0 +1,81 @@
+<form bindsubmit="forSubmit" bindreset="formReset">
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" maxlength="20" placeholder="请填写投票标题(2-20个字)" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请填写投票内容说明(2-80个字)" style="height: 3.3em" />
+          <view class="weui-textarea-counter">0/80</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_input" wx:for-items="{{optionList}}" wx:key="{{index}}">
+        <view class="weui-cell__hd">
+          <image bindtap="delOption" src="{{item.icon}}" class="option-icon" data-index="{{index}}"></image>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="recordValue" class="weui-input" data-index="{{index}}" value="{{item.value}}" placeholder="选项{{index + 1}}" />
+        </view>
+      </view>
+      <view class="weui-cell" bindtap="addOption" wx:if="{{showAddBtn}}">
+        <view class="weui-cell__hd">
+          <image src="/images/common/4.png" class="option-icon"></image>
+        </view>
+        <view class="weui-cell__bd">添加选项</view>
+      </view>
+    </view>
+    <view class="weui-cells__tips">最多支持15个选项，每个选项不超过40个字</view>
+
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">投票类型</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindVoteTypeChange" value="{{voteTypeIndex}}" range="{{voteType}}">
+            <view class="weui-select weui-select_in-select-after">{{voteType[voteTypeIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">结束日期</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2117-09-01" bindchange="bindDateChange">
+            <view class="weui-select weui-select_in-select-after">{{date}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd weui-cell__hd_in-select-after">
+          <view class="weui-label">结束时间</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+            <view class="weui-select weui-select_in-select-after">{{time}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class="weui-cell weui-cell_switch">
+        <view class="weui-cell__bd">匿名投票</view>
+        <view class="weui-cell__ft">
+          <switch checked />
+        </view>
+      </view>
+    </view>
+    <view class="weui-cells__tips">开启后，发布者仍可查看投票人详情</view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" type="primary"  form-type="submit">确认发布</button>
+    </view>
+  </view>
+</view>
+</form>

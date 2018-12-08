@@ -1,4 +1,4 @@
-// pages/demo/demo.js
+// pages/detail/detail.js
 Page({
 
   /**
@@ -7,16 +7,7 @@ Page({
   data: {
 
   },
-  jumpOne:function(){
-    wx.navigateTo({
-      url: './one',
-    })
-  },
-  jumpAny: function () {
-    wx.navigateTo({
-      url: './any',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -72,5 +63,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-
 })

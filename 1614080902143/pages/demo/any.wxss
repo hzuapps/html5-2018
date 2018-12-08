@@ -1,0 +1,30 @@
+/* pages/demo/any.wxss */
+/* pages/demo/one.wxss */
+.option-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+    width:20px;
+    height: 20px;
+}
+.weui-select_in-select-after {
+    text-align: right;
+}
+
+
+
+
+.uploader-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.uploader-text {
+    float: left;
+    height: 98px;
+    line-height: 98px;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+.weui-uploader {
+    float: left;
+    padding-top: 9px;
+}
