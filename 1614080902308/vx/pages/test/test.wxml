@@ -1,0 +1,64 @@
+<view>
+<image class="background" src="/images/1.jpg"></image>
+</view>
+
+<view class="a">
+  <view><image src="/images/search.png" class="search"></image></view> 
+  <view class="default">默认</view>
+  <view class="new">最新</view>
+  <view class="hot">最热</view>
+</view>
+
+
+
+
+
+<view class="nav">
+  <view class="c">
+          <view class="section">
+             <image class="food" src="/images/food.jpg"></image>
+             </view>
+           
+            <view class="b">
+              <view class="food-name">澳洲牛排</view>
+              <view class="red">￥88.00</view>
+              <view><image class="add" src="/images/add.png"></image></view>
+            </view>
+            
+  </view>
+
+  
+</view>
+
+<view class="nav">
+  <view class="c">
+          <view class="section">
+             <image class="food" src="/images/food.jpg"></image>
+             </view>
+
+            <view class="b">
+              <view class="food-name">澳洲牛排</view>
+              <view class="red">￥88.00</view>
+              <view><image class="add" src="/images/add.png"></image></view>
+            </view>
+
+  </view>
+  
+</view>
+
+
+<view class="nav">
+  <view class="c">
+          <view class="section">
+             <image class="food" src="/images/food.jpg"></image>
+             </view>
+
+            <view class="b">
+              <view class="food-name">澳洲牛排</view>
+              <view class="red">￥88.00</view>
+              <view><image class="add" src="/images/add.png"></image></view>
+            </view>
+
+  </view>
+  
+</view>
