@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+   bindFormSubmit: function (e) {
+    console.log(e.detail.value.textarea)
   }
+
 })

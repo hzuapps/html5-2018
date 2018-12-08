@@ -9,7 +9,21 @@ Page({
     Today:"",
     input:""
   },
- 
+  /**
+   * 存储列表数据函数
+   */
+  save:function(){
+    wx.setStorageSync('TodayList', this.data.TodayList);
+  },
+  loadData:function(){
+    var todo = wx.getStorageSync('TodayList');
+    if(todo){
+      this.setData({
+        TodayList: todo
+      });
+    }
+
+  },
   AddInput:function(e){
     this.setData({
       input:e.detail.value
@@ -30,8 +44,35 @@ Page({
     });
     this.save();
   },
-  
-  
+  /**
+   * 增加一条记录
+   */
+  AddConfirm:function(e){
+    var that = this;
+    var todo = this.data.TodayList;
+    todo.push({description:this.data.input,completed:false})
+    //更新数据
+    that.setData({TodayList:todo,input:''});
+    //输出日志信息
+    console.log(this.data.TodayList)
+    //保存记录到本地
+    this.save();
+  },
+  /**
+   * 清除一条记录
+   */
+  removeTodoHandle:function(e){
+    var todo = this.data.TodayList;
+    var index = e.currentTarget.id;
+    //删除数据
+    todo.splice(index,1);
+    console.log(todo);
+    //设置数据
+    this.setData({
+      TodayList:todo
+    });
+    this.save();
+  },
   
   /**
    * 生命周期函数--监听页面加载

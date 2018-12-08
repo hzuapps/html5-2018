@@ -1,8 +1,7 @@
 {
   "pages":[
-    "pages/todo/todo",
-    "pages/person/person"
-   
+    "pages/person/person",
+    "pages/todo/todo"
     
     
   ],
@@ -15,12 +14,14 @@
   },
 
   "tabBar": {
+    "selectedColor": "#1296db",
   "list": [
     {
       "pagePath": "pages/todo/todo",
       "iconPath":"images/jishiben-1.png",
       "selectedIconPath": "images/jishiben-2.png",
       "text": "备忘录"
+      
     
     },
     {
