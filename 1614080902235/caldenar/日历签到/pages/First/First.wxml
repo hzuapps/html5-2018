@@ -1,0 +1,8 @@
+<view class='all'>
+<view class="First">
+<text style='text-align:left'>欢迎使用日历签到\n</text>
+
+<text style='text-align:left'>此小程序仅供查看本月日历并且签到</text>
+
+</view>
+</view>
