@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+  <title>个人简历</title>
+</head>
+<body>
+<button style="float:left" class = "bt" onclick="b2()">改背景颜色</button>
+<p align="center"><b><font face="黑体" size="+5">个人简历</font></b></p>
+<table width="450" height="200" border="3" align="center">
+<tbody><tr>
+   <td width="114" height="100">
+      <img src="http://img.zcool.cn/community/010cda56712f0c6ac725ad90d7c73e.jpg@1280w_1l_2o_100sh.jpg" width="160" height="200">
+   </td>
+   <td width="316">
+   <table width="300" height="200" border="0" align="center">
+   <tbody><tr><td>Name:<b>Xiong</b></td><td></td></tr>
+   <tr><td>Age:<b>18</b></td></tr>
+   <tr><td>School:<b>惠州学院</b></td></tr>
+   <tr><td>Speciality:<b>软件工程</b></td></tr>
+   <tr><td>PhoneNumber:<b>6666-6666666</b></td></tr>
+   </tbody></table>
+   </td>
+</tr>
+<tr>
+   <td colspan="2">
+   <p align="center"><b>时间及经历</b></p>
+   <ul>
+      <li>大一挂了高速1</li>
+      <li>大二就没挂了</li>
+   </ul>
+   </td>
+</tr>
+</tbody></table>
+<form>
+<textarea cols="80" rows="5"  class="ta"></textarea>
+<br>
+<button class="tj" onclick="b3()">提交</button>
+<br><br>
+<a href="https://github.com/Zhengmianjie">
+	查看Github个人主页
+</a>
+</form>
+<script>
+    var c2=0;
+	function b2(){
+		if(c2==0){
+            document.body.style.backgroundColor = "RED";
+            c2=1;
+        }
+        else if(c2==1){
+            document.body.style.backgroundColor = "Green";
+            c2=2;
+        }
+		else if(c2==2)
+		{
+			document.body.style.backgroundColor = "Blue";
+            c2=3;
+		}
+		else if(c2==3)
+		{
+			document.body.style.backgroundColor = "White";
+            c2=0;
+		}
+    }
+	function b3(){
+        var ta = document.getElementsByClassName("ta")[0];
+        if(ta.textLength==0){
+            alert("留言为空");
+        }
+    }
+</script>
+
+</body></html>
+</html>
