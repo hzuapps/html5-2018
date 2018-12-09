@@ -1,0 +1,80 @@
+<!--pages/One/One.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+  <body>
+    <div class="container" id="container">
+      <div class="page__bd">
+      <div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>姓名</p>
+               </div>
+               <div class="weui-cell__ft">Xiong</div>
+           </div>
+      <div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>年龄</p>
+               </div>
+               <div class="weui-cell__ft">18</div>
+           </div>
+      <div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>毕业院校</p>
+               </div>
+               <div class="weui-cell__ft">惠州学院</div>
+           </div>
+      <div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>专业</p>
+               </div>
+               <div class="weui-cell__ft">软件工程</div>
+           </div>
+      <div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>联系电话</p>
+               </div>
+               <div class="weui-cell__ft">6666-6666666</div>
+           </div>
+      <div class="weui-cell">
+               <div class="weui-cell__bd">
+                   <p>Github</p>
+               </div>
+               <div class="weui-cell__ft">
+                   <a href="https://github.com/Xiong2018">https://github.com/Xiong2018</a>
+               </div>
+           </div>
+      <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd" id="sub">个人经历</div>
+            <div class="weui-media-box weui-media-box_text">
+				<p>大一就挂了高数1</p>
+				<p>大二就没挂了</p>
+            </div>
+       </div>
+      <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+      </view>
+      <form bindsubmit="formSubmit">
+        <p>留言板</p>
+        <textarea class="weui-textarea" placeholder="留言内容" name="textarea"/>
+        <div class="weui-textarea-counter">
+							<span>0</span>
+							/200
+				</div>
+        <view class="btn-area">
+          <button formType="submit">提交</button>
+        </view>
+      </form>
+    </div>
+  </div>
+  </body>
+  </view>
+</view>
