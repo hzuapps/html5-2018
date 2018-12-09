@@ -1,0 +1,9 @@
+<!--input.wxml-->
+<view class="section">
+  <view class="btn-area">
+    <button bindtap="bindButtonTap">输入今天所达小成绩</button>
+  </view>
+  <input placeholder="输入今天所达小成绩" maxlength="-1" focus="{{focus}}" />
+  <hr/><br /><br /><br />
+  <button type="submit" id="send">提交</button>
+</view>

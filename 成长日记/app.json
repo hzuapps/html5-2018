@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/startoday/startoday",
+    "pages/growth/growth"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "成长日记",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/growth/growth",
+        "text": "成长之路",
+        "iconPath": "images/timg.jpg",
+        "selectedIconPath": "images/timg.jpg"
+      },
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/timg.jpg",
+      "selectedIconPath": "images/timg.jpg"
+    },
+    {
+      "pagePath": "pages/startoday/startoday",
+      "text": "今日之星",
+      "iconPath": "images/timg.jpg",
+      "selectedIconPath": "images/timg.jpg"
+    }]
+  }
+}
