@@ -1,0 +1,6 @@
+
+
+<view>
+    <image class='img1' src='{{mag_1}}' bindtap=''></image>
+    <button bindtap='down_file' class='btn'>刷新</button>
+</view>

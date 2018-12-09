@@ -1,0 +1,7 @@
+.img_me{
+  width: 200px; 
+  height: 200px;
+  margin-left: 150rpx;
+  margin-top: 150rpx;
+
+}
