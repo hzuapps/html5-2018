@@ -1,2 +1,33 @@
-<!--pages/ONE.wxml-->
-<text>pages/ONE.wxml</text>
+<!--pages/ONE/ONE.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+  <body>
+    <div class="container" id="container">
+      <div class="page__bd">
+        
+      <form bindsubmit="formSubmit">
+        <p>留言板</p>
+        <textarea class="weui-textarea" placeholder="留言内容" name="textarea"/>
+        <div class="weui-textarea-counter">
+							<span>0</span>
+							/200
+				</div>
+        <view class="btn-area">
+          <button formType="submit">提交</button>
+        </view>
+      </form>
+    </div>
+  </div>
+  </body>
+  </view>
+</view>
