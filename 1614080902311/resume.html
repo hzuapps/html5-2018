@@ -4,9 +4,14 @@
 <meta charset="utf-8">
 <title>My Resume</title>
 <link href="css/resume.css" rel="stylesheet" type="text/css">
+<script>
+   ct_equipment();
+</script>
 </head>
 <body>
+   <!--container-->
 <div class="container">
+   <!--section-->
 <section>
   <div class="cloumn1">
     <div class="photo">
@@ -101,7 +106,14 @@
 </body>
 <script>
   function checkForm(){
-  alert("留言已提交！");
+  alert("留言已提交");
 }
+  function ct_equipment(){
+  if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    window.location.href = "resume.html";
+} else {
+    window.location.href = "mp_resume.html";
+}
+  }
 </script>
 </html>
