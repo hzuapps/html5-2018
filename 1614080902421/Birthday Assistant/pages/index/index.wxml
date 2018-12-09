@@ -1,0 +1,7 @@
+<!--pages/index/index.wxml-->
+<view class='indexContainer'>
+<image class='avatar' src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../images/author.png'}}"></image>
+  <text class='userName'>{{userInfo.nickName?userInfo.nickName:userName}}</text>
+  <button class='entry' style="display: {{isAuthorize?'none':'block'}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">允许授权用户信息</button>
+  <button class='entry' bindtap='toNewPw' style="display: {{isAuthorize?'block':'none'}}">进入生日助手</button>
+</view>
