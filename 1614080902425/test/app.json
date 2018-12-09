@@ -3,7 +3,8 @@
     "pages/idx/idx",
     "pages/logs/logs",
     "pages/t_table/t_table",
-    "pages/connect/connect"
+    "pages/connect/connect",
+    "pages/connect_send/connect_send"
   ],
   "window": {
     "backgroundTextStyle": "light",

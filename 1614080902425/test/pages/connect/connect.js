@@ -8,7 +8,7 @@ Page({
   data: {
     
       tabs: ["番表", "建议箱", ],
-      activeIndex: 1,
+      activeIndex: 0,
       sliderOffset: 0,
       sliderLeft: 0,
     mes:{}
@@ -37,12 +37,39 @@ Page({
       }
     })
   },
+  Delete:function(e)
+  {
+    var title = e.currentTarget.id
+    //console.log(title)
+    wx.showActionSheet({
+      itemList: ['删除追番', '取消'],
+      success: res => {
+        var mesold = new Object()
+        if (!res.cancel) {
+          if(res.tapIndex==1)
+            return;
+          try {
+            var value = wx.getStorageSync('index')
+            if (value) {
+              mesold = value
+            }
+          } catch (e) {
+          }
+          delete mesold[title]
+          wx.setStorage({
+            key: 'index',
+            data: mesold,
+            success: res => { this.onLoad()}
+          })
+        }
+      }
+    });
+  },
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
-    this.onLoad()
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -50,7 +77,18 @@ Page({
   onReady: function () {
 
   },
-
+  onShow: function()
+  {
+    wx.switchTab({
+      url: '/pages/connect/connect',
+      success(res) {
+        var page = getCurrentPages().pop()
+        //console.log(page)
+        if (page == undefined || page == null) return;
+        page.onLoad();
+      }
+    })
+  },
   onHide: function () {
 
   },

@@ -1,12 +1,13 @@
 // pages/t_table/t_table.js
 var util= require('../../utils/util.js');
-
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    check:0,
     mes: {
   }},
   /**
@@ -29,6 +30,8 @@ Page({
     wx.showActionSheet({
       itemList: ['添加至追更目录','取消'],
       success: res=> {
+        if (res.tapIndex == 1)
+          return;
         var mesold=new Object()
         if (!res.cancel) {
           try {
@@ -56,7 +59,8 @@ Page({
       key: 'mes',
       success: res=> {
         this.setData({
-          mes: res.data
+          mes: res.data,
+          check:1
         })
         //console.log(res.data)
       }
@@ -73,6 +77,18 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    wx.switchTab({
+      url: '/pages/t_table/t_table',
+      success(res) {
+        if (app.globalData.update==0)
+          return;
+        var page = getCurrentPages().pop()
+        //console.log(page)
+        if (page == undefined || page == null) return;
+        page.onLoad();
+        app.globalData.update=1;
+      }
+    })
   },
 
   /**

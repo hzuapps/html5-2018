@@ -13,7 +13,11 @@
                     </view>
                 </navigator>
             </block>
-            
         </view>
     </view>
+<view wx:if='{{check==0}}'>
+  <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bindtap='onLoad'>惨遭小霸王服务器，刷新吧少年</button>
+  </view>
+</view>
 </view>
