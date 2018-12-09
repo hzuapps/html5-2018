@@ -13,10 +13,29 @@ Page({
     imageUrl2:"http://wx3.sinaimg.cn/large/a7d6205fly1fxb5uduqnij20u00u0jy7.jpg",
     imageUrl3:"http://wx4.sinaimg.cn/large/a7d6205fly1fxb5uebz4aj20u00u0dq9.jpg"
   },
-  //事件处理函数
-  bindViewTap: function() {
+  jump:function(option){
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../album/album',
+    })
+
+  },
+  //事件处理函数
+  formSubmit: function (e) {
+    var adds = e.detail.value;
+        adds.openid = 11;
+    wx.request({
+      url: '',
+      data: adds,
+      method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      header: {// 设置请求的 header
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        console.log(JSON.stringify(res.data))
+      },
+      fail: function (res) {
+        console.log('cuowu' + ':' + res)
+      }
     })
   },
   onLoad: function () {
