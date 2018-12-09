@@ -1,0 +1,2 @@
+<import src="../template/template"/>
+<template is="movie" data="{{movies}}"/>

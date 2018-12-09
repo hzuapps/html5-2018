@@ -1,0 +1,13 @@
+  <template name="movie">
+<view class="content">
+  <block wx:for="{{movies}}" id="block">
+            <view class="picture">
+                <image src="{{item.images.large}}"  />
+            </view>
+            <view class="word">
+               <text>{{item.text}}</text>
+            </view>           
+    <view class="hr"></view>
+  </block>
+</view>
+  </template>

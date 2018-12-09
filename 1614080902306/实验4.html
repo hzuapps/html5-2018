@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <html>
+
+    <head>
+        <title>个人简历</title>
+    </head>
+
+<body>
+    <p align=center><b>
+            <font face="黑体" size="+5">个人简历</font>
+        </b></p>
+    <table width="450" height="200" border="3" align="center" id="table1">
+        <tr>
+            <td width="114" height="100">
+                <img src="http://imageqiniuyun.lvxiaoluo.com/jq.jpg" width="160" height="200" id="img1">
+            </td>
+            <td width="316">
+                <table width="300" height="200" border="0" align="center">
+                    <tr>
+                        <td>姓名<b>张举权</b></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>年龄:<b>24</b></td>
+                    </tr>
+                    <tr>
+                        <td>学校:<b>惠州学院</b></td>
+                    </tr>
+                    <tr>
+                        <td>专业:<b>软件工程</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p align="center"><b>时间及经历</b></p>
+                <ul>
+                    <li>王者上单</li>
+                    <li>无情铁手</li>
+                </ul>
+            </td>
+            <button onclick="change('green')">绿色</button>
+            <button onclick="change('red')">红色</button>
+            <button onclick="change('blue')">蓝色</button>
+            <button onclick="change('orange')">橙色</button>
+            <button onclick="change1('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544349326055&di=0380f71d771941c872625615e0225787&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201608%2F24%2F20160824122528_tXhPK.thumb.700_0.jpeg')">变狗</button>
+            <button onclick="change1('http://imageqiniuyun.lvxiaoluo.com/jq.jpg')">变人</button>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+    <form>
+        <textarea align="center" id="textarea"></textarea>
+        <br>
+        <input type="submit" value="提交" onclick="sumbit()">
+        <br><br>
+        <a href="https://github.com/HDNO1-DJ">查看Github个人主页</a>
+    </form>
+</body>
+<script>
+    function change(value) {
+        var table = document.getElementById('table1')
+        console.log(table)
+        table.style.backgroundColor = value
+    }
+
+    function change1(value) {
+        var img = document.getElementById('img1')
+        console.log(img.src)
+        img.src = value
+    }
+
+    function change2(value) {
+        var img = document.getElementById('img1')
+        console.log(img.src)
+        img.src = value
+    }
+
+    function sumbit(value) {
+        var textarea = document.getElementById('textarea')
+        if (textarea.value === '') {
+            alert('留言板不能为空')
+        }
+        else {
+            alert('发送成功')
+        }
+    }
+</script>
+
+</html>
