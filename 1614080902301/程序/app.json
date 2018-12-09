@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ONE/ONE",
+    "pages/TWO/TWO"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新闻快递",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/2.jpg",
+        "selectedIconPath": "pages/image/5.jpg"
+      },
+      {
+        "pagePath": "pages/ONE/ONE",
+        "text": "时事新闻",
+        "iconPath": "pages/image/1.jpg",
+        "selectedIconPath": "pages/image/4.jpg"
+      },
+      {
+        "pagePath": "pages/TWO/TWO",
+        "text": "设置",
+        "iconPath": "pages/image/3.jpg",
+        "selectedIconPath": "pages/image/6.jpg"
+      }
+    ]
+  }
+}
