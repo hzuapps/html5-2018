@@ -25,3 +25,8 @@ input{
   margin: 50rpx auto;
   border-radius:10rpx; 
 }
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+

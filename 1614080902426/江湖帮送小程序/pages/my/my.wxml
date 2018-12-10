@@ -1,2 +1,46 @@
 <!--pages/my/my.wxml-->
-<text>个人主页</text>
+<view>
+  <view class='header'>
+    <view class="userInfo">
+			<image src="./../../img/location.png" class="userinfo-avatar" background-size="cover" />
+			<text class="userinfo-nickname">Song</text>
+		</view>
+  </view>
+
+  <view class="line"></view>
+
+  <view class="category-title">
+        <view class="icon">
+          <image src="../../img/home03.png"></image>
+        </view>
+        <view><text class="name">常用地址</text></view>
+  </view>
+
+  <view class="line"></view>
+  
+  <view class="category-title">
+        <view class="icon">
+          <image src="../../img/yijian.png"></image>
+        </view>
+        <view><text class="name">意见反馈</text></view>
+  </view>
+
+   <view class="line"></view>
+  
+  <view class="category-title">
+        <view class="icon">
+          <image src="../../img/kefu.png"></image>
+        </view>
+        <view><text class="name">客服投诉</text></view>
+  </view>
+
+ <view class="line"></view>
+  
+  <view class="category-title">
+        <view class="icon">
+          <image src="../../img/about.png"></image>
+        </view>
+        <view><text class="name">关于我们</text></view>
+  </view>
+  <view class="line"></view>
+</view>
