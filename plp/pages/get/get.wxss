@@ -1,0 +1,55 @@
+/**get.wxss**/
+.bg-style{
+  height: 100%;
+  width: 100%;
+}
+.btn-style{
+  height: 200rpx;
+  width: 500rpx;
+  position: absolute;
+  right: 125rpx;
+  top: 680rpx;
+  opacity: 0;
+}
+
+
+
+/*slide-menu*/
+.slide-mask {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .3);
+  z-index: 800;
+}
+.slide-menu {
+  position: fixed;
+  top: 250rpx;
+  background-image: url('http://ac-ejx0nsfy.clouddn.com/494702d7168bb282460f.jpg');
+  background-size: 100% 100%;
+  z-index: 900;
+}
+
+/**麦克风*/
+
+.speak-style {
+  position: fixed;
+  height: 240rpx;
+  width: 240rpx;
+  top: 100rpx;
+  left: 255rpx;
+  border-radius: 20rpx;
+  margin: 50% auto;
+  background: #26a5ff;
+}
+
+.sound-style {
+  position: absolute;
+  width: 74rpx;
+  height: 150rpx;
+  margin-top: 45rpx;
+  margin-left: 83rpx;
+}
+

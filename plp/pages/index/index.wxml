@@ -1,0 +1,16 @@
+
+<!--index.wxml-->
+<view class="play-style">
+<view class="playstyle">
+  <image class="img" src="{{getSrc}}" bindtap="get"></image>
+  <text>捡一个</text>
+  </view>
+  <view class="leftstyle">
+  <image class="img" src="{{throwSrc}}" bindtap="throw"></image>
+   <text>扔一个</text>
+  </view>
+  <view class="rightstyle">
+  <image class="img" src="{{mySrc}}" bindtap="mine"></image>
+   <text>我的瓶子</text>
+  </view>
+</view>

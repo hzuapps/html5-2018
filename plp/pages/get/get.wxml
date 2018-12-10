@@ -1,0 +1,17 @@
+
+<!--get.wxml-->
+<view class="bg-style">
+  <image src="{{bgPng}}" style="height:{{imageHeight}}px;width:{{imageWidth}}px"></image>
+</view>
+<button class="btn-style" bindtap="onClick"></button>
+<view class="slide-mask" style="display:{{maskDisplay}}" bindtap="slideCloseEvent"></view>
+<view class="slide-menu" style="right: {{slideRight}}px;width: {{slideWidth}}px;height:{{slideHeight}}px;" animation="{{slideAnimation}}">
+  <text>{{contentText}}</text>
+</view>
+<view wx:if="{{isPlaying}}" class="speak-style">
+  <image class="sound-style" src="../../images/voice_icon_speech_sound_1.png"></image>
+  <image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png"></image>
+  <image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png"></image>
+  <image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png"></image>
+  <image wx:if="{{j==5}}" class="sound-style" src="../../images/voice_icon_speech_sound_5.png"></image>
+</view>

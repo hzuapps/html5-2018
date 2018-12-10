@@ -1,0 +1,46 @@
+/**index.wxss**/
+
+page {
+  background-image: url('http://ac-nfyusptg.clouddn.com/0ee678402f996ad3a5c2.gif');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.play-style {
+  position: fixed;
+  bottom: 50rpx;
+  left: 0;
+  height: 240rpx;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.playstyle {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  top: 10rpx;
+  left: 295rpx;
+}
+
+.leftstyle {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  top: 10rpx;
+  left: 67.5rpx;
+}
+
+.rightstyle {
+  position: absolute;
+  width: 160rpx;
+  height: 160rpx;
+  top: 10rpx;
+  right: 67.5rpx;
+}
+.img{
+  width: 160rpx;
+  height: 160rpx;
+}

@@ -1,0 +1,22 @@
+
+<!--write.wxml-->
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <textarea wx:if="{{!isInput}}" class="weui-textarea" placeholder="请输入文本" style="height: 16em;" bindblur="bindTextAreaBlur" />
+    </view>
+  </view>
+ </view>
+
+ <view  wx:if="{{isSpeaking}}"  class="speak-style">  
+<image class="sound-style" src="../../images/voice_icon_speech_sound_1.png" ></image>  
+<image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png" ></image>  
+<image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png" ></image>  
+<image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png" ></image>  
+<image wx:if="{{j==5}}"class="sound-style" src="../../images/voice_icon_speech_sound_5.png" ></image>  
+ </view>  
+<image wx:if="{{bottle}}" class="bottle-style" animation="{{animationBottle}}" src="../../images/bottle.png" ></image>
+  <view class="play-style">
+  <image style="margin:20rpx;height:80rpx;width:80rpx;" src="{{isInput?jp:ht}}" bindtap="inputSwitch"></image>
+  <button class="btn-style" bindtouchstart="touchdown" bindtouchend="touchup" bindtap="throwBottle">{{isInput?"按住 说话":"扔出去"}}</button>
+ </view>

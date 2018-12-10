@@ -1,0 +1,34 @@
+
+<!--mine.wxml-->
+<scroll-view>
+  <view wx:if="{{audio.length > 0}}" class="board-title">
+    录音漂流瓶
+  </view>
+  <view wx:if="{{audio.length > 0}}" class="common-list">
+    <block wx:for="{{audio}}">
+      <view class="board" data-key="{{index}}" bindtap="gotoPlay">
+        <view class="board-info">{{item}}</view>
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{mytext.length > 0}}" class="board-title">
+    文本漂流瓶
+  </view>
+  <view wx:if="{{mytext.length > 0}}" class="common-list ">
+    <block wx:for="{{mytext}}">
+      <view class="board" data-key="{{index}}" bindtap="gotoDisplay">
+        <view class="board-info ">{{item}}</view>
+      </view>
+    </block>
+  </view>
+
+ 
+</scroll-view>
+
+ <view  wx:if="{{isPlaying}}"  class="speak-style">  
+<image class="sound-style" src="../../images/voice_icon_speech_sound_1.png" ></image>  
+<image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png" ></image>  
+<image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png" ></image>  
+<image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png" ></image>  
+<image wx:if="{{j==5}}"class="sound-style" src="../../images/voice_icon_speech_sound_5.png" ></image>  
+ </view>  

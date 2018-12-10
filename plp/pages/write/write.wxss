@@ -1,0 +1,102 @@
+/**write.wxss**/
+
+page {
+  background-image: url('http://ac-nfyusptg.clouddn.com/4655b60b4e13f03f8a8c.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weui-cells {
+  position: relative;
+  margin-top: 1.17647059em;
+  color: #fff;
+  line-height: 1.41176471;
+  font-size: 25px;
+}
+
+.weui-cells_after-title {
+  margin-top: 0;
+}
+
+.weui-cell {
+  padding: 10px 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.weui-cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+  left: 15px;
+}
+
+.weui-cell:first-child:before {
+  display: none;
+}
+
+.weui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.weui-textarea {
+  display: block;
+  width: 100%;
+}
+
+.play-style {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 120rpx;
+  width: 100%;
+  background-color: #787878;
+}
+
+.btn-style {
+  text-align: center;
+  width: 580rpx;
+  height: 80rpx;
+  float: right;
+  margin: 20rpx;
+}
+
+/**麦克风*/
+
+.speak-style {
+  position: relative;
+  height: 240rpx;
+  width: 240rpx;
+  border-radius: 20rpx;
+  margin: 50% auto;
+  background: #26a5ff;
+}
+
+.sound-style {
+  position: absolute;
+  width: 74rpx;
+  height: 150rpx;
+  margin-top: 45rpx;
+  margin-left: 83rpx;
+}
+
+.bottle-style {
+  width: 200rpx;
+  height: 200rpx;
+  position: fixed;
+  bottom: 170rpx;
+  right: 80rpx;
+}

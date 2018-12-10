@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/write/write",
+    "pages/mine/mine",
+    "pages/get/get"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#26A5FF",
+    "navigationBarTitleText": "漂流瓶",
+    "navigationBarTextStyle":"white"
+  }
+}
