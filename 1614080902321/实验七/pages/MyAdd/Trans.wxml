@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="Tra"> 
+    <input type='text'
+            placeholder='请输入...'
+            placeholder-class='input'
+            placeholder-style='color:#ADADAD;'
+            maxlength='20'
+            cursor-spacing='30px'
+            auto-focus='true'
+            bindblur='inputBlur'
+            bindfocus='inputFocus'
+            id='Ttext'
+            name='username'
+            />
+   </view>
+   <button type="default" bindtap="tao">翻译</button>
+</view>
+ <view>
+  <image src="{{message}}" name="username"></image>
+</view>
