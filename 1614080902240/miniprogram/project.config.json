@@ -1,23 +1,19 @@
 {
-	"description": "项目配置文件",
+	"description": "项目配置文件。",
 	"packOptions": {
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true,
-		"autoAudits": false
+		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.2.3",
 	"appid": "wx78a43b1b009db1c9",
-	"projectname": "miniprogram",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
+	"projectname": "xcx0822",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
