@@ -1,0 +1,14 @@
+<!--page/index/index.wxml-->
+
+<view >
+
+ 
+ 
+ 
+<text>{{shuzu}}</text>
+<text>{{shuzu2}}</text>
+
+<button bindtap="bt">获取数据</button>
+
+ <button bindtap='bt1'>上传数据</button>
+</view>
