@@ -1,9 +1,31 @@
 {
   "pages": [
-    "pages/BirthdayAssistant/BirthdayAssistant"
-
+    "pages/index/index",
+    "pages/newbirthday/newbirthday",
+    "pages/savebirthday/savebirthday",
+    "pages/modifybirthday/modifybirthday"
   ],
-  "window": {
-    "navigationBarBackgroundColor":"#ECC0A8"
-  }
+"window": {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#d81e06",
+  "navigationBarTitleText": "生日助手",
+  "navigationBarTextStyle": "white"
+},
+"tabBar": {
+  "selectedColor": "#E1846E",
+  "list": [
+    {
+      "pagePath": "pages/newbirthday/newbirthday",
+      "text": "添加生日",
+      "iconPath": "images/new.png",
+      "selectedIconPath": "images/new.png"
+    },
+    {
+      "pagePath": "pages/savebirthday/savebirthday",
+      "text": "查找生日",
+      "iconPath": "images/save.png",
+      "selectedIconPath": "images/save.png"
+    }
+  ]
+}
 }

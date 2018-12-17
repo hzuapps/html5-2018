@@ -1,0 +1,20 @@
+<!--pages/savebirthday/savebirthday.wxml-->
+ <view class="weui-cells weui-cells_after-title">
+   <block wx:key="unique" wx:for="{{joinSumArr}}">
+     <view class="weui-panel weui-panel_access">
+       <view class="weui-panel__bd">
+         <view id='{{jsonKeyArr[item]}}' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" bindlongpress='del'>
+           <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+             <view class="weui-media-box__title">{{jsonKeyArr[item]}}</view>
+             <view class="weui-media-box__desc">生日日期：{{json[jsonKeyArr[item]].birthday}} </view>
+           </view>
+         </view>
+         <view id='{{jsonKeyArr[item]}}' bindtap='getMsg' class="weui-panel__ft">
+         <view class="weui-cell weui-cell_access weui-cell_link">
+           <view class="weui-cell__bd">修改信息</view> 
+         </view>
+       </view>
+       </view>
+     </view>
+   </block>
+ </view> 

@@ -1,0 +1,10 @@
+<!--pages/modifybirthday/modifybirthday.wxml-->
+ <form bindsubmit="formSubmit">
+   <view class='tip' style='color: {{tipStatus?"#217360":"#ff0800"}}'>{{tip}}</view>
+   <input value='{{tit}}' class='in firstIn' name="name" maxlength="20" placeholder="输入名字" />
+   <input value='{{currentInfo.birthday}}' class='in' name="birthday" maxlength="20" placeholder="输入生日" />
+   <!-- <textarea class='in firstIn' name="title" maxlength="20" placeholder="输入名字" value='{{tit}}'></textarea>
+   <textarea class='in' name="username" maxlength="20" placeholder="请输入生日" value='{{currentInfo.username}}'></textarea> -->
+   <textarea name="tip" class='textIn' placeholder="输入备注" maxlength="50" value='{{currentInfo.tip}}'></textarea>
+   <button class='submitBut' formType="submit">修改</button>
+ </form>
