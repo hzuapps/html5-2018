@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import 'weui.wxss';
+
 .container {
   height: 100%;
   display: flex;
@@ -8,3 +10,6 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+page{
+  background-color:LightGreen   ;
+}
