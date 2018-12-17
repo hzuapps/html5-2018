@@ -1,15 +1,13 @@
 //logs.js
-const util = require('../../utils/util.js')
-
+var app = getApp()
 Page({
   data: {
-    logs: []
+    navbar: ['待接单', '待完成', '已完成','已取消'],
+    currentTab: 0
   },
-  onLoad: function () {
+  navbarTap: function (e) {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+      currentTab: e.currentTarget.dataset.idx
     })
   }
 })

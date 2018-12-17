@@ -1,10 +1,55 @@
 <!--index.wxml-->
-<view>
-  <image src='./../../img/img01.png'></image>
+
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
 </view>
+ 
+<!--我要送-->
+<view hidden="{{currentTab!==0}}">
+    <view class='page-section-gap'>
+   <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    > 
+    </map>
+</view>
+
+<!--
+<view>
+  <button type='primary' bindtap='getLocation'> get center location </button>
+  <button type='primary' bindtap='moveToLocation'>移动位置</button>
+  <button type='primary' bindtap='moveToLocation01'>选择位置</button>
+
+</view>
+-->
 <view>
   Statring place :
-  <input type='text' nane="stare" id="stare" placeholder='起始地点' placeholder-style='color:#e2e2e2;'></input>
-  Destination :
-   <input type='text' naem="end" id='end' placeholder='终点' placeholder-style='color:#e2e2e2;'></input>
+  <input type='text' nane="stare" id="stare" placeholder='起始地点' placeholder-style='color:#e2e2e2;' bindtap="moveToLocation"
+    value='广东省惠州市惠城区惠州学院'></input>
+  Destination : 
+  </view>
+<view>
+   <input type='text' naem="end" id='end' placeholder='终点' placeholder-style='color:#e2e2e2;' bindtap="moveToLocation"  
+    value='{{mobileLocation.address}}'></input>
 </view>
+
+<view>
+  <button type='primary' bindtap='getLocation'> Go Go Go </button>
+</view>
+
+</view>
+ 
+
+
+
+<!--我来送-->
+<view hidden="{{currentTab!==1}}">
+    <image src='./../../img/no.png' ></image>
+</view>
+
