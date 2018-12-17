@@ -19,6 +19,12 @@
         "text": "首页"
       },
       {
+        "selectedIconPath": "pages/icon/edit.png",
+        "iconPath": "pages/icon/edit.png",
+        "pagePath": "pages/add/add",
+        "text": "编辑"
+      },
+      {
         "selectedIconPath": "pages/icon/person.png",
         "iconPath": "pages/icon/person.png",
         "pagePath": "pages/logs/logs",
