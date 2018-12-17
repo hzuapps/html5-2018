@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/recommed/recommed"
+  ],
+    "window": {
+          "backgroundTextStyle": "light",
+          "navigationBarBackgroundColor": "#000"
+    }
+  ,
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "电影分享app",
+    "navigationBarTextStyle": "while"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "影院热映",
+        "iconPath":"assert/dy-1.png",
+        "selectedIconPath":"assert/dy.png"
+      },
+      {
+        "pagePath": "pages/recommed/recommed",
+        "text": "电影推荐",
+        "iconPath":"assert/tj-1.png",
+        "selectedIconPath":"assert/tj.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "查询电影",
+        "iconPath":"assert/search-1.png",
+        "selectedIconPath":"assert/search.png"
+      }
+    ],
+    "backgroundColor":"#161616",
+    "color":"#393938",
+    "selectedColor":"green"
+  }
+}

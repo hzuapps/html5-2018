@@ -1,0 +1,18 @@
+<view class="content">
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:100%'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<import src="../template/template"/>
+<template is="movie" data="{{movies}}"/>
+
+</view>
+<!---->
+<button type="primary" bindtap="listenerButton">显示loading</button>
+<!--默认隐藏-->
+<loading hidden="{{hiddenLoading}}">正在加载</loading>
