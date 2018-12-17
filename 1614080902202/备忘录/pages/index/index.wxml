@@ -1,0 +1,21 @@
+
+<view class = "container">
+  <view class = "today">
+    <text>{{Today}}</text>
+  </view>
+</view>
+<view class = "additem">
+   <view class = "add">
+     <image class = 'plus' src = '../../image/q1.png' />
+     <input value = "{{input}}" auto-focus  class = "InputAdd" placeholder='输入备忘的内容' bindinput='AddInput' bindconfirm='AddConfirm'/>
+   </view> 
+ </view>
+ <view class = "todo-today1">
+    <view class = "todo-today">
+      <view class = "today-item" wx:for = "{{TodayList}}" wx:key="{{ index }}" bindtap="toggleTodoHandle" id = "{{index}}"   >
+        
+        <text class = "{{item.completed ? 'itemdescriptiontcompleted':'itemdescriptiont'}}" >{{item.description}}</text>
+        <icon class = 'itemremove' type = 'clear' size = '20' color = "white" bindtap="removeTodoHandle" id = '{{index}}' />
+     </view>
+   </view>
+ </view>
