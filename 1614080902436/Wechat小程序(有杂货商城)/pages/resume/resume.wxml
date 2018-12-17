@@ -1,0 +1,34 @@
+<view id="head">
+  <view id="head-con">
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+    <open-data type="userAvatarUrl"></open-data>
+    <text class="head-con-desc">2017年开始学习前端知识</text>
+    <text class="head-con-desc">2018年着手于小程序开发</text>
+    <text class="head-con-desc">2020年毕业于惠州学院软件工程</text>
+    <view class="cls"></view>
+  </view>
+</view>
+<view id="main">
+  <view id="main-info">
+    <view class="main-info-summary"><text>个人概况</text></view>
+    <view wx:for="{{infoList}}" class="main-info-con"><text class="main-info-title">{{item.title}}</text><text class="main-info-desc">{{item.desc}}</text></view>
+  </view>
+  <view id="main-occupation">
+    <view class="main-info-summary"><text>求职意向</text></view>
+    <view>
+      <view class="main-occ-item" wx:for="{{occList}}">
+        <view class="main-occ-item-img"><image src="{{item.src}}"></image></view>
+        <view class="main-occ-item-desc"><text class="main-occ-name">{{item.name}}</text><text class="main-occ-salary">{{item.sal}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='footer'>
+  <view class='footer_list' data-id='{{index}}' catchtap='Navigation' wx:for="{{listInfo}}" data-index="{{index}}" wx:key="this">
+    <view class="footer-icon iconfont {{item.clas}}"></view>
+    <view class="footer-text {{item.clas2}}">{{item.text}}</view>
+  </view>
+</view>
+
+
+

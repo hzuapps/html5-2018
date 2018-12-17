@@ -1,0 +1,75 @@
+.cls
+{
+  clear:both;
+}
+/*全局设置*/
+.home-swiper swiper img,
+#main
+{
+  width: 100%;
+  height: auto;
+}
+/* 搜索框样式 */
+.search
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+
+  height:75rpx;
+  margin:15rpx auto;
+}
+.search input
+{
+  font-size:28rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex: 1;
+}
+.search image
+{ 
+  width:45rpx;
+  height:45rpx;
+  margin:0 30rpx;
+  align-items: center;
+}
+/*main块样式*/
+#main
+{
+  padding:30rpx 0;
+  background:#f8f8f8;
+}
+.item
+{
+  width:min-content;
+  float:left;
+  margin-top:30rpx;
+  overflow: hidden;
+  line-height:1.2;
+}
+.item:nth-child(odd)
+{
+  margin-left:32.5rpx;
+  margin-right:12.5rpx;
+}
+.item:nth-child(even)
+{
+  margin-left:12.5rpx;
+  margin-right:32.5rpx;
+}
+.item image
+{
+  width:330rpx;
+  height:calc(330rpx / 1.77);
+  border-radius: 10rpx;
+}
+.item .item-desc view
+{
+  color:#555;
+  font-size:28rpx;
+}
+.item .item-desc text
+{
+  color:#999;
+  font-size:24rpx;
+}

@@ -2,43 +2,154 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>resume-weui</title>
-	<style>blockquote,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0}body{font-family:"Microsoft YaHei",Helvetica,"Hiragino Sans GB",Arial,sans-serif;font-size:13px;line-height:18px;color:#737373;background-color:#fff;margin:10px 13px 10px 13px}table{margin:10px 0 15px 0;border-collapse:collapse}td,th{border:1px solid #ddd;padding:3px 10px}th{padding:5px 10px}a{color:#0069d6}a:hover{color:#0050a3;text-decoration:none}a img{border:none}p{margin-bottom:13px;font-family:"Microsoft YaHei"}h1,h2,h3,h4,h5,h6{color:#404040;line-height:36px}h1{margin-bottom:18px;font-size:30px}h2{font-size:24px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:13px}hr{margin:0 0 19px;border:0;border-bottom:1px solid #ccc}blockquote{padding:13px 13px 21px 15px;margin-bottom:18px;font-family:georgia,serif;font-style:italic}blockquote:before{content:"\201C";font-size:40px;margin-left:-10px;font-family:georgia,serif;color:#eee}blockquote p{font-size:16px;font-weight:300;line-height:18px;margin-bottom:0;font-style:italic}code,pre{font-family:Monaco,Andale Mono,Courier New,monospace}code{background-color:#fee9cc;color:rgba(0,0,0,.75);padding:1px 3px;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}pre{display:block;padding:14px;margin:0 0 18px;line-height:16px;font-size:11px;border:1px solid #d9d9d9;white-space:pre-wrap;word-wrap:break-word}pre code{background-color:#fff;color:#737373;font-size:11px;padding:0}sup{font-size:.83em;vertical-align:super;line-height:0}*{-webkit-print-color-adjust:exact}@media screen and (min-width:914px){body{width:854px;margin:10px auto}}@media print{body,code,h1,h2,h3,h4,h5,h6,pre code{color:#000}pre,table{page-break-inside:avoid}}</style>
-		<link rel="stylesheet" href="css-weui/style.css">
+	<title>resume</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" >
+	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.css">
+	<link rel="stylesheet" href="css-weui/resume.css">
+	<script src="script.js"></script>
+	<script>
+		window.onload=function(){
+			var submit=document.getElementById('sub'),
+				mask=document.getElementById('mask'),
+				resume=document.getElementById('resume'),
+				sub_s=document.getElementById('sub-s'),
+				sub_f=document.getElementById('sub-f'),
+				comment=document.getElementById('comment');
+
+			submit.onclick=function(){
+				//阴影遮蔽
+					mask.style.display="block";
+					mask.className="mask";
+					resume.className="resume";
+				//显示反馈框
+				if(comment.value==="")
+				{
+					sub_f.style.opacity=1;
+					sub_f.style.display="block";
+					
+				}
+				else
+				{
+					sub_s.style.opacity=1;
+					sub_s.style.display="block";
+				}
+				//迟2秒后关闭所有
+				var timer=setTimeout(function(){
+					mask.style.opacity=0;
+					sub_s.style.opacity=0;
+					sub_f.style.opacity=0;
+					//迟1秒
+					setTimeout(function(){
+						mask.className="";
+						mask.style.display="none";
+						sub_s.style.display="none";
+						sub_f.style.display="none";
+					},2000);
+					
+					clearTimeout(timer);
+				},2000);
+				resume.className="";
+				mask.style.display="inherit";
+				mask.style.opacity=1;
+			}
+		}
+	</script>
 </head>
-<body>
+<body>	
 	<div id="resume">
-		<header>
-			<div class="img">
-				<img src="img/head.jpg" alt="photo">
-			</div>
-			<div class="name">
-				<p>许伟杰</p>
-				<p>Soft1614080902436</p>
-				<p>20岁 | 16级学生 | 15820906775 | 310341802@qq.com</p>
-			</div>
-		</header>
-		<main>
-			<div class="con">
-				<div class="con-item">
-					<div class="title"><p>求职意向</p></div>
-					<div class="intro"><p class="intro-con">前端 | 珠三角地区</p></div>
-				</div>
-				<div class="con-item">
-					<div class="title"><p>教育背景</p></div>
-					<div class="intro"><p class="intro-con">2020年：惠州学院软件工程专业</p></div>
-				</div>
-				<div class="con-item">
-					<div class="title"><p>技能特长</p></div>
-					<div class="intro"><ul class="intro-con"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java、C、C++</li></ul></div>
-				</div>
-				<div class="con-item">
-					<div class="title"><p>自我评价</p></div>
-					<div class="intro"><p class="intro-con">目前正在学习前端，有意向学习微信小程序开发，本人学习热情高且具有较高的审美及编程能力，对于小程序开发尚未接触，善于沟通、为人乐观。</p></div>
+		<div class="head">
+				<div class="head-con">
+					<img src="img/head.jpg" alt="photo">
+					<div class="weui-article">
+						<p>许伟杰</p>
+						<p style="font-size: 80%">Soft1614080902436</p>
+					</div>
 				</div>
 			</div>
-		</main>
+			<div class="main">
+				<div class="main-con">
+					<article class="icon-my iconfont">概况</article>
+					<div class="weui-cell">
+					    <div class="weui-cell__bd">
+					        <p>性别</p>
+					    </div>
+					    <div class="weui-cell__ft">男</div>
+					</div>
+					<div class="weui-cell">
+					    <div class="weui-cell__bd">
+					        <p>学历</p>
+					    </div>
+					    <div class="weui-cell__ft">本科</div>
+					</div>
+					<div class="weui-cell">
+					    <div class="weui-cell__bd">
+					        <p>政治面貌</p>
+					    </div>
+					    <div class="weui-cell__ft">团员</div>
+					</div>
+					<div class="weui-cell">
+					    <div class="weui-cell__bd">
+					        <p>求职意向</p>
+					    </div>
+					    <div class="weui-cell__ft">前端</div>
+					</div>
+					<div class="weui-cell">
+					    <div class="weui-cell__bd">
+					        <p>电子邮箱</p>
+					    </div>
+					    <div class="weui-cell__ft">310341802@qq.com</div>
+					</div>
+				</div>
+				<div class="main-con">
+					<article class="icon-jiaoyu iconfont">教育</article>
+					<div class="time-line">
+							<div class="time-cell">
+								<p class="time-desc">2010-2013</p>
+								<p class="time-school">就读于东莞市虎门第三中学</p>
+							</div>
+							<div class="time-cell">
+								<p class="time-desc">2013-2016</p>
+								<p class="time-school">就读于东莞市第十高级中学</p>
+							</div>
+							<div class="time-cell">
+								<p class="time-desc">2016-2020</p>
+								<p class="time-school">就读于惠州学院软件工程专业</p>
+							</div>
+					</div>
+				</div>
+				<div class="main-con">
+					<article class="icon-gongju iconfont">技能</article>
+					<section>	
+						<p>熟悉H5+CSS3前端开发、bug解决</p>
+						<p>熟练PS，具有良好的审美水平</p>
+						<p>掌握Java、C++、C等编程语言</p>
+						<p><a href="https://github.com/310341802" class="external">2018年：于github上开发微信小程序</a></p>
+					</section>
+				</div>
+				<div class="main-con">
+					<article>〓简介</article>
+					<section class="introduce">	
+						<p>目前正在学习前端、微信小程序开发，具有良好的前端书写经验，熟悉H5+CSS3，熟悉前端BUG解决及浏览器兼容开发，本人学习热情高且具有较高的审美及编程能力，善于沟通、为人乐观。后期学习后端开发，并朝着全栈开发方向前进。</p>
+					</section>
+					<article>〓留言</article>
+					<section>
+							<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+							<button id="sub">提交</button>
+					</section>
+				</div>
+			</div>
+			<footer>
+				<div>
+					<article>关于初心</article>
+					<section>做简历的需求来源于老师，但其实开发的过程还是挺快乐的，需要考虑到配色、布局等问题，所以就有所收获；本网页为作者业余时间开发，不定期会更新，不断完善优化。朝着全栈的方向前进！</section>
+					<p>2018，不忘初心，砥砺前行</p>
+					<p>Designed by WeiMu</p>
+				</div>
+			</footer>
+		
 	</div>
-	
+	<div id="mask"></div>
+	<div id="sub-s"><p><span>✓</span>提交成功</p></div>
+	<div id="sub-f"><p><span>Ⅹ</span>不可为空</p></div>
 </body>
 </html>
