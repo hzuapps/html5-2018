@@ -1,7 +1,7 @@
 <!--logs.wxml-->
 <view class="content">
-    <view class="title" >
-        <text class="pull-left">{{"<<"}}</text>{{"立论阶段"}}<text class="pull-right">{{">>"}}            </text>
+    <view class="title" bindtap="changeStep">
+        <text class="pull-left">{{"<<"}}</text>{{currentStep.name}}<text class="pull-right">{{">>"}}            </text>
     </view>
 
     <view class="time">
@@ -11,8 +11,6 @@
         </view>
         <view class="circle white first">
         </view>
-
-
         <view class="big-circle blue second">
         </view>
          <view class="big-circle right light-blue second">
@@ -25,6 +23,8 @@
         <button class="btn" bindtap="leftStart">正方发言</button>
         <button class="btn" bindtap="rightStart">反方发言</button>
     </view>
-
+    <view class="desc">
+        <text class='ziti'>{{currentStep.desc}}</text>
+    </view>
 
 </view>

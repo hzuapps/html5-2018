@@ -40,7 +40,9 @@
     background-color: #0099cc;
     color: white;
 }
-
+.ziti{
+  color: black;
+}
 .first{
     left: 15rpx;
 }

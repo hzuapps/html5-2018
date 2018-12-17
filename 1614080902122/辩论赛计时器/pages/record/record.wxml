@@ -1,0 +1,20 @@
+<block wx:if="{{logs.length}}">
+	<scroll-view class="container" scroll-y="true">
+	  <view class="log panel">
+	  	<view class="log_item" wx:for="{{logs}}" wx:for-index="$index" wx:for-item="log">
+	  		<text>{{log.desc}}</text>
+	  		
+	  	</view>
+	  </view>
+		
+	</scroll-view>
+
+
+</block>
+<block wx:else>
+	<view class="nodata">
+		<image class="nodata_img" src="../../assets/nodata.png"></image>
+		<text class="nodata_text">暂无记录</text>
+	</view>
+</block>
+

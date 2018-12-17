@@ -1,25 +1,32 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/record/record",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#3197ed",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
-    "color": "#ddd",
+    "color": "#dddddd",
     "selectedColor": "#3cc51f",
-    "backgroundColor": "#336699",
-    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "计时",
         "iconPath": "/assets/time.png",
         "selectedIconPath": "/assets/time-selected.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "iconPath": "/assets/config.png",
+        "selectedIconPath": "/assets/config-selected.png",
+        "text": "记录"
       },
       {
         "pagePath": "pages/logs/logs",
