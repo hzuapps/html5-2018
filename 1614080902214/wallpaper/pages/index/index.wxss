@@ -1,0 +1,15 @@
+
+
+.img1{
+  width: 800rpx;
+  height: 960rpx;
+}
+
+.btn{
+    width: 80%;
+    background-color:green;
+    margin-left: 75rpx;
+    color: black;
+    border-radius: 98rpx; 
+
+}
