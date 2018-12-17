@@ -2,6 +2,36 @@
   width:100%;
   height: 150%;
 }
+.search{
+ display: flex;
+  width:500px;
+  background-color: #ff4081;
+  height: 41px;
+}
+.searchimage{
+  width:18px;
+  height: 18px;
+  padding-left: 7px;
+  padding-top:4px;
+}
+.searchbar{
+  display: flex;
+  margin-left: 10px;
+  margin-top:5px;
+  height:26px;
+  width: 340px;
+  background-color: white;
+  border-radius: 5px;
+}
+.searchbarbar{
+  width: 300px;
+  margin-left: 2%;
+  margin-top:5px;
+}
+.placeholder{
+  color: #ff4081;
+  opacity: 0.5;
+}
 .text1{
   display: flex;
   font-size:90%;
@@ -26,7 +56,7 @@
   width:150px;
   height: 150px;
   margin-top: 5%;
-  margin-left: 8%;
+  margin-left: 6%;
   border-radius: 20px;
   box-shadow: 1px 1px 15px 5px #dbdbdb;
 }
@@ -34,7 +64,7 @@
   width:150px;
   height: 150px;
   margin-top: 5%;
-  margin-left: 11%;
+  margin-left: 6%;
   border-radius: 20px;
   box-shadow: 1px 1px 15px 5px #dbdbdb;
 }

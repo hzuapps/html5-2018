@@ -1,0 +1,9 @@
+<!--pages/album/album.wxml-->
+<view>
+
+
+</view>
+
+<image src='{{radioList[0].picUrl}}'></image>
+<image src='{{radioList[1].picUrl}}'></image>
+<image src='{{radioList[2].picUrl}}'></image>

@@ -1,3 +1,10 @@
+<view class='search'>
+<form bindsubmit='formSubmit'>
+<view class='searchbar'><image src='/images/shousuo.png' class='searchimage'></image><input type='text' placeholder='搜索您喜爱的音乐' class='searchbarbar' placeholder-class='placeholder'>
+></input>
+</view>
+</form>
+</view>
 <view>
 <swiper indicator-dots='true' autoplay='true' indicator-active-color='red' circular='true' previous-margin='10px' next-margin='10px' class='swiper1'>
 <swiper-item>
@@ -12,8 +19,11 @@
 <view><text class='text1'>为你推荐</text></view>
 </view>
 <view>
-<view><image src='{{imageUrl2}}' class='picture2'></image><image src='{{imageUrl3}}' class='picture3'></image></view>
+<view><image src='{{imageUrl2}}' class='picture2' ></image><image src='{{imageUrl3}}' class='picture3' bindtap='jump'></image></view>
 </view>
+<!-- audio.wxml -->
+
+
 <view>
 <text class='text2'>Cocoon Crush</text>
 <text class='text3'>The Drought</text>

@@ -1,32 +1,33 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/album/album"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "backgroundColor": "#ff4081",
     "navigationBarBackgroundColor": "#ff4081",
     "navigationBarTitleText": "Pop Leading",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
-  "tabBar":{
+  "tabBar": {
     "backgroundColor": "#F7F7F7",
     "color": "#777777",
     "selectedColor": "#ff4081",
     "borderStyle": "white",
-    "list":[
+    "list": [
       {
-        "iconPath":"images/shouye.png",
-        "selectedIconPath":"images/shouye2.png",
-        "pagePath":"pages/index/index",
-        "text":"首页"
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye2.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
       },
       {
         "iconPath": "images/yinyue.png",
-        "selectedIconPath":"images/yinyue2.png",
-        "pagePath":"pages/index/index",
-        "text":"收藏"
+        "selectedIconPath": "images/yinyue2.png",
+        "pagePath": "pages/index/index",
+        "text": "收藏"
       },
       {
         "iconPath": "images/yonghu.png",
@@ -35,6 +36,5 @@
         "text": "个人中心"
       }
     ]
-
   }
 }
