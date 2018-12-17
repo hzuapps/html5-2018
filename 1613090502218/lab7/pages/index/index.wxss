@@ -1,0 +1,15 @@
+/**index.wxss**/
+page{
+  background-color: #efefef 
+}
+.textarea-type{
+  margin-top: 20rpx;
+  width: 100%;
+  height:200rpx;
+  background-color: #FCFCFC
+}
+.button-type{
+  margin-top: 10rpx;
+  width:100%;
+  background-color: #32CD32
+}
