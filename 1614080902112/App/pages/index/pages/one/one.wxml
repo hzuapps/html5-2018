@@ -1,0 +1,11 @@
+<!--pages/index/pages/one/one.wxml-->
+<view class="section">
+<form bindsubmit='onLoad'>
+  <text>项目名称：</text><text bindtap='na'>{{Name}}</text>
+  <text>\n</text>
+  <text>项目负责人：</text><text bindtap='pe'>{{People}}</text>
+  <text>\n</text>
+  <text>项目详情：</text><text bindtap='nei'>{{Neirong}}</text>
+  <button bindtap='downland'>下载此商业计划书</button>
+  </form>
+</view>

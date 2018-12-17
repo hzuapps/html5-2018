@@ -1,10 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/index/pages/one/one",
     "pages/finding/finding",
     "pages/creating/creating",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/logs/logs",
+    "pages/one/one",
+    "pages/images"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,26 +19,26 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "pages/index/index.png",
-      "selectedIconPath": "pages/index/index.png"
+      "iconPath": "pages/images/indexx.png",
+      "selectedIconPath": "pages/images/indexx.png"
     },
     {
       "pagePath":"pages/finding/finding",
       "text":"寻找项目",
-      "iconPath": "pages/finding/finding.png",
-      "selectedIconPath": "pages/finding/finding.png"
+      "iconPath": "pages/images/findingg.png",
+      "selectedIconPath": "pages/images/findingg.png"
     },
     {
       "pagePath": "pages/creating/creating",
       "text": "创建项目",
-      "iconPath": "pages/creating/creating.png",
-      "selectedIconPath": "pages/creating/creating.png"
+      "iconPath": "pages/images/creatingg.png",
+      "selectedIconPath": "pages/images/creatingg.png"
     },
     {
       "pagePath": "pages/me/me",
       "text": "我",
-      "iconPath": "pages/me/me.png",
-      "selectedIconPath": "pages/me/me.png"
+      "iconPath": "pages/images/mee.png",
+      "selectedIconPath": "pages/images/mee.png"
     }]
   }
 }
