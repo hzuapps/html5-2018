@@ -2,7 +2,9 @@
   "pages": [
     "pages/idx/idx",
     "pages/logs/logs",
-    "pages/t_table/t_table"
+    "pages/t_table/t_table",
+    "pages/connect/connect",
+    "pages/connect_send/connect_send"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,7 +32,7 @@
       {
         "selectedIconPath": "img/view_select.png",
         "iconPath": "img/view.png",
-        "pagePath": "pages/idx/idx",
+        "pagePath": "pages/connect/connect",
         "text": "追更"
       }
     ]

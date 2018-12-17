@@ -1,11 +1,28 @@
 "use strict";
+var util = require('/utils/util.js');
 Object.defineProperty(exports, "__esModule", { value: true });
 App({
-  
-    onLaunch: function () {
+  alerts: function (e) {
+    wx.showToast({
+      title: e,
+      icon: 'none',
+      duration: 5000
+    });
+  },
+    Requestfun:function(){
+      var time = util.formatDate(new Date());
+      let date = util.getDates(1, time);
+      var today=date[0].week;
+      console.log(today);
+      if(today==this.globalData.today)
+        {
+          console.log("today true");
+          return;
+        }
+      var _this = this;
       wx.request({
-        //url: 'http://120.79.37.250/cgi-bin/test.py', //暂无域名
-        url:'https://raw.githubusercontent.com/heweisheng/html5-2018/master/1614080902425/test.json',
+        url: 'https://heweisheng.top/cgi-bin/test.py',
+        //url:'https://raw.githubusercontent.com/heweisheng/html5-2018/master/1614080902425/test.json',
         data: String,
         header: {
           'content-type': 'application/json' // 默认值
@@ -14,28 +31,18 @@ App({
           wx.setStorage({
             key: 'mes',
             data: res.data,
-            /*success:function(res){
-              console.log('成功');
-              wx.getStorage({
-                key: 'mes',
-                success: function (res) { console.log(res)},
-              })
-            }*/
           })
-          //console.log(res.data)
+          _this.globalData.update = 1
+          _this.globalData.today=today
+        },
+        fail(res) {
+          _this.globalData.today=0
+          _this.alerts("网络好像不太好")
         }
       })
-        //downloadFile('test')
-        /*wx.downloadFile({
-          url: 'http://120.79.37.250/cgi-bin/test.py',
-          //header: { 'content-type': 'text/json;charset=UTF-8'},
-          success: function (res) {
-            filePath: res.tempFilePath
-            console.log(res.tempFilePath);
-            },
-          fail: function(res) {},
-          //complete: function(res) {},
-        })*/
+    },
+    onLaunch: function () {
+        this.Requestfun();
         var _this = this;
         var logs = wx.getStorageSync('logs') || [];
         logs.unshift(Date.now());
@@ -59,5 +66,5 @@ App({
             }
         });
     },
-    globalData: {}
+    globalData: {update:0,today:""}
 });

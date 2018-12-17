@@ -6,8 +6,8 @@ Page({
    */
   data: {
     imgUrls: [
-      {url:'../../img/sao.jpg',text:'hello',video_url:'https://www.bilibili.com'},
-      { url: '../../img/shilaimu.jpg', text: 'world',video_url: 'https://www.bilibili.com'}
+      {url:'../../img/sao.png',text:'hello',video_url:'https://www.bilibili.com'},
+      { url: '../../img/shilaimu.png', text: 'world',video_url: 'https://www.bilibili.com'}
     ],
     indicatorDots: true,
     autoplay: true,
@@ -21,8 +21,9 @@ imgHeight:function(e){
   var imgh=e.detail.height;//图片高度
   var imgw=e.detail.width;//图片宽度
   var swiperH=winWid*imgh/imgw + "px"
+  var hight = wx.getSystemInfoSync().windowHeight+"px";
   this.setData({
-    Height:swiperH//设置高度
+    Height:hight//设置高度
   })
 },
   /**
