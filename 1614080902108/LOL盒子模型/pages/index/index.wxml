@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<text class='my' style='align:center' font-size='length'>欢迎来到英雄联盟</text>
+ <view>
+  <input type='text' 
+    placeholder='召唤师ID' 
+    placeholder-class='username' 
+    >
+  </input>
+</view>
+ <view>
+  <input type='text' 
+    placeholder='密码' 
+    placeholder-class='username' 
+    >
+  </input>
+</view>
+ <button type="primary" 
+  size="{{primarySize}}" 
+  loading="{{loading}}" 
+  plain="{{plain}}"
+  disabled="{{disabled}}" 
+  bindtap="primary">再次确认
+</button>
+ <view>
+  <text>我总是希望你能赢</text>
+</view>
