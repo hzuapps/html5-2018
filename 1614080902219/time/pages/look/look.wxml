@@ -1,0 +1,10 @@
+<!--pages/look/look.wxml-->
+<view>
+<block wx:for="{{times}}">
+ <view class="weui-cells weui-cells_after-title">
+            <view  bindtap="showTopTips" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">{{item}}</view>
+            </view>
+            </view>
+            </block>
+</view>
