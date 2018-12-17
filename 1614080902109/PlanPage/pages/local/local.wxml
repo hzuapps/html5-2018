@@ -1,2 +1,47 @@
-<!--pages/local/local.wxml-->
-<text>pages/local/local.wxml</text>
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__hd">计划列表</view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box">
+          <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="{{icon60}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">课表</view>
+              <view class="weui-media-box__desc">16软件1班第三学年第一学期课表</view>
+            </view>
+          </navigator>
+          <view class="weui-media-box__info weui-media-box_text" style="padding-left:15px;">
+              <view class="weui-media-box__info__meta">作者：xxx</view>
+              <view class="weui-media-box__info__meta">11/24</view>
+              <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">xxxxx</view>
+          </view>
+        </view>
+        <view class="weui-media-box">
+          <navigator url="" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="{{icon60}}" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">校历</view>
+              <view class="weui-media-box__desc">18年惠州学院校历</view>
+            </view>
+          </navigator>
+          <view class="weui-media-box__info weui-media-box_text" style="padding-left:15px;">
+              <view class="weui-media-box__info__meta">作者：xxx</view>
+              <view class="weui-media-box__info__meta">11/24</view>
+              <view class="weui-media-box__info__meta weui-media-box__info__meta_extra">xxxxx</view>
+          </view>
+        </view>
+      </view>
+      <view class="weui-panel__ft">
+        <view class="weui-cell weui-cell_access weui-cell_link">
+          <view class="weui-cell__bd">查看更多</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
