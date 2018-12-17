@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/home/home",
+    "pages/people/people",
+    "pages/calendar/calendar",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "记住生日",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#2c2c2c",
+    "list": [{
+      "pagePath": "pages/calendar/calendar",
+      "text": "日历",
+      "iconPath": "images/icon_calendar_normal.png",
+      "selectedIconPath": "images/icon_calendar_press.png"
+      },
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/icon_home_normal.png",
+      "selectedIconPath": "images/icon_home_press.png"
+    },
+    {
+      "pagePath": "pages/people/people",
+      "text": "个人",
+      "iconPath": "images/icon_people_normal.png",
+      "selectedIconPath": "images/icon_people_press.png"
+    }]
+  }
+}

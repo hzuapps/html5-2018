@@ -1,0 +1,18 @@
+<!--pages/calendar/calendar.wxml-->
+<text>pages/calendar/calendar.wxml</text>
+<view id="calendar">
+   <h4>2013年10月</h4>
+   <a href="##" rel="external nofollow" rel="external nofollow" class="a1">上月</a>
+   <a href="##" rel="external nofollow" rel="external nofollow" class="a2">下月</a>
+   <ul class="week">
+    <li>日</li>
+    <li>一</li>
+    <li>二</li>
+    <li>三</li>
+    <li>四</li>
+    <li>五</li>
+    <li>六</li>
+ 
+   </ul>
+   <ul class="dateList"></ul>
+</view> 

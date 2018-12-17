@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>个人简介</title>
+<script type="text/javascript" src="js.js"></script>
 <style type="text/css">
 html,body,p,ul,table,tr,td{margin:0;padding:0;}
 			a{text-decoration:none;}
@@ -371,11 +372,11 @@ html,body,p,ul,table,tr,td{margin:0;padding:0;}
 			<table>
 				<tr>
 					<td>
-						<form name="留言板" method="post" >
+						<form action="跳转.html" id="tijiao-form" method="post" onsubmit="return c(this)">
 							<span class="edu_t3">如果有什么意见请给我留言。虽然我一定不会看：</span>
 							<br/> 
-							<input type="text" size="80px" />
-							<input type="button" value="确认" />
+							<input id="liuyan" name="liuyan" type="text" size="80px" />
+							<button id="tijiao" type="submit">提交</button>
 						</form>
 					</td>
 				</tr>
