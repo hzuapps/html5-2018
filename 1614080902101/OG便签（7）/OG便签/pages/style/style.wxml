@@ -1,0 +1,35 @@
+<!--pages/style/style.wxml-->
+<text>用户登录</text>
+<view class='content'>
+  <view class='nav'>
+    <view class='top'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='nickname'>
+      <open-data type="userNickName"></open-data> 
+    </view>
+  </view>
+    <view class='item'>
+      <text class='left'>学号：</text>1614080902101<text class='right'>{{myinfo.no}}</text>
+    </view>
+    <view class='item'>
+      <text class='left'>姓名：</text>库里<text class='right'>{{myinfo.name}}</text>
+    </view>
+    <view class='item'>
+     <text class='left'> 班级：</text>16级软件工程一班<text class='right'>{{myinfo.classname}}</text>
+    </view>
+    <view class='item'>
+      <text class='left'>院系：</text>信息科学技术学院<text class='right'>{{myinfo.departmentname}}</text>
+    </view>
+    <view class='item' bindtap='setemail'>
+     <text class='left'> 邮箱：</text>1991322660@qq.com<text class='right' wx:if="{{myinfo.email==''|| myinfo.email==null}}">已绑定</text><text class='right' wx:else>{{myinfo.email}}</text>
+    </view>
+    <view class='item' bindtap='resetpwd'>
+     <text class='left'> 密码：</text>19970407<text class='right'>重置</text>
+    </view>
+    <view class='item' bindtap='exit'>
+      <text class='left'>退出：</text><text class='right'>>>></text>
+    </view>
+  
+</view>
+  <text>tips：我们会为您保存所用到的账号密码，以免遗忘丢失！</text>
