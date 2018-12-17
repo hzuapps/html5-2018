@@ -1,2 +1,0 @@
-# wechat-weapp-demo
-
