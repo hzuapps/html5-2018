@@ -1,33 +1,33 @@
 {
   "pages": [
-    "pages/didu/didu",
-    "pages/day/day",
+    "pages/index/index",
+    "pages/diary/diary",
     "pages/write/write"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#000",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true,
-    "navigationBarTitleText": "蔡雯之子"
+    "navigationBarTitleText": "baby成长记"
   },
-  "tabBar":{
+  "tabBar": {
     "borderStyle": "#e44",
     "backgroundColor": "#fff",
     "color": "#000",
     "selectedColor": "#0f0",
     "list": [
       {
-        "pagePath": "pages/didu/didu",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/smile.png",
         "selectedIconPath": "images/smile-fill.png"
       },
       {
-        "pagePath": "pages/day/day",
+        "pagePath": "pages/diary/diary",
         "text": "查看",
         "iconPath": "images/play-circle.png",
         "selectedIconPath": "images/play-circle-fill.png"
       }
-      ]
+    ]
   }
 }

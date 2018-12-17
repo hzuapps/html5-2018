@@ -1,0 +1,22 @@
+.container{
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.didu-banner{
+  width: 375rpx;
+  height: 375rpx;
+  border-radius: 200rpx;
+}
+
+.didu-font{
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.nav-hover{
+  color:red;
+}
