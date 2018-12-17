@@ -1,0 +1,14 @@
+.section{
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+}
+.section view{
+  margin-right: 20rpx;
+}
+.btn-area{
+  margin: 20rpx;
+}
+button{
+  margin: 10rpx 0;
+}

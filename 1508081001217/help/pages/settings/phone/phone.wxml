@@ -1,0 +1,10 @@
+<!--pages/settings/phone/phone.wxml-->
+<view>
+<button class='email' >邮箱:438139571@qq.com
+</button>
+</view>
+
+<view>
+<button class='email' >微信:AtlassLee
+</button>
+</view>

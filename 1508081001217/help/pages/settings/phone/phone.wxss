@@ -1,0 +1,10 @@
+/* pages/settings/phone/phone.wxss */
+.email {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color:#da4325;
+  color: rgb(7, 31, 36);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+}

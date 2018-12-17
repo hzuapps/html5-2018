@@ -1,0 +1,73 @@
+@import "/tutorial-list/tutorialList.wxss";
+.container{
+  border: 2rpx black solid;
+  width: 750rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  background-color:#da4325;
+  color:  rgb(7, 31, 36);
+  border-radius: 98rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn3 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color:#da4325;
+  color: rgb(7, 31, 36);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn4 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color:#da4325;
+  color: rgb(7, 31, 36);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn5 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color:#da4325;
+  color: rgb(7, 31, 36);
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+page{
+  background-color: lightcyan;
+}
+
+.btncoma {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.bleeding {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.cramp {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+

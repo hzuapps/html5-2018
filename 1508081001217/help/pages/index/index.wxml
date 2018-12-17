@@ -1,0 +1,24 @@
+<!--wxml-->
+<view class='container'>
+    急救，争分夺秒！
+    \n保持冷静！
+    \n准确判断危机情景！
+</view>
+
+<view>
+<button class='btn3'   bindtap='jumpPage1'>昏迷
+</button>
+</view>
+
+<view>
+<button class='btn4'   bindtap='jumpPage2'>烧烫伤
+</button>
+</view>
+
+<view>
+<button class='btn5'   bindtap='jumpPage3'>抽筋
+</button>
+</view>
+
+
+
