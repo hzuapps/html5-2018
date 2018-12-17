@@ -1,0 +1,35 @@
+/* pages/login/login.wxss */
+.login_container {
+  margin-top: 30px;
+}
+
+.login_view {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  line-height: 45px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.login_text {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  font-size: 12px;
+  border: 1px solid rgb(241, 242, 243);
+  padding: 0 12px;
+  width: calc(100% - 70px);
+  border-radius: 4px;
+}
+
+.login_lable {
+  float: left;
+  font-size: 12px;
+  width: 40px;
+}
+
+.login_button {
+  width: 150px;
+  background: green;
+  color: #fff;
+}

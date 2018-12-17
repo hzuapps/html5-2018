@@ -1,0 +1,17 @@
+<!-- is="toast" 匹配组件中的toast提示  如果用dialog的话这就是dialog -->
+<template is="toast" data="{{ ...$wux.toast }}" />
+<view class="login_container">
+<form bindsubmit='submitLogin'>
+  <view class="login_view">
+    <text class="login_lable">账号：</text>
+    <input id="username" name="username" class="login_text" placeholder="请输入登录账号"/>
+  </view>
+  <view class="login_view">
+    <text class="login_lable">密码：</text>
+    <input id="password" name="password" class="login_text" placeholder="请输入密码" password="true"/>
+  </view>
+  <view>
+    <button class="login_button" bindtap="loginAction" formType="submit">登录</button>
+  </view>
+  </form>
+</view>

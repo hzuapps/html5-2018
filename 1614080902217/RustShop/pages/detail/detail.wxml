@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view class='table'>
+
+  <view class='tr'>
+  <view class='th'>支付时间</view>
+  <view class='th'>金额</view>
+  </view>
+
+  <view class='tr' wx:for="{{orderList}}" wx:key="{{index}}"> 
+  <view class='td'>{{item.finishedTime}}</view>
+  <view class='td'>￥{{item.price}}</view>
+  </view>
+
+ </view>
