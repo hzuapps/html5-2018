@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/One/One",
+    "pages/Two/Two"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "简历助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/11.png",
+        "selectedIconPath": "pages/image/1.png"
+      },
+      {
+        "pagePath": "pages/One/One",
+        "text": "个人简历",
+        "iconPath": "pages/image/22.png",
+        "selectedIconPath": "pages/image/2.png"
+      },
+      {
+        "pagePath": "pages/Two/Two",
+        "text": "设置",
+        "iconPath": "pages/image/33.png",
+        "selectedIconPath": "pages/image/3.png"
+      }
+    ]
+  }
+}
