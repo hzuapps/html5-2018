@@ -3,7 +3,6 @@
 body {
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	background-color: #FFFFFF;
-	margin:0;
 }
 .container{
 	background-color: #FFFFFFF;
@@ -79,13 +78,11 @@ body {
     background: url(../img/row.png);
 }
 section{
-    margin-left:20%;
-	margin-right:20%;
 	display: inline-block;
 	background-color:#E1DFC6;
+	margin-left: 20%;
+	margin-right:20%;
 }
 .meaasge{
    padding-top:40px;
 }
-
-
