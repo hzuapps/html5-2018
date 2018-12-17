@@ -1,0 +1,14 @@
+<view>
+  <swiper class='swiper' autoplay indicator-dots>
+    <swiper-item>
+      <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1810842878,1553657162&fm=26&gp=0.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3383359464,2706170888&fm=26&gp=0.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+{{name}}
+<input class='input1' type="text" bindinput='valueInput'/>
+<button class='button1' bindtap='clickBtn'>发送</button>

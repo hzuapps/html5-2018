@@ -1,0 +1,19 @@
+/* pages/chat/chat.wxss */
+.swiper image{
+ width: 100%;
+ height:100%
+}
+.input1{
+  border: 1 solid 1px;
+  position: fixed;
+  width: 100%;
+  bottom: 150rpx;
+  background-color: pink;
+  padding:5px;
+}
+.button1{
+  position: fixed;
+  width: 100%;
+  bottom: 30rpx;
+  background-color: green
+}

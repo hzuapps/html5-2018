@@ -6,3 +6,9 @@
 .log-item {
   margin: 10rpx;
 }
+.button2{
+  position: fixed;
+  width: 100%;
+  bottom: 30rpx;
+  background-color: green
+}

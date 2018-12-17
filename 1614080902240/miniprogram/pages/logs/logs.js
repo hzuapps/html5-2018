@@ -3,13 +3,22 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    logs: [],
+    history:'Hello!小老弟',
+    abc:null
+  },
+  clickBtn: function () {
+    this.setData({
+      abc: this.data.history,
+    })
+    this.setData({
+      history: this.data.abc +' \n ' + getApp().globalData.userInfo 
+    })
   },
   onLoad: function () {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+      abc:history,
+      history: getApp().globalData.userInfo
     })
   }
 })
