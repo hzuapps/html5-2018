@@ -1,0 +1,15 @@
+<view class='all'>
+<view class="about">
+<text style='text-align:left'>产品名称：日历签到</text>
+
+</view>
+
+<view class='about'>
+<text class='c' >作者</text>
+<text>鲁班</text>
+<text class="c">邮箱</text>
+<text>326971548@qq.com</text>
+<text class="c">GitHub</text>
+<text>github.com/LyL111</text>
+</view>
+</view>

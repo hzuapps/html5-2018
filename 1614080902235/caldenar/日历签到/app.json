@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/First/First",
+    "pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "日历签到",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar": {
+  "color": "#666",
+  "selectedColor": "#56abe4",
+  "backgroundColor": "#ddd",
+  "borderStyle": "black",
+  "list": [
+    {
+      "pagePath": "pages/First/First",
+     
+      "text": "首页"
+    },
+    {
+      "pagePath": "pages/index/index",
+   
+      "text": "日历"
+    },
+    {
+      "pagePath": "pages/about/about",
+
+      "text": "关于我"
+    }
+  ],
+  "position": "bottom"
+}}
