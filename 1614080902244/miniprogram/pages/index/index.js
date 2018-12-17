@@ -1,54 +1,53 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+  inputValue:[]
+
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  onShow:function(options){
+  var that=this;
+
+    wx.getStorage({
+      key: 'addText',
+      success: function (res) {
+        console.log(res);
+        that.setData({
+          inputValue:res.data
+        })
+      },
     })
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
+  delete: function (e) //若用户点击返回键，弹出框提示
+   {
+    var that = this;
+    var inputvalue = that.data.inputvalue;
+    var addText = e.currentTarget.dataset.addText;               
+    wx.showModal({
+      title: '提醒',
+      content: '是否删除',
+      confirmText: "确定",
+      cancelText: "取消",
+      success: function (res) {
+        console.log(res);
+        if (res.confirm) {
+        console.log('用户点击确定');
+       var dataid = e.currentTarget.dataset.addText - 1;
+          console.log(dataid)
+          // 删除数组对应的数据内容
+          var inputValue = that.data.inputvalue;
+          that.data.inputValue.splice(dataid, 1)
+          //判断数据的长度
+          var len = that.data.inputValue.length;
+          //通过判断数组的长度来决定是否显示隐藏的部分
+          that.setData({
+            inputValue: that.data.inputValue
           })
+        } else {
+          console.log('用户点击取消')
         }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      }
     })
   }
 })

@@ -1,13 +1,18 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view>
+<block wx:for="{{inputValue}}" wx:key="{{addText}}">
+<view class="weui-cells weui-cells_after-title">
+<view  class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap='delete' data-index="{{addText}}">
+<view class="weui-cell__bd">{{item}}</view>
+
 </view>
+</view>
+</block>
+</view>
+<!--<view class="container">
+<view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}"  bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{inputValue}}" wx:key="addText">
+<view class="content">{{item.content}}</view>
+<view class="del" catchtap="del" data-index="{{index}}">删除</view>
+</view>
+</view>-->
+
+
