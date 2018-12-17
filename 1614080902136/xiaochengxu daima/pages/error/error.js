@@ -5,41 +5,9 @@ Page({
   /**
    * 页面的初始数据
    */
-  
   data: {
-    //< !--搜索数据开始-- >
-    inputShowed: false,
-    inputVal: "",
-    page1: '1.1',
-    page2: '1.2',
-    page3: '1.3',
-    page4: '1.4',
-    page5: '1.5'
-  //< !--搜索数据结束-- >
+
   },
-  //<!--搜索开始.js-->
-  showInput: function () {
-    this.setData({
-      inputShowed: true
-    });
-  },
-  hideInput: function () {
-    this.setData({
-      inputVal: "",
-      inputShowed: false
-    });
-  },
-  clearInput: function () {
-    this.setData({
-      inputVal: ""
-    });
-  },
-  inputTyping: function (e) {
-    this.setData({
-      inputVal: e.detail.value
-    });
-  },
-  //< !--搜索结束.js-->
 
   /**
    * 生命周期函数--监听页面加载
