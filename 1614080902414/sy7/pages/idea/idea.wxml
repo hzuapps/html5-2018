@@ -1,0 +1,39 @@
+<!--pages/idea/idea.wxml-->
+<text class="flex-cell flex-row">新建日程</text>
+
+<view class='box'>
+  <form bindsubmit='searchBox'>
+  <view>标 题：</view>
+      <input type='text' class="itemView" name="title" placeholder="请输入事件名"></input>
+  <view>位 置：</view>
+      <input type='text'class="itemView" name='address' placeholder="请输入地点名"></input><view class='textarea-count'>
+  <view class="section__title">事 件：{{inputValue}}</view>
+   <textarea  name='txt'  placeholder='请输入今日需执行事件' bindinput="getWords" maxlength='{{maxTextLen}}'></textarea>
+   <view class='text-count-display f f-end'>{{textLen}}/{{maxTextLen}}</view>
+ </view>
+  
+      <button class='login' form-type='submit' >日程确定</button>
+  </form>
+  <text>标题:{{title}}</text>
+  <text>位置:{{address}}</text>
+   <text>事件:{{txt}}</text>
+</view>
+
+
+<!-- <view>标 题：</view>
+<view class="itemView">
+    <input class="input" name="title" placeholder="请输入事件名"/>
+  </view>
+<view>位 置：</view>
+<view class="itemView">
+    <input class="input" placeholder="请输入地点名"/>
+  </view>
+
+<view class="section__title">事 件：{{inputValue}}</view>
+
+<view class='textarea-count'>
+   <textarea placeholder='请输入今日需执行事件' bindinput="getWords" maxlength='{{maxTextLen}}'></textarea>
+   <view class='text-count-display f f-end'>{{textLen}}/{{maxTextLen}}</view>
+ </view>
+ <button bindtap="keep" form-type='submit'>确定事件</button>
+  -->

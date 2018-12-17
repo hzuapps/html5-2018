@@ -1,0 +1,22 @@
+<!--pages/my/my.wxml-->
+<text class="flex-cell flex-row">请选择时间段进行日程安排</text>
+
+<view id="panel" class="flex-column">
+  <view class="flex-cell flex-row">
+    <button bindtap="idea">06：00~~12：00</button>
+    
+  </view>
+  <view class="flex-row flex-cell">
+    <button bindtap="idea">12：00~~18：00</button>
+    
+  </view>
+  <view class="flex-row flex-cell">
+    <button bindtap="idea">18：00~~24：00</button>
+    
+  </view>
+  <view class="flex-row flex-cell">
+    <button bindtap="idea">00：00~~06：00</button>
+   
+  </view>
+ 
+</view>
