@@ -1,0 +1,32 @@
+<view class='all'>
+
+  <view class='images' >
+
+   <image src = '../../images/ww.png' mode='aspectFit'/>
+  
+  </view>
+
+  <view class='name'> 
+    <text id='name'space="nbsp">\n张忠盛\n\n</text>
+    <text id='Ename'>ZHANG ZHONG SHENG\n\n</text>
+  
+  </view>
+
+
+  <view class='intro'> 
+    <text id='bt1' space="nbsp">基本信息\n</text>
+    <text id='content1' >生日：1997.11.20\n住址：惠州学院\n电话：83838438\n邮箱：1348521443@qq.com\n</text>
+
+  </view>
+
+  <view class="section">
+    <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="请给我留言" name="textarea"/>
+      <button class='btn1' form-type="submit" > 提交 </button>
+    </form>
+  </view>
+
+  
+
+
+</view>

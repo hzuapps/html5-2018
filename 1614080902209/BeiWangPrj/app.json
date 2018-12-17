@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/person/person",
+    "pages/todo/todo"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "简约备忘录o((≧▽≦o)",
+    "navigationBarTextStyle":"black"
+    
+  },
+
+  "tabBar": {
+    "selectedColor": "#1296db",
+  "list": [
+    {
+      "pagePath": "pages/todo/todo",
+      "iconPath":"images/jishiben-1.png",
+      "selectedIconPath": "images/jishiben-2.png",
+      "text": "备忘录"
+      
+    
+    },
+    {
+      "pagePath": "pages/person/person",
+      "iconPath": "images/geren-1.png",
+      "selectedIconPath": "images/geren-2.png",
+      "text": "作者信息"
+    }
+  ]
+}
+
+
+
+
+
+
+}
+
+
+
