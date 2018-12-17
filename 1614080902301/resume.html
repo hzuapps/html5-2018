@@ -105,4 +105,40 @@
   
 }
 </script>
+  <script type="text/javascript">
+    function changeColor(){
+      for(i=0;i<4;i++){
+        if(form1.color[i].checked){
+          document.body.style.background = form1.color[i].value;
+        }
+      }
+    }
+    function che(form){
+        if(form2.text1.value==""){
+          alert("对不起，请输入内容后再提交！");
+          return false;
+        }else {
+          return true;
+        }
+    }
+  </script>
+  <form name="form1" id="form1">
+     点击下方按钮改变背景颜色：<br><br>
+    <input type="radio" name="color" value="#FFFFFF" onclick="changeColor()">白色
+    <input type="radio" name="color" value="#0000FF" onclick="changeColor()">蓝色
+    <input type="radio" name="color" value="#00FF00" onclick="changeColor()">绿色
+    <input type="radio" name="color" value="#FFFF00" onclick="changeColor()">黄色
+  </form>
+
+
+
+
+  <form name="form2"   method="post" action="pass.html" onsubmit="return che(this.form2)">
+    <textarea rows="10" cols="30" name="text1" id="text1"></textarea>
+    <input type="submit" value="提交留言"  >
+  </form>
+
+</body>
+
+</html>
 </html>
