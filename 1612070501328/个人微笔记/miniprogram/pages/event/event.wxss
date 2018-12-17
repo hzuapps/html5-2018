@@ -1,0 +1,9 @@
+.text-align {
+  margin: 20px;
+  width: 240px;
+  background-color: rgb(216, 210, 210);
+  padding: 20px;
+  border-color: blue;
+  border:1px;
+  height: 100px;
+}

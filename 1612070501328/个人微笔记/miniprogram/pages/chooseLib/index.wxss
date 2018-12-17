@@ -1,0 +1,80 @@
+@import "/template/template.wxss";
+
+.touch-item {
+  align-items: center;
+}
+
+.content {
+  height: 100rpx;
+  align-items: center;
+  padding: 40rpx;
+  line-height: 100rpx;
+  font-size: 18px;
+}
+
+.menu-item {
+  background: #66c;
+  color: white;
+  display: flex;
+  position: fixed;
+  right: 70rpx;
+  bottom: 75rpx;
+  border-radius: 60rpx;
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.menu-item-text {
+  display: flex;
+  position: fixed;
+  right: 230rpx;
+  bottom: 75rpx;
+  padding-right: 10rpx;
+  color: #4286f3;
+  font-size: 16px;
+  height: 100rpx;
+  align-items: center;
+  z-index: 2;
+}
+
+.menu-item-new {
+  display: flex;
+  position: fixed;
+  right: 230rpx;
+  bottom: 75rpx;
+  background-color: #4286f3;
+  color: white;
+  border-radius: 50rpx;
+  text-align: right;
+  width: 400rpx;
+  height: 100rpx;
+  align-items: center;
+  z-index: 2;
+}
+
+.new-notebook {
+  position: fixed;
+  top: 1rpx;
+  background-color: white;
+  background: white;
+  width: 100%;
+  height: 70rpx;
+  padding: 30rpx;
+  padding-top: 40rpx;
+  z-index: 2;
+}
+
+.mask-dark {
+  -moz-opacity: 0.9;
+  opacity: 0.90;
+  filter: alpha(opacity=90);
+}
+
+.mask-gray {
+  background-color: #f2f2f2;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
