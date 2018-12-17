@@ -1,0 +1,14 @@
+/**app.wxss**/
+.title {
+text-align: center;
+padding: 150rpx 0;
+} 
+
+.h1 {
+text-align: center;
+padding: 20rpx 0;
+}
+
+.button{
+  background-color: green
+}
