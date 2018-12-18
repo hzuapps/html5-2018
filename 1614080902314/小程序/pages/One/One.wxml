@@ -1,2 +1,65 @@
 <!--pages/One/One.wxml-->
-<text>pages/One/One.wxml</text>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+  <body>
+    <div class="container" id="container">
+      <div class="page__bd">
+        <div class="weui-cell">
+          <div class="weui-cell__bd">
+            <p>姓名</p>
+          </div>
+        <div class="weui-cell__ft">MJ_Zheng</div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <p>年龄</p>
+        </div>
+        <div class="weui-cell__ft">18</div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <p>毕业院校</p>
+        </div>
+        <div class="weui-cell__ft">惠州学院</div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <p>专业</p>
+        </div>
+        <div class="weui-cell__ft">软件工程</div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+           <p>联系电话</p>
+        </div>
+        <div class="weui-cell__ft">0752-2529142</div>
+      </div>    
+      <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+      </view>
+      <form bindsubmit="formSubmit">
+        <p>留言板</p>
+        <textarea class="weui-textarea" placeholder="留言内容" name="textarea"/>
+        <div class="weui-textarea-counter">
+							<span>0</span>
+							/200
+				</div>
+        <view class="btn-area">
+          <button formType="submit">提交</button>
+        </view>
+      </form>
+    </div>
+  </div>
+  </body>
+  </view>
+</view>
