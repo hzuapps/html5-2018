@@ -1,0 +1,70 @@
+page{
+    background-color: #FF8000;
+}
+
+.id{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.theme{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+.countdown{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.luckyNum{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.rollNum{
+    margin-top: 1rem;
+    background-color: white;
+}
+
+.rollNum view{
+    margin-left: 15%;
+    background-color: white;
+    width: 70%;
+    text-align: center;
+}
+
+.rollNum view:nth-child(1){
+    opacity: 0.5;
+    border-bottom:1px solid gainsboro;
+}
+.rollNum view:nth-child(3){
+    border-top:1px solid gainsboro;
+    opacity: 0.5;
+}
+
+.lucklyPrize{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.beginningPrize{
+    margin-top: 7.0rem;
+}
