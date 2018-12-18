@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/menu/menu",
     "pages/logs/logs",
     "pages/me/me"
   ],
@@ -19,10 +20,10 @@
         "selectedIconPath": "images/firstPage.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "排名记录",
-        "iconPath": "images/rank.png",
-        "selectedIconPath": "images/rank.png"
+        "pagePath": "pages/menu/menu",
+        "text": "菜单",
+        "iconPath": "images/cai.png",
+        "selectedIconPath": "images/cai.png"
       },
       {
         "pagePath": "pages/me/me",

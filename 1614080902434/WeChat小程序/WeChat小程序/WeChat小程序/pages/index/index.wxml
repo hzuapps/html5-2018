@@ -1,6 +1,6 @@
 <view id='view1'>
 <view>
-  <button bindtap="return2" class="return1">返回</button>
+  <button bindtap="return2" class="return1"><image class='back' src='/images/back.png'></image></button>
 </view>
 <view class="container">
   <view class="userinfo">

@@ -1,6 +1,6 @@
 /* 整体布局 */
 #view1{
-  background:rgba(255, 255, 255, 0.041);
+  background:white;
   width: 90vw;
   height: 90vh;
   /* position: relative; */
@@ -10,13 +10,22 @@
   text-align: center;
   box-sizing: border-box;
 }
+
 .return1{
-  font-size:30rpx;
   width:150rpx;
   height:70rpx;
   margin-right: 0px;
-  background:#00000033;
-  color: #000;
+}
+.back{
+   width:80rpx;
+   height:50rpx;
+   margin-right: 0px;
+}
+.back image{
+   width:80px;
+   height:50px;
+   margin-right: 0px;
+   line-height: 50px;
 }
 .container{
   margin-top: -25px;
@@ -29,7 +38,6 @@
   /* border-radius: 20%;  */
   text-align: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.397);
 }
 
 

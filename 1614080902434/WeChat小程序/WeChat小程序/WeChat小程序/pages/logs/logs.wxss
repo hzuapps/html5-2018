@@ -1,10 +1,10 @@
 /* pages/logs/logs.wxss */
 
-.tit{
-  font-size: 25px;
-  border:2px,solid,skyblue;
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
 }
-.con{
-  font-size: 20px;
-  
+.log-item {
+  margin: 10rpx;
 }

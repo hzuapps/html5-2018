@@ -1,5 +1,6 @@
-<!--pages/logs/logs.wxml-->
-<view>
-<text class='tit'>今天的美食：\n</text>
-<text class='con'>网红热狗棒和雪碧 </text>
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
 </view>
