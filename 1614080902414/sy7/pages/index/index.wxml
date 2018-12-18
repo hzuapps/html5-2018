@@ -1,0 +1,66 @@
+<!--index.wxml-->
+<text class="flex-cell flex-row">请选择日期进行日程安排</text>
+
+<view>
+<view id="panel" class="flex-column">
+<text class="flex-cell flex-row">某年某月</text>
+  <view class="flex-cell flex-row">
+    <text class="flex-cell flex-row"></text>
+    <text class="flex-cell flex-row"></text>
+    <button bindtap="gotomy">01</button>
+    <button bindtap="gotomy">02</button>
+    <button bindtap="gotomy">03</button>
+    <button bindtap="gotomy">04</button>
+    <button bindtap="gotomy">05</button>
+    <button bindtap="gotomy">06</button>
+    
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row"></text>
+    <button bindtap="gotomy">07</button>
+    <button bindtap="gotomy">08</button>
+    <button bindtap="gotomy">09</button>
+    <button bindtap="gotomy">10</button>
+    <button bindtap="gotomy">11</button>
+    <button bindtap="gotomy">12</button>
+    <button bindtap="gotomy">13</button>
+    <text class="flex-cell flex-row"></text>
+  </view>
+  <view class="flex-row flex-cell">
+     <text class="flex-cell flex-row"></text>
+    <button bindtap="gotomy">14</button>
+    <button bindtap="gotomy">15</button>
+    <button bindtap="gotomy">16</button>
+    <button bindtap="gotomy">17</button>
+    <button bindtap="gotomy">18</button>
+    <button bindtap="gotomy">19</button>
+    <button bindtap="gotomy">20</button>
+    <text class="flex-cell flex-row"></text>
+  </view>
+  <view class="flex-row flex-cell">
+     <text class="flex-cell flex-row"></text>
+    <button bindtap="gotomy">21</button>
+    <button bindtap="gotomy">22</button>
+    <button bindtap="gotomy">23</button>
+    <button bindtap="gotomy">24</button>
+    <button bindtap="gotomy">25</button>
+    <button bindtap="gotomy">26</button>
+    <button bindtap="gotomy">27</button>
+    <text class="flex-cell flex-row"></text>
+  </view>
+  <view class="flex-row flex-cell">
+    
+    <button bindtap="gotomy">28</button>
+    <button bindtap="gotomy">29</button>
+    <button bindtap="gotomy">30</button>
+    <button bindtap="gotomy">31</button>
+    <text class="flex-cell flex-row"></text>
+    <text class="flex-cell flex-row"></text>
+    <text class="flex-cell flex-row"></text>
+    <text class="flex-cell flex-row"></text>
+  </view>
+
+</view>
+
+
+</view>

@@ -1,0 +1,33 @@
+<view id="panel" class="flex-column">
+  <view class="flex-cell flex-row">
+    <text class="flex-cell flex-row">1</text>
+    <text class="flex-cell flex-row">2</text>
+    <text class="flex-cell flex-row">3</text>
+    <text class="flex-cell flex-row">4</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">1</text>
+    <text class="flex-cell flex-row">2</text>
+    <text class="flex-cell flex-row">3</text>
+    <text class="flex-cell flex-row">4</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">1</text>
+    <text class="flex-cell flex-row">2</text>
+    <text class="flex-cell flex-row">3</text>
+    <text class="flex-cell flex-row">4</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">1</text>
+    <text class="flex-cell flex-row">2</text>
+    <text class="flex-cell flex-row">3</text>
+    <text class="flex-cell flex-row">4</text>
+  </view>
+  <view class="flex-row flex-cell">
+    <text class="flex-cell flex-row">1</text>
+    <text class="flex-cell flex-row">2</text>
+    <text class="flex-cell flex-row">3</text>
+    <text class="flex-cell flex-row">4</text>
+  </view>
+
+</view>

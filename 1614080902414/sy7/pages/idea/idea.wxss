@@ -1,0 +1,25 @@
+/* pages/idea/idea.wxss */
+
+.f{
+  display: flex;
+}
+
+.f-end{
+  justify-content: flex-end;
+}
+
+.text-count-display{
+  padding: 2%;
+}
+.itemView{
+  border: 2px solid rgb(28, 17, 134);
+  border-radius: 50px;
+}
+.textarea-count {
+  border: 2px solid rgb(28, 17, 134);
+  border-radius: 5px;
+}
+
+.textarea-count textarea{
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+/* pages/my/my.wxss */
+#panel{
+  height:65vh;
+  background:#fff;
+}
+
+#panel text{
+  line-height: 13vh;
+  border-right: 1rpx solid rgb(214, 13, 13);
+  border-bottom: 1rpx solid rgb(230, 20, 20);
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-cell{
+  flex: 1;
+}

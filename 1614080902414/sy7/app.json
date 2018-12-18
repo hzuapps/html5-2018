@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/idea/idea"
+   
+ 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "日程设计",
+    "navigationBarTextStyle": "black"
+  } ,
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "设计记录",
+        "iconPath": "/img/keep.png",
+        "selectedIconPath": "/img/schedule.png"
+  
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分享",
+        "iconPath": "/img/send.png",
+        "selectedIconPath": "/img/nice.png" 
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "记录",
+        "iconPath": "/img/search.png",
+        "selectedIconPath": "/img/base.png"
+      }
+      
+    ]
+  }
+  
+}
