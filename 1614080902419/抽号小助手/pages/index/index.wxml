@@ -1,8 +1,11 @@
-<view id='lowModel'>
-  <image class='levelPrize' src='/images/levelPrize.png'></image>
-  <button class='normalButton'>普通抽奖</button>
+<view class='prizeModel'>
+    <image class='prizeImg' src='/images/higherPrize.png'></image>
+    <button class='prizeButton' bindtap='prizeOnclick'>个性化抽奖</button>
 </view>
-<view id='highterModel'>
-  <image class='higherPrize' src='/images/higherPrize.png'></image>
-  <button class='personalButton'>普通抽奖</button>
+<view class='checkModel'>
+    <image class='checkImg' src='/images/quickCheck.png'></image>
+    <view class='searchModel'>
+        <input class='search' type='' placeholder='快速搜素抽奖ID'></input>
+        <image class='searchImg' src='/images/search.png' bindtap='checkOnClick'></image>
+    </view>
 </view>

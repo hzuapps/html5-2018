@@ -1,0 +1,20 @@
+<view class='page'>
+    <view class='theme'>{{theme}}</view>
+    <view class='id' hidden='{{hiddenButAndId}}'>ID:{{id}}</view>
+
+    <view class='countdown'>{{minute}} : {{second}}</view>
+
+    <view class='luckyNum' style='opacity:{{luckyNum}}'>幸运号码是 {{rollNum[1]}}</view>
+
+    <view class='rollNum'>
+        <view>{{rollNum[0]}}</view>
+        <view>{{rollNum[1]}}</view>
+        <view>{{rollNum[2]}}</view>
+    </view>
+
+    <view class='lucklyPrize' style='opacity:{{luckyNum}}'>获得  {{prize}}  一份</view>
+
+    <button class='beginningPrize' type='primary' bindtap='clickBeginning' hidden='{{hiddenButAndId}}'>开始抽奖</button>
+
+    
+</view>
