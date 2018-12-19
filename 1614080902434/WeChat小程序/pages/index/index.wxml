@@ -1,5 +1,37 @@
 <view id='view1'>
+<view>
+  <button bindtap="return2" class="return1"><image class='back' src='/images/back.png'></image></button>
+</view>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view >
   <image class='img1' src="/images/wxz.png"></image>
-  <button class='btnStart' type='primary'>开始游戏</button>
-  <button class='btnEnd' type='primary'>退出游戏</button>
+ </view>
+   
+  <span><view class="container" class="zn-uploadimg">  
+        <button class='btnStart' type="primary" bindtap="showok1" data-id="rich" hidden="{{rich}}">舒适吃热狗</button>  
+        <button class='btnEnd' type="primary" bindtap="showok2" data-id="poor" hidden="{{poor}}">实惠吃热狗</button> 
+        <view class="top-user"hidden="{{poor1}}" >
+          <text class="tit">{{hotdog}}\n</text>
+          <text class="con">{{food1}}</text>
+        </view> 
+        <view class="top-user" hidden="{{rich1}}">
+          <text class="tit">{{drink}}\n</text>
+          <text class="con">{{drink1}}</text>
+        </view> 
+  </view></span>  
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  
+  <modal id="modal" hidden="{{hiddenmodalput}}" title="天天热狗" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+      <text>啥也别说了，先点热狗吧!</text>
+  </modal>
+</view>
 </view>

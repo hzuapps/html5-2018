@@ -1,0 +1,66 @@
+/* pages/choose1/choose1.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  width:100%;
+  position:absolute;
+  text-align: center;
+  bottom:10rpx;
+}
+.top-user{
+  margin-top:10px
+}
+.menu1{
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  border-radius: 50%;  
+  text-align: center;
+  align-items: center;
+
+}
+.menu1 image{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  border-radius: 50%;  
+  text-align: center;
+  align-items: center;
+}
+.menu2{ 
+  width:500rpx;
+  height: 300rpx;
+  margin:0rpx auto 0 auto;
+}
+.btn1{
+  background-color:rgba(0, 128, 0, 0.76);
+   margin-top:30rpx;
+   width: 80vw;
+}
+

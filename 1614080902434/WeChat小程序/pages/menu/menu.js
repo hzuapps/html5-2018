@@ -1,19 +1,49 @@
-// pages/choose2/choose2.js
+// pages/menu1/menu.js
 
 const app = getApp()
 
 Page({
+
   data: {
-   canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    food1: null,
+    juice1: null,
+    food3: wx.getStorageSync('hotdog'),
+    juice3: wx.getStorageSync('juice'),
 
   },
+  //事件处理函数
+  /*
+  hotdog: function (e) {
+    this.setData({
+      food1: e.detail.value,
+    });
+
+  },
+  juice: function (e) {
+    this.setData({
+      juice1: e.detail.value,
+    });
+    
+},
+*/
+  yes: function () {
+    if (this.data.food1 == null) { this.data.food1 = wx.getStorageSync('hotdog'); }
+    if (this.data.juice1 == null) { this.data.juice1 = wx.getStorageSync("juice"); }
+    var a1 = this.data.food1;
+    var a2 = this.data.juice1;
+    wx.setStorageSync('hotdog', a1);
+    wx.setStorageSync('juice', a2);
+  },
+  
+  bindViewTap: function () {
+    wx.navigateTo({
+      url:'../logs/logs' 
+    })
+  },
+  
   onLoad: function () {
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -52,3 +82,4 @@ Page({
     })
   }
 })
+
