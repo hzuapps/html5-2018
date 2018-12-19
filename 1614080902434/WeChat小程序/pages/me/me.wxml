@@ -1,0 +1,21 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+ <view>
+     <textarea placeholder='留下你对这个小程序的看法吧！'bindtap="" placeholder-style="color:#ccc; "maxlength='400' value="" class="message" ></textarea>
+ </view>
+ <view>
+      <button class='btn' bindtap="input" >提交</button>
+  </view>
+ 
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
