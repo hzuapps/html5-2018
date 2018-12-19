@@ -1,5 +1,0 @@
-<!--pages/logs/logs.wxml-->
-<view>
-<text class='tit'>今天的美食：\n</text>
-<text class='con'>网红热狗棒和雪碧 </text>
-</view>
