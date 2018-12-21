@@ -1,0 +1,47 @@
+{
+  "pages": [
+    
+    "pages/mainPage/01addFindPeople/01addFindPeople",
+    "pages/mainPage/02addFindThing/02addFindThing",
+    "pages/mainPage/03listFindPeople/03listFindPeople",
+    "pages/mainPage/04listFindThing/04listFindThing",
+    "pages/mainPage/05myFindPeople/05myFindPeople",
+    "pages/mainPage/06myFindThing/06myFindThing",
+    "pages/mainPage/07EorDFindPeople/07EorDFindPeople",
+    "pages/mainPage/08EorDFindThing/08EorDFindThing",
+    "pages/mainPage/00cover/00cover",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "失物招领8",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "backgroundColor":"#ffffff",
+    "selectedColor": "#f10b2e",
+    "list": [
+      {
+        "pagePath": "pages/mainPage/03listFindPeople/03listFindPeople",
+        "text": "列表",
+        "iconPath": "/img/list.png",
+        "selectedIconPath": "/img/list.png"
+      },
+      {
+        "pagePath": "pages/mainPage/01addFindPeople/01addFindPeople", 
+        "text": "添加",
+        "iconPath": "/img/add.png",
+        "selectedIconPath": "/img/add.png"
+      },
+      {
+        "pagePath": "pages/mainPage/05myFindPeople/05myFindPeople",
+        "text": "我的",
+        "iconPath": "/img/my.png",
+        "selectedIconPath": "/img/my.png"
+      }
+    ]
+  }
+}
