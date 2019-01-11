@@ -1,0 +1,79 @@
+<!--pages/mainPage/01addFindPeople/01addFindPeople.wxml-->
+
+
+<view>
+  <scroll-view class='scroll-view' scroll-y="true">
+
+    <button class='button0'>寻人</button>
+    <button class='button1'>寻物</button>
+
+
+    <view class='inputArea'>
+
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">账&ensp;&ensp;&ensp;&ensp;号：&ensp;&ensp;我自己</text>
+      </view>
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">名&ensp;&ensp;&ensp;&ensp;称：&ensp;</text>
+        <input class='input' placeholder="名称" />
+      </view>
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">描&ensp;&ensp;&ensp;&ensp;述：&ensp;</text>
+        <input class='input' placeholder="描述" />
+      </view>
+
+
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">拾获日期：&ensp;</text>
+        <picker class='input' mode="date" value="{{date}}" start="2015-09-01" end="2099-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+      </view>
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">拾获时间：&ensp;</text>
+        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+          <view class="weui-input">{{time}}</view>
+        </picker>
+      </view>
+
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">拾获地点：&ensp;</text>
+        <input class='input' placeholder="拾获地点" />
+      </view>
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">联&ensp;系&ensp;人：&ensp;</text>
+        <input class='input' placeholder="联系人" />
+      </view>
+
+      <view class='inputItem'>
+        <text class='input' decode="{{true}}">联系方式：&ensp;</text>
+        <input class='input' placeholder="联系方式" />
+      </view>
+    </view>
+
+    <view class="weui-uploader__bd">
+      <view class="weui-uploader__files">
+        <block wx:for="{{imageList}}" wx:for-item="image">
+          <view class="weui-uploader__file">
+            <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+          </view>
+        </block>
+      </view>
+      <view class="weui-uploader__input-box">
+        <view class="weui-uploader__input" bindtap="chooseImage"></view>
+      </view>
+    </view>
+
+    <button class='button0' bindtap="onAdd">添加图片</button>
+
+    
+
+  </scroll-view>
+</view>
