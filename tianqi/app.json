@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/weather/weather",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#121212",
+    "navigationBarTitleText": "天气查询助手",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#ddd"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#4db900",
+    "backgroundColor": "#fbfbfd",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "weather"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "search"
+      }
+    ]
+  }
+}
