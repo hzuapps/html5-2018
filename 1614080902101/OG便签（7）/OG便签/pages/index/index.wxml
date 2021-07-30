@@ -1,3 +1,0 @@
-<!--index.wxml-->
-<text class='my' style='align:center' font-size='length'>欢迎使用OG便签</text>
- <view class='imagesize'>  <image src="../image/3.jpg" class='in-image'   >  </image></view>
