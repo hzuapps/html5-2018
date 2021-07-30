@@ -1,8 +1,0 @@
-<!--pages/book/book.wxml-->
-<block wx:for="{{userListInfo}}">
-	<view class="weui_cell">
-		<view class="weui_cell_bd">
-			<navigator class="weui_cell_bd_p" url=""> {{item.text}}</navigator> 
-		</view>
-	</view>
-</block>
