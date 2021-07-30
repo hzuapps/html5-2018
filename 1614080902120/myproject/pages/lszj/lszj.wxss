@@ -1,8 +1,0 @@
-/* pages/lszj/lszj.wxss */
-.page__title {
-    text-align: center;
-}
-.page__desc{
-    padding: 100px;
-    text-align: center;
-}
