@@ -1,4 +1,0 @@
-/* pages/note/note.wxss */
-page{
-background: rgba(13, 134, 134, 0.61);
-}  

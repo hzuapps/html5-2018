@@ -1,5 +1,0 @@
-/* pages/note/note.wxss */
-page{
-background: rgba(13, 134, 134, 0.61);
-}  
-.imagesize{ display:flex; height: 300px;                     justify-content: center;         align-items:center;                }.imagesize image {   width:1000rpx;  height:1900rpx;  }
