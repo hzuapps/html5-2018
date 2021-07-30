@@ -1,6 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-<button class='bb'>记</button>
-<text>\n</text>
-<button class='bb'>看</button>
-</view>
