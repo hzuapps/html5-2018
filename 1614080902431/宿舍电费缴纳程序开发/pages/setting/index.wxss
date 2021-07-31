@@ -1,5 +1,0 @@
-/* pages/setting/index.wxss */.center{
-  display: flex;
-  justify-content: center;
-  height: 50px
-}
