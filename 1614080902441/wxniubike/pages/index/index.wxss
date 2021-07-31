@@ -1,5 +1,0 @@
-/**index.wxss**/
-page{
-  height: 100%;
-  background: #eeeeee;
-}
