@@ -1,7 +1,0 @@
-/* pages/idx/idx.wxss */
-.imagesize{
- display:block;
- width:100%;
- justify-content: center;
- align-items:center;
-}
