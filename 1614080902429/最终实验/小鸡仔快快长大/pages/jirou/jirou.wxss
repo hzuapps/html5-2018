@@ -1,6 +1,0 @@
-/* pages/jirou/jirou.wxss */
-.wenben{
-  text-align:center;
-  font-size: 50rpx;
-  background-color:antiquewhite;
-}

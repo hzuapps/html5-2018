@@ -1,9 +1,0 @@
-/* pages/sming/sming.wxss */
-.wen{
-text-align: center;
-font-size: 60rpx;
-}
-.block{
-
-  background-color:bisque;
-}
